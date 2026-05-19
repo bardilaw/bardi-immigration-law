@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
-import { CredentialBadge } from '@/components/CredentialBadge';
 import { JsonLd } from '@/components/JsonLd';
 
 // Attorney name pending from client — update PENDING field when provided.
@@ -24,7 +23,7 @@ const ATTORNEY_SCHEMA = {
 export const metadata: Metadata = {
   title: 'About Bardi Immigration Law | AILA Georgia-Alabama Chapter Chair',
   description:
-    'Bardi Immigration Law is a boutique solo practice. The 2025–26 Georgia-Alabama AILA Chapter Chair — creative, complex, and personally committed to every client\'s outcome.',
+    "Bardi Immigration Law is a boutique solo practice. The 2025–26 Georgia-Alabama AILA Chapter Chair — creative, complex, and personally committed to every client's outcome.",
   alternates: {
     canonical: 'https://bardilaw.com/about',
     languages: {
@@ -40,19 +39,52 @@ export const metadata: Metadata = {
   },
 };
 
-const VALUES = [
-  { label: 'Direct Attorney Communication', icon: '📞' },
-  { label: 'Treats Clients as Family', icon: '🤝' },
-  { label: 'Boutique, Not a Factory', icon: '⚖️' },
-  { label: 'Creative Representation', icon: '💡' },
+const CREDENTIALS = [
+  {
+    category: 'Bar Admissions',
+    items: ['State Bar of Georgia — Member in good standing'],
+  },
+  {
+    category: 'Leadership',
+    items: [
+      'American Immigration Lawyers Association (AILA)',
+      'Georgia-Alabama Chapter Chair, 2025–2026',
+    ],
+  },
+  {
+    category: 'Areas Served',
+    items: ['Georgia', 'Alabama', 'North Carolina', 'South Carolina'],
+  },
+  {
+    category: 'Languages',
+    items: ['English', 'Spanish', 'Hungarian'],
+  },
 ];
 
-const STATS = [
-  { value: 'AILA', label: 'Chapter Chair, Georgia-Alabama 2025–26' },
-  { value: 'SE', label: 'Georgia · Alabama · NC · SC' },
-  { value: '3', label: 'Practice Area Specializations' },
-  { value: '24h', label: 'Response guarantee' },
+const PHILOSOPHY_ITEMS = [
+  'You speak with the attorney from day one.',
+  'No intake specialists. No handoffs.',
+  "You'll know the status of your case — always.",
 ];
+
+function GoldRule() {
+  return <div className="w-10 h-[3px] bg-gold mt-3 mb-10" aria-hidden="true" />;
+}
+
+function CheckIcon() {
+  return (
+    <svg
+      className="w-5 h-5 text-gold flex-shrink-0 mt-0.5"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+      aria-hidden="true"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  );
+}
 
 export default function AboutPage() {
   return (
@@ -60,121 +92,136 @@ export default function AboutPage() {
       <JsonLd data={ATTORNEY_SCHEMA as unknown as Record<string, unknown>} />
       <Header />
       <main id="main-content">
-        {/* Attorney intro */}
+
+        {/* 4.1 Hero */}
         <section className="bg-white py-16 lg:py-20">
-          <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
+          <div className="max-w-site mx-auto px-5 lg:px-16 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+              <h1 className="font-serif text-4xl lg:text-[52px] font-bold text-navy leading-[1.15] mb-4">
+                Expert Counsel, Personal Attention.
+              </h1>
+              <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[480px] mb-8">
+                Boutique immigration representation across Georgia, Alabama, North Carolina, and South Carolina. You work with your attorney — from the first consultation to the final outcome.
+              </p>
+              <Button href="/contact" size="lg">Schedule a Consultation</Button>
+            </div>
+            {/* Portrait placeholder */}
             <div
-              className="flex items-center justify-center bg-warmgray rounded-lg h-80 lg:h-96 text-navy/20 text-sm font-sans"
+              className="order-first lg:order-last flex items-center justify-center bg-warmgray rounded-lg h-64 lg:h-auto lg:aspect-[3/4] max-h-[480px] text-navy/20 text-sm font-sans"
               aria-hidden="true"
             >
-              <span className="text-center px-8">[Attorney photo — 400px square]</span>
-            </div>
-            <div className="flex flex-col justify-center">
-              <h1 className="font-serif text-4xl lg:text-5xl font-bold text-navy mb-2">
-                [Attorney Full Name]
-              </h1>
-              <p className="font-sans text-lg text-charcoal/70 mb-4">
-                Immigration Attorney · Bardi Immigration Law
-              </p>
-              <CredentialBadge className="mb-6 self-start" />
-              <p className="text-charcoal/80 text-lg">
-                At Bardi Immigration Law, we believe that boutique representation isn&apos;t a luxury —
-                it&apos;s a necessity when your future is at stake.
-              </p>
+              <span className="text-center px-8">[Attorney photo — 320px wide, 3:4 aspect]</span>
             </div>
           </div>
         </section>
 
-        {/* Bio */}
-        <section className="bg-warmgray py-16">
-          <div className="max-w-site mx-auto px-5 lg:px-8 max-w-prose">
-            <div className="max-w-2xl mx-auto">
-              <h2 className="font-serif text-3xl font-bold text-navy mb-6">About the Firm</h2>
-              <div className="prose text-charcoal/80 space-y-4 text-base leading-relaxed">
-                <p>
+        {/* 4.2 Biography */}
+        <section className="bg-white py-16 lg:py-20 border-t border-warmgray-200">
+          <div className="max-w-site mx-auto px-5 lg:px-20">
+            <div className="max-w-[720px] mx-auto">
+              {/* Name block with gold left border */}
+              <div className="pl-5 border-l-[3px] border-gold mb-8">
+                <p className="font-serif text-[28px] font-bold text-navy leading-snug">
+                  [Attorney Full Name]
+                </p>
+                <p className="font-sans text-base italic text-charcoal mt-1">
+                  Immigration Attorney, Bardi Immigration Law
+                </p>
+              </div>
+              <div className="space-y-7">
+                <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
                   Bardi Immigration Law is a boutique immigration practice built on a simple promise:
                   when you need help navigating the U.S. immigration system, you deserve to work
                   directly with your attorney — not a case manager, not an intake specialist, not
                   someone who will forward your questions.
                 </p>
-                <p>
+                <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
                   Our practice serves families and individuals across the Southeast — primarily in
                   Georgia, Alabama, North Carolina, and South Carolina. We handle benefits-based
-                  immigration (green cards, naturalization, family petitions, humanitarian visas),
-                  removal defense, and federal litigation when administrative options have been
-                  exhausted.
+                  immigration, removal defense, and federal litigation when administrative options
+                  have been exhausted.
                 </p>
-                <p>
+                <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
                   As the 2025–2026 Chapter Chair of the Georgia-Alabama Chapter of the American
-                  Immigration Lawyers Association (AILA), we are deeply connected to the national
-                  immigration law community. That connection means we stay current on every policy
-                  change, agency update, and legal shift that could affect your case.
-                </p>
-                <p>
-                  We take on difficult cases — the ones other firms decline. If there is a legal path
-                  forward, we will find it. And we&apos;ll walk that path with you every step of the way.
+                  Immigration Lawyers Association (AILA), we stay current on every policy change,
+                  agency update, and legal shift that could affect your case. We take on difficult
+                  cases — the ones other firms decline. If there is a legal path forward, we will find it.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Practice philosophy */}
-        <section className="bg-white py-16">
-          <div className="max-w-site mx-auto px-5 lg:px-8 text-center">
-            <blockquote className="font-serif text-2xl lg:text-3xl italic text-navy max-w-2xl mx-auto mb-10 relative">
-              <span className="text-gold text-6xl leading-none absolute -top-4 -left-4 opacity-30" aria-hidden="true">&ldquo;</span>
-              Creative, competent, and complex representation — with the personal investment of a
-              boutique practice.
-            </blockquote>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-2xl mx-auto">
-              {VALUES.map((v) => (
-                <div key={v.label} className="flex flex-col items-center gap-2">
-                  <span className="text-3xl" aria-hidden="true">{v.icon}</span>
-                  <p className="text-sm font-semibold text-navy font-sans text-center">{v.label}</p>
+        {/* 4.3 Credentials */}
+        <section className="bg-warmgray py-16 lg:py-20">
+          <div className="max-w-site mx-auto px-5 lg:px-20">
+            <h2 className="font-serif text-[28px] font-bold text-navy">Credentials &amp; Affiliations</h2>
+            <GoldRule />
+            <div className="grid sm:grid-cols-2 gap-8 max-w-[720px]">
+              {CREDENTIALS.map((cred) => (
+                <div
+                  key={cred.category}
+                  className="bg-white border border-warmgray-200 rounded-lg p-6"
+                >
+                  <p className="font-sans font-semibold text-xs text-gold uppercase tracking-[0.06em] mb-3">
+                    {cred.category}
+                  </p>
+                  <ul className="list-none p-0 m-0">
+                    {cred.items.map((item) => (
+                      <li key={item} className="font-sans text-[15px] text-charcoal leading-[1.8] flex items-start gap-2">
+                        <span className="text-gold mt-0.5 select-none" aria-hidden="true">·</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Stats bar */}
-        <section className="bg-warmgray py-12">
-          <div className="max-w-site mx-auto px-5 lg:px-8">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-              {STATS.map((s) => (
-                <div key={s.label} className="flex flex-col gap-1">
-                  <span className="font-serif text-3xl font-bold text-gold">{s.value}</span>
-                  <span className="text-xs text-charcoal/70 font-sans">{s.label}</span>
+        {/* 4.4 Philosophy */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="max-w-site mx-auto px-5 lg:px-20">
+            <div className="max-w-[640px] mx-auto text-center">
+              <span
+                className="block font-serif text-[80px] text-gold leading-none mb-[-16px]"
+                aria-hidden="true"
+              >
+                &ldquo;
+              </span>
+              <blockquote className="font-serif text-2xl italic text-navy leading-[1.5]">
+                Creative, competent, and complex representation — with the personal investment of a boutique practice.
+              </blockquote>
+            </div>
+            <div className="mt-12 max-w-[560px] mx-auto">
+              {PHILOSOPHY_ITEMS.map((item) => (
+                <div key={item} className="flex items-start gap-3 mb-5">
+                  <CheckIcon />
+                  <p className="font-sans text-base text-charcoal">{item}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Affiliations */}
-        <section className="bg-white py-16">
-          <div className="max-w-site mx-auto px-5 lg:px-8 text-center">
-            <h2 className="font-serif text-2xl font-bold text-navy mb-8">Professional Affiliations</h2>
-            <div className="flex flex-wrap justify-center gap-8">
-              {['AILA — American Immigration Lawyers Association', 'State Bar of Georgia'].map((a) => (
-                <div key={a} className="bg-warmgray rounded-lg px-6 py-4 text-sm font-semibold text-navy font-sans">
-                  {a}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="bg-warmgray py-16">
-          <div className="max-w-site mx-auto px-5 lg:px-8 text-center">
-            <h2 className="font-serif text-3xl font-bold text-navy mb-4">
-              Let&apos;s talk about your case.
+        {/* 4.5 CTA Strip */}
+        <section className="bg-navy py-16 lg:py-20 text-center">
+          <div className="max-w-site mx-auto px-5 lg:px-20">
+            <h2 className="font-serif text-[36px] font-bold text-white leading-[1.2] max-w-[600px] mx-auto">
+              Ready to discuss your case?
             </h2>
-            <Button href="/contact" size="lg">Schedule a Consultation</Button>
+            <p className="font-sans text-base text-white/80 mt-3">
+              One consultation. Your attorney. No runaround.
+            </p>
+            <div className="mt-8">
+              <Button href="/contact" variant="primary" size="lg">
+                Schedule a Consultation
+              </Button>
+            </div>
           </div>
         </section>
+
       </main>
       <Footer />
     </>

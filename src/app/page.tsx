@@ -248,15 +248,50 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Final CTA strip */}
+        {/* Attorney intro teaser */}
         <section className="bg-warmgray py-16">
-          <div className="max-w-site mx-auto px-5 lg:px-8 text-center">
-            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-navy mb-3">
+          <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-[40%_60%] gap-16 items-center">
+            <div className="flex items-center justify-center lg:justify-start">
+              <div
+                className="w-48 h-48 lg:w-52 lg:h-52 rounded-full bg-warmgray-300 flex items-center justify-center text-navy/20 text-xs font-sans text-center"
+                aria-hidden="true"
+              >
+                Photo pending
+              </div>
+            </div>
+            <div>
+              <p className="font-serif text-3xl font-bold text-navy">Meet the Attorney</p>
+              <span className="block w-10 h-0.5 bg-gold mt-3 mb-5" aria-hidden="true" />
+              <p className="font-serif text-[22px] text-charcoal">
+                [Attorney Full Name]
+              </p>
+              <p className="font-sans text-base text-charcoal leading-[1.65] mt-3">
+                At Bardi Immigration Law, you work directly with your attorney — from consultation to outcome. No intake specialists. No case handoffs. Just real, boutique representation.
+              </p>
+              <a
+                href="/about"
+                className="inline-flex items-center gap-1 mt-5 font-sans font-semibold text-sm text-navy hover:text-gold transition-colors"
+              >
+                Meet the Attorney
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA strip */}
+        <section className="bg-navy py-16 lg:py-20 text-center">
+          <div className="max-w-site mx-auto px-5 lg:px-20">
+            <h2 className="font-serif text-3xl lg:text-[36px] font-bold text-white leading-[1.2] max-w-[600px] mx-auto">
               Start With a Real Conversation.
             </h2>
-            <p className="text-charcoal/70 mb-8">One consultation. Your attorney. No runaround.</p>
-            <Button href="/contact" size="lg">Book Your Consultation</Button>
-            <p className="text-sm text-charcoal/50 mt-4 font-sans">
+            <p className="font-sans text-base text-white/80 mt-3">One consultation. Your attorney. No runaround.</p>
+            <div className="mt-8">
+              <Button href="/contact" size="lg">Book Your Consultation</Button>
+            </div>
+            <p className="font-sans text-sm text-white/50 mt-4">
               Serving clients across Georgia, Alabama, North Carolina, and South Carolina.
             </p>
           </div>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Button } from './Button';
+import { trackEvent } from '@/lib/gtag';
 
 type FormState = {
   firstName: string;
@@ -83,6 +84,10 @@ export function ContactForm() {
       });
       if (res.ok) {
         setStatus('success');
+        trackEvent('contact_form_submit', {
+          case_type: form.caseType,
+          preferred_contact: form.preferredContact,
+        });
       } else {
         setStatus('error');
       }

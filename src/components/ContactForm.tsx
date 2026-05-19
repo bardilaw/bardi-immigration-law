@@ -11,6 +11,7 @@ type FormState = {
   caseType: string;
   description: string;
   preferredContact: string;
+  _gotcha: string; // honeypot — rendered off-screen, must stay empty
 };
 
 type FieldError = Partial<Record<keyof FormState, string>>;
@@ -45,6 +46,7 @@ export function ContactForm() {
     caseType: '',
     description: '',
     preferredContact: 'either',
+    _gotcha: '',
   });
   const [errors, setErrors] = useState<FieldError>({});
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -110,6 +112,19 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-5">
+      {/* Honeypot: hidden from real users, filled by bots */}
+      <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
+        <label htmlFor="_gotcha">Leave this blank</label>
+        <input
+          id="_gotcha"
+          name="_gotcha"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={form._gotcha}
+          onChange={handleChange}
+        />
+      </div>
       {/* Name row */}
       <div className="grid sm:grid-cols-2 gap-4">
         <div>

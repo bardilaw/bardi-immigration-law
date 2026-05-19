@@ -1,10 +1,8 @@
 import type { NextConfig } from 'next';
-import { withSentryConfig } from '@sentry/nextjs';
 
 const nextConfig: NextConfig = {};
 
-export default withSentryConfig(nextConfig, {
-  silent: true,
-  org: 'bardi-immigration-law',
-  project: 'bardi-immigration-law',
-});
+// Sentry build wrapper (withSentryConfig) deferred — incompatible with
+// @cloudflare/next-on-pages trace collection. @sentry/nextjs is installed
+// for runtime init via sentry.client.config.ts once Sentry DSN is configured.
+export default nextConfig;

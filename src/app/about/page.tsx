@@ -3,11 +3,41 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
 import { CredentialBadge } from '@/components/CredentialBadge';
+import { JsonLd } from '@/components/JsonLd';
+
+// Attorney name pending from client — update PENDING field when provided.
+const ATTORNEY_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Attorney',
+  name: 'PENDING — attorney full name',
+  worksFor: { '@id': 'https://bardilaw.com/#firm' },
+  memberOf: {
+    '@type': 'Organization',
+    name: 'American Immigration Lawyers Association (AILA)',
+    description: 'Georgia-Alabama Chapter Chair, 2025–26',
+  },
+  areaServed: ['Georgia', 'North Carolina', 'South Carolina', 'Alabama'],
+  knowsLanguage: ['English', 'Spanish'],
+  url: 'https://bardilaw.com/about',
+} as const;
 
 export const metadata: Metadata = {
-  title: 'About the Firm',
+  title: 'About Bardi Immigration Law | AILA Georgia-Alabama Chapter Chair',
   description:
-    'Bardi Immigration Law is a boutique immigration practice serving the Southeast. AILA Chapter Chair 2025–26. Direct attorney access. Creative, complex, compassionate representation.',
+    'Bardi Immigration Law is a boutique solo practice. The 2025–26 Georgia-Alabama AILA Chapter Chair — creative, complex, and personally committed to every client\'s outcome.',
+  alternates: {
+    canonical: 'https://bardilaw.com/about',
+    languages: {
+      en: 'https://bardilaw.com/about',
+      es: 'https://bardilaw.com/es/about',
+    },
+  },
+  openGraph: {
+    title: 'About Bardi Immigration Law | AILA Georgia-Alabama Chapter Chair',
+    description:
+      'Boutique immigration practice. Direct attorney access. AILA Georgia-Alabama Chapter Chair 2025–26. Serving GA, AL, NC, and SC.',
+    url: 'https://bardilaw.com/about',
+  },
 };
 
 const VALUES = [
@@ -27,6 +57,7 @@ const STATS = [
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={ATTORNEY_SCHEMA as unknown as Record<string, unknown>} />
       <Header />
       <main id="main-content">
         {/* Attorney intro */}

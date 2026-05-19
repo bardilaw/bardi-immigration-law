@@ -5,9 +5,22 @@ import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
 
 export const metadata: Metadata = {
-  title: 'Removal Defense',
+  title: 'Removal Defense Attorney Georgia | Deportation Lawyer',
   description:
-    'Facing deportation? Bardi Immigration Law provides full removal defense — detained and non-detained — across Georgia, Alabama, NC, and SC. Time matters. Contact us today.',
+    'Facing deportation? Bardi Immigration Law handles removal defense across GA, NC, SC, and AL. Direct attorney representation from day one. Time matters — contact us now.',
+  alternates: {
+    canonical: 'https://bardilaw.com/services/removal-defense',
+    languages: {
+      en: 'https://bardilaw.com/services/removal-defense',
+      es: 'https://bardilaw.com/es/services/removal-defense',
+    },
+  },
+  openGraph: {
+    title: 'Removal Defense Attorney Georgia | Deportation Lawyer | Bardi Immigration Law',
+    description:
+      'Facing deportation? Direct attorney representation for removal defense across Georgia, North Carolina, South Carolina, and Alabama.',
+    url: 'https://bardilaw.com/services/removal-defense',
+  },
 };
 
 const SERVICES_LIST = [

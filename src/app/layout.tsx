@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
+import { JsonLd } from '@/components/JsonLd';
 import './globals.css';
 
 const inter = Inter({
@@ -27,7 +28,57 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
+// Firm-level schema: LocalBusiness + LegalService — injected on every page via RootLayout.
+// Pending fields (address, phone, hours) must be updated when client provides them.
+const FIRM_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': ['LegalService', 'LocalBusiness'],
+      '@id': 'https://bardilaw.com/#firm',
+      name: 'Bardi Immigration Law',
+      alternateName: 'Bardi Law',
+      url: 'https://bardilaw.com',
+      telephone: 'PENDING',
+      email: 'PENDING',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'PENDING',
+        addressRegion: 'GA',
+        addressCountry: 'US',
+      },
+      areaServed: [
+        { '@type': 'State', name: 'Georgia' },
+        { '@type': 'State', name: 'North Carolina' },
+        { '@type': 'State', name: 'South Carolina' },
+        { '@type': 'State', name: 'Alabama' },
+      ],
+      serviceType: 'Immigration Law',
+      priceRange: '$$',
+      description:
+        'Boutique immigration law firm providing direct attorney representation across Georgia, North Carolina, South Carolina, and Alabama. Specializing in benefits-based immigration, removal defense, and federal litigation.',
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Immigration Legal Services',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DACA / Deferred Action' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Family-Based Immigration' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Removal Defense' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Naturalization' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'U Visa' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'VAWA' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Federal Litigation — Mandamus & Habeas Corpus' } },
+        ],
+      },
+    },
+  ],
+} as const;
 
 export default function RootLayout({
   children,
@@ -39,6 +90,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
+        <JsonLd data={FIRM_SCHEMA as unknown as Record<string, unknown>} />
         {ga4Id && (
           <>
             <script

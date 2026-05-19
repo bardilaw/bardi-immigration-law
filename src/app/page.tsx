@@ -8,7 +8,20 @@ import { CredentialBadge } from '@/components/CredentialBadge';
 export const metadata: Metadata = {
   title: 'Bardi Immigration Law | Georgia Immigration Attorney',
   description:
-    'Boutique immigration representation across Georgia, Alabama, North Carolina, and South Carolina. Complex problems. Direct answers. Real attorney involvement from day one.',
+    'Boutique immigration law firm serving Georgia, Alabama, North Carolina, and South Carolina. Your first call is with the attorney — not an intake specialist.',
+  alternates: {
+    canonical: 'https://bardilaw.com/',
+    languages: {
+      en: 'https://bardilaw.com/',
+      es: 'https://bardilaw.com/es/',
+    },
+  },
+  openGraph: {
+    title: 'Bardi Immigration Law | Georgia Immigration Attorney',
+    description:
+      'Boutique immigration law firm serving Georgia, Alabama, North Carolina, and South Carolina. Your first call is with the attorney — not an intake specialist.',
+    url: 'https://bardilaw.com/',
+  },
 };
 
 const SERVICES = [

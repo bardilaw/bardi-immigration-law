@@ -4,9 +4,22 @@ import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
 
 export const metadata: Metadata = {
-  title: 'Resources',
+  title: 'Immigration Resources',
   description:
-    'Immigration law resources, guides, and articles from Bardi Immigration Law. Serving Georgia, Alabama, NC, and SC.',
+    'Immigration guides, articles, and resources covering DACA, removal defense, green cards, and more — from Bardi Immigration Law, serving Georgia and the Southeast.',
+  alternates: {
+    canonical: 'https://bardilaw.com/resources',
+    languages: {
+      en: 'https://bardilaw.com/resources',
+      es: 'https://bardilaw.com/es/resources',
+    },
+  },
+  openGraph: {
+    title: 'Immigration Resources | Bardi Immigration Law',
+    description:
+      'Immigration guides and articles on DACA, removal defense, green cards, U-visa, VAWA, and more.',
+    url: 'https://bardilaw.com/resources',
+  },
 };
 
 export default function ResourcesPage() {

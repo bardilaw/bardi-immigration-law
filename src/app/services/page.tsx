@@ -5,9 +5,22 @@ import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
 
 export const metadata: Metadata = {
-  title: 'Immigration Services',
+  title: 'Immigration Legal Services',
   description:
-    'Benefits-based immigration, removal defense, and federal litigation across Georgia, Alabama, North Carolina, and South Carolina. Direct attorney representation from day one.',
+    'DACA, family-based immigration, removal defense, and federal litigation — handled directly by the attorney from day one. Serving Georgia, Alabama, NC, and SC.',
+  alternates: {
+    canonical: 'https://bardilaw.com/services',
+    languages: {
+      en: 'https://bardilaw.com/services',
+      es: 'https://bardilaw.com/es/services',
+    },
+  },
+  openGraph: {
+    title: 'Immigration Legal Services | Bardi Immigration Law',
+    description:
+      'DACA, family-based immigration, removal defense, and federal litigation — handled directly by the attorney from day one.',
+    url: 'https://bardilaw.com/services',
+  },
 };
 
 const PRACTICE_AREAS = [

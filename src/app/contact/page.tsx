@@ -4,9 +4,22 @@ import { Footer } from '@/components/Footer';
 import { ContactForm } from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Schedule a Consultation',
+  title: 'Contact Bardi Immigration Law | Schedule a Consultation',
   description:
-    'Contact Bardi Immigration Law to schedule a consultation. An attorney will be in touch within 24 hours. Direct attorney access guaranteed.',
+    'Schedule your consultation directly with the attorney. Serving Georgia, North Carolina, South Carolina, and Alabama. No intake specialist — speak with the attorney directly.',
+  alternates: {
+    canonical: 'https://bardilaw.com/contact',
+    languages: {
+      en: 'https://bardilaw.com/contact',
+      es: 'https://bardilaw.com/es/contact',
+    },
+  },
+  openGraph: {
+    title: 'Contact Bardi Immigration Law | Schedule a Consultation',
+    description:
+      'Schedule your consultation directly with the attorney. Serving GA, NC, SC, and AL.',
+    url: 'https://bardilaw.com/contact',
+  },
 };
 
 const STEPS = [

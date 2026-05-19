@@ -5,9 +5,22 @@ import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
 
 export const metadata: Metadata = {
-  title: 'Benefits-Based Immigration',
+  title: 'Benefits-Based Immigration Attorney | Green Cards, DACA, U-Visa & More',
   description:
-    'Naturalization, green cards, family petitions, DACA, U-visa, VAWA, SIJS, TPS, waivers and more. Bardi Immigration Law serves Georgia, Alabama, NC, and SC.',
+    'Green cards, DACA, naturalization, U-visa, VAWA, family petitions, TPS, and waivers — personalized immigration representation across Georgia and the Southeast.',
+  alternates: {
+    canonical: 'https://bardilaw.com/services/benefits-based-immigration',
+    languages: {
+      en: 'https://bardilaw.com/services/benefits-based-immigration',
+      es: 'https://bardilaw.com/es/services/benefits-based-immigration',
+    },
+  },
+  openGraph: {
+    title: 'Benefits-Based Immigration Attorney | Bardi Immigration Law',
+    description:
+      'Green cards, DACA, naturalization, U-visa, VAWA, family petitions, TPS, and waivers. Serving Georgia, Alabama, NC, and SC.',
+    url: 'https://bardilaw.com/services/benefits-based-immigration',
+  },
 };
 
 const SERVICES_LIST = [

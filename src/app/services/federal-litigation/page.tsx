@@ -5,9 +5,22 @@ import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
 
 export const metadata: Metadata = {
-  title: 'Federal Litigation',
+  title: 'Federal Immigration Litigation | Mandamus & Habeas Corpus',
   description:
-    'Habeas corpus and mandamus petitions when administrative immigration remedies are exhausted. Bardi Immigration Law — Georgia, Alabama, NC, SC.',
+    'USCIS taking too long? Bardi Immigration Law files mandamus petitions and habeas corpus petitions to move stalled immigration cases. Serving clients nationwide.',
+  alternates: {
+    canonical: 'https://bardilaw.com/services/federal-litigation',
+    languages: {
+      en: 'https://bardilaw.com/services/federal-litigation',
+      es: 'https://bardilaw.com/es/services/federal-litigation',
+    },
+  },
+  openGraph: {
+    title: 'Federal Immigration Litigation | Mandamus & Habeas Corpus | Bardi Immigration Law',
+    description:
+      'Mandamus petitions to compel USCIS action. Habeas corpus to challenge unlawful detention. Federal court experience across the Southeast.',
+    url: 'https://bardilaw.com/services/federal-litigation',
+  },
 };
 
 const SERVICES_LIST = [

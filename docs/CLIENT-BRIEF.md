@@ -157,12 +157,38 @@ Last updated: 2026-05-19
 
 ---
 
-## 9. Open Decisions (Require Client Input)
+## 9. Approved Proposal & Scope
 
-1. **Booking flow:** Direct online booking (Calendly-style) vs. contact form only? Client said "I am unsure yet."
+> Source: "Bardi Imigration Law - GTM & Online Presence Scope Overview" spreadsheet in shared Google Drive folder.
+
+- **Consulting role:** Operations setup, online presence, messaging, website planning, launch execution. Includes Spanish language option.
+- **Project cost:** $11,400 (before discount); **$7,980 after 30% friends-and-family discount**.
+- **Payment schedule:** $3,990 due 7 days from signing; $3,990 due at site launch (~June 10).
+- **Social media setup:** Instagram, Facebook, TikTok, YouTube (profile setup; no content creation in scope).
+- **Excluded from scope:** Entity filing fees, licenses, bar dues, malpractice insurance, conflict-check frameworks, billing/payment workflows, daily admin SOPs, domain fees, hosting, Workspace/Microsoft subscriptions, paid media, LSAs, PPC spend, directory sponsorships, copy review by counsel/ethics counsel.
+
+### Working Assumptions (from proposal)
+1. Estimates consulting time, not the attorney's internal time.
+2. Practical solo-firm launch, not a large custom site or complex firm rebrand.
+3. One attorney, one primary office, no staff at launch.
+
+---
+
+## 10. Business Infrastructure (Board Directive, 2026-05-19)
+
+- **Email & Calendar:** Microsoft 365 (Outlook). Board specified Microsoft, not Google Workspace.
+- **Tech stack:** Mirror mccargo-consulting.com (Cloudflare Pages, Next.js, TypeScript, Tailwind, GitHub Actions). See TECH-STACK.md.
+- **Domain:** bardilaw.com (per business card mockup in creative assets; board to confirm registration).
+- **Credentials:** "Account Info - Bardi Law" spreadsheet in shared Google Drive folder tracks all service usernames/passwords. Do not commit to repo.
+- **Creative assets:** 4 logo variants in "Creative Assets" subfolder of shared Drive (horizontal full-color, round dark, round white, business card mockup).
+
+---
+
+## 11. Open Decisions (Require Client Input)
+
+1. **Booking flow:** Direct online booking (Calendly-style / Microsoft Bookings) vs. contact form only? Client said "I am unsure yet."
 2. **Practice area expansion:** Personal injury flagged as a future interest. Not in scope for launch.
-3. **Third business name candidate:** Client listed "Bardi Law" and "Bardi Immigration Law" but left the third slot as "?". Confirmed preference is Bardi Immigration Law.
-4. **Logo assets:** Client referenced "attached images" with round Bardi Law logo. Need to confirm we have these assets.
+3. **Domain confirmation:** bardilaw.com shown on business card mockup — board to confirm this is the domain to register.
 
 ---
 

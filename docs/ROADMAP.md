@@ -59,7 +59,7 @@
 | 3.4 | TikTok profile created | CMO |
 | 3.5 | YouTube channel created | CMO |
 | 3.6 | Avvo / Justia / FindLaw profiles created | CMO |
-| 3.7 | Domain email set up | Engineer |
+| 3.7 | Domain email set up (Microsoft 365 / Outlook) | Engineer |
 | 3.8 | Email signature template | CMO |
 | 3.9 | Initial 5 Google reviews strategy | CMO |
 | 3.10 | Launch QA and final checks | Engineer |
@@ -83,4 +83,4 @@
 
 ---
 
-*Last updated: 2026-05-19 | Source: CLIENT-BRIEF.md (BAR-23)*
+*Last updated: 2026-05-19 | Source: CLIENT-BRIEF.md (BAR-23) | Revised per board comment: Microsoft 365 email/calendar, Cloudflare Pages hosting*

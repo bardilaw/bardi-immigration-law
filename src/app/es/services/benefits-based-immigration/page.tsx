@@ -25,15 +25,15 @@ export const metadata: Metadata = {
 };
 
 const SERVICES_LIST = [
-  { label: 'Naturalización', desc: 'Solicitud de ciudadanía americana' },
-  { label: 'Estatus de Residente Permanente (LPR)', desc: 'Peticiones y trámites de tarjeta de residencia permanente' },
-  { label: 'Peticiones Familiares (I-130)', desc: 'Patrocinio de cónyuge, padre/madre o hijo/a' },
-  { label: 'Estatus de Protección Temporal (TPS)', desc: 'Protección de estatus para nacionales de países designados' },
-  { label: 'Renuncias (Waivers)', desc: 'I-601 (presencia ilegal), I-212 (deportación previa), I-929 (derivado)' },
-  { label: 'Acción Diferida (DACA)', desc: 'Solicitudes iniciales y renovaciones' },
-  { label: 'Estatus de Inmigrante Juvenil Especial (SIJS)', desc: 'Protección para menores no acompañados' },
-  { label: 'Peticiones VAWA', desc: 'Caminos de auto-petición para sobrevivientes de abuso' },
-  { label: 'Visa U', desc: 'Protección y estatus para víctimas de crímenes violentos' },
+  { label: 'Naturalización', desc: 'Solicitud de ciudadanía americana', href: '/es/contact' },
+  { label: 'Estatus de Residente Permanente (LPR)', desc: 'Peticiones y trámites de tarjeta de residencia permanente', href: '/es/services/family-based-immigration' },
+  { label: 'Peticiones Familiares (I-130)', desc: 'Patrocinio de cónyuge, padre/madre o hijo/a', href: '/es/services/family-based-immigration' },
+  { label: 'Estatus de Protección Temporal (TPS)', desc: 'Protección de estatus para nacionales de países designados', href: '/es/services/tps' },
+  { label: 'Renuncias (Waivers)', desc: 'I-601 (presencia ilegal), I-212 (deportación previa), I-929 (derivado)', href: '/es/services/waivers' },
+  { label: 'DACA', desc: 'Solicitudes iniciales y renovaciones', href: '/es/services/daca' },
+  { label: 'Estatus de Inmigrante Juvenil Especial (SIJS)', desc: 'Protección para menores no acompañados', href: '/es/services/sijs' },
+  { label: 'Peticiones VAWA', desc: 'Caminos de auto-petición para sobrevivientes de abuso', href: '/es/services/vawa' },
+  { label: 'Visa U', desc: 'Protección y estatus para víctimas de crímenes violentos', href: '/es/services/u-visa' },
 ];
 
 export default function BenefitsBasedPageES() {
@@ -41,47 +41,64 @@ export default function BenefitsBasedPageES() {
     <>
       <Header />
       <main id="main-content">
-        <section className="bg-white py-16 lg:py-20">
-          <div className="max-w-site mx-auto px-5 lg:px-8">
-            <nav aria-label="Ruta de navegación" className="text-sm text-charcoal/50 mb-6 font-sans">
-              <Link href="/es" className="hover:text-navy">Inicio</Link>
-              <span className="mx-2">/</span>
-              <Link href="/es/services" className="hover:text-navy">Servicios</Link>
-              <span className="mx-2">/</span>
-              <span className="text-charcoal">Inmigración por Beneficios</span>
+        {/* Hero */}
+        <section className="bg-warmgray pt-20 pb-14 lg:pt-28 lg:pb-16">
+          <div className="max-w-site mx-auto px-5 lg:px-16">
+            <nav aria-label="Ruta de navegación" className="text-[13px] text-charcoal/60 mb-6 font-sans">
+              <Link href="/es" className="hover:text-navy transition-colors">Inicio</Link>
+              <span className="mx-2" aria-hidden="true">&rsaquo;</span>
+              <Link href="/es/services" className="hover:text-navy transition-colors">Servicios</Link>
+              <span className="mx-2" aria-hidden="true">&rsaquo;</span>
+              <span className="text-navy">Inmigración por Beneficios</span>
             </nav>
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-navy mb-6">
-              Construya Su Futuro en los Estados Unidos.
+            <h1 className="font-serif text-4xl lg:text-[52px] font-bold text-navy leading-[1.15] mb-4">
+              Inmigración por Beneficios
             </h1>
-            <p className="text-lg text-charcoal/80 max-w-2xl mb-12">
-              Ayudamos a inmigrantes en cada etapa del proceso — desde quienes han vivido aquí
-              desde la infancia hasta quienes navegan nuevos caminos a través de conexiones
-              familiares o protección humanitaria. Sin importar en qué punto de su proceso se
-              encuentre, buscamos el camino hacia adelante.
+            <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[640px]">
+              Ayudamos a inmigrantes en cada etapa — desde quienes han vivido aquí desde la infancia hasta quienes navegan nuevos caminos a través de conexiones familiares o protección humanitaria.
             </p>
+          </div>
+        </section>
 
-            <h2 className="font-serif text-2xl font-bold text-navy mb-6">Servicios Incluyen:</h2>
-            <div className="grid sm:grid-cols-2 gap-4 mb-12">
-              {SERVICES_LIST.map((s) => (
-                <div key={s.label} className="flex gap-3 bg-warmgray rounded-lg p-4">
-                  <span className="text-gold font-bold mt-0.5" aria-hidden="true">✓</span>
-                  <div>
-                    <p className="font-semibold text-navy font-sans text-sm">{s.label}</p>
-                    <p className="text-charcoal/70 text-sm">{s.desc}</p>
-                  </div>
-                </div>
-              ))}
+        {/* Services grid */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="max-w-site mx-auto px-5 lg:px-16">
+            <div className="max-w-[760px] mx-auto">
+              <h2 className="font-serif text-[28px] font-bold text-navy">Servicios Incluyen</h2>
+              <div className="w-10 h-[3px] bg-gold mt-3 mb-7" aria-hidden="true" />
+              <div className="grid sm:grid-cols-2 gap-4">
+                {SERVICES_LIST.map((s) => (
+                  <Link
+                    key={s.label}
+                    href={s.href}
+                    className="flex gap-3 bg-warmgray border border-warmgray-200 rounded-lg p-4 hover:border-navy transition-colors group"
+                  >
+                    <span className="text-gold font-bold mt-0.5 select-none" aria-hidden="true">✓</span>
+                    <div>
+                      <p className="font-sans font-semibold text-navy text-sm group-hover:text-navy">{s.label}</p>
+                      <p className="font-sans text-charcoal/70 text-sm mt-0.5">{s.desc}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
+          </div>
+        </section>
 
-            <div className="bg-warmgray rounded-lg p-6 mb-8 border-l-4 border-navy">
-              <h3 className="font-serif text-lg font-bold text-navy mb-2">Para quién es</h3>
-              <p className="text-charcoal/80">
-                Personas que han construido su vida en los EE. UU. y están listas para asegurar su
-                estatus legal — a través del matrimonio, la familia o la protección humanitaria.
-              </p>
+        {/* CTA */}
+        <section className="bg-navy py-16 lg:py-20 text-center">
+          <div className="max-w-site mx-auto px-5 lg:px-20">
+            <h2 className="font-serif text-[36px] font-bold text-white leading-[1.2] max-w-[600px] mx-auto">
+              Comience con una Consulta
+            </h2>
+            <p className="font-sans text-base text-white/80 mt-3">
+              ¿No está seguro cuál camino aplica a usted? Evaluamos su situación completa e identificamos sus opciones.
+            </p>
+            <div className="mt-8">
+              <Button href="/es/contact" variant="primary" size="lg">
+                Programe una Consulta
+              </Button>
             </div>
-
-            <Button href="/es/contact" size="lg">Programe una Consulta</Button>
           </div>
         </section>
       </main>

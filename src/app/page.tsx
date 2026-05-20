@@ -248,6 +248,29 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Testimonials */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="max-w-site mx-auto px-5 lg:px-8">
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-navy text-center mb-12">
+              Client Stories
+            </h2>
+            <div className="flex flex-col gap-6 max-w-[760px] mx-auto">
+              {[1, 2].map((n) => (
+                <div key={n} className="bg-warmgray rounded-lg px-10 py-12 lg:px-14">
+                  <span className="block font-serif text-[48px] text-gold leading-none mb-4" aria-hidden="true">&ldquo;</span>
+                  <p className="font-serif text-[22px] italic text-navy leading-[1.6]">
+                    [Client testimonial pending — real quotes to be provided by client.]
+                  </p>
+                  <p className="font-sans font-semibold text-sm text-navy mt-6">— [Client Name], [State]</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-center text-xs text-charcoal/40 mt-6 font-sans">
+              Testimonials pending — content to be provided by attorney.
+            </p>
+          </div>
+        </section>
+
         {/* Attorney intro teaser */}
         <section className="bg-warmgray py-16">
           <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-[40%_60%] gap-16 items-center">

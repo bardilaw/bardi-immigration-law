@@ -113,6 +113,9 @@ export default function ContactPage() {
                   </li>
                 </ul>
                 <p className="text-xs text-charcoal/50 mt-3">Office hours: TBD</p>
+                <p className="text-xs text-charcoal/50 mt-3 font-sans">
+                  Consultations available in English, Spanish, and Hungarian.
+                </p>
               </div>
             </aside>
           </div>

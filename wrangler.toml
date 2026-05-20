@@ -1,7 +1,4 @@
 name = "bardi-immigration-law"
 compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
-
-[pages]
-build_command = "npx @cloudflare/next-on-pages"
-build_output_dir = ".vercel/output/static"
+pages_build_output_dir = ".vercel/output/static"

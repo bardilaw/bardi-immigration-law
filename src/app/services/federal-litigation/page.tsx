@@ -1,13 +1,10 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
-import { Button } from '@/components/Button';
+import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Federal Immigration Litigation | Mandamus & Habeas Corpus',
+  title: 'Federal Immigration Litigation Attorney Georgia | Habeas Corpus & Mandamus',
   description:
-    'USCIS taking too long? Bardi Immigration Law files mandamus petitions and habeas corpus petitions to move stalled immigration cases. Serving clients nationwide.',
+    'When administrative options run out, Bardi Immigration Law takes your case to federal court. Habeas corpus petitions, mandamus actions, and APA challenges.',
   alternates: {
     canonical: 'https://bardilaw.com/services/federal-litigation',
     languages: {
@@ -16,74 +13,55 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Federal Immigration Litigation | Mandamus & Habeas Corpus | Bardi Immigration Law',
-    description:
-      'Mandamus petitions to compel USCIS action. Habeas corpus to challenge unlawful detention. Federal court experience across the Southeast.',
+    title: 'Federal Immigration Litigation | Bardi Immigration Law Georgia',
+    description: 'Federal court immigration cases: habeas corpus, mandamus, APA. When the administrative process fails you, we take it to court.',
     url: 'https://bardilaw.com/services/federal-litigation',
   },
 };
 
-const SERVICES_LIST = [
-  {
-    label: 'Habeas Corpus Petitions',
-    desc: 'Challenging unlawful detention in federal court',
-  },
-  {
-    label: 'Mandamus Petitions',
-    desc: 'Compelling unreasonably delayed agency action',
-  },
-];
-
 export default function FederalLitigationPage() {
   return (
-    <>
-      <Header />
-      <main id="main-content">
-        <section className="bg-white py-16 lg:py-20">
-          <div className="max-w-site mx-auto px-5 lg:px-8">
-            <nav aria-label="Breadcrumb" className="text-sm text-charcoal/50 mb-6 font-sans">
-              <Link href="/" className="hover:text-navy">Home</Link>
-              <span className="mx-2">/</span>
-              <Link href="/services" className="hover:text-navy">Services</Link>
-              <span className="mx-2">/</span>
-              <span className="text-charcoal">Federal Litigation</span>
-            </nav>
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-navy mb-6">
-              When the Court System Is the Answer.
-            </h1>
-            <p className="text-lg text-charcoal/80 max-w-2xl mb-12">
-              Not every immigration case can be resolved within the immigration court system. When
-              administrative options have been exhausted — or when a federal agency has unreasonably
-              delayed or denied your petition — federal litigation may be your best option. We take
-              cases to federal court and advocate for your rights at every level.
-            </p>
-
-            <h2 className="font-serif text-2xl font-bold text-navy mb-6">Services Include:</h2>
-            <div className="flex flex-col gap-4 mb-12">
-              {SERVICES_LIST.map((s) => (
-                <div key={s.label} className="flex gap-3 bg-warmgray rounded-lg p-5">
-                  <span className="text-gold font-bold mt-0.5" aria-hidden="true">✓</span>
-                  <div>
-                    <p className="font-semibold text-navy font-sans">{s.label}</p>
-                    <p className="text-charcoal/70 text-sm">{s.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="bg-warmgray rounded-lg p-6 mb-8 border-l-4 border-navy">
-              <h3 className="font-serif text-lg font-bold text-navy mb-2">Who This Is For</h3>
-              <p className="text-charcoal/80">
-                Applicants whose petitions have been unreasonably delayed or denied, or individuals
-                who have been detained beyond what the law allows.
-              </p>
-            </div>
-
-            <Button href="/contact" size="lg">Schedule a Consultation</Button>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+    <PracticeAreaLayout
+      breadcrumbLabel="Federal Litigation"
+      breadcrumbHref="/services/federal-litigation"
+      title="Federal Litigation"
+      subhead="When the administrative immigration process has failed you — final removal orders, unreasonably delayed applications, unlawful detention — federal court is often the last available remedy. We take cases there."
+      qualifyHeading="When Federal Litigation May Apply"
+      qualifyBullets={[
+        'You have a final order of removal and have exhausted administrative appeals',
+        'USCIS has unreasonably delayed adjudicating your application (mandamus)',
+        'You are in prolonged immigration detention without a bond hearing (habeas corpus)',
+        'A government decision violated the law or your constitutional rights',
+        'You need to challenge a BIA decision in the federal court of appeals',
+      ]}
+      qualifyDisclaimer="Federal litigation involves complex procedural rules and strict deadlines. Contact us immediately if you believe federal court action may be necessary."
+      processSteps={[
+        { title: 'Case assessment', body: 'We review the full administrative record, identify the legal theory, and assess the realistic prospects and costs of federal litigation.' },
+        { title: 'Identify the right court and claim', body: 'Depending on the issue, the appropriate court may be a district court (habeas, mandamus), a circuit court of appeals (removal order review), or another forum.' },
+        { title: 'File the petition or complaint', body: 'We draft and file the petition, motion, or complaint with the appropriate federal court, along with any request for emergency relief or stay of removal.' },
+        { title: 'Briefing and argument', body: 'Federal litigation involves written briefs, often oral argument, and can span months or years. We represent you through every stage.' },
+        { title: 'Decision and follow-up', body: 'We advise on the decision\'s implications and, if successful, coordinate any follow-on administrative proceedings.' },
+      ]}
+      helpsParagraph="Federal immigration litigation requires a different skill set than administrative practice — knowledge of federal procedural rules, constitutional law, and circuit-specific precedent. Attorney Bardi brings that expertise to cases where the administrative process has failed."
+      helpsItems={[
+        'Habeas corpus petitions for unlawful or prolonged detention',
+        'Mandamus actions for unreasonably delayed USCIS adjudications',
+        'BIA petition for review in the federal courts of appeals',
+        'APA challenges to unlawful agency action',
+        'Emergency stays of removal',
+        'Full briefing and argument through final decision',
+      ]}
+      faqs={[
+        { q: 'What is a mandamus action?', a: 'A writ of mandamus is a federal court order compelling an agency to perform a non-discretionary duty. In immigration, mandamus is used when USCIS or another agency has unreasonably delayed adjudicating an application that has been pending for an unusually long time.' },
+        { q: 'What is habeas corpus in an immigration context?', a: 'Habeas corpus is a legal challenge to unlawful detention. Immigration detainees may file a habeas petition in federal district court when they are held in prolonged detention without a bond hearing, or when their detention is otherwise unlawful.' },
+        { q: 'Can a federal court overturn a removal order?', a: 'A federal court of appeals can review a final order of removal for legal error. If the BIA made an error of law, the court can vacate the removal order and remand for further proceedings. Courts generally cannot reverse factual findings, only legal errors.' },
+        { q: 'How long does federal litigation take?', a: 'It varies by court and type of case. A mandamus action may resolve in a few months if it prompts USCIS to act. A petition for review in the court of appeals may take 1–3 years or more. We advise on realistic timelines at the outset.' },
+      ]}
+      relatedAreas={[
+        { href: '/services/removal-defense', label: 'Removal Defense', desc: 'Defense in Removal Proceedings' },
+        { href: '/services/waivers', label: 'Waivers', desc: 'I-601, I-212 & Other Waivers' },
+        { href: '/services/family-based-immigration', label: 'Family-Based', desc: 'Family Petitions & Green Cards' },
+      ]}
+    />
   );
 }

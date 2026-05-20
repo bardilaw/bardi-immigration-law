@@ -24,15 +24,15 @@ export const metadata: Metadata = {
 };
 
 const SERVICES_LIST = [
-  { label: 'Naturalization', desc: 'Applying for U.S. citizenship' },
-  { label: 'Lawful Permanent Resident (LPR) Status', desc: 'Green card petitions and processing' },
-  { label: 'Family-Based Petitions (I-130)', desc: 'Sponsoring a spouse, parent, or child' },
-  { label: 'Temporary Protected Status (TPS)', desc: 'Status protection for nationals of designated countries' },
-  { label: 'Waivers', desc: 'I-601 (unlawful presence), I-212 (prior removal), I-929 (derivative)' },
-  { label: 'Deferred Action for Childhood Arrivals (DACA)', desc: 'Initial applications and renewals' },
-  { label: 'Special Immigrant Juvenile Status (SIJS)', desc: 'Protection for unaccompanied minors' },
-  { label: 'Violence Against Women Act (VAWA) Petitions', desc: 'Self-petition pathways for survivors of abuse' },
-  { label: 'U-Visa', desc: 'Protection and status for victims of violent crime' },
+  { label: 'Naturalization', desc: 'Applying for U.S. citizenship', href: '/contact' },
+  { label: 'Lawful Permanent Resident (LPR) Status', desc: 'Green card petitions and processing', href: '/services/family-based-immigration' },
+  { label: 'Family-Based Petitions (I-130)', desc: 'Sponsoring a spouse, parent, or child', href: '/services/family-based-immigration' },
+  { label: 'Temporary Protected Status (TPS)', desc: 'Status protection for nationals of designated countries', href: '/services/tps' },
+  { label: 'Waivers', desc: 'I-601 (unlawful presence), I-212 (prior removal), I-929 (derivative)', href: '/services/waivers' },
+  { label: 'DACA', desc: 'Initial applications and renewals', href: '/services/daca' },
+  { label: 'Special Immigrant Juvenile Status (SIJS)', desc: 'Protection for unaccompanied minors', href: '/services/sijs' },
+  { label: 'VAWA Petitions', desc: 'Self-petition pathways for survivors of abuse', href: '/services/vawa' },
+  { label: 'U-Visa', desc: 'Protection and status for victims of violent crime', href: '/services/u-visa' },
 ];
 
 export default function BenefitsBasedPage() {
@@ -40,46 +40,64 @@ export default function BenefitsBasedPage() {
     <>
       <Header />
       <main id="main-content">
-        <section className="bg-white py-16 lg:py-20">
-          <div className="max-w-site mx-auto px-5 lg:px-8">
-            <nav aria-label="Breadcrumb" className="text-sm text-charcoal/50 mb-6 font-sans">
-              <Link href="/" className="hover:text-navy">Home</Link>
-              <span className="mx-2">/</span>
-              <Link href="/services" className="hover:text-navy">Services</Link>
-              <span className="mx-2">/</span>
-              <span className="text-charcoal">Benefits-Based Immigration</span>
+        {/* Hero */}
+        <section className="bg-warmgray pt-20 pb-14 lg:pt-28 lg:pb-16">
+          <div className="max-w-site mx-auto px-5 lg:px-16">
+            <nav aria-label="Breadcrumb" className="text-[13px] text-charcoal/60 mb-6 font-sans">
+              <Link href="/" className="hover:text-navy transition-colors">Home</Link>
+              <span className="mx-2" aria-hidden="true">&rsaquo;</span>
+              <Link href="/services" className="hover:text-navy transition-colors">Services</Link>
+              <span className="mx-2" aria-hidden="true">&rsaquo;</span>
+              <span className="text-navy">Benefits-Based Immigration</span>
             </nav>
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-navy mb-6">
-              Build Your Future in the United States.
+            <h1 className="font-serif text-4xl lg:text-[52px] font-bold text-navy leading-[1.15] mb-4">
+              Benefits-Based Immigration
             </h1>
-            <p className="text-lg text-charcoal/80 max-w-2xl mb-12">
-              We help immigrants at every stage of the process — from those who have been here since
-              childhood to those navigating new pathways through family connections or humanitarian
-              protection. No matter where you are in your journey, we look for the path forward.
+            <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[640px]">
+              We help immigrants at every stage — from those who have been here since childhood to those navigating new pathways through family connections or humanitarian protection.
             </p>
+          </div>
+        </section>
 
-            <h2 className="font-serif text-2xl font-bold text-navy mb-6">Services Include:</h2>
-            <div className="grid sm:grid-cols-2 gap-4 mb-12">
-              {SERVICES_LIST.map((s) => (
-                <div key={s.label} className="flex gap-3 bg-warmgray rounded-lg p-4">
-                  <span className="text-gold font-bold mt-0.5" aria-hidden="true">✓</span>
-                  <div>
-                    <p className="font-semibold text-navy font-sans text-sm">{s.label}</p>
-                    <p className="text-charcoal/70 text-sm">{s.desc}</p>
-                  </div>
-                </div>
-              ))}
+        {/* Services grid */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="max-w-site mx-auto px-5 lg:px-16">
+            <div className="max-w-[760px] mx-auto">
+              <h2 className="font-serif text-[28px] font-bold text-navy">Services Include</h2>
+              <div className="w-10 h-[3px] bg-gold mt-3 mb-7" aria-hidden="true" />
+              <div className="grid sm:grid-cols-2 gap-4">
+                {SERVICES_LIST.map((s) => (
+                  <Link
+                    key={s.label}
+                    href={s.href}
+                    className="flex gap-3 bg-warmgray border border-warmgray-200 rounded-lg p-4 hover:border-navy transition-colors group"
+                  >
+                    <span className="text-gold font-bold mt-0.5 select-none" aria-hidden="true">✓</span>
+                    <div>
+                      <p className="font-sans font-semibold text-navy text-sm group-hover:text-navy">{s.label}</p>
+                      <p className="font-sans text-charcoal/70 text-sm mt-0.5">{s.desc}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
+          </div>
+        </section>
 
-            <div className="bg-warmgray rounded-lg p-6 mb-8 border-l-4 border-navy">
-              <h3 className="font-serif text-lg font-bold text-navy mb-2">Who This Is For</h3>
-              <p className="text-charcoal/80">
-                Individuals who have built their lives in the U.S. and are ready to secure their
-                legal status — through marriage, family, or humanitarian protection.
-              </p>
+        {/* CTA */}
+        <section className="bg-navy py-16 lg:py-20 text-center">
+          <div className="max-w-site mx-auto px-5 lg:px-20">
+            <h2 className="font-serif text-[36px] font-bold text-white leading-[1.2] max-w-[600px] mx-auto">
+              Start with a Consultation
+            </h2>
+            <p className="font-sans text-base text-white/80 mt-3">
+              Not sure which pathway applies to you? We assess your full situation and identify your options.
+            </p>
+            <div className="mt-8">
+              <Button href="/contact" variant="primary" size="lg">
+                Schedule a Consultation
+              </Button>
             </div>
-
-            <Button href="/contact" size="lg">Schedule a Consultation</Button>
           </div>
         </section>
       </main>

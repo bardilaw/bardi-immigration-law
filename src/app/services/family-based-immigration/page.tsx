@@ -1,13 +1,10 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
-import { Button } from '@/components/Button';
+import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Family-Based Immigration Attorney Georgia | Green Cards, I-130 Petitions',
+  title: 'Family-Based Immigration Attorney Georgia | Green Cards & Family Petitions',
   description:
-    'U.S. citizens and permanent residents can sponsor family members for green cards. Attorney Bardi handles I-130 petitions, adjustment of status, and waiver filings.',
+    'Family-based green cards, I-130 petitions, naturalization, and adjustment of status in Georgia, Alabama, NC, and SC. Direct attorney representation from petition to approval.',
   alternates: {
     canonical: 'https://bardilaw.com/services/family-based-immigration',
     languages: {
@@ -17,116 +14,55 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Family-Based Immigration Attorney Georgia | Bardi Immigration Law',
-    description:
-      'I-130 petitions, adjustment of status, consular processing, and waivers for family immigration. Serving GA, AL, NC, and SC.',
+    description: 'I-130 petitions, green cards, adjustment of status, and naturalization. Serving GA, AL, NC, SC.',
     url: 'https://bardilaw.com/services/family-based-immigration',
   },
 };
 
-const CITIZEN_CAN_PETITION = [
-  'Your spouse',
-  'Your unmarried children under 21',
-  'Your parents',
-  'Your adult married or unmarried children',
-  'Your siblings',
-];
-
-const LPR_CAN_PETITION = [
-  'Your spouse',
-  'Your unmarried children',
-];
-
 export default function FamilyBasedPage() {
   return (
-    <>
-      <Header />
-      <main id="main-content">
-        <section className="bg-white py-16 lg:py-20">
-          <div className="max-w-site mx-auto px-5 lg:px-8 max-w-3xl">
-            <nav aria-label="Breadcrumb" className="text-sm text-charcoal/50 mb-6 font-sans">
-              <Link href="/" className="hover:text-navy">Home</Link>
-              <span className="mx-2">/</span>
-              <Link href="/services" className="hover:text-navy">Services</Link>
-              <span className="mx-2">/</span>
-              <span className="text-charcoal">Family-Based Immigration</span>
-            </nav>
-
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-navy mb-4">
-              Family-Based Immigration
-            </h1>
-            <p className="text-lg text-charcoal/80 mb-12">
-              U.S. citizens and permanent residents can petition to bring certain family members to
-              the United States. The process is complex — processing times, visa categories, and
-              eligibility rules vary significantly. We help you navigate it correctly from the start.
-            </p>
-
-            <div className="space-y-10">
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-4">Eligible Family Relationships</h2>
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="bg-warmgray rounded-lg p-5">
-                    <h3 className="font-semibold text-navy font-sans text-sm mb-3 uppercase tracking-wide">
-                      If you are a U.S. citizen, you can petition for:
-                    </h3>
-                    <ul className="space-y-2">
-                      {CITIZEN_CAN_PETITION.map((item) => (
-                        <li key={item} className="flex items-start gap-2 text-sm text-charcoal/80">
-                          <span className="text-gold mt-0.5" aria-hidden="true">✓</span>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="bg-warmgray rounded-lg p-5">
-                    <h3 className="font-semibold text-navy font-sans text-sm mb-3 uppercase tracking-wide">
-                      If you are a Lawful Permanent Resident, you can petition for:
-                    </h3>
-                    <ul className="space-y-2">
-                      {LPR_CAN_PETITION.map((item) => (
-                        <li key={item} className="flex items-start gap-2 text-sm text-charcoal/80">
-                          <span className="text-gold mt-0.5" aria-hidden="true">✓</span>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-sm text-charcoal/60 mt-3 font-sans">
-                  Processing times vary significantly by category and your family member&apos;s country of origin.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">When It Gets Complicated</h2>
-                <p className="text-charcoal/80">
-                  Family-based immigration isn&apos;t always straightforward. Your family member may have
-                  prior periods of unlawful presence, prior immigration violations, or a prior order
-                  of removal. These issues do not always bar immigration relief — but they require
-                  careful legal strategy and, often, a waiver filing alongside the primary petition.
-                </p>
-                <p className="text-charcoal/80 mt-3">
-                  Attorney Bardi identifies these issues early and builds a plan that accounts for them.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">What Attorney Bardi Does</h2>
-                <p className="text-charcoal/80">
-                  Attorney Bardi handles the complete family-based process: the I-130 petition,
-                  adjustment of status or consular processing, grounds of inadmissibility analysis,
-                  and waiver filings where needed. She manages the process from start to finish so
-                  that complications don&apos;t derail your case.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 pt-8 border-t border-warmgray-200">
-              <Button href="/contact" size="lg">Schedule a Family Immigration Consultation</Button>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+    <PracticeAreaLayout
+      breadcrumbLabel="Family-Based Immigration"
+      breadcrumbHref="/services/family-based-immigration"
+      title="Family-Based Immigration"
+      subhead="If you have a U.S. citizen or lawful permanent resident family member, you may have a path to a green card. We guide families through the full process — from the initial petition to lawful permanent residence and beyond."
+      qualifyHeading="Who May Be Sponsored"
+      qualifyBullets={[
+        'Spouses of U.S. citizens (immediate relative — no visa wait)',
+        'Unmarried children under 21 of U.S. citizens (immediate relative)',
+        'Parents of U.S. citizens (immediate relative)',
+        'Adult children of U.S. citizens (preference category)',
+        'Siblings of U.S. citizens (preference category — longer wait)',
+        'Spouses and children of lawful permanent residents (preference category)',
+      ]}
+      qualifyDisclaimer="This overview is for informational purposes only. Priority dates and processing times vary by category and country of birth. We assess current wait times at your consultation."
+      processSteps={[
+        { title: 'File Form I-130 (Petition for Alien Relative)', body: 'The sponsoring family member files a petition establishing the qualifying relationship. USCIS reviews and approves the petition.' },
+        { title: 'Wait for visa availability (if applicable)', body: 'Immediate relatives of U.S. citizens do not wait for a visa number. Other family preference categories must wait until a visa number becomes available based on priority date and country of birth.' },
+        { title: 'Adjustment of status or consular processing', body: 'If the beneficiary is in the U.S., they may file for adjustment of status (I-485). If abroad, the case proceeds through a U.S. consulate via the National Visa Center.' },
+        { title: 'Medical examination and biometrics', body: 'USCIS or the consulate requires a medical examination by an approved civil surgeon, plus biometrics for identity verification.' },
+        { title: 'Interview and green card issued', body: 'Most green card cases require an interview at USCIS or the consulate. If approved, the green card is issued — typically a 2-year conditional card for recent marriages, then a 10-year card.' },
+      ]}
+      helpsParagraph="Family-based immigration cases require precise paperwork and careful timing. Attorney Bardi manages every step — preparing complete and accurate petition packages, tracking priority dates, preparing you for your interview, and ensuring nothing falls through the cracks."
+      helpsItems={[
+        'I-130 petition preparation and filing',
+        'Adjustment of status (I-485) packages',
+        'Consular processing and NVC coordination',
+        'Interview preparation and accompaniment where permitted',
+        'Conditional green card removal of conditions (I-751)',
+        'Naturalization (N-400) when eligible',
+      ]}
+      faqs={[
+        { q: 'How long does the family-based green card process take?', a: 'Immediate relatives of U.S. citizens (spouses, children under 21, parents) have no wait for a visa number — cases typically take 12–24 months from filing. Other family categories can wait years depending on the category and country of birth. We provide current estimates at consultation.' },
+        { q: 'My spouse is in the U.S. without status. Can they still get a green card?', a: 'In many cases, yes — spouses of U.S. citizens may be eligible for adjustment of status regardless of how they entered. However, there are exceptions and potential bars. We review your specific situation carefully before advising.' },
+        { q: 'What is a conditional green card?', a: 'If a couple has been married for less than 2 years when the green card is approved, the beneficiary receives a 2-year conditional green card. Before it expires, the couple must file a joint petition (I-751) to remove the conditions and receive a full 10-year card.' },
+        { q: 'When can I apply for citizenship?', a: 'Most green card holders can apply for naturalization after 5 years of permanent residence. Spouses of U.S. citizens may qualify after 3 years. We advise on eligibility at your consultation.' },
+      ]}
+      relatedAreas={[
+        { href: '/services/waivers', label: 'Waivers', desc: 'I-601, I-212 & Other Waivers' },
+        { href: '/services/vawa', label: 'VAWA', desc: 'Violence Against Women Act Petitions' },
+        { href: '/services/removal-defense', label: 'Removal Defense', desc: 'Defense in Removal Proceedings' },
+      ]}
+    />
   );
 }

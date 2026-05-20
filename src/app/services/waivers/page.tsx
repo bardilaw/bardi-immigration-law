@@ -1,13 +1,10 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
-import { Button } from '@/components/Button';
+import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
   title: 'Immigration Waivers Attorney Georgia | I-601, I-212, I-929',
   description:
-    'I-601 (unlawful presence), I-212 (prior removal), and I-929 (VAWA derivative) waivers. Attorney Bardi builds the full legal and factual record for extreme hardship cases.',
+    'Immigration waivers for unlawful presence, prior removal, and derivative waivers. Attorney Bardi builds the strongest possible waiver application for your case.',
   alternates: {
     canonical: 'https://bardilaw.com/services/waivers',
     languages: {
@@ -17,106 +14,54 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Immigration Waivers Attorney Georgia | Bardi Immigration Law',
-    description:
-      'I-601, I-212, and I-929 waivers. Extreme hardship standard. Attorney Bardi builds the full legal and factual record. Serving GA, AL, NC, and SC.',
+    description: 'I-601, I-212, and I-929 waiver preparation. Serving GA, AL, NC, SC.',
     url: 'https://bardilaw.com/services/waivers',
   },
 };
 
-const WAIVERS = [
-  {
-    code: 'I-601',
-    label: 'Unlawful Presence Waiver',
-    desc: 'For individuals subject to the 3-year or 10-year bar due to prior unlawful presence in the U.S.',
-  },
-  {
-    code: 'I-212',
-    label: 'Prior Removal Waiver',
-    desc: 'For individuals who have a prior removal or deportation order and are seeking to return.',
-  },
-  {
-    code: 'I-929',
-    label: 'VAWA-Derivative Waiver',
-    desc: 'For qualifying relatives of approved VAWA self-petitioners seeking waivers of inadmissibility.',
-  },
-];
-
 export default function WaiversPage() {
   return (
-    <>
-      <Header />
-      <main id="main-content">
-        <section className="bg-white py-16 lg:py-20">
-          <div className="max-w-site mx-auto px-5 lg:px-8 max-w-3xl">
-            <nav aria-label="Breadcrumb" className="text-sm text-charcoal/50 mb-6 font-sans">
-              <Link href="/" className="hover:text-navy">Home</Link>
-              <span className="mx-2">/</span>
-              <Link href="/services" className="hover:text-navy">Services</Link>
-              <span className="mx-2">/</span>
-              <span className="text-charcoal">Waivers</span>
-            </nav>
-
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-navy mb-4">
-              Immigration Waivers (I-601, I-212, I-929)
-            </h1>
-            <p className="text-lg text-charcoal/80 mb-12">
-              Certain immigration bars can be waived — but only with a strong, well-documented
-              showing. If you&apos;ve been told you are inadmissible, a waiver may be the path forward.
-            </p>
-
-            <div className="space-y-10">
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-4">When You Need a Waiver</h2>
-                <p className="text-charcoal/80 mb-6">
-                  Some individuals are inadmissible to the United States — meaning they cannot receive
-                  a visa or green card — due to prior unlawful presence, a prior removal, or other
-                  grounds. In many cases, these bars can be waived if the applicant qualifies and
-                  presents compelling evidence of hardship to a qualifying U.S. citizen or permanent
-                  resident family member.
-                </p>
-                <div className="space-y-3">
-                  {WAIVERS.map((w) => (
-                    <div key={w.code} className="bg-warmgray rounded-lg p-5 flex gap-4">
-                      <span className="font-serif text-lg font-bold text-gold min-w-[60px]">{w.code}</span>
-                      <div>
-                        <p className="font-semibold text-navy font-sans text-sm mb-1">{w.label}</p>
-                        <p className="text-charcoal/70 text-sm">{w.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">What Waivers Require</h2>
-                <p className="text-charcoal/80">
-                  Waiver cases turn on whether the denial of the waiver would cause &quot;extreme hardship&quot;
-                  to a qualifying U.S. citizen or permanent resident family member. This is a high
-                  bar — ordinary hardship doesn&apos;t meet it. Attorney Bardi builds the full legal and
-                  factual record: evidence of financial, medical, educational, and emotional hardship
-                  to your qualifying relative, combined with a legal brief that frames the evidence
-                  in the way USCIS adjudicators are trained to evaluate.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">What Attorney Bardi Does</h2>
-                <p className="text-charcoal/80">
-                  Attorney Bardi evaluates your eligibility, identifies your qualifying relative, and
-                  builds the evidence package that gives your waiver petition the best possible
-                  chance. She has experience preparing these complex filings and understanding what
-                  moves adjudicators.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 pt-8 border-t border-warmgray-200">
-              <Button href="/contact" size="lg">Schedule a Waiver Consultation</Button>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+    <PracticeAreaLayout
+      breadcrumbLabel="Waivers"
+      breadcrumbHref="/services/waivers"
+      title="Immigration Waivers"
+      subhead="A waiver asks the government to forgive a ground of inadmissibility that would otherwise bar you from obtaining a visa or green card. Whether the bar is unlawful presence, a prior removal, or something else — a well-built waiver application is your path forward."
+      qualifyHeading="Common Waivers We Handle"
+      qualifyBullets={[
+        'I-601 (Unlawful Presence Waiver) — for individuals who accrued unlawful presence and are seeking a visa or green card',
+        'I-601A (Provisional Unlawful Presence Waiver) — allows eligible individuals to apply for a waiver before departing the U.S.',
+        'I-212 (Permission to Reapply After Removal) — for individuals who were previously removed or deported',
+        'I-929 (Derivative Waiver) — for qualifying family members of U-Visa holders',
+        'Other inadmissibility waivers based on specific grounds',
+      ]}
+      qualifyDisclaimer="Waiver eligibility and strategy depend heavily on the specific ground of inadmissibility and the facts of your case. Attorney Bardi reviews your full history before advising on waiver options."
+      processSteps={[
+        { title: 'Full case evaluation', body: 'We review your immigration history, grounds of inadmissibility, and qualifying relatives to determine which waiver(s) apply and the strength of your case.' },
+        { title: 'Gather extreme hardship evidence', body: 'Most waivers require showing "extreme hardship" to a qualifying U.S. citizen or LPR family member. We help you build the strongest possible hardship case — financial, medical, emotional, and country-conditions evidence.' },
+        { title: 'Draft the waiver package', body: 'A thorough waiver package includes a legal brief, personal statements, supporting declarations, and documentary evidence. We prepare every component.' },
+        { title: 'File with USCIS or at consulate', body: 'Depending on the waiver type, filing may occur with USCIS stateside, at a consular post, or in advance of a consular interview.' },
+        { title: 'Decision and next steps', body: 'If approved, you proceed with the underlying immigration benefit. If denied, we assess appeal and reconsideration options.' },
+      ]}
+      helpsParagraph="Waivers live or die on the quality of the hardship evidence and the legal brief. Attorney Bardi has built waiver packages for complex cases — including those with multiple grounds of inadmissibility and lengthy unlawful presence. We leave nothing on the table."
+      helpsItems={[
+        'Full inadmissibility analysis and strategy',
+        'Extreme hardship evidence gathering and framing',
+        'Legal brief and personal statement drafting',
+        'Supporting declaration coordination',
+        'Filing and USCIS/consular coordination',
+        'Response to requests for evidence or additional materials',
+      ]}
+      faqs={[
+        { q: 'What is "extreme hardship" and how do I prove it?', a: '"Extreme hardship" means hardship beyond what is normally expected from a family member\'s removal or departure. It must be shown to a qualifying U.S. citizen or LPR relative. Evidence can include financial dependence, medical conditions, country-conditions reports, children\'s needs, and more. A strong hardship case is built — not found.' },
+        { q: 'How long does a waiver take?', a: 'I-601A provisional waivers typically take 6–12 months to adjudicate. Other waivers vary. We provide current estimates at your consultation.' },
+        { q: 'What if my waiver is denied?', a: 'Waiver denials can often be appealed or refiled with stronger evidence. We assess the denial notice, identify the reason, and advise on the best path forward.' },
+        { q: 'Can I stay in the U.S. while the waiver is pending?', a: 'It depends on the waiver type. I-601A provisional waivers are designed to allow applicants to remain in the U.S. until the waiver is approved before departing for a consular interview. We structure the process to minimize your time outside the country.' },
+      ]}
+      relatedAreas={[
+        { href: '/services/family-based-immigration', label: 'Family-Based', desc: 'Family Petitions & Green Cards' },
+        { href: '/services/removal-defense', label: 'Removal Defense', desc: 'Defense in Removal Proceedings' },
+        { href: '/services/federal-litigation', label: 'Federal Litigation', desc: 'Federal Court Immigration Cases' },
+      ]}
+    />
   );
 }

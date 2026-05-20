@@ -36,6 +36,21 @@ export const metadata: Metadata = {
     description:
       'Boutique immigration practice. Direct attorney access. AILA Georgia-Alabama Chapter Chair 2025–26. Serving GA, AL, NC, and SC.',
     url: 'https://bardilaw.com/about',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Bardi Immigration Law | AILA Georgia-Alabama Chapter Chair',
+    description:
+      'Boutique immigration practice. Direct attorney access. AILA Georgia-Alabama Chapter Chair 2025–26. Serving GA, AL, NC, and SC.',
+    images: ['/og-image.png'],
   },
 };
 

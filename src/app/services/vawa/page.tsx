@@ -16,6 +16,20 @@ export const metadata: Metadata = {
     title: 'VAWA Attorney Georgia | Bardi Immigration Law',
     description: 'VAWA self-petitions for abuse survivors. USCIS does not notify the abuser. Serving GA, AL, NC, SC.',
     url: 'https://bardilaw.com/services/vawa',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'VAWA Attorney Georgia | Bardi Immigration Law',
+    description: 'VAWA self-petitions for abuse survivors. USCIS does not notify the abuser. Serving GA, AL, NC, SC.',
+    images: ['/og-image.png'],
   },
 };
 

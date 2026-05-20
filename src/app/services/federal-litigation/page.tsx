@@ -16,6 +16,20 @@ export const metadata: Metadata = {
     title: 'Federal Immigration Litigation | Bardi Immigration Law Georgia',
     description: 'Federal court immigration cases: habeas corpus, mandamus, APA. When the administrative process fails you, we take it to court.',
     url: 'https://bardilaw.com/services/federal-litigation',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Federal Immigration Litigation | Bardi Immigration Law Georgia',
+    description: 'Federal court immigration cases: habeas corpus, mandamus, APA. When the administrative process fails you, we take it to court.',
+    images: ['/og-image.png'],
   },
 };
 

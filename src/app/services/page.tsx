@@ -20,6 +20,21 @@ export const metadata: Metadata = {
     description:
       'Benefits-based immigration, removal defense, and federal litigation — handled directly by the attorney from day one.',
     url: 'https://bardilaw.com/services',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Immigration Legal Services | Bardi Immigration Law',
+    description:
+      'Benefits-based immigration, removal defense, and federal litigation — handled directly by the attorney from day one.',
+    images: ['/og-image.png'],
   },
 };
 

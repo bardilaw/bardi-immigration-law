@@ -16,6 +16,20 @@ export const metadata: Metadata = {
     title: 'U-Visa Attorney Georgia | Bardi Immigration Law',
     description: 'U-Visa petitions for crime victims. Serving Georgia, Alabama, NC, and SC.',
     url: 'https://bardilaw.com/services/u-visa',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'U-Visa Attorney Georgia | Bardi Immigration Law',
+    description: 'U-Visa petitions for crime victims. Serving Georgia, Alabama, NC, and SC.',
+    images: ['/og-image.png'],
   },
 };
 

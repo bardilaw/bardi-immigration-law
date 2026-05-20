@@ -16,6 +16,20 @@ export const metadata: Metadata = {
     title: 'TPS Attorney Georgia | Bardi Immigration Law',
     description: 'TPS registration, re-registration, and work authorization for designated countries. Serving GA, AL, NC, SC.',
     url: 'https://bardilaw.com/services/tps',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'TPS Attorney Georgia | Bardi Immigration Law',
+    description: 'TPS registration, re-registration, and work authorization for designated countries. Serving GA, AL, NC, SC.',
+    images: ['/og-image.png'],
   },
 };
 

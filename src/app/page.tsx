@@ -21,6 +21,21 @@ export const metadata: Metadata = {
     description:
       'Boutique immigration law firm serving Georgia, Alabama, North Carolina, and South Carolina. Your first call is with the attorney — not an intake specialist.',
     url: 'https://bardilaw.com/',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bardi Immigration Law | Georgia Immigration Attorney',
+    description:
+      'Boutique immigration law firm serving Georgia, Alabama, North Carolina, and South Carolina. Your first call is with the attorney — not an intake specialist.',
+    images: ['/og-image.png'],
   },
 };
 

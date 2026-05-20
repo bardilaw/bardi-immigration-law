@@ -21,6 +21,20 @@ export const metadata: Metadata = {
     description:
       'DACA initial applications and renewals. Direct attorney review. Serving Georgia, Alabama, NC, and SC.',
     url: 'https://bardilaw.com/services/daca',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'DACA Attorney Georgia | Bardi Immigration Law',
+    description: 'DACA initial applications and renewals. Direct attorney review. Serving Georgia, Alabama, NC, and SC.',
+    images: ['/og-image.png'],
   },
 };
 

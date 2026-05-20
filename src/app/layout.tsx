@@ -27,6 +27,21 @@ export const metadata: Metadata = {
     siteName: 'Bardi Immigration Law',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bardi Immigration Law | Georgia Immigration Attorney',
+    description:
+      'Boutique immigration law firm serving Georgia, Alabama, North Carolina, and South Carolina. AILA Chapter Chair 2025–26. Direct attorney access.',
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,

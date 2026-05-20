@@ -19,6 +19,21 @@ export const metadata: Metadata = {
     description:
       'Schedule your consultation directly with the attorney. Serving GA, NC, SC, and AL.',
     url: 'https://bardilaw.com/contact',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Bardi Immigration Law | Schedule a Consultation',
+    description:
+      'Schedule your consultation directly with the attorney. Serving GA, NC, SC, and AL.',
+    images: ['/og-image.png'],
   },
 };
 

@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+      },
+    ],
     title: 'Abogada Perdones Migratorios Georgia | Bardi Immigration Law',
     description: 'Perdones I-601, I-212 e I-929. GA, AL, NC, SC.',
     url: 'https://bardilaw.com/es/services/waivers',

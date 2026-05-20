@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+      },
+    ],
     title: 'Abogada TPS Georgia | Bardi Immigration Law',
     description: 'Registro, re-registro de TPS y autorización de empleo para países designados. GA, AL, NC, SC.',
     url: 'https://bardilaw.com/es/services/tps',

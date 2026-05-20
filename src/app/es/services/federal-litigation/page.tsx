@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+      },
+    ],
     title: 'Litigios Federales de Inmigración Georgia | Bardi Immigration Law',
     description: 'Casos federales de inmigración: habeas corpus, mandamus, APA. Cuando el proceso administrativo falla, vamos a la corte.',
     url: 'https://bardilaw.com/es/services/federal-litigation',

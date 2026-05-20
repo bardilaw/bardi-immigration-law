@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+      },
+    ],
     title: 'Defensa contra la Deportación Georgia | Bardi Immigration Law',
     description: 'Defensa completa contra la deportación — detenidos y no detenidos. Audiencias de fianza y representación completa. GA, AL, NC, SC.',
     url: 'https://bardilaw.com/es/services/removal-defense',

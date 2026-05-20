@@ -15,6 +15,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+      },
+    ],
     title: 'Contacto | Bardi Immigration Law',
     description:
       'Programe su consulta directamente con la abogada. Sirviendo a GA, NC, SC y AL.',

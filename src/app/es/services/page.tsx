@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+      },
+    ],
     title: 'Servicios de Inmigración | Bardi Immigration Law',
     description:
       'Inmigración por beneficios, defensa contra la deportación y litigios federales — atendidos directamente por la abogada desde el primer día.',

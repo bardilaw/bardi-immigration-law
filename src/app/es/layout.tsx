@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   },
   description:
     'Bufete boutique de inmigración que sirve a familias e individuos en Georgia, Alabama, Carolina del Norte y Carolina del Sur. Presidenta del Capítulo AILA Georgia-Alabama 2025–26. Acceso directo a su abogada.',
+  openGraph: {
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+      },
+    ],
+  },
 };
 
 export default function EsLayout({ children }: { children: React.ReactNode }) {

@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+      },
+    ],
     title: 'Abogada VAWA Georgia | Bardi Immigration Law',
     description: 'Autopeticiones VAWA para sobrevivientes de abuso. USCIS no notifica al abusador. GA, AL, NC, SC.',
     url: 'https://bardilaw.com/es/services/vawa',

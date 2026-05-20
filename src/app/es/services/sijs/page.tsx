@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+      },
+    ],
     title: 'Abogada SIJS Georgia | Bardi Immigration Law',
     description: 'Representación SIJS especializada y sensible. Procesos estatales + federales. GA, AL, NC, SC.',
     url: 'https://bardilaw.com/es/services/sijs',

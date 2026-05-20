@@ -15,6 +15,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+      },
+    ],
     title: 'Sobre Bardi Immigration Law | AILA Presidenta del Capítulo Georgia-Alabama',
     description:
       'Práctica boutique. Acceso directo a su abogada. AILA Georgia-Alabama Chapter Chair 2025–26. Sirviendo a GA, AL, NC y SC.',

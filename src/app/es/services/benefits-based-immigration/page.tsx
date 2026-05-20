@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+      },
+    ],
     title: 'Inmigración por Beneficios | Bardi Immigration Law',
     description:
       'Tarjetas de residencia permanente, DACA, naturalización, visa U, VAWA, peticiones familiares, TPS y renuncias. Sirviendo a Georgia, Alabama, NC y SC.',

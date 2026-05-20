@@ -265,7 +265,7 @@ export default function HomePageES() {
               <p className="font-serif text-3xl font-bold text-navy">Conozca a la Abogada</p>
               <span className="block w-10 h-0.5 bg-gold mt-3 mb-5" aria-hidden="true" />
               <p className="font-serif text-[22px] text-charcoal">
-                [Nombre Completo de la Abogada]
+                Eszter Bardi
               </p>
               <p className="font-sans text-base text-charcoal leading-[1.65] mt-3">
                 En Bardi Immigration Law, usted trabaja directamente con su abogada — desde la consulta hasta el resultado. Sin especialistas de admisión. Sin transferencias de caso. Solo representación boutique real.

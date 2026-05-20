@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const CREDENTIALS = [
   {
     category: 'Admisiones al Colegio de Abogados',
-    items: ['Colegio de Abogados de Georgia — Miembro en buena reputación'],
+    items: ['Colegio de Abogados de Georgia — Miembro en buena reputación', 'Colegio de Abogados de Alabama — Miembro en buena reputación'],
   },
   {
     category: 'Liderazgo',
@@ -103,7 +103,7 @@ export default function AboutPageES() {
             <div className="max-w-[720px] mx-auto">
               <div className="pl-5 border-l-[3px] border-gold mb-8">
                 <p className="font-serif text-[28px] font-bold text-navy leading-snug">
-                  [Nombre Completo de la Abogada]
+                  Eszter Bardi
                 </p>
                 <p className="font-sans text-base italic text-charcoal mt-1">
                   Abogada de Inmigración, Bardi Immigration Law

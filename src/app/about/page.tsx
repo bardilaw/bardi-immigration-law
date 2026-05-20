@@ -8,7 +8,7 @@ import { JsonLd } from '@/components/JsonLd';
 const ATTORNEY_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Attorney',
-  name: 'PENDING — attorney full name',
+  name: 'Eszter Bardi',
   worksFor: { '@id': 'https://bardilaw.com/#firm' },
   memberOf: {
     '@type': 'Organization',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 const CREDENTIALS = [
   {
     category: 'Bar Admissions',
-    items: ['State Bar of Georgia — Member in good standing'],
+    items: ['State Bar of Georgia — Member in good standing', 'State Bar of Alabama — Member in good standing'],
   },
   {
     category: 'Leadership',
@@ -122,7 +122,7 @@ export default function AboutPage() {
               {/* Name block with gold left border */}
               <div className="pl-5 border-l-[3px] border-gold mb-8">
                 <p className="font-serif text-[28px] font-bold text-navy leading-snug">
-                  [Attorney Full Name]
+                  Eszter Bardi
                 </p>
                 <p className="font-sans text-base italic text-charcoal mt-1">
                   Immigration Attorney, Bardi Immigration Law

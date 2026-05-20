@@ -286,7 +286,7 @@ export default function HomePage() {
               <p className="font-serif text-3xl font-bold text-navy">Meet the Attorney</p>
               <span className="block w-10 h-0.5 bg-gold mt-3 mb-5" aria-hidden="true" />
               <p className="font-serif text-[22px] text-charcoal">
-                [Attorney Full Name]
+                Eszter Bardi
               </p>
               <p className="font-sans text-base text-charcoal leading-[1.65] mt-3">
                 At Bardi Immigration Law, you work directly with your attorney — from consultation to outcome. No intake specialists. No case handoffs. Just real, boutique representation.

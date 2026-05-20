@@ -1,0 +1,51 @@
+===============================================================
+BARDI IMMIGRATION LAW — EMAIL SIGNATURE (PLAIN TEXT FALLBACK)
+Version: 1.0 | Date: 2026-05-19 | Issue: BAR-45
+===============================================================
+
+ENGLISH VERSION
+---------------
+
+Eszter Bardi
+Attorney at Law | Bardi Immigration Law
+
+E: info@bardilaw.com
+P: [PHONE — CONFIRM WITH BOARD]
+W: bardilaw.com
+
+Instagram | Facebook
+
+CONFIDENTIALITY NOTICE: This email and any attachments are confidential
+and may be protected by attorney-client privilege. If you received this
+message in error, please notify the sender immediately and delete it
+without forwarding or retaining any copies.
+
+---------------------------------------------------------------
+
+SPANISH VERSION / VERSIÓN EN ESPAÑOL
+--------------------------------------
+
+Eszter Bardi
+Abogada de Inmigración | Bardi Immigration Law
+
+C: info@bardilaw.com
+T: [TELÉFONO — CONFIRMAR CON LA JUNTA]
+W: bardilaw.com
+
+Instagram | Facebook
+
+AVISO DE CONFIDENCIALIDAD: Este correo electrónico y sus archivos adjuntos
+son confidenciales y pueden estar protegidos por el privilegio
+abogado-cliente. Si recibió este mensaje por error, notifique al remitente
+de inmediato y elimínelo sin reenviarlo ni conservar ninguna copia.
+
+===============================================================
+PENDING BEFORE DEPLOYMENT
+===============================================================
+1. Attorney name spelling confirmed by board?          [ ] YES
+2. Phone number provided by board?                     [ ] YES
+3. Instagram handle confirmed?                         [ ] YES
+4. Facebook handle confirmed?                          [ ] YES
+5. bardilaw.com live (for website link to resolve)?    [ ] YES
+6. Logo hosted at bardilaw.com (for HTML logo version)?[ ] YES
+===============================================================

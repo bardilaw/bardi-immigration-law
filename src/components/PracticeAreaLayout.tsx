@@ -18,6 +18,7 @@ export interface RelatedArea {
   href: string;
   label: string;
   desc: string;
+  learnMore?: string;
 }
 
 export interface PracticeAreaProps {
@@ -27,15 +28,23 @@ export interface PracticeAreaProps {
   qualifyBullets: string[];
   qualifyDisclaimer?: string;
   processSteps: ProcessStep[];
+  processHeading?: string;
   helpsHeading?: string;
   helpsParagraph: string;
   helpsItems: string[];
+  faqHeading?: string;
   faqs: FaqItem[];
+  relatedHeading?: string;
   relatedAreas: RelatedArea[];
   ctaHeading?: string;
   ctaSubtext?: string;
+  ctaButtonLabel?: string;
   breadcrumbLabel: string;
   breadcrumbHref: string;
+  homeHref?: string;
+  servicesHref?: string;
+  servicesLabel?: string;
+  contactHref?: string;
 }
 
 function GoldRule() {
@@ -64,14 +73,22 @@ export function PracticeAreaLayout({
   qualifyBullets,
   qualifyDisclaimer,
   processSteps,
+  processHeading = 'How the Process Works',
   helpsHeading = 'How Bardi Immigration Law Helps',
   helpsParagraph,
   helpsItems,
+  faqHeading = 'Frequently Asked Questions',
   faqs,
+  relatedHeading = 'Related Practice Areas',
   relatedAreas,
   ctaHeading = 'Start with a Consultation',
   ctaSubtext = "We'll help you understand your options and build the strongest possible case.",
+  ctaButtonLabel = 'Schedule a Consultation',
   breadcrumbLabel,
+  homeHref = '/',
+  servicesHref = '/services',
+  servicesLabel = 'Services',
+  contactHref = '/contact',
 }: PracticeAreaProps) {
   return (
     <>
@@ -82,9 +99,9 @@ export function PracticeAreaLayout({
         <section className="bg-warmgray pt-20 pb-14 lg:pt-28 lg:pb-16">
           <div className="max-w-site mx-auto px-5 lg:px-16">
             <nav aria-label="Breadcrumb" className="text-[13px] text-charcoal/60 mb-6 font-sans">
-              <Link href="/" className="hover:text-navy transition-colors">Home</Link>
+              <Link href={homeHref} className="hover:text-navy transition-colors">Home</Link>
               <span className="mx-2" aria-hidden="true">&rsaquo;</span>
-              <Link href="/services" className="hover:text-navy transition-colors">Services</Link>
+              <Link href={servicesHref} className="hover:text-navy transition-colors">{servicesLabel}</Link>
               <span className="mx-2" aria-hidden="true">&rsaquo;</span>
               <span className="text-navy">{breadcrumbLabel}</span>
             </nav>
@@ -124,7 +141,7 @@ export function PracticeAreaLayout({
         <section className="bg-warmgray py-16 lg:py-20">
           <div className="max-w-site mx-auto px-5 lg:px-16">
             <div className="max-w-[680px] mx-auto">
-              <h2 className="font-serif text-[28px] font-bold text-navy">How the Process Works</h2>
+              <h2 className="font-serif text-[28px] font-bold text-navy">{processHeading}</h2>
               <GoldRule />
               <div className="relative">
                 <div
@@ -174,7 +191,7 @@ export function PracticeAreaLayout({
         <section className="bg-warmgray py-16 lg:py-20">
           <div className="max-w-site mx-auto px-5 lg:px-16">
             <div className="max-w-[760px] mx-auto">
-              <h2 className="font-serif text-[28px] font-bold text-navy">Frequently Asked Questions</h2>
+              <h2 className="font-serif text-[28px] font-bold text-navy">{faqHeading}</h2>
               <GoldRule />
               <FaqAccordion items={faqs} />
             </div>
@@ -185,7 +202,7 @@ export function PracticeAreaLayout({
         {relatedAreas.length > 0 && (
           <section className="bg-white py-14 lg:py-16">
             <div className="max-w-site mx-auto px-5 lg:px-16">
-              <h2 className="font-serif text-2xl font-bold text-navy mb-7">Related Practice Areas</h2>
+              <h2 className="font-serif text-2xl font-bold text-navy mb-7">{relatedHeading}</h2>
               <div className="flex flex-col sm:flex-row gap-6">
                 {relatedAreas.map((area) => (
                   <Link
@@ -195,7 +212,7 @@ export function PracticeAreaLayout({
                   >
                     <p className="font-sans font-semibold text-[15px] text-navy mt-2">{area.label}</p>
                     <p className="font-sans text-sm text-charcoal/70 mt-1">{area.desc}</p>
-                    <p className="font-sans font-semibold text-[13px] text-gold mt-1.5">Learn more &rarr;</p>
+                    <p className="font-sans font-semibold text-[13px] text-gold mt-1.5">{area.learnMore ?? 'Learn more'} &rarr;</p>
                   </Link>
                 ))}
               </div>
@@ -213,8 +230,8 @@ export function PracticeAreaLayout({
               <p className="font-sans text-base text-white/80 mt-3">{ctaSubtext}</p>
             )}
             <div className="mt-8">
-              <Button href="/contact" variant="primary" size="lg">
-                Schedule a Consultation
+              <Button href={contactHref} variant="primary" size="lg">
+                {ctaButtonLabel}
               </Button>
             </div>
           </div>

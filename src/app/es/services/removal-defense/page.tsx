@@ -1,13 +1,10 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
-import { Button } from '@/components/Button';
+import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Abogada de Defensa contra la Deportación en Georgia',
+  title: 'Abogada Defensa contra la Deportación Georgia | Defensa en Procesos de Remoción',
   description:
-    '¿Enfrenta la deportación? Bardi Immigration Law maneja la defensa en toda Georgia, NC, SC y AL. Representación directa de la abogada desde el primer día. El tiempo importa — contáctenos ahora.',
+    'Enfrentando deportación o procesos de remoción? Bardi Immigration Law proporciona defensa completa — detenidos y no detenidos — en Georgia, Alabama, NC y SC.',
   alternates: {
     canonical: 'https://bardilaw.com/es/services/removal-defense',
     languages: {
@@ -16,86 +13,69 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Defensa contra la Deportación | Bardi Immigration Law',
-    description:
-      '¿Enfrenta la deportación? Representación directa de la abogada. Sirviendo a Georgia, Carolina del Norte, Carolina del Sur y Alabama.',
+    title: 'Defensa contra la Deportación Georgia | Bardi Immigration Law',
+    description: 'Defensa completa contra la deportación — detenidos y no detenidos. Audiencias de fianza y representación completa. GA, AL, NC, SC.',
     url: 'https://bardilaw.com/es/services/removal-defense',
     locale: 'es_US',
   },
 };
 
-const SERVICES_LIST = [
-  { label: 'Defensa en Deportación con Detención', desc: 'Representación completa para clientes en detención migratoria' },
-  { label: 'Defensa en Deportación sin Detención', desc: 'Representación para clientes en proceso de deportación que no están detenidos' },
-  { label: 'Audiencias de Fianza', desc: 'Abogacía para la liberación de la detención mientras avanza su caso' },
-  { label: 'Cancelación de la Deportación', desc: '42B (no-LPR) y 42A (LPR)' },
-  { label: 'Audiencias de Calendario Maestro', desc: 'Presentación de alegatos y programación del caso' },
-  { label: 'Audiencias Individuales (del Fondo)', desc: 'Defensa completa ante un juez de inmigración' },
-  { label: 'Apelaciones ante la BIA', desc: 'Apelaciones ante la Junta de Apelaciones de Inmigración' },
-];
-
 export default function RemovalDefensePageES() {
   return (
-    <>
-      <Header />
-      <main id="main-content">
-        <section className="bg-white py-16 lg:py-20">
-          <div className="max-w-site mx-auto px-5 lg:px-8">
-            <nav aria-label="Ruta de navegación" className="text-sm text-charcoal/50 mb-6 font-sans">
-              <Link href="/es" className="hover:text-navy">Inicio</Link>
-              <span className="mx-2">/</span>
-              <Link href="/es/services" className="hover:text-navy">Servicios</Link>
-              <span className="mx-2">/</span>
-              <span className="text-charcoal">Defensa contra la Deportación</span>
-            </nav>
-
-            <div className="bg-gold/10 border border-gold rounded-lg px-5 py-3 mb-8 flex items-center gap-3">
-              <span className="text-gold font-bold text-lg" aria-hidden="true">!</span>
-              <p className="text-navy font-sans text-sm font-semibold">
-                Si usted o un familiar enfrenta un proceso de deportación o detención — contáctenos
-                de inmediato. El tiempo importa.
-              </p>
-            </div>
-
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-navy mb-6">
-              Cuando el Riesgo es Mayor, Estamos Presentes.
-            </h1>
-            <p className="text-lg text-charcoal/80 max-w-2xl mb-12">
-              Una notificación de la corte de inmigración no es el fin de su historia — es el
-              comienzo de una lucha. Representamos a clientes en procesos de deportación detenidos
-              y no detenidos, y tratamos cada caso con la urgencia y atención que requiere. Si usted
-              o un ser querido enfrenta la deportación, el tiempo es crucial. Contáctenos hoy.
-            </p>
-
-            <h2 className="font-serif text-2xl font-bold text-navy mb-6">Servicios en Defensa contra la Deportación:</h2>
-            <div className="grid sm:grid-cols-2 gap-4 mb-12">
-              {SERVICES_LIST.map((s) => (
-                <div key={s.label} className="flex gap-3 bg-warmgray rounded-lg p-4">
-                  <span className="text-gold font-bold mt-0.5" aria-hidden="true">✓</span>
-                  <div>
-                    <p className="font-semibold text-navy font-sans text-sm">{s.label}</p>
-                    <p className="text-charcoal/70 text-sm">{s.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="bg-warmgray rounded-lg p-6 mb-8 border-l-4 border-gold">
-              <h3 className="font-serif text-lg font-bold text-navy mb-2">Para quién es</h3>
-              <p className="text-charcoal/80">
-                Cualquier persona en proceso de deportación — detenida o no. Si ha recibido un Aviso
-                de Comparecencia (NTA) o está en riesgo de deportación, no espere.
-              </p>
-            </div>
-
-            <Button href="/es/contact" size="lg">Contáctenos Inmediatamente</Button>
-            <p className="text-sm text-charcoal/60 mt-3 font-sans">
-              Si usted o un familiar está detenido, llámenos directamente. Los casos de deportación avanzan rápidamente.
-            </p>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+    <PracticeAreaLayout
+      homeHref="/es"
+      servicesHref="/es/services"
+      servicesLabel="Servicios"
+      contactHref="/es/contact"
+      breadcrumbLabel="Defensa contra la Deportación"
+      breadcrumbHref="/es/services/removal-defense"
+      title="Defensa contra la Deportación"
+      subhead="Si ha recibido un Aviso de Comparecencia (NTA) o está en detención migratoria, necesita un abogado de inmediato. Brindamos representación completa en procesos de deportación — para clientes detenidos y no detenidos."
+      qualifyHeading="Cuándo Necesita Defensa contra la Deportación"
+      qualifyBullets={[
+        'Ha recibido un Aviso de Comparecencia (NTA) para la corte de inmigración',
+        'Actualmente está en detención migratoria',
+        'Ha sido ordenado deportado en ausencia (sin comparecer en la corte)',
+        'Enfrenta remoción reinstaurada basada en una orden previa',
+        'ICE ha emitido una detención o está intentando arrestarle o deportarle',
+        'Tiene una orden final de remoción y necesita explorar opciones',
+      ]}
+      qualifyDisclaimer="Los procesos de deportación avanzan rápidamente. Si ha recibido algún aviso de corte de inmigración o fue detenido, contáctenos de inmediato."
+      processHeading="Cómo Funciona el Proceso"
+      processSteps={[
+        { title: 'Consulta de emergencia', body: 'Evaluamos su situación de inmediato — incluyendo si está detenido, su fecha de corte y los motivos de deportación. El tiempo es crítico.' },
+        { title: 'Audiencia de fianza (si está detenido)', body: 'Si está en detención, solicitamos una audiencia de fianza para pedir su liberación. Argumentamos por la fianza más baja posible basada en sus vínculos con la comunidad.' },
+        { title: 'Audiencia maestra de calendario', body: 'Esta es una comparecencia inicial ante el juez de inmigración. Le representamos, entramos alegatos y programamos el caso para una audiencia completa.' },
+        { title: 'Construir el caso de defensa', body: 'Identificamos cada defensa disponible — cancelación de remoción, asilo, retención, protección CAT, salida voluntaria, ajuste de estatus — y construimos el caso más sólido para alivio.' },
+        { title: 'Audiencia de méritos individuales', body: 'Presentamos su caso ante el juez de inmigración. Examinamos testigos, introducimos evidencia y hacemos argumentos legales para alivio de remoción.' },
+        { title: 'Apelaciones si es necesario', body: 'Si el juez de inmigración niega el alivio, evaluamos opciones de apelación ante la BIA. Si se agotan los recursos administrativos, evaluamos opciones en corte federal.' },
+      ]}
+      helpsHeading="Cómo Ayuda Bardi Immigration Law"
+      helpsParagraph="Los procesos de deportación son adversariales — el gobierno busca deportarle, y las reglas son estrictas e implacables. La abogada Bardi trae una defensa completa y experimentada a su caso — desde la primera audiencia de fianza hasta la decisión final. Luchamos por usted."
+      helpsItems={[
+        'Consultas de emergencia y representación de clientes detenidos',
+        'Audiencias de fianza y defensa en detención migratoria',
+        'Preparación y representación completa en audiencia de méritos',
+        'Solicitudes de cancelación de remoción',
+        'Reclamaciones de asilo, retención y protección CAT',
+        'Apelaciones ante la BIA y opciones en corte federal',
+      ]}
+      faqHeading="Preguntas Frecuentes"
+      faqs={[
+        { q: '¿Cuál es la diferencia entre defensa detenida y no detenida?', a: 'Los casos detenidos involucran a clientes en detención migratoria mientras su caso avanza. Los casos no detenidos involucran a clientes que están libres pero tienen un caso de deportación pendiente en corte de inmigración. Ambos requieren representación experimentada — los casos detenidos avanzan más rápido y también requieren defensa en audiencias de fianza.' },
+        { q: 'Perdí mi fecha de corte y recibí una orden de deportación en ausencia. ¿Qué puedo hacer?', a: 'Las órdenes en ausencia a veces pueden reabrirse si puede demostrar que no recibió notificación adecuada o que circunstancias excepcionales le impidieron comparecer. Contáctenos de inmediato — hay plazos estrictos.' },
+        { q: '¿También pueden protegerse mis familiares de la deportación?', a: 'Ciertas formas de alivio — como la cancelación de remoción — consideran el impacto en familiares ciudadanos estadounidenses o LPR calificados. Evaluamos la situación familiar completa.' },
+        { q: '¿Cuánto tiempo dura un caso de deportación?', a: 'El atraso en los tribunales de inmigración significa que los casos no detenidos a menudo tardan años. Los casos detenidos avanzan mucho más rápido — a veces en semanas. Le asesoramos sobre el plazo en su consulta.' },
+      ]}
+      relatedHeading="Áreas de Práctica Relacionadas"
+      relatedAreas={[
+        { href: '/es/services/federal-litigation', label: 'Litigios Federales', desc: 'Casos de Inmigración en Tribunales Federales', learnMore: 'Saber más' },
+        { href: '/es/services/vawa', label: 'VAWA', desc: 'Ley contra la Violencia contra la Mujer', learnMore: 'Saber más' },
+        { href: '/es/services/waivers', label: 'Perdones', desc: 'Perdones I-601, I-212 y Otros', learnMore: 'Saber más' },
+      ]}
+      ctaHeading="Comience con una Consulta"
+      ctaSubtext="Le ayudaremos a entender sus opciones y a defenderse en su caso de deportación."
+      ctaButtonLabel="Programe una Consulta"
+    />
   );
 }

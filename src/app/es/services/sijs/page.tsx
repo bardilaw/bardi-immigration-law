@@ -1,13 +1,10 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
-import { Button } from '@/components/Button';
+import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Abogada SIJS Georgia | Estatus de Inmigrante Juvenil Especial',
+  title: 'Abogada SIJS Georgia | Estatus de Inmigrante Especial Juvenil',
   description:
-    'El SIJS proporciona un camino hacia la tarjeta de residencia permanente para menores abusados, negligidos o abandonados. Bardi Immigration Law coordina cortes estatales e inmigración federal.',
+    'SIJS proporciona un camino hacia la tarjeta verde para niños que han sido abusados, abandonados o descuidados. Representación especializada y sensible en Georgia y el sureste.',
   alternates: {
     canonical: 'https://bardilaw.com/es/services/sijs',
     languages: {
@@ -16,8 +13,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'SIJS | Bardi Immigration Law',
-    description: 'Representación SIJS especializada y sensible. Cortes estatales + presentaciones de inmigración federal.',
+    title: 'Abogada SIJS Georgia | Bardi Immigration Law',
+    description: 'Representación SIJS especializada y sensible. Procesos estatales + federales. GA, AL, NC, SC.',
     url: 'https://bardilaw.com/es/services/sijs',
     locale: 'es_US',
   },
@@ -25,76 +22,57 @@ export const metadata: Metadata = {
 
 export default function SijsPageES() {
   return (
-    <>
-      <Header />
-      <main id="main-content">
-        <section className="bg-white py-16 lg:py-20">
-          <div className="max-w-site mx-auto px-5 lg:px-8 max-w-3xl">
-            <nav aria-label="Ruta de navegación" className="text-sm text-charcoal/50 mb-6 font-sans">
-              <Link href="/es" className="hover:text-navy">Inicio</Link>
-              <span className="mx-2">/</span>
-              <Link href="/es/services" className="hover:text-navy">Servicios</Link>
-              <span className="mx-2">/</span>
-              <span className="text-charcoal">SIJS</span>
-            </nav>
-
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-navy mb-4">
-              Estatus de Inmigrante Juvenil Especial (SIJS)
-            </h1>
-            <p className="text-lg text-charcoal/80 mb-12">
-              El SIJS proporciona un camino hacia la tarjeta de residencia permanente para niños en
-              los Estados Unidos que han sido abusados, negligidos o abandonados y no pueden
-              reunirse de manera segura con uno o ambos padres. Este es un trabajo legal
-              especializado y sensible — y lo manejamos con el cuidado que requiere.
-            </p>
-
-            <div className="space-y-10">
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">Qué Proporciona el SIJS</h2>
-                <p className="text-charcoal/80">
-                  El Estatus de Inmigrante Juvenil Especial es una clasificación de inmigración
-                  federal para menores elegibles. Un caso exitoso de SIJS involucra dos pasos:
-                  primero, obtener hallazgos de un tribunal de menores o familia estatal; segundo,
-                  usar esos hallazgos para solicitar una visa de inmigrante y, finalmente, una
-                  tarjeta de residencia permanente. Cuando ambos pasos tienen éxito, el niño puede
-                  obtener el estatus de residente permanente legal en los Estados Unidos.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">Elegibilidad</h2>
-                <p className="text-charcoal/80">
-                  El SIJS está disponible para personas solteras menores de 21 años que se
-                  encuentren en los Estados Unidos y cumplan requisitos específicos relacionados
-                  con abuso, negligencia o abandono — y para quienes regresar a su país de origen
-                  no sea en su mejor interés. La elegibilidad es específica a los hechos y requiere
-                  tanto un proceso en la corte estatal como presentaciones de inmigración federal.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">Lo que Hace la Abogada Bardi</h2>
-                <p className="text-charcoal/80">
-                  Los casos de SIJS requieren navegar simultáneamente los sistemas de cortes
-                  estatales y el sistema de inmigración federal. La abogada Bardi coordina el
-                  trabajo legal en ambos, asegurando que se obtengan los hallazgos judiciales
-                  requeridos y que la petición federal se prepare correctamente y se presente
-                  a tiempo.
-                </p>
-                <p className="text-charcoal/80 mt-3">
-                  Este trabajo es sensible. Lo abordamos con el cuidado que merecen los niños y
-                  familias a quienes servimos.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 pt-8 border-t border-warmgray-200">
-              <Button href="/es/contact" size="lg">Programe una Consulta</Button>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+    <PracticeAreaLayout
+      homeHref="/es"
+      servicesHref="/es/services"
+      servicesLabel="Servicios"
+      contactHref="/es/contact"
+      breadcrumbLabel="SIJS"
+      breadcrumbHref="/es/services/sijs"
+      title="Estatus de Inmigrante Especial Juvenil (SIJS)"
+      subhead="Un camino hacia la tarjeta verde para niños que han sido abusados, descuidados o abandonados y no pueden ser reunificados con uno o ambos padres de manera segura."
+      qualifyHeading="Quiénes Pueden Calificar"
+      qualifyBullets={[
+        'Tiene menos de 21 años y no está casado/a',
+        'Actualmente está en los Estados Unidos',
+        'Un tribunal estatal juvenil o de familia ha emitido hallazgos de abuso, negligencia o abandono',
+        'La reunificación con uno o ambos padres no es viable debido al abuso, negligencia o abandono',
+        'No es en su mejor interés ser devuelto a su país de origen o de último domicilio habitual',
+      ]}
+      qualifyDisclaimer="La elegibilidad para SIJS es específica a los hechos y requiere tanto un proceso en corte estatal como presentaciones de inmigración federales. La elegibilidad depende de los hechos específicos de su caso."
+      processHeading="Cómo Funciona el Proceso"
+      processSteps={[
+        { title: 'Procedimientos en la corte estatal', body: 'Obtener una Orden de Hallazgos Especiales de un tribunal estatal juvenil o de familia. Esta orden debe hacer hallazgos específicos sobre abuso, negligencia o abandono e interés superior.' },
+        { title: 'Presentar la petición I-360', body: 'Enviar el Formulario I-360 a USCIS con los hallazgos de la corte estatal y documentación de apoyo.' },
+        { title: 'Esperar disponibilidad de visa', body: 'SIJS es una categoría de preferencia. Dependiendo del país de nacimiento, un número de visa puede estar disponible de inmediato o requerir espera.' },
+        { title: 'Ajuste de estatus', body: 'Una vez que haya un número de visa disponible, presentar ajuste de estatus (I-485) para convertirse en residente permanente legal.' },
+        { title: 'Tarjeta verde emitida', body: 'Si es aprobado, recibe su tarjeta verde — estatus de residente permanente legal en los Estados Unidos.' },
+      ]}
+      helpsHeading="Cómo Ayuda Bardi Immigration Law"
+      helpsParagraph="Los casos de SIJS requieren navegar simultáneamente los sistemas de corte estatal e inmigración federal. La abogada Bardi coordina el trabajo legal en ambas vías — asegurando que se obtengan los hallazgos judiciales requeridos y que la petición federal se prepare correctamente y se presente a tiempo. Este trabajo es sensible, y lo abordamos con el cuidado que merecen los niños y las familias que servimos."
+      helpsItems={[
+        'Coordinación con la corte estatal y preparación de hallazgos SIJS',
+        'Preparación y presentación de la petición I-360',
+        'Presentación de ajuste de estatus (I-485)',
+        'Representación a través de todo el proceso estatal y federal',
+        'Manejo sensible y confidencial en cada etapa',
+      ]}
+      faqHeading="Preguntas Frecuentes"
+      faqs={[
+        { q: '¿Puede usarse SIJS para niños ya en proceso de deportación?', a: 'Sí. SIJS puede ser una defensa contra la deportación para niños elegibles. Si un niño tiene un caso de deportación pendiente, podemos buscar SIJS simultáneamente y solicitar una continuación en la corte de inmigración.' },
+        { q: '¿El niño necesita tener un tutor o patrocinador?', a: 'Un procedimiento en corte estatal requiere que el niño esté bajo la jurisdicción de un tribunal juvenil o de familia — lo que normalmente implica un tutor, colocación en familia de acogida o procedimiento de dependencia. Evaluamos la situación específica del niño en la consulta.' },
+        { q: '¿Cuánto tiempo toma el proceso de SIJS?', a: 'El plazo varía. El proceso en la corte estatal depende de la jurisdicción y el calendario. El procesamiento federal de la I-360 tarda varios meses. Para algunos países de nacimiento, el ajuste de estatus puede seguir rápidamente; para otros, puede haber espera por un número de visa.' },
+        { q: '¿Qué pasa si el niño cumple 21 años durante el proceso?', a: 'Las protecciones contra el vencimiento de edad pueden aplicar. Si se presentó una I-360 antes del 21° cumpleaños del niño, generalmente el niño está protegido de envejecer durante la adjudicación. Evaluamos esto cuidadosamente desde el principio.' },
+      ]}
+      relatedHeading="Áreas de Práctica Relacionadas"
+      relatedAreas={[
+        { href: '/es/services/daca', label: 'DACA', desc: 'Acción Diferida para los Llegados en la Infancia', learnMore: 'Saber más' },
+        { href: '/es/services/vawa', label: 'VAWA', desc: 'Ley contra la Violencia contra la Mujer', learnMore: 'Saber más' },
+        { href: '/es/services/removal-defense', label: 'Defensa contra la Deportación', desc: 'Defensa en Procesos de Deportación', learnMore: 'Saber más' },
+      ]}
+      ctaHeading="Comience con una Consulta"
+      ctaSubtext="Le ayudaremos a entender las opciones disponibles para el niño y a navegar el proceso con el cuidado que merece."
+      ctaButtonLabel="Programe una Consulta"
+    />
   );
 }

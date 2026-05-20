@@ -1,13 +1,10 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
-import { Button } from '@/components/Button';
+import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Abogada VAWA Georgia | Peticiones bajo la Ley de Violencia contra la Mujer',
+  title: 'Abogada VAWA Georgia | Peticiones bajo la Ley contra la Violencia contra la Mujer',
   description:
-    'Auto-peticiones VAWA confidenciales para sobrevivientes de abuso. No se requiere informe policial. La abogada Bardi maneja las peticiones con total confidencialidad en GA, AL, NC y SC.',
+    'VAWA permite a sobrevivientes de abuso presentar una autopetición de inmigración sin notificar al abusador. Representación confidencial y sensible.',
   alternates: {
     canonical: 'https://bardilaw.com/es/services/vawa',
     languages: {
@@ -16,8 +13,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'VAWA Auto-Petición | Bardi Immigration Law',
-    description: 'Peticiones VAWA confidenciales. Puede auto-peticionarse sin el conocimiento del abusador.',
+    title: 'Abogada VAWA Georgia | Bardi Immigration Law',
+    description: 'Autopeticiones VAWA para sobrevivientes de abuso. USCIS no notifica al abusador. GA, AL, NC, SC.',
     url: 'https://bardilaw.com/es/services/vawa',
     locale: 'es_US',
   },
@@ -25,87 +22,58 @@ export const metadata: Metadata = {
 
 export default function VawaPageES() {
   return (
-    <>
-      <Header />
-      <main id="main-content">
-        <section className="bg-white py-16 lg:py-20">
-          <div className="max-w-site mx-auto px-5 lg:px-8 max-w-3xl">
-            <nav aria-label="Ruta de navegación" className="text-sm text-charcoal/50 mb-6 font-sans">
-              <Link href="/es" className="hover:text-navy">Inicio</Link>
-              <span className="mx-2">/</span>
-              <Link href="/es/services" className="hover:text-navy">Servicios</Link>
-              <span className="mx-2">/</span>
-              <span className="text-charcoal">VAWA</span>
-            </nav>
-
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-navy mb-4">
-              VAWA — Peticiones bajo la Ley de Violencia contra la Mujer
-            </h1>
-            <p className="text-lg text-charcoal/80 mb-12">
-              Si ha sufrido abuso de un cónyuge, padre/madre o hijo/a adulto que es ciudadano
-              americano o residente permanente, es posible que pueda solicitar alivio migratorio
-              por su propia cuenta — sin el conocimiento del abusador. Este proceso es confidencial.
-            </p>
-
-            <div className="space-y-10">
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">Su Derecho a la Auto-Petición</h2>
-                <p className="text-charcoal/80 mb-3">
-                  La Ley de Violencia contra la Mujer permite que ciertas personas sobrevivientes de
-                  abuso soliciten el estatus migratorio por su propia cuenta sin depender de — ni
-                  alertar al — abusador. USCIS no contacta al familiar abusivo cuando se presenta
-                  una petición VAWA.
-                </p>
-                <div className="bg-warmgray rounded-lg px-5 py-4 space-y-1">
-                  <p className="text-navy font-semibold font-sans text-sm">No necesita un informe policial.</p>
-                  <p className="text-navy font-semibold font-sans text-sm">No necesita una orden de protección vigente.</p>
-                  <p className="text-navy font-semibold font-sans text-sm">No necesita haber presentado cargos.</p>
-                </div>
-              </div>
-
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">Elegibilidad</h2>
-                <p className="text-charcoal/80">
-                  Es posible que califique para presentar una auto-petición VAWA si ha experimentado
-                  maltrato o crueldad extrema de un ciudadano americano o residente permanente legal
-                  que sea su cónyuge actual o anterior, padre/madre o hijo/a adulto. Debe haber
-                  vivido con el abusador en algún momento y ser una persona de buena moral.
-                </p>
-                <p className="text-charcoal/80 mt-3">
-                  La protección VAWA se extiende a cónyuges, hijos/as y padres/madres —
-                  independientemente del género.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">Lo que Hace la Abogada Bardi</h2>
-                <p className="text-charcoal/80">
-                  La abogada Bardi maneja las peticiones VAWA con total confidencialidad y
-                  sensibilidad. Le ayuda a reunir la documentación requerida sin ponerle en riesgo,
-                  y prepara una declaración personal que presenta su situación con precisión y
-                  completitud ante USCIS.
-                </p>
-                <p className="text-charcoal/80 mt-3">
-                  Si se encuentra en una situación peligrosa en este momento, su seguridad es
-                  primero. Podemos discutir sus opciones legales de una manera que no cree riesgo
-                  para usted.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 pt-8 border-t border-warmgray-200">
-              <Button href="/es/contact" size="lg">Programe una Consulta Confidencial</Button>
-              <div className="mt-4 bg-warmgray rounded-lg px-5 py-3">
-                <p className="text-xs text-charcoal/70 font-sans">
-                  Todas las comunicaciones con nuestra oficina son confidenciales. Visitar nuestro
-                  sitio web o contactarnos no crea un registro visible para ninguna otra persona.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+    <PracticeAreaLayout
+      homeHref="/es"
+      servicesHref="/es/services"
+      servicesLabel="Servicios"
+      contactHref="/es/contact"
+      breadcrumbLabel="VAWA"
+      breadcrumbHref="/es/services/vawa"
+      title="VAWA — Ley contra la Violencia contra la Mujer"
+      subhead="VAWA permite a ciertos sobrevivientes de abuso autopeticionarse para obtener estatus migratorio — sin involucrar ni alertar al abusador. USCIS no contacta al familiar abusivo cuando se presenta una petición VAWA."
+      qualifyHeading="Quiénes Pueden Calificar"
+      qualifyBullets={[
+        'Ha sufrido violencia o crueldad extrema por parte de un ciudadano estadounidense o residente permanente legal',
+        'El abusador es su cónyuge actual o anterior, padre/madre, o hijo/hija adulto/a',
+        'En algún momento vivió con el abusador',
+        'Es una persona de buen carácter moral',
+        'La protección de VAWA se extiende a todos los sobrevivientes sin distinción de género',
+      ]}
+      qualifyDisclaimer="Esta información es solo para fines informativos. Todos los asuntos de VAWA se manejan con total confidencialidad."
+      processHeading="Cómo Funciona el Proceso"
+      processSteps={[
+        { title: 'Evaluación confidencial', body: 'Evaluamos su situación y elegibilidad en un entorno seguro. Ninguna información se comparte sin su consentimiento.' },
+        { title: 'Recopilación de evidencia de forma segura', body: 'Le ayudamos a compilar evidencia de la relación, el abuso y el buen carácter moral — sin alertar al abusador.' },
+        { title: 'Preparación de declaración personal', body: 'La abogada Bardi redacta su declaración para presentar su situación con precisión ante USCIS.' },
+        { title: 'Presentar el Formulario I-360', body: 'Enviar la autopetición VAWA al Centro de Servicios de Vermont de USCIS, la única oficina que procesa peticiones VAWA, con protecciones adicionales de privacidad.' },
+        { title: 'Aprobación y próximos pasos', body: 'Si es aprobada, recibe una aprobación del I-360 y puede buscar ajuste de estatus u otros beneficios según su situación.' },
+      ]}
+      helpsHeading="Cómo Ayuda Bardi Immigration Law"
+      helpsParagraph="Las peticiones VAWA requieren una preparación cuidadosa y sensible. La abogada Bardi maneja cada aspecto de su caso con total confidencialidad — ayudándole a recopilar documentación de forma segura, redactando su declaración personal y gestionando todas las comunicaciones con USCIS directamente."
+      helpsItems={[
+        'Evaluación confidencial de elegibilidad',
+        'Estrategia segura de recopilación de evidencia',
+        'Redacción y revisión de declaración personal',
+        'Preparación y presentación de la petición I-360',
+        'Coordinación de beneficios migratorios posteriores',
+        'Comunicación directa con la abogada durante todo el proceso',
+      ]}
+      faqHeading="Preguntas Frecuentes"
+      faqs={[
+        { q: '¿El abusador será notificado de que presenté una petición?', a: 'No. USCIS mantiene estricta confidencialidad en los casos VAWA y no contactará al abusador ni revelará que usted presentó.' },
+        { q: '¿Pueden los hombres presentar peticiones VAWA?', a: 'Sí. Las protecciones de VAWA están disponibles para todos los sobrevivientes de violencia doméstica, abuso o crueldad, sin distinción de género.' },
+        { q: '¿Qué pasa si ya no estoy casado/a con el abusador?', a: 'Los ex cónyuges aún pueden calificar si la petición se presenta dentro de los dos años de un divorcio relacionado con el abuso.' },
+        { q: '¿VAWA lleva a una tarjeta verde?', a: 'Una petición I-360 aprobada puede ser un camino hacia una tarjeta verde mediante ajuste de estatus, siempre que haya un número de visa disponible. Evaluamos su situación completa en la consulta.' },
+      ]}
+      relatedHeading="Áreas de Práctica Relacionadas"
+      relatedAreas={[
+        { href: '/es/services/u-visa', label: 'Visa U', desc: 'Protección para Víctimas de Crimen', learnMore: 'Saber más' },
+        { href: '/es/services/family-based-immigration', label: 'Inmigración Familiar', desc: 'Peticiones Familiares y Tarjetas Verdes', learnMore: 'Saber más' },
+        { href: '/es/services/removal-defense', label: 'Defensa contra la Deportación', desc: 'Defensa en Procesos de Deportación', learnMore: 'Saber más' },
+      ]}
+      ctaHeading="Comience con una Consulta"
+      ctaSubtext="Le ayudaremos a entender sus opciones de forma confidencial y segura."
+      ctaButtonLabel="Programe una Consulta"
+    />
   );
 }

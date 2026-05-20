@@ -1,13 +1,10 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
-import { Button } from '@/components/Button';
+import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Abogada Visa U Georgia | Protección para Víctimas de Crímenes',
+  title: 'Abogada Visa U Georgia | Protección para Víctimas de Crimen',
   description:
-    'La visa U proporciona estatus legal y autorización de trabajo para víctimas de crímenes que cooperan con las autoridades. Camino a tarjeta de residencia permanente después de 3 años. Consultas confidenciales.',
+    'La Visa U proporciona estatus migratorio temporal y autorización de empleo a víctimas de crímenes calificados que cooperan con las autoridades.',
   alternates: {
     canonical: 'https://bardilaw.com/es/services/u-visa',
     languages: {
@@ -17,104 +14,66 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Abogada Visa U Georgia | Bardi Immigration Law',
-    description: 'Visa U para víctimas de crímenes. Estatus legal + autorización de trabajo. Camino a tarjeta de residencia después de 3 años.',
+    description: 'Peticiones de Visa U para víctimas de crimen. GA, AL, NC, SC.',
     url: 'https://bardilaw.com/es/services/u-visa',
     locale: 'es_US',
   },
 };
 
-const QUALIFYING_CRIMES = [
-  'Violencia doméstica',
-  'Agresión sexual',
-  'Secuestro',
-  'Tráfico de personas',
-  'Robo',
-  'Asalto agravado',
-  'Extorsión y chantaje',
-  'Obstrucción de la justicia',
-  'Y muchos otros',
-];
-
 export default function UVisaPageES() {
   return (
-    <>
-      <Header />
-      <main id="main-content">
-        <section className="bg-white py-16 lg:py-20">
-          <div className="max-w-site mx-auto px-5 lg:px-8 max-w-3xl">
-            <nav aria-label="Ruta de navegación" className="text-sm text-charcoal/50 mb-6 font-sans">
-              <Link href="/es" className="hover:text-navy">Inicio</Link>
-              <span className="mx-2">/</span>
-              <Link href="/es/services" className="hover:text-navy">Servicios</Link>
-              <span className="mx-2">/</span>
-              <span className="text-charcoal">Visa U</span>
-            </nav>
-
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-navy mb-4">
-              Visa U — Protección para Víctimas de Crímenes
-            </h1>
-            <p className="text-lg text-charcoal/80 mb-12">
-              Si fue víctima de un crimen violento en los Estados Unidos y cooperó — o está
-              dispuesto a cooperar — con las autoridades, es posible que califique para una visa U.
-              La visa U proporciona estatus legal y autorización de trabajo, con un camino hacia la
-              tarjeta de residencia permanente después de tres años.
-            </p>
-
-            <div className="space-y-10">
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">Qué Proporciona la Visa U</h2>
-                <p className="text-charcoal/80 mb-3">
-                  La visa U es un estatus no inmigrante creado específicamente para víctimas de
-                  crímenes que asisten a las autoridades. Proporciona hasta cuatro años de estatus
-                  legal y autorización de trabajo. Después de tres años de estatus continuo de visa
-                  U, los titulares elegibles pueden solicitar una tarjeta de residencia permanente.
-                </p>
-                <div className="bg-warmgray rounded-lg px-5 py-3">
-                  <p className="text-navy font-semibold font-sans text-sm">
-                    La visa U está disponible independientemente del estatus migratorio actual.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">Elegibilidad</h2>
-                <p className="text-charcoal/80 mb-4">
-                  Para calificar, debe haber sido víctima de un crimen calificado, haber sufrido
-                  abuso físico o mental sustancial, tener información sobre el crimen y estar
-                  dispuesto a cooperar con las autoridades. Se requiere una certificación de las
-                  autoridades — firmada por un funcionario calificado — como parte de la solicitud.
-                </p>
-                <p className="text-sm font-semibold text-navy font-sans mb-2">Los crímenes calificados incluyen:</p>
-                <ul className="grid sm:grid-cols-2 gap-1">
-                  {QUALIFYING_CRIMES.map((c) => (
-                    <li key={c} className="flex items-center gap-2 text-sm text-charcoal/80">
-                      <span className="text-gold" aria-hidden="true">✓</span>
-                      {c}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-navy mb-3">Lo que Hace la Abogada Bardi</h2>
-                <p className="text-charcoal/80">
-                  La abogada Bardi le guía a través del proceso de certificación, trabajando con las
-                  autoridades en su nombre para obtener la documentación requerida. Luego prepara y
-                  presenta la petición completa de visa U.
-                </p>
-                <p className="text-charcoal/80 mt-3">
-                  Todas las consultas sobre asuntos de visa U son completamente confidenciales.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 pt-8 border-t border-warmgray-200">
-              <Button href="/es/contact" size="lg">Programe una Consulta Confidencial</Button>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+    <PracticeAreaLayout
+      homeHref="/es"
+      servicesHref="/es/services"
+      servicesLabel="Servicios"
+      contactHref="/es/contact"
+      breadcrumbLabel="Visa U"
+      breadcrumbHref="/es/services/u-visa"
+      title="Visa U — Protección para Víctimas de Crimen"
+      subhead="La Visa U proporciona estatus migratorio temporal y autorización de empleo a víctimas de crímenes calificados que ayudan a las autoridades. Después de tres años, los titulares de Visa U pueden solicitar una tarjeta verde."
+      qualifyHeading="Quiénes Pueden Calificar"
+      qualifyBullets={[
+        'Ha sido víctima de una actividad criminal calificada (incluyendo violencia doméstica, agresión sexual, trata de personas y otros delitos graves)',
+        'Ha sufrido abuso físico o mental sustancial como resultado del crimen',
+        'Tiene información sobre el crimen',
+        'Ha sido, está siendo o es probable que sea útil para las autoridades en la investigación o enjuiciamiento',
+        'El crimen violó la ley de EE.UU. o ocurrió en los Estados Unidos',
+      ]}
+      qualifyDisclaimer="Esta información es solo para fines informativos. La elegibilidad para la Visa U depende de los hechos específicos de su caso. Todos los asuntos se manejan con total confidencialidad."
+      processHeading="Cómo Funciona el Proceso"
+      processSteps={[
+        { title: 'Obtener certificación policial', body: 'La Visa U requiere una certificación de una agencia de orden público (Suplemento B del Formulario I-918) que confirme su cooperación. Le ayudamos a navegar este proceso.' },
+        { title: 'Presentar el Formulario I-918', body: 'Enviar la petición de Visa U (I-918) y documentación de apoyo a USCIS. El límite anual de Visas U significa que los casos pueden ser puestos en lista de espera.' },
+        { title: 'Colocación en lista de espera', body: 'Si se alcanza el límite anual (10,000 por año), los peticionarios elegibles son colocados en lista de espera y pueden recibir acción diferida mientras esperan.' },
+        { title: 'Visa U aprobada y EAD emitida', body: 'Una vez aprobada, recibe una Visa U de 4 años y autorización de empleo. Sus familiares calificados también pueden ser elegibles para estatus derivado.' },
+        { title: 'Elegibilidad para tarjeta verde después de 3 años', body: 'Después de 3 años de presencia continua como titular de Visa U, puede ser elegible para solicitar una tarjeta verde.' },
+      ]}
+      helpsHeading="Cómo Ayuda Bardi Immigration Law"
+      helpsParagraph="Los casos de Visa U requieren coordinar con las autoridades y construir un registro de evidencia completo. La abogada Bardi maneja cada aspecto del proceso con sensibilidad y discreción — desde obtener la certificación policial hasta presentar y gestionar la petición hasta su aprobación."
+      helpsItems={[
+        'Evaluación de elegibilidad y estrategia del caso',
+        'Coordinación de la certificación policial (I-918B)',
+        'Preparación y presentación de la petición I-918',
+        'Preparación de petición derivada para familiares calificados',
+        'Gestión de lista de espera y solicitudes de acción diferida',
+        'Ajuste de estatus después de 3 años',
+      ]}
+      faqHeading="Preguntas Frecuentes"
+      faqs={[
+        { q: '¿Qué crímenes califican para la Visa U?', a: 'Los crímenes calificados incluyen (entre otros) violencia doméstica, agresión sexual, trata de personas, asesinato, homicidio, violación, tortura, incesto, encarcelamiento ilegal, secuestro, extorsión y otros delitos graves. Contáctenos si no está seguro de si su situación califica.' },
+        { q: '¿Tengo que testificar en el tribunal?', a: 'Debe ser "útil" para las autoridades, lo que puede incluir cooperar con una investigación, proporcionar una declaración o ayudar en el enjuiciamiento. No se le exige testificar en el juicio.' },
+        { q: '¿Qué pasa si la policía no arrestó ni acusó a nadie?', a: 'No es necesario que se hayan presentado cargos para calificar. Lo que importa es que reportó el crimen y cooperó con la investigación.' },
+        { q: '¿Cuánto tiempo toma la Visa U?', a: 'Debido a los límites anuales, el procesamiento de la Visa U puede tomar varios años. Sin embargo, los peticionarios en la lista de espera pueden recibir acción diferida (protección contra deportación) y autorización de empleo mientras esperan.' },
+      ]}
+      relatedHeading="Áreas de Práctica Relacionadas"
+      relatedAreas={[
+        { href: '/es/services/vawa', label: 'VAWA', desc: 'Ley contra la Violencia contra la Mujer', learnMore: 'Saber más' },
+        { href: '/es/services/removal-defense', label: 'Defensa contra la Deportación', desc: 'Defensa en Procesos de Deportación', learnMore: 'Saber más' },
+        { href: '/es/services/family-based-immigration', label: 'Inmigración Familiar', desc: 'Peticiones Familiares y Tarjetas Verdes', learnMore: 'Saber más' },
+      ]}
+      ctaHeading="Comience con una Consulta"
+      ctaSubtext="Le ayudaremos a entender sus opciones y a construir el caso más sólido posible."
+      ctaButtonLabel="Programe una Consulta"
+    />
   );
 }

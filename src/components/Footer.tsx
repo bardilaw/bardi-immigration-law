@@ -1,8 +1,16 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Logo } from './Logo';
 import { Button } from './Button';
 
 export function Footer() {
+  const pathname = usePathname();
+  const isEs = pathname.startsWith('/es');
+
+  const p = (enPath: string) => (isEs ? `/es${enPath}` : enPath);
+
   return (
     <footer className="bg-navy text-white">
       <div className="max-w-site mx-auto px-5 lg:px-8 py-12">
@@ -10,21 +18,25 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
           {/* Col 1 — Services */}
           <div>
-            <h3 className="text-gold text-xs font-semibold font-sans uppercase tracking-widest mb-3">Services</h3>
+            <h3 className="text-gold text-xs font-semibold font-sans uppercase tracking-widest mb-3">
+              {isEs ? 'Servicios' : 'Services'}
+            </h3>
             <ul className="space-y-2 text-sm text-white/80">
-              <li><Link href="/services/benefits-based-immigration" className="hover:text-gold transition-colors">Benefits-Based Immigration</Link></li>
-              <li><Link href="/services/removal-defense" className="hover:text-gold transition-colors">Removal Defense</Link></li>
-              <li><Link href="/services/federal-litigation" className="hover:text-gold transition-colors">Federal Litigation</Link></li>
+              <li><Link href={p('/services/benefits-based-immigration')} className="hover:text-gold transition-colors">{isEs ? 'Inmigración por Beneficios' : 'Benefits-Based Immigration'}</Link></li>
+              <li><Link href={p('/services/removal-defense')} className="hover:text-gold transition-colors">{isEs ? 'Defensa contra la Deportación' : 'Removal Defense'}</Link></li>
+              <li><Link href={p('/services/federal-litigation')} className="hover:text-gold transition-colors">{isEs ? 'Litigios Federales' : 'Federal Litigation'}</Link></li>
             </ul>
           </div>
 
           {/* Col 2 — Firm */}
           <div>
-            <h3 className="text-gold text-xs font-semibold font-sans uppercase tracking-widest mb-3">Firm</h3>
+            <h3 className="text-gold text-xs font-semibold font-sans uppercase tracking-widest mb-3">
+              {isEs ? 'Bufete' : 'Firm'}
+            </h3>
             <ul className="space-y-2 text-sm text-white/80">
-              <li><Link href="/about" className="hover:text-gold transition-colors">About</Link></li>
-              <li><Link href="/resources" className="hover:text-gold transition-colors">Resources</Link></li>
-              <li><Link href="/contact" className="hover:text-gold transition-colors">Contact</Link></li>
+              <li><Link href={p('/about')} className="hover:text-gold transition-colors">{isEs ? 'Sobre Nosotros' : 'About'}</Link></li>
+              <li><Link href={p('/resources')} className="hover:text-gold transition-colors">{isEs ? 'Recursos' : 'Resources'}</Link></li>
+              <li><Link href={p('/contact')} className="hover:text-gold transition-colors">{isEs ? 'Contacto' : 'Contact'}</Link></li>
             </ul>
           </div>
 
@@ -32,14 +44,16 @@ export function Footer() {
           <div>
             <h3 className="text-gold text-xs font-semibold font-sans uppercase tracking-widest mb-3">Legal</h3>
             <ul className="space-y-2 text-sm text-white/80">
-              <li><Link href="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-gold transition-colors">Terms of Use</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-gold transition-colors">{isEs ? 'Política de Privacidad' : 'Privacy Policy'}</Link></li>
+              <li><Link href="/terms" className="hover:text-gold transition-colors">{isEs ? 'Términos de Uso' : 'Terms of Use'}</Link></li>
             </ul>
           </div>
 
           {/* Col 4 — Contact */}
           <div>
-            <h3 className="text-gold text-xs font-semibold font-sans uppercase tracking-widest mb-3">Contact</h3>
+            <h3 className="text-gold text-xs font-semibold font-sans uppercase tracking-widest mb-3">
+              {isEs ? 'Contacto' : 'Contact'}
+            </h3>
             <ul className="space-y-2 text-sm text-white/80 mb-4">
               <li>
                 <a href="tel:+1" className="hover:text-gold transition-colors">[Phone — TBD]</a>
@@ -48,8 +62,8 @@ export function Footer() {
                 <a href="mailto:info@bardilaw.com" className="hover:text-gold transition-colors">info@bardilaw.com</a>
               </li>
             </ul>
-            <Button href="/contact" variant="primary" size="sm">
-              Schedule a Consultation
+            <Button href={p('/contact')} variant="primary" size="sm">
+              {isEs ? 'Reserve una Consulta' : 'Schedule a Consultation'}
             </Button>
           </div>
         </div>

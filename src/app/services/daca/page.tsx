@@ -128,8 +128,19 @@ export default function DacaPage() {
               DACA
             </h1>
             <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[640px]">
-              Renewal and first-time DACA applications for individuals brought to the United States as children.
+              DACA renewals for existing recipients. Initial consultations available for individuals who have previously held DACA or who want to understand their options.
             </p>
+          </div>
+        </section>
+
+        {/* Status callout */}
+        <section className="bg-white pt-10 pb-0">
+          <div className="max-w-site mx-auto px-5 lg:px-16">
+            <div className="max-w-[760px] mx-auto border-l-4 border-gold bg-warmgray px-5 py-4 rounded-r-[4px]">
+              <p className="font-sans text-[15px] text-charcoal leading-[1.65]">
+                <strong className="text-navy">Current DACA Status (as of 2025):</strong>{' '}Due to ongoing federal court litigation, USCIS is not currently approving new initial DACA applications for individuals who have never held DACA. Renewals for existing DACA recipients continue. We will advise you on your current options at consultation.
+              </p>
+            </div>
           </div>
         </section>
 

@@ -30,7 +30,9 @@ export default function DacaPageES() {
       breadcrumbLabel="DACA"
       breadcrumbHref="/es/services/daca"
       title="DACA"
-      subhead="Solicitudes de DACA por primera vez y renovaciones para personas que llegaron a los Estados Unidos cuando eran niños."
+      subhead="Renovaciones de DACA para beneficiarios existentes. Consultas iniciales disponibles para personas que han tenido DACA anteriormente o que desean entender sus opciones."
+      statusCalloutTitle="Estado actual de DACA (desde 2025):"
+      statusCalloutBody="Debido a litigios federales en curso, USCIS no está aprobando actualmente nuevas solicitudes iniciales de DACA para personas que nunca han tenido DACA. Las renovaciones para los beneficiarios existentes continúan. Le asesoraremos sobre sus opciones actuales en la consulta."
       qualifyHeading="Quiénes Pueden Calificar"
       qualifyBullets={[
         'Tenía menos de 31 años el 15 de junio de 2012',

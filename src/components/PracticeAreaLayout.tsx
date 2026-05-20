@@ -24,6 +24,8 @@ export interface RelatedArea {
 export interface PracticeAreaProps {
   title: string;
   subhead: string;
+  statusCalloutTitle?: string;
+  statusCalloutBody?: string;
   qualifyHeading?: string;
   qualifyBullets: string[];
   qualifyDisclaimer?: string;
@@ -69,6 +71,8 @@ function CheckIcon() {
 export function PracticeAreaLayout({
   title,
   subhead,
+  statusCalloutTitle,
+  statusCalloutBody,
   qualifyHeading = 'Who May Qualify',
   qualifyBullets,
   qualifyDisclaimer,
@@ -113,6 +117,19 @@ export function PracticeAreaLayout({
             </p>
           </div>
         </section>
+
+        {/* Status Callout (conditional) */}
+        {statusCalloutTitle && statusCalloutBody && (
+          <section className="bg-white pt-10 pb-0">
+            <div className="max-w-site mx-auto px-5 lg:px-16">
+              <div className="max-w-[760px] mx-auto border-l-4 border-gold bg-warmgray px-5 py-4 rounded-r-[4px]">
+                <p className="font-sans text-[15px] text-charcoal leading-[1.65]">
+                  <strong className="text-navy">{statusCalloutTitle}</strong>{' '}{statusCalloutBody}
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Who May Qualify */}
         <section className="bg-white py-16 lg:py-20">

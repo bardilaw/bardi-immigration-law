@@ -120,12 +120,15 @@ export default function AboutPage() {
               </p>
               <Button href="/contact" size="lg">Schedule a Consultation</Button>
             </div>
-            {/* Portrait placeholder */}
-            <div
-              className="order-first lg:order-last flex items-center justify-center bg-warmgray rounded-lg h-64 lg:h-auto lg:aspect-[3/4] max-h-[480px] text-navy/20 text-sm font-sans"
-              aria-hidden="true"
-            >
-              <span className="text-center px-8">[Attorney photo — 320px wide, 3:4 aspect]</span>
+            {/* Attorney portrait */}
+            <div className="order-first lg:order-last flex items-center justify-center">
+              <img
+                src="/headshot-placeholder-400x500.svg"
+                alt="Attorney Eszter Bardi — Bardi Immigration Law"
+                width={400}
+                height={500}
+                className="rounded-lg w-full max-w-[320px] lg:max-w-[400px] h-auto"
+              />
             </div>
           </div>
         </section>

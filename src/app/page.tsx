@@ -128,11 +128,14 @@ export default function HomePage() {
                 </span>
               </div>
             </div>
-            <div
-              className="hidden lg:flex items-center justify-center bg-warmgray rounded-lg h-96 text-navy/30 text-sm font-sans"
-              aria-hidden="true"
-            >
-              <span className="text-center px-8">[Attorney photo — client to provide]</span>
+            <div className="hidden lg:flex items-center justify-center">
+              <img
+                src="/headshot-placeholder-400x500.svg"
+                alt="Attorney Eszter Bardi — Bardi Immigration Law"
+                width={400}
+                height={500}
+                className="rounded-lg h-96 w-auto object-cover"
+              />
             </div>
           </div>
         </section>
@@ -180,11 +183,14 @@ export default function HomePage() {
         {/* Attorney differentiator */}
         <section className="bg-warmgray py-16">
           <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-            <div
-              className="hidden lg:flex items-center justify-center bg-white rounded-lg h-80 text-navy/20 text-sm font-sans"
-              aria-hidden="true"
-            >
-              <span className="text-center px-8">[Attorney photo — 320px square]</span>
+            <div className="hidden lg:flex items-center justify-center">
+              <img
+                src="/headshot-placeholder-300x300.svg"
+                alt="Attorney Eszter Bardi"
+                width={300}
+                height={300}
+                className="rounded-lg h-80 w-auto object-cover"
+              />
             </div>
             <div>
               <h2 className="font-serif text-3xl lg:text-4xl font-bold text-navy mb-2">Why Bardi Law?</h2>

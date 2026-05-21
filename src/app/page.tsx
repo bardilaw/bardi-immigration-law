@@ -296,12 +296,13 @@ export default function HomePage() {
         <section className="bg-warmgray py-16">
           <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-[40%_60%] gap-16 items-center">
             <div className="flex items-center justify-center lg:justify-start">
-              <div
-                className="w-48 h-48 lg:w-52 lg:h-52 rounded-full bg-warmgray-300 flex items-center justify-center text-navy/20 text-xs font-sans text-center"
-                aria-hidden="true"
-              >
-                Photo pending
-              </div>
+              <img
+                src="/headshot-placeholder-300x300.svg"
+                alt="Attorney Eszter Bardi"
+                width={300}
+                height={300}
+                className="w-48 h-48 lg:w-52 lg:h-52 rounded-full object-cover"
+              />
             </div>
             <div>
               <p className="font-serif text-3xl font-bold text-navy">Meet the Attorney</p>

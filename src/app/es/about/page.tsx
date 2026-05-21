@@ -96,11 +96,14 @@ export default function AboutPageES() {
               </p>
               <Button href="/es/contact" size="lg">Programe una Consulta</Button>
             </div>
-            <div
-              className="order-first lg:order-last flex items-center justify-center bg-warmgray rounded-lg h-64 lg:h-auto lg:aspect-[3/4] max-h-[480px] text-navy/20 text-sm font-sans"
-              aria-hidden="true"
-            >
-              <span className="text-center px-8">[Foto de la abogada — 320px ancho, proporción 3:4]</span>
+            <div className="order-first lg:order-last flex items-center justify-center">
+              <img
+                src="/headshot-placeholder-400x500.svg"
+                alt="Abogada Eszter Bardi — Bardi Immigration Law"
+                width={400}
+                height={500}
+                className="rounded-lg w-full max-w-[320px] lg:max-w-[400px] h-auto"
+              />
             </div>
           </div>
         </section>

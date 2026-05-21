@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" role="img" aria-label="Eszter Bardi, Esq. — Immigration Attorney">
+  <!-- Navy background -->
+  <rect width="300" height="300" fill="#1B2A4A"/>
+
+  <!-- Gold border frame (inset 14px) -->
+  <rect x="14" y="14" width="272" height="272" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+
+  <!-- Firm wordmark -->
+  <text
+    x="150" y="60"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="11"
+    font-weight="bold"
+    fill="#C9A84C"
+    text-anchor="middle"
+    letter-spacing="2"
+  >BARDI IMMIGRATION LAW</text>
+
+  <!-- Gold accent line below wordmark -->
+  <line x1="100" y1="72" x2="200" y2="72" stroke="#C9A84C" stroke-width="1"/>
+
+  <!-- Attorney name — large serif -->
+  <text
+    x="150" y="148"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="26"
+    font-weight="bold"
+    fill="#FFFFFF"
+    text-anchor="middle"
+  >Eszter Bardi, Esq.</text>
+
+  <!-- Gold divider below name -->
+  <line x1="100" y1="164" x2="200" y2="164" stroke="#C9A84C" stroke-width="1.5"/>
+
+  <!-- Title — italic -->
+  <text
+    x="150" y="192"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="13"
+    font-style="italic"
+    fill="rgba(255,255,255,0.82)"
+    text-anchor="middle"
+  >Immigration Attorney</text>
+
+  <!-- Licensed credentials -->
+  <text
+    x="150" y="220"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="10"
+    fill="rgba(255,255,255,0.60)"
+    text-anchor="middle"
+    letter-spacing="1"
+  >Licensed: Georgia  ·  Alabama</text>
+
+  <!-- EN/ES badge background -->
+  <rect x="120" y="236" width="60" height="20" rx="3" fill="#C9A84C"/>
+  <!-- EN/ES badge text -->
+  <text
+    x="150" y="251"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="9"
+    font-weight="bold"
+    fill="#1B2A4A"
+    text-anchor="middle"
+    letter-spacing="1"
+  >EN / ES</text>
+
+  <!-- Bottom gold rule -->
+  <line x1="30" y1="268" x2="270" y2="268" stroke="#C9A84C" stroke-width="1" opacity="0.4"/>
+
+  <!-- Website URL -->
+  <text
+    x="150" y="284"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="10"
+    fill="#C9A84C"
+    text-anchor="middle"
+    letter-spacing="0.5"
+  >bardilaw.com</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" role="img" aria-label="Eszter Bardi, Esq. — Immigration Attorney">
+  <title>Eszter Bardi, Esq. — Immigration Attorney</title>
+
+  <!-- Navy background -->
+  <rect width="300" height="300" fill="#1B2A4A"/>
+
+  <!-- Gold inset border -->
+  <rect x="12" y="12" width="276" height="276" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+
+  <!-- Firm name -->
+  <text x="150" y="50"
+        font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
+        font-weight="700"
+        font-size="10"
+        fill="#C9A84C"
+        text-anchor="middle"
+        letter-spacing="1.5">BARDI IMMIGRATION LAW</text>
+
+  <!-- Gold rule -->
+  <rect x="112" y="60" width="76" height="1" fill="#C9A84C"/>
+
+  <!-- Attorney name -->
+  <text x="150" y="132"
+        font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
+        font-weight="700"
+        font-size="30"
+        fill="#FFFFFF"
+        text-anchor="middle">Eszter</text>
+  <text x="150" y="166"
+        font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
+        font-weight="700"
+        font-size="30"
+        fill="#FFFFFF"
+        text-anchor="middle">Bardi, Esq.</text>
+
+  <!-- Gold accent divider -->
+  <rect x="108" y="178" width="84" height="1.5" fill="#C9A84C"/>
+
+  <!-- Title -->
+  <text x="150" y="200"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="400"
+        font-size="10"
+        fill="rgba(255,255,255,0.82)"
+        text-anchor="middle"
+        letter-spacing="2">IMMIGRATION ATTORNEY</text>
+
+  <!-- Licensed states -->
+  <text x="150" y="222"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="400"
+        font-size="9"
+        fill="rgba(255,255,255,0.60)"
+        text-anchor="middle">Licensed: GA  ·  AL</text>
+
+  <!-- EN/ES bilingual pill badge -->
+  <rect x="124" y="236" width="52" height="18" rx="9" fill="#C9A84C"/>
+  <text x="150" y="249"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="600"
+        font-size="9"
+        fill="#1B2A4A"
+        text-anchor="middle">EN / ES</text>
+
+  <!-- Website URL -->
+  <text x="150" y="278"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="600"
+        font-size="9"
+        fill="#C9A84C"
+        text-anchor="middle">bardilaw.com</text>
+
+</svg>

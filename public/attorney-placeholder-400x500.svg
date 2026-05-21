@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500" role="img" aria-label="Eszter Bardi, Esq. — Immigration Attorney">
+  <title>Eszter Bardi, Esq. — Immigration Attorney</title>
+
+  <!-- Navy background -->
+  <rect width="400" height="500" fill="#1B2A4A"/>
+
+  <!-- Gold inset border -->
+  <rect x="16" y="16" width="368" height="468" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+
+  <!-- Firm name -->
+  <text x="200" y="76"
+        font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
+        font-weight="700"
+        font-size="13"
+        fill="#C9A84C"
+        text-anchor="middle"
+        letter-spacing="2">BARDI IMMIGRATION LAW</text>
+
+  <!-- Gold rule below firm name -->
+  <rect x="160" y="88" width="80" height="1.5" fill="#C9A84C"/>
+
+  <!-- Attorney name — split across two lines for portrait proportions -->
+  <text x="200" y="210"
+        font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
+        font-weight="700"
+        font-size="40"
+        fill="#FFFFFF"
+        text-anchor="middle">Eszter</text>
+  <text x="200" y="258"
+        font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
+        font-weight="700"
+        font-size="40"
+        fill="#FFFFFF"
+        text-anchor="middle">Bardi, Esq.</text>
+
+  <!-- Gold accent divider -->
+  <rect x="140" y="276" width="120" height="2" fill="#C9A84C"/>
+
+  <!-- Title -->
+  <text x="200" y="310"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="400"
+        font-size="14"
+        fill="rgba(255,255,255,0.82)"
+        text-anchor="middle"
+        letter-spacing="2.5">IMMIGRATION ATTORNEY</text>
+
+  <!-- Licensed states -->
+  <text x="200" y="348"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="400"
+        font-size="12"
+        fill="rgba(255,255,255,0.60)"
+        text-anchor="middle">Licensed: Georgia  ·  Alabama</text>
+
+  <!-- EN/ES bilingual pill badge -->
+  <rect x="164" y="368" width="72" height="22" rx="11" fill="#C9A84C"/>
+  <text x="200" y="383"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="600"
+        font-size="11"
+        fill="#1B2A4A"
+        text-anchor="middle">EN / ES</text>
+
+  <!-- Website URL at bottom -->
+  <text x="200" y="458"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="600"
+        font-size="12"
+        fill="#C9A84C"
+        text-anchor="middle">bardilaw.com</text>
+
+</svg>

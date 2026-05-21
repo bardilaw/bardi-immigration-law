@@ -7,12 +7,14 @@ import { JsonLd } from '@/components/JsonLd';
 import { BLOG_POSTS, getPost } from '@/content/blog/meta';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
 import { UVisaVawaPostContent } from '@/content/blog/en/u-visa-vawa';
+import { StewartDetentionPostContent } from '@/content/blog/en/stewart-detention';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
   'daca-2026': DacaPostContent,
   'u-visa-vawa-protections-immigrant-survivors': UVisaVawaPostContent,
+  'stewart-detention-attorney': StewartDetentionPostContent,
 };
 
 export function generateStaticParams() {

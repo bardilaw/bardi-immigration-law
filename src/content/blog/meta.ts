@@ -20,6 +20,13 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       'Immigrant survivors of crime or domestic violence may qualify for U-Visa or VAWA protections. Learn the difference, who qualifies, and how to apply in Georgia.',
   },
+  {
+    slug: 'stewart-detention-attorney',
+    title: 'Detained at Stewart? Here\'s What Happens in the First 72 Hours',
+    date: '2026-05-21',
+    description:
+      'Loved one detained at Stewart Detention Center in Lumpkin, GA? Learn what happens in the first 72 hours and how to get an attorney fast.',
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

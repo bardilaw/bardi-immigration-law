@@ -50,6 +50,7 @@ export function Header() {
   const SERVICES = isEs ? SERVICES_ES : SERVICES_EN;
   const homeHref = isEs ? '/es' : '/';
   const aboutHref = isEs ? '/es/about' : '/about';
+  const blogHref = isEs ? '/es/blog' : '/blog';
   const contactHref = isEs ? '/es/contact' : '/contact';
   const servicesHref = isEs ? '/es/services' : '/services';
 
@@ -141,6 +142,7 @@ export function Header() {
           </div>
 
           <Link href={aboutHref} className={navLink}>{isEs ? 'Sobre Nosotros' : 'About'}</Link>
+          <Link href={blogHref} className={navLink}>Blog</Link>
           <Link href={contactHref} className={navLink}>{isEs ? 'Contacto' : 'Contact'}</Link>
 
           {/* Language switcher */}
@@ -226,6 +228,9 @@ export function Header() {
           </div>
           <Link href={aboutHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
             {isEs ? 'Sobre Nosotros' : 'About'}
+          </Link>
+          <Link href={blogHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
+            Blog
           </Link>
           <Link href={contactHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
             {isEs ? 'Contacto' : 'Contact'}

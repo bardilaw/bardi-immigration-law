@@ -3,6 +3,24 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { Button } from './Button';
 import { FaqAccordion } from './FaqAccordion';
+import { JsonLd } from './JsonLd';
+
+// Build a schema.org FAQPage block from the same `faqs` the page renders, so the
+// structured data can never drift from the visible Q&A (a Google requirement).
+function buildFaqSchema(faqs: FaqItem[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.a,
+      },
+    })),
+  };
+}
 
 export interface ProcessStep {
   title: string;
@@ -96,6 +114,7 @@ export function PracticeAreaLayout({
 }: PracticeAreaProps) {
   return (
     <>
+      {faqs.length > 0 && <JsonLd data={buildFaqSchema(faqs)} />}
       <Header />
       <main id="main-content">
 

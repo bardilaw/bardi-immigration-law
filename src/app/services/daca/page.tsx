@@ -4,6 +4,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
 import { FaqAccordion } from '@/components/FaqAccordion';
+import { JsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'DACA Attorney Georgia | Deferred Action for Childhood Arrivals',
@@ -97,6 +98,18 @@ const FAQS = [
   },
 ];
 
+// FAQPage structured data built from the same FAQS the page renders, so schema
+// and visible Q&A stay in sync (a Google structured-data requirement).
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
 const RELATED = [
   { href: '/services/tps', label: 'TPS', desc: 'Temporary Protected Status' },
   { href: '/services/vawa', label: 'VAWA', desc: 'Violence Against Women Act' },
@@ -125,6 +138,7 @@ function CheckIcon() {
 export default function DacaPage() {
   return (
     <>
+      <JsonLd data={FAQ_SCHEMA} />
       <Header />
       <main id="main-content">
 

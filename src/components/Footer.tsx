@@ -56,11 +56,9 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 text-sm text-white/80 mb-4">
               <li>
-                <a href="tel:+1" className="hover:text-gold transition-colors">[Phone — TBD]</a>
-              </li>
-              <li>
                 <a href="mailto:info@bardilaw.com" className="hover:text-gold transition-colors">info@bardilaw.com</a>
               </li>
+              <li>{isEs ? 'GA · AL · NC · SC' : 'Serving GA · AL · NC · SC'}</li>
             </ul>
             <Button href={p('/contact')} variant="primary" size="sm">
               {isEs ? 'Reserve una Consulta' : 'Schedule a Consultation'}

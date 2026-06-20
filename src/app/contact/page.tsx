@@ -110,15 +110,6 @@ export default function ContactPage() {
                 <ul className="flex flex-col gap-3 text-sm">
                   <li>
                     <a
-                      href="tel:+1"
-                      className="flex items-center gap-2 text-navy hover:text-gold transition-colors font-sans"
-                    >
-                      <span aria-hidden="true">📞</span>
-                      <span>[Phone — TBD]</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       href="mailto:info@bardilaw.com"
                       className="flex items-center gap-2 text-navy hover:text-gold transition-colors font-sans"
                     >
@@ -126,8 +117,12 @@ export default function ContactPage() {
                       <span>info@bardilaw.com</span>
                     </a>
                   </li>
+                  <li className="flex items-center gap-2 text-charcoal/70 font-sans">
+                    <span aria-hidden="true">📍</span>
+                    <span>Serving Georgia, Alabama, North &amp; South Carolina</span>
+                  </li>
                 </ul>
-                <p className="text-xs text-charcoal/50 mt-3">Office hours: TBD</p>
+                <p className="text-xs text-charcoal/50 mt-3">By appointment — Monday through Friday</p>
                 <p className="text-xs text-charcoal/50 mt-3 font-sans">
                   Consultations available in English, Spanish, and Hungarian.
                 </p>

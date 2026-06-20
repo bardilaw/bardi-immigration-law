@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'daca-renewal-2026',
+    title: 'DACA Renewal Guide 2026: What Every Dreamer Needs to Know',
+    date: '2026-06-20',
+    description:
+      'Your complete DACA renewal 2026 guide: who qualifies, Forms I-821D and I-765, the renewal timeline, fees, and what happens if DACA expires. From a DACA attorney in Georgia.',
+  },
+  {
     slug: 'daca-2026',
     title: 'DACA in 2026: What Georgia Dreamers Need to Know',
     date: '2026-05-20',

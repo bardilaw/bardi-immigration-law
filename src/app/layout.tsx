@@ -60,11 +60,11 @@ const FIRM_SCHEMA = {
       name: 'Bardi Immigration Law',
       alternateName: 'Bardi Law',
       url: 'https://bardilaw.com',
-      telephone: 'PENDING',
-      email: 'PENDING',
+      email: 'info@bardilaw.com',
+      // telephone + addressLocality omitted until client provides real values (BAR board inputs).
+      // Emitting literal "PENDING" produces invalid structured data, so we leave these fields out.
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'PENDING',
         addressRegion: 'GA',
         addressCountry: 'US',
       },

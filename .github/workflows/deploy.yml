@@ -27,9 +27,18 @@ jobs:
       - name: Build for Cloudflare Pages
         run: npm run pages:build
 
+      # Idempotently ensure the Pages project exists before deploy.
+      # `pages deploy` does not auto-create the project in CI; once the project
+      # exists this step is a no-op (|| true). Token needs Pages:Edit scope.
+      - name: Ensure Cloudflare Pages project exists
+        run: npx wrangler pages project create bardi-immigration-law --production-branch=main || true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy .vercel/output/static --project-name=bardi-immigration-law --branch=${{ github.ref_name }}
+          command: pages deploy .vercel/output/static --project-name=bardi-immigration-law --branch=${{ github.ref_name }} --commit-dirty=true

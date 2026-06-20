@@ -1,4 +1,8 @@
 @import "tailwindcss";
+/* Tailwind v4 does not auto-load tailwind.config.ts; load it explicitly so the
+   brand tokens (navy/gold/warmgray/charcoal colors, max-w-site, serif/sans
+   fonts) generate as utilities (BAR-563). */
+@config "../../tailwind.config.ts";
 
 html {
   scroll-behavior: smooth;

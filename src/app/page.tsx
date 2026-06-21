@@ -118,17 +118,17 @@ export default function HomePage() {
               aria-hidden="true"
               style={{
                 background:
-                  'linear-gradient(to right, #ffffff 0%, #ffffff 16%, rgba(255,255,255,0.45) 38%, rgba(255,255,255,0) 60%)',
+                  'linear-gradient(to right, #ffffff 0%, #ffffff 6%, rgba(255,255,255,0.96) 16%, rgba(255,255,255,0.88) 26%, rgba(255,255,255,0.72) 38%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.28) 62%, rgba(255,255,255,0.12) 74%, rgba(255,255,255,0) 88%)',
               }}
             />
           </div>
 
           <div className="relative max-w-site mx-auto px-5 lg:px-8 py-20 lg:py-32">
-            <div className="lg:max-w-[50%]">
-              <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl font-bold text-navy leading-tight mb-6">
+            <div className="text-center lg:text-left lg:max-w-[50%]">
+              <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl font-bold text-navy leading-tight mb-6 text-balance">
                 Your Attorney from Day One.
               </h1>
-              {/* Mobile-only headshot: stacks directly under the headline (BAR-617) */}
+              {/* Mobile-only headshot: stacks directly under the headline, centered (BAR-619) */}
               <div className="flex justify-center mb-8 lg:hidden">
                 <img
                   src="/headshot-eszter-hero.jpg"
@@ -138,17 +138,17 @@ export default function HomePage() {
                   className="rounded-lg h-72 w-auto object-cover shadow-md"
                 />
               </div>
-              <p className="text-lg text-charcoal/80 mb-8 max-w-prose">
+              <p className="text-lg text-charcoal/80 mb-8 max-w-prose mx-auto lg:mx-0">
                 When your future is on the line, you deserve a real lawyer in your corner from the
                 very first call, not an intake form, not a case manager. At Bardi Immigration Law,
                 you work directly with your attorney, from the first conversation to the final
                 decision.
               </p>
-              <div className="flex flex-wrap gap-4 mb-8">
+              <div className="flex flex-wrap gap-4 mb-8 justify-center lg:justify-start">
                 <Button href="/contact" size="lg">Book a Consultation</Button>
                 <Button href="/services" variant="ghost" size="lg">See Our Services</Button>
               </div>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-navy border border-warmgray-300 rounded-full px-3 py-1">
                   Direct Attorney Access
                 </span>

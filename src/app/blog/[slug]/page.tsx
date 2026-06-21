@@ -10,15 +10,21 @@ import { DacaRenewalPostContent } from '@/content/blog/en/daca-renewal-2026';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
 import { UVisaVawaPostContent } from '@/content/blog/en/u-visa-vawa';
 import { StewartDetentionPostContent } from '@/content/blog/en/stewart-detention';
+import { TpsPostContent } from '@/content/blog/en/tps-2026';
+import { NoticeToAppearPostContent } from '@/content/blog/en/notice-to-appear-georgia';
+import { FamilyGreenCardPostContent } from '@/content/blog/en/family-green-card-attorney-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'notice-to-appear-georgia': NoticeToAppearPostContent,
+  'family-green-card-attorney-georgia': FamilyGreenCardPostContent,
   'daca-renewal-2025-georgia': DacaRenewal2025PostContent,
   'daca-renewal-2026': DacaRenewalPostContent,
   'daca-2026': DacaPostContent,
   'u-visa-vawa-protections-immigrant-survivors': UVisaVawaPostContent,
   'stewart-detention-attorney': StewartDetentionPostContent,
+  'tps-2026': TpsPostContent,
 };
 
 export function generateStaticParams() {

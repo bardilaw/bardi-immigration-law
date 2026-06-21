@@ -7,6 +7,27 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'notice-to-appear-georgia',
+    title: 'Received a Notice to Appear? What to Do Next in Georgia',
+    date: '2026-06-21',
+    description:
+      'Got a Notice to Appear (NTA) in Georgia? Learn what it means, your court deadlines, and your options — and why the first 30 days matter most. Call today.',
+  },
+  {
+    slug: 'family-green-card-attorney-georgia',
+    title: 'Green Card Through Family: A Complete Guide for Immigrants in Georgia',
+    date: '2026-06-20',
+    description:
+      'A family green card attorney in Georgia explains who can petition, the I-130 process, adjustment vs. consular processing, and mistakes to avoid.',
+  },
+  {
+    slug: 'tps-2026',
+    title: 'TPS in 2026: What It Means for Georgia Immigrants',
+    date: '2026-06-21',
+    description:
+      'Temporary Protected Status is in flux in 2026. A Georgia immigration attorney explains what TPS provides, who qualifies, re-registration deadlines, and what to do if your country\'s designation ends.',
+  },
+  {
     slug: 'daca-renewal-2025-georgia',
     title: 'DACA Renewal in 2025: What Georgia Dreamers Need to Know',
     date: '2026-06-20',

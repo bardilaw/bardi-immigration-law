@@ -5,6 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { BLOG_POSTS, getPost } from '@/content/blog/meta';
+import { DacaRenewal2025PostContent } from '@/content/blog/en/daca-renewal-2025-georgia';
 import { DacaRenewalPostContent } from '@/content/blog/en/daca-renewal-2026';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
 import { UVisaVawaPostContent } from '@/content/blog/en/u-visa-vawa';
@@ -13,6 +14,7 @@ import { StewartDetentionPostContent } from '@/content/blog/en/stewart-detention
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'daca-renewal-2025-georgia': DacaRenewal2025PostContent,
   'daca-renewal-2026': DacaRenewalPostContent,
   'daca-2026': DacaPostContent,
   'u-visa-vawa-protections-immigrant-survivors': UVisaVawaPostContent,
@@ -43,6 +45,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://bardilaw.com/blog/${slug}`,
       type: 'article',
       publishedTime: post.date,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
     },
   };
 }

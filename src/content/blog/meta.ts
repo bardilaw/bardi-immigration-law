@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'daca-renewal-2025-georgia',
+    title: 'DACA Renewal in 2025: What Georgia Dreamers Need to Know',
+    date: '2026-06-20',
+    description:
+      'DACA renewal is still open in 2025. A Georgia immigration attorney explains who qualifies, the documents you need, timing, and mistakes to avoid.',
+  },
+  {
     slug: 'daca-renewal-2026',
     title: 'DACA Renewal Guide 2026: What Every Dreamer Needs to Know',
     date: '2026-06-20',

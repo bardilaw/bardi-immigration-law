@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { ContactForm } from '@/components/ContactForm';
+import { BookingEmbed } from '@/components/BookingEmbed';
+import { CAL_LINK_EN, bookingEnabled } from '@/lib/booking';
 
 export const metadata: Metadata = {
   title: 'Contact Bardi Immigration Law | Schedule a Consultation',
@@ -56,6 +58,8 @@ const STEPS = [
 ];
 
 export default function ContactPage() {
+  const showBooking = bookingEnabled(CAL_LINK_EN);
+
   return (
     <>
       <Header />
@@ -67,16 +71,40 @@ export default function ContactPage() {
               Schedule a Consultation
             </h1>
             <p className="text-lg text-charcoal/80 max-w-xl mx-auto">
-              Fill in the form below and an attorney will be in touch within 24 hours.
+              {showBooking
+                ? 'Pick a time below to book your 30-minute consultation directly — or use the form to request a callback.'
+                : 'Fill in the form below and an attorney will be in touch within 24 hours.'}
             </p>
           </div>
         </section>
+
+        {/* Booking widget — only rendered once a Cal.com link is configured (BAR-580). */}
+        {showBooking && (
+          <section className="bg-white pb-4">
+            <div className="max-w-site mx-auto px-5 lg:px-8">
+              <div className="bg-white rounded-lg border border-warmgray/60 p-2 sm:p-4 min-h-[600px]">
+                <BookingEmbed calLink={CAL_LINK_EN} namespace="consult-en" locale="en" />
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Form + sidebar */}
         <section className="bg-warmgray py-12">
           <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-3 gap-10">
             {/* Form */}
             <div className="lg:col-span-2 bg-white rounded-lg p-6 lg:p-8">
+              {showBooking && (
+                <div className="mb-6">
+                  <h2 className="font-serif text-xl font-bold text-navy mb-2">
+                    Prefer a callback instead?
+                  </h2>
+                  <p className="text-sm text-charcoal/70">
+                    Can&apos;t find a time that works, or rather not self-schedule? Send your
+                    details and the attorney will reach out within 24 hours.
+                  </p>
+                </div>
+              )}
               <ContactForm />
             </div>
 

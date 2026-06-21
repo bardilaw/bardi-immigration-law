@@ -11,6 +11,7 @@
     "pages:deploy": "npx wrangler pages deploy .vercel/output/static --project-name bardi-immigration-law"
   },
   "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
     "@sentry/nextjs": "^9",
     "next": "15.5.2",
     "react": "^19",

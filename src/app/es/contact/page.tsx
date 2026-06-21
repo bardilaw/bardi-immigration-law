@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { ContactFormES } from '@/components/ContactFormES';
+import { BookingEmbed } from '@/components/BookingEmbed';
+import { CAL_LINK_ES, bookingEnabled } from '@/lib/booking';
 
 export const metadata: Metadata = {
   title: 'Contacto | Programe una Consulta',
@@ -50,6 +52,8 @@ const STEPS = [
 ];
 
 export default function ContactPageES() {
+  const showBooking = bookingEnabled(CAL_LINK_ES);
+
   return (
     <>
       <Header />
@@ -61,21 +65,36 @@ export default function ContactPageES() {
               Programe su Consulta
             </h1>
             <p className="text-lg text-charcoal/80 max-w-xl mx-auto">
-              Las decisiones de inmigración tienen consecuencias reales. Complete el formulario y
-              una abogada se comunicará con usted dentro de 24 horas.
+              {showBooking
+                ? 'Elija un horario a continuación para reservar su consulta de 30 minutos directamente — o use el formulario para solicitar que la abogada le llame.'
+                : 'Las decisiones de inmigración tienen consecuencias reales. Complete el formulario y una abogada se comunicará con usted dentro de 24 horas.'}
             </p>
           </div>
         </section>
+
+        {/* Widget de reservas — solo se muestra cuando hay un enlace de Cal.com configurado (BAR-580). */}
+        {showBooking && (
+          <section className="bg-white pb-4">
+            <div className="max-w-site mx-auto px-5 lg:px-8">
+              <div className="bg-white rounded-lg border border-warmgray/60 p-2 sm:p-4 min-h-[600px]">
+                <BookingEmbed calLink={CAL_LINK_ES} namespace="consult-es" locale="es" />
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Form + sidebar */}
         <section className="bg-warmgray py-12">
           <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-3 gap-10">
             {/* Form */}
             <div className="lg:col-span-2 bg-white rounded-lg p-6 lg:p-8">
-              <h2 className="font-serif text-xl font-bold text-navy mb-6">Programe Su Consulta</h2>
+              <h2 className="font-serif text-xl font-bold text-navy mb-6">
+                {showBooking ? '¿Prefiere que la llamemos?' : 'Programe Su Consulta'}
+              </h2>
               <p className="text-sm text-charcoal/70 mb-6">
-                Complete el formulario a continuación y nos comunicaremos dentro de un día hábil
-                para programar su consulta.
+                {showBooking
+                  ? '¿No encuentra un horario que le convenga o prefiere no reservar en línea? Envíe sus datos y la abogada se comunicará con usted dentro de un día hábil.'
+                  : 'Complete el formulario a continuación y nos comunicaremos dentro de un día hábil para programar su consulta.'}
               </p>
               <ContactFormES />
             </div>

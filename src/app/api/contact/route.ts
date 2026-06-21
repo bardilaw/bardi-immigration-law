@@ -115,11 +115,15 @@ export async function POST(request: Request) {
     const contactEmail = process.env.CONTACT_EMAIL;
 
     if (!apiKey || !contactEmail) {
-      // Config not set yet, accept submission silently rather than fail for the visitor
-      console.error('BAR-15: RESEND_API_KEY or CONTACT_EMAIL not configured');
+      // Delivery not configured (BAR-69). Fail loudly instead of returning a false
+      // success: there is no DB and no email path, so a 200 "message received" tells
+      // the visitor they reached us while the lead is silently dropped. Returning an
+      // error surfaces the honest "please email/call us directly" fallback in the UI
+      // so no prospective client is lost. See BAR-15 / BAR-69.
+      console.error('BAR-69: RESEND_API_KEY or CONTACT_EMAIL not configured; rejecting submission to avoid silent lead loss');
       return NextResponse.json(
-        { success: true, message: 'Your message has been received. An attorney will be in touch within 24 hours.' },
-        { status: 200 },
+        { error: 'We could not submit your request right now. Please email or call us directly so we don’t miss you.' },
+        { status: 503 },
       );
     }
 

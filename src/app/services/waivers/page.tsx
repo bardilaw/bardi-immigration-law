@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Immigration Waivers Attorney Georgia | Bardi Immigration Law',
-    description: 'I-601, I-212, and I-929 waiver preparation. Serving GA, AL, NC, SC.',
+    description: 'I-601, I-212, and I-929 waiver preparation. Licensed in Georgia and Alabama.',
     url: 'https://bardilaw.com/services/waivers',
     images: [
       {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Immigration Waivers Attorney Georgia | Bardi Immigration Law',
-    description: 'I-601, I-212, and I-929 waiver preparation. Serving GA, AL, NC, SC.',
+    description: 'I-601, I-212, and I-929 waiver preparation. Licensed in Georgia and Alabama.',
     images: ['/og-image.png'],
   },
 };

@@ -4,7 +4,7 @@ import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 export const metadata: Metadata = {
   title: 'Abogada Defensa contra la Deportación Georgia | Defensa en Procesos de Remoción',
   description:
-    'Enfrentando deportación o procesos de remoción? Bardi Immigration Law proporciona defensa completa — detenidos y no detenidos — en Georgia, Alabama, NC y SC.',
+    'Enfrentando deportación o procesos de remoción? Bardi Immigration Law proporciona defensa completa — detenidos y no detenidos. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país.',
   alternates: {
     canonical: 'https://bardilaw.com/es/services/removal-defense',
     languages: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       },
     ],
     title: 'Defensa contra la Deportación Georgia | Bardi Immigration Law',
-    description: 'Defensa completa contra la deportación — detenidos y no detenidos. Audiencias de fianza y representación completa. GA, AL, NC, SC.',
+    description: 'Defensa completa contra la deportación — detenidos y no detenidos. Audiencias de fianza y representación completa. Con licencia en Georgia y Alabama.',
     url: 'https://bardilaw.com/es/services/removal-defense',
     locale: 'es_US',
   },

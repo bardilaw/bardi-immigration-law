@@ -97,8 +97,8 @@ export function DacaPostContent() {
       </ul>
       <p>
         At Bardi Immigration Law, you speak directly with the attorney — not a paralegal or intake specialist. Eszter
-        Bardi handles DACA cases across Georgia, Alabama, North Carolina, and South Carolina, with consultations in
-        English, Spanish, and Hungarian.
+        Bardi is licensed in Georgia and Alabama, and because immigration is federal law, she represents clients
+        nationwide — with consultations in English, Spanish, and Hungarian.
       </p>
 
       <h2>What To Do If You&apos;re a DACA Recipient in Georgia</h2>

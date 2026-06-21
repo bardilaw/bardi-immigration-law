@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       },
     ],
     title: 'Abogada Perdones Migratorios Georgia | Bardi Immigration Law',
-    description: 'Perdones I-601, I-212 e I-929. GA, AL, NC, SC.',
+    description: 'Perdones I-601, I-212 e I-929. Con licencia en Georgia y Alabama.',
     url: 'https://bardilaw.com/es/services/waivers',
     locale: 'es_US',
   },

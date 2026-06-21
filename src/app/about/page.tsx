@@ -13,17 +13,16 @@ const ATTORNEY_SCHEMA = {
   memberOf: {
     '@type': 'Organization',
     name: 'American Immigration Lawyers Association (AILA)',
-    description: 'Georgia-Alabama Chapter Chair, 2025–26',
   },
-  areaServed: ['Georgia', 'North Carolina', 'South Carolina', 'Alabama'],
+  areaServed: ['Georgia', 'Alabama'],
   knowsLanguage: ['English', 'Spanish'],
   url: 'https://bardilaw.com/about',
 } as const;
 
 export const metadata: Metadata = {
-  title: 'About Bardi Immigration Law | AILA Georgia-Alabama Chapter Chair',
+  title: 'About Bardi Immigration Law | Your Attorney from Day One',
   description:
-    "Bardi Immigration Law is a boutique solo practice. The 2025–26 Georgia-Alabama AILA Chapter Chair — creative, complex, and personally committed to every client's outcome.",
+    "Bardi Immigration Law is a boutique solo practice — creative, capable representation on complex cases, and personally committed to every client's outcome. Licensed in Georgia and Alabama.",
   alternates: {
     canonical: 'https://bardilaw.com/about',
     languages: {
@@ -32,9 +31,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'About Bardi Immigration Law | AILA Georgia-Alabama Chapter Chair',
+    title: 'About Bardi Immigration Law | Your Attorney from Day One',
     description:
-      'Boutique immigration practice. Direct attorney access. AILA Georgia-Alabama Chapter Chair 2025–26. Serving GA, AL, NC, and SC.',
+      'Boutique immigration practice. Direct attorney access on complex cases. Licensed in Georgia and Alabama.',
     url: 'https://bardilaw.com/about',
     images: [
       {
@@ -47,9 +46,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Bardi Immigration Law | AILA Georgia-Alabama Chapter Chair',
+    title: 'About Bardi Immigration Law | Your Attorney from Day One',
     description:
-      'Boutique immigration practice. Direct attorney access. AILA Georgia-Alabama Chapter Chair 2025–26. Serving GA, AL, NC, and SC.',
+      'Boutique immigration practice. Direct attorney access on complex cases. Licensed in Georgia and Alabama.',
     images: ['/og-image.png'],
   },
 };
@@ -60,15 +59,14 @@ const CREDENTIALS = [
     items: ['State Bar of Georgia — Member in good standing', 'State Bar of Alabama — Member in good standing'],
   },
   {
-    category: 'Leadership',
+    category: 'Professional Memberships',
     items: [
       'American Immigration Lawyers Association (AILA)',
-      'Georgia-Alabama Chapter Chair, 2025–2026',
     ],
   },
   {
     category: 'Areas Served',
-    items: ['Georgia', 'Alabama', 'North Carolina', 'South Carolina'],
+    items: ['Georgia', 'Alabama'],
   },
   {
     category: 'Languages',
@@ -116,14 +114,14 @@ export default function AboutPage() {
                 Expert Counsel, Personal Attention.
               </h1>
               <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[480px] mb-8">
-                Boutique immigration representation across Georgia, Alabama, North Carolina, and South Carolina. You work with your attorney — from the first consultation to the final outcome.
+                Boutique immigration representation. Licensed in Georgia and Alabama. Because immigration is federal law, we represent clients nationwide. You work with your attorney — from the first consultation to the final outcome.
               </p>
               <Button href="/contact" size="lg">Schedule a Consultation</Button>
             </div>
             {/* Attorney portrait */}
             <div className="order-first lg:order-last flex items-center justify-center">
               <img
-                src="/headshot-placeholder-400x500.svg"
+                src="/headshot-eszter-hero.jpg"
                 alt="Attorney Eszter Bardi — Bardi Immigration Law"
                 width={400}
                 height={500}
@@ -154,16 +152,15 @@ export default function AboutPage() {
                   someone who will forward your questions.
                 </p>
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
-                  Our practice serves families and individuals across the Southeast — primarily in
-                  Georgia, Alabama, North Carolina, and South Carolina. We handle benefits-based
-                  immigration, removal defense, and federal litigation when administrative options
-                  have been exhausted.
+                  We handle benefits-based immigration, removal defense, and federal litigation when
+                  administrative options have been exhausted. Licensed in Georgia and Alabama, and
+                  because immigration is federal law, we represent clients nationwide.
                 </p>
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
-                  As the 2025–2026 Chapter Chair of the Georgia-Alabama Chapter of the American
-                  Immigration Lawyers Association (AILA), we stay current on every policy change,
-                  agency update, and legal shift that could affect your case. We take on difficult
-                  cases — the ones other firms decline. If there is a legal path forward, we will find it.
+                  We stay current on every policy change, agency update, and legal shift that could
+                  affect your case, and we take on difficult cases — the ones other firms decline. If
+                  there is a legal path forward, we will find it. Attorney Bardi is also an active
+                  member of the American Immigration Lawyers Association (AILA).
                 </p>
               </div>
             </div>

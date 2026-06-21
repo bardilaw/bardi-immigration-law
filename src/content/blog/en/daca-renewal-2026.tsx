@@ -129,8 +129,8 @@ export function DacaRenewalPostContent() {
       </ul>
       <p>
         At Bardi Immigration Law, you speak directly with the attorney — not a paralegal or an intake specialist.
-        Attorney Eszter Bardi handles DACA renewals across Georgia, Alabama, North Carolina, and South Carolina, with
-        consultations available in English, Spanish, and Hungarian.
+        Attorney Eszter Bardi is licensed in Georgia and Alabama, and because immigration is federal law, she represents
+        clients nationwide — with consultations available in English, Spanish, and Hungarian.
       </p>
 
       <h2>Renew Your DACA With Confidence</h2>

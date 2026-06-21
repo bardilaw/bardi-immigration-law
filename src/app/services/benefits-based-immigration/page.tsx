@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Benefits-Based Immigration Attorney | Bardi Immigration Law',
     description:
-      'Green cards, DACA, naturalization, U-visa, VAWA, family petitions, TPS, and waivers. Serving Georgia, Alabama, NC, and SC.',
+      'Green cards, DACA, naturalization, U-visa, VAWA, family petitions, TPS, and waivers. Licensed in Georgia and Alabama.',
     url: 'https://bardilaw.com/services/benefits-based-immigration',
     images: [
       {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Benefits-Based Immigration Attorney | Bardi Immigration Law',
-    description: 'Green cards, DACA, naturalization, U-visa, VAWA, family petitions, TPS, and waivers. Serving Georgia, Alabama, NC, and SC.',
+    description: 'Green cards, DACA, naturalization, U-visa, VAWA, family petitions, TPS, and waivers. Licensed in Georgia and Alabama.',
     images: ['/og-image.png'],
   },
 };

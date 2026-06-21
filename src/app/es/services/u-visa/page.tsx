@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       },
     ],
     title: 'Abogada Visa U Georgia | Bardi Immigration Law',
-    description: 'Peticiones de Visa U para víctimas de crimen. GA, AL, NC, SC.',
+    description: 'Peticiones de Visa U para víctimas de crimen. Con licencia en Georgia y Alabama.',
     url: 'https://bardilaw.com/es/services/u-visa',
     locale: 'es_US',
   },

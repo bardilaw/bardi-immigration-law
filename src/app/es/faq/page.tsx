@@ -9,7 +9,7 @@ import { FAQ_CATEGORIES, FAQ_SCHEMA, FAQ_DISCLAIMER_ES } from '../../faq/faqData
 export const metadata: Metadata = {
   title: 'Preguntas Frecuentes | Abogada de Inmigración',
   description:
-    'Respuestas a preguntas comunes de inmigración sobre DACA, tarjetas verdes, asilo y defensa contra la deportación de Bardi Immigration Law, sirviendo a Georgia, Alabama, Carolina del Norte y Carolina del Sur.',
+    'Respuestas a preguntas comunes de inmigración sobre DACA, tarjetas verdes, asilo y defensa contra la deportación de Bardi Immigration Law. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país.',
   alternates: {
     canonical: 'https://bardilaw.com/es/faq',
     languages: {

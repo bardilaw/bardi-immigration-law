@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       },
     ],
     title: 'Abogada TPS Georgia | Bardi Immigration Law',
-    description: 'Registro, re-registro de TPS y autorización de empleo para países designados. GA, AL, NC, SC.',
+    description: 'Registro, re-registro de TPS y autorización de empleo para países designados. Con licencia en Georgia y Alabama.',
     url: 'https://bardilaw.com/es/services/tps',
     locale: 'es_US',
   },

@@ -3,12 +3,11 @@ import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
-import { CredentialBadge } from '@/components/CredentialBadge';
 
 export const metadata: Metadata = {
   title: 'Bardi Immigration Law | Abogada de Inmigración en Georgia',
   description:
-    'Bufete boutique de inmigración que sirve a familias e individuos en Georgia, Alabama, Carolina del Norte y Carolina del Sur. Problemas complejos. Respuestas directas. Atención personal desde el primer contacto.',
+    'Bufete boutique de inmigración para familias e individuos. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. Problemas complejos. Respuestas directas. Atención personal desde el primer contacto.',
   alternates: {
     canonical: 'https://bardilaw.com/es/',
     languages: {
@@ -27,7 +26,7 @@ export const metadata: Metadata = {
     ],
     title: 'Bardi Immigration Law | Abogada de Inmigración en Georgia',
     description:
-      'Bufete boutique de inmigración en Georgia, Alabama, Carolina del Norte y Carolina del Sur. Acceso directo a su abogada.',
+      'Bufete boutique de inmigración. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. Acceso directo a su abogada.',
     url: 'https://bardilaw.com/es/',
     locale: 'es_US',
   },
@@ -60,8 +59,8 @@ const DIFFERENTIATORS = [
     desc: 'Usted trabaja directamente con su abogada — no con personal de apoyo — desde su primera consulta hasta el resultado final.',
   },
   {
-    label: 'Conectada Nacionalmente',
-    desc: 'Como Presidenta del Capítulo 2025–2026 de AILA Georgia-Alabama, nos mantenemos al día con cada cambio de política y actualización legal que afecta su caso.',
+    label: 'Siempre al Día',
+    desc: 'Nos mantenemos al día con cada cambio de política y actualización legal — para que su estrategia refleje la ley como está hoy, no como estaba el año pasado.',
   },
   {
     label: 'Representación Creativa y Compleja',
@@ -104,27 +103,30 @@ export default function HomePageES() {
           <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl font-bold text-navy leading-tight mb-6">
-                Su Caso de Inmigración Merece una Abogada, No un Formulario de Admisión.
+                Su Abogada desde el Primer Día.
               </h1>
               <p className="text-lg text-charcoal/80 mb-8 max-w-prose">
-                Bardi Immigration Law ofrece representación legal de inmigración boutique a personas y
-                familias en Georgia, Alabama, Carolina del Norte y Carolina del Sur. Problemas complejos.
-                Respuestas directas. Atención personal de su abogada desde el primer contacto.
+                Cuando su futuro está en juego, merece una abogada de verdad de su lado desde la
+                primera llamada — no un formulario de admisión, no un coordinador de casos. En Bardi
+                Immigration Law, usted trabaja directamente con su abogada, desde la primera
+                conversación hasta la decisión final.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <Button href="/es/contact" size="lg">Reserve una Consulta</Button>
                 <Button href="/es/services" variant="ghost" size="lg">Ver Nuestros Servicios</Button>
               </div>
               <div className="flex flex-wrap gap-3">
-                <CredentialBadge />
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-navy border border-warmgray-300 rounded-full px-3 py-1">
-                  Acceso Directo a Su Abogada
+                  Acceso Directo a la Abogada
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-navy border border-warmgray-300 rounded-full px-3 py-1">
+                  Práctica Boutique
                 </span>
               </div>
             </div>
             <div className="hidden lg:flex items-center justify-center">
               <img
-                src="/headshot-placeholder-400x500.svg"
+                src="/headshot-eszter-hero.jpg"
                 alt="Abogada Eszter Bardi — Bardi Immigration Law"
                 width={400}
                 height={500}
@@ -180,7 +182,7 @@ export default function HomePageES() {
           <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
             <div className="hidden lg:flex items-center justify-center">
               <img
-                src="/headshot-placeholder-300x300.svg"
+                src="/headshot-eszter.jpg"
                 alt="Abogada Eszter Bardi"
                 width={300}
                 height={300}
@@ -194,7 +196,6 @@ export default function HomePageES() {
                 Cuando llama, habla con una abogada — no con un especialista de admisión. Tratamos a
                 cada cliente como familia.
               </p>
-              <CredentialBadge className="mb-6" />
               <Button href="/es/about" variant="ghost">Conocer el Bufete</Button>
             </div>
           </div>
@@ -240,7 +241,7 @@ export default function HomePageES() {
               </div>
               <div className="bg-white rounded-lg p-6 flex flex-col items-center gap-2">
                 <span className="text-3xl font-serif font-bold text-gold">SE</span>
-                <p className="text-sm font-semibold text-navy font-sans">Georgia · Alabama<br />NC · SC</p>
+                <p className="text-sm font-semibold text-navy font-sans">Con licencia en<br />Georgia y Alabama</p>
               </div>
             </div>
           </div>
@@ -308,7 +309,7 @@ export default function HomePageES() {
               <Button href="/es/contact" size="lg">Reserve una Consulta</Button>
             </div>
             <p className="font-sans text-sm text-white/50 mt-4">
-              Sirviendo a clientes en Georgia, Alabama, Carolina del Norte y Carolina del Sur.
+              Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país.
             </p>
           </div>
         </section>

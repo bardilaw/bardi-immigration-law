@@ -9,7 +9,7 @@ import { FAQ_CATEGORIES, FAQ_SCHEMA, FAQ_DISCLAIMER } from './faqData';
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions | Immigration Law',
   description:
-    'Answers to common immigration questions about DACA, green cards, asylum, and removal defense from Bardi Immigration Law, serving Georgia, Alabama, North Carolina, and South Carolina.',
+    'Answers to common immigration questions about DACA, green cards, asylum, and removal defense from Bardi Immigration Law. Licensed in Georgia and Alabama; because immigration is federal law, we represent clients nationwide.',
   alternates: {
     canonical: 'https://bardilaw.com/faq',
     languages: {

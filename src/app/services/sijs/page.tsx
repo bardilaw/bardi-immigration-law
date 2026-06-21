@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'SIJS Attorney Georgia | Special Immigrant Juvenile Status | Bardi Immigration Law',
     description:
-      'Specialized, sensitive SIJS representation. State court + federal immigration filings. Serving Georgia, Alabama, NC, and SC.',
+      'Specialized, sensitive SIJS representation. State court + federal immigration filings. Licensed in Georgia and Alabama.',
     url: 'https://bardilaw.com/services/sijs',
     images: [
       {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'SIJS Attorney Georgia | Special Immigrant Juvenile Status | Bardi Immigration Law',
-    description: 'Specialized, sensitive SIJS representation. State court + federal immigration filings. Serving Georgia, Alabama, NC, and SC.',
+    description: 'Specialized, sensitive SIJS representation. State court + federal immigration filings. Licensed in Georgia and Alabama.',
     images: ['/og-image.png'],
   },
 };

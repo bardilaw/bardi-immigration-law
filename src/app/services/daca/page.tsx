@@ -9,7 +9,7 @@ import { JsonLd } from '@/components/JsonLd';
 export const metadata: Metadata = {
   title: 'DACA Attorney Georgia | Deferred Action for Childhood Arrivals',
   description:
-    'DACA applications and renewals in Georgia, Alabama, NC, and SC. Attorney Bardi reviews your full record before filing — eligibility is technical and the stakes are real.',
+    'DACA applications and renewals. Licensed in Georgia and Alabama. Attorney Bardi reviews your full record before filing — eligibility is technical and the stakes are real.',
   alternates: {
     canonical: 'https://bardilaw.com/services/daca',
     languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'DACA Attorney Georgia | Bardi Immigration Law',
     description:
-      'DACA initial applications and renewals. Direct attorney review. Serving Georgia, Alabama, NC, and SC.',
+      'DACA initial applications and renewals. Direct attorney review. Licensed in Georgia and Alabama.',
     url: 'https://bardilaw.com/services/daca',
     images: [
       {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'DACA Attorney Georgia | Bardi Immigration Law',
-    description: 'DACA initial applications and renewals. Direct attorney review. Serving Georgia, Alabama, NC, and SC.',
+    description: 'DACA initial applications and renewals. Direct attorney review. Licensed in Georgia and Alabama.',
     images: ['/og-image.png'],
   },
 };

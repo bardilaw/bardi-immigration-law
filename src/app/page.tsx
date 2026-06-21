@@ -3,12 +3,11 @@ import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
-import { CredentialBadge } from '@/components/CredentialBadge';
 
 export const metadata: Metadata = {
   title: 'Bardi Immigration Law | Georgia Immigration Attorney',
   description:
-    'Boutique immigration law firm serving Georgia, Alabama, North Carolina, and South Carolina. Your first call is with the attorney — not an intake specialist.',
+    'Boutique immigration law firm. Your first call is with the attorney — not an intake specialist. Direct attorney access from day one. Licensed in Georgia and Alabama.',
   alternates: {
     canonical: 'https://bardilaw.com/',
     languages: {
@@ -17,24 +16,24 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Bardi Immigration Law | Georgia Immigration Attorney',
+    title: 'Bardi Immigration Law | Your Attorney from Day One',
     description:
-      'Boutique immigration law firm serving Georgia, Alabama, North Carolina, and South Carolina. Your first call is with the attorney — not an intake specialist.',
+      'Boutique immigration law firm. Your first call is with the attorney — not an intake specialist. Direct attorney access from day one. Licensed in Georgia and Alabama.',
     url: 'https://bardilaw.com/',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+        alt: 'Bardi Immigration Law — Your Attorney from Day One',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bardi Immigration Law | Georgia Immigration Attorney',
+    title: 'Bardi Immigration Law | Your Attorney from Day One',
     description:
-      'Boutique immigration law firm serving Georgia, Alabama, North Carolina, and South Carolina. Your first call is with the attorney — not an intake specialist.',
+      'Boutique immigration law firm. Your first call is with the attorney — not an intake specialist. Direct attorney access from day one. Licensed in Georgia and Alabama.',
     images: ['/og-image.png'],
   },
 };
@@ -66,8 +65,8 @@ const DIFFERENTIATORS = [
     desc: 'You work with your attorney — not support staff — from your first consultation to your final outcome.',
   },
   {
-    label: 'Nationally Connected',
-    desc: 'As 2025–2026 AILA Georgia-Alabama Chapter Chair, we stay current on every policy shift, agency update, and legal change.',
+    label: 'Always Current',
+    desc: 'We stay on top of every policy shift, agency update, and legal change — so your strategy reflects the law as it stands today, not last year.',
   },
   {
     label: 'Creative, Complex Representation',
@@ -110,31 +109,34 @@ export default function HomePage() {
           <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl font-bold text-navy leading-tight mb-6">
-                Your Immigration Case Deserves an Attorney, Not an Intake Form.
+                Your Attorney from Day One.
               </h1>
               <p className="text-lg text-charcoal/80 mb-8 max-w-prose">
-                Bardi Immigration Law provides boutique immigration representation to families and
-                individuals across Georgia, Alabama, North Carolina, and South Carolina. Complex
-                problems. Direct answers. Real attorney involvement from day one.
+                When your future is on the line, you deserve a real lawyer in your corner from the
+                very first call — not an intake form, not a case manager. At Bardi Immigration Law,
+                you work directly with your attorney, from the first conversation to the final
+                decision.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <Button href="/contact" size="lg">Book a Consultation</Button>
                 <Button href="/services" variant="ghost" size="lg">See Our Services</Button>
               </div>
               <div className="flex flex-wrap gap-3">
-                <CredentialBadge />
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-navy border border-warmgray-300 rounded-full px-3 py-1">
                   Direct Attorney Access
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-navy border border-warmgray-300 rounded-full px-3 py-1">
+                  Boutique Practice
                 </span>
               </div>
             </div>
             <div className="hidden lg:flex items-center justify-center">
               <img
-                src="/headshot-placeholder-400x500.svg"
+                src="/headshot-eszter-hero.jpg"
                 alt="Attorney Eszter Bardi — Bardi Immigration Law"
                 width={400}
                 height={500}
-                className="rounded-lg h-96 w-auto object-cover"
+                className="rounded-lg h-96 w-auto object-cover shadow-md"
               />
             </div>
           </div>
@@ -185,21 +187,20 @@ export default function HomePage() {
           <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
             <div className="hidden lg:flex items-center justify-center">
               <img
-                src="/headshot-placeholder-300x300.svg"
+                src="/headshot-eszter.jpg"
                 alt="Attorney Eszter Bardi"
                 width={300}
                 height={300}
-                className="rounded-lg h-80 w-auto object-cover"
+                className="rounded-lg h-80 w-auto object-cover shadow-sm"
               />
             </div>
             <div>
               <h2 className="font-serif text-3xl lg:text-4xl font-bold text-navy mb-2">Why Bardi Law?</h2>
               <p className="font-serif text-xl text-charcoal/70 mb-6">Boutique. Personal. Attorney-first.</p>
               <p className="text-charcoal/80 mb-6">
-                When you call, you talk to an attorney — not an intake specialist. We treat every
-                client as family.
+                When you call, you talk to an attorney — not an intake specialist. Your case gets the
+                focus and follow-through it deserves, and you always know exactly where it stands.
               </p>
-              <CredentialBadge className="mb-6" />
               <Button href="/about" variant="ghost">Read About the Firm</Button>
             </div>
           </div>
@@ -244,8 +245,8 @@ export default function HomePage() {
                 <p className="text-sm font-semibold text-navy font-sans">State Bar of Georgia<br />Member in good standing</p>
               </div>
               <div className="bg-white rounded-lg p-6 flex flex-col items-center gap-2">
-                <span className="text-3xl font-serif font-bold text-gold">SE</span>
-                <p className="text-sm font-semibold text-navy font-sans">Georgia · Alabama<br />NC · SC</p>
+                <span className="text-3xl font-serif font-bold text-gold">AL</span>
+                <p className="text-sm font-semibold text-navy font-sans">State Bar of Alabama<br />Licensed &amp; in good standing</p>
               </div>
             </div>
           </div>
@@ -297,11 +298,11 @@ export default function HomePage() {
           <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-[40%_60%] gap-16 items-center">
             <div className="flex items-center justify-center lg:justify-start">
               <img
-                src="/headshot-placeholder-300x300.svg"
+                src="/headshot-eszter.jpg"
                 alt="Attorney Eszter Bardi"
                 width={300}
                 height={300}
-                className="w-48 h-48 lg:w-52 lg:h-52 rounded-full object-cover"
+                className="w-48 h-48 lg:w-52 lg:h-52 rounded-full object-cover shadow-sm"
               />
             </div>
             <div>
@@ -337,7 +338,7 @@ export default function HomePage() {
               <Button href="/contact" size="lg">Book Your Consultation</Button>
             </div>
             <p className="font-sans text-sm text-white/50 mt-4">
-              Serving clients across Georgia, Alabama, North Carolina, and South Carolina.
+              Licensed in Georgia and Alabama. Immigration is federal law — we represent clients nationwide.
             </p>
           </div>
         </section>

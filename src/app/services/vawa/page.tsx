@@ -4,7 +4,7 @@ import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 export const metadata: Metadata = {
   title: 'VAWA Immigration Attorney Georgia | Violence Against Women Act Petitions',
   description:
-    'VAWA self-petitions for survivors of abuse in Georgia, Alabama, NC, and SC. File without notifying the abuser. Confidential, sensitive representation from day one.',
+    'VAWA self-petitions for survivors of abuse. Licensed in Georgia and Alabama. File without notifying the abuser. Confidential, sensitive representation from day one.',
   alternates: {
     canonical: 'https://bardilaw.com/services/vawa',
     languages: {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'VAWA Attorney Georgia | Bardi Immigration Law',
-    description: 'VAWA self-petitions for abuse survivors. USCIS does not notify the abuser. Serving GA, AL, NC, SC.',
+    description: 'VAWA self-petitions for abuse survivors. USCIS does not notify the abuser. Licensed in Georgia and Alabama.',
     url: 'https://bardilaw.com/services/vawa',
     images: [
       {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'VAWA Attorney Georgia | Bardi Immigration Law',
-    description: 'VAWA self-petitions for abuse survivors. USCIS does not notify the abuser. Serving GA, AL, NC, SC.',
+    description: 'VAWA self-petitions for abuse survivors. USCIS does not notify the abuser. Licensed in Georgia and Alabama.',
     images: ['/og-image.png'],
   },
 };

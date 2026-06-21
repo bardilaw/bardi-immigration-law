@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: '%s | Bardi Immigration Law',
   },
   description:
-    'Boutique immigration law firm serving Georgia, Alabama, North Carolina, and South Carolina. AILA Chapter Chair 2025–26. Direct attorney access. Benefits-based immigration, removal defense, and federal litigation.',
+    'Boutique immigration law firm. Your attorney from day one — direct attorney access, not an intake form. Licensed in Georgia and Alabama. Benefits-based immigration, removal defense, and federal litigation.',
   metadataBase: new URL('https://bardilaw.com'),
   openGraph: {
     siteName: 'Bardi Immigration Law',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Bardi Immigration Law | Georgia Immigration Attorney',
     description:
-      'Boutique immigration law firm serving Georgia, Alabama, North Carolina, and South Carolina. AILA Chapter Chair 2025–26. Direct attorney access.',
+      'Boutique immigration law firm. Your attorney from day one — direct attorney access, not an intake form. Licensed in Georgia and Alabama.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -70,14 +70,12 @@ const FIRM_SCHEMA = {
       },
       areaServed: [
         { '@type': 'State', name: 'Georgia' },
-        { '@type': 'State', name: 'North Carolina' },
-        { '@type': 'State', name: 'South Carolina' },
         { '@type': 'State', name: 'Alabama' },
       ],
       serviceType: 'Immigration Law',
       priceRange: '$$',
       description:
-        'Boutique immigration law firm providing direct attorney representation across Georgia, North Carolina, South Carolina, and Alabama. Specializing in benefits-based immigration, removal defense, and federal litigation.',
+        'Boutique immigration law firm providing direct attorney representation. Licensed in Georgia and Alabama; because immigration is federal law, we represent clients nationwide. Specializing in benefits-based immigration, removal defense, and federal litigation.',
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Immigration Legal Services',

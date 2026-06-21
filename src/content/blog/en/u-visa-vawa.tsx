@@ -159,7 +159,8 @@ export function UVisaVawaPostContent() {
         <Link href="/services/u-visa">U-Visa</Link> and{' '}
         <Link href="/services/vawa">VAWA</Link> cases directly — in English, Spanish, and Hungarian. No intake
         specialist. No paralegal relay. You speak with the attorney who knows your case from the first consultation
-        through resolution. We serve clients across Georgia, Alabama, North Carolina, and South Carolina.
+        through resolution. Licensed in Georgia and Alabama, and because immigration is federal law, we represent
+        clients nationwide.
       </p>
 
       <p className="italic text-charcoal/70 mt-2">

@@ -4,7 +4,7 @@ import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 export const metadata: Metadata = {
   title: 'Removal Defense Attorney Georgia | Fight Deportation',
   description:
-    'Facing removal or deportation proceedings? Bardi Immigration Law provides full removal defense — detained and non-detained — in Georgia, Alabama, NC, and SC.',
+    'Facing removal or deportation proceedings? Bardi Immigration Law provides full removal defense — detained and non-detained. Licensed in Georgia and Alabama.',
   alternates: {
     canonical: 'https://bardilaw.com/services/removal-defense',
     languages: {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Removal Defense Attorney Georgia | Bardi Immigration Law',
-    description: 'Full removal defense — detained and non-detained. Bond hearings, cancellation of removal, and complete representation. Serving GA, AL, NC, SC.',
+    description: 'Full removal defense — detained and non-detained. Bond hearings, cancellation of removal, and complete representation. Licensed in Georgia and Alabama.',
     url: 'https://bardilaw.com/services/removal-defense',
     images: [
       {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Removal Defense Attorney Georgia | Bardi Immigration Law',
-    description: 'Full removal defense — detained and non-detained. Bond hearings, cancellation of removal, and complete representation. Serving GA, AL, NC, SC.',
+    description: 'Full removal defense — detained and non-detained. Bond hearings, cancellation of removal, and complete representation. Licensed in Georgia and Alabama.',
     images: ['/og-image.png'],
   },
 };

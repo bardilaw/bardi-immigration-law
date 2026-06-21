@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       },
     ],
     title: 'Abogada VAWA Georgia | Bardi Immigration Law',
-    description: 'Autopeticiones VAWA para sobrevivientes de abuso. USCIS no notifica al abusador. GA, AL, NC, SC.',
+    description: 'Autopeticiones VAWA para sobrevivientes de abuso. USCIS no notifica al abusador. Con licencia en Georgia y Alabama.',
     url: 'https://bardilaw.com/es/services/vawa',
     locale: 'es_US',
   },

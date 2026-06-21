@@ -4,9 +4,9 @@ import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
 
 export const metadata: Metadata = {
-  title: 'Sobre Nosotros | AILA Presidenta del Capítulo Georgia-Alabama',
+  title: 'Sobre Nosotros | Abogada de Inmigración Boutique',
   description:
-    'Bardi Immigration Law es una práctica boutique unipersonal. Presidenta del Capítulo AILA Georgia-Alabama 2025–26. Representación creativa, compleja y personal para cada cliente.',
+    'Bardi Immigration Law es una práctica boutique unipersonal. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. Representación creativa, compleja y personal para cada cliente.',
   alternates: {
     canonical: 'https://bardilaw.com/es/about',
     languages: {
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
         alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
       },
     ],
-    title: 'Sobre Bardi Immigration Law | AILA Presidenta del Capítulo Georgia-Alabama',
+    title: 'Sobre Bardi Immigration Law | Abogada de Inmigración Boutique',
     description:
-      'Práctica boutique. Acceso directo a su abogada. AILA Georgia-Alabama Chapter Chair 2025–26. Sirviendo a GA, AL, NC y SC.',
+      'Práctica boutique. Acceso directo a su abogada. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país.',
     url: 'https://bardilaw.com/es/about',
     locale: 'es_US',
   },
@@ -39,13 +39,12 @@ const CREDENTIALS = [
   {
     category: 'Liderazgo',
     items: [
-      'Asociación Americana de Abogados de Inmigración (AILA)',
-      'Presidenta del Capítulo Georgia-Alabama, 2025–2026',
+      'Miembro, Asociación Americana de Abogados de Inmigración (AILA)',
     ],
   },
   {
     category: 'Áreas de Servicio',
-    items: ['Georgia', 'Alabama', 'Carolina del Norte', 'Carolina del Sur'],
+    items: ['Con licencia en Georgia y Alabama', 'Como la ley de inmigración es federal, representamos a clientes en todo el país'],
   },
   {
     category: 'Idiomas',
@@ -92,13 +91,13 @@ export default function AboutPageES() {
                 Asesoría Experta, Atención Personal.
               </h1>
               <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[480px] mb-8">
-                Representación boutique de inmigración en Georgia, Alabama, Carolina del Norte y Carolina del Sur. Usted trabaja con su abogada — desde la primera consulta hasta el resultado final.
+                Representación boutique de inmigración. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. Usted trabaja con su abogada — desde la primera consulta hasta el resultado final.
               </p>
               <Button href="/es/contact" size="lg">Programe una Consulta</Button>
             </div>
             <div className="order-first lg:order-last flex items-center justify-center">
               <img
-                src="/headshot-placeholder-400x500.svg"
+                src="/headshot-eszter-hero.jpg"
                 alt="Abogada Eszter Bardi — Bardi Immigration Law"
                 width={400}
                 height={500}
@@ -128,15 +127,15 @@ export default function AboutPageES() {
                   admisión, no con alguien que transmitirá sus preguntas.
                 </p>
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
-                  Nuestra práctica sirve a familias e individuos en todo el sureste — principalmente en
-                  Georgia, Alabama, Carolina del Norte y Carolina del Sur. Manejamos inmigración por beneficios,
-                  defensa contra la deportación y litigios federales cuando se han agotado las opciones administrativas.
+                  Nuestra práctica sirve a familias e individuos con licencia en Georgia y Alabama. Como la ley
+                  de inmigración es federal, representamos a clientes en todo el país. Manejamos inmigración por
+                  beneficios, defensa contra la deportación y litigios federales cuando se han agotado las opciones
+                  administrativas.
                 </p>
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
-                  Como Presidenta del Capítulo 2025–2026 del Capítulo Georgia-Alabama de la Asociación Americana
-                  de Abogados de Inmigración (AILA), nos mantenemos al día con cada cambio de política,
-                  actualización de agencia y cambio legal que podría afectar su caso. Aceptamos casos difíciles —
-                  los que otros bufetes rechazan. Si existe un camino legal, lo encontraremos.
+                  Nos mantenemos al día con cada cambio de política, actualización de agencia y cambio legal que
+                  podría afectar su caso. Aceptamos casos difíciles — los que otros bufetes rechazan. Si existe un
+                  camino legal, lo encontraremos.
                 </p>
               </div>
             </div>

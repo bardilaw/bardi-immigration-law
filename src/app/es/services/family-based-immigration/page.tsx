@@ -4,7 +4,7 @@ import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 export const metadata: Metadata = {
   title: 'Abogada Inmigración Familiar Georgia | Tarjetas Verdes y Peticiones Familiares',
   description:
-    'Tarjetas verdes familiares, peticiones I-130, naturalización y ajuste de estatus en Georgia, Alabama, NC y SC. Representación directa de la abogada desde la petición hasta la aprobación.',
+    'Tarjetas verdes familiares, peticiones I-130, naturalización y ajuste de estatus. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. Representación directa de la abogada desde la petición hasta la aprobación.',
   alternates: {
     canonical: 'https://bardilaw.com/es/services/family-based-immigration',
     languages: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       },
     ],
     title: 'Inmigración Familiar Georgia | Bardi Immigration Law',
-    description: 'Peticiones I-130, tarjetas verdes, ajuste de estatus y naturalización. GA, AL, NC, SC.',
+    description: 'Peticiones I-130, tarjetas verdes, ajuste de estatus y naturalización. Con licencia en Georgia y Alabama.',
     url: 'https://bardilaw.com/es/services/family-based-immigration',
     locale: 'es_US',
   },

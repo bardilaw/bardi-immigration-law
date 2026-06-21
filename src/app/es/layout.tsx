@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     template: '%s | Bardi Immigration Law',
   },
   description:
-    'Bufete boutique de inmigración que sirve a familias e individuos en Georgia, Alabama, Carolina del Norte y Carolina del Sur. Presidenta del Capítulo AILA Georgia-Alabama 2025–26. Acceso directo a su abogada.',
+    'Bufete boutique de inmigración para familias e individuos. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. Acceso directo a su abogada.',
   openGraph: {
     images: [
       {

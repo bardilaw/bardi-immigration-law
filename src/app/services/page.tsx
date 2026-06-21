@@ -7,7 +7,7 @@ import { Button } from '@/components/Button';
 export const metadata: Metadata = {
   title: 'Immigration Legal Services',
   description:
-    'DACA, SIJS, VAWA, U-Visa, TPS, family-based immigration, removal defense, and federal litigation — handled directly by the attorney from day one. Serving Georgia, Alabama, NC, and SC.',
+    'DACA, SIJS, VAWA, U-Visa, TPS, family-based immigration, removal defense, and federal litigation — handled directly by the attorney from day one. Licensed in Georgia and Alabama.',
   alternates: {
     canonical: 'https://bardilaw.com/services',
     languages: {

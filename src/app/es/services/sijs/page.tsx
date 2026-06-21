@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       },
     ],
     title: 'Abogada SIJS Georgia | Bardi Immigration Law',
-    description: 'Representación SIJS especializada y sensible. Procesos estatales + federales. GA, AL, NC, SC.',
+    description: 'Representación SIJS especializada y sensible. Procesos estatales + federales. Con licencia en Georgia y Alabama.',
     url: 'https://bardilaw.com/es/services/sijs',
     locale: 'es_US',
   },

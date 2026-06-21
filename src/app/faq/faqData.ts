@@ -111,7 +111,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: 'What states does Eszter Bardi serve?',
-        a: 'Bardi Immigration Law works with clients across Georgia, Alabama, North Carolina, and South Carolina, with most clients based in Georgia. Because immigration law is federal, we can also represent clients in immigration matters no matter where they live in the United States. If you are unsure whether we can help with your case, just ask during your consultation.',
+        a: 'Bardi Immigration Law is licensed in Georgia and Alabama, with most clients based in Georgia. Because immigration law is federal, we can also represent clients in immigration matters no matter where they live in the United States. If you are unsure whether we can help with your case, just ask during your consultation.',
       },
       {
         q: 'Will I work with an actual attorney, or with support staff?',

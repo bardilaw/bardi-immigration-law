@@ -4,7 +4,7 @@ import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 export const metadata: Metadata = {
   title: 'Family-Based Immigration Attorney Georgia | Green Cards & Family Petitions',
   description:
-    'Family-based green cards, I-130 petitions, naturalization, and adjustment of status in Georgia, Alabama, NC, and SC. Direct attorney representation from petition to approval.',
+    'Family-based green cards, I-130 petitions, naturalization, and adjustment of status. Licensed in Georgia and Alabama. Direct attorney representation from petition to approval.',
   alternates: {
     canonical: 'https://bardilaw.com/services/family-based-immigration',
     languages: {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Family-Based Immigration Attorney Georgia | Bardi Immigration Law',
-    description: 'I-130 petitions, green cards, adjustment of status, and naturalization. Serving GA, AL, NC, SC.',
+    description: 'I-130 petitions, green cards, adjustment of status, and naturalization. Licensed in Georgia and Alabama.',
     url: 'https://bardilaw.com/services/family-based-immigration',
     images: [
       {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Family-Based Immigration Attorney Georgia | Bardi Immigration Law',
-    description: 'I-130 petitions, green cards, adjustment of status, and naturalization. Serving GA, AL, NC, SC.',
+    description: 'I-130 petitions, green cards, adjustment of status, and naturalization. Licensed in Georgia and Alabama.',
     images: ['/og-image.png'],
   },
 };

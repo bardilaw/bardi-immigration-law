@@ -4,7 +4,7 @@ import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 export const metadata: Metadata = {
   title: 'Abogada DACA Georgia | Acción Diferida para los Llegados en la Infancia',
   description:
-    'Solicitudes iniciales y renovaciones de DACA en Georgia, Alabama, NC y SC. La abogada Bardi revisa su historial completo antes de presentar.',
+    'Solicitudes iniciales y renovaciones de DACA. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. La abogada Bardi revisa su historial completo antes de presentar.',
   alternates: {
     canonical: 'https://bardilaw.com/es/services/daca',
     languages: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       },
     ],
     title: 'Abogada DACA Georgia | Bardi Immigration Law',
-    description: 'Solicitudes y renovaciones DACA. Revisión directa de la abogada. Sirviendo a Georgia, Alabama, NC y SC.',
+    description: 'Solicitudes y renovaciones DACA. Revisión directa de la abogada. Con licencia en Georgia y Alabama.',
     url: 'https://bardilaw.com/es/services/daca',
     locale: 'es_US',
   },

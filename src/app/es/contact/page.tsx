@@ -8,7 +8,7 @@ import { CAL_LINK_ES, bookingEnabled } from '@/lib/booking';
 export const metadata: Metadata = {
   title: 'Contacto | Programe una Consulta',
   description:
-    'Programe su consulta directamente con la abogada. Sirviendo a Georgia, Carolina del Norte, Carolina del Sur y Alabama. Sin intermediarios — hable directamente con la abogada.',
+    'Programe su consulta directamente con la abogada. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. Sin intermediarios — hable directamente con la abogada.',
   alternates: {
     canonical: 'https://bardilaw.com/es/contact',
     languages: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     ],
     title: 'Contacto | Bardi Immigration Law',
     description:
-      'Programe su consulta directamente con la abogada. Sirviendo a GA, NC, SC y AL.',
+      'Programe su consulta directamente con la abogada. Con licencia en Georgia y Alabama.',
     url: 'https://bardilaw.com/es/contact',
     locale: 'es_US',
   },
@@ -157,7 +157,7 @@ export default function ContactPageES() {
                   </li>
                   <li className="flex items-center gap-2 text-charcoal/70 font-sans">
                     <span aria-hidden="true">📍</span>
-                    <span>Atendemos Georgia, Alabama y las Carolinas</span>
+                    <span>Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país.</span>
                   </li>
                 </ul>
                 <p className="text-xs text-charcoal/50 mt-3">Con cita previa — de lunes a viernes</p>

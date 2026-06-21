@@ -8,7 +8,7 @@ import { CAL_LINK_EN, bookingEnabled } from '@/lib/booking';
 export const metadata: Metadata = {
   title: 'Contact Bardi Immigration Law | Schedule a Consultation',
   description:
-    'Schedule your consultation directly with the attorney. Serving Georgia, North Carolina, South Carolina, and Alabama. No intake specialist — speak with the attorney directly.',
+    'Schedule your consultation directly with the attorney. Licensed in Georgia and Alabama; because immigration is federal law, we represent clients nationwide. No intake specialist — speak with the attorney directly.',
   alternates: {
     canonical: 'https://bardilaw.com/contact',
     languages: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Bardi Immigration Law | Schedule a Consultation',
     description:
-      'Schedule your consultation directly with the attorney. Serving GA, NC, SC, and AL.',
+      'Schedule your consultation directly with the attorney. Licensed in Georgia and Alabama.',
     url: 'https://bardilaw.com/contact',
     images: [
       {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Contact Bardi Immigration Law | Schedule a Consultation',
     description:
-      'Schedule your consultation directly with the attorney. Serving GA, NC, SC, and AL.',
+      'Schedule your consultation directly with the attorney. Licensed in Georgia and Alabama.',
     images: ['/og-image.png'],
   },
 };
@@ -147,7 +147,7 @@ export default function ContactPage() {
                   </li>
                   <li className="flex items-center gap-2 text-charcoal/70 font-sans">
                     <span aria-hidden="true">📍</span>
-                    <span>Serving Georgia, Alabama, North &amp; South Carolina</span>
+                    <span>Licensed in Georgia &amp; Alabama — clients nationwide</span>
                   </li>
                 </ul>
                 <p className="text-xs text-charcoal/50 mt-3">By appointment — Monday through Friday</p>

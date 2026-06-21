@@ -7,7 +7,7 @@ import { Button } from '@/components/Button';
 export const metadata: Metadata = {
   title: 'Abogada de Inmigración por Beneficios | Tarjetas de Residencia, DACA, Visa U y Más',
   description:
-    'Tarjetas de residencia permanente, DACA, naturalización, visa U, VAWA, peticiones familiares, TPS y renuncias — representación personalizada de inmigración en Georgia y el sureste.',
+    'Tarjetas de residencia permanente, DACA, naturalización, visa U, VAWA, peticiones familiares, TPS y renuncias — representación personalizada de inmigración. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país.',
   alternates: {
     canonical: 'https://bardilaw.com/es/services/benefits-based-immigration',
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     ],
     title: 'Inmigración por Beneficios | Bardi Immigration Law',
     description:
-      'Tarjetas de residencia permanente, DACA, naturalización, visa U, VAWA, peticiones familiares, TPS y renuncias. Sirviendo a Georgia, Alabama, NC y SC.',
+      'Tarjetas de residencia permanente, DACA, naturalización, visa U, VAWA, peticiones familiares, TPS y renuncias. Con licencia en Georgia y Alabama.',
     url: 'https://bardilaw.com/es/services/benefits-based-immigration',
     locale: 'es_US',
   },

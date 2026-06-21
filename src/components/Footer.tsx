@@ -59,7 +59,7 @@ export function Footer() {
               <li>
                 <a href="mailto:info@bardilaw.com" className="hover:text-gold transition-colors">info@bardilaw.com</a>
               </li>
-              <li>{isEs ? 'GA · AL · NC · SC' : 'Serving GA · AL · NC · SC'}</li>
+              <li>{isEs ? 'Con licencia en Georgia y Alabama' : 'Licensed in Georgia & Alabama'}</li>
             </ul>
             <Button href={p('/contact')} variant="primary" size="sm">
               {isEs ? 'Reserve una Consulta' : 'Schedule a Consultation'}
@@ -69,10 +69,10 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <Logo className="brightness-0 invert" />
+          <Logo variant="circle" />
           <p className="text-xs text-white/50 text-center">
             © {new Date().getFullYear()} Bardi Immigration Law. All rights reserved.<br />
-            <span>AILA Chapter Chair, Georgia-Alabama 2025–26</span>
+            <span>{isEs ? 'Con licencia en Georgia y Alabama' : 'Licensed in Georgia & Alabama'}</span>
           </p>
         </div>
       </div>

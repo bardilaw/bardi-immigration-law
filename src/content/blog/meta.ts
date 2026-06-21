@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'naturalization-citizenship-georgia',
+    title: 'Naturalization in Georgia: Your Path to U.S. Citizenship',
+    date: '2026-06-21',
+    description:
+      'A Georgia naturalization attorney explains N-400 eligibility, continuous residence, the English and civics tests, the timeline, the USCIS Atlanta Field Office, and the common problems that delay citizenship.',
+  },
+  {
     slug: 'asylum-application-georgia',
     title: 'How to Apply for Asylum in the United States: A Georgia Guide',
     date: '2026-06-21',

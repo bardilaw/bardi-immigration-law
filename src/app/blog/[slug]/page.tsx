@@ -13,10 +13,12 @@ import { StewartDetentionPostContent } from '@/content/blog/en/stewart-detention
 import { TpsPostContent } from '@/content/blog/en/tps-2026';
 import { NoticeToAppearPostContent } from '@/content/blog/en/notice-to-appear-georgia';
 import { FamilyGreenCardPostContent } from '@/content/blog/en/family-green-card-attorney-georgia';
+import { AsylumApplicationPostContent } from '@/content/blog/en/asylum-application-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'asylum-application-georgia': AsylumApplicationPostContent,
   'notice-to-appear-georgia': NoticeToAppearPostContent,
   'family-green-card-attorney-georgia': FamilyGreenCardPostContent,
   'daca-renewal-2025-georgia': DacaRenewal2025PostContent,

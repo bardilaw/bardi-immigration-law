@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'asylum-application-georgia',
+    title: 'How to Apply for Asylum in the United States: A Georgia Guide',
+    date: '2026-06-21',
+    description:
+      'A Georgia immigration attorney explains how to apply for asylum: the five protected grounds, the one-year deadline, affirmative vs. defensive cases, Form I-589, and the mistakes that sink cases.',
+  },
+  {
     slug: 'notice-to-appear-georgia',
     title: 'Received a Notice to Appear? What to Do Next in Georgia',
     date: '2026-06-21',

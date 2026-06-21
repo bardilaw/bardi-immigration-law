@@ -98,10 +98,27 @@ export default function HomePageES() {
     <>
       <Header />
       <main id="main-content">
-        {/* Hero */}
-        <section className="bg-white py-20 lg:py-28">
-          <div className="max-w-site mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+        {/* Hero: full-bleed portrait on the right, fading to white over the left copy (BAR-619) */}
+        <section className="relative bg-white overflow-hidden">
+          {/* Desktop background portrait + white gradient fade */}
+          <div className="hidden lg:block absolute inset-y-0 right-0 w-[58%] xl:w-[54%]">
+            <img
+              src="/headshot-eszter-hero.jpg"
+              alt="Abogada Eszter Bardi, Bardi Immigration Law"
+              className="h-full w-full object-cover object-[center_22%]"
+            />
+            <div
+              className="absolute inset-0"
+              aria-hidden="true"
+              style={{
+                background:
+                  'linear-gradient(to right, #ffffff 0%, #ffffff 16%, rgba(255,255,255,0.45) 38%, rgba(255,255,255,0) 60%)',
+              }}
+            />
+          </div>
+
+          <div className="relative max-w-site mx-auto px-5 lg:px-8 py-20 lg:py-32">
+            <div className="lg:max-w-[50%]">
               <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl font-bold text-navy leading-tight mb-6">
                 Su Abogada desde el Primer Día.
               </h1>
@@ -133,15 +150,6 @@ export default function HomePageES() {
                   Práctica Boutique
                 </span>
               </div>
-            </div>
-            <div className="hidden lg:flex items-center justify-center">
-              <img
-                src="/headshot-eszter-hero.jpg"
-                alt="Abogada Eszter Bardi, Bardi Immigration Law"
-                width={400}
-                height={500}
-                className="rounded-lg h-96 w-auto object-cover"
-              />
             </div>
           </div>
         </section>

@@ -101,7 +101,7 @@ export default function HomePageES() {
         {/* Hero: full-bleed portrait on the right, fading to white over the left copy (BAR-619) */}
         <section className="relative bg-white overflow-hidden">
           {/* Desktop background portrait + white gradient fade */}
-          <div className="hidden lg:block absolute inset-y-0 right-0 w-[58%] xl:w-[54%]">
+          <div className="hidden lg:block absolute inset-y-0 right-0 w-[66%] xl:w-[62%]">
             <img
               src="/headshot-eszter-hero.jpg"
               alt="Abogada Eszter Bardi, Bardi Immigration Law"
@@ -112,7 +112,7 @@ export default function HomePageES() {
               aria-hidden="true"
               style={{
                 background:
-                  'linear-gradient(to right, #ffffff 0%, #ffffff 6%, rgba(255,255,255,0.96) 16%, rgba(255,255,255,0.88) 26%, rgba(255,255,255,0.72) 38%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.28) 62%, rgba(255,255,255,0.12) 74%, rgba(255,255,255,0) 88%)',
+                  'linear-gradient(to right, #ffffff 0%, #ffffff 10%, rgba(255,255,255,0.9) 20%, rgba(255,255,255,0.68) 29%, rgba(255,255,255,0.42) 37%, rgba(255,255,255,0.18) 44%, rgba(255,255,255,0) 51%)',
               }}
             />
           </div>

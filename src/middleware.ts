@@ -6,7 +6,7 @@ import type { NextRequest } from 'next/server';
 // code change by setting a SITE_PASSWORD env var on the Pages project; the
 // hardcoded default is the value the board chose for this launch.
 const SITE_PASSWORD = process.env.SITE_PASSWORD || 'ultimate';
-const REALM = 'Bardi Immigration Law — Preview';
+const REALM = 'Bardi Immigration Law: Preview';
 
 function unauthorized(): NextResponse {
   return new NextResponse('Authentication required.', {
@@ -29,7 +29,7 @@ export function middleware(req: NextRequest): NextResponse {
         return NextResponse.next();
       }
     } catch {
-      // Malformed header — fall through to the challenge.
+      // Malformed header, fall through to the challenge.
     }
   }
   return unauthorized();

@@ -13,7 +13,7 @@ type CalendlyMessageData = {
 /**
  * Drop this component into layout.tsx (inside <body>) once Calendly is live.
  * It listens for the Calendly postMessage and fires a GA4 conversion event.
- * Renders nothing — tracking only.
+ * Renders nothing, tracking only.
  */
 export function CalendlyTracker() {
   useEffect(() => {

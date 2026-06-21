@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Abogada SIJS Georgia | Estatus de Inmigrante Especial Juvenil',
+  title: 'Abogada SIJS | Estatus de Inmigrante Especial Juvenil',
   description:
-    'SIJS proporciona un camino hacia la tarjeta verde para niños que han sido abusados, abandonados o descuidados. Representación especializada y sensible en Georgia y el sureste.',
+    'SIJS proporciona un camino hacia la tarjeta verde para niños que han sido abusados, abandonados o descuidados. Representación especializada y sensible a nivel nacional.',
   alternates: {
     canonical: 'https://bardilaw.com/es/services/sijs',
     languages: {
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+        alt: 'Bardi Immigration Law',
       },
     ],
-    title: 'Abogada SIJS Georgia | Bardi Immigration Law',
-    description: 'Representación SIJS especializada y sensible. Procesos estatales + federales. Con licencia en Georgia y Alabama.',
+    title: 'Abogada SIJS | Bardi Immigration Law',
+    description: 'Representación SIJS especializada y sensible. Procesos estatales + federales.',
     url: 'https://bardilaw.com/es/services/sijs',
     locale: 'es_US',
   },
@@ -54,10 +54,10 @@ export default function SijsPageES() {
         { title: 'Presentar la petición I-360', body: 'Enviar el Formulario I-360 a USCIS con los hallazgos de la corte estatal y documentación de apoyo.' },
         { title: 'Esperar disponibilidad de visa', body: 'SIJS es una categoría de preferencia. Dependiendo del país de nacimiento, un número de visa puede estar disponible de inmediato o requerir espera.' },
         { title: 'Ajuste de estatus', body: 'Una vez que haya un número de visa disponible, presentar ajuste de estatus (I-485) para convertirse en residente permanente legal.' },
-        { title: 'Tarjeta verde emitida', body: 'Si es aprobado, recibe su tarjeta verde — estatus de residente permanente legal en los Estados Unidos.' },
+        { title: 'Tarjeta verde emitida', body: 'Si es aprobado, recibe su tarjeta verde, estatus de residente permanente legal en los Estados Unidos.' },
       ]}
       helpsHeading="Cómo Ayuda Bardi Immigration Law"
-      helpsParagraph="Los casos de SIJS requieren navegar simultáneamente los sistemas de corte estatal e inmigración federal. La abogada Bardi coordina el trabajo legal en ambas vías — asegurando que se obtengan los hallazgos judiciales requeridos y que la petición federal se prepare correctamente y se presente a tiempo. Este trabajo es sensible, y lo abordamos con el cuidado que merecen los niños y las familias que servimos."
+      helpsParagraph="Los casos de SIJS requieren navegar simultáneamente los sistemas de corte estatal e inmigración federal. La abogada Bardi coordina el trabajo legal en ambas vías, asegurando que se obtengan los hallazgos judiciales requeridos y que la petición federal se prepare correctamente y se presente a tiempo. Este trabajo es sensible, y lo abordamos con el cuidado que merecen los niños y las familias que servimos."
       helpsItems={[
         'Coordinación con la corte estatal y preparación de hallazgos SIJS',
         'Preparación y presentación de la petición I-360',
@@ -68,7 +68,7 @@ export default function SijsPageES() {
       faqHeading="Preguntas Frecuentes"
       faqs={[
         { q: '¿Puede usarse SIJS para niños ya en proceso de deportación?', a: 'Sí. SIJS puede ser una defensa contra la deportación para niños elegibles. Si un niño tiene un caso de deportación pendiente, podemos buscar SIJS simultáneamente y solicitar una continuación en la corte de inmigración.' },
-        { q: '¿El niño necesita tener un tutor o patrocinador?', a: 'Un procedimiento en corte estatal requiere que el niño esté bajo la jurisdicción de un tribunal juvenil o de familia — lo que normalmente implica un tutor, colocación en familia de acogida o procedimiento de dependencia. Evaluamos la situación específica del niño en la consulta.' },
+        { q: '¿El niño necesita tener un tutor o patrocinador?', a: 'Un procedimiento en corte estatal requiere que el niño esté bajo la jurisdicción de un tribunal juvenil o de familia, lo que normalmente implica un tutor, colocación en familia de acogida o procedimiento de dependencia. Evaluamos la situación específica del niño en la consulta.' },
         { q: '¿Cuánto tiempo toma el proceso de SIJS?', a: 'El plazo varía. El proceso en la corte estatal depende de la jurisdicción y el calendario. El procesamiento federal de la I-360 tarda varios meses. Para algunos países de nacimiento, el ajuste de estatus puede seguir rápidamente; para otros, puede haber espera por un número de visa.' },
         { q: '¿Qué pasa si el niño cumple 21 años durante el proceso?', a: 'Las protecciones contra el vencimiento de edad pueden aplicar. Si se presentó una I-360 antes del 21° cumpleaños del niño, generalmente el niño está protegido de envejecer durante la adjudicación. Evaluamos esto cuidadosamente desde el principio.' },
       ]}

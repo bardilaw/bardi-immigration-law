@@ -9,7 +9,7 @@ import { FAQ_CATEGORIES, FAQ_SCHEMA, FAQ_DISCLAIMER_ES } from '../../faq/faqData
 export const metadata: Metadata = {
   title: 'Preguntas Frecuentes | Abogada de Inmigración',
   description:
-    'Respuestas a preguntas comunes de inmigración sobre DACA, tarjetas verdes, asilo y defensa contra la deportación de Bardi Immigration Law. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país.',
+    'Respuestas a preguntas comunes de inmigración sobre DACA, tarjetas verdes, asilo y defensa contra la deportación de Bardi Immigration Law. Como la ley de inmigración es federal, representamos a clientes en todo el país.',
   alternates: {
     canonical: 'https://bardilaw.com/es/faq',
     languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Preguntas Frecuentes de Inmigración | Bardi Immigration Law',
     description:
-      'Respuestas claras a preguntas comunes de inmigración — DACA, tarjetas verdes, asilo y defensa contra la deportación.',
+      'Respuestas claras a preguntas comunes de inmigración, DACA, tarjetas verdes, asilo y defensa contra la deportación.',
     url: 'https://bardilaw.com/es/faq',
     locale: 'es_US',
   },
@@ -43,15 +43,15 @@ export default function FaqPageES() {
               <p className="font-sans text-[18px] text-charcoal leading-relaxed">
                 Respuestas claras a las preguntas que más escuchamos sobre DACA,
                 tarjetas verdes, asilo y defensa contra la deportación. ¿Tiene una
-                pregunta que no está aquí? Usted trabaja con su abogada — no con un
-                formulario — así que pregunte en su consulta. (Respuestas en inglés;
+                pregunta que no está aquí? Usted trabaja con su abogada, no con un
+                formulario, así que pregunte en su consulta. (Respuestas en inglés;
                 ofrecemos consultas en español.)
               </p>
             </div>
           </div>
         </section>
 
-        {/* FAQ categories — Spanish headers, English answers */}
+        {/* FAQ categories, Spanish headers, English answers */}
         <section className="bg-white pb-8">
           <div className="max-w-site mx-auto px-5 lg:px-8 max-w-prose">
             <div className="max-w-2xl space-y-12">

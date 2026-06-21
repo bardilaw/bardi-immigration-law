@@ -5,9 +5,9 @@ import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
 
 export const metadata: Metadata = {
-  title: 'Bardi Immigration Law | Abogada de Inmigración en Georgia',
+  title: 'Bardi Immigration Law | Abogada de Inmigración',
   description:
-    'Bufete boutique de inmigración para familias e individuos. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. Problemas complejos. Respuestas directas. Atención personal desde el primer contacto.',
+    'Bufete boutique de inmigración para familias e individuos. Como la ley de inmigración es federal, representamos a clientes en todo el país. Problemas complejos. Respuestas directas. Atención personal desde el primer contacto.',
   alternates: {
     canonical: 'https://bardilaw.com/es/',
     languages: {
@@ -21,12 +21,12 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+        alt: 'Bardi Immigration Law',
       },
     ],
-    title: 'Bardi Immigration Law | Abogada de Inmigración en Georgia',
+    title: 'Bardi Immigration Law | Abogada de Inmigración',
     description:
-      'Bufete boutique de inmigración. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. Acceso directo a su abogada.',
+      'Bufete boutique de inmigración. Como la ley de inmigración es federal, representamos a clientes en todo el país. Acceso directo a su abogada.',
     url: 'https://bardilaw.com/es/',
     locale: 'es_US',
   },
@@ -56,15 +56,15 @@ const SERVICES = [
 const DIFFERENTIATORS = [
   {
     label: 'Acceso Directo a Su Abogada',
-    desc: 'Usted trabaja directamente con su abogada — no con personal de apoyo — desde su primera consulta hasta el resultado final.',
+    desc: 'Usted trabaja directamente con su abogada, no con personal de apoyo, desde su primera consulta hasta el resultado final.',
   },
   {
     label: 'Siempre al Día',
-    desc: 'Nos mantenemos al día con cada cambio de política y actualización legal — para que su estrategia refleje la ley como está hoy, no como estaba el año pasado.',
+    desc: 'Nos mantenemos al día con cada cambio de política y actualización legal, para que su estrategia refleje la ley como está hoy, no como estaba el año pasado.',
   },
   {
     label: 'Representación Creativa y Compleja',
-    desc: 'Aceptamos casos difíciles — los que otros bufetes rechazan. Si existe un camino legal, lo encontraremos.',
+    desc: 'Aceptamos casos difíciles, los que otros bufetes rechazan. Si existe un camino legal, lo encontraremos.',
   },
   {
     label: 'Usted Es Familia Aquí',
@@ -105,9 +105,19 @@ export default function HomePageES() {
               <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl font-bold text-navy leading-tight mb-6">
                 Su Abogada desde el Primer Día.
               </h1>
+              {/* Mobile-only headshot: stacks directly under the headline (BAR-617) */}
+              <div className="flex justify-center mb-8 lg:hidden">
+                <img
+                  src="/headshot-eszter-hero.jpg"
+                  alt="Abogada Eszter Bardi, Bardi Immigration Law"
+                  width={400}
+                  height={500}
+                  className="rounded-lg h-72 w-auto object-cover shadow-md"
+                />
+              </div>
               <p className="text-lg text-charcoal/80 mb-8 max-w-prose">
                 Cuando su futuro está en juego, merece una abogada de verdad de su lado desde la
-                primera llamada — no un formulario de admisión, no un coordinador de casos. En Bardi
+                primera llamada, no un formulario de admisión, no un coordinador de casos. En Bardi
                 Immigration Law, usted trabaja directamente con su abogada, desde la primera
                 conversación hasta la decisión final.
               </p>
@@ -127,7 +137,7 @@ export default function HomePageES() {
             <div className="hidden lg:flex items-center justify-center">
               <img
                 src="/headshot-eszter-hero.jpg"
-                alt="Abogada Eszter Bardi — Bardi Immigration Law"
+                alt="Abogada Eszter Bardi, Bardi Immigration Law"
                 width={400}
                 height={500}
                 className="rounded-lg h-96 w-auto object-cover"
@@ -144,7 +154,7 @@ export default function HomePageES() {
             </h2>
             <p className="text-lg text-charcoal/80 max-w-2xl mx-auto">
               El derecho de inmigración no es igual para todos. Cada familia es diferente. Cada caso
-              tiene su historia. En Bardi Immigration Law, usted habla directamente con su abogada —
+              tiene su historia. En Bardi Immigration Law, usted habla directamente con su abogada,
               no con un coordinador de casos, no con un especialista de admisión, no con un asistente
               que transmite sus preguntas. Su caso recibe la atención personal que merece, desde la
               primera llamada hasta la decisión final.
@@ -193,7 +203,7 @@ export default function HomePageES() {
               <h2 className="font-serif text-3xl lg:text-4xl font-bold text-navy mb-2">¿Por Qué Bardi Law?</h2>
               <p className="font-serif text-xl text-charcoal/70 mb-6">Boutique. Personal. Su abogada primero.</p>
               <p className="text-charcoal/80 mb-6">
-                Cuando llama, habla con una abogada — no con un especialista de admisión. Tratamos a
+                Cuando llama, habla con una abogada, no con un especialista de admisión. Tratamos a
                 cada cliente como familia.
               </p>
               <Button href="/es/about" variant="ghost">Conocer el Bufete</Button>
@@ -233,15 +243,15 @@ export default function HomePageES() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center max-w-2xl mx-auto">
               <div className="bg-white rounded-lg p-6 flex flex-col items-center gap-2">
                 <span className="text-3xl font-serif font-bold text-gold">AILA</span>
-                <p className="text-sm font-semibold text-navy font-sans">Presidenta del Capítulo Georgia-Alabama<br />2025–2026</p>
+                <p className="text-sm font-semibold text-navy font-sans">Presidenta de Capítulo de AILA<br />2025–2026</p>
               </div>
               <div className="bg-white rounded-lg p-6 flex flex-col items-center gap-2">
-                <span className="text-3xl font-serif font-bold text-gold">GA</span>
-                <p className="text-sm font-semibold text-navy font-sans">Colegio de Abogados de Georgia<br />Miembro en buena reputación</p>
+                <span className="text-3xl font-serif font-bold text-gold">Esq.</span>
+                <p className="text-sm font-semibold text-navy font-sans">Abogada Licenciada<br />Miembro en buena reputación</p>
               </div>
               <div className="bg-white rounded-lg p-6 flex flex-col items-center gap-2">
-                <span className="text-3xl font-serif font-bold text-gold">SE</span>
-                <p className="text-sm font-semibold text-navy font-sans">Con licencia en<br />Georgia y Alabama</p>
+                <span className="text-3xl font-serif font-bold text-gold">EE.UU.</span>
+                <p className="text-sm font-semibold text-navy font-sans">Práctica Federal<br />Clientes en todo el país</p>
               </div>
             </div>
           </div>
@@ -283,7 +293,7 @@ export default function HomePageES() {
                 Eszter Bardi
               </p>
               <p className="font-sans text-base text-charcoal leading-[1.65] mt-3">
-                En Bardi Immigration Law, usted trabaja directamente con su abogada — desde la consulta hasta el resultado. Sin especialistas de admisión. Sin transferencias de caso. Solo representación boutique real.
+                En Bardi Immigration Law, usted trabaja directamente con su abogada, desde la consulta hasta el resultado. Sin especialistas de admisión. Sin transferencias de caso. Solo representación boutique real.
               </p>
               <a
                 href="/es/about"
@@ -309,7 +319,7 @@ export default function HomePageES() {
               <Button href="/es/contact" size="lg">Reserve una Consulta</Button>
             </div>
             <p className="font-sans text-sm text-white/50 mt-4">
-              Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país.
+              Como la ley de inmigración es federal, representamos a clientes en todo el país.
             </p>
           </div>
         </section>

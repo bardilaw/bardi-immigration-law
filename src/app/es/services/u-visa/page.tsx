@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Abogada Visa U Georgia | Protección para Víctimas de Crimen',
+  title: 'Abogada Visa U | Protección para Víctimas de Crimen',
   description:
     'La Visa U proporciona estatus migratorio temporal y autorización de empleo a víctimas de crímenes calificados que cooperan con las autoridades.',
   alternates: {
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+        alt: 'Bardi Immigration Law',
       },
     ],
-    title: 'Abogada Visa U Georgia | Bardi Immigration Law',
-    description: 'Peticiones de Visa U para víctimas de crimen. Con licencia en Georgia y Alabama.',
+    title: 'Abogada Visa U | Bardi Immigration Law',
+    description: 'Peticiones de Visa U para víctimas de crimen.',
     url: 'https://bardilaw.com/es/services/u-visa',
     locale: 'es_US',
   },
@@ -37,7 +37,7 @@ export default function UVisaPageES() {
       contactHref="/es/contact"
       breadcrumbLabel="Visa U"
       breadcrumbHref="/es/services/u-visa"
-      title="Visa U — Protección para Víctimas de Crimen"
+      title="Visa U, Protección para Víctimas de Crimen"
       subhead="La Visa U proporciona estatus migratorio temporal y autorización de empleo a víctimas de crímenes calificados que ayudan a las autoridades. Después de tres años, los titulares de Visa U pueden solicitar una tarjeta verde."
       qualifyHeading="Quiénes Pueden Calificar"
       qualifyBullets={[
@@ -57,7 +57,7 @@ export default function UVisaPageES() {
         { title: 'Elegibilidad para tarjeta verde después de 3 años', body: 'Después de 3 años de presencia continua como titular de Visa U, puede ser elegible para solicitar una tarjeta verde.' },
       ]}
       helpsHeading="Cómo Ayuda Bardi Immigration Law"
-      helpsParagraph="Los casos de Visa U requieren coordinar con las autoridades y construir un registro de evidencia completo. La abogada Bardi maneja cada aspecto del proceso con sensibilidad y discreción — desde obtener la certificación policial hasta presentar y gestionar la petición hasta su aprobación."
+      helpsParagraph="Los casos de Visa U requieren coordinar con las autoridades y construir un registro de evidencia completo. La abogada Bardi maneja cada aspecto del proceso con sensibilidad y discreción, desde obtener la certificación policial hasta presentar y gestionar la petición hasta su aprobación."
       helpsItems={[
         'Evaluación de elegibilidad y estrategia del caso',
         'Coordinación de la certificación policial (I-918B)',

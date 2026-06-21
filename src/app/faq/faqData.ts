@@ -5,7 +5,7 @@
 //
 // Source content: deliverables/FAQ-PAGE.md (BAR-567). Internal
 // "⚠️ ATTORNEY REVIEW REQUIRED" notes from that doc are intentionally omitted
-// here — they are editorial instructions for Eszter, not public copy.
+// here, they are editorial instructions for Eszter, not public copy.
 
 export interface FaqItem {
   q: string;
@@ -27,15 +27,15 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       {
         q: 'Can I still renew my DACA? What documents do I need?',
-        a: 'If you currently have DACA, you can generally still file to renew it. To renew, you typically file Form I-821D and Form I-765 (work permit), along with the filing fee, a copy of your current work permit (EAD), and any new documents about arrests or immigration court if your situation has changed. We recommend filing your renewal early — about 5 to 6 months before your current DACA expires — so you do not lose work authorization.',
+        a: 'If you currently have DACA, you can generally still file to renew it. To renew, you typically file Form I-821D and Form I-765 (work permit), along with the filing fee, a copy of your current work permit (EAD), and any new documents about arrests or immigration court if your situation has changed. We recommend filing your renewal early, about 5 to 6 months before your current DACA expires, so you do not lose work authorization.',
       },
       {
         q: 'Can DACA holders travel internationally?',
-        a: 'Only if you apply for and receive "Advance Parole" before you leave. Advance Parole is special permission (Form I-131) to travel and return, usually granted for work, school, or urgent humanitarian reasons. Do not leave the United States without it — traveling without Advance Parole can end your DACA and may keep you from returning.',
+        a: 'Only if you apply for and receive "Advance Parole" before you leave. Advance Parole is special permission (Form I-131) to travel and return, usually granted for work, school, or urgent humanitarian reasons. Do not leave the United States without it, traveling without Advance Parole can end your DACA and may keep you from returning.',
       },
       {
         q: 'What happens if my DACA expires before I can renew?',
-        a: 'If your DACA lapses, you lose your protection from removal and your permission to work until it is renewed and approved. A short gap can sometimes still be filed as a renewal, but longer gaps may be treated differently and create more risk. This is why we file early — talk to an attorney as soon as possible if your DACA is close to expiring or already has.',
+        a: 'If your DACA lapses, you lose your protection from removal and your permission to work until it is renewed and approved. A short gap can sometimes still be filed as a renewal, but longer gaps may be treated differently and create more risk. This is why we file early, talk to an attorney as soon as possible if your DACA is close to expiring or already has.',
       },
     ],
   },
@@ -45,11 +45,11 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       {
         q: 'How long does a family-based green card take?',
-        a: 'It depends on your relationship to the U.S. petitioner and what country you are from. Spouses, parents, and unmarried minor children of U.S. citizens ("immediate relatives") usually move fastest, often around 12 to 18 months. Other family categories — like siblings or adult children — can take several years because of annual limits and waiting lists. We will give you a realistic timeline for your specific case at your consultation.',
+        a: 'It depends on your relationship to the U.S. petitioner and what country you are from. Spouses, parents, and unmarried minor children of U.S. citizens ("immediate relatives") usually move fastest, often around 12 to 18 months. Other family categories, like siblings or adult children, can take several years because of annual limits and waiting lists. We will give you a realistic timeline for your specific case at your consultation.',
       },
       {
         q: 'What is the difference between adjustment of status and consular processing?',
-        a: 'Both are paths to a green card — the difference is where you finish the process. Adjustment of status is done inside the United States when you are already here and eligible, so you do not have to leave. Consular processing is done at a U.S. embassy or consulate in another country when you are abroad or not eligible to adjust here. Which one applies to you depends on how you entered, your immigration history, and your category.',
+        a: 'Both are paths to a green card, the difference is where you finish the process. Adjustment of status is done inside the United States when you are already here and eligible, so you do not have to leave. Consular processing is done at a U.S. embassy or consulate in another country when you are abroad or not eligible to adjust here. Which one applies to you depends on how you entered, your immigration history, and your category.',
       },
       {
         q: 'Can I get a green card through my U.S. citizen spouse?',
@@ -67,7 +67,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       {
         q: 'What is the one-year filing deadline for asylum?',
-        a: 'The general rule is that you must apply for asylum within one year of your last arrival in the United States. There are exceptions — for example, if conditions in your home country changed or something outside your control caused the delay — but they are limited and must be proven. If you are close to or past one year, do not assume you are out of options; speak with an attorney quickly.',
+        a: 'The general rule is that you must apply for asylum within one year of your last arrival in the United States. There are exceptions, for example, if conditions in your home country changed or something outside your control caused the delay, but they are limited and must be proven. If you are close to or past one year, do not assume you are out of options; speak with an attorney quickly.',
       },
       {
         q: 'Can I apply for asylum if I entered without papers?',
@@ -75,7 +75,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: 'What happens at an asylum interview?',
-        a: 'If your case is with the asylum office (an "affirmative" case), you attend an interview with an asylum officer. The interview is meant to be non-adversarial — the officer asks about who you are, why you left your country, and what you fear if you return. You can bring an attorney and an interpreter, and the officer reviews your application and supporting documents. Being well-prepared and consistent is critical, which is why many people work with an attorney beforehand.',
+        a: 'If your case is with the asylum office (an "affirmative" case), you attend an interview with an asylum officer. The interview is meant to be non-adversarial, the officer asks about who you are, why you left your country, and what you fear if you return. You can bring an attorney and an interpreter, and the officer reviews your application and supporting documents. Being well-prepared and consistent is critical, which is why many people work with an attorney beforehand.',
       },
     ],
   },
@@ -85,15 +85,15 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       {
         q: 'I received a Notice to Appear. What do I do now?',
-        a: 'A Notice to Appear (NTA) is the document that starts your case in immigration court — take it seriously and do not ignore it. Read it for your hearing date and location, and contact an immigration attorney as soon as possible. Missing a court hearing can result in a removal order entered against you even if you were not there. The sooner you have representation, the more options you are likely to have.',
+        a: 'A Notice to Appear (NTA) is the document that starts your case in immigration court, take it seriously and do not ignore it. Read it for your hearing date and location, and contact an immigration attorney as soon as possible. Missing a court hearing can result in a removal order entered against you even if you were not there. The sooner you have representation, the more options you are likely to have.',
       },
       {
         q: 'What is cancellation of removal and who qualifies?',
-        a: 'Cancellation of removal is a form of relief that can let certain people in removal proceedings keep or obtain lawful status instead of being deported. The requirements are strict and differ depending on whether you are a green card holder or not — they generally involve a long period of continuous time in the U.S., good moral character, and, for non-residents, proving that your removal would cause exceptional hardship to a U.S. citizen or permanent-resident family member. Whether you qualify is very fact-specific, so an attorney should review your history.',
+        a: 'Cancellation of removal is a form of relief that can let certain people in removal proceedings keep or obtain lawful status instead of being deported. The requirements are strict and differ depending on whether you are a green card holder or not, they generally involve a long period of continuous time in the U.S., good moral character, and, for non-residents, proving that your removal would cause exceptional hardship to a U.S. citizen or permanent-resident family member. Whether you qualify is very fact-specific, so an attorney should review your history.',
       },
       {
         q: 'Can I stay in the U.S. while my case is pending?',
-        a: 'In most situations, yes — while your case is still in front of the immigration court and you are attending your hearings, your case has not been decided and you are generally allowed to remain. Some cases also allow you to apply for a work permit while you wait. It is essential to attend every hearing and follow the court’s instructions, because missing a date can lead to a removal order.',
+        a: 'In most situations, yes, while your case is still in front of the immigration court and you are attending your hearings, your case has not been decided and you are generally allowed to remain. Some cases also allow you to apply for a work permit while you wait. It is essential to attend every hearing and follow the court’s instructions, because missing a date can lead to a removal order.',
       },
     ],
   },
@@ -107,15 +107,15 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: 'Do I need a lawyer, or can I file on my own?',
-        a: 'Some people do file simple applications on their own, and there is no law requiring an attorney. But immigration is high-stakes — a small mistake on a form, a missed deadline, or a misunderstood question can cause long delays or even a denial that is hard to fix. An attorney makes sure your case is filed correctly the first time and spots problems before they become emergencies. At minimum, a consultation can tell you whether your case is straightforward or one that really needs professional help.',
+        a: 'Some people do file simple applications on their own, and there is no law requiring an attorney. But immigration is high-stakes, a small mistake on a form, a missed deadline, or a misunderstood question can cause long delays or even a denial that is hard to fix. An attorney makes sure your case is filed correctly the first time and spots problems before they become emergencies. At minimum, a consultation can tell you whether your case is straightforward or one that really needs professional help.',
       },
       {
-        q: 'What states does Eszter Bardi serve?',
-        a: 'Bardi Immigration Law is licensed in Georgia and Alabama, with most clients based in Georgia. Because immigration law is federal, we can also represent clients in immigration matters no matter where they live in the United States. If you are unsure whether we can help with your case, just ask during your consultation.',
+        q: 'Can you help me if I live in another state?',
+        a: 'Yes. Because immigration law is federal, Bardi Immigration Law can represent clients in immigration matters no matter where they live in the United States. If you are unsure whether we can help with your case, just ask during your consultation.',
       },
       {
         q: 'Will I work with an actual attorney, or with support staff?',
-        a: 'You work directly with your attorney. At Bardi Immigration Law, your case starts with an attorney consultation — not an intake specialist — and that personal involvement continues through your case. We are a boutique practice on purpose, so your case gets real attention rather than being passed down a line.',
+        a: 'You work directly with your attorney. At Bardi Immigration Law, your case starts with an attorney consultation, not an intake specialist, and that personal involvement continues through your case. We are a boutique practice on purpose, so your case gets real attention rather than being passed down a line.',
       },
       {
         q: 'Do you offer services in Spanish?',
@@ -127,10 +127,10 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: 'What information should I bring to my first consultation?',
-        a: 'Bring any immigration documents you already have — passports, prior applications or receipts, work permits, and anything you have received from USCIS or immigration court (especially a Notice to Appear or any letter with a deadline). A short written timeline of your immigration history is also helpful. Do not worry if you are missing something; your attorney will tell you what is needed.',
+        a: 'Bring any immigration documents you already have, passports, prior applications or receipts, work permits, and anything you have received from USCIS or immigration court (especially a Notice to Appear or any letter with a deadline). A short written timeline of your immigration history is also helpful. Do not worry if you are missing something; your attorney will tell you what is needed.',
       },
       {
-        q: 'My case feels urgent — how fast can I be seen?',
+        q: 'My case feels urgent, how fast can I be seen?',
         a: 'Some immigration matters are genuinely time-sensitive, such as an upcoming court date, a filing deadline, or a detained family member. If you are facing a deadline, say so clearly when you contact us so your request can be prioritized.',
       },
       {

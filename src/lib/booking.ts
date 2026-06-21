@@ -2,12 +2,12 @@
  * Cal.com booking configuration (BAR-580).
  *
  * The booking links are sourced from build-time public env vars so the embed
- * can go live with a config change alone — no code edit — once the attorney has
+ * can go live with a config change alone, no code edit, once the attorney has
  * created the Cal.com account and event types (see
  * `deliverables/booking-tool-recommendation.md`).
  *
- * Value format: the Cal.com booking *slug* only — e.g. `eszter/30-min-consultation`
- * — NOT the full `https://cal.com/...` URL.
+ * Value format: the Cal.com booking *slug* only, e.g. `eszter/30-min-consultation`
+ *, NOT the full `https://cal.com/...` URL.
  *
  * When a link is unset (the pre-launch default), the matching contact page
  * renders the email callback form alone, so the site stays correct before the

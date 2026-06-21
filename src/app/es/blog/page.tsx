@@ -7,7 +7,7 @@ import { BLOG_POSTS } from '@/content/blog/meta';
 export const metadata: Metadata = {
   title: 'Blog de Inmigración | Bardi Immigration Law',
   description:
-    'Información práctica sobre leyes de inmigración para residentes de Georgia — DACA, Visa U, VAWA, peticiones familiares y más.',
+    'Información práctica sobre leyes de inmigración para inmigrantes y familias, DACA, Visa U, VAWA, peticiones familiares y más.',
   alternates: {
     canonical: 'https://bardilaw.com/es/blog',
     languages: {
@@ -42,7 +42,7 @@ export default function EsBlogIndexPage() {
               Blog de Inmigración
             </h1>
             <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[640px]">
-              Información práctica sobre leyes de inmigración en EE.UU. para residentes de Georgia — actualizada según cambios en políticas y decisiones judiciales.
+              Información práctica sobre leyes de inmigración en EE.UU. para inmigrantes y familias, actualizada según cambios en políticas y decisiones judiciales.
             </p>
           </div>
         </section>

@@ -7,9 +7,9 @@ import { FaqAccordion } from '@/components/FaqAccordion';
 import { JsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'DACA Attorney Georgia | Deferred Action for Childhood Arrivals',
+  title: 'DACA Attorney | Deferred Action for Childhood Arrivals',
   description:
-    'DACA applications and renewals. Licensed in Georgia and Alabama. Attorney Bardi reviews your full record before filing — eligibility is technical and the stakes are real.',
+    'DACA applications and renewals. Attorney Bardi reviews your full record before filing, eligibility is technical and the stakes are real.',
   alternates: {
     canonical: 'https://bardilaw.com/services/daca',
     languages: {
@@ -18,23 +18,23 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'DACA Attorney Georgia | Bardi Immigration Law',
+    title: 'DACA Attorney | Bardi Immigration Law',
     description:
-      'DACA initial applications and renewals. Direct attorney review. Licensed in Georgia and Alabama.',
+      'DACA initial applications and renewals. Direct attorney review.',
     url: 'https://bardilaw.com/services/daca',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+        alt: 'Bardi Immigration Law',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DACA Attorney Georgia | Bardi Immigration Law',
-    description: 'DACA initial applications and renewals. Direct attorney review. Licensed in Georgia and Alabama.',
+    title: 'DACA Attorney | Bardi Immigration Law',
+    description: 'DACA initial applications and renewals. Direct attorney review.',
     images: ['/og-image.png'],
   },
 };
@@ -82,7 +82,7 @@ const HELPS_ITEMS = [
 const FAQS = [
   {
     q: 'How long does the DACA renewal process take?',
-    a: 'Processing times currently range from several months to over a year. We file your renewal early — typically 5–6 months before your EAD expiration — to reduce gaps in work authorization.',
+    a: 'Processing times currently range from several months to over a year. We file your renewal early, typically 5–6 months before your EAD expiration, to reduce gaps in work authorization.',
   },
   {
     q: "I've had DACA before but let it expire. Can I reapply?",
@@ -94,7 +94,7 @@ const FAQS = [
   },
   {
     q: 'What happens if USCIS sends an RFE?',
-    a: 'A Request for Evidence is not a denial. We respond to all RFEs directly — drafting the response, compiling supporting documentation, and submitting on your behalf.',
+    a: 'A Request for Evidence is not a denial. We respond to all RFEs directly, drafting the response, compiling supporting documentation, and submitting on your behalf.',
   },
 ];
 
@@ -200,7 +200,7 @@ export default function DacaPage() {
               <h2 className="font-serif text-[28px] font-bold text-navy">How the Process Works</h2>
               <GoldRule />
               <div className="relative">
-                {/* Dashed vertical connector — hidden on mobile */}
+                {/* Dashed vertical connector, hidden on mobile */}
                 <div
                   className="hidden lg:block absolute left-[15px] top-8 bottom-9 w-[2px]"
                   style={{ borderLeft: '2px dashed #C9A84C' }}
@@ -232,7 +232,7 @@ export default function DacaPage() {
               <h2 className="font-serif text-[28px] font-bold text-navy">How Bardi Immigration Law Helps</h2>
               <GoldRule />
               <p className="font-sans text-[17px] text-charcoal leading-[1.7] mb-7">
-                DACA applications require precision. Every supporting document matters. Attorney Bardi reviews your full case history, prepares a comprehensive package, and handles all USCIS correspondence directly — so you&apos;re never left guessing.
+                DACA applications require precision. Every supporting document matters. Attorney Bardi reviews your full case history, prepares a comprehensive package, and handles all USCIS correspondence directly, so you&apos;re never left guessing.
               </p>
               <ul className="list-none p-0 m-0">
                 {HELPS_ITEMS.map((item) => (

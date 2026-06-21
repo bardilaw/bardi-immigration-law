@@ -10,7 +10,7 @@ export function UVisaVawaPostContent() {
 
       <p>
         If you are an immigrant who has experienced domestic violence, sexual assault, or another serious crime, U.S.
-        immigration law may offer you a path to legal protection — even without your abuser&apos;s knowledge or
+        immigration law may offer you a path to legal protection, even without your abuser&apos;s knowledge or
         cooperation. Two of the most important programs are the <strong>U-Visa</strong> and{' '}
         <strong>VAWA self-petition</strong>.
       </p>
@@ -23,7 +23,7 @@ export function UVisaVawaPostContent() {
       <h2>What Is the U-Visa?</h2>
       <p>
         The U-Visa is a visa classification for <strong>immigrants who have been victims of serious crimes</strong> and
-        who cooperate — or are willing to cooperate — with law enforcement in the investigation or prosecution of that
+        who cooperate, or are willing to cooperate, with law enforcement in the investigation or prosecution of that
         crime.
       </p>
       <p>
@@ -40,12 +40,12 @@ export function UVisaVawaPostContent() {
       </ul>
       <p>
         A critical requirement: you must obtain a <strong>law enforcement certification (Form I-918B)</strong> from a
-        qualifying agency — a police department, prosecutor&apos;s office, court, or federal labor agency. This certifies
+        qualifying agency, a police department, prosecutor&apos;s office, court, or federal labor agency. This certifies
         your cooperation. Without it, USCIS cannot approve your petition.
       </p>
       <p>
-        <strong>Benefits of U-Visa approval:</strong> up to four years of nonimmigrant status, work authorization, and —
-        after three years — potential eligibility for a green card. Certain family members may also qualify for derivative
+        <strong>Benefits of U-Visa approval:</strong> up to four years of nonimmigrant status, work authorization, and,
+        after three years, potential eligibility for a green card. Certain family members may also qualify for derivative
         status.
       </p>
       <p>
@@ -104,7 +104,7 @@ export function UVisaVawaPostContent() {
               ['Relationship to abuser', 'No family relationship required', 'Must have a qualifying family relationship'],
               ['Law enforcement role', 'Certification required', 'Not required'],
               ["Abuser's immigration status", 'Irrelevant', 'Must be a U.S. citizen or LPR'],
-              ['Annual cap', '10,000/year — long wait list', 'No annual cap'],
+              ['Annual cap', '10,000/year, long wait list', 'No annual cap'],
               ['Path to green card', 'After 3 years in U status', 'Through the petition itself'],
               ['Confidentiality', 'USCIS does not disclose filing to abuser', 'All filings confidential by statute'],
             ].map(([label, uvisa, vawa], i) => (
@@ -118,7 +118,7 @@ export function UVisaVawaPostContent() {
         </table>
       </div>
       <p>
-        Both programs are designed for vulnerable individuals. Which one applies — and which is more advantageous —
+        Both programs are designed for vulnerable individuals. Which one applies, and which is more advantageous,
         depends on your specific situation. An attorney can help you evaluate both.
       </p>
 
@@ -135,14 +135,14 @@ export function UVisaVawaPostContent() {
         a path toward lawful permanent residence.
       </p>
       <p>
-        Neither process is fast — U-Visa wait times can extend years due to the annual cap. Errors or omissions in
+        Neither process is fast, U-Visa wait times can extend years due to the annual cap. Errors or omissions in
         either petition can cause delays or denials that are difficult to reverse. This is not a process to navigate alone.
       </p>
 
-      <h2>Why Hire a Bilingual VAWA Immigration Lawyer or U-Visa Attorney in Georgia</h2>
+      <h2>Why Hire a Bilingual VAWA Immigration Lawyer or U-Visa Attorney</h2>
       <p>For many survivors, English is a second language. That matters throughout the legal process.</p>
       <p>
-        Statements must be accurate and consistent — from the first report to law enforcement, through the certification
+        Statements must be accurate and consistent, from the first report to law enforcement, through the certification
         request, to the petition filed with USCIS. Any inconsistency can create problems. A bilingual attorney ensures
         that your account is captured precisely.
       </p>
@@ -157,9 +157,9 @@ export function UVisaVawaPostContent() {
       <p>
         At Bardi Immigration Law, Attorney Eszter Bardi handles{' '}
         <Link href="/services/u-visa">U-Visa</Link> and{' '}
-        <Link href="/services/vawa">VAWA</Link> cases directly — in English, Spanish, and Hungarian. No intake
+        <Link href="/services/vawa">VAWA</Link> cases directly, in English, Spanish, and Hungarian. No intake
         specialist. No paralegal relay. You speak with the attorney who knows your case from the first consultation
-        through resolution. Licensed in Georgia and Alabama, and because immigration is federal law, we represent
+        through resolution. Licensed, and because immigration is federal law, we represent
         clients nationwide.
       </p>
 
@@ -169,7 +169,7 @@ export function UVisaVawaPostContent() {
 
       <p className="disclaimer">
         <em>
-          Bardi Immigration Law — bardilaw.com | This article provides general legal information as of May 2026 and
+          Bardi Immigration Law, bardilaw.com | This article provides general legal information as of May 2026 and
           does not constitute legal advice. Immigration law and USCIS processing times change. Consult a licensed
           immigration attorney for guidance specific to your situation.
         </em>

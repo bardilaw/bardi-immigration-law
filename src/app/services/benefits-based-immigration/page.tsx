@@ -7,7 +7,7 @@ import { Button } from '@/components/Button';
 export const metadata: Metadata = {
   title: 'Benefits-Based Immigration Attorney | Green Cards, DACA, U-Visa & More',
   description:
-    'Green cards, DACA, naturalization, U-visa, VAWA, family petitions, TPS, and waivers — personalized immigration representation across Georgia and the Southeast.',
+    'Green cards, DACA, naturalization, U-visa, VAWA, family petitions, TPS, and waivers, personalized immigration representation across the Southeast and beyond.',
   alternates: {
     canonical: 'https://bardilaw.com/services/benefits-based-immigration',
     languages: {
@@ -18,21 +18,21 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Benefits-Based Immigration Attorney | Bardi Immigration Law',
     description:
-      'Green cards, DACA, naturalization, U-visa, VAWA, family petitions, TPS, and waivers. Licensed in Georgia and Alabama.',
+      'Green cards, DACA, naturalization, U-visa, VAWA, family petitions, TPS, and waivers.',
     url: 'https://bardilaw.com/services/benefits-based-immigration',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+        alt: 'Bardi Immigration Law',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Benefits-Based Immigration Attorney | Bardi Immigration Law',
-    description: 'Green cards, DACA, naturalization, U-visa, VAWA, family petitions, TPS, and waivers. Licensed in Georgia and Alabama.',
+    description: 'Green cards, DACA, naturalization, U-visa, VAWA, family petitions, TPS, and waivers.',
     images: ['/og-image.png'],
   },
 };
@@ -68,7 +68,7 @@ export default function BenefitsBasedPage() {
               Benefits-Based Immigration
             </h1>
             <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[640px]">
-              We help immigrants at every stage — from those who have been here since childhood to those navigating new pathways through family connections or humanitarian protection.
+              We help immigrants at every stage, from those who have been here since childhood to those navigating new pathways through family connections or humanitarian protection.
             </p>
           </div>
         </section>

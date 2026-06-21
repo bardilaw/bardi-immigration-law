@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Special Immigrant Juvenile Status (SIJS) Attorney | Georgia',
+  title: 'Special Immigrant Juvenile Status (SIJS) Attorney',
   description:
     'SIJS provides a path to a green card for abused, neglected, or abandoned children in the U.S. Bardi Immigration Law navigates both state court and federal immigration filings.',
   alternates: {
@@ -13,23 +13,23 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'SIJS Attorney Georgia | Special Immigrant Juvenile Status | Bardi Immigration Law',
+    title: 'SIJS Attorney | Special Immigrant Juvenile Status | Bardi Immigration Law',
     description:
-      'Specialized, sensitive SIJS representation. State court + federal immigration filings. Licensed in Georgia and Alabama.',
+      'Specialized, sensitive SIJS representation. State court + federal immigration filings.',
     url: 'https://bardilaw.com/services/sijs',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+        alt: 'Bardi Immigration Law',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SIJS Attorney Georgia | Special Immigrant Juvenile Status | Bardi Immigration Law',
-    description: 'Specialized, sensitive SIJS representation. State court + federal immigration filings. Licensed in Georgia and Alabama.',
+    title: 'SIJS Attorney | Special Immigrant Juvenile Status | Bardi Immigration Law',
+    description: 'Specialized, sensitive SIJS representation. State court + federal immigration filings.',
     images: ['/og-image.png'],
   },
 };
@@ -69,10 +69,10 @@ export default function SijsPage() {
         },
         {
           title: 'Green card issued',
-          body: 'If approved, you receive your green card — lawful permanent resident status in the United States.',
+          body: 'If approved, you receive your green card, lawful permanent resident status in the United States.',
         },
       ]}
-      helpsParagraph="SIJS cases require navigating both state court and federal immigration systems simultaneously. Attorney Bardi coordinates the legal work across both tracks — ensuring the required judicial findings are obtained and the federal petition is prepared correctly and filed on time. This work is sensitive, and we approach it with the care the children and families we serve deserve."
+      helpsParagraph="SIJS cases require navigating both state court and federal immigration systems simultaneously. Attorney Bardi coordinates the legal work across both tracks, ensuring the required judicial findings are obtained and the federal petition is prepared correctly and filed on time. This work is sensitive, and we approach it with the care the children and families we serve deserve."
       helpsItems={[
         'State court coordination and SIJS findings preparation',
         'I-360 petition preparation and filing',
@@ -87,7 +87,7 @@ export default function SijsPage() {
         },
         {
           q: 'Does the child need to have a guardian or sponsor?',
-          a: 'A state court proceeding requires that the child be under the jurisdiction of a juvenile or family court — which typically involves a guardian, foster placement, or dependency proceeding. We assess the child\'s specific situation at consultation.',
+          a: 'A state court proceeding requires that the child be under the jurisdiction of a juvenile or family court, which typically involves a guardian, foster placement, or dependency proceeding. We assess the child\'s specific situation at consultation.',
         },
         {
           q: 'How long does the SIJS process take?',

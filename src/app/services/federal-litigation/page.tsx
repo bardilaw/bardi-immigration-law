@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Federal Immigration Litigation Attorney Georgia | Habeas Corpus & Mandamus',
+  title: 'Federal Immigration Litigation Attorney | Habeas Corpus & Mandamus',
   description:
     'When administrative options run out, Bardi Immigration Law takes your case to federal court. Habeas corpus petitions, mandamus actions, and APA challenges.',
   alternates: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Federal Immigration Litigation | Bardi Immigration Law Georgia',
+    title: 'Federal Immigration Litigation | Bardi Immigration Law',
     description: 'Federal court immigration cases: habeas corpus, mandamus, APA. When the administrative process fails you, we take it to court.',
     url: 'https://bardilaw.com/services/federal-litigation',
     images: [
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+        alt: 'Bardi Immigration Law',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Federal Immigration Litigation | Bardi Immigration Law Georgia',
+    title: 'Federal Immigration Litigation | Bardi Immigration Law',
     description: 'Federal court immigration cases: habeas corpus, mandamus, APA. When the administrative process fails you, we take it to court.',
     images: ['/og-image.png'],
   },
@@ -39,7 +39,7 @@ export default function FederalLitigationPage() {
       breadcrumbLabel="Federal Litigation"
       breadcrumbHref="/services/federal-litigation"
       title="Federal Litigation"
-      subhead="When the administrative immigration process has failed you — final removal orders, unreasonably delayed applications, unlawful detention — federal court is often the last available remedy. We take cases there."
+      subhead="When the administrative immigration process has failed you, final removal orders, unreasonably delayed applications, unlawful detention, federal court is often the last available remedy. We take cases there."
       qualifyHeading="When Federal Litigation May Apply"
       qualifyBullets={[
         'You have a final order of removal and have exhausted administrative appeals',
@@ -56,7 +56,7 @@ export default function FederalLitigationPage() {
         { title: 'Briefing and argument', body: 'Federal litigation involves written briefs, often oral argument, and can span months or years. We represent you through every stage.' },
         { title: 'Decision and follow-up', body: 'We advise on the decision\'s implications and, if successful, coordinate any follow-on administrative proceedings.' },
       ]}
-      helpsParagraph="Federal immigration litigation requires a different skill set than administrative practice — knowledge of federal procedural rules, constitutional law, and circuit-specific precedent. Attorney Bardi brings that expertise to cases where the administrative process has failed."
+      helpsParagraph="Federal immigration litigation requires a different skill set than administrative practice, knowledge of federal procedural rules, constitutional law, and circuit-specific precedent. Attorney Bardi brings that expertise to cases where the administrative process has failed."
       helpsItems={[
         'Habeas corpus petitions for unlawful or prolonged detention',
         'Mandamus actions for unreasonably delayed USCIS adjudications',

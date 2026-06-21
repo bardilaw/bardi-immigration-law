@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Abogada VAWA Georgia | Peticiones bajo la Ley contra la Violencia contra la Mujer',
+  title: 'Abogada VAWA | Peticiones bajo la Ley contra la Violencia contra la Mujer',
   description:
     'VAWA permite a sobrevivientes de abuso presentar una autopetición de inmigración sin notificar al abusador. Representación confidencial y sensible.',
   alternates: {
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+        alt: 'Bardi Immigration Law',
       },
     ],
-    title: 'Abogada VAWA Georgia | Bardi Immigration Law',
-    description: 'Autopeticiones VAWA para sobrevivientes de abuso. USCIS no notifica al abusador. Con licencia en Georgia y Alabama.',
+    title: 'Abogada VAWA | Bardi Immigration Law',
+    description: 'Autopeticiones VAWA para sobrevivientes de abuso. USCIS no notifica al abusador.',
     url: 'https://bardilaw.com/es/services/vawa',
     locale: 'es_US',
   },
@@ -37,8 +37,8 @@ export default function VawaPageES() {
       contactHref="/es/contact"
       breadcrumbLabel="VAWA"
       breadcrumbHref="/es/services/vawa"
-      title="VAWA — Ley contra la Violencia contra la Mujer"
-      subhead="VAWA permite a ciertos sobrevivientes de abuso autopeticionarse para obtener estatus migratorio — sin involucrar ni alertar al abusador. USCIS no contacta al familiar abusivo cuando se presenta una petición VAWA."
+      title="VAWA, Ley contra la Violencia contra la Mujer"
+      subhead="VAWA permite a ciertos sobrevivientes de abuso autopeticionarse para obtener estatus migratorio, sin involucrar ni alertar al abusador. USCIS no contacta al familiar abusivo cuando se presenta una petición VAWA."
       qualifyHeading="Quiénes Pueden Calificar"
       qualifyBullets={[
         'Ha sufrido violencia o crueldad extrema por parte de un ciudadano estadounidense o residente permanente legal',
@@ -51,13 +51,13 @@ export default function VawaPageES() {
       processHeading="Cómo Funciona el Proceso"
       processSteps={[
         { title: 'Evaluación confidencial', body: 'Evaluamos su situación y elegibilidad en un entorno seguro. Ninguna información se comparte sin su consentimiento.' },
-        { title: 'Recopilación de evidencia de forma segura', body: 'Le ayudamos a compilar evidencia de la relación, el abuso y el buen carácter moral — sin alertar al abusador.' },
+        { title: 'Recopilación de evidencia de forma segura', body: 'Le ayudamos a compilar evidencia de la relación, el abuso y el buen carácter moral, sin alertar al abusador.' },
         { title: 'Preparación de declaración personal', body: 'La abogada Bardi redacta su declaración para presentar su situación con precisión ante USCIS.' },
         { title: 'Presentar el Formulario I-360', body: 'Enviar la autopetición VAWA al Centro de Servicios de Vermont de USCIS, la única oficina que procesa peticiones VAWA, con protecciones adicionales de privacidad.' },
         { title: 'Aprobación y próximos pasos', body: 'Si es aprobada, recibe una aprobación del I-360 y puede buscar ajuste de estatus u otros beneficios según su situación.' },
       ]}
       helpsHeading="Cómo Ayuda Bardi Immigration Law"
-      helpsParagraph="Las peticiones VAWA requieren una preparación cuidadosa y sensible. La abogada Bardi maneja cada aspecto de su caso con total confidencialidad — ayudándole a recopilar documentación de forma segura, redactando su declaración personal y gestionando todas las comunicaciones con USCIS directamente."
+      helpsParagraph="Las peticiones VAWA requieren una preparación cuidadosa y sensible. La abogada Bardi maneja cada aspecto de su caso con total confidencialidad, ayudándole a recopilar documentación de forma segura, redactando su declaración personal y gestionando todas las comunicaciones con USCIS directamente."
       helpsItems={[
         'Evaluación confidencial de elegibilidad',
         'Estrategia segura de recopilación de evidencia',

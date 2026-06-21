@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Abogada Litigios Federales de Inmigración Georgia | Habeas Corpus y Mandamus',
+  title: 'Abogada Litigios Federales de Inmigración | Habeas Corpus y Mandamus',
   description:
     'Cuando se agotan las opciones administrativas, Bardi Immigration Law lleva su caso a la corte federal. Peticiones de habeas corpus, acciones de mandamus y desafíos APA.',
   alternates: {
@@ -18,10 +18,10 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+        alt: 'Bardi Immigration Law',
       },
     ],
-    title: 'Litigios Federales de Inmigración Georgia | Bardi Immigration Law',
+    title: 'Litigios Federales de Inmigración | Bardi Immigration Law',
     description: 'Casos federales de inmigración: habeas corpus, mandamus, APA. Cuando el proceso administrativo falla, vamos a la corte.',
     url: 'https://bardilaw.com/es/services/federal-litigation',
     locale: 'es_US',
@@ -38,7 +38,7 @@ export default function FederalLitigationPageES() {
       breadcrumbLabel="Litigios Federales"
       breadcrumbHref="/es/services/federal-litigation"
       title="Litigios Federales"
-      subhead="Cuando el proceso administrativo de inmigración le ha fallado — órdenes finales de remoción, solicitudes irrazonablemente demoradas, detención ilegal — la corte federal es a menudo el último recurso disponible. Llevamos casos allí."
+      subhead="Cuando el proceso administrativo de inmigración le ha fallado, órdenes finales de remoción, solicitudes irrazonablemente demoradas, detención ilegal, la corte federal es a menudo el último recurso disponible. Llevamos casos allí."
       qualifyHeading="Cuándo Pueden Aplicar los Litigios Federales"
       qualifyBullets={[
         'Tiene una orden final de remoción y ha agotado las apelaciones administrativas',
@@ -57,7 +57,7 @@ export default function FederalLitigationPageES() {
         { title: 'Decisión y seguimiento', body: 'Le asesoramos sobre las implicaciones de la decisión y, si es exitosa, coordinamos cualquier procedimiento administrativo posterior.' },
       ]}
       helpsHeading="Cómo Ayuda Bardi Immigration Law"
-      helpsParagraph="Los litigios federales de inmigración requieren un conjunto de habilidades diferente al de la práctica administrativa — conocimiento de las reglas procesales federales, derecho constitucional y precedentes específicos del circuito. La abogada Bardi aporta esa experiencia a los casos donde el proceso administrativo ha fallado."
+      helpsParagraph="Los litigios federales de inmigración requieren un conjunto de habilidades diferente al de la práctica administrativa, conocimiento de las reglas procesales federales, derecho constitucional y precedentes específicos del circuito. La abogada Bardi aporta esa experiencia a los casos donde el proceso administrativo ha fallado."
       helpsItems={[
         'Peticiones de habeas corpus por detención ilegal o prolongada',
         'Acciones de mandamus por adjudicaciones irrazonablemente demoradas de USCIS',

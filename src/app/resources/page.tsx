@@ -6,7 +6,7 @@ import { Button } from '@/components/Button';
 export const metadata: Metadata = {
   title: 'Immigration Resources',
   description:
-    'Immigration guides, articles, and resources covering DACA, removal defense, green cards, and more — from Bardi Immigration Law, serving Georgia and the Southeast.',
+    'Immigration guides, articles, and resources covering DACA, removal defense, green cards, and more, from Bardi Immigration Law, serving clients nationwide.',
   alternates: {
     canonical: 'https://bardilaw.com/resources',
     languages: {
@@ -32,7 +32,7 @@ export default function ResourcesPage() {
             <h1 className="font-serif text-4xl lg:text-5xl font-bold text-navy mb-6">Resources</h1>
             <p className="text-lg text-charcoal/80 max-w-xl mx-auto mb-10">
               We&apos;re building a library of plain-language immigration guides and articles. Check back
-              soon — or contact us directly with your questions.
+              soon, or contact us directly with your questions.
             </p>
             <Button href="/contact">Contact Us</Button>
           </div>

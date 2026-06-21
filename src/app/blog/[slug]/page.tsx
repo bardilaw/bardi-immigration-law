@@ -172,7 +172,7 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="flex-1">
                 <p className="font-sans font-semibold text-navy text-[16px] mb-1">Need help with your case?</p>
                 <p className="font-sans text-[14px] text-charcoal/70">
-                  Book a consultation with Attorney Bardi — direct attorney access, no intake specialist.
+                  Book a consultation with Attorney Bardi, direct attorney access, no intake specialist.
                 </p>
               </div>
               <Link

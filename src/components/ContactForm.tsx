@@ -12,7 +12,7 @@ type FormState = {
   caseType: string;
   description: string;
   preferredContact: string;
-  _gotcha: string; // honeypot — rendered off-screen, must stay empty
+  _gotcha: string; // honeypot, rendered off-screen, must stay empty
 };
 
 type FieldError = Partial<Record<keyof FormState, string>>;

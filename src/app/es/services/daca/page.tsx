@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'Abogada DACA Georgia | Acción Diferida para los Llegados en la Infancia',
+  title: 'Abogada DACA | Acción Diferida para los Llegados en la Infancia',
   description:
-    'Solicitudes iniciales y renovaciones de DACA. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. La abogada Bardi revisa su historial completo antes de presentar.',
+    'Solicitudes iniciales y renovaciones de DACA. Como la ley de inmigración es federal, representamos a clientes en todo el país. La abogada Bardi revisa su historial completo antes de presentar.',
   alternates: {
     canonical: 'https://bardilaw.com/es/services/daca',
     languages: {
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+        alt: 'Bardi Immigration Law',
       },
     ],
-    title: 'Abogada DACA Georgia | Bardi Immigration Law',
-    description: 'Solicitudes y renovaciones DACA. Revisión directa de la abogada. Con licencia en Georgia y Alabama.',
+    title: 'Abogada DACA | Bardi Immigration Law',
+    description: 'Solicitudes y renovaciones DACA. Revisión directa de la abogada.',
     url: 'https://bardilaw.com/es/services/daca',
     locale: 'es_US',
   },
@@ -60,7 +60,7 @@ export default function DacaPageES() {
         { title: 'Renovación', body: 'DACA debe renovarse cada 2 años. Rastreamos su ventana de renovación y presentamos de manera proactiva.' },
       ]}
       helpsHeading="Cómo Ayuda Bardi Immigration Law"
-      helpsParagraph="Las solicitudes de DACA requieren precisión. Cada documento de apoyo importa. La abogada Bardi revisa su historial completo del caso, prepara un paquete completo y maneja toda la correspondencia con USCIS directamente — para que nunca quede sin respuesta."
+      helpsParagraph="Las solicitudes de DACA requieren precisión. Cada documento de apoyo importa. La abogada Bardi revisa su historial completo del caso, prepara un paquete completo y maneja toda la correspondencia con USCIS directamente, para que nunca quede sin respuesta."
       helpsItems={[
         'Evaluación inicial del caso y revisión de elegibilidad',
         'Preparación y presentación del Formulario I-821D e I-765',
@@ -70,10 +70,10 @@ export default function DacaPageES() {
       ]}
       faqHeading="Preguntas Frecuentes"
       faqs={[
-        { q: '¿Cuánto tiempo toma el proceso de renovación de DACA?', a: 'Los tiempos de procesamiento actualmente van de varios meses a más de un año. Presentamos su renovación anticipadamente — normalmente 5 a 6 meses antes del vencimiento de su EAD — para reducir brechas en la autorización de empleo.' },
+        { q: '¿Cuánto tiempo toma el proceso de renovación de DACA?', a: 'Los tiempos de procesamiento actualmente van de varios meses a más de un año. Presentamos su renovación anticipadamente, normalmente 5 a 6 meses antes del vencimiento de su EAD, para reducir brechas en la autorización de empleo.' },
         { q: 'Tuve DACA antes pero lo dejé vencer. ¿Puedo volver a solicitarlo?', a: 'En la mayoría de los casos, sí. Los beneficiarios anteriores cuyo estatus venció pueden ser elegibles para solicitar DACA inicial nuevamente. Los requisitos son los mismos que para una solicitud por primera vez.' },
         { q: '¿DACA me da un camino hacia una tarjeta verde?', a: 'DACA no proporciona un camino directo a la residencia permanente por sí solo. Sin embargo, algunos beneficiarios de DACA pueden ser elegibles para tarjetas verdes a través del matrimonio, patrocinio familiar u otras vías. Evaluamos cada caso individualmente.' },
-        { q: '¿Qué sucede si USCIS envía un RFE?', a: 'Una Solicitud de Evidencia no es una negación. Respondemos a todos los RFE directamente — redactando la respuesta, compilando documentación de apoyo y presentándola en su nombre.' },
+        { q: '¿Qué sucede si USCIS envía un RFE?', a: 'Una Solicitud de Evidencia no es una negación. Respondemos a todos los RFE directamente, redactando la respuesta, compilando documentación de apoyo y presentándola en su nombre.' },
       ]}
       relatedHeading="Áreas de Práctica Relacionadas"
       relatedAreas={[

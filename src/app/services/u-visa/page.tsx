@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'U-Visa Attorney Georgia | Victims of Crime Immigration Protection',
+  title: 'U-Visa Attorney | Victims of Crime Immigration Protection',
   description:
     'U-Visa provides status and work authorization for victims of qualifying crimes. Bardi Immigration Law handles U-Visa petitions with sensitivity and confidentiality.',
   alternates: {
@@ -13,22 +13,22 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'U-Visa Attorney Georgia | Bardi Immigration Law',
-    description: 'U-Visa petitions for crime victims. Licensed in Georgia and Alabama.',
+    title: 'U-Visa Attorney | Bardi Immigration Law',
+    description: 'U-Visa petitions for crime victims.',
     url: 'https://bardilaw.com/services/u-visa',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+        alt: 'Bardi Immigration Law',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'U-Visa Attorney Georgia | Bardi Immigration Law',
-    description: 'U-Visa petitions for crime victims. Licensed in Georgia and Alabama.',
+    title: 'U-Visa Attorney | Bardi Immigration Law',
+    description: 'U-Visa petitions for crime victims.',
     images: ['/og-image.png'],
   },
 };
@@ -38,7 +38,7 @@ export default function UVisaPage() {
     <PracticeAreaLayout
       breadcrumbLabel="U-Visa"
       breadcrumbHref="/services/u-visa"
-      title="U-Visa — Protection for Victims of Crime"
+      title="U-Visa, Protection for Victims of Crime"
       subhead="The U-Visa provides temporary immigration status and work authorization to victims of qualifying crimes who assist law enforcement. After three years, U-Visa holders may apply for a green card."
       qualifyBullets={[
         'You have been a victim of a qualifying criminal activity (including domestic violence, sexual assault, human trafficking, and other serious crimes)',
@@ -55,7 +55,7 @@ export default function UVisaPage() {
         { title: 'U-Visa approved and EAD issued', body: 'Once approved, you receive a 4-year U-Visa and work authorization. Your qualifying family members may also be eligible for derivative status.' },
         { title: 'Green card eligibility after 3 years', body: 'After 3 years of continuous presence as a U-Visa holder, you may be eligible to apply for a green card.' },
       ]}
-      helpsParagraph="U-Visa cases require coordinating with law enforcement and building a complete evidentiary record. Attorney Bardi handles every aspect of the process with sensitivity and discretion — from obtaining the law enforcement certification to filing and managing the petition through to approval."
+      helpsParagraph="U-Visa cases require coordinating with law enforcement and building a complete evidentiary record. Attorney Bardi handles every aspect of the process with sensitivity and discretion, from obtaining the law enforcement certification to filing and managing the petition through to approval."
       helpsItems={[
         'Eligibility evaluation and case strategy',
         'Law enforcement certification (I-918B) coordination',
@@ -65,8 +65,8 @@ export default function UVisaPage() {
         'Adjustment of status after 3 years',
       ]}
       faqs={[
-        { q: 'What crimes qualify for the U-Visa?', a: 'Qualifying crimes include (among others) domestic violence, sexual assault, trafficking, murder, manslaughter, rape, torture, incest, false imprisonment, kidnapping, blackmail, extortion, and other serious crimes. The list is not exhaustive — contact us if you are unsure whether your situation qualifies.' },
-        { q: 'Do I have to testify in court?', a: 'You must be "helpful" to law enforcement — which can include cooperating with an investigation, providing a statement, or assisting in prosecution. You are not required to testify at trial, though willingness to do so may strengthen your case.' },
+        { q: 'What crimes qualify for the U-Visa?', a: 'Qualifying crimes include (among others) domestic violence, sexual assault, trafficking, murder, manslaughter, rape, torture, incest, false imprisonment, kidnapping, blackmail, extortion, and other serious crimes. The list is not exhaustive, contact us if you are unsure whether your situation qualifies.' },
+        { q: 'Do I have to testify in court?', a: 'You must be "helpful" to law enforcement, which can include cooperating with an investigation, providing a statement, or assisting in prosecution. You are not required to testify at trial, though willingness to do so may strengthen your case.' },
         { q: 'What if the police did not arrest or charge anyone?', a: 'Charges do not need to have been filed for you to qualify. What matters is that you reported the crime and cooperated with the investigation.' },
         { q: 'How long does the U-Visa take?', a: 'Due to annual caps, U-Visa processing can take several years. However, petitioners on the waiting list may receive deferred action (protection from removal) and work authorization while they wait.' },
       ]}

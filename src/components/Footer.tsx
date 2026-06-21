@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Logo } from './Logo';
 import { Button } from './Button';
 
 export function Footer() {
@@ -16,7 +15,7 @@ export function Footer() {
       <div className="max-w-site mx-auto px-5 lg:px-8 py-12">
         {/* 4-col grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
-          {/* Col 1 — Services */}
+          {/* Col 1, Services */}
           <div>
             <h3 className="text-gold text-xs font-semibold font-sans uppercase tracking-widest mb-3">
               {isEs ? 'Servicios' : 'Services'}
@@ -28,7 +27,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Col 2 — Firm */}
+          {/* Col 2, Firm */}
           <div>
             <h3 className="text-gold text-xs font-semibold font-sans uppercase tracking-widest mb-3">
               {isEs ? 'Bufete' : 'Firm'}
@@ -41,7 +40,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Col 3 — Legal */}
+          {/* Col 3, Legal */}
           <div>
             <h3 className="text-gold text-xs font-semibold font-sans uppercase tracking-widest mb-3">Legal</h3>
             <ul className="space-y-2 text-sm text-white/80">
@@ -50,7 +49,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Col 4 — Contact */}
+          {/* Col 4, Contact */}
           <div>
             <h3 className="text-gold text-xs font-semibold font-sans uppercase tracking-widest mb-3">
               {isEs ? 'Contacto' : 'Contact'}
@@ -59,7 +58,7 @@ export function Footer() {
               <li>
                 <a href="mailto:info@bardilaw.com" className="hover:text-gold transition-colors">info@bardilaw.com</a>
               </li>
-              <li>{isEs ? 'Con licencia en Georgia y Alabama' : 'Licensed in Georgia & Alabama'}</li>
+              <li>{isEs ? 'Abogada licenciada' : 'Licensed attorney'}</li>
             </ul>
             <Button href={p('/contact')} variant="primary" size="sm">
               {isEs ? 'Reserve una Consulta' : 'Schedule a Consultation'}
@@ -69,10 +68,12 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <Logo variant="circle" />
+          <a href="/" aria-label="Bardi Immigration Law, home">
+            <img src="/logo-bardi-mark-white.png" alt="Bardi Immigration Law" width={56} height={56} className="h-14 w-auto" />
+          </a>
           <p className="text-xs text-white/50 text-center">
             © {new Date().getFullYear()} Bardi Immigration Law. All rights reserved.<br />
-            <span>{isEs ? 'Con licencia en Georgia y Alabama' : 'Licensed in Georgia & Alabama'}</span>
+            <span>{isEs ? 'Abogada licenciada' : 'Licensed attorney'}</span>
           </p>
         </div>
       </div>

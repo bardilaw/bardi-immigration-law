@@ -4,7 +4,7 @@ import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
 import { JsonLd } from '@/components/JsonLd';
 
-// Attorney name pending from client — update PENDING field when provided.
+// Attorney name pending from client, update PENDING field when provided.
 const ATTORNEY_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Attorney',
@@ -14,7 +14,7 @@ const ATTORNEY_SCHEMA = {
     '@type': 'Organization',
     name: 'American Immigration Lawyers Association (AILA)',
   },
-  areaServed: ['Georgia', 'Alabama'],
+  areaServed: 'United States',
   knowsLanguage: ['English', 'Spanish'],
   url: 'https://bardilaw.com/about',
 } as const;
@@ -22,7 +22,7 @@ const ATTORNEY_SCHEMA = {
 export const metadata: Metadata = {
   title: 'About Bardi Immigration Law | Your Attorney from Day One',
   description:
-    "Bardi Immigration Law is a boutique solo practice — creative, capable representation on complex cases, and personally committed to every client's outcome. Licensed in Georgia and Alabama.",
+    "Bardi Immigration Law is a boutique solo practice, creative, capable representation on complex cases, and personally committed to every client's outcome.",
   alternates: {
     canonical: 'https://bardilaw.com/about',
     languages: {
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Bardi Immigration Law | Your Attorney from Day One',
     description:
-      'Boutique immigration practice. Direct attorney access on complex cases. Licensed in Georgia and Alabama.',
+      'Boutique immigration practice. Direct attorney access on complex cases.',
     url: 'https://bardilaw.com/about',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+        alt: 'Bardi Immigration Law',
       },
     ],
   },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Bardi Immigration Law | Your Attorney from Day One',
     description:
-      'Boutique immigration practice. Direct attorney access on complex cases. Licensed in Georgia and Alabama.',
+      'Boutique immigration practice. Direct attorney access on complex cases.',
     images: ['/og-image.png'],
   },
 };
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 const CREDENTIALS = [
   {
     category: 'Bar Admissions',
-    items: ['State Bar of Georgia — Member in good standing', 'State Bar of Alabama — Member in good standing'],
+    items: ['Licensed attorney, member in good standing'],
   },
   {
     category: 'Professional Memberships',
@@ -65,8 +65,8 @@ const CREDENTIALS = [
     ],
   },
   {
-    category: 'Areas Served',
-    items: ['Georgia', 'Alabama'],
+    category: 'Practice',
+    items: ['Federal immigration practice', 'Clients nationwide'],
   },
   {
     category: 'Languages',
@@ -77,7 +77,7 @@ const CREDENTIALS = [
 const PHILOSOPHY_ITEMS = [
   'You speak with the attorney from day one.',
   'No intake specialists. No handoffs.',
-  "You'll know the status of your case — always.",
+  "You'll know the status of your case, always.",
 ];
 
 function GoldRule() {
@@ -114,7 +114,7 @@ export default function AboutPage() {
                 Expert Counsel, Personal Attention.
               </h1>
               <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[480px] mb-8">
-                Boutique immigration representation. Licensed in Georgia and Alabama. Because immigration is federal law, we represent clients nationwide. You work with your attorney — from the first consultation to the final outcome.
+                Boutique immigration representation. Because immigration is federal law, we represent clients nationwide. You work with your attorney, from the first consultation to the final outcome.
               </p>
               <Button href="/contact" size="lg">Schedule a Consultation</Button>
             </div>
@@ -122,7 +122,7 @@ export default function AboutPage() {
             <div className="order-first lg:order-last flex items-center justify-center">
               <img
                 src="/headshot-eszter-hero.jpg"
-                alt="Attorney Eszter Bardi — Bardi Immigration Law"
+                alt="Attorney Eszter Bardi, Bardi Immigration Law"
                 width={400}
                 height={500}
                 className="rounded-lg w-full max-w-[320px] lg:max-w-[400px] h-auto"
@@ -148,17 +148,17 @@ export default function AboutPage() {
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
                   Bardi Immigration Law is a boutique immigration practice built on a simple promise:
                   when you need help navigating the U.S. immigration system, you deserve to work
-                  directly with your attorney — not a case manager, not an intake specialist, not
+                  directly with your attorney, not a case manager, not an intake specialist, not
                   someone who will forward your questions.
                 </p>
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
                   We handle benefits-based immigration, removal defense, and federal litigation when
-                  administrative options have been exhausted. Licensed in Georgia and Alabama, and
-                  because immigration is federal law, we represent clients nationwide.
+                  administrative options have been exhausted. Because immigration is federal
+                  law, we represent clients nationwide.
                 </p>
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
                   We stay current on every policy change, agency update, and legal shift that could
-                  affect your case, and we take on difficult cases — the ones other firms decline. If
+                  affect your case, and we take on difficult cases, the ones other firms decline. If
                   there is a legal path forward, we will find it. Attorney Bardi is also an active
                   member of the American Immigration Lawyers Association (AILA).
                 </p>
@@ -206,7 +206,7 @@ export default function AboutPage() {
                 &ldquo;
               </span>
               <blockquote className="font-serif text-2xl italic text-navy leading-[1.5]">
-                Creative, competent, and complex representation — with the personal investment of a boutique practice.
+                Creative, competent, and complex representation, with the personal investment of a boutique practice.
               </blockquote>
             </div>
             <div className="mt-12 max-w-[560px] mx-auto">

@@ -6,7 +6,7 @@ import { Button } from '@/components/Button';
 export const metadata: Metadata = {
   title: 'Sobre Nosotros | Abogada de Inmigración Boutique',
   description:
-    'Bardi Immigration Law es una práctica boutique unipersonal. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. Representación creativa, compleja y personal para cada cliente.',
+    'Bardi Immigration Law es una práctica boutique unipersonal. Como la ley de inmigración es federal, representamos a clientes en todo el país. Representación creativa, compleja y personal para cada cliente.',
   alternates: {
     canonical: 'https://bardilaw.com/es/about',
     languages: {
@@ -20,12 +20,12 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+        alt: 'Bardi Immigration Law',
       },
     ],
     title: 'Sobre Bardi Immigration Law | Abogada de Inmigración Boutique',
     description:
-      'Práctica boutique. Acceso directo a su abogada. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país.',
+      'Práctica boutique. Acceso directo a su abogada. Como la ley de inmigración es federal, representamos a clientes en todo el país.',
     url: 'https://bardilaw.com/es/about',
     locale: 'es_US',
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 const CREDENTIALS = [
   {
     category: 'Admisiones al Colegio de Abogados',
-    items: ['Colegio de Abogados de Georgia — Miembro en buena reputación', 'Colegio de Abogados de Alabama — Miembro en buena reputación'],
+    items: ['Abogada licenciada, miembro en buena reputación'],
   },
   {
     category: 'Liderazgo',
@@ -43,8 +43,8 @@ const CREDENTIALS = [
     ],
   },
   {
-    category: 'Áreas de Servicio',
-    items: ['Con licencia en Georgia y Alabama', 'Como la ley de inmigración es federal, representamos a clientes en todo el país'],
+    category: 'Práctica',
+    items: ['Práctica federal de inmigración', 'Como la ley de inmigración es federal, representamos a clientes en todo el país'],
   },
   {
     category: 'Idiomas',
@@ -91,14 +91,14 @@ export default function AboutPageES() {
                 Asesoría Experta, Atención Personal.
               </h1>
               <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[480px] mb-8">
-                Representación boutique de inmigración. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. Usted trabaja con su abogada — desde la primera consulta hasta el resultado final.
+                Representación boutique de inmigración. Como la ley de inmigración es federal, representamos a clientes en todo el país. Usted trabaja con su abogada, desde la primera consulta hasta el resultado final.
               </p>
               <Button href="/es/contact" size="lg">Programe una Consulta</Button>
             </div>
             <div className="order-first lg:order-last flex items-center justify-center">
               <img
                 src="/headshot-eszter-hero.jpg"
-                alt="Abogada Eszter Bardi — Bardi Immigration Law"
+                alt="Abogada Eszter Bardi, Bardi Immigration Law"
                 width={400}
                 height={500}
                 className="rounded-lg w-full max-w-[320px] lg:max-w-[400px] h-auto"
@@ -123,18 +123,18 @@ export default function AboutPageES() {
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
                   Bardi Immigration Law es una práctica boutique de inmigración construida sobre una promesa simple:
                   cuando necesita ayuda para navegar el sistema de inmigración de los EE.UU., merece trabajar
-                  directamente con su abogada — no con un coordinador de casos, no con un especialista de
+                  directamente con su abogada, no con un coordinador de casos, no con un especialista de
                   admisión, no con alguien que transmitirá sus preguntas.
                 </p>
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
-                  Nuestra práctica sirve a familias e individuos con licencia en Georgia y Alabama. Como la ley
+                  Nuestra práctica sirve a familias e individuos. Como la ley
                   de inmigración es federal, representamos a clientes en todo el país. Manejamos inmigración por
                   beneficios, defensa contra la deportación y litigios federales cuando se han agotado las opciones
                   administrativas.
                 </p>
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
                   Nos mantenemos al día con cada cambio de política, actualización de agencia y cambio legal que
-                  podría afectar su caso. Aceptamos casos difíciles — los que otros bufetes rechazan. Si existe un
+                  podría afectar su caso. Aceptamos casos difíciles, los que otros bufetes rechazan. Si existe un
                   camino legal, lo encontraremos.
                 </p>
               </div>
@@ -181,7 +181,7 @@ export default function AboutPageES() {
                 &ldquo;
               </span>
               <blockquote className="font-serif text-2xl italic text-navy leading-[1.5]">
-                Representación creativa, competente y compleja — con la inversión personal de una práctica boutique.
+                Representación creativa, competente y compleja, con la inversión personal de una práctica boutique.
               </blockquote>
             </div>
             <div className="mt-12 max-w-[560px] mx-auto">

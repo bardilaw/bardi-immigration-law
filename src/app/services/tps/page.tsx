@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { PracticeAreaLayout } from '@/components/PracticeAreaLayout';
 
 export const metadata: Metadata = {
-  title: 'TPS Attorney Georgia | Temporary Protected Status',
+  title: 'TPS Attorney | Temporary Protected Status',
   description:
-    'TPS registration and re-registration for nationals of designated countries. Deadlines are strict — do not miss yours. Attorney Bardi files proactively.',
+    'TPS registration and re-registration for nationals of designated countries. Deadlines are strict, do not miss yours. Attorney Bardi files proactively.',
   alternates: {
     canonical: 'https://bardilaw.com/services/tps',
     languages: {
@@ -13,22 +13,22 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'TPS Attorney Georgia | Bardi Immigration Law',
-    description: 'TPS registration, re-registration, and work authorization for designated countries. Licensed in Georgia and Alabama.',
+    title: 'TPS Attorney | Bardi Immigration Law',
+    description: 'TPS registration, re-registration, and work authorization for designated countries.',
     url: 'https://bardilaw.com/services/tps',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+        alt: 'Bardi Immigration Law',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TPS Attorney Georgia | Bardi Immigration Law',
-    description: 'TPS registration, re-registration, and work authorization for designated countries. Licensed in Georgia and Alabama.',
+    title: 'TPS Attorney | Bardi Immigration Law',
+    description: 'TPS registration, re-registration, and work authorization for designated countries.',
     images: ['/og-image.png'],
   },
 };
@@ -39,7 +39,7 @@ export default function TpsPage() {
       breadcrumbLabel="TPS"
       breadcrumbHref="/services/tps"
       title="Temporary Protected Status (TPS)"
-      subhead="If you are from a country designated for Temporary Protected Status, you may be eligible for protection from removal and work authorization. TPS registration deadlines are strict — do not miss yours."
+      subhead="If you are from a country designated for Temporary Protected Status, you may be eligible for protection from removal and work authorization. TPS registration deadlines are strict, do not miss yours."
       qualifyBullets={[
         'You are a national of a country currently designated for TPS by the Secretary of Homeland Security',
         'You have been continuously physically present in the United States since the designation date',
@@ -55,7 +55,7 @@ export default function TpsPage() {
         { title: 'Biometrics appointment', body: 'USCIS schedules a biometrics appointment. We prepare you for what to expect.' },
         { title: 'TPS and EAD granted', body: 'If approved, you receive TPS status and a work permit (EAD) valid through the current designation period. We track your re-registration window.' },
       ]}
-      helpsParagraph="TPS filings are time-sensitive and documentation-intensive. Attorney Bardi reviews your full situation, prepares your filing package completely, and tracks your re-registration windows — so you never miss a deadline."
+      helpsParagraph="TPS filings are time-sensitive and documentation-intensive. Attorney Bardi reviews your full situation, prepares your filing package completely, and tracks your re-registration windows, so you never miss a deadline."
       helpsItems={[
         'Eligibility evaluation and deadline confirmation',
         'Documentation gathering and review',
@@ -67,7 +67,7 @@ export default function TpsPage() {
       faqs={[
         { q: 'What countries are currently designated for TPS?', a: 'TPS designations change based on country conditions. Current designated countries include (among others) El Salvador, Haiti, Honduras, Nepal, Nicaragua, Somalia, Sudan, South Sudan, Syria, Ukraine, and Venezuela. We confirm current status at your consultation.' },
         { q: 'Does TPS give me a path to a green card?', a: 'TPS itself does not provide a direct path to permanent residency. However, some TPS holders may be eligible for green cards through family relationships, employment, or other routes. We assess your options individually.' },
-        { q: 'What if I missed a re-registration deadline?', a: 'Late re-registration may be possible during certain windows. If you missed a deadline, contact us immediately — there may still be options available depending on your situation.' },
+        { q: 'What if I missed a re-registration deadline?', a: 'Late re-registration may be possible during certain windows. If you missed a deadline, contact us immediately, there may still be options available depending on your situation.' },
         { q: 'Can I travel outside the United States on TPS?', a: 'TPS holders may be eligible for advance parole to travel abroad. However, travel carries risk. We advise you on whether travel is advisable given your specific situation before you book anything.' },
       ]}
       relatedAreas={[

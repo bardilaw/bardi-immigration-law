@@ -8,7 +8,7 @@ import { CAL_LINK_ES, bookingEnabled } from '@/lib/booking';
 export const metadata: Metadata = {
   title: 'Contacto | Programe una Consulta',
   description:
-    'Programe su consulta directamente con la abogada. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país. Sin intermediarios — hable directamente con la abogada.',
+    'Programe su consulta directamente con la abogada. Como la ley de inmigración es federal, representamos a clientes en todo el país. Sin intermediarios, hable directamente con la abogada.',
   alternates: {
     canonical: 'https://bardilaw.com/es/contact',
     languages: {
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+        alt: 'Bardi Immigration Law',
       },
     ],
     title: 'Contacto | Bardi Immigration Law',
     description:
-      'Programe su consulta directamente con la abogada. Con licencia en Georgia y Alabama.',
+      'Programe su consulta directamente con la abogada.',
     url: 'https://bardilaw.com/es/contact',
     locale: 'es_US',
   },
@@ -42,7 +42,7 @@ const STEPS = [
   {
     n: '2',
     heading: 'La abogada revisa',
-    desc: 'No un especialista de admisión — la abogada revisa su situación.',
+    desc: 'No un especialista de admisión, la abogada revisa su situación.',
   },
   {
     n: '3',
@@ -66,13 +66,13 @@ export default function ContactPageES() {
             </h1>
             <p className="text-lg text-charcoal/80 max-w-xl mx-auto">
               {showBooking
-                ? 'Elija un horario a continuación para reservar su consulta de 30 minutos directamente — o use el formulario para solicitar que la abogada le llame.'
+                ? 'Elija un horario a continuación para reservar su consulta de 30 minutos directamente, o use el formulario para solicitar que la abogada le llame.'
                 : 'Las decisiones de inmigración tienen consecuencias reales. Complete el formulario y una abogada se comunicará con usted dentro de 24 horas.'}
             </p>
           </div>
         </section>
 
-        {/* Widget de reservas — solo se muestra cuando hay un enlace de Cal.com configurado (BAR-580). */}
+        {/* Widget de reservas, solo se muestra cuando hay un enlace de Cal.com configurado (BAR-580). */}
         {showBooking && (
           <section className="bg-white pb-4">
             <div className="max-w-site mx-auto px-5 lg:px-8">
@@ -106,7 +106,7 @@ export default function ContactPageES() {
                   ¿Qué Ocurre en una Consulta?
                 </h2>
                 <p className="text-sm text-charcoal/70 mb-4">
-                  Su consulta es una conversación directa con Eszter Bardi — no un formulario de
+                  Su consulta es una conversación directa con Eszter Bardi, no un formulario de
                   selección ni un centro de llamadas.
                 </p>
                 <ul className="text-sm text-charcoal/80 space-y-2">
@@ -157,10 +157,10 @@ export default function ContactPageES() {
                   </li>
                   <li className="flex items-center gap-2 text-charcoal/70 font-sans">
                     <span aria-hidden="true">📍</span>
-                    <span>Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país.</span>
+                    <span>Como la ley de inmigración es federal, representamos a clientes en todo el país.</span>
                   </li>
                 </ul>
-                <p className="text-xs text-charcoal/50 mt-3">Con cita previa — de lunes a viernes</p>
+                <p className="text-xs text-charcoal/50 mt-3">Con cita previa, de lunes a viernes</p>
               </div>
             </aside>
           </div>

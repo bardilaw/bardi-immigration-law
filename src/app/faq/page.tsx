@@ -9,7 +9,7 @@ import { FAQ_CATEGORIES, FAQ_SCHEMA, FAQ_DISCLAIMER } from './faqData';
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions | Immigration Law',
   description:
-    'Answers to common immigration questions about DACA, green cards, asylum, and removal defense from Bardi Immigration Law. Licensed in Georgia and Alabama; because immigration is federal law, we represent clients nationwide.',
+    'Answers to common immigration questions about DACA, green cards, asylum, and removal defense from Bardi Immigration Law. Licensed; because immigration is federal law, we represent clients nationwide.',
   alternates: {
     canonical: 'https://bardilaw.com/faq',
     languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Immigration FAQ | Bardi Immigration Law',
     description:
-      'Plain-English answers to common immigration questions — DACA, green cards, asylum, and removal defense.',
+      'Plain-English answers to common immigration questions, DACA, green cards, asylum, and removal defense.',
     url: 'https://bardilaw.com/faq',
     locale: 'en_US',
   },
@@ -43,7 +43,7 @@ export default function FaqPage() {
               <p className="font-sans text-[18px] text-charcoal leading-relaxed">
                 Straightforward answers to questions we hear most often about DACA,
                 green cards, asylum, and removal defense. Have a question that is not
-                here? You work with your attorney — not an intake form — so just ask
+                here? You work with your attorney, not an intake form, so just ask
                 at your consultation.
               </p>
             </div>

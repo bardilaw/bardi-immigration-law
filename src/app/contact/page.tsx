@@ -8,7 +8,7 @@ import { CAL_LINK_EN, bookingEnabled } from '@/lib/booking';
 export const metadata: Metadata = {
   title: 'Contact Bardi Immigration Law | Schedule a Consultation',
   description:
-    'Schedule your consultation directly with the attorney. Licensed in Georgia and Alabama; because immigration is federal law, we represent clients nationwide. No intake specialist — speak with the attorney directly.',
+    'Schedule your consultation directly with the attorney. Licensed; because immigration is federal law, we represent clients nationwide. No intake specialist, speak with the attorney directly.',
   alternates: {
     canonical: 'https://bardilaw.com/contact',
     languages: {
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Bardi Immigration Law | Schedule a Consultation',
     description:
-      'Schedule your consultation directly with the attorney. Licensed in Georgia and Alabama.',
+      'Schedule your consultation directly with the attorney.',
     url: 'https://bardilaw.com/contact',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+        alt: 'Bardi Immigration Law',
       },
     ],
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Contact Bardi Immigration Law | Schedule a Consultation',
     description:
-      'Schedule your consultation directly with the attorney. Licensed in Georgia and Alabama.',
+      'Schedule your consultation directly with the attorney.',
     images: ['/og-image.png'],
   },
 };
@@ -48,7 +48,7 @@ const STEPS = [
   {
     n: '2',
     heading: 'Attorney reviews',
-    desc: "Not an intake specialist — the attorney reviews your situation.",
+    desc: "Not an intake specialist, the attorney reviews your situation.",
   },
   {
     n: '3',
@@ -72,13 +72,13 @@ export default function ContactPage() {
             </h1>
             <p className="text-lg text-charcoal/80 max-w-xl mx-auto">
               {showBooking
-                ? 'Pick a time below to book your 30-minute consultation directly — or use the form to request a callback.'
+                ? 'Pick a time below to book your 30-minute consultation directly, or use the form to request a callback.'
                 : 'Fill in the form below and an attorney will be in touch within 24 hours.'}
             </p>
           </div>
         </section>
 
-        {/* Booking widget — only rendered once a Cal.com link is configured (BAR-580). */}
+        {/* Booking widget, only rendered once a Cal.com link is configured (BAR-580). */}
         {showBooking && (
           <section className="bg-white pb-4">
             <div className="max-w-site mx-auto px-5 lg:px-8">
@@ -108,7 +108,7 @@ export default function ContactPage() {
               <ContactForm />
             </div>
 
-            {/* Sidebar — What happens next */}
+            {/* Sidebar, What happens next */}
             <aside className="flex flex-col gap-6">
               <div className="bg-white rounded-lg p-6">
                 <h2 className="font-serif text-xl font-bold text-navy mb-4">
@@ -147,10 +147,10 @@ export default function ContactPage() {
                   </li>
                   <li className="flex items-center gap-2 text-charcoal/70 font-sans">
                     <span aria-hidden="true">📍</span>
-                    <span>Licensed in Georgia &amp; Alabama — clients nationwide</span>
+                    <span>Licensed attorney, clients nationwide</span>
                   </li>
                 </ul>
-                <p className="text-xs text-charcoal/50 mt-3">By appointment — Monday through Friday</p>
+                <p className="text-xs text-charcoal/50 mt-3">By appointment, Monday through Friday</p>
                 <p className="text-xs text-charcoal/50 mt-3 font-sans">
                   Consultations available in English, Spanish, and Hungarian.
                 </p>

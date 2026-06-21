@@ -7,7 +7,7 @@ import { BLOG_POSTS } from '@/content/blog/meta';
 export const metadata: Metadata = {
   title: 'Immigration Law Blog | Bardi Immigration Law',
   description:
-    'Immigration law insights for Georgia residents — DACA, U-Visa, VAWA, family petitions, and more. Updated as law and policy change.',
+    'Immigration law insights for immigrants and families, DACA, U-Visa, VAWA, family petitions, and more. Updated as law and policy change.',
   alternates: {
     canonical: 'https://bardilaw.com/blog',
     languages: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Immigration Law Blog | Bardi Immigration Law',
-    description: 'Immigration law insights for Georgia residents — DACA, U-Visa, VAWA, and more.',
+    description: 'Immigration law insights for immigrants and families, DACA, U-Visa, VAWA, and more.',
     url: 'https://bardilaw.com/blog',
   },
 };
@@ -47,7 +47,7 @@ export default function BlogIndexPage() {
               Immigration Law Blog
             </h1>
             <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[640px]">
-              Practical guidance on U.S. immigration law for Georgia residents — updated as policy and court decisions change.
+              Practical guidance on U.S. immigration law for immigrants and families, updated as policy and court decisions change.
             </p>
           </div>
         </section>

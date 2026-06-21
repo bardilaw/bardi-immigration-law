@@ -11,7 +11,7 @@ type ContactPayload = {
   caseType?: string;
   description?: string;
   preferredContact?: string;
-  _gotcha?: string; // honeypot — must be empty
+  _gotcha?: string; // honeypot, must be empty
 };
 
 // Map the form's caseType options to stable Kit tag slugs (BAR-579 / BAR-569 nurture).
@@ -32,12 +32,12 @@ function caseTypeToTag(caseType?: string): string {
  * Best-effort Kit (ConvertKit) v4 subscriber sync. Upserts the subscriber, then
  * applies `lead-inbound` (starts the nurture sequence) plus a `case:*` segmentation
  * tag. Tags are upserted via POST /v4/tags, so they self-bootstrap on first use.
- * Never throws — a Kit outage must not fail the visitor's form submission.
+ * Never throws, a Kit outage must not fail the visitor's form submission.
  */
 async function syncToKit(params: { email: string; firstName: string; caseType?: string }): Promise<void> {
   const kitApiKey = process.env.KIT_API_KEY;
   if (!kitApiKey) {
-    // Not configured yet — Resend auto-reply still fires; nurture sync is additive.
+    // Not configured yet, Resend auto-reply still fires; nurture sync is additive.
     console.warn('BAR-579: KIT_API_KEY not configured; skipping Kit subscriber sync');
     return;
   }
@@ -115,7 +115,7 @@ export async function POST(request: Request) {
     const contactEmail = process.env.CONTACT_EMAIL;
 
     if (!apiKey || !contactEmail) {
-      // Config not set yet — accept submission silently rather than fail for the visitor
+      // Config not set yet, accept submission silently rather than fail for the visitor
       console.error('BAR-15: RESEND_API_KEY or CONTACT_EMAIL not configured');
       return NextResponse.json(
         { success: true, message: 'Your message has been received. An attorney will be in touch within 24 hours.' },
@@ -125,7 +125,7 @@ export async function POST(request: Request) {
 
     const resend = new Resend(apiKey);
     const fullName = `${firstName} ${lastName}`;
-    const subject = `New consultation request — ${caseType}`;
+    const subject = `New consultation request, ${caseType}`;
 
     const notificationText = [
       `New consultation request via bardiimmigrationlaw.com`,
@@ -156,17 +156,17 @@ ${description?.trim() ? `<p style="margin-top:16px"><strong>Message:</strong><br
     // Boutique, personal voice; signed by Eszter Bardi. Sent transactionally via Resend.
     const firmPhone = process.env.CONTACT_PHONE; // optional; degrades the urgent line if unset
     const urgentText = firmPhone
-      ? `If your matter is urgent — a court date, a filing deadline, a detained family member — reply to this email or call us at ${firmPhone} right away so we can prioritize it.`
-      : 'If your matter is urgent — a court date, a filing deadline, a detained family member — reply to this email right away so we can prioritize it.';
+      ? `If your matter is urgent, a court date, a filing deadline, a detained family member, reply to this email or call us at ${firmPhone} right away so we can prioritize it.`
+      : 'If your matter is urgent, a court date, a filing deadline, a detained family member, reply to this email right away so we can prioritize it.';
 
     const autoReplyText = [
       `Hi ${firstName},`,
       '',
-      "Thank you for reaching out to Bardi Immigration Law. Your message is in, and I want you to know what happens from here — no guessing.",
+      "Thank you for reaching out to Bardi Immigration Law. Your message is in, and I want you to know what happens from here, no guessing.",
       '',
-      'Eszter personally reviews every inquiry within one business day. Not a screener, not a chatbot — the attorney. You\'ll hear from us by your preferred contact method to schedule your free 30-minute consultation.',
+      'Eszter personally reviews every inquiry within one business day. Not a screener, not a chatbot, the attorney. You\'ll hear from us by your preferred contact method to schedule your free 30-minute consultation.',
       '',
-      "In that consultation, we'll talk through your situation, answer your questions in plain language, and tell you honestly whether and how we can help. You'll leave knowing your options and your next step — whether or not you decide to work with us.",
+      "In that consultation, we'll talk through your situation, answer your questions in plain language, and tell you honestly whether and how we can help. You'll leave knowing your options and your next step, whether or not you decide to work with us.",
       '',
       'Immigration law is complex, and the stakes are personal. Please know this: you are not navigating it alone. Bringing in someone who handles these cases every day is exactly the right move, and you\'ve made it.',
       '',
@@ -178,15 +178,15 @@ ${description?.trim() ? `<p style="margin-top:16px"><strong>Message:</strong><br
     ].join('\n');
 
     const urgentHtml = firmPhone
-      ? `If your matter is urgent — a court date, a filing deadline, a detained family member — reply to this email or call us at <a href="tel:${firmPhone}">${firmPhone}</a> right away so we can prioritize it.`
-      : 'If your matter is urgent — a court date, a filing deadline, a detained family member — reply to this email right away so we can prioritize it.';
+      ? `If your matter is urgent, a court date, a filing deadline, a detained family member, reply to this email or call us at <a href="tel:${firmPhone}">${firmPhone}</a> right away so we can prioritize it.`
+      : 'If your matter is urgent, a court date, a filing deadline, a detained family member, reply to this email right away so we can prioritize it.';
 
     const autoReplyHtml = `
 <div style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#3d3d3d">
   <p>Hi ${firstName},</p>
-  <p>Thank you for reaching out to <strong>Bardi Immigration Law</strong>. Your message is in, and I want you to know what happens from here — no guessing.</p>
-  <p><strong>Eszter personally reviews every inquiry within one business day.</strong> Not a screener, not a chatbot — the attorney. You'll hear from us by your preferred contact method to schedule your <strong>free 30-minute consultation</strong>.</p>
-  <p>In that consultation, we'll talk through your situation, answer your questions in plain language, and tell you honestly whether and how we can help. You'll leave knowing your options and your next step — whether or not you decide to work with us.</p>
+  <p>Thank you for reaching out to <strong>Bardi Immigration Law</strong>. Your message is in, and I want you to know what happens from here, no guessing.</p>
+  <p><strong>Eszter personally reviews every inquiry within one business day.</strong> Not a screener, not a chatbot, the attorney. You'll hear from us by your preferred contact method to schedule your <strong>free 30-minute consultation</strong>.</p>
+  <p>In that consultation, we'll talk through your situation, answer your questions in plain language, and tell you honestly whether and how we can help. You'll leave knowing your options and your next step, whether or not you decide to work with us.</p>
   <p>Immigration law is complex, and the stakes are personal. Please know this: <strong>you are not navigating it alone.</strong> Bringing in someone who handles these cases every day is exactly the right move, and you've made it.</p>
   <p>${urgentHtml}</p>
   <p style="margin-top:24px">Talk soon,<br><strong>Eszter Bardi</strong><br>Bardi Immigration Law</p>
@@ -207,7 +207,7 @@ ${description?.trim() ? `<p style="margin-top:16px"><strong>Message:</strong><br
       resend.emails.send({
         from: fromAddress,
         to: [email],
-        subject: `We received your message, ${firstName} — here's what happens next`,
+        subject: `We received your message, ${firstName}, here's what happens next`,
         text: autoReplyText,
         html: autoReplyHtml,
       }),

@@ -7,7 +7,7 @@ import { Button } from '@/components/Button';
 export const metadata: Metadata = {
   title: 'Servicios de Inmigración para Cada Etapa de Su Proceso',
   description:
-    'DACA, SIJS, VAWA, Visa U, TPS, inmigración familiar, defensa contra la deportación y litigios federales — atendidos directamente por la abogada desde el primer día.',
+    'DACA, SIJS, VAWA, Visa U, TPS, inmigración familiar, defensa contra la deportación y litigios federales, atendidos directamente por la abogada desde el primer día.',
   alternates: {
     canonical: 'https://bardilaw.com/es/services',
     languages: {
@@ -21,25 +21,25 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+        alt: 'Bardi Immigration Law',
       },
     ],
     title: 'Servicios de Inmigración | Bardi Immigration Law',
     description:
-      'Inmigración por beneficios, defensa contra la deportación y litigios federales — atendidos directamente por la abogada desde el primer día.',
+      'Inmigración por beneficios, defensa contra la deportación y litigios federales, atendidos directamente por la abogada desde el primer día.',
     url: 'https://bardilaw.com/es/services',
     locale: 'es_US',
   },
 };
 
 const BENEFITS_BASED = [
-  { label: 'DACA', desc: 'Acción Diferida para los Llegados en la Infancia — solicitudes iniciales y renovaciones', href: '/es/services/daca' },
-  { label: 'SIJS', desc: 'Estatus de Inmigrante Juvenil Especial — protección para menores no acompañados', href: '/es/services/sijs' },
-  { label: 'VAWA', desc: 'Ley de Violencia contra la Mujer — auto-peticiones confidenciales para sobrevivientes de abuso', href: '/es/services/vawa' },
+  { label: 'DACA', desc: 'Acción Diferida para los Llegados en la Infancia, solicitudes iniciales y renovaciones', href: '/es/services/daca' },
+  { label: 'SIJS', desc: 'Estatus de Inmigrante Juvenil Especial, protección para menores no acompañados', href: '/es/services/sijs' },
+  { label: 'VAWA', desc: 'Ley de Violencia contra la Mujer, auto-peticiones confidenciales para sobrevivientes de abuso', href: '/es/services/vawa' },
   { label: 'Visa U', desc: 'Protección y estatus legal para víctimas de crímenes violentos', href: '/es/services/u-visa' },
-  { label: 'TPS', desc: 'Estatus de Protección Temporal — registro y renovaciones', href: '/es/services/tps' },
+  { label: 'TPS', desc: 'Estatus de Protección Temporal, registro y renovaciones', href: '/es/services/tps' },
   { label: 'Inmigración Familiar', desc: 'Peticiones I-130, ajuste de estatus, procesamiento consular', href: '/es/services/family-based-immigration' },
-  { label: 'Renuncias (Waivers)', desc: 'I-601, I-212, I-929 — solicitudes de renuncia por dificultad extrema', href: '/es/services/waivers' },
+  { label: 'Renuncias (Waivers)', desc: 'I-601, I-212, I-929, solicitudes de renuncia por dificultad extrema', href: '/es/services/waivers' },
 ];
 
 const TOP_LEVEL = [
@@ -47,7 +47,7 @@ const TOP_LEVEL = [
     icon: '🛡️',
     title: 'Defensa contra la Deportación',
     href: '/es/services/removal-defense',
-    desc: 'Defensa con y sin detención, audiencias de fianza, cancelación de la deportación (42B/42A), apelaciones ante la BIA. Si está en proceso — el tiempo es crucial.',
+    desc: 'Defensa con y sin detención, audiencias de fianza, cancelación de la deportación (42B/42A), apelaciones ante la BIA. Si está en proceso, el tiempo es crucial.',
   },
   {
     icon: '🏛️',
@@ -90,7 +90,7 @@ export default function ServicesPageES() {
               <h2 className="font-serif text-3xl font-bold text-navy">Inmigración por Beneficios</h2>
             </div>
             <p className="text-charcoal/80 mb-8 max-w-2xl">
-              Ayudamos a inmigrantes en cada etapa del proceso — desde quienes han vivido aquí
+              Ayudamos a inmigrantes en cada etapa del proceso, desde quienes han vivido aquí
               desde la infancia hasta quienes navegan nuevos caminos a través de conexiones
               familiares o protección humanitaria.
             </p>
@@ -139,7 +139,7 @@ export default function ServicesPageES() {
             </h2>
             <p className="text-charcoal/70 mb-8 max-w-xl mx-auto">
               Para eso es exactamente la consulta. Hablará directamente con su abogada, recibirá
-              respuestas directas y comprenderá sus opciones legales — antes de comprometerse con
+              respuestas directas y comprenderá sus opciones legales, antes de comprometerse con
               cualquier cosa.
             </p>
             <Button href="/es/contact" size="lg">Reserve una Consulta</Button>

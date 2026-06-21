@@ -5,9 +5,9 @@ import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
 
 export const metadata: Metadata = {
-  title: 'Bardi Immigration Law | Georgia Immigration Attorney',
+  title: 'Bardi Immigration Law | Immigration Attorney',
   description:
-    'Boutique immigration law firm. Your first call is with the attorney — not an intake specialist. Direct attorney access from day one. Licensed in Georgia and Alabama.',
+    'Boutique immigration law firm. Your first call is with the attorney, not an intake specialist. Direct attorney access from day one.',
   alternates: {
     canonical: 'https://bardilaw.com/',
     languages: {
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Bardi Immigration Law | Your Attorney from Day One',
     description:
-      'Boutique immigration law firm. Your first call is with the attorney — not an intake specialist. Direct attorney access from day one. Licensed in Georgia and Alabama.',
+      'Boutique immigration law firm. Your first call is with the attorney, not an intake specialist. Direct attorney access from day one.',
     url: 'https://bardilaw.com/',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Your Attorney from Day One',
+        alt: 'Bardi Immigration Law, Your Attorney from Day One',
       },
     ],
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Bardi Immigration Law | Your Attorney from Day One',
     description:
-      'Boutique immigration law firm. Your first call is with the attorney — not an intake specialist. Direct attorney access from day one. Licensed in Georgia and Alabama.',
+      'Boutique immigration law firm. Your first call is with the attorney, not an intake specialist. Direct attorney access from day one.',
     images: ['/og-image.png'],
   },
 };
@@ -48,7 +48,7 @@ const SERVICES = [
   {
     icon: '🛡️',
     title: 'Removal Defense',
-    desc: 'Facing deportation? We fight for you — in and out of detention. Bond hearings, cancellation of removal, and full removal defense.',
+    desc: 'Facing deportation? We fight for you, in and out of detention. Bond hearings, cancellation of removal, and full removal defense.',
     href: '/services/removal-defense',
   },
   {
@@ -62,15 +62,15 @@ const SERVICES = [
 const DIFFERENTIATORS = [
   {
     label: 'Direct Attorney Access',
-    desc: 'You work with your attorney — not support staff — from your first consultation to your final outcome.',
+    desc: 'You work with your attorney, not support staff, from your first consultation to your final outcome.',
   },
   {
     label: 'Always Current',
-    desc: 'We stay on top of every policy shift, agency update, and legal change — so your strategy reflects the law as it stands today, not last year.',
+    desc: 'We stay on top of every policy shift, agency update, and legal change, so your strategy reflects the law as it stands today, not last year.',
   },
   {
     label: 'Creative, Complex Representation',
-    desc: 'We take on difficult cases — the ones other firms decline. If there is a legal path forward, we will find it.',
+    desc: 'We take on difficult cases, the ones other firms decline. If there is a legal path forward, we will find it.',
   },
   {
     label: "You're Family Here",
@@ -111,9 +111,19 @@ export default function HomePage() {
               <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl font-bold text-navy leading-tight mb-6">
                 Your Attorney from Day One.
               </h1>
+              {/* Mobile-only headshot: stacks directly under the headline (BAR-617) */}
+              <div className="flex justify-center mb-8 lg:hidden">
+                <img
+                  src="/headshot-eszter-hero.jpg"
+                  alt="Attorney Eszter Bardi, Bardi Immigration Law"
+                  width={400}
+                  height={500}
+                  className="rounded-lg h-72 w-auto object-cover shadow-md"
+                />
+              </div>
               <p className="text-lg text-charcoal/80 mb-8 max-w-prose">
                 When your future is on the line, you deserve a real lawyer in your corner from the
-                very first call — not an intake form, not a case manager. At Bardi Immigration Law,
+                very first call, not an intake form, not a case manager. At Bardi Immigration Law,
                 you work directly with your attorney, from the first conversation to the final
                 decision.
               </p>
@@ -133,7 +143,7 @@ export default function HomePage() {
             <div className="hidden lg:flex items-center justify-center">
               <img
                 src="/headshot-eszter-hero.jpg"
-                alt="Attorney Eszter Bardi — Bardi Immigration Law"
+                alt="Attorney Eszter Bardi, Bardi Immigration Law"
                 width={400}
                 height={500}
                 className="rounded-lg h-96 w-auto object-cover shadow-md"
@@ -150,7 +160,7 @@ export default function HomePage() {
             </h2>
             <p className="text-lg text-charcoal/80 max-w-2xl mx-auto">
               Immigration law isn&apos;t one-size-fits-all. Every family is different. Every case has
-              history. At Bardi Immigration Law, you speak with your attorney — not a case manager,
+              history. At Bardi Immigration Law, you speak with your attorney, not a case manager,
               not an intake specialist, not a paralegal who forwards your questions. Your case gets
               the personal attention it deserves, from the first call to the final decision.
             </p>
@@ -198,7 +208,7 @@ export default function HomePage() {
               <h2 className="font-serif text-3xl lg:text-4xl font-bold text-navy mb-2">Why Bardi Law?</h2>
               <p className="font-serif text-xl text-charcoal/70 mb-6">Boutique. Personal. Attorney-first.</p>
               <p className="text-charcoal/80 mb-6">
-                When you call, you talk to an attorney — not an intake specialist. Your case gets the
+                When you call, you talk to an attorney, not an intake specialist. Your case gets the
                 focus and follow-through it deserves, and you always know exactly where it stands.
               </p>
               <Button href="/about" variant="ghost">Read About the Firm</Button>
@@ -238,15 +248,15 @@ export default function HomePage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center max-w-2xl mx-auto">
               <div className="bg-white rounded-lg p-6 flex flex-col items-center gap-2">
                 <span className="text-3xl font-serif font-bold text-gold">AILA</span>
-                <p className="text-sm font-semibold text-navy font-sans">Georgia-Alabama Chapter Chair<br />2025–2026</p>
+                <p className="text-sm font-semibold text-navy font-sans">AILA Chapter Chair<br />2025–2026</p>
               </div>
               <div className="bg-white rounded-lg p-6 flex flex-col items-center gap-2">
-                <span className="text-3xl font-serif font-bold text-gold">GA</span>
-                <p className="text-sm font-semibold text-navy font-sans">State Bar of Georgia<br />Member in good standing</p>
+                <span className="text-3xl font-serif font-bold text-gold">Esq.</span>
+                <p className="text-sm font-semibold text-navy font-sans">Licensed Attorney<br />Member in good standing</p>
               </div>
               <div className="bg-white rounded-lg p-6 flex flex-col items-center gap-2">
-                <span className="text-3xl font-serif font-bold text-gold">AL</span>
-                <p className="text-sm font-semibold text-navy font-sans">State Bar of Alabama<br />Licensed &amp; in good standing</p>
+                <span className="text-3xl font-serif font-bold text-gold">US</span>
+                <p className="text-sm font-semibold text-navy font-sans">Federal Practice<br />Clients nationwide</p>
               </div>
             </div>
           </div>
@@ -281,14 +291,14 @@ export default function HomePage() {
                 <div key={n} className="bg-warmgray rounded-lg px-10 py-12 lg:px-14">
                   <span className="block font-serif text-[48px] text-gold leading-none mb-4" aria-hidden="true">&ldquo;</span>
                   <p className="font-serif text-[22px] italic text-navy leading-[1.6]">
-                    [Client testimonial pending — real quotes to be provided by client.]
+                    [Client testimonial pending, real quotes to be provided by client.]
                   </p>
-                  <p className="font-sans font-semibold text-sm text-navy mt-6">— [Client Name], [State]</p>
+                  <p className="font-sans font-semibold text-sm text-navy mt-6">[Client Name], [State]</p>
                 </div>
               ))}
             </div>
             <p className="text-center text-xs text-charcoal/40 mt-6 font-sans">
-              Testimonials pending — content to be provided by attorney.
+              Testimonials pending, content to be provided by attorney.
             </p>
           </div>
         </section>
@@ -312,7 +322,7 @@ export default function HomePage() {
                 Eszter Bardi
               </p>
               <p className="font-sans text-base text-charcoal leading-[1.65] mt-3">
-                At Bardi Immigration Law, you work directly with your attorney — from consultation to outcome. No intake specialists. No case handoffs. Just real, boutique representation.
+                At Bardi Immigration Law, you work directly with your attorney, from consultation to outcome. No intake specialists. No case handoffs. Just real, boutique representation.
               </p>
               <a
                 href="/about"
@@ -338,7 +348,7 @@ export default function HomePage() {
               <Button href="/contact" size="lg">Book Your Consultation</Button>
             </div>
             <p className="font-sans text-sm text-white/50 mt-4">
-              Licensed in Georgia and Alabama. Immigration is federal law — we represent clients nationwide.
+              Immigration is federal law, we represent clients nationwide.
             </p>
           </div>
         </section>

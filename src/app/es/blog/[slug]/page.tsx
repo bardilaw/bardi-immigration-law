@@ -161,7 +161,7 @@ export default async function EsBlogPostPage({ params }: Props) {
               <div className="flex-1">
                 <p className="font-sans font-semibold text-navy text-[16px] mb-1">¿Necesita ayuda con su caso?</p>
                 <p className="font-sans text-[14px] text-charcoal/70">
-                  Reserve una consulta con la Abogada Bardi — acceso directo, sin intermediarios.
+                  Reserve una consulta con la Abogada Bardi, acceso directo, sin intermediarios.
                 </p>
               </div>
               <Link

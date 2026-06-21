@@ -7,7 +7,7 @@ import { trackEvent } from '@/lib/gtag';
 type BookingEmbedProps = {
   /** Cal.com booking slug, e.g. "eszter/30-min-consultation" (not a full URL). */
   calLink: string;
-  /** Cal embed namespace — keep distinct per event type (e.g. "consult-en"). */
+  /** Cal embed namespace, keep distinct per event type (e.g. "consult-en"). */
   namespace: string;
   /** UI locale for the Cal.com booking widget. */
   locale?: 'en' | 'es';

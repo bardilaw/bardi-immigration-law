@@ -17,11 +17,11 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Bardi Immigration Law | Georgia Immigration Attorney',
+    default: 'Bardi Immigration Law | Immigration Attorney',
     template: '%s | Bardi Immigration Law',
   },
   description:
-    'Boutique immigration law firm. Your attorney from day one — direct attorney access, not an intake form. Licensed in Georgia and Alabama. Benefits-based immigration, removal defense, and federal litigation.',
+    'Boutique immigration law firm. Your attorney from day one, direct attorney access, not an intake form. Benefits-based immigration, removal defense, and federal litigation.',
   metadataBase: new URL('https://bardilaw.com'),
   openGraph: {
     siteName: 'Bardi Immigration Law',
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Georgia Immigration Attorney',
+        alt: 'Bardi Immigration Law',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bardi Immigration Law | Georgia Immigration Attorney',
+    title: 'Bardi Immigration Law | Immigration Attorney',
     description:
-      'Boutique immigration law firm. Your attorney from day one — direct attorney access, not an intake form. Licensed in Georgia and Alabama.',
+      'Boutique immigration law firm. Your attorney from day one, direct attorney access, not an intake form.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
 };
 
-// Firm-level schema: LocalBusiness + LegalService — injected on every page via RootLayout.
+// Firm-level schema: LocalBusiness + LegalService, injected on every page via RootLayout.
 // Pending fields (address, phone, hours) must be updated when client provides them.
 const FIRM_SCHEMA = {
   '@context': 'https://schema.org',
@@ -68,14 +68,11 @@ const FIRM_SCHEMA = {
         addressRegion: 'GA',
         addressCountry: 'US',
       },
-      areaServed: [
-        { '@type': 'State', name: 'Georgia' },
-        { '@type': 'State', name: 'Alabama' },
-      ],
+      areaServed: { '@type': 'Country', name: 'United States' },
       serviceType: 'Immigration Law',
       priceRange: '$$',
       description:
-        'Boutique immigration law firm providing direct attorney representation. Licensed in Georgia and Alabama; because immigration is federal law, we represent clients nationwide. Specializing in benefits-based immigration, removal defense, and federal litigation.',
+        'Boutique immigration law firm providing direct attorney representation. Licensed; because immigration is federal law, we represent clients nationwide. Specializing in benefits-based immigration, removal defense, and federal litigation.',
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Immigration Legal Services',
@@ -86,7 +83,7 @@ const FIRM_SCHEMA = {
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Naturalization' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'U Visa' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'VAWA' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Federal Litigation — Mandamus & Habeas Corpus' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Federal Litigation, Mandamus & Habeas Corpus' } },
         ],
       },
     },

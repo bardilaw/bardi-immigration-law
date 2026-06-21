@@ -7,22 +7,22 @@ export function StewartDetentionPostContent() {
         If someone you love was just detained at Stewart Detention Center, every hour matters.
       </p>
       <p>
-        Families in this situation are facing one of the most frightening moments of their lives — and often
+        Families in this situation are facing one of the most frightening moments of their lives, and often
         don&apos;t know where to start. This guide explains exactly what happens in the first 72 hours after
         detention at Stewart, what rights your loved one has, and why getting an immigration attorney on the
-        phone today — not next week — can change the outcome.
+        phone today, not next week, can change the outcome.
       </p>
 
       <h2>What Is Stewart Detention Center?</h2>
       <p>
-        Stewart Detention Center is located in Lumpkin, Georgia — a rural town in Stewart County, about 140
+        Stewart Detention Center is located in Lumpkin, Georgia, a rural town in Stewart County, about 140
         miles south of Atlanta. Operated by CoreCivic under a contract with ICE (U.S. Immigration and Customs
         Enforcement), Stewart is one of the largest immigration detention facilities in the United States, with
         an official bed capacity of 1,752.
       </p>
       <p>
-        As of early 2026, Stewart holds more than 2,000 detainees — significantly above its official capacity
-        — as Georgia immigration enforcement has surged to among the highest levels in the country.
+        As of early 2026, Stewart holds more than 2,000 detainees, significantly above its official capacity
+       , as Georgia immigration enforcement has surged to among the highest levels in the country.
       </p>
       <p>
         One thing that makes Stewart especially urgent: there is an immigration court located directly
@@ -37,12 +37,12 @@ export function StewartDetentionPostContent() {
       <p>Within the first 24 to 72 hours, ICE will:</p>
       <ul>
         <li><strong>Fingerprint your loved one</strong> and run background and database checks</li>
-        <li><strong>Create a custody file</strong> and issue a Notice to Appear (NTA) — the official document initiating immigration court proceedings</li>
-        <li><strong>Make an initial custody determination</strong> — reviewing immigration history, criminal record, and community ties — to decide whether to set a bond and at what amount</li>
+        <li><strong>Create a custody file</strong> and issue a Notice to Appear (NTA), the official document initiating immigration court proceedings</li>
+        <li><strong>Make an initial custody determination</strong>, reviewing immigration history, criminal record, and community ties, to decide whether to set a bond and at what amount</li>
         <li><strong>Advise your loved one of their legal rights</strong></li>
       </ul>
       <p>
-        During this period, your loved one has the right to make phone calls — to family and to an attorney.
+        During this period, your loved one has the right to make phone calls, to family and to an attorney.
         They do not have to answer questions about their immigration status without an attorney present. They
         have the right to remain silent. They have the right to refuse to sign documents until they have spoken
         with legal counsel.
@@ -56,19 +56,19 @@ export function StewartDetentionPostContent() {
       </p>
       <p>
         That matters more than most families realize. Only an estimated 6% of Stewart detainees have legal
-        representation — leaving the vast majority to navigate one of the country&apos;s most complex legal
+        representation, leaving the vast majority to navigate one of the country&apos;s most complex legal
         systems alone, in a detained setting, with hearings scheduled in weeks.
       </p>
 
       <h3 style={{ fontFamily: 'var(--font-inter), sans-serif', fontSize: '1.0625rem', fontWeight: 700, color: '#3d3d3d', marginTop: '1.5rem', marginBottom: '0.5rem' }}>Bond Hearings: Timing and Amounts</h3>
       <p>
-        ICE makes its initial bond determination within 24 to 72 hours of arrest. If ICE sets a bond — or
-        denies bond — your loved one can request a <strong>bond redetermination hearing</strong> before an
+        ICE makes its initial bond determination within 24 to 72 hours of arrest. If ICE sets a bond, or
+        denies bond, your loved one can request a <strong>bond redetermination hearing</strong> before an
         immigration judge. These hearings are typically scheduled within one to two weeks of the request.
       </p>
       <p>
         Typical bond amounts at Stewart range from <strong>$2,500 to $15,000</strong>. Unlike criminal cases,
-        immigration bond must be paid <strong>in full</strong> — there are no bondsmen. The bond amount is
+        immigration bond must be paid <strong>in full</strong>, there are no bondsmen. The bond amount is
         returned when the case is resolved, as long as your loved one attends all hearings.
       </p>
       <p
@@ -82,14 +82,14 @@ export function StewartDetentionPostContent() {
       >
         <strong>Important 2026 update:</strong> The 11th U.S. Circuit Court of Appeals issued a landmark ruling
         in May 2026, striking down the federal government&apos;s mandatory no-bond policy for detained
-        immigrants — including long-term U.S. residents with no criminal record. Bond hearings are currently
+        immigrants, including long-term U.S. residents with no criminal record. Bond hearings are currently
         available again for Stewart detainees. This remains an evolving legal situation; contact an attorney for
         the latest status.
       </p>
 
       <h3 style={{ fontFamily: 'var(--font-inter), sans-serif', fontSize: '1.0625rem', fontWeight: 700, color: '#3d3d3d', marginTop: '1.5rem', marginBottom: '0.5rem' }}>First Immigration Court Hearing</h3>
       <p>
-        The first hearing — called a <strong>Master Calendar Hearing</strong> — is typically scheduled two to
+        The first hearing, called a <strong>Master Calendar Hearing</strong>, is typically scheduled two to
         six weeks after detention. At this hearing, the immigration judge will review the charges, set a
         schedule, and determine next steps.
       </p>
@@ -107,14 +107,14 @@ export function StewartDetentionPostContent() {
       <ul>
         <li><strong>Know why they are being detained</strong></li>
         <li><strong>Remain silent</strong> and not answer questions about immigration status</li>
-        <li><strong>Contact an attorney</strong> — the government will not provide one; immigration courts have no public defenders</li>
+        <li><strong>Contact an attorney</strong>, the government will not provide one; immigration courts have no public defenders</li>
         <li><strong>Make phone calls</strong> to family and legal counsel</li>
         <li><strong>Refuse to sign documents</strong> without attorney advice</li>
         <li><strong>Request an interpreter</strong> in their language</li>
       </ul>
       <p>
-        Signing documents without legal counsel — especially a voluntary departure or a stipulated removal order
-        — can permanently affect the ability to return to the United States legally. Do not encourage your loved
+        Signing documents without legal counsel, especially a voluntary departure or a stipulated removal order
+       , can permanently affect the ability to return to the United States legally. Do not encourage your loved
         one to sign anything until they have spoken with an attorney.
       </p>
 
@@ -125,15 +125,15 @@ export function StewartDetentionPostContent() {
       <p>
         There are very few free legal resources in Lumpkin, and the detainee population has more than doubled
         since early 2025. <strong>Georgia Asylum &amp; Immigration Network (GAIN)</strong> provides free legal
-        representation to some Stewart detainees — contact them at 678-335-6040 or{' '}
+        representation to some Stewart detainees, contact them at 678-335-6040 or{' '}
         <a href="https://georgiaasylum.org" target="_blank" rel="noopener noreferrer">georgiaasylum.org</a>.{' '}
         <strong>El Refugio</strong>, a support house in Lumpkin, helps families with visitation and referrals
-        — reach them at 404-480-4780.
+       , reach them at 404-480-4780.
       </p>
       <p>
         For private representation, Bardi Immigration Law represents clients in detained removal defense
         proceedings, including bond hearings, Master Calendar Hearings, and merits hearings at the Stewart
-        Immigration Court. We understand that when your family member is detained, this is an emergency — and
+        Immigration Court. We understand that when your family member is detained, this is an emergency, and
         we treat it that way.
       </p>
 
@@ -149,7 +149,7 @@ export function StewartDetentionPostContent() {
 
       <h2>Call Bardi Immigration Law Today</h2>
       <p>
-        Detained cases are emergencies. The window to act — on bond, on hearings, on legal strategy — opens
+        Detained cases are emergencies. The window to act, on bond, on hearings, on legal strategy, opens
         and closes fast.
       </p>
       <p>

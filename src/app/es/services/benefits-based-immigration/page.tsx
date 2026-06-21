@@ -7,7 +7,7 @@ import { Button } from '@/components/Button';
 export const metadata: Metadata = {
   title: 'Abogada de Inmigración por Beneficios | Tarjetas de Residencia, DACA, Visa U y Más',
   description:
-    'Tarjetas de residencia permanente, DACA, naturalización, visa U, VAWA, peticiones familiares, TPS y renuncias — representación personalizada de inmigración. Con licencia en Georgia y Alabama. Como la ley de inmigración es federal, representamos a clientes en todo el país.',
+    'Tarjetas de residencia permanente, DACA, naturalización, visa U, VAWA, peticiones familiares, TPS y renuncias, representación personalizada de inmigración. Como la ley de inmigración es federal, representamos a clientes en todo el país.',
   alternates: {
     canonical: 'https://bardilaw.com/es/services/benefits-based-immigration',
     languages: {
@@ -21,12 +21,12 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law — Abogada de Inmigración en Georgia',
+        alt: 'Bardi Immigration Law',
       },
     ],
     title: 'Inmigración por Beneficios | Bardi Immigration Law',
     description:
-      'Tarjetas de residencia permanente, DACA, naturalización, visa U, VAWA, peticiones familiares, TPS y renuncias. Con licencia en Georgia y Alabama.',
+      'Tarjetas de residencia permanente, DACA, naturalización, visa U, VAWA, peticiones familiares, TPS y renuncias.',
     url: 'https://bardilaw.com/es/services/benefits-based-immigration',
     locale: 'es_US',
   },
@@ -63,7 +63,7 @@ export default function BenefitsBasedPageES() {
               Inmigración por Beneficios
             </h1>
             <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[640px]">
-              Ayudamos a inmigrantes en cada etapa — desde quienes han vivido aquí desde la infancia hasta quienes navegan nuevos caminos a través de conexiones familiares o protección humanitaria.
+              Ayudamos a inmigrantes en cada etapa, desde quienes han vivido aquí desde la infancia hasta quienes navegan nuevos caminos a través de conexiones familiares o protección humanitaria.
             </p>
           </div>
         </section>

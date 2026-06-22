@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer';
 import { ContactFormES } from '@/components/ContactFormES';
 import { BookingEmbed } from '@/components/BookingEmbed';
 import { CAL_LINK_ES, bookingEnabled } from '@/lib/booking';
+import { CONTACT_PHONE, phoneEnabled, telHref } from '@/lib/contact';
 
 export const metadata: Metadata = {
   title: 'Contacto | Programe una Consulta',
@@ -146,6 +147,17 @@ export default function ContactPageES() {
               <div className="bg-white rounded-lg p-6">
                 <h3 className="font-serif text-lg font-bold text-navy mb-3">¿Prefiere contactarnos directamente?</h3>
                 <ul className="flex flex-col gap-3 text-sm">
+                  {phoneEnabled(CONTACT_PHONE) && (
+                    <li>
+                      <a
+                        href={telHref(CONTACT_PHONE)}
+                        className="flex items-center gap-2 text-navy hover:text-gold transition-colors font-sans font-semibold"
+                      >
+                        <span aria-hidden="true">📞</span>
+                        <span>{CONTACT_PHONE}</span>
+                      </a>
+                    </li>
+                  )}
                   <li>
                     <a
                       href="mailto:info@bardilaw.com"
@@ -166,7 +178,7 @@ export default function ContactPageES() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer phone={CONTACT_PHONE} />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer';
 import { ContactForm } from '@/components/ContactForm';
 import { BookingEmbed } from '@/components/BookingEmbed';
 import { CAL_LINK_EN, bookingEnabled } from '@/lib/booking';
+import { CONTACT_PHONE, phoneEnabled, telHref } from '@/lib/contact';
 
 export const metadata: Metadata = {
   title: 'Contact Bardi Immigration Law | Schedule a Consultation',
@@ -136,6 +137,17 @@ export default function ContactPage() {
               <div className="bg-white rounded-lg p-6">
                 <h3 className="font-serif text-lg font-bold text-navy mb-3">Prefer to reach us directly?</h3>
                 <ul className="flex flex-col gap-3 text-sm">
+                  {phoneEnabled(CONTACT_PHONE) && (
+                    <li>
+                      <a
+                        href={telHref(CONTACT_PHONE)}
+                        className="flex items-center gap-2 text-navy hover:text-gold transition-colors font-sans font-semibold"
+                      >
+                        <span aria-hidden="true">📞</span>
+                        <span>{CONTACT_PHONE}</span>
+                      </a>
+                    </li>
+                  )}
                   <li>
                     <a
                       href="mailto:info@bardilaw.com"
@@ -159,7 +171,7 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer phone={CONTACT_PHONE} />
     </>
   );
 }

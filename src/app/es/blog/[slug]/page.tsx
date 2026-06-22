@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { CONTACT_PHONE } from '@/lib/contact';
 import { JsonLd } from '@/components/JsonLd';
 import { BLOG_POSTS, getPost } from '@/content/blog/meta';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
@@ -200,7 +201,7 @@ export default async function EsBlogPostPage({ params }: Props) {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer phone={CONTACT_PHONE} />
     </>
   );
 }

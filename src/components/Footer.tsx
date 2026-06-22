@@ -3,8 +3,12 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from './Button';
+import { phoneEnabled, telHref } from '@/lib/contact';
 
-export function Footer() {
+// `phone` is passed by the (server) page that renders the footer, sourced from
+// the CONTACT_PHONE env var (BAR-679). It is optional so the footer still renders
+// before the firm number is configured; when set, a tap-to-call link is shown.
+export function Footer({ phone = '' }: { phone?: string }) {
   const pathname = usePathname();
   const isEs = pathname.startsWith('/es');
 
@@ -58,6 +62,11 @@ export function Footer() {
               <li>
                 <a href="mailto:info@bardilaw.com" className="hover:text-gold transition-colors">info@bardilaw.com</a>
               </li>
+              {phoneEnabled(phone) && (
+                <li>
+                  <a href={telHref(phone)} className="hover:text-gold transition-colors">{phone}</a>
+                </li>
+              )}
               <li>{isEs ? 'Abogada licenciada' : 'Licensed attorney'}</li>
             </ul>
             <Button href={p('/contact')} variant="primary" size="sm">

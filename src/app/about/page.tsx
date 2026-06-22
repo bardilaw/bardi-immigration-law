@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { CONTACT_PHONE } from '@/lib/contact';
 import { Button } from '@/components/Button';
 import { JsonLd } from '@/components/JsonLd';
 
@@ -238,7 +239,7 @@ export default function AboutPage() {
         </section>
 
       </main>
-      <Footer />
+      <Footer phone={CONTACT_PHONE} />
     </>
   );
 }

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { CONTACT_PHONE } from '@/lib/contact';
 import { JsonLd } from '@/components/JsonLd';
 import { BLOG_POSTS, getPost } from '@/content/blog/meta';
 import { DacaRenewal2025PostContent } from '@/content/blog/en/daca-renewal-2025-georgia';
@@ -244,7 +245,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer phone={CONTACT_PHONE} />
     </>
   );
 }

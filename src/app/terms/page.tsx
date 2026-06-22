@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { CONTACT_PHONE } from '@/lib/contact';
 
 export const metadata: Metadata = {
   title: 'Terms of Use',
@@ -61,7 +62,7 @@ export default function TermsPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer phone={CONTACT_PHONE} />
     </>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { CONTACT_PHONE } from '@/lib/contact';
 import { BLOG_POSTS } from '@/content/blog/meta';
 
 export const metadata: Metadata = {
@@ -102,7 +103,7 @@ export default function BlogIndexPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer phone={CONTACT_PHONE} />
     </>
   );
 }

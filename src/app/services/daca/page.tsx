@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { CONTACT_PHONE } from '@/lib/contact';
 import { Button } from '@/components/Button';
 import { FaqAccordion } from '@/components/FaqAccordion';
 import { JsonLd } from '@/components/JsonLd';
@@ -277,6 +278,29 @@ export default function DacaPage() {
           </div>
         </section>
 
+        {/* Related Articles */}
+        <section className="bg-warmgray py-12 lg:py-14">
+          <div className="max-w-site mx-auto px-5 lg:px-16">
+            <h2 className="font-serif text-2xl font-bold text-navy mb-5">Related Articles</h2>
+            <ul className="list-none p-0 m-0 flex flex-col gap-3">
+              {[
+                { href: '/blog/daca-renewal-2026', label: 'DACA Renewal Guide 2026: What Every Dreamer Needs to Know' },
+                { href: '/blog/daca-2026', label: 'DACA in 2026: What Georgia Dreamers Need to Know' },
+              ].map((article) => (
+                <li key={article.href} className="flex items-start gap-2.5">
+                  <span className="text-gold text-lg leading-none mt-1 select-none" aria-hidden="true">&rsaquo;</span>
+                  <Link
+                    href={article.href}
+                    className="font-sans text-[15px] text-navy underline decoration-gold/50 underline-offset-4 hover:decoration-navy transition-colors"
+                  >
+                    {article.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
         {/* 5.7 CTA Strip */}
         <section className="bg-navy py-16 lg:py-20 text-center">
           <div className="max-w-site mx-auto px-5 lg:px-20">
@@ -295,7 +319,7 @@ export default function DacaPage() {
         </section>
 
       </main>
-      <Footer />
+      <Footer phone={CONTACT_PHONE} />
     </>
   );
 }

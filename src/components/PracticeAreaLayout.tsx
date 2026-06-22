@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Header } from './Header';
 import { Footer } from './Footer';
+import { CONTACT_PHONE } from '@/lib/contact';
 import { Button } from './Button';
 import { FaqAccordion } from './FaqAccordion';
 import { JsonLd } from './JsonLd';
@@ -39,6 +40,11 @@ export interface RelatedArea {
   learnMore?: string;
 }
 
+export interface RelatedArticle {
+  href: string;
+  label: string;
+}
+
 export interface PracticeAreaProps {
   title: string;
   subhead: string;
@@ -56,6 +62,8 @@ export interface PracticeAreaProps {
   faqs: FaqItem[];
   relatedHeading?: string;
   relatedAreas: RelatedArea[];
+  relatedArticlesHeading?: string;
+  relatedArticles?: RelatedArticle[];
   ctaHeading?: string;
   ctaSubtext?: string;
   ctaButtonLabel?: string;
@@ -103,6 +111,8 @@ export function PracticeAreaLayout({
   faqs,
   relatedHeading = 'Related Practice Areas',
   relatedAreas,
+  relatedArticlesHeading = 'Related Articles',
+  relatedArticles = [],
   ctaHeading = 'Start with a Consultation',
   ctaSubtext = "We'll help you understand your options and build the strongest possible case.",
   ctaButtonLabel = 'Schedule a Consultation',
@@ -256,6 +266,28 @@ export function PracticeAreaLayout({
           </section>
         )}
 
+        {/* Related Articles */}
+        {relatedArticles.length > 0 && (
+          <section className="bg-warmgray py-12 lg:py-14">
+            <div className="max-w-site mx-auto px-5 lg:px-16">
+              <h2 className="font-serif text-2xl font-bold text-navy mb-5">{relatedArticlesHeading}</h2>
+              <ul className="list-none p-0 m-0 flex flex-col gap-3">
+                {relatedArticles.map((article) => (
+                  <li key={article.href} className="flex items-start gap-2.5">
+                    <span className="text-gold text-lg leading-none mt-1 select-none" aria-hidden="true">&rsaquo;</span>
+                    <Link
+                      href={article.href}
+                      className="font-sans text-[15px] text-navy underline decoration-gold/50 underline-offset-4 hover:decoration-navy transition-colors"
+                    >
+                      {article.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
+
         {/* CTA Strip */}
         <section className="bg-navy py-16 lg:py-20 text-center">
           <div className="max-w-site mx-auto px-5 lg:px-20">
@@ -274,7 +306,7 @@ export function PracticeAreaLayout({
         </section>
 
       </main>
-      <Footer />
+      <Footer phone={CONTACT_PHONE} />
     </>
   );
 }

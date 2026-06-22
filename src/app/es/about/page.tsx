@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { CONTACT_PHONE } from '@/lib/contact';
 import { Button } from '@/components/Button';
 
 export const metadata: Metadata = {
@@ -213,7 +214,7 @@ export default function AboutPageES() {
         </section>
 
       </main>
-      <Footer />
+      <Footer phone={CONTACT_PHONE} />
     </>
   );
 }

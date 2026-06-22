@@ -76,6 +76,9 @@ export default function WaiversPage() {
         { href: '/services/removal-defense', label: 'Removal Defense', desc: 'Defense in Removal Proceedings' },
         { href: '/services/federal-litigation', label: 'Federal Litigation', desc: 'Federal Court Immigration Cases' },
       ]}
+      relatedArticles={[
+        { href: '/blog/criminal-record-immigration-consequences-georgia', label: 'Criminal Record and Immigration Consequences in Georgia' },
+      ]}
     />
   );
 }

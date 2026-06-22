@@ -78,6 +78,10 @@ export default function RemovalDefensePage() {
         { href: '/services/vawa', label: 'VAWA', desc: 'Violence Against Women Act Petitions' },
         { href: '/services/waivers', label: 'Waivers', desc: 'I-601, I-212 & Other Waivers' },
       ]}
+      relatedArticles={[
+        { href: '/blog/deportation-defense-removal-proceedings-georgia', label: 'How Removal Proceedings Work in Georgia — and How to Fight Them' },
+        { href: '/blog/immigration-bond-hearing-georgia', label: 'Immigration Bond Hearings and ICE Detention in Georgia' },
+      ]}
     />
   );
 }

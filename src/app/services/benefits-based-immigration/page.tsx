@@ -122,6 +122,29 @@ export default function BenefitsBasedPage() {
           </div>
         </section>
 
+        {/* Related Articles */}
+        <section className="bg-warmgray py-12 lg:py-14">
+          <div className="max-w-site mx-auto px-5 lg:px-16">
+            <h2 className="font-serif text-2xl font-bold text-navy mb-5">Related Articles</h2>
+            <ul className="list-none p-0 m-0 flex flex-col gap-3">
+              {[
+                { href: '/blog/naturalization-citizenship-georgia', label: 'Naturalization in Georgia: Your Path to U.S. Citizenship' },
+                { href: '/blog/employment-based-immigration-georgia', label: 'Employment-Based Green Cards and Work Visas: A Georgia Guide' },
+              ].map((article) => (
+                <li key={article.href} className="flex items-start gap-2.5">
+                  <span className="text-gold text-lg leading-none mt-1 select-none" aria-hidden="true">&rsaquo;</span>
+                  <Link
+                    href={article.href}
+                    className="font-sans text-[15px] text-navy underline decoration-gold/50 underline-offset-4 hover:decoration-navy transition-colors"
+                  >
+                    {article.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="bg-navy py-16 lg:py-20 text-center">
           <div className="max-w-site mx-auto px-5 lg:px-20">

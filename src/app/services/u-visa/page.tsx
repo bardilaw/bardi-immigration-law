@@ -75,6 +75,9 @@ export default function UVisaPage() {
         { href: '/services/removal-defense', label: 'Removal Defense', desc: 'Defense in Removal Proceedings' },
         { href: '/services/family-based-immigration', label: 'Family-Based', desc: 'Family Petitions & Green Cards' },
       ]}
+      relatedArticles={[
+        { href: '/blog/u-visa-vawa-crime-victims-georgia', label: 'U-Visa and VAWA: Immigration Protection for Crime Victims in Georgia' },
+      ]}
     />
   );
 }

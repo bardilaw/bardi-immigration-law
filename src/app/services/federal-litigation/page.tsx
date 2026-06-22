@@ -76,6 +76,10 @@ export default function FederalLitigationPage() {
         { href: '/services/waivers', label: 'Waivers', desc: 'I-601, I-212 & Other Waivers' },
         { href: '/services/family-based-immigration', label: 'Family-Based', desc: 'Family Petitions & Green Cards' },
       ]}
+      relatedArticles={[
+        { href: '/blog/deportation-defense-removal-proceedings-georgia', label: 'How Removal Proceedings Work in Georgia — and How to Fight Them' },
+        { href: '/blog/immigration-bond-hearing-georgia', label: 'Immigration Bond Hearings and ICE Detention in Georgia' },
+      ]}
     />
   );
 }

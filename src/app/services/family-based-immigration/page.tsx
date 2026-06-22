@@ -77,6 +77,10 @@ export default function FamilyBasedPage() {
         { href: '/services/vawa', label: 'VAWA', desc: 'Violence Against Women Act Petitions' },
         { href: '/services/removal-defense', label: 'Removal Defense', desc: 'Defense in Removal Proceedings' },
       ]}
+      relatedArticles={[
+        { href: '/blog/family-green-card-attorney-georgia', label: 'Green Card Through Family: A Complete Guide for Georgia Immigrants' },
+        { href: '/blog/marriage-based-green-card-k1-fiance-visa-georgia', label: 'Marriage Green Card and K-1 Fiancé Visa: A Georgia Guide' },
+      ]}
     />
   );
 }

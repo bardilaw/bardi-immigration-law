@@ -75,6 +75,9 @@ export default function TpsPage() {
         { href: '/services/family-based-immigration', label: 'Family-Based', desc: 'Family Petitions & Green Cards' },
         { href: '/services/removal-defense', label: 'Removal Defense', desc: 'Defense in Removal Proceedings' },
       ]}
+      relatedArticles={[
+        { href: '/blog/tps-2026', label: 'TPS in 2026: What It Means for Georgia Immigrants' },
+      ]}
     />
   );
 }

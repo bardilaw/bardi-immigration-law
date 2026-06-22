@@ -103,6 +103,10 @@ export default function SijsPage() {
         { href: '/services/vawa', label: 'VAWA', desc: 'Violence Against Women Act Petitions' },
         { href: '/services/removal-defense', label: 'Removal Defense', desc: 'Defense in Removal Proceedings' },
       ]}
+      relatedArticles={[
+        { href: '/blog/deportation-defense-removal-proceedings-georgia', label: 'How Removal Proceedings Work in Georgia — and How to Fight Them' },
+        { href: '/blog/family-green-card-attorney-georgia', label: 'Getting a Green Card Through Family in Georgia' },
+      ]}
     />
   );
 }

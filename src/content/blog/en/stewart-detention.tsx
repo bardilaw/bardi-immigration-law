@@ -80,7 +80,8 @@ export function StewartDetentionPostContent() {
           color: '#3d3d3d',
         }}
       >
-        <strong>Important 2026 update:</strong> The 11th U.S. Circuit Court of Appeals issued a landmark ruling
+        <strong>Important 2026 update:</strong> The{' '}
+        <Link href="/services/federal-litigation">11th U.S. Circuit Court of Appeals</Link> issued a landmark ruling
         in May 2026, striking down the federal government&apos;s mandatory no-bond policy for detained
         immigrants, including long-term U.S. residents with no criminal record. Bond hearings are currently
         available again for Stewart detainees. This remains an evolving legal situation; contact an attorney for
@@ -131,9 +132,10 @@ export function StewartDetentionPostContent() {
        , reach them at 404-480-4780.
       </p>
       <p>
-        For private representation, Bardi Immigration Law represents clients in detained removal defense
-        proceedings, including bond hearings, Master Calendar Hearings, and merits hearings at the Stewart
-        Immigration Court. We understand that when your family member is detained, this is an emergency, and
+        For private representation, Bardi Immigration Law represents clients in detained{' '}
+        <Link href="/services/removal-defense">removal defense</Link> proceedings, including{' '}
+        <Link href="/blog/immigration-bond-hearing-georgia">bond hearings</Link>, Master Calendar Hearings, and merits
+        hearings at the Stewart Immigration Court. We understand that when your family member is detained, this is an emergency, and
         we treat it that way.
       </p>
 

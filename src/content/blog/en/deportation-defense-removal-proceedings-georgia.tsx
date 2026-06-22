@@ -176,7 +176,8 @@ export function DeportationDefensePostContent() {
         adjustment is a viable path and how to pursue it strategically.
       </p>
       <p>
-        Learn more about family-based immigration pathways in our guide to{' '}
+        Learn more about our{' '}
+        <Link href="/services/family-based-immigration">family-based immigration</Link> services, or read our guide to{' '}
         <Link href="/blog/family-green-card-attorney-georgia">Green Card Through Family in Georgia</Link>.
       </p>
 
@@ -226,8 +227,8 @@ export function DeportationDefensePostContent() {
       <p>
         If you or someone you love is facing removal proceedings in Georgia &mdash; whether you have just received a
         Notice to Appear, have a hearing scheduled, or are already under a final removal order &mdash; contact{' '}
-        <strong>Bardi Immigration Law</strong> today. Attorney <strong>Eszter Bardi</strong> represents clients in
-        removal defense before the Atlanta and Stewart immigration courts. She is licensed in{' '}
+        <strong>Bardi Immigration Law</strong> today. Attorney <strong>Eszter Bardi</strong> represents clients in{' '}
+        <Link href="/services/removal-defense">removal defense</Link> before the Atlanta and Stewart immigration courts. She is licensed in{' '}
         <strong>Georgia and Alabama</strong> and provides direct attorney access from your first consultation through
         the resolution of your case.
       </p>

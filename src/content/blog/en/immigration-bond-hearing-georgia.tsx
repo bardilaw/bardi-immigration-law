@@ -105,7 +105,7 @@ export function ImmigrationBondHearingPostContent() {
         <li><strong>Criminal history</strong>, or the absence of one</li>
         <li><strong>Immigration history</strong>, including prior compliance with court dates or check-ins</li>
         <li><strong>Property ownership</strong> or other roots in the community</li>
-        <li><strong>The strength of the underlying immigration case</strong> &mdash; whether the person has a realistic path to relief, such as asylum, cancellation of removal, or adjustment of status</li>
+        <li><strong>The strength of the underlying immigration case</strong> &mdash; whether the person has a realistic path to relief, such as asylum, cancellation of removal, or <Link href="/services/family-based-immigration">adjustment of status</Link></li>
       </ul>
       <p>
         The detained person carries the burden of proving they deserve release. That is why the evidence a
@@ -154,7 +154,8 @@ export function ImmigrationBondHearingPostContent() {
         applies, assemble a persuasive evidence packet, and argue the danger and flight-risk factors directly
         to the judge. Just as important, the bond hearing is only the beginning. Release on bond does not end
         the removal case &mdash; it simply means your loved one can fight that case from home instead of from
-        a detention cell. For how the underlying case proceeds, see our guide to{' '}
+        a detention cell. Learn more about our{' '}
+        <Link href="/services/removal-defense">removal defense</Link> representation, or see our guide to{' '}
         <Link href="/blog/deportation-defense-removal-proceedings-georgia">deportation defense and removal proceedings in Georgia</Link>.
       </p>
 

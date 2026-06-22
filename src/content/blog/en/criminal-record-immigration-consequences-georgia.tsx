@@ -103,8 +103,9 @@ export function CriminalRecordPostContent() {
         </li>
         <li>
           <strong>Applicants for a green card or visa:</strong> Many offenses make a person &ldquo;inadmissible,&rdquo;
-          meaning an application for a green card, visa, or adjustment of status can be denied. Some bars can be waived;
-          many cannot.
+          meaning an application for a green card, visa, or adjustment of status can be denied. Some bars can be waived
+          through an{' '}
+          <Link href="/services/waivers">immigration waiver</Link>; many cannot.
         </li>
         <li>
           <strong>Naturalization applicants:</strong> U.S. citizenship requires showing &ldquo;good moral
@@ -178,9 +179,9 @@ export function CriminalRecordPostContent() {
       <p>
         If you are a non-citizen who has been arrested, charged, or convicted &mdash; or if you have an old conviction
         and are worried about renewing your green card, applying for citizenship, or traveling &mdash; do not wait.
-        Contact <strong>Bardi Immigration Law</strong> right away. Attorney <strong>Eszter Bardi</strong> handles
-        removal defense and the immigration consequences of criminal cases before the Atlanta and Stewart immigration
-        courts. She is licensed in <strong>Georgia and Alabama</strong> and provides direct attorney access from your
+        Contact <strong>Bardi Immigration Law</strong> right away. Attorney <strong>Eszter Bardi</strong> handles{' '}
+        <Link href="/services/removal-defense">removal defense</Link> and the immigration consequences of criminal cases
+        before the Atlanta and Stewart immigration courts. She is licensed in <strong>Georgia and Alabama</strong> and provides direct attorney access from your
         first consultation. Where appropriate, she works alongside your criminal defense lawyer to protect both your
         case and your status.
       </p>

@@ -34,7 +34,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 text-sm text-white/80">
               <li><Link href={p('/about')} className="hover:text-gold transition-colors">{isEs ? 'Sobre Nosotros' : 'About'}</Link></li>
-              <li><Link href={p('/resources')} className="hover:text-gold transition-colors">{isEs ? 'Recursos' : 'Resources'}</Link></li>
+              <li><Link href={p('/blog')} className="hover:text-gold transition-colors">Blog</Link></li>
               <li><Link href={p('/faq')} className="hover:text-gold transition-colors">{isEs ? 'Preguntas Frecuentes' : 'FAQ'}</Link></li>
               <li><Link href={p('/contact')} className="hover:text-gold transition-colors">{isEs ? 'Contacto' : 'Contact'}</Link></li>
             </ul>

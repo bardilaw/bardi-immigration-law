@@ -19,7 +19,8 @@ export function CancellationOfRemovalPostContent() {
 
       <h2>What Cancellation of Removal Is &mdash; and Is Not</h2>
       <p>
-        Cancellation of removal is a defense raised <em>inside</em> removal (deportation) proceedings before
+        Cancellation of removal is a defense raised <em>inside</em>{' '}
+        <Link href="/services/removal-defense">removal (deportation) proceedings</Link> before
         an immigration judge. It is not an application you file with USCIS, and it is not something you can
         request on your own at a USCIS office. It exists only as a defense once the government has already
         started a case against you &mdash; usually after you receive a{' '}

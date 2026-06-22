@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'i-601a-provisional-unlawful-presence-waiver-georgia',
+    title: 'I-601A Provisional Unlawful Presence Waiver: A Georgia Guide for Undocumented Spouses',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains the Form I-601A provisional unlawful presence waiver for undocumented spouses of U.S. citizens and permanent residents: how the 3- and 10-year bars under INA 212(a)(9)(B) work, how the provisional waiver lets you apply before leaving the U.S. for consular processing, the "extreme hardship" standard and qualifying relatives, National Visa Center timing, and the Atlanta consular processing context. Georgia and Alabama.',
+  },
+  {
     slug: 'bia-appeal-immigration-court-georgia',
     title: 'BIA Appeals and Immigration Court Strategy in Georgia: How to Appeal a Removal Order',
     date: '2026-06-22',

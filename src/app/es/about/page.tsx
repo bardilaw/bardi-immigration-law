@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 const CREDENTIALS = [
   {
     category: 'Admisiones al Colegio de Abogados',
-    items: ['Abogada licenciada, miembro en buena reputación'],
+    items: ['Colegio de Abogados de Georgia', 'Colegio de Abogados de Alabama'],
   },
   {
     category: 'Liderazgo',

@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 const CREDENTIALS = [
   {
     category: 'Bar Admissions',
-    items: ['Licensed attorney, member in good standing'],
+    items: ['State Bar of Georgia', 'State Bar of Alabama'],
   },
   {
     category: 'Professional Memberships',

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://bardilaw.com/services/waivers',
     languages: {
+      'x-default': 'https://bardilaw.com/services/waivers',
       en: 'https://bardilaw.com/services/waivers',
       es: 'https://bardilaw.com/es/services/waivers',
     },

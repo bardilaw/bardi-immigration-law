@@ -6,6 +6,8 @@ import { CONTACT_PHONE } from '@/lib/contact';
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'Privacy policy for Bardi Immigration Law.',
+  alternates: { canonical: 'https://bardilaw.com/privacy-policy' },
+  robots: { index: false, follow: false },
 };
 
 export default function PrivacyPolicyPage() {

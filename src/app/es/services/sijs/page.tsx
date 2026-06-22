@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://bardilaw.com/es/services/sijs',
     languages: {
+      'x-default': 'https://bardilaw.com/services/sijs',
       en: 'https://bardilaw.com/services/sijs',
       es: 'https://bardilaw.com/es/services/sijs',
     },

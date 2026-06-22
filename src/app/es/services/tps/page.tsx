@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://bardilaw.com/es/services/tps',
     languages: {
+      'x-default': 'https://bardilaw.com/services/tps',
       en: 'https://bardilaw.com/services/tps',
       es: 'https://bardilaw.com/es/services/tps',
     },

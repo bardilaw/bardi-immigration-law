@@ -27,6 +27,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://bardilaw.com/about',
     languages: {
+      'x-default': 'https://bardilaw.com/about',
       en: 'https://bardilaw.com/about',
       es: 'https://bardilaw.com/es/about',
     },

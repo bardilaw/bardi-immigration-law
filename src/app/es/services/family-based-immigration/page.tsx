@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://bardilaw.com/es/services/family-based-immigration',
     languages: {
+      'x-default': 'https://bardilaw.com/services/family-based-immigration',
       en: 'https://bardilaw.com/services/family-based-immigration',
       es: 'https://bardilaw.com/es/services/family-based-immigration',
     },

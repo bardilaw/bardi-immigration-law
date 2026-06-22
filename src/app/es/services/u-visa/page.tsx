@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://bardilaw.com/es/services/u-visa',
     languages: {
+      'x-default': 'https://bardilaw.com/services/u-visa',
       en: 'https://bardilaw.com/services/u-visa',
       es: 'https://bardilaw.com/es/services/u-visa',
     },

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://bardilaw.com/services/federal-litigation',
     languages: {
+      'x-default': 'https://bardilaw.com/services/federal-litigation',
       en: 'https://bardilaw.com/services/federal-litigation',
       es: 'https://bardilaw.com/es/services/federal-litigation',
     },

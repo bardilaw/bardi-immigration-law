@@ -6,6 +6,8 @@ import { CONTACT_PHONE } from '@/lib/contact';
 export const metadata: Metadata = {
   title: 'Terms of Use',
   description: 'Terms of use for the Bardi Immigration Law website.',
+  alternates: { canonical: 'https://bardilaw.com/terms' },
+  robots: { index: false, follow: false },
 };
 
 export default function TermsPage() {

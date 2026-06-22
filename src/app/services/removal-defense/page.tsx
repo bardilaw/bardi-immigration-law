@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://bardilaw.com/services/removal-defense',
     languages: {
+      'x-default': 'https://bardilaw.com/services/removal-defense',
       en: 'https://bardilaw.com/services/removal-defense',
       es: 'https://bardilaw.com/es/services/removal-defense',
     },

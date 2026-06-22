@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
 import { JsonLd } from '@/components/JsonLd';
-import { BLOG_POSTS, getPost } from '@/content/blog/meta';
+import { BLOG_POSTS, getPost, ES_BLOG_SLUGS } from '@/content/blog/meta';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
 import { UVisaVawaPostContent } from '@/content/blog/en/u-visa-vawa';
 
@@ -16,8 +16,9 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'u-visa-vawa-crime-victims-georgia': UVisaVawaPostContent,
 };
 
+// Only pre-render routes that have actual ES content.
 export function generateStaticParams() {
-  return BLOG_POSTS.map((p) => ({ slug: p.slug }));
+  return BLOG_POSTS.filter((p) => ES_BLOG_SLUGS.has(p.slug)).map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -30,6 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://bardilaw.com/es/blog/${slug}`,
       languages: {
+        'x-default': `https://bardilaw.com/blog/${slug}`,
         en: `https://bardilaw.com/blog/${slug}`,
         es: `https://bardilaw.com/es/blog/${slug}`,
       },
@@ -52,7 +54,9 @@ export default async function EsBlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const PostContent = CONTENT_MAP[slug];
-  if (!PostContent) notFound();
+  // No ES translation yet — send Spanish-language visitors to the EN version rather
+  // than serving a hard 404. Link equity and any inbound links land safely.
+  if (!PostContent) redirect(`/blog/${slug}`);
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -185,7 +189,7 @@ export default async function EsBlogPostPage({ params }: Props) {
                 {BLOG_POSTS.filter((p) => p.slug !== slug).map((p) => (
                   <Link
                     key={p.slug}
-                    href={`/es/blog/${p.slug}`}
+                    href={ES_BLOG_SLUGS.has(p.slug) ? `/es/blog/${p.slug}` : `/blog/${p.slug}`}
                     className="group flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-5"
                   >
                     <p className="font-sans text-xs text-charcoal/40 uppercase tracking-widest sm:w-28 flex-shrink-0 pt-0.5">

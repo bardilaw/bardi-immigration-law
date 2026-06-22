@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://bardilaw.com/es/services/vawa',
     languages: {
+      'x-default': 'https://bardilaw.com/services/vawa',
       en: 'https://bardilaw.com/services/vawa',
       es: 'https://bardilaw.com/es/services/vawa',
     },

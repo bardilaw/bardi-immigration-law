@@ -144,3 +144,11 @@ export const BLOG_POSTS: BlogPost[] = [
 export function getPost(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }
+
+// Slugs that have actual Spanish-language content in /content/blog/es/.
+// All other /es/blog/[slug] requests redirect to the EN version.
+// Keep in sync with CONTENT_MAP in src/app/es/blog/[slug]/page.tsx.
+export const ES_BLOG_SLUGS = new Set([
+  'daca-2026',
+  'u-visa-vawa-crime-victims-georgia',
+]);

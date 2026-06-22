@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://bardilaw.com/services/daca',
     languages: {
+      'x-default': 'https://bardilaw.com/services/daca',
       en: 'https://bardilaw.com/services/daca',
       es: 'https://bardilaw.com/es/services/daca',
     },

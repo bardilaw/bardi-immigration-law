@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
 import { JsonLd } from '@/components/JsonLd';
-import { BLOG_POSTS, getPost } from '@/content/blog/meta';
+import { BLOG_POSTS, getPost, ES_BLOG_SLUGS } from '@/content/blog/meta';
 import { DacaRenewal2025PostContent } from '@/content/blog/en/daca-renewal-2025-georgia';
 import { DacaRenewalPostContent } from '@/content/blog/en/daca-renewal-2026';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
@@ -64,8 +64,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://bardilaw.com/blog/${slug}`,
       languages: {
+        'x-default': `https://bardilaw.com/blog/${slug}`,
         en: `https://bardilaw.com/blog/${slug}`,
-        es: `https://bardilaw.com/es/blog/${slug}`,
+        // Only link to ES when translated content exists; avoid pointing to a redirect.
+        ...(ES_BLOG_SLUGS.has(slug) ? { es: `https://bardilaw.com/es/blog/${slug}` } : {}),
       },
     },
     openGraph: {

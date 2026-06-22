@@ -12,7 +12,7 @@ type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
   'daca-2026': DacaPostContent,
-  'u-visa-vawa-protections-immigrant-survivors': UVisaVawaPostContent,
+  'u-visa-vawa-crime-victims-georgia': UVisaVawaPostContent,
 };
 
 export function generateStaticParams() {

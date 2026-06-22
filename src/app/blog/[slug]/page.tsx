@@ -15,6 +15,7 @@ import { NoticeToAppearPostContent } from '@/content/blog/en/notice-to-appear-ge
 import { FamilyGreenCardPostContent } from '@/content/blog/en/family-green-card-attorney-georgia';
 import { AsylumApplicationPostContent } from '@/content/blog/en/asylum-application-georgia';
 import { NaturalizationPostContent } from '@/content/blog/en/naturalization-citizenship-georgia';
+import { EmploymentBasedImmigrationPostContent } from '@/content/blog/en/employment-based-immigration-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -26,9 +27,10 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'daca-renewal-2025-georgia': DacaRenewal2025PostContent,
   'daca-renewal-2026': DacaRenewalPostContent,
   'daca-2026': DacaPostContent,
-  'u-visa-vawa-protections-immigrant-survivors': UVisaVawaPostContent,
+  'u-visa-vawa-crime-victims-georgia': UVisaVawaPostContent,
   'stewart-detention-attorney': StewartDetentionPostContent,
   'tps-2026': TpsPostContent,
+  'employment-based-immigration-georgia': EmploymentBasedImmigrationPostContent,
 };
 
 export function generateStaticParams() {

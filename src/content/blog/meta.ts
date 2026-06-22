@@ -63,11 +63,11 @@ export const BLOG_POSTS: BlogPost[] = [
       'DACA renewals continue in 2026, but litigation keeps the program\'s future uncertain. Georgia Dreamers: know your eligibility, rights, and options.',
   },
   {
-    slug: 'u-visa-vawa-protections-immigrant-survivors',
-    title: 'U-Visa and VAWA: Immigration Protections for Immigrant Survivors',
-    date: '2026-05-20',
+    slug: 'u-visa-vawa-crime-victims-georgia',
+    title: 'U-Visa and VAWA: Immigration Protection for Crime Victims in Georgia',
+    date: '2026-06-21',
     description:
-      'Immigrant survivors of crime or domestic violence may qualify for U-Visa or VAWA protections. Learn the difference, who qualifies, and how to apply.',
+      'A Georgia immigration attorney explains U-Visa, VAWA, and T-Visa protections for immigrant crime victims in Georgia and Alabama: who qualifies, the 10,000 U-Visa cap, VAWA self-petitions, and how to apply.',
   },
   {
     slug: 'stewart-detention-attorney',
@@ -75,6 +75,13 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-05-21',
     description:
       'Loved one detained at Stewart Detention Center in Lumpkin, GA? Learn what happens in the first 72 hours and how to get an attorney fast.',
+  },
+  {
+    slug: 'employment-based-immigration-georgia',
+    title: 'Employment-Based Green Cards and Work Visas: A Georgia Guide',
+    date: '2026-06-21',
+    description:
+      'A Georgia immigration attorney explains employment-based immigration for employers and workers: H-1B, L-1, and O-1 work visas, the EB-1/EB-2/EB-3 green card categories, the EB-2 national interest waiver, and PERM labor certification.',
   },
 ];
 

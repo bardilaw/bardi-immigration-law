@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'criminal-record-immigration-consequences-georgia',
+    title: 'Criminal Record and Immigration Consequences in Georgia',
+    date: '2026-06-21',
+    description:
+      'A Georgia immigration attorney explains how criminal convictions affect immigration status: aggravated felonies, crimes of moral turpitude, drug offenses and DUIs, the effect on green cards, citizenship, and visas, and what to do if you are charged. Atlanta immigration court.',
+  },
+  {
     slug: 'deportation-defense-removal-proceedings-georgia',
     title: 'Deportation Defense in Georgia: How Removal Proceedings Work and How to Fight Them',
     date: '2026-06-21',

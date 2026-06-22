@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'employment-authorization-ead-georgia',
+    title: 'Employment Authorization Documents (EAD): Work Permits for Pending Immigration Cases in Georgia',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains the Employment Authorization Document (EAD) and Form I-765: who qualifies (pending I-485 adjustment, asylum applicants, DACA, TPS, H-4 spouses, deferred action, compelling circumstances), the common category codes (c)(9), (c)(8), (c)(14) and (c)(35), processing times and premium processing, the up-to-540-day automatic extension for timely-filed renewals, what to do if your card is lost or expires, and Atlanta Field Office and lockbox filing tips. Georgia and Alabama.',
+  },
+  {
     slug: 'i-601a-provisional-unlawful-presence-waiver-georgia',
     title: 'I-601A Provisional Unlawful Presence Waiver: A Georgia Guide for Undocumented Spouses',
     date: '2026-06-22',

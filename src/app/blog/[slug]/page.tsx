@@ -29,10 +29,12 @@ import { AdvanceParolePostContent } from '@/content/blog/en/advance-parole-trave
 import { SijsPostContent } from '@/content/blog/en/special-immigrant-juvenile-status-georgia';
 import { BiaAppealPostContent } from '@/content/blog/en/bia-appeal-immigration-court-georgia';
 import { I601AWaiverPostContent } from '@/content/blog/en/i-601a-provisional-unlawful-presence-waiver-georgia';
+import { EadWorkPermitPostContent } from '@/content/blog/en/employment-authorization-ead-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'employment-authorization-ead-georgia': EadWorkPermitPostContent,
   'i-601a-provisional-unlawful-presence-waiver-georgia': I601AWaiverPostContent,
   'bia-appeal-immigration-court-georgia': BiaAppealPostContent,
   'special-immigrant-juvenile-status-georgia': SijsPostContent,

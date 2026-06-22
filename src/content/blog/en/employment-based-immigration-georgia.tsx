@@ -176,6 +176,12 @@ export function EmploymentBasedImmigrationPostContent() {
         in your home country. Which path applies, and which is faster or safer in your situation, is a fact-specific
         question worth reviewing before you file anything.
       </p>
+      <p>
+        Workers who adjust status inside the U.S. can usually apply for a work permit while the green card is pending.
+        Our guide to the{' '}
+        <Link href="/blog/employment-authorization-ead-georgia">Employment Authorization Document (EAD) and Form I-765</Link>{' '}
+        explains how to keep working legally throughout the process.
+      </p>
 
       <h2>Why Work With an Employment Immigration Attorney</h2>
       <p>

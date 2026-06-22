@@ -93,7 +93,10 @@ export function DacaRenewalPostContent() {
       </ul>
       <p>
         The practical takeaway: pull out your EAD card today, confirm the expiration date, and set a reminder to file
-        roughly six months ahead. If you are already inside that window, do not wait.
+        roughly six months ahead. If you are already inside that window, do not wait. For how the work permit itself
+        works across all immigration categories &mdash; and which renewals <em>do</em> get an automatic extension &mdash;
+        see our guide to the{' '}
+        <Link href="/blog/employment-authorization-ead-georgia">Employment Authorization Document (EAD) and Form I-765</Link>.
       </p>
 
       <h2>What Happens If Your DACA Expires</h2>

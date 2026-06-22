@@ -16,10 +16,12 @@ import { FamilyGreenCardPostContent } from '@/content/blog/en/family-green-card-
 import { AsylumApplicationPostContent } from '@/content/blog/en/asylum-application-georgia';
 import { NaturalizationPostContent } from '@/content/blog/en/naturalization-citizenship-georgia';
 import { EmploymentBasedImmigrationPostContent } from '@/content/blog/en/employment-based-immigration-georgia';
+import { DeportationDefensePostContent } from '@/content/blog/en/deportation-defense-removal-proceedings-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'deportation-defense-removal-proceedings-georgia': DeportationDefensePostContent,
   'naturalization-citizenship-georgia': NaturalizationPostContent,
   'asylum-application-georgia': AsylumApplicationPostContent,
   'notice-to-appear-georgia': NoticeToAppearPostContent,

@@ -135,7 +135,7 @@ export default function HomePage() {
                   alt="Attorney Eszter Bardi, Bardi Immigration Law"
                   width={400}
                   height={500}
-                  className="rounded-lg h-72 w-auto object-cover shadow-md"
+                  className="rounded-lg h-72 w-auto object-cover object-[center_15%] shadow-md"
                 />
               </div>
               <p className="text-lg text-charcoal/80 mb-8 max-w-prose mx-auto lg:mx-0">
@@ -285,29 +285,6 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* Testimonials */}
-        <section className="bg-white py-16 lg:py-20">
-          <div className="max-w-site mx-auto px-5 lg:px-8">
-            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-navy text-center mb-12">
-              Client Stories
-            </h2>
-            <div className="flex flex-col gap-6 max-w-[760px] mx-auto">
-              {[1, 2].map((n) => (
-                <div key={n} className="bg-warmgray rounded-lg px-10 py-12 lg:px-14">
-                  <span className="block font-serif text-[48px] text-gold leading-none mb-4" aria-hidden="true">&ldquo;</span>
-                  <p className="font-serif text-[22px] italic text-navy leading-[1.6]">
-                    [Client testimonial pending, real quotes to be provided by client.]
-                  </p>
-                  <p className="font-sans font-semibold text-sm text-navy mt-6">[Client Name], [State]</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-center text-xs text-charcoal/40 mt-6 font-sans">
-              Testimonials pending, content to be provided by attorney.
-            </p>
           </div>
         </section>
 

@@ -129,7 +129,7 @@ export default function HomePageES() {
                   alt="Abogada Eszter Bardi, Bardi Immigration Law"
                   width={400}
                   height={500}
-                  className="rounded-lg h-72 w-auto object-cover shadow-md"
+                  className="rounded-lg h-72 w-auto object-cover object-[center_15%] shadow-md"
                 />
               </div>
               <p className="text-lg text-charcoal/80 mb-8 max-w-prose mx-auto lg:mx-0">

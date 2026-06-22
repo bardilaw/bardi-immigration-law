@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
 import { JsonLd } from '@/components/JsonLd';
-import { BLOG_POSTS, getPost, ES_BLOG_SLUGS, blogPostingSchema } from '@/content/blog/meta';
+import { BLOG_POSTS, getPost, ES_BLOG_SLUGS, blogPostingSchema, breadcrumbSchema } from '@/content/blog/meta';
 import { DacaRenewal2025PostContent } from '@/content/blog/en/daca-renewal-2025-georgia';
 import { DacaRenewalPostContent } from '@/content/blog/en/daca-renewal-2026';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
@@ -36,10 +36,12 @@ import { MotionToReopenReconsiderPostContent } from '@/content/blog/en/motion-to
 import { H4EadPostContent } from '@/content/blog/en/h4-ead-work-authorization-h1b-spouses-georgia';
 import { ParoleInPlacePostContent } from '@/content/blog/en/parole-in-place-military-families-georgia';
 import { TnVisaUsmcaPostContent } from '@/content/blog/en/tn-visa-canadian-mexican-professionals-georgia';
+import { IceEnforcementRightsPostContent } from '@/content/blog/en/ice-enforcement-rights-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'ice-enforcement-rights-georgia': IceEnforcementRightsPostContent,
   'parole-in-place-military-families-georgia': ParoleInPlacePostContent,
   'tn-visa-canadian-mexican-professionals-georgia': TnVisaUsmcaPostContent,
   'h4-ead-work-authorization-h1b-spouses-georgia': H4EadPostContent,
@@ -125,11 +127,17 @@ export default async function BlogPostPage({ params }: Props) {
   if (!PostContent) notFound();
 
   const articleSchema = blogPostingSchema(post, 'en');
+  // Breadcrumb mirrors the visible nav below: Home › Blog › Post (BAR-701).
+  const breadcrumb = breadcrumbSchema([
+    { name: 'Home', path: '/' },
+    { name: 'Blog', path: '/blog' },
+    { name: post.title, path: `/blog/${slug}` },
+  ]);
 
   return (
     <>
       <Header />
-      <JsonLd data={articleSchema} />
+      <JsonLd data={[articleSchema, breadcrumb]} />
       <main id="main-content">
         <section className="bg-warmgray pt-20 pb-14 lg:pt-28 lg:pb-16">
           <div className="max-w-site mx-auto px-5 lg:px-16">

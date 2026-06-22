@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'ice-enforcement-rights-georgia',
+    title: 'ICE Encounter in Georgia: Know Your Rights and What to Do in the First 48 Hours',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains what to do during an ICE encounter: why you do not have to open the door without a judge-signed warrant, your Fourth and Fifth Amendment rights, the difference between a judicial and an administrative (ICE) warrant, the first-48-hours timeline after an arrest, what to expect at Stewart Detention Center and Irwin County, how an attorney can request a bond hearing fast, an emergency planning checklist for families and children, and the common mistakes that hurt cases. Atlanta and Stewart immigration courts; Georgia and Alabama.',
+  },
+  {
     slug: 'tn-visa-canadian-mexican-professionals-georgia',
     title: 'TN Visa in Georgia: USMCA Status for Canadian and Mexican Professionals',
     date: '2026-06-22',
@@ -259,6 +266,30 @@ export function blogPostingSchema(post: BlogPost, locale: 'en' | 'es') {
       },
     },
     url,
+  };
+}
+
+// BreadcrumbList JSON-LD (BAR-701). Generic builder: pass crumbs ordered from the
+// site root to the current page as { name, path } (path is site-relative, e.g. '/blog');
+// SITE_URL is prepended and `position` is assigned automatically (1-based). Rendered
+// alongside the page's primary schema (BlogPosting / FAQPage / LegalService) — multiple
+// JSON-LD blocks in one <head> are valid and Google parses each independently. Mirrors
+// the visible breadcrumb nav on each template so the markup never drifts from the UI.
+export interface Breadcrumb {
+  name: string;
+  path: string;
+}
+
+export function breadcrumbSchema(crumbs: Breadcrumb[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.name,
+      item: `${SITE_URL}${c.path}`,
+    })),
   };
 }
 

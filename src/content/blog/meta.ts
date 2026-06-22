@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'advance-parole-travel-documents-georgia',
+    title: 'Advance Parole, Reentry Permits, and Travel Documents: A Georgia Guide',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains travel documents for immigrants: Form I-131 advance parole for pending green card (I-485) and DACA recipients, the limited humanitarian/educational/employment travel rules for DACA, reentry permits for green card holders staying abroad, the I-485 abandonment trap, the 3- and 10-year unlawful presence bars, and USCIS processing times. Georgia and Alabama.',
+  },
+  {
     slug: 'cancellation-of-removal-georgia',
     title: 'Cancellation of Removal in Georgia: Stopping Deportation for Long-Term Residents',
     date: '2026-06-22',
@@ -143,6 +150,46 @@ export const BLOG_POSTS: BlogPost[] = [
 
 export function getPost(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
+}
+
+const SITE_URL = 'https://bardilaw.com';
+
+// BlogPosting (Article) JSON-LD for a single blog post (BAR-675). Built once here and
+// reused by both the EN and ES [slug] templates so the two never drift. Values are pulled
+// dynamically from the post metadata; the publisher links to the site-wide firm node
+// (@id #firm in RootLayout, BAR-648) so Google treats it as one entity, not a duplicate.
+// We carry no per-post dateModified field yet, so dateModified mirrors datePublished —
+// valid structured data and accurate (posts are evergreen and not silently edited).
+export function blogPostingSchema(post: BlogPost, locale: 'en' | 'es') {
+  const url = `${SITE_URL}${locale === 'es' ? '/es' : ''}/blog/${post.slug}`;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    headline: post.title,
+    description: post.description,
+    image: `${SITE_URL}/og-image.png`,
+    datePublished: post.date,
+    dateModified: post.date,
+    inLanguage: locale === 'es' ? 'es-ES' : 'en-US',
+    author: {
+      '@type': 'Person',
+      name: 'Eszter Bardi',
+      jobTitle: 'Immigration Attorney',
+      worksFor: { '@type': 'LegalService', name: 'Bardi Immigration Law' },
+    },
+    publisher: {
+      '@type': 'LegalService',
+      '@id': `${SITE_URL}/#firm`,
+      name: 'Bardi Immigration Law',
+      url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/logo-bardi.png`,
+      },
+    },
+    url,
+  };
 }
 
 // Slugs that have actual Spanish-language content in /content/blog/es/.

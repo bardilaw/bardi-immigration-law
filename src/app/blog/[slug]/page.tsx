@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
 import { JsonLd } from '@/components/JsonLd';
-import { BLOG_POSTS, getPost, ES_BLOG_SLUGS } from '@/content/blog/meta';
+import { BLOG_POSTS, getPost, ES_BLOG_SLUGS, blogPostingSchema } from '@/content/blog/meta';
 import { DacaRenewal2025PostContent } from '@/content/blog/en/daca-renewal-2025-georgia';
 import { DacaRenewalPostContent } from '@/content/blog/en/daca-renewal-2026';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
@@ -25,10 +25,12 @@ import { ConsularProcessingPostContent } from '@/content/blog/en/consular-proces
 import { StudentVisaF1OptPostContent } from '@/content/blog/en/student-visa-f1-opt-stem-georgia';
 import { AdjustmentOfStatusPostContent } from '@/content/blog/en/adjustment-of-status-green-card-georgia';
 import { CancellationOfRemovalPostContent } from '@/content/blog/en/cancellation-of-removal-georgia';
+import { AdvanceParolePostContent } from '@/content/blog/en/advance-parole-travel-documents-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'advance-parole-travel-documents-georgia': AdvanceParolePostContent,
   'cancellation-of-removal-georgia': CancellationOfRemovalPostContent,
   'adjustment-of-status-green-card-georgia': AdjustmentOfStatusPostContent,
   'student-visa-f1-opt-stem-georgia': StudentVisaF1OptPostContent,
@@ -102,25 +104,7 @@ export default async function BlogPostPage({ params }: Props) {
   const PostContent = CONTENT_MAP[slug];
   if (!PostContent) notFound();
 
-  const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: post.title,
-    description: post.description,
-    datePublished: post.date,
-    author: {
-      '@type': 'Person',
-      name: 'Eszter Bardi',
-      jobTitle: 'Immigration Attorney',
-      worksFor: { '@type': 'LegalService', name: 'Bardi Immigration Law' },
-    },
-    publisher: {
-      '@type': 'LegalService',
-      name: 'Bardi Immigration Law',
-      url: 'https://bardilaw.com',
-    },
-    url: `https://bardilaw.com/blog/${slug}`,
-  };
+  const articleSchema = blogPostingSchema(post, 'en');
 
   return (
     <>

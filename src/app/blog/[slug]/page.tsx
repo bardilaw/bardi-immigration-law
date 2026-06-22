@@ -33,10 +33,14 @@ import { EadWorkPermitPostContent } from '@/content/blog/en/employment-authoriza
 import { MandamusUscisDelayPostContent } from '@/content/blog/en/mandamus-lawsuit-uscis-delay-georgia';
 import { TVisaTraffickingPostContent } from '@/content/blog/en/t-visa-trafficking-victims-georgia';
 import { MotionToReopenReconsiderPostContent } from '@/content/blog/en/motion-to-reopen-reconsider-immigration-georgia';
+import { H4EadPostContent } from '@/content/blog/en/h4-ead-work-authorization-h1b-spouses-georgia';
+import { ParoleInPlacePostContent } from '@/content/blog/en/parole-in-place-military-families-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'parole-in-place-military-families-georgia': ParoleInPlacePostContent,
+  'h4-ead-work-authorization-h1b-spouses-georgia': H4EadPostContent,
   'motion-to-reopen-reconsider-immigration-georgia': MotionToReopenReconsiderPostContent,
   't-visa-trafficking-victims-georgia': TVisaTraffickingPostContent,
   'mandamus-lawsuit-uscis-delay-georgia': MandamusUscisDelayPostContent,

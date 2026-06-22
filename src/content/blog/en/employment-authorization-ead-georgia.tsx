@@ -47,7 +47,8 @@ export function EadWorkPermitPostContent() {
           <strong>(c)(3)</strong>;
         </li>
         <li>
-          <strong>Certain H-4 spouses</strong> of H-1B workers &mdash; category <strong>(c)(26)</strong>;
+          <strong>Certain H-4 spouses</strong> of H-1B workers &mdash; category <strong>(c)(26)</strong> (see our
+          dedicated <Link href="/blog/h4-ead-work-authorization-h1b-spouses-georgia">H-4 EAD guide</Link>);
         </li>
         <li>
           <strong>Deferred action</strong> recipients &mdash; category <strong>(c)(14)</strong>; and

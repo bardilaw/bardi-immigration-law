@@ -7,6 +7,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'parole-in-place-military-families-georgia',
+    title: 'Parole in Place (PIP) for Military Families: Immigration Relief in Georgia',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains parole in place (PIP) under INA 212(d)(5)(A): traditional military PIP for undocumented immediate relatives of active-duty service members, Selected Reserve members, and veterans (filed on Form I-131, no fee); the Keeping Families Together (KFT) PIP for long-term undocumented spouses of U.S. citizens (Form I-131F) and its current legal status after the program was vacated in Texas v. DHS; how PIP differs from advance parole (a status grant vs. travel permission); the adjustment-of-status (I-130/I-485) green card path it can unlock; and Georgia military context (Fort Stewart/Hinesville, Fort Moore/Columbus, Robins AFB/Warner Robins). Georgia and Alabama.',
+  },
+  {
+    slug: 'h4-ead-work-authorization-h1b-spouses-georgia',
+    title: 'H-4 EAD: Work Authorization for H-1B Spouses in Georgia',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains the H-4 EAD work permit for spouses of H-1B workers: who qualifies (H-1B principal with an approved I-140 or an AC21 post-6th-year extension), how to file Form I-539 and Form I-765 under category (c)(26) concurrently with the H-1B I-129, processing times and premium-processing limits, automatic-extension relief for timely renewals, maintaining derivative H-4 status, the I-539 travel/abandonment trap (and why the Indian Consulate in Houston covers Georgia for Indian — not U.S. — consular services), and the ongoing Save Jobs USA v. DHS litigation. For the Alpharetta, Johns Creek, and Cumming tech corridor; Georgia and Alabama.',
+  },
+  {
     slug: 'motion-to-reopen-reconsider-immigration-georgia',
     title: 'Motion to Reopen or Reconsider an Immigration Case in Georgia: Your Options After a Denial',
     date: '2026-06-22',

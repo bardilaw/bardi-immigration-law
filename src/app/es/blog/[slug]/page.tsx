@@ -5,15 +5,21 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
 import { JsonLd } from '@/components/JsonLd';
-import { BLOG_POSTS, getPost, ES_BLOG_SLUGS, blogPostingSchema } from '@/content/blog/meta';
+import { BLOG_POSTS, getEsPost, ES_BLOG_SLUGS, blogPostingSchema } from '@/content/blog/meta';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
 import { UVisaVawaPostContent } from '@/content/blog/en/u-visa-vawa';
+import { DacaRenewal2025PostContentEs } from '@/content/blog/es/daca-renewal-2025-georgia';
+import { AsylumApplicationPostContentEs } from '@/content/blog/es/asylum-application-georgia';
+import { DeportationDefensePostContentEs } from '@/content/blog/es/deportation-defense-removal-proceedings-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
   'daca-2026': DacaPostContent,
   'u-visa-vawa-crime-victims-georgia': UVisaVawaPostContent,
+  'daca-renewal-2025-georgia': DacaRenewal2025PostContentEs,
+  'asylum-application-georgia': AsylumApplicationPostContentEs,
+  'deportation-defense-removal-proceedings-georgia': DeportationDefensePostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.
@@ -23,7 +29,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const post = getPost(slug);
+  const post = getEsPost(slug);
   if (!post) return {};
   return {
     title: post.title,
@@ -50,7 +56,7 @@ function formatDate(dateStr: string) {
 
 export default async function EsBlogPostPage({ params }: Props) {
   const { slug } = await params;
-  const post = getPost(slug);
+  const post = getEsPost(slug);
   if (!post) notFound();
 
   const PostContent = CONTENT_MAP[slug];

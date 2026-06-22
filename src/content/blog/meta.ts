@@ -241,10 +241,47 @@ export function blogPostingSchema(post: BlogPost, locale: 'en' | 'es') {
   };
 }
 
+// Spanish-language title/description overrides for posts translated into /content/blog/es/.
+// The shared BLOG_POSTS metadata is English; when a slug appears here, the ES [slug] template
+// uses these values for the <h1>, the meta tags, and the BlogPosting JSON-LD headline so the
+// page reads as native Spanish rather than an English header on a Spanish body (BAR-670).
+export interface EsBlogMeta {
+  title: string;
+  description: string;
+}
+
+export const ES_BLOG_META: Record<string, EsBlogMeta> = {
+  'daca-renewal-2025-georgia': {
+    title: 'Renovación de DACA en 2025: Lo que los Dreamers de Georgia Deben Saber',
+    description:
+      'La renovación de DACA sigue abierta en 2025. Una abogada de inmigración en Georgia explica quién califica, los documentos que necesita, los plazos y los errores que debe evitar.',
+  },
+  'asylum-application-georgia': {
+    title: 'Cómo Solicitar Asilo en Georgia: Guía de una Abogada de Inmigración',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo solicitar asilo: los cinco motivos protegidos, el plazo de un año, el asilo afirmativo frente al defensivo, el Formulario I-589 y los errores que arruinan los casos.',
+  },
+  'deportation-defense-removal-proceedings-georgia': {
+    title: 'Defensa Contra la Deportación en Georgia: Cómo Funcionan los Procesos de Remoción',
+    description:
+      '¿Enfrenta la deportación en Georgia? Una abogada de defensa contra la deportación explica cómo comienzan los procesos de remoción, qué ocurre en la corte de inmigración de Atlanta y las defensas (asilo, cancelación de remoción, ajuste de estatus, salida voluntaria) que pueden permitirle quedarse. Con licencia en Georgia y Alabama.',
+  },
+};
+
+export function getEsPost(slug: string): BlogPost | undefined {
+  const base = getPost(slug);
+  if (!base) return undefined;
+  const es = ES_BLOG_META[slug];
+  return es ? { ...base, title: es.title, description: es.description } : base;
+}
+
 // Slugs that have actual Spanish-language content in /content/blog/es/.
 // All other /es/blog/[slug] requests redirect to the EN version.
 // Keep in sync with CONTENT_MAP in src/app/es/blog/[slug]/page.tsx.
 export const ES_BLOG_SLUGS = new Set([
   'daca-2026',
   'u-visa-vawa-crime-victims-georgia',
+  'daca-renewal-2025-georgia',
+  'asylum-application-georgia',
+  'deportation-defense-removal-proceedings-georgia',
 ]);

@@ -236,6 +236,13 @@ export function DeportationDefensePostContent() {
         <Link href="/contact">Schedule your consultation now</Link>.
       </p>
 
+      <p className="italic text-charcoal/70 mt-2">
+        <em>
+          ¿Enfrenta un proceso de deportación en Georgia? No espere. Ofrecemos consultas en español.{' '}
+          <Link href="/es/contact">Programe su consulta hoy</Link>.
+        </em>
+      </p>
+
       <p className="disclaimer">
         <em>
           Bardi Immigration Law, bardilaw.com | This blog post is for informational purposes only and does not

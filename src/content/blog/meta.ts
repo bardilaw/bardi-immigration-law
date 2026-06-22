@@ -29,10 +29,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'deportation-defense-removal-proceedings-georgia',
-    title: 'Deportation Defense in Georgia: How Removal Proceedings Work and How to Fight Them',
+    title: 'Deportation Defense Attorney in Georgia: How Removal Proceedings Work and How to Fight Them',
     date: '2026-06-21',
     description:
-      'Facing deportation in Georgia? An experienced removal defense attorney explains how removal proceedings start, what happens in Atlanta immigration court, and the defenses — asylum, cancellation, adjustment of status — that can let you stay.',
+      'Facing deportation in Georgia? A deportation defense attorney explains how removal proceedings start, what happens in the Atlanta immigration court, and the defenses — asylum, cancellation of removal, adjustment of status, voluntary departure — that can let you stay. Licensed in Georgia and Alabama.',
   },
   {
     slug: 'naturalization-citizenship-georgia',

@@ -7,6 +7,19 @@ const nextConfig: NextConfig = {
     return [
       { source: '/resources', destination: '/blog', permanent: true },
       { source: '/es/resources', destination: '/es/blog', permanent: true },
+      // The deportation-defense post lives at one canonical slug. Redirect the
+      // alternate "attorney" keyword slug so inbound/search hits don't dead-end
+      // and link equity consolidates on the single canonical URL.
+      {
+        source: '/blog/deportation-defense-attorney-georgia',
+        destination: '/blog/deportation-defense-removal-proceedings-georgia',
+        permanent: true,
+      },
+      {
+        source: '/es/blog/deportation-defense-attorney-georgia',
+        destination: '/es/blog/deportation-defense-removal-proceedings-georgia',
+        permanent: true,
+      },
     ];
   },
 };

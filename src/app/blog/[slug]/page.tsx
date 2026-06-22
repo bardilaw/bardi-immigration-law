@@ -26,10 +26,12 @@ import { StudentVisaF1OptPostContent } from '@/content/blog/en/student-visa-f1-o
 import { AdjustmentOfStatusPostContent } from '@/content/blog/en/adjustment-of-status-green-card-georgia';
 import { CancellationOfRemovalPostContent } from '@/content/blog/en/cancellation-of-removal-georgia';
 import { AdvanceParolePostContent } from '@/content/blog/en/advance-parole-travel-documents-georgia';
+import { SijsPostContent } from '@/content/blog/en/special-immigrant-juvenile-status-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'special-immigrant-juvenile-status-georgia': SijsPostContent,
   'advance-parole-travel-documents-georgia': AdvanceParolePostContent,
   'cancellation-of-removal-georgia': CancellationOfRemovalPostContent,
   'adjustment-of-status-green-card-georgia': AdjustmentOfStatusPostContent,

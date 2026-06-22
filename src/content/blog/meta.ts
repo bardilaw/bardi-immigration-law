@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'special-immigrant-juvenile-status-georgia',
+    title: 'Special Immigrant Juvenile Status (SIJS): A Green Card Path for Abused or Abandoned Children in Georgia',
+    date: '2026-06-22',
+    description:
+      'A Georgia SIJS attorney explains Special Immigrant Juvenile Status for undocumented youth who have been abused, neglected, or abandoned: eligibility (under 21, unmarried, a state-court Special Findings Order), the two-step state court-to-USCIS process (Form I-360 then a green card), the EB-4 visa backlog and deferred action, Georgia juvenile- and probate-court jurisdiction and the age deadline, and why an attorney matters. Georgia and Alabama.',
+  },
+  {
     slug: 'advance-parole-travel-documents-georgia',
     title: 'Advance Parole, Reentry Permits, and Travel Documents: A Georgia Guide',
     date: '2026-06-22',

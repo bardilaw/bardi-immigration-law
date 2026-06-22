@@ -74,13 +74,10 @@ const FIRM_SCHEMA = {
         addressRegion: 'GA',
         addressCountry: 'US',
       },
-      // Primary licensure footprint (GA + AL) named explicitly for local SEO; United States
-      // retained because immigration is federal law and the firm represents clients nationwide.
-      areaServed: [
-        { '@type': 'State', name: 'Georgia' },
-        { '@type': 'State', name: 'Alabama' },
-        { '@type': 'Country', name: 'United States' },
-      ],
+      // areaServed stays nationwide per board directive BAR-617: do NOT add GA/AL geo-restriction
+      // to schema/copy. Immigration is federal → firm serves nationwide; GA/AL licensure signal
+      // lives in `address` + GBP/citations, not areaServed.
+      areaServed: { '@type': 'Country', name: 'United States' },
       serviceType: 'Immigration Law',
       priceRange: '$$',
       description:

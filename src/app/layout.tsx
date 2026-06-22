@@ -49,20 +49,26 @@ export const metadata: Metadata = {
   },
 };
 
-// Firm-level schema: LocalBusiness + LegalService, injected on every page via RootLayout.
+// Firm-level schema: LegalService + Attorney (both schema.org subtypes of LocalBusiness),
+// injected on every page via RootLayout under a single stable @id so Google treats it as one
+// entity site-wide rather than as duplicate LocalBusiness records (BAR-648).
 // Pending fields (address, phone, hours) must be updated when client provides them.
+// telephone auto-populates from the CONTACT_PHONE env var (same var the contact form uses);
+// set it in the CI/Cloudflare environment once the board confirms the firm phone (BAR-81).
+// addressLocality omitted until confirmed: emitting a literal placeholder would produce
+// invalid structured data, so we leave unknown fields out rather than guessing.
+const firmPhone = process.env.CONTACT_PHONE;
 const FIRM_SCHEMA = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': ['LegalService', 'LocalBusiness'],
+      '@type': ['LegalService', 'Attorney'],
       '@id': 'https://bardilaw.com/#firm',
       name: 'Bardi Immigration Law',
       alternateName: 'Bardi Law',
       url: 'https://bardilaw.com',
       email: 'info@bardilaw.com',
-      // telephone + addressLocality omitted until client provides real values (BAR board inputs).
-      // Emitting literal "PENDING" produces invalid structured data, so we leave these fields out.
+      ...(firmPhone ? { telephone: firmPhone } : {}),
       address: {
         '@type': 'PostalAddress',
         addressRegion: 'GA',

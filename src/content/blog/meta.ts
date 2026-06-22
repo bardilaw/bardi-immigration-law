@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'immigration-bond-hearing-georgia',
+    title: 'Immigration Bond Hearings and ICE Detention in Georgia',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains ICE detention and immigration bond hearings: where ICE holds people (Stewart, Folkston, Irwin), what a bond hearing is, the factors judges weigh, bond amounts, and how to help a detained family member fast. Atlanta and Stewart immigration courts.',
+  },
+  {
     slug: 'marriage-based-green-card-k1-fiance-visa-georgia',
     title: 'Marriage Green Card and K-1 Fiancé Visa: A Georgia Guide',
     date: '2026-06-22',

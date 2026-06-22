@@ -19,10 +19,12 @@ import { EmploymentBasedImmigrationPostContent } from '@/content/blog/en/employm
 import { DeportationDefensePostContent } from '@/content/blog/en/deportation-defense-removal-proceedings-georgia';
 import { CriminalRecordPostContent } from '@/content/blog/en/criminal-record-immigration-consequences-georgia';
 import { MarriageGreenCardK1PostContent } from '@/content/blog/en/marriage-based-green-card-k1-fiance-visa-georgia';
+import { ImmigrationBondHearingPostContent } from '@/content/blog/en/immigration-bond-hearing-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'immigration-bond-hearing-georgia': ImmigrationBondHearingPostContent,
   'marriage-based-green-card-k1-fiance-visa-georgia': MarriageGreenCardK1PostContent,
   'criminal-record-immigration-consequences-georgia': CriminalRecordPostContent,
   'deportation-defense-removal-proceedings-georgia': DeportationDefensePostContent,

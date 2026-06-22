@@ -206,15 +206,18 @@ export function ContactForm() {
           name="phone"
           type="tel"
           autoComplete="tel"
+          placeholder="(404) 555-0000"
           required
           value={form.phone}
           onChange={handleChange}
           onBlur={handleBlur}
           className={inputCls('phone')}
-          aria-describedby={errors.phone ? 'err-phone' : undefined}
+          aria-describedby={errors.phone ? 'err-phone' : 'hint-phone'}
         />
-        {errors.phone && (
+        {errors.phone ? (
           <p id="err-phone" className="text-xs text-crimson mt-1">{errors.phone}</p>
+        ) : (
+          <p id="hint-phone" className="text-xs text-charcoal/50 mt-1">US or international format accepted</p>
         )}
       </div>
 

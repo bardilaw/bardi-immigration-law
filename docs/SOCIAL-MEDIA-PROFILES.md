@@ -40,19 +40,19 @@ Use the **round white-circle logo variant** (`5D918FE1-...PNG` from shared Googl
 ### Long version (~150 characters — Instagram, TikTok)
 
 ```
-Immigration attorney serving GA, AL, NC & SC. Boutique practice. Direct attorney access. English | Español | Magyar.
+Immigration attorney serving GA & AL. Boutique practice. Direct attorney access. English | Español | Magyar.
 ```
 
 ### Short version (~100 characters — Facebook, YouTube)
 
 ```
-Bardi Immigration Law | Boutique immigration practice | GA, AL, NC & SC | EN · ES · HU
+Bardi Immigration Law | Boutique immigration practice | GA & AL | EN · ES · HU
 ```
 
 ### Extended version (Facebook About section, YouTube channel description)
 
 ```
-Bardi Immigration Law is a boutique solo immigration practice serving individuals and families throughout Georgia, Alabama, North Carolina, and South Carolina.
+Bardi Immigration Law is a boutique solo immigration practice serving individuals and families throughout Georgia and Alabama.
 
 We handle the full spectrum of immigration law: benefits-based immigration (DACA, SIJS, VAWA, U-visa, TPS, family petitions, green cards, naturalization), removal defense, and federal immigration litigation.
 
@@ -60,7 +60,7 @@ What sets us apart: you speak with your attorney — not an intake specialist or
 
 Consultations available in English, Spanish, and Hungarian.
 
-📍 Serving GA, AL, NC & SC
+📍 Serving GA & AL
 🌐 bardilaw.com
 📞 [PHONE — ATTORNEY TO SUPPLY]
 ```
@@ -82,7 +82,7 @@ All profiles: `https://bardilaw.com`
 | Business email | info@bardilaw.com |
 | Phone | `[ATTORNEY TO SUPPLY]` |
 | Website | https://bardilaw.com |
-| Address | `[ATTORNEY TO SUPPLY — or "Virtual" / "Serves GA, AL, NC, SC"]` |
+| Address | `[ATTORNEY TO SUPPLY — or "Virtual" / "Serves GA & AL"]` |
 | Category | Law · Immigration Attorney · Legal Services |
 
 ---
@@ -103,7 +103,7 @@ All profiles: `https://bardilaw.com`
 5. Upload profile photo (round white-circle logo, 400×400px min)
 6. **Bio (150 char max):**
    ```
-   Immigration attorney serving GA, AL, NC & SC. Boutique practice. Direct attorney access. English | Español | Magyar.
+   Immigration attorney serving GA & AL. Boutique practice. Direct attorney access. English | Español | Magyar.
    ```
 7. Website: `https://bardilaw.com`
 8. Contact button: email → `info@bardilaw.com`; phone → `[ATTORNEY TO SUPPLY]`
@@ -130,7 +130,7 @@ All profiles: `https://bardilaw.com`
 8. **About section:**
    - Short description (255 chars):
      ```
-     Boutique immigration law firm serving GA, AL, NC & SC. Direct attorney access. DACA · Removal Defense · Family Immigration · Federal Litigation.
+     Boutique immigration law firm serving GA & AL. Direct attorney access. DACA · Removal Defense · Family Immigration · Federal Litigation.
      ```
    - Website: `https://bardilaw.com`
    - Email: `info@bardilaw.com`
@@ -179,7 +179,7 @@ After both accounts exist, go to business.facebook.com to manage both from one d
 4. Upload profile photo (round white-circle logo, 800×800px for YouTube)
 5. **Channel description:**
    ```
-   Bardi Immigration Law serves individuals and families throughout Georgia, Alabama, North Carolina, and South Carolina.
+   Bardi Immigration Law serves individuals and families throughout Georgia and Alabama.
 
    We handle the full spectrum of immigration law: DACA, SIJS, VAWA, U-visa, TPS, family petitions, green cards, naturalization, removal defense, and federal immigration litigation.
 

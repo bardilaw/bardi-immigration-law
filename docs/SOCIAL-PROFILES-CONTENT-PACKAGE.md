@@ -31,20 +31,20 @@
 ### Profile Name
 `Bardi Immigration Law`
 
-### Bio — English (142 chars)
+### Bio — English (≤150 chars — IG limit)
 ```
 Immigration attorney | SE United States
 Family petitions · DACA · Removal defense
 Boutique practice. Direct attorney.
-📍 Georgia · NC · SC · AL
+📍 Georgia · Alabama
 ```
 
-### Bio — Spanish (148 chars)
+### Bio — Spanish (≤150 chars — IG limit)
 ```
 Abogada/o de inmigración | Sureste de EE.UU.
 Peticiones familiares · DACA · Defensa de remoción
 Práctica boutique. Atención directa.
-📍 Georgia · NC · SC · AL
+📍 Georgia · Alabama
 ```
 
 > Update `Abogada/o` to the correct gendered form once confirmed with attorney.
@@ -72,19 +72,19 @@ Práctica boutique. Atención directa.
 ### Username / Vanity URL
 `@bardilaw` → facebook.com/bardilaw
 
-### Short Description (239 chars)
+### Short Description (≤255 chars — FB limit)
 ```
-Expert immigration representation in Georgia, North Carolina, South Carolina, and Alabama. Family petitions, DACA, removal defense, and federal litigation. Boutique practice — your case starts with the attorney, not an intake specialist.
+Expert immigration representation in Georgia and Alabama. Family petitions, DACA, removal defense, and federal litigation. Boutique practice — your case starts with the attorney, not an intake specialist.
 ```
 
-### Short Description — Spanish (231 chars)
+### Short Description — Spanish (≤255 chars — FB limit)
 ```
-Representación experta en inmigración en Georgia, Carolina del Norte, Carolina del Sur y Alabama. Peticiones familiares, DACA, defensa de remoción y litigación federal. Práctica boutique — comunicación directa con la/el abogada/o.
+Representación experta en inmigración en Georgia y Alabama. Peticiones familiares, DACA, defensa de remoción y litigación federal. Práctica boutique — comunicación directa con la/el abogada/o.
 ```
 
 ### About / Long Description — English
 ```
-Bardi Immigration Law provides expert, personalized immigration representation across the Southeast United States — serving clients in Georgia, North Carolina, South Carolina, and Alabama.
+Bardi Immigration Law provides expert, personalized immigration representation across the Southeast United States — serving clients in Georgia and Alabama.
 
 This is a boutique practice. Your case starts with a direct attorney consultation, not a paralegal or intake specialist. We take your matter personally because we understand what's at stake.
 
@@ -114,7 +114,7 @@ Hablamos español.
 
 ### About / Long Description — Spanish
 ```
-Bardi Immigration Law ofrece representación experta y personalizada en inmigración en todo el sureste de los Estados Unidos, sirviendo a clientes en Georgia, Carolina del Norte, Carolina del Sur y Alabama.
+Bardi Immigration Law ofrece representación experta y personalizada en inmigración en todo el sureste de los Estados Unidos, sirviendo a clientes en Georgia y Alabama.
 
 Esta es una práctica boutique. Su caso comienza con una consulta directa con la/el abogada/o, no con un paralegal o especialista de ingreso. Nos tomamos su caso de manera personal porque entendemos lo que está en juego.
 
@@ -197,7 +197,7 @@ Abogada/o de inmigración | DACA · Familia · Remoción | bardilaw.com
 
 ### Channel Description — English
 ```
-Bardi Immigration Law provides expert immigration representation to individuals and families across Georgia, North Carolina, South Carolina, and Alabama.
+Bardi Immigration Law provides expert immigration representation to individuals and families across Georgia and Alabama.
 
 This channel is a resource for anyone navigating the U.S. immigration system. We cover topics including DACA, family-based petitions, green cards, naturalization, VAWA, U-visas, TPS, removal defense, and federal immigration litigation.
 
@@ -209,7 +209,7 @@ What you'll find here:
 
 Bardi Immigration Law is a boutique practice. Your case starts with a direct attorney consultation — not a paralegal or intake specialist.
 
-📍 Serving Georgia, North Carolina, South Carolina, and Alabama
+📍 Serving Georgia and Alabama
 🌐 bardilaw.com
 
 Schedule a consultation at bardilaw.com
@@ -219,7 +219,7 @@ Hablamos español. Este canal también incluirá contenido en español.
 
 ### Channel Description — Spanish
 ```
-Bardi Immigration Law ofrece representación experta en inmigración para personas y familias en Georgia, Carolina del Norte, Carolina del Sur y Alabama.
+Bardi Immigration Law ofrece representación experta en inmigración para personas y familias en Georgia y Alabama.
 
 Este canal es un recurso para quienes navegan el sistema de inmigración de los Estados Unidos. Cubrimos temas como DACA, peticiones familiares, tarjetas de residencia, naturalización, VAWA, visa U, TPS, defensa de remoción y litigación federal de inmigración.
 
@@ -231,7 +231,7 @@ Qué encontrarás aquí:
 
 Bardi Immigration Law es una práctica boutique. Su caso comienza con una consulta directa con la/el abogada/o — no con un paralegal o especialista de ingreso.
 
-📍 Sirviendo a Georgia, Carolina del Norte, Carolina del Sur y Alabama
+📍 Sirviendo a Georgia y Alabama
 🌐 bardilaw.com
 
 Programe una consulta en bardilaw.com

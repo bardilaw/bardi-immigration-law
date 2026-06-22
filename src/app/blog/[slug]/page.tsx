@@ -27,10 +27,12 @@ import { AdjustmentOfStatusPostContent } from '@/content/blog/en/adjustment-of-s
 import { CancellationOfRemovalPostContent } from '@/content/blog/en/cancellation-of-removal-georgia';
 import { AdvanceParolePostContent } from '@/content/blog/en/advance-parole-travel-documents-georgia';
 import { SijsPostContent } from '@/content/blog/en/special-immigrant-juvenile-status-georgia';
+import { BiaAppealPostContent } from '@/content/blog/en/bia-appeal-immigration-court-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'bia-appeal-immigration-court-georgia': BiaAppealPostContent,
   'special-immigrant-juvenile-status-georgia': SijsPostContent,
   'advance-parole-travel-documents-georgia': AdvanceParolePostContent,
   'cancellation-of-removal-georgia': CancellationOfRemovalPostContent,

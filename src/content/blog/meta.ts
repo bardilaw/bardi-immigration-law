@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'bia-appeal-immigration-court-georgia',
+    title: 'BIA Appeals and Immigration Court Strategy in Georgia: How to Appeal a Removal Order',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration appeal attorney explains how to appeal an immigration judge\'s decision to the Board of Immigration Appeals (BIA): the strict 30-day deadline and Form EOIR-26, grounds for appeal (legal error vs. clear-error fact review), briefing requirements, appeal vs. motion to reopen or reconsider, likelihood of success, the automatic stay of removal, and the Eleventh vs. Ninth Circuit distinction for petitions for review. Atlanta and Stewart immigration courts; Georgia and Alabama.',
+  },
+  {
     slug: 'special-immigrant-juvenile-status-georgia',
     title: 'Special Immigrant Juvenile Status (SIJS): A Green Card Path for Abused or Abandoned Children in Georgia',
     date: '2026-06-22',

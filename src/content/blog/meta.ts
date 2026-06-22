@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'marriage-based-green-card-k1-fiance-visa-georgia',
+    title: 'Marriage Green Card and K-1 Fiancé Visa: A Georgia Guide',
+    date: '2026-06-22',
+    description:
+      'A Georgia marriage green card attorney explains spousal green cards and the K-1 fiancé visa: who qualifies, the I-130 and I-129F petitions, adjustment of status vs. consular processing, the 90-day K-1 rule, timelines, and the pitfalls that derail couples in Georgia and Alabama.',
+  },
+  {
     slug: 'criminal-record-immigration-consequences-georgia',
     title: 'Criminal Record and Immigration Consequences in Georgia',
     date: '2026-06-21',

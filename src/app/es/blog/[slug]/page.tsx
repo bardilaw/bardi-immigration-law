@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
 import { JsonLd } from '@/components/JsonLd';
-import { BLOG_POSTS, getPost, ES_BLOG_SLUGS } from '@/content/blog/meta';
+import { BLOG_POSTS, getPost, ES_BLOG_SLUGS, blogPostingSchema } from '@/content/blog/meta';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
 import { UVisaVawaPostContent } from '@/content/blog/en/u-visa-vawa';
 
@@ -58,25 +58,7 @@ export default async function EsBlogPostPage({ params }: Props) {
   // than serving a hard 404. Link equity and any inbound links land safely.
   if (!PostContent) redirect(`/blog/${slug}`);
 
-  const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: post.title,
-    description: post.description,
-    datePublished: post.date,
-    author: {
-      '@type': 'Person',
-      name: 'Eszter Bardi',
-      jobTitle: 'Immigration Attorney',
-      worksFor: { '@type': 'LegalService', name: 'Bardi Immigration Law' },
-    },
-    publisher: {
-      '@type': 'LegalService',
-      name: 'Bardi Immigration Law',
-      url: 'https://bardilaw.com',
-    },
-    url: `https://bardilaw.com/es/blog/${slug}`,
-  };
+  const articleSchema = blogPostingSchema(post, 'es');
 
   return (
     <>

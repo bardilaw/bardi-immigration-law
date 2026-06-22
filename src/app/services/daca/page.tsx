@@ -6,6 +6,7 @@ import { CONTACT_PHONE } from '@/lib/contact';
 import { Button } from '@/components/Button';
 import { FaqAccordion } from '@/components/FaqAccordion';
 import { JsonLd } from '@/components/JsonLd';
+import { breadcrumbSchema } from '@/content/blog/meta';
 
 export const metadata: Metadata = {
   title: 'DACA Attorney | Deferred Action for Childhood Arrivals',
@@ -112,6 +113,13 @@ const FAQ_SCHEMA = {
   })),
 };
 
+// BreadcrumbList JSON-LD mirroring the visible nav: Home › Services › DACA (BAR-701).
+const BREADCRUMB_SCHEMA = breadcrumbSchema([
+  { name: 'Home', path: '/' },
+  { name: 'Services', path: '/services' },
+  { name: 'DACA', path: '/services/daca' },
+]);
+
 const RELATED = [
   { href: '/services/tps', label: 'TPS', desc: 'Temporary Protected Status' },
   { href: '/services/vawa', label: 'VAWA', desc: 'Violence Against Women Act' },
@@ -140,7 +148,7 @@ function CheckIcon() {
 export default function DacaPage() {
   return (
     <>
-      <JsonLd data={FAQ_SCHEMA} />
+      <JsonLd data={[FAQ_SCHEMA, BREADCRUMB_SCHEMA]} />
       <Header />
       <main id="main-content">
 

@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
 import { JsonLd } from '@/components/JsonLd';
-import { BLOG_POSTS, getEsPost, ES_BLOG_SLUGS, blogPostingSchema } from '@/content/blog/meta';
+import { BLOG_POSTS, getEsPost, ES_BLOG_SLUGS, blogPostingSchema, breadcrumbSchema } from '@/content/blog/meta';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
 import { UVisaVawaPostContent } from '@/content/blog/en/u-visa-vawa';
 import { DacaRenewal2025PostContentEs } from '@/content/blog/es/daca-renewal-2025-georgia';
@@ -65,11 +65,17 @@ export default async function EsBlogPostPage({ params }: Props) {
   if (!PostContent) redirect(`/blog/${slug}`);
 
   const articleSchema = blogPostingSchema(post, 'es');
+  // Breadcrumb mirrors the visible nav below: Inicio › Blog › Post (BAR-701).
+  const breadcrumb = breadcrumbSchema([
+    { name: 'Inicio', path: '/es' },
+    { name: 'Blog', path: '/es/blog' },
+    { name: post.title, path: `/es/blog/${slug}` },
+  ]);
 
   return (
     <>
       <Header />
-      <JsonLd data={articleSchema} />
+      <JsonLd data={[articleSchema, breadcrumb]} />
       <main id="main-content">
         <section className="bg-warmgray pt-20 pb-14 lg:pt-28 lg:pb-16">
           <div className="max-w-site mx-auto px-5 lg:px-16">

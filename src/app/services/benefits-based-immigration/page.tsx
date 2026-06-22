@@ -4,6 +4,15 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
 import { Button } from '@/components/Button';
+import { JsonLd } from '@/components/JsonLd';
+import { breadcrumbSchema } from '@/content/blog/meta';
+
+// BreadcrumbList JSON-LD mirroring the visible nav: Home › Services › This page (BAR-701).
+const BREADCRUMB_SCHEMA = breadcrumbSchema([
+  { name: 'Home', path: '/' },
+  { name: 'Services', path: '/services' },
+  { name: 'Benefits-Based Immigration', path: '/services/benefits-based-immigration' },
+]);
 
 export const metadata: Metadata = {
   title: 'Benefits-Based Immigration Attorney | Green Cards, DACA, U-Visa & More',
@@ -54,6 +63,7 @@ const SERVICES_LIST = [
 export default function BenefitsBasedPage() {
   return (
     <>
+      <JsonLd data={BREADCRUMB_SCHEMA} />
       <Header />
       <main id="main-content">
         {/* Hero */}

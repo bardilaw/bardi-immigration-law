@@ -5,6 +5,7 @@ import { CONTACT_PHONE } from '@/lib/contact';
 import { Button } from './Button';
 import { FaqAccordion } from './FaqAccordion';
 import { JsonLd } from './JsonLd';
+import { breadcrumbSchema } from '@/content/blog/meta';
 
 // Build a schema.org FAQPage block from the same `faqs` the page renders, so the
 // structured data can never drift from the visible Q&A (a Google requirement).
@@ -117,13 +118,21 @@ export function PracticeAreaLayout({
   ctaSubtext = "We'll help you understand your options and build the strongest possible case.",
   ctaButtonLabel = 'Schedule a Consultation',
   breadcrumbLabel,
+  breadcrumbHref,
   homeHref = '/',
   servicesHref = '/services',
   servicesLabel = 'Services',
   contactHref = '/contact',
 }: PracticeAreaProps) {
+  // BreadcrumbList JSON-LD mirroring the visible nav: Home › Services › This page (BAR-701).
+  const breadcrumb = breadcrumbSchema([
+    { name: 'Home', path: homeHref },
+    { name: servicesLabel, path: servicesHref },
+    { name: breadcrumbLabel, path: breadcrumbHref },
+  ]);
   return (
     <>
+      <JsonLd data={breadcrumb} />
       {faqs.length > 0 && <JsonLd data={buildFaqSchema(faqs)} />}
       <Header />
       <main id="main-content">

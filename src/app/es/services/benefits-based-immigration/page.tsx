@@ -4,6 +4,15 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
 import { Button } from '@/components/Button';
+import { JsonLd } from '@/components/JsonLd';
+import { breadcrumbSchema } from '@/content/blog/meta';
+
+// BreadcrumbList JSON-LD mirroring the visible nav: Inicio › Servicios › This page (BAR-701).
+const BREADCRUMB_SCHEMA = breadcrumbSchema([
+  { name: 'Inicio', path: '/es' },
+  { name: 'Servicios', path: '/es/services' },
+  { name: 'Inmigración por Beneficios', path: '/es/services/benefits-based-immigration' },
+]);
 
 export const metadata: Metadata = {
   title: 'Abogada de Inmigración por Beneficios | Tarjetas de Residencia, DACA, Visa U y Más',
@@ -49,6 +58,7 @@ const SERVICES_LIST = [
 export default function BenefitsBasedPageES() {
   return (
     <>
+      <JsonLd data={BREADCRUMB_SCHEMA} />
       <Header />
       <main id="main-content">
         {/* Hero */}

@@ -7,6 +7,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'motion-to-reopen-reconsider-immigration-georgia',
+    title: 'Motion to Reopen or Reconsider an Immigration Case in Georgia: Your Options After a Denial',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration appeal attorney explains motions to reopen (MTR) and motions to reconsider (MTC) after a USCIS or immigration-court denial: new evidence vs. legal error, the 30-day USCIS deadline (Form I-290B), the 90-day immigration-court reopen and 30-day reconsider deadlines, why a motion does not automatically stay removal (and the in-absentia exception), changed country conditions, exceptional circumstances and equitable tolling, and how a motion differs from a BIA appeal. Atlanta and Stewart immigration courts; Georgia and Alabama.',
+  },
+  {
+    slug: 't-visa-trafficking-victims-georgia',
+    title: 'T-Visa for Trafficking Victims: Immigration Protection and a Green Card Path in Georgia',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains the T-visa (T nonimmigrant status) for survivors of severe human trafficking: how it differs from the U-visa (different crime, Form I-914 vs. I-918, no mandatory law-enforcement certification), the four eligibility requirements (severe sex or labor trafficking, physical presence on account of trafficking, cooperation with law enforcement with a minor exemption, and extreme hardship), the Form I-914 process, derivative T-visas for family, the path to a green card under INA 245(l), and Georgia\'s trafficking context (I-85 corridor, Hartsfield-Jackson, DFCS, Atlanta task force, DHS-certified providers). Georgia and Alabama.',
+  },
+  {
     slug: 'mandamus-lawsuit-uscis-delay-georgia',
     title: 'Mandamus Lawsuits: Suing USCIS for Unreasonable Delay — A Georgia Guide',
     date: '2026-06-22',

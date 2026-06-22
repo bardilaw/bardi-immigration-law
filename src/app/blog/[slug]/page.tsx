@@ -20,10 +20,16 @@ import { DeportationDefensePostContent } from '@/content/blog/en/deportation-def
 import { CriminalRecordPostContent } from '@/content/blog/en/criminal-record-immigration-consequences-georgia';
 import { MarriageGreenCardK1PostContent } from '@/content/blog/en/marriage-based-green-card-k1-fiance-visa-georgia';
 import { ImmigrationBondHearingPostContent } from '@/content/blog/en/immigration-bond-hearing-georgia';
+import { ConsularProcessingPostContent } from '@/content/blog/en/consular-processing-immigrant-visa-georgia';
+import { StudentVisaF1OptPostContent } from '@/content/blog/en/student-visa-f1-opt-stem-georgia';
+import { AdjustmentOfStatusPostContent } from '@/content/blog/en/adjustment-of-status-green-card-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'adjustment-of-status-green-card-georgia': AdjustmentOfStatusPostContent,
+  'student-visa-f1-opt-stem-georgia': StudentVisaF1OptPostContent,
+  'consular-processing-immigrant-visa-georgia': ConsularProcessingPostContent,
   'immigration-bond-hearing-georgia': ImmigrationBondHearingPostContent,
   'marriage-based-green-card-k1-fiance-visa-georgia': MarriageGreenCardK1PostContent,
   'criminal-record-immigration-consequences-georgia': CriminalRecordPostContent,

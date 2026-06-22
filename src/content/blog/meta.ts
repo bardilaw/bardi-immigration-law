@@ -7,6 +7,27 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'adjustment-of-status-green-card-georgia',
+    title: 'Adjustment of Status (I-485): Getting a Green Card Inside the U.S. — A Georgia Guide',
+    date: '2026-06-22',
+    description:
+      'A Georgia adjustment of status attorney explains the I-485 process: who can adjust vs. consular process, concurrent I-130/I-485 filing, priority dates and the Visa Bulletin, the I-864, I-693 medical, and I-94 documents, work authorization (I-765), Advance Parole travel, the Atlanta Field Office interview, and common RFE triggers. Georgia and Alabama.',
+  },
+  {
+    slug: 'student-visa-f1-opt-stem-georgia',
+    title: 'Student Visas, OPT, and STEM OPT: A Georgia Guide for International Students',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains F-1 student status, Optional Practical Training (OPT), the 24-month STEM OPT extension and its E-Verify requirement, cap-gap protection while an H-1B is pending, common F-1 violations, and when to hire an attorney. For students at Georgia Tech, Emory, UGA, Georgia State and across Georgia and Alabama.',
+  },
+  {
+    slug: 'consular-processing-immigrant-visa-georgia',
+    title: 'Consular Processing and Immigrant Visas: A Georgia Guide',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigrant visa attorney explains consular processing: how it differs from adjustment of status, NVC processing, the DS-260, the Affidavit of Support, the medical exam, the consular interview, timelines, and common delays like RFEs and 221(g). Serving petitioners in Georgia and Alabama.',
+  },
+  {
     slug: 'immigration-bond-hearing-georgia',
     title: 'Immigration Bond Hearings and ICE Detention in Georgia',
     date: '2026-06-22',

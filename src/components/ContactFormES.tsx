@@ -33,7 +33,11 @@ function validate(f: FormState): FieldError {
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email)) {
     errors.email = 'Por favor ingrese una dirección de correo electrónico válida.';
   }
-  if (!f.phone.trim()) errors.phone = 'El número de teléfono es requerido.';
+  if (!f.phone.trim()) {
+    errors.phone = 'El número de teléfono es requerido.';
+  } else if (f.phone.replace(/\D/g, '').length < 7) {
+    errors.phone = 'Por favor ingrese un número de teléfono válido.';
+  }
   if (!f.caseType) errors.caseType = 'Por favor seleccione un tipo de caso.';
   return errors;
 }
@@ -104,6 +108,9 @@ export function ContactFormES() {
         <h3 className="font-serif text-2xl font-bold text-navy mb-2">Gracias.</h3>
         <p className="text-charcoal/80">
           Una abogada se comunicará con usted dentro de las próximas 24 horas.
+        </p>
+        <p className="text-charcoal/60 text-sm mt-2">
+          Se ha enviado una confirmación a su dirección de correo electrónico.
         </p>
       </div>
     );
@@ -300,7 +307,7 @@ export function ContactFormES() {
 
       {status === 'error' && (
         <p className="text-sm text-crimson">
-          Algo salió mal. Por favor intente de nuevo o llámenos directamente.
+          Algo salió mal. Por favor intente de nuevo o escríbanos a info@bardilaw.com.
         </p>
       )}
 

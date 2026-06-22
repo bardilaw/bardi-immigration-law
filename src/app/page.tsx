@@ -96,7 +96,7 @@ const ICP_BARS = [
   {
     q: 'A young person without family support?',
     cta: 'SIJS and humanitarian pathways available. →',
-    href: '/services/benefits-based-immigration',
+    href: '/services/sijs',
     urgent: false,
   },
 ];

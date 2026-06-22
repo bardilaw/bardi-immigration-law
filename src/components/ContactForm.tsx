@@ -33,7 +33,11 @@ function validate(f: FormState): FieldError {
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email)) {
     errors.email = 'Please enter a valid email address.';
   }
-  if (!f.phone.trim()) errors.phone = 'Phone number is required.';
+  if (!f.phone.trim()) {
+    errors.phone = 'Phone number is required.';
+  } else if (f.phone.replace(/\D/g, '').length < 7) {
+    errors.phone = 'Please enter a valid phone number.';
+  }
   if (!f.caseType) errors.caseType = 'Please select a case type.';
   return errors;
 }
@@ -103,6 +107,9 @@ export function ContactForm() {
         <h3 className="font-serif text-2xl font-bold text-navy mb-2">Thank you.</h3>
         <p className="text-charcoal/80">
           An attorney will be in touch within 24 hours.
+        </p>
+        <p className="text-charcoal/60 text-sm mt-2">
+          A confirmation has been sent to your email address.
         </p>
       </div>
     );
@@ -297,7 +304,7 @@ export function ContactForm() {
 
       {status === 'error' && (
         <p className="text-sm text-crimson">
-          Something went wrong. Please try again or call us directly.
+          Something went wrong. Please try again or email us at info@bardilaw.com.
         </p>
       )}
 

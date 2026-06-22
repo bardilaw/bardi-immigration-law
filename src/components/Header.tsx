@@ -193,6 +193,23 @@ export function Header() {
       {/* Mobile drawer */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-warmgray-200 px-5 pb-6 pt-4 flex flex-col gap-4">
+          {/* Language switcher — surfaced at top of drawer (BAR-704 m-1) */}
+          <div className="flex items-center gap-2 text-sm font-semibold font-sans pb-3 border-b border-warmgray-200">
+            <Link
+              href={enPath}
+              className={`px-3 py-1 rounded-full border ${!isEs ? 'bg-navy text-white border-navy' : 'text-charcoal/60 border-warmgray-300'}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              EN
+            </Link>
+            <Link
+              href={esPath}
+              className={`px-3 py-1 rounded-full border ${isEs ? 'bg-navy text-white border-navy' : 'text-charcoal/60 border-warmgray-300'}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              ES
+            </Link>
+          </div>
           <Link href={homeHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
             {isEs ? 'Inicio' : 'Home'}
           </Link>
@@ -240,24 +257,6 @@ export function Header() {
           <Link href={contactHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
             {isEs ? 'Contacto' : 'Contact'}
           </Link>
-
-          {/* Mobile language switcher */}
-          <div className="flex items-center gap-2 text-sm font-semibold font-sans pt-1">
-            <Link
-              href={enPath}
-              className={`px-3 py-1 rounded-full border ${!isEs ? 'bg-navy text-white border-navy' : 'text-charcoal/60 border-warmgray-300'}`}
-              onClick={() => setMenuOpen(false)}
-            >
-              EN
-            </Link>
-            <Link
-              href={esPath}
-              className={`px-3 py-1 rounded-full border ${isEs ? 'bg-navy text-white border-navy' : 'text-charcoal/60 border-warmgray-300'}`}
-              onClick={() => setMenuOpen(false)}
-            >
-              ES
-            </Link>
-          </div>
 
           <div className="pt-2 border-t border-warmgray-200">
             <Button href={contactHref} size="md" className="w-full justify-center" onClick={() => setMenuOpen(false)}>

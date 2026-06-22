@@ -76,7 +76,7 @@ export default function ContactPageES() {
         {showBooking && (
           <section className="bg-white pb-4">
             <div className="max-w-site mx-auto px-5 lg:px-8">
-              <div className="bg-white rounded-lg border border-warmgray/60 p-2 sm:p-4 min-h-[600px]">
+              <div className="bg-white rounded-lg border border-warmgray/60 p-2 sm:p-4 h-[680px] sm:h-[720px] lg:h-[800px]">
                 <BookingEmbed calLink={CAL_LINK_ES} namespace="consult-es" locale="es" />
               </div>
             </div>

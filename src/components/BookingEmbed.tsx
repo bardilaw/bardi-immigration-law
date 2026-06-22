@@ -55,7 +55,7 @@ export function BookingEmbed({ calLink, namespace, locale = 'en' }: BookingEmbed
     <Cal
       namespace={namespace}
       calLink={calLink}
-      style={{ width: '100%', height: '100%', overflow: 'scroll' }}
+      style={{ width: '100%', height: '100%', overflow: 'hidden' }}
       config={{ layout: 'month_view', theme: 'light' }}
     />
   );

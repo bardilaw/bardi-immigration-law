@@ -15,7 +15,7 @@ const ATTORNEY_SCHEMA = {
     name: 'American Immigration Lawyers Association (AILA)',
   },
   areaServed: 'United States',
-  knowsLanguage: ['English', 'Spanish'],
+  knowsLanguage: ['English', 'Spanish', 'Hungarian'],
   url: 'https://bardilaw.com/about',
 } as const;
 

@@ -30,10 +30,12 @@ import { SijsPostContent } from '@/content/blog/en/special-immigrant-juvenile-st
 import { BiaAppealPostContent } from '@/content/blog/en/bia-appeal-immigration-court-georgia';
 import { I601AWaiverPostContent } from '@/content/blog/en/i-601a-provisional-unlawful-presence-waiver-georgia';
 import { EadWorkPermitPostContent } from '@/content/blog/en/employment-authorization-ead-georgia';
+import { MandamusUscisDelayPostContent } from '@/content/blog/en/mandamus-lawsuit-uscis-delay-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'mandamus-lawsuit-uscis-delay-georgia': MandamusUscisDelayPostContent,
   'employment-authorization-ead-georgia': EadWorkPermitPostContent,
   'i-601a-provisional-unlawful-presence-waiver-georgia': I601AWaiverPostContent,
   'bia-appeal-immigration-court-georgia': BiaAppealPostContent,

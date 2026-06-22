@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'mandamus-lawsuit-uscis-delay-georgia',
+    title: 'Mandamus Lawsuits: Suing USCIS for Unreasonable Delay — A Georgia Guide',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains the writ of mandamus and APA delay lawsuit used to force USCIS to decide a case it has unreasonably delayed: the legal basis (28 U.S.C. § 1361, 5 U.S.C. §§ 555(b) and 706(1)), the TRAC unreasonable-delay factors, when a 12–24+ month delay on an I-485, N-400, I-130, or I-765 supports a suit, how cases are filed and resolved in the Northern and Southern Districts of Georgia, the 60-day government response window, typical costs and timelines, and when mandamus is not the right remedy. Georgia and Alabama.',
+  },
+  {
     slug: 'employment-authorization-ead-georgia',
     title: 'Employment Authorization Documents (EAD): Work Permits for Pending Immigration Cases in Georgia',
     date: '2026-06-22',

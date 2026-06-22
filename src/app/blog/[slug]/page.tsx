@@ -24,10 +24,12 @@ import { ImmigrationBondHearingPostContent } from '@/content/blog/en/immigration
 import { ConsularProcessingPostContent } from '@/content/blog/en/consular-processing-immigrant-visa-georgia';
 import { StudentVisaF1OptPostContent } from '@/content/blog/en/student-visa-f1-opt-stem-georgia';
 import { AdjustmentOfStatusPostContent } from '@/content/blog/en/adjustment-of-status-green-card-georgia';
+import { CancellationOfRemovalPostContent } from '@/content/blog/en/cancellation-of-removal-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'cancellation-of-removal-georgia': CancellationOfRemovalPostContent,
   'adjustment-of-status-green-card-georgia': AdjustmentOfStatusPostContent,
   'student-visa-f1-opt-stem-georgia': StudentVisaF1OptPostContent,
   'consular-processing-immigrant-visa-georgia': ConsularProcessingPostContent,

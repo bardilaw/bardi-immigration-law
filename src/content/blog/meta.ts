@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'cancellation-of-removal-georgia',
+    title: 'Cancellation of Removal in Georgia: Stopping Deportation for Long-Term Residents',
+    date: '2026-06-22',
+    description:
+      'A Georgia deportation defense attorney explains cancellation of removal: non-LPR cancellation (10 years of presence, good moral character, exceptional and extremely unusual hardship to a U.S. citizen or LPR family member), LPR cancellation (5 years as a green card holder, 7 years residence, no aggravated felony), the stop-time rule, the 4,000-per-year cap, and the EOIR process in the Atlanta immigration court. Georgia and Alabama.',
+  },
+  {
     slug: 'adjustment-of-status-green-card-georgia',
     title: 'Adjustment of Status (I-485): Getting a Green Card Inside the U.S. — A Georgia Guide',
     date: '2026-06-22',

@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'affidavit-of-support-i-864-income-requirements',
+    title: 'Affidavit of Support (Form I-864) in Georgia: 2025 Income Requirements and Joint Sponsors',
+    date: '2026-06-23',
+    description:
+      'A Georgia immigration attorney explains Form I-864, the Affidavit of Support required in nearly every family-based green card case: what the INA 213A contract obligates you to, who must file, the 2025 income threshold of 125% of the Federal Poverty Guidelines (and the 100% active-duty exception), how to count household size, when and how a joint sponsor or Form I-864A household member can fill an income gap, using assets at the 5x (or 3x for a U.S. citizen’s spouse) multiplier, sponsor liability that survives divorce and lasts until citizenship or 40 work quarters, and the RFE and denial consequences of an insufficient affidavit. Atlanta-area income context; Georgia and Alabama.',
+  },
+  {
     slug: 'travel-ban-2026-proclamation-10998-waiver',
     title: '2026 Travel Ban: Countries Affected, Waivers, and What It Means for Your Family',
     date: '2026-06-22',
@@ -339,6 +346,16 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       '¿Enfrenta la deportación en Georgia? Una abogada de defensa contra la deportación explica cómo comienzan los procesos de remoción, qué ocurre en la corte de inmigración de Atlanta y las defensas (asilo, cancelación de remoción, ajuste de estatus, salida voluntaria) que pueden permitirle quedarse. Con licencia en Georgia y Alabama.',
   },
+  'bia-appeal-immigration-court-georgia': {
+    title: 'Apelación ante la BIA: Cómo Apelar una Decisión de la Corte de Inmigración en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo apelar ante la Junta de Apelaciones de Inmigración (BIA): el plazo de 30 días, el Formulario EOIR-26, la suspensión automática de la deportación y el estándar de revisión.',
+  },
+  'cancellation-of-removal-georgia': {
+    title: 'Cancelación de Remoción en Georgia: Defensa Contra la Deportación',
+    description:
+      'Una abogada de inmigración en Georgia explica la cancelación de remoción para no residentes (42B) y residentes permanentes (42A): requisitos, los 10 años de presencia, las dificultades excepcionales y cómo solicitarla ante la corte de inmigración.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -357,4 +374,6 @@ export const ES_BLOG_SLUGS = new Set([
   'daca-renewal-2025-georgia',
   'asylum-application-georgia',
   'deportation-defense-removal-proceedings-georgia',
+  'bia-appeal-immigration-court-georgia',
+  'cancellation-of-removal-georgia',
 ]);

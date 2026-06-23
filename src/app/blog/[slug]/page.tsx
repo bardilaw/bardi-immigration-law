@@ -40,10 +40,12 @@ import { IceEnforcementRightsPostContent } from '@/content/blog/en/ice-enforceme
 import { RemoveConditionsI751PostContent } from '@/content/blog/en/remove-conditions-green-card-i-751-georgia';
 import { I601WaiverPostContent } from '@/content/blog/en/i-601-inadmissibility-waiver-extreme-hardship-georgia';
 import { TravelBan2026PostContent } from '@/content/blog/en/travel-ban-2026-proclamation-10998-waiver';
+import { AffidavitOfSupportI864PostContent } from '@/content/blog/en/affidavit-of-support-i-864-income-requirements';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'affidavit-of-support-i-864-income-requirements': AffidavitOfSupportI864PostContent,
   'travel-ban-2026-proclamation-10998-waiver': TravelBan2026PostContent,
   'ice-enforcement-rights-georgia': IceEnforcementRightsPostContent,
   'remove-conditions-green-card-i-751-georgia': RemoveConditionsI751PostContent,

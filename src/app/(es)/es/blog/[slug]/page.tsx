@@ -23,6 +23,7 @@ import { IceEnforcementRightsPostContentEs } from '@/content/blog/es/ice-enforce
 import { MotionToReopenReconsiderPostContentEs } from '@/content/blog/es/motion-to-reopen-reconsider-immigration-georgia';
 import { StudentVisaF1OptPostContentEs } from '@/content/blog/es/student-visa-f1-opt-stem-georgia';
 import { TVisaTraffickingPostContentEs } from '@/content/blog/es/t-visa-trafficking-victims-georgia';
+import { AffidavitOfSupportI864PostContentEs } from '@/content/blog/es/affidavit-of-support-i-864-income-requirements';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -44,6 +45,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'motion-to-reopen-reconsider-immigration-georgia': MotionToReopenReconsiderPostContentEs,
   'student-visa-f1-opt-stem-georgia': StudentVisaF1OptPostContentEs,
   't-visa-trafficking-victims-georgia': TVisaTraffickingPostContentEs,
+  'affidavit-of-support-i-864-income-requirements': AffidavitOfSupportI864PostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

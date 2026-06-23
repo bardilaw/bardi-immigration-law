@@ -331,6 +331,11 @@ export interface EsBlogMeta {
 }
 
 export const ES_BLOG_META: Record<string, EsBlogMeta> = {
+  'affidavit-of-support-i-864-income-requirements': {
+    title: 'Declaración Jurada de Manutención (Formulario I-864) en Georgia: Requisitos de Ingresos 2025 y Copatrocinadores',
+    description:
+      'Una abogada de inmigración en Georgia explica el Formulario I-864, la Declaración Jurada de Manutención exigida en casi todos los casos de green card basados en la familia: el contrato bajo la INA 213A, quién debe presentarla, el umbral de ingresos 2025 del 125% de las Guías Federales de Pobreza (y la excepción del 100% para servicio activo), cómo contar el núcleo familiar, cuándo un copatrocinador o el Formulario I-864A puede cubrir una brecha de ingresos, el uso de bienes al multiplicador de 5x (o 3x para el cónyuge de un ciudadano), la responsabilidad del patrocinador que sobrevive al divorcio, y las consecuencias de RFE y negación. Con licencia en Georgia y Alabama.',
+  },
   'ice-enforcement-rights-georgia': {
     title: 'Encuentro con ICE en Georgia: Conozca Sus Derechos y Qué Hacer en las Primeras 48 Horas',
     description:
@@ -419,6 +424,7 @@ export function getEsPost(slug: string): BlogPost | undefined {
 // All other /es/blog/[slug] requests redirect to the EN version.
 // Keep in sync with CONTENT_MAP in src/app/es/blog/[slug]/page.tsx.
 export const ES_BLOG_SLUGS = new Set([
+  'affidavit-of-support-i-864-income-requirements',
   'ice-enforcement-rights-georgia',
   'daca-2026',
   'u-visa-vawa-crime-victims-georgia',

@@ -43,6 +43,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'ice-enforcement-rights-georgia': IceEnforcementRightsPostContentEs,
   'motion-to-reopen-reconsider-immigration-georgia': MotionToReopenReconsiderPostContentEs,
   'student-visa-f1-opt-stem-georgia': StudentVisaF1OptPostContentEs,
+  't-visa-trafficking-victims-georgia': TVisaTraffickingPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

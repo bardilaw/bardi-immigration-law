@@ -1,7 +1,6 @@
-import type { Metadata } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
 import { JsonLd } from '@/components/JsonLd';
-import './globals.css';
+import '@/app/globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -15,43 +14,9 @@ const playfair = Playfair_Display({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: 'Bardi Immigration Law | Immigration Attorney',
-    template: '%s | Bardi Immigration Law',
-  },
-  description:
-    'Boutique immigration law firm. Your attorney from day one, direct attorney access, not an intake form. Benefits-based immigration, removal defense, and federal litigation.',
-  metadataBase: new URL('https://bardilaw.com'),
-  openGraph: {
-    siteName: 'Bardi Immigration Law',
-    locale: 'en_US',
-    type: 'website',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Bardi Immigration Law',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Bardi Immigration Law | Immigration Attorney',
-    description:
-      'Boutique immigration law firm. Your attorney from day one, direct attorney access, not an intake form.',
-    images: ['/og-image.png'],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
-
 // Firm-level schema: LegalService + Attorney (both schema.org subtypes of LocalBusiness),
-// injected on every page via RootLayout under a single stable @id so Google treats it as one
-// entity site-wide rather than as duplicate LocalBusiness records (BAR-648).
+// injected on every page under a single stable @id so Google treats it as one entity
+// site-wide rather than as duplicate LocalBusiness records (BAR-648).
 // Pending fields (address, phone, hours) must be updated when client provides them.
 // telephone auto-populates from the CONTACT_PHONE env var (same var the contact form uses);
 // set it in the CI/Cloudflare environment once the board confirms the firm phone (BAR-81).
@@ -99,15 +64,27 @@ const FIRM_SCHEMA = {
   ],
 } as const;
 
-export default function RootLayout({
+/**
+ * Shared HTML document shell used by both the English and Spanish root layouts.
+ *
+ * The site serves two language trees (`/` and `/es`) as separate route groups,
+ * each with its own root layout, so the document language can be set statically
+ * per tree (<html lang="en"> vs <html lang="es">) without opting the app into
+ * dynamic rendering. This component centralizes everything common to both —
+ * fonts, global styles, firm JSON-LD, GA4, and the skip-nav link — so the two
+ * root layouts only differ by their `lang` and metadata (BAR-747).
+ */
+export function RootDocument({
+  lang,
   children,
 }: {
+  lang: 'en' | 'es';
   children: React.ReactNode;
 }) {
   const ga4Id = process.env.NEXT_PUBLIC_GA4_ID;
 
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang={lang} className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <JsonLd data={FIRM_SCHEMA as unknown as Record<string, unknown>} />
         {ga4Id && (
@@ -126,7 +103,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans bg-warmgray text-charcoal antialiased">
         <a href="#main-content" className="skip-nav">
-          Skip to main content
+          {lang === 'es' ? 'Saltar al contenido principal' : 'Skip to main content'}
         </a>
         {children}
       </body>

@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'visa-bulletin-priority-dates-family-green-card',
+    title: 'How to Read the USCIS Visa Bulletin: Priority Dates for Georgia Families',
+    date: '2026-06-23',
+    description:
+      'A Georgia immigration attorney explains the Visa Bulletin and family-based green card waits: what a priority date is and where to find it, why immediate relatives of U.S. citizens are exempt, the family preference categories (F1, F2A, F2B, F3, F4) and per-country backlogs, the difference between Final Action Dates (Chart A) and Dates for Filing (Chart B), how USCIS decides which chart applies to adjustment-of-status filings each month, how cutoff dates advance and retrogress across the fiscal year, and how to subscribe to monthly updates from travel.state.gov. National rules with Georgia (adjustment of status vs. consular processing) context; Georgia and Alabama.',
+  },
+  {
     slug: 'green-card-medical-exam-i-693-georgia',
     title: 'Green Card Medical Exam in Georgia: Civil Surgeons, Form I-693, and What to Bring',
     date: '2026-06-23',

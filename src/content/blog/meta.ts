@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'folkston-irwin-detention-south-georgia',
+    title: 'Folkston and Irwin County ICE Detention in South Georgia: A Family Survival Guide',
+    date: '2026-06-23',
+    description:
+      'A Georgia immigration attorney explains the two main ICE detention facilities in South Georgia: the Folkston ICE Processing Center in Charlton County (operated by the GEO Group and expanding toward nearly 3,000 beds to become the largest immigration jail in the U.S.) and the Irwin County Detention Center in Ocilla (operated by LaSalle Corrections, shut down in 2021 after the 2020 forced-sterilization and medical-neglect complaints and reactivated by ICE in October 2025). Covers how to locate a detained relative with the ICE Online Detainee Locator, visitation, phone, commissary and mail, bond hearings and the May 2026 Eleventh Circuit ruling restoring bond, your loved one’s rights, emergency legal options, and key phone numbers. Companion to our Stewart Detention guide. Georgia and Alabama.',
+  },
+  {
     slug: 'reinstatement-of-removal-prior-deportation-georgia',
     title: 'Reinstatement of Removal in Georgia: When a Prior Deportation Order Comes Back',
     date: '2026-06-23',

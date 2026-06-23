@@ -331,6 +331,11 @@ export interface EsBlogMeta {
 }
 
 export const ES_BLOG_META: Record<string, EsBlogMeta> = {
+  'ice-enforcement-rights-georgia': {
+    title: 'Encuentro con ICE en Georgia: Conozca Sus Derechos y Qué Hacer en las Primeras 48 Horas',
+    description:
+      'Una abogada de inmigración en Georgia explica qué hacer durante un encuentro con ICE: por qué no tiene que abrir la puerta sin una orden firmada por un juez, sus derechos bajo la Cuarta y Quinta Enmienda, la diferencia entre una orden judicial y una orden administrativa de ICE, qué ocurre en las primeras 48 horas tras un arresto, qué esperar en el Centro de Detención Stewart e Irwin County, cómo un abogado puede pedir una audiencia de fianza rápido, y una lista de planificación de emergencia para las familias.',
+  },
   'daca-renewal-2025-georgia': {
     title: 'Renovación de DACA en 2025: Lo que los Dreamers de Georgia Deben Saber',
     description:
@@ -381,6 +386,11 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia explica el advance parole (Formulario I-131): cómo viajar al extranjero sin abandonar su caso de green card o DACA, los riesgos de las barras de 3 y 10 años y los permisos de reingreso.',
   },
+  'criminal-record-immigration-consequences-georgia': {
+    title: 'Antecedentes Penales y Consecuencias Migratorias en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo las condenas penales afectan el estatus migratorio: delitos agravados, delitos de vileza moral, delitos de drogas y DUIs, el efecto sobre la green card, la ciudadanía y las visas, y qué hacer si lo acusan de un delito. Corte de inmigración de Atlanta.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -394,6 +404,7 @@ export function getEsPost(slug: string): BlogPost | undefined {
 // All other /es/blog/[slug] requests redirect to the EN version.
 // Keep in sync with CONTENT_MAP in src/app/es/blog/[slug]/page.tsx.
 export const ES_BLOG_SLUGS = new Set([
+  'ice-enforcement-rights-georgia',
   'daca-2026',
   'u-visa-vawa-crime-victims-georgia',
   'daca-renewal-2025-georgia',
@@ -406,4 +417,5 @@ export const ES_BLOG_SLUGS = new Set([
   'i-601a-provisional-unlawful-presence-waiver-georgia',
   'marriage-based-green-card-k1-fiance-visa-georgia',
   'advance-parole-travel-documents-georgia',
+  'criminal-record-immigration-consequences-georgia',
 ]);

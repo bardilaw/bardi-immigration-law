@@ -19,6 +19,7 @@ import { I601AWaiverPostContentEs } from '@/content/blog/es/i-601a-provisional-u
 import { MarriageGreenCardK1PostContentEs } from '@/content/blog/es/marriage-based-green-card-k1-fiance-visa-georgia';
 import { AdvanceParolePostContentEs } from '@/content/blog/es/advance-parole-travel-documents-georgia';
 import { CriminalRecordPostContentEs } from '@/content/blog/es/criminal-record-immigration-consequences-georgia';
+import { IceEnforcementRightsPostContentEs } from '@/content/blog/es/ice-enforcement-rights-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -36,6 +37,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'marriage-based-green-card-k1-fiance-visa-georgia': MarriageGreenCardK1PostContentEs,
   'advance-parole-travel-documents-georgia': AdvanceParolePostContentEs,
   'criminal-record-immigration-consequences-georgia': CriminalRecordPostContentEs,
+  'ice-enforcement-rights-georgia': IceEnforcementRightsPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

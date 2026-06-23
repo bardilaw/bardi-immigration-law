@@ -352,6 +352,11 @@ export interface EsBlogMeta {
 }
 
 export const ES_BLOG_META: Record<string, EsBlogMeta> = {
+  'green-card-medical-exam-i-693-georgia': {
+    title: 'Examen Médico para la Green Card en Georgia: Médicos Civiles, Formulario I-693 y Qué Llevar',
+    description:
+      'Una abogada de inmigración en Georgia explica el examen médico de inmigración exigido para el ajuste de estatus (Formulario I-485): qué cubre el Formulario I-693, por qué debe hacerlo un médico civil designado por USCIS (no su propio médico) y cómo encontrar uno en el área de Atlanta, la prueba de sangre IGRA para la tuberculosis y la detección de ETS, los requisitos de vacunación de los CDC, el cambio de política de finales de 2023 que significa que un I-693 firmado en o después del 1 de noviembre de 2023 ya no vence, qué llevar a su cita, la regla del sobre sellado, y en qué se diferencia del examen del médico de panel usado en el proceso consular. Con licencia en Georgia y Alabama.',
+  },
   'family-green-card-attorney-georgia': {
     title: 'Green Card por la Familia: Guía Completa para Inmigrantes en Georgia',
     description:
@@ -515,6 +520,7 @@ export function getEsPost(slug: string): BlogPost | undefined {
 // All other /es/blog/[slug] requests redirect to the EN version.
 // Keep in sync with CONTENT_MAP in src/app/es/blog/[slug]/page.tsx.
 export const ES_BLOG_SLUGS = new Set([
+  'green-card-medical-exam-i-693-georgia',
   'family-green-card-attorney-georgia',
   'affidavit-of-support-i-864-income-requirements',
   'ice-enforcement-rights-georgia',

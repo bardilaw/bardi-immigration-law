@@ -38,6 +38,7 @@ import { TpsPostContentEs } from '@/content/blog/es/tps-2026';
 import { FamilyGreenCardPostContentEs } from '@/content/blog/es/family-green-card-attorney-georgia';
 import { H4EadPostContentEs } from '@/content/blog/es/h4-ead-work-authorization-h1b-spouses-georgia';
 import { TnVisaUsmcaPostContentEs } from '@/content/blog/es/tn-visa-canadian-mexican-professionals-georgia';
+import { GreenCardMedicalExamI693PostContentEs } from '@/content/blog/es/green-card-medical-exam-i-693-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -74,6 +75,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'family-green-card-attorney-georgia': FamilyGreenCardPostContentEs,
   'h4-ead-work-authorization-h1b-spouses-georgia': H4EadPostContentEs,
   'tn-visa-canadian-mexican-professionals-georgia': TnVisaUsmcaPostContentEs,
+  'green-card-medical-exam-i-693-georgia': GreenCardMedicalExamI693PostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

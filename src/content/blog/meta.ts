@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'travel-ban-2026-proclamation-10998-waiver',
+    title: '2026 Travel Ban: Countries Affected, Waivers, and What It Means for Your Family',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains Presidential Proclamation 10998, the 2026 travel ban effective January 1, 2026: which 39 countries are affected (the 19 full-suspension and 20 partial-suspension lists), how immigrant and nonimmigrant visas are treated differently, who is exempt (green card holders, valid-visa holders, dual nationals, diplomats) and which exemptions were removed (immediate-relative immigrant visas, adoptions, Afghan SIVs), how the rare national-interest waiver works, the impact on pending I-130, I-485, and consular cases, the metro-Atlanta communities most affected (Nigerian, Haitian, West and East African, Iranian/Syrian/Yemeni/Libyan, Venezuelan, Cuban), and what to do now if a relative is from an affected country. Note: India and Ethiopia are not on the list. Georgia and Alabama.',
+  },
+  {
     slug: 'remove-conditions-green-card-i-751-georgia',
     title: 'How to Remove Conditions on Your Green Card in Georgia: The I-751 Petition Guide',
     date: '2026-06-22',

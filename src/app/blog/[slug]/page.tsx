@@ -39,10 +39,12 @@ import { TnVisaUsmcaPostContent } from '@/content/blog/en/tn-visa-canadian-mexic
 import { IceEnforcementRightsPostContent } from '@/content/blog/en/ice-enforcement-rights-georgia';
 import { RemoveConditionsI751PostContent } from '@/content/blog/en/remove-conditions-green-card-i-751-georgia';
 import { I601WaiverPostContent } from '@/content/blog/en/i-601-inadmissibility-waiver-extreme-hardship-georgia';
+import { TravelBan2026PostContent } from '@/content/blog/en/travel-ban-2026-proclamation-10998-waiver';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'travel-ban-2026-proclamation-10998-waiver': TravelBan2026PostContent,
   'ice-enforcement-rights-georgia': IceEnforcementRightsPostContent,
   'remove-conditions-green-card-i-751-georgia': RemoveConditionsI751PostContent,
   'parole-in-place-military-families-georgia': ParoleInPlacePostContent,

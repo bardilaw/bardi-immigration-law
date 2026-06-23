@@ -65,8 +65,9 @@ export function FederalImmigrationLitigationPostContent() {
 
       <h2>2. Petition for Review &mdash; Appealing a Removal Order to the Eleventh Circuit</h2>
       <p>
-        When the BIA upholds a removal (deportation) order, the agency process is over &mdash; but you are not
-        necessarily out of options. You can ask a federal appeals court to review the decision by filing a{' '}
+        When the BIA upholds a removal (deportation) order at the end of your{' '}
+        <Link href="/services/removal-defense">removal defense</Link> case, the agency process is over &mdash; but you
+        are not necessarily out of options. You can ask a federal appeals court to review the decision by filing a{' '}
         <strong>petition for review</strong> under <strong>INA &sect; 242 / 8 U.S.C. &sect; 1252</strong>. This is the
         primary way the federal courts review final orders of removal, and after the <strong>REAL ID Act of 2005</strong>
         , it is essentially the <em>only</em> way (that law funneled removal-order challenges into the petition for review

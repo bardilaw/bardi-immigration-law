@@ -41,9 +41,8 @@ export const metadata: Metadata = {
 };
 
 // Top-level practice areas (BAR-697 row 23). Removal Defense leads (highest volume).
-// Items without a dedicated service page yet link to the firm's in-depth guide on
-// that topic as an interim destination, pending the detailed descriptions Eszter
-// will supply (row 21).
+// Every area now has its own dedicated service page (row 21); "Other Immigration
+// Options" anchors to the grouped section below (row 24).
 const TOP_LEVEL = [
   {
     title: 'Deportation (Removal) Defense',
@@ -62,13 +61,13 @@ const TOP_LEVEL = [
   },
   {
     title: 'Consular Processing',
-    href: '/blog/consular-processing-immigrant-visa-georgia',
-    desc: 'Immigrant-visa processing through a U.S. consulate abroad, from approved petition through the interview at the National Visa Center and post.',
+    href: '/services/consular-processing',
+    desc: 'Immigrant-visa processing through a U.S. consulate abroad, from approved petition through the National Visa Center to the interview at post.',
   },
   {
     title: 'Appeals',
-    href: '/blog/bia-appeal-immigration-court-georgia',
-    desc: 'Board of Immigration Appeals (BIA) appeals of immigration-judge decisions, plus motions to reopen and reconsider.',
+    href: '/services/appeals',
+    desc: 'BIA and AAO appeals of adverse decisions, plus motions to reopen and reconsider. Deadlines are strict, act quickly.',
   },
   {
     title: 'Federal Litigation',
@@ -98,7 +97,7 @@ const OTHER_OPTIONS = [
   {
     label: 'Naturalization',
     desc: 'U.S. citizenship eligibility, the N-400 application, the civics and English tests, and the oath.',
-    href: '/blog/naturalization-citizenship-georgia',
+    href: '/services/naturalization',
   },
   {
     label: 'DACA',
@@ -113,8 +112,7 @@ const OTHER_OPTIONS = [
   {
     label: 'Parole-in-Place & Advance Parole',
     desc: 'Parole-in-place for military families and advance-parole travel documents for pending applicants.',
-    href: '/blog/parole-in-place-military-families-georgia',
-    secondary: { label: 'Advance Parole', href: '/blog/advance-parole-travel-documents-georgia' },
+    href: '/services/parole',
   },
 ];
 

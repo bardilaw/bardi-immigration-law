@@ -35,9 +35,9 @@ export const metadata: Metadata = {
 };
 
 // Áreas de práctica principales (BAR-697 fila 23). La defensa contra la deportación
-// encabeza (mayor volumen). Los temas sin página de servicio dedicada todavía enlazan
-// a la guía del bufete sobre ese tema como destino provisional, en espera de las
-// descripciones detalladas que proporcionará Eszter (fila 21).
+// encabeza (mayor volumen). Cada área tiene ahora su propia página de servicio
+// dedicada (fila 21); "Otras Opciones de Inmigración" ancla a la sección agrupada
+// más abajo (fila 24).
 const TOP_LEVEL = [
   {
     title: 'Defensa contra la Deportación',
@@ -55,17 +55,14 @@ const TOP_LEVEL = [
     desc: 'Renuncias I-601 e I-601A por presencia ilegal e inadmisibilidad, I-212 y solicitudes por dificultad extrema.',
   },
   {
-    // Sin guía en español todavía; enlace provisional a inmigración familiar (la vía
-    // consular es la rama en el extranjero del proceso familiar). Página dedicada
-    // pendiente de la descripción de Eszter (BAR-697 fila 21).
     title: 'Procesamiento Consular',
-    href: '/es/services/family-based-immigration',
+    href: '/es/services/consular-processing',
     desc: 'Trámite de la visa de inmigrante a través de un consulado de EE. UU. en el extranjero, desde la petición aprobada hasta la entrevista en el Centro Nacional de Visas.',
   },
   {
     title: 'Apelaciones',
-    href: '/es/blog/bia-appeal-immigration-court-georgia',
-    desc: 'Apelaciones ante la Junta de Apelaciones de Inmigración (BIA) de las decisiones del juez de inmigración, además de mociones para reabrir y reconsiderar.',
+    href: '/es/services/appeals',
+    desc: 'Apelaciones ante la BIA y la AAO de decisiones adversas, además de mociones para reabrir y reconsiderar. Los plazos son estrictos, actúe con rapidez.',
   },
   {
     title: 'Litigios Federales',
@@ -95,7 +92,7 @@ const OTHER_OPTIONS = [
   {
     label: 'Naturalización',
     desc: 'Elegibilidad para la ciudadanía estadounidense, la solicitud N-400, los exámenes de cívica e inglés y el juramento.',
-    href: '/es/blog/naturalization-citizenship-georgia',
+    href: '/es/services/naturalization',
   },
   {
     label: 'DACA',
@@ -110,8 +107,7 @@ const OTHER_OPTIONS = [
   {
     label: 'Permiso en el Lugar y Advance Parole',
     desc: 'Permiso en el lugar (parole-in-place) para familias militares y documentos de viaje advance parole para solicitantes con casos pendientes.',
-    href: '/es/blog/parole-in-place-military-families-georgia',
-    secondary: { label: 'Advance Parole', href: '/es/blog/advance-parole-travel-documents-georgia' },
+    href: '/es/services/parole',
   },
 ];
 

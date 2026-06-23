@@ -43,6 +43,66 @@ function getAlternatePath(pathname: string): { enPath: string; esPath: string } 
   return { enPath: pathname, esPath };
 }
 
+// Inline SVG flags — render identically across OSes (flag emoji fall back to
+// letter pairs on Windows). Decorative; the link carries the accessible label.
+function FlagMx({ className = '' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 3 2" className={className} aria-hidden="true" focusable="false">
+      <rect width="1" height="2" x="0" fill="#006847" />
+      <rect width="1" height="2" x="1" fill="#fff" />
+      <rect width="1" height="2" x="2" fill="#ce1126" />
+    </svg>
+  );
+}
+
+function FlagUs({ className = '' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 19 10" className={className} aria-hidden="true" focusable="false">
+      <rect width="19" height="10" fill="#fff" />
+      {[0, 2, 4, 6, 8].map((y) => (
+        <rect key={y} width="19" height="1" y={y} fill="#b22234" />
+      ))}
+      <rect width="9" height="6" fill="#3c3b6e" />
+    </svg>
+  );
+}
+
+// Row 3/4 (BAR-697): contextual language invite — show the OTHER language with
+// its flag + native-language label, so each page invites the alternate audience.
+function LanguageToggle({
+  isEs,
+  enPath,
+  esPath,
+  onNavigate,
+  variant = 'desktop',
+}: {
+  isEs: boolean;
+  enPath: string;
+  esPath: string;
+  onNavigate?: () => void;
+  variant?: 'desktop' | 'mobile';
+}) {
+  const href = isEs ? enPath : esPath;
+  const label = isEs ? 'View in English' : 'Ver en Español';
+  const aria = isEs ? 'View this page in English' : 'Ver esta página en español';
+  const Flag = isEs ? FlagUs : FlagMx;
+  const base =
+    'inline-flex items-center gap-2 font-semibold font-sans text-charcoal/80 hover:text-navy transition-colors';
+  const size = variant === 'mobile' ? 'text-sm' : 'text-xs';
+  return (
+    <Link
+      href={href}
+      hrefLang={isEs ? 'en' : 'es'}
+      aria-label={aria}
+      className={`${base} ${size}`}
+      onClick={onNavigate}
+    >
+      <Flag className="w-5 h-[14px] rounded-[1px] ring-1 ring-warmgray-300 shrink-0" />
+      {label}
+    </Link>
+  );
+}
+
 export function Header({ phone = '' }: { phone?: string }) {
   const pathname = usePathname();
   const isEs = pathname.startsWith('/es');
@@ -150,23 +210,9 @@ export function Header({ phone = '' }: { phone?: string }) {
           <Link href={resourcesHref} className={navLink}>{isEs ? 'Recursos' : 'Resources'}</Link>
           <Link href={contactHref} className={navLink}>{isEs ? 'Contacto' : 'Contact'}</Link>
 
-          {/* Language switcher */}
-          <div className="flex items-center gap-1 ml-2 border border-warmgray-300 rounded-full px-2 py-0.5 text-xs font-semibold font-sans">
-            <Link
-              href={enPath}
-              aria-current={!isEs ? 'page' : undefined}
-              className={`px-1.5 py-0.5 rounded-full transition-colors ${!isEs ? 'bg-navy text-white' : 'text-charcoal/60 hover:text-navy'}`}
-            >
-              EN
-            </Link>
-            <span className="text-warmgray-400" aria-hidden="true">|</span>
-            <Link
-              href={esPath}
-              aria-current={isEs ? 'page' : undefined}
-              className={`px-1.5 py-0.5 rounded-full transition-colors ${isEs ? 'bg-navy text-white' : 'text-charcoal/60 hover:text-navy'}`}
-            >
-              ES
-            </Link>
+          {/* Language switcher — contextual flag + native-language invite (BAR-697 rows 3/4) */}
+          <div className="ml-2 border border-warmgray-300 rounded-full px-3 py-1">
+            <LanguageToggle isEs={isEs} enPath={enPath} esPath={esPath} />
           </div>
 
           {/* Primary CTA — tap-to-call once CONTACT_PHONE is set (BAR-697 rows 15/16);
@@ -209,22 +255,16 @@ export function Header({ phone = '' }: { phone?: string }) {
       {/* Mobile drawer */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-warmgray-200 px-5 pb-6 pt-4 flex flex-col gap-4">
-          {/* Language switcher — surfaced at top of drawer (BAR-704 m-1) */}
-          <div className="flex items-center gap-2 text-sm font-semibold font-sans pb-3 border-b border-warmgray-200">
-            <Link
-              href={enPath}
-              className={`px-3 py-1 rounded-full border ${!isEs ? 'bg-navy text-white border-navy' : 'text-charcoal/60 border-warmgray-300'}`}
-              onClick={() => setMenuOpen(false)}
-            >
-              EN
-            </Link>
-            <Link
-              href={esPath}
-              className={`px-3 py-1 rounded-full border ${isEs ? 'bg-navy text-white border-navy' : 'text-charcoal/60 border-warmgray-300'}`}
-              onClick={() => setMenuOpen(false)}
-            >
-              ES
-            </Link>
+          {/* Language switcher — surfaced at top of drawer (BAR-704 m-1);
+              contextual flag + native-language invite (BAR-697 rows 3/4) */}
+          <div className="pb-3 border-b border-warmgray-200">
+            <LanguageToggle
+              isEs={isEs}
+              enPath={enPath}
+              esPath={esPath}
+              variant="mobile"
+              onNavigate={() => setMenuOpen(false)}
+            />
           </div>
           <Link href={homeHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
             {isEs ? 'Inicio' : 'Home'}

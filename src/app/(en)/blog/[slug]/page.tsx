@@ -46,10 +46,12 @@ import { K1ProcessingTimelinePostContent } from '@/content/blog/en/k1-fiance-vis
 import { GreenCardMedicalExamI693PostContent } from '@/content/blog/en/green-card-medical-exam-i-693-georgia';
 import { VisaBulletinPriorityDatesPostContent } from '@/content/blog/en/visa-bulletin-priority-dates-family-green-card';
 import { VawaSelfPetitionPostContent } from '@/content/blog/en/vawa-self-petition-domestic-violence-immigration-georgia';
+import { FederalImmigrationLitigationPostContent } from '@/content/blog/en/federal-immigration-litigation-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'federal-immigration-litigation-georgia': FederalImmigrationLitigationPostContent,
   'vawa-self-petition-domestic-violence-immigration-georgia': VawaSelfPetitionPostContent,
   'visa-bulletin-priority-dates-family-green-card': VisaBulletinPriorityDatesPostContent,
   'green-card-medical-exam-i-693-georgia': GreenCardMedicalExamI693PostContent,

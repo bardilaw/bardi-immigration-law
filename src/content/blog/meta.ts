@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'federal-immigration-litigation-georgia',
+    title: 'Federal Immigration Litigation in Georgia: When to Sue in Federal Court',
+    date: '2026-06-23',
+    description:
+      'A Georgia immigration attorney explains when immigrants can take USCIS, ICE, or DHS to federal court after exhausting administrative remedies: the difference between immigration court and the Article III federal courts, the four main tools (mandamus/APA delay suits, the petition for review of a removal order, habeas corpus for unlawful detention, and APA/constitutional challenges to agency action), the 30-day jurisdictional deadline to petition the Eleventh Circuit, the REAL ID Act channeling of removal-order review, where Georgia and Alabama cases are heard (the three federal districts of Georgia, Stewart Detention Center in the Middle District, and the Eleventh Circuit covering GA/AL/FL), realistic timelines and costs, and why few Georgia firms actually litigate in federal court. Georgia and Alabama.',
+  },
+  {
     slug: 'vawa-self-petition-domestic-violence-immigration-georgia',
     title: 'VAWA Self-Petition for Immigrant Survivors of Domestic Violence in Georgia',
     date: '2026-06-23',

@@ -518,6 +518,7 @@ export const ES_BLOG_SLUGS = new Set([
   'immigration-bond-hearing-georgia',
   'special-immigrant-juvenile-status-georgia',
   'i-601a-provisional-unlawful-presence-waiver-georgia',
+  'i-601-inadmissibility-waiver-extreme-hardship-georgia',
   'adjustment-of-status-green-card-georgia',
   'marriage-based-green-card-k1-fiance-visa-georgia',
   'k1-fiance-visa-processing-timeline-2026',

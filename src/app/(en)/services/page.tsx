@@ -8,7 +8,7 @@ import { Button } from '@/components/Button';
 export const metadata: Metadata = {
   title: 'Immigration Legal Services',
   description:
-    'DACA, SIJS, VAWA, U-Visa, TPS, family-based immigration, removal defense, and federal litigation, handled directly by the attorney from day one.',
+    'Removal defense, family-based immigration, waivers, consular processing, appeals, federal litigation, and more, handled directly by the attorney from day one.',
   alternates: {
     canonical: 'https://bardilaw.com/services',
     languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Immigration Legal Services | Bardi Immigration Law',
     description:
-      'Benefits-based immigration, removal defense, and federal litigation, handled directly by the attorney from day one.',
+      'Removal defense, family-based immigration, waivers, consular processing, appeals, and federal litigation, handled directly by the attorney from day one.',
     url: 'https://bardilaw.com/services',
     images: [
       {
@@ -35,33 +35,86 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Immigration Legal Services | Bardi Immigration Law',
     description:
-      'Benefits-based immigration, removal defense, and federal litigation, handled directly by the attorney from day one.',
+      'Removal defense, family-based immigration, waivers, consular processing, appeals, and federal litigation, handled directly by the attorney from day one.',
     images: ['/og-image.png'],
   },
 };
 
-const BENEFITS_BASED = [
-  { label: 'DACA', desc: 'Deferred Action for Childhood Arrivals, initial applications & renewals', href: '/services/daca' },
-  { label: 'SIJS', desc: 'Special Immigrant Juvenile Status, protection for unaccompanied minors', href: '/services/sijs' },
-  { label: 'VAWA', desc: 'Violence Against Women Act, confidential self-petitions for abuse survivors', href: '/services/vawa' },
-  { label: 'U-Visa', desc: 'Protection and legal status for victims of violent crime', href: '/services/u-visa' },
-  { label: 'TPS', desc: 'Temporary Protected Status, registration and renewals', href: '/services/tps' },
-  { label: 'Family-Based Immigration', desc: 'I-130 petitions, adjustment of status, consular processing', href: '/services/family-based-immigration' },
-  { label: 'Waivers', desc: 'I-601, I-212, I-929, extreme hardship waiver filings', href: '/services/waivers' },
-];
-
+// Top-level practice areas (BAR-697 row 23). Removal Defense leads (highest volume).
+// Items without a dedicated service page yet link to the firm's in-depth guide on
+// that topic as an interim destination, pending the detailed descriptions Eszter
+// will supply (row 21).
 const TOP_LEVEL = [
   {
-    icon: '🛡️',
-    title: 'Removal Defense',
+    title: 'Deportation (Removal) Defense',
     href: '/services/removal-defense',
-    desc: 'Detained and non-detained defense, bond hearings, cancellation of removal (42B/42A), BIA appeals. If you\'re in proceedings, time matters.',
+    desc: 'Detained and non-detained defense, bond hearings, cancellation of removal (42A/42B), and full representation in immigration court. If you are in proceedings, time matters.',
   },
   {
-    icon: '🏛️',
+    title: 'Family-Based Immigration',
+    href: '/services/family-based-immigration',
+    desc: 'I-130 petitions, adjustment of status, and reuniting families through citizen and permanent-resident sponsorship.',
+  },
+  {
+    title: 'Waivers',
+    href: '/services/waivers',
+    desc: 'I-601 and I-601A unlawful-presence and inadmissibility waivers, I-212, and extreme-hardship filings.',
+  },
+  {
+    title: 'Consular Processing',
+    href: '/blog/consular-processing-immigrant-visa-georgia',
+    desc: 'Immigrant-visa processing through a U.S. consulate abroad, from approved petition through the interview at the National Visa Center and post.',
+  },
+  {
+    title: 'Appeals',
+    href: '/blog/bia-appeal-immigration-court-georgia',
+    desc: 'Board of Immigration Appeals (BIA) appeals of immigration-judge decisions, plus motions to reopen and reconsider.',
+  },
+  {
     title: 'Federal Litigation',
     href: '/services/federal-litigation',
     desc: 'Habeas corpus and mandamus petitions when administrative remedies are exhausted. Federal court experience across the Southeast.',
+  },
+  {
+    title: 'Other Immigration Options',
+    href: '#other-options',
+    desc: 'SIJS, humanitarian relief, naturalization, DACA, TPS, and parole programs. See the full list below.',
+  },
+];
+
+// "Other Immigration Options" sub-group (BAR-697 row 24).
+const OTHER_OPTIONS = [
+  {
+    label: 'SIJS',
+    desc: 'Special Immigrant Juvenile Status, protection for abused, abandoned, or neglected minors.',
+    href: '/services/sijs',
+  },
+  {
+    label: 'Humanitarian Relief (U-Visa & VAWA)',
+    desc: 'U-Visas for victims of qualifying crimes and confidential VAWA self-petitions for abuse survivors.',
+    href: '/services/u-visa',
+    secondary: { label: 'VAWA', href: '/services/vawa' },
+  },
+  {
+    label: 'Naturalization',
+    desc: 'U.S. citizenship eligibility, the N-400 application, the civics and English tests, and the oath.',
+    href: '/blog/naturalization-citizenship-georgia',
+  },
+  {
+    label: 'DACA',
+    desc: 'Deferred Action for Childhood Arrivals, initial applications and renewals.',
+    href: '/services/daca',
+  },
+  {
+    label: 'TPS',
+    desc: 'Temporary Protected Status, registration and re-registration for designated countries.',
+    href: '/services/tps',
+  },
+  {
+    label: 'Parole-in-Place & Advance Parole',
+    desc: 'Parole-in-place for military families and advance-parole travel documents for pending applicants.',
+    href: '/blog/parole-in-place-military-families-georgia',
+    secondary: { label: 'Advance Parole', href: '/blog/advance-parole-travel-documents-georgia' },
   },
 ];
 
@@ -89,52 +142,61 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* Benefits-Based Immigration */}
+        {/* Top-level practice areas */}
         <section className="bg-warmgray py-16">
           <div className="max-w-site mx-auto px-5 lg:px-8">
-            <div className="flex items-center gap-3 mb-2">
-              <span className="text-3xl" aria-hidden="true">⚖️</span>
-              <h2 className="font-serif text-3xl font-bold text-navy">Benefits-Based Immigration</h2>
-            </div>
-            <p className="text-charcoal/80 mb-8 max-w-2xl">
-              We help immigrants at every stage of the process, from those who have been here since
-              childhood to those navigating new pathways through family connections or humanitarian
-              protection.
-            </p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-              {BENEFITS_BASED.map((item) => (
+            <h2 className="font-serif text-3xl font-bold text-navy mb-8">Practice Areas</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {TOP_LEVEL.map((area) => (
                 <Link
-                  key={item.href}
-                  href={item.href}
-                  className="bg-white rounded-lg p-5 flex flex-col gap-2 hover:shadow-md transition-shadow group"
+                  key={area.href}
+                  href={area.href}
+                  className="bg-white rounded-lg p-6 flex flex-col gap-2 hover:shadow-md transition-shadow group"
                 >
-                  <p className="font-serif text-lg font-bold text-navy group-hover:text-gold transition-colors">
-                    {item.label}
+                  <p className="font-serif text-xl font-bold text-navy group-hover:text-gold transition-colors">
+                    {area.title}
                   </p>
-                  <p className="text-sm text-charcoal/70 flex-1">{item.desc}</p>
+                  <p className="text-sm text-charcoal/70 flex-1">{area.desc}</p>
                   <span className="text-sm font-semibold text-gold font-sans">Learn more →</span>
                 </Link>
               ))}
             </div>
-            <Link href="/services/benefits-based-immigration" className="text-sm font-semibold text-navy hover:text-gold font-sans">
-              View all benefits-based services →
-            </Link>
           </div>
         </section>
 
-        {/* Removal Defense + Federal Litigation */}
-        <section className="bg-white py-16">
-          <div className="max-w-site mx-auto px-5 lg:px-8 grid md:grid-cols-2 gap-6">
-            {TOP_LEVEL.map((area) => (
-              <div key={area.href} className="bg-warmgray rounded-lg p-6 flex flex-col gap-3">
-                <span className="text-3xl" aria-hidden="true">{area.icon}</span>
-                <h2 className="font-serif text-2xl font-bold text-navy">{area.title}</h2>
-                <p className="text-charcoal/80 text-sm flex-1">{area.desc}</p>
-                <Link href={area.href} className="text-sm font-semibold text-gold hover:underline font-sans self-start">
-                  Learn more →
-                </Link>
-              </div>
-            ))}
+        {/* Other Immigration Options */}
+        <section id="other-options" className="bg-white py-16 scroll-mt-24">
+          <div className="max-w-site mx-auto px-5 lg:px-8">
+            <h2 className="font-serif text-3xl font-bold text-navy mb-2">Other Immigration Options</h2>
+            <p className="text-charcoal/80 mb-8 max-w-2xl">
+              Additional pathways and protections we handle. Not sure which one fits your situation?
+              That&apos;s exactly what the consultation is for.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {OTHER_OPTIONS.map((item) => (
+                <div
+                  key={item.href}
+                  className="bg-warmgray rounded-lg p-5 flex flex-col gap-2"
+                >
+                  <Link href={item.href} className="group">
+                    <p className="font-serif text-lg font-bold text-navy group-hover:text-gold transition-colors">
+                      {item.label}
+                    </p>
+                  </Link>
+                  <p className="text-sm text-charcoal/70 flex-1">{item.desc}</p>
+                  <div className="flex items-center gap-4">
+                    <Link href={item.href} className="text-sm font-semibold text-gold hover:underline font-sans">
+                      Learn more →
+                    </Link>
+                    {item.secondary && (
+                      <Link href={item.secondary.href} className="text-sm font-semibold text-navy hover:underline font-sans">
+                        {item.secondary.label} →
+                      </Link>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

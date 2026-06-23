@@ -71,6 +71,7 @@ export interface PracticeAreaProps {
   breadcrumbLabel: string;
   breadcrumbHref: string;
   homeHref?: string;
+  homeLabel?: string;
   servicesHref?: string;
   servicesLabel?: string;
   contactHref?: string;
@@ -120,13 +121,14 @@ export function PracticeAreaLayout({
   breadcrumbLabel,
   breadcrumbHref,
   homeHref = '/',
+  homeLabel = 'Home',
   servicesHref = '/services',
   servicesLabel = 'Services',
   contactHref = '/contact',
 }: PracticeAreaProps) {
   // BreadcrumbList JSON-LD mirroring the visible nav: Home › Services › This page (BAR-701).
   const breadcrumb = breadcrumbSchema([
-    { name: 'Home', path: homeHref },
+    { name: homeLabel, path: homeHref },
     { name: servicesLabel, path: servicesHref },
     { name: breadcrumbLabel, path: breadcrumbHref },
   ]);
@@ -141,7 +143,7 @@ export function PracticeAreaLayout({
         <section className="bg-warmgray pt-20 pb-14 lg:pt-28 lg:pb-16">
           <div className="max-w-site mx-auto px-5 lg:px-16">
             <nav aria-label="Breadcrumb" className="text-[13px] text-charcoal/60 mb-6 font-sans">
-              <Link href={homeHref} className="hover:text-navy transition-colors">Home</Link>
+              <Link href={homeHref} className="hover:text-navy transition-colors">{homeLabel}</Link>
               <span className="mx-2" aria-hidden="true">&rsaquo;</span>
               <Link href={servicesHref} className="hover:text-navy transition-colors">{servicesLabel}</Link>
               <span className="mx-2" aria-hidden="true">&rsaquo;</span>

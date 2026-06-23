@@ -168,7 +168,7 @@ export function NoticeToAppearPostContentEs() {
         Si tiene un camino hacia la Green Card &mdash; por ejemplo, a través de un cónyuge ciudadano estadounidense u
         otro familiar o empleador calificado &mdash; es posible que pueda solicitar el <strong>ajuste de estatus</strong>,
         incluso estando en proceso de remoción. La elegibilidad depende de su historial específico. Conozca más sobre la{' '}
-        <Link href="/services/family-based-immigration">inmigración basada en la familia</Link>.
+        <Link href="/es/services/family-based-immigration">inmigración basada en la familia</Link>.
       </p>
 
       <h3>Salida Voluntaria</h3>
@@ -244,8 +244,8 @@ export function NoticeToAppearPostContentEs() {
         <strong>Bardi Immigration Law</strong> para una consulta. La abogada <strong>Eszter Bardi</strong> representa a
         clientes en procesos de remoción ante las cortes de inmigración de Atlanta y Stewart. Revisaremos su NTA, le
         explicaremos sus opciones reales en lenguaje claro y le ayudaremos a dar los pasos correctos &mdash; con calma y
-        claridad. <Link href="/contact">Programe una consulta</Link> o conozca más sobre nuestros servicios de{' '}
-        <Link href="/services/removal-defense">defensa contra la deportación</Link>.
+        claridad. <Link href="/es/contact">Programe una consulta</Link> o conozca más sobre nuestros servicios de{' '}
+        <Link href="/es/services/removal-defense">defensa contra la deportación</Link>.
       </p>
 
       <p className="disclaimer">

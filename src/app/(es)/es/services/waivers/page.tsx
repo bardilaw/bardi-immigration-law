@@ -33,6 +33,7 @@ export default function WaiversPageES() {
   return (
     <PracticeAreaLayout
       homeHref="/es"
+      homeLabel="Inicio"
       servicesHref="/es/services"
       servicesLabel="Servicios"
       contactHref="/es/contact"

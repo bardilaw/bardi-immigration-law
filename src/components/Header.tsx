@@ -53,6 +53,7 @@ export function Header({ phone = '' }: { phone?: string }) {
   const aboutHref = isEs ? '/es/about' : '/about';
   const blogHref = isEs ? '/es/blog' : '/blog';
   const faqHref = isEs ? '/es/faq' : '/faq';
+  const resourcesHref = isEs ? '/es/resources' : '/resources';
   const contactHref = isEs ? '/es/contact' : '/contact';
   const servicesHref = isEs ? '/es/services' : '/services';
 
@@ -146,6 +147,7 @@ export function Header({ phone = '' }: { phone?: string }) {
           <Link href={aboutHref} className={navLink}>{isEs ? 'Sobre Nosotros' : 'About'}</Link>
           <Link href={blogHref} className={navLink}>Blog</Link>
           <Link href={faqHref} className={navLink}>{isEs ? 'Preguntas' : 'FAQ'}</Link>
+          <Link href={resourcesHref} className={navLink}>{isEs ? 'Recursos' : 'Resources'}</Link>
           <Link href={contactHref} className={navLink}>{isEs ? 'Contacto' : 'Contact'}</Link>
 
           {/* Language switcher */}
@@ -267,6 +269,9 @@ export function Header({ phone = '' }: { phone?: string }) {
           </Link>
           <Link href={faqHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
             {isEs ? 'Preguntas' : 'FAQ'}
+          </Link>
+          <Link href={resourcesHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
+            {isEs ? 'Recursos' : 'Resources'}
           </Link>
           <Link href={contactHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
             {isEs ? 'Contacto' : 'Contact'}

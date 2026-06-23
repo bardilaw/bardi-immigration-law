@@ -47,10 +47,12 @@ import { GreenCardMedicalExamI693PostContent } from '@/content/blog/en/green-car
 import { VisaBulletinPriorityDatesPostContent } from '@/content/blog/en/visa-bulletin-priority-dates-family-green-card';
 import { VawaSelfPetitionPostContent } from '@/content/blog/en/vawa-self-petition-domestic-violence-immigration-georgia';
 import { FederalImmigrationLitigationPostContent } from '@/content/blog/en/federal-immigration-litigation-georgia';
+import { ReinstatementOfRemovalPostContent } from '@/content/blog/en/reinstatement-of-removal-prior-deportation-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'reinstatement-of-removal-prior-deportation-georgia': ReinstatementOfRemovalPostContent,
   'federal-immigration-litigation-georgia': FederalImmigrationLitigationPostContent,
   'vawa-self-petition-domestic-violence-immigration-georgia': VawaSelfPetitionPostContent,
   'visa-bulletin-priority-dates-family-green-card': VisaBulletinPriorityDatesPostContent,

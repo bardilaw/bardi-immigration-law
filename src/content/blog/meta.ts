@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'reinstatement-of-removal-prior-deportation-georgia',
+    title: 'Reinstatement of Removal in Georgia: When a Prior Deportation Order Comes Back',
+    date: '2026-06-23',
+    description:
+      'A Georgia deportation defense attorney explains reinstatement of removal under INA §241(a)(5): what happens when someone with a prior removal order reenters the United States without inspection, why ICE can revive the old order with no immigration-judge hearing and no bond, who it affects (people who returned to reunite with U.S. citizen family), how reinstatement differs from a new removal case, the one door that stays open (a reasonable-fear interview leading to withholding-only proceedings for those who fear persecution or torture), the narrow factual and legal challenges, the 30-day deadline to petition the Eleventh Circuit, the fast timeline, the separate illegal-reentry crime under 8 U.S.C. §1326, and why immediate legal help is critical. Atlanta and Stewart immigration courts; Georgia and Alabama.',
+  },
+  {
     slug: 'federal-immigration-litigation-georgia',
     title: 'Federal Immigration Litigation in Georgia: When to Sue in Federal Court',
     date: '2026-06-23',

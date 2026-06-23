@@ -8,7 +8,7 @@ import { Button } from '@/components/Button';
 export const metadata: Metadata = {
   title: 'Bardi Immigration Law | Immigration Attorney',
   description:
-    'Boutique immigration law firm. Your first call is with the attorney, not an intake specialist. Direct attorney access from day one.',
+    'Committed to your immigration journey, focused on your future. Bardi Immigration Law provides experienced guidance and dedicated advocacy in removal defense, family-based immigration, waivers, humanitarian relief, and federal litigation.',
   alternates: {
     canonical: 'https://bardilaw.com/',
     languages: {
@@ -18,43 +18,40 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Bardi Immigration Law | Your Attorney from Day One',
+    title: 'Bardi Immigration Law | Committed to Your Immigration Journey',
     description:
-      'Boutique immigration law firm. Your first call is with the attorney, not an intake specialist. Direct attorney access from day one.',
+      'Committed to your immigration journey, focused on your future. Experienced guidance and dedicated advocacy from start to finish.',
     url: 'https://bardilaw.com/',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bardi Immigration Law, Your Attorney from Day One',
+        alt: 'Bardi Immigration Law — Committed to Your Immigration Journey',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bardi Immigration Law | Your Attorney from Day One',
+    title: 'Bardi Immigration Law | Committed to Your Immigration Journey',
     description:
-      'Boutique immigration law firm. Your first call is with the attorney, not an intake specialist. Direct attorney access from day one.',
+      'Committed to your immigration journey, focused on your future. Experienced guidance and dedicated advocacy from start to finish.',
     images: ['/og-image.png'],
   },
 };
 
 const SERVICES = [
   {
-    icon: '⚖️',
-    title: 'Benefits-Based Immigration',
-    desc: 'Green cards, citizenship, DACA, family petitions, U-visas, VAWA, and more. We help you build a clear path forward.',
-    href: '/services/benefits-based-immigration',
-  },
-  {
-    icon: '🛡️',
     title: 'Removal Defense',
     desc: 'Facing deportation? We fight for you, in and out of detention. Bond hearings, cancellation of removal, and full removal defense.',
     href: '/services/removal-defense',
   },
   {
-    icon: '🏛️',
+    title: 'Benefits-Based Immigration',
+    desc: 'Green cards, citizenship, DACA, family petitions, U-visas, VAWA, and more. We help you build a clear path forward.',
+    href: '/services/benefits-based-immigration',
+  },
+  {
     title: 'Federal Litigation',
     desc: 'When administrative options run out, we take your case to federal court. Habeas corpus and mandamus petitions.',
     href: '/services/federal-litigation',
@@ -63,41 +60,16 @@ const SERVICES = [
 
 const DIFFERENTIATORS = [
   {
-    label: 'Direct Attorney Access',
-    desc: 'You work with your attorney, not support staff, from your first consultation to your final outcome.',
+    label: 'Expert Guidance, Trusted Advocacy',
+    desc: 'Experienced representation in removal defense, family-based immigration, waivers, humanitarian relief, and federal litigation.',
   },
   {
-    label: 'Always Current',
-    desc: 'We stay on top of every policy shift, agency update, and legal change, so your strategy reflects the law as it stands today, not last year.',
+    label: 'Flexible Payment Plans',
+    desc: "We work with your specific needs and offer payment arrangements, so cost isn't a barrier to strong representation.",
   },
   {
-    label: 'Creative, Complex Representation',
-    desc: 'We take on difficult cases, the ones other firms decline. If there is a legal path forward, we will find it.',
-  },
-  {
-    label: "You're Family Here",
-    desc: 'We are personally invested in your outcome. Your success is ours.',
-  },
-];
-
-const ICP_BARS = [
-  {
-    q: 'Seeking legal status?',
-    cta: 'Green cards, petitions, DACA, U-visa & more. →',
-    href: '/services/benefits-based-immigration',
-    urgent: false,
-  },
-  {
-    q: 'Facing deportation or removal proceedings?',
-    cta: 'Immediate help available. →',
-    href: '/services/removal-defense',
-    urgent: true,
-  },
-  {
-    q: 'A young person without family support?',
-    cta: 'SIJS and humanitarian pathways available. →',
-    href: '/services/sijs',
-    urgent: false,
+    label: 'Serving the Atlanta Metro-Area and Beyond',
+    desc: 'Based in the Atlanta metro and representing clients across Georgia and Alabama, and in federal matters nationwide.',
   },
 ];
 
@@ -128,7 +100,7 @@ export default function HomePage() {
           <div className="relative max-w-site mx-auto px-5 lg:px-8 py-20 lg:py-32">
             <div className="text-center lg:text-left lg:max-w-[50%]">
               <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl font-bold text-navy leading-tight mb-6 text-balance">
-                Your Attorney from Day One.
+                Committed to Your Immigration Journey. Focused on Your Future.
               </h1>
               {/* Mobile-only headshot: stacks directly under the headline, centered (BAR-619) */}
               <div className="flex justify-center mb-8 lg:hidden">
@@ -141,38 +113,27 @@ export default function HomePage() {
                 />
               </div>
               <p className="text-lg text-charcoal/80 mb-8 max-w-prose mx-auto lg:mx-0">
-                When your future is on the line, you deserve a real lawyer in your corner from the
-                very first call, not an intake form, not a case manager. At Bardi Immigration Law,
-                you work directly with your attorney, from the first conversation to the final
-                decision.
+                Whether you are seeking to reunite your family, defend against removal, or pursue
+                humanitarian relief, Bardi Immigration Law provides experienced guidance and
+                dedicated advocacy from start to finish. We care about your future and are committed
+                to standing by your side throughout every stage of your immigration journey.
               </p>
-              <div className="flex flex-wrap gap-4 mb-8 justify-center lg:justify-start">
+              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <Button href="/contact" size="lg">Book a Consultation</Button>
                 <Button href="/services" variant="ghost" size="lg">See Our Services</Button>
-              </div>
-              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-navy border border-warmgray-300 rounded-full px-3 py-1">
-                  Direct Attorney Access
-                </span>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-navy border border-warmgray-300 rounded-full px-3 py-1">
-                  Boutique Practice
-                </span>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Trust intro */}
+        {/* Client testimonials (placeholder — content to be provided) */}
         <section className="bg-warmgray py-16">
           <div className="max-w-site mx-auto px-5 lg:px-8 text-center">
             <h2 className="font-serif text-3xl lg:text-4xl font-bold text-navy mb-6">
-              We Handle What Other Firms Turn Away.
+              Client Testimonials
             </h2>
-            <p className="text-lg text-charcoal/80 max-w-2xl mx-auto">
-              Immigration law isn&apos;t one-size-fits-all. Every family is different. Every case has
-              history. At Bardi Immigration Law, you speak with your attorney, not a case manager,
-              not an intake specialist, not a paralegal who forwards your questions. Your case gets
-              the personal attention it deserves, from the first call to the final decision.
+            <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+              Testimonials from the clients and families we&apos;ve stood beside are coming soon.
             </p>
           </div>
         </section>
@@ -190,7 +151,6 @@ export default function HomePage() {
                   key={s.href}
                   className="bg-warmgray rounded-lg p-6 flex flex-col gap-3 hover:shadow-md transition-shadow"
                 >
-                  <span className="text-2xl" aria-hidden="true">{s.icon}</span>
                   <h3 className="font-serif text-xl font-bold text-navy">{s.title}</h3>
                   <p className="text-charcoal/80 text-sm flex-1">{s.desc}</p>
                   <Link href={s.href} className="text-sm font-semibold text-gold hover:underline">
@@ -216,35 +176,12 @@ export default function HomePage() {
             </div>
             <div>
               <h2 className="font-serif text-3xl lg:text-4xl font-bold text-navy mb-2">Why Bardi Law?</h2>
-              <p className="font-serif text-xl text-charcoal/70 mb-6">Boutique. Personal. Attorney-first.</p>
+              <p className="font-serif text-xl text-charcoal/70 mb-6">Expert guidance. Trusted advocacy. By your side.</p>
               <p className="text-charcoal/80 mb-6">
-                When you call, you talk to an attorney, not an intake specialist. Your case gets the
-                focus and follow-through it deserves, and you always know exactly where it stands.
+                From your first conversation to your final outcome, we provide knowledgeable guidance
+                and dedicated advocacy, and you always know exactly where your case stands.
               </p>
               <Button href="/about" variant="ghost">Read About the Firm</Button>
-            </div>
-          </div>
-        </section>
-
-        {/* ICP callout bars */}
-        <section className="bg-white py-16">
-          <div className="max-w-site mx-auto px-5 lg:px-8">
-            <h2 className="font-serif text-3xl font-bold text-navy mb-8 text-center">Who We Help</h2>
-            <div className="flex flex-col gap-4 max-w-2xl mx-auto">
-              {ICP_BARS.map((bar) => (
-                <Link
-                  key={bar.q}
-                  href={bar.href}
-                  className={`block px-6 py-5 rounded-lg border-l-4 transition-shadow hover:shadow-md ${
-                    bar.urgent
-                      ? 'border-gold bg-gold/5'
-                      : 'border-navy/20 bg-warmgray'
-                  }`}
-                >
-                  <span className="font-serif text-lg font-semibold text-navy block mb-1">{bar.q}</span>
-                  <span className="text-sm text-gold font-semibold font-sans">{bar.cta}</span>
-                </Link>
-              ))}
             </div>
           </div>
         </section>
@@ -275,8 +212,8 @@ export default function HomePage() {
         {/* Differentiators */}
         <section className="bg-white py-16">
           <div className="max-w-site mx-auto px-5 lg:px-8 text-center">
-            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-navy mb-10">What Sets Us Apart</h2>
-            <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto text-left">
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-navy mb-10">Why Choose Bardi Law?</h2>
+            <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-left">
               {DIFFERENTIATORS.map((d) => (
                 <div key={d.label} className="flex gap-4">
                   <span className="mt-2 w-2 h-2 min-w-[8px] rounded-full bg-gold" aria-hidden="true" />
@@ -309,7 +246,7 @@ export default function HomePage() {
                 Eszter Bardi
               </p>
               <p className="font-sans text-base text-charcoal leading-[1.65] mt-3">
-                At Bardi Immigration Law, you work directly with your attorney, from consultation to outcome. No intake specialists. No case handoffs. Just real, boutique representation.
+                Eszter Bardi represents individuals and families in some of the most challenging areas of U.S. immigration law, with experienced guidance and dedicated advocacy at every stage of your case.
               </p>
               <a
                 href="/about"

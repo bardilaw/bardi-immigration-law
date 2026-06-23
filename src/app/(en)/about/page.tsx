@@ -21,9 +21,9 @@ const ATTORNEY_SCHEMA = {
 } as const;
 
 export const metadata: Metadata = {
-  title: 'About Bardi Immigration Law | Your Attorney from Day One',
+  title: 'About Bardi Immigration Law | Atlanta Immigration Attorney',
   description:
-    "Bardi Immigration Law is a boutique solo practice, creative, capable representation on complex cases, and personally committed to every client's outcome.",
+    'Eszter Bardi is an Atlanta-based immigration attorney with more than a decade of experience in removal defense, federal litigation, family-based immigration, waivers, humanitarian relief, and SIJS. Chair of the Georgia-Alabama AILA Chapter.',
   alternates: {
     canonical: 'https://bardilaw.com/about',
     languages: {
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'About Bardi Immigration Law | Your Attorney from Day One',
+    title: 'About Bardi Immigration Law | Atlanta Immigration Attorney',
     description:
-      'Boutique immigration practice. Direct attorney access on complex cases.',
+      'Experienced guidance and dedicated advocacy in complex immigration matters. Committed to your immigration journey, focused on your future.',
     url: 'https://bardilaw.com/about',
     images: [
       {
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Bardi Immigration Law | Your Attorney from Day One',
+    title: 'About Bardi Immigration Law | Atlanta Immigration Attorney',
     description:
-      'Boutique immigration practice. Direct attorney access on complex cases.',
+      'Experienced guidance and dedicated advocacy in complex immigration matters. Committed to your immigration journey, focused on your future.',
     images: ['/og-image.png'],
   },
 };
@@ -76,29 +76,8 @@ const CREDENTIALS = [
   },
 ];
 
-const PHILOSOPHY_ITEMS = [
-  'You speak with the attorney from day one.',
-  'No intake specialists. No handoffs.',
-  "You'll know the status of your case, always.",
-];
-
 function GoldRule() {
   return <div className="w-10 h-[3px] bg-gold mt-3 mb-10" aria-hidden="true" />;
-}
-
-function CheckIcon() {
-  return (
-    <svg
-      className="w-5 h-5 text-gold flex-shrink-0 mt-0.5"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={2}
-      aria-hidden="true"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-    </svg>
-  );
 }
 
 export default function AboutPage() {
@@ -113,10 +92,10 @@ export default function AboutPage() {
           <div className="max-w-site mx-auto px-5 lg:px-16 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <h1 className="font-serif text-4xl lg:text-[52px] font-bold text-navy leading-[1.15] mb-4">
-                Expert Counsel, Personal Attention.
+                Expert Guidance, Trusted Advocacy.
               </h1>
               <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[480px] mb-8">
-                Boutique immigration representation. Because immigration is federal law, we represent clients nationwide. You work with your attorney, from the first consultation to the final outcome.
+                Experienced representation in complex immigration matters. Because immigration is federal law, we represent clients nationwide, with experienced guidance and dedicated advocacy from your first consultation to your final outcome.
               </p>
               <Button href="/contact" size="lg">Schedule a Consultation</Button>
             </div>
@@ -133,36 +112,55 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 4.2 Biography */}
+        {/* 4.2 Our People — attorney biography */}
         <section className="bg-white py-16 lg:py-20 border-t border-warmgray-200">
           <div className="max-w-site mx-auto px-5 lg:px-20">
             <div className="max-w-[720px] mx-auto">
+              <h2 className="font-serif text-[28px] font-bold text-navy">Our People</h2>
+              <GoldRule />
               {/* Name block with gold left border */}
               <div className="pl-5 border-l-[3px] border-gold mb-8">
                 <p className="font-serif text-[28px] font-bold text-navy leading-snug">
                   Eszter Bardi
                 </p>
                 <p className="font-sans text-base italic text-charcoal mt-1">
-                  Immigration Attorney, Bardi Immigration Law
+                  Founder &amp; Immigration Attorney, Bardi Immigration Law
                 </p>
               </div>
               <div className="space-y-7">
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
-                  Bardi Immigration Law is a boutique immigration practice built on a simple promise:
-                  when you need help navigating the U.S. immigration system, you deserve to work
-                  directly with your attorney, not a case manager, not an intake specialist, not
-                  someone who will forward your questions.
+                  Eszter Bardi is the founder of Bardi Immigration Law and an Atlanta-based
+                  immigration attorney with more than a decade of legal experience. Her practice
+                  focuses on complex immigration matters, including removal defense, federal
+                  immigration litigation, family-based immigration, waivers, humanitarian relief, and
+                  Special Immigrant Juvenile Status (SIJS) cases.
                 </p>
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
-                  We handle benefits-based immigration, removal defense, and federal litigation when
-                  administrative options have been exhausted. Because immigration is federal
-                  law, we represent clients nationwide.
+                  Known for her strategic, client-centered approach, Eszter represents individuals
+                  and families navigating some of the most challenging areas of U.S. immigration law.
+                  She regularly appears before Immigration Courts across the nation, the Board of
+                  Immigration Appeals (BIA), the United States Citizenship and Immigration Service
+                  (&ldquo;USCIS&rdquo;), the Department of State (DOS), Immigration and Customs
+                  Enforcement, and before Federal Courts.
                 </p>
                 <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
-                  We stay current on every policy change, agency update, and legal shift that could
-                  affect your case, and we take on difficult cases, the ones other firms decline. If
-                  there is a legal path forward, we will find it. Attorney Bardi is also an active
-                  member of the American Immigration Lawyers Association (AILA).
+                  Eszter earned her Juris Doctor from Emory University School of Law and is fluent in
+                  Spanish and Hungarian, with proficiency in German. She believes that effective
+                  immigration advocacy requires both technical legal expertise and genuine human
+                  connection.
+                </p>
+                <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
+                  In addition to her legal practice, Eszter is a frequent speaker and educator on
+                  immigration law. She currently serves as Chair of the Georgia-Alabama Chapter of
+                  the American Immigration Lawyers Association (AILA), where she works to support
+                  immigration attorneys through mentorship, continuing legal education, and
+                  professional development programs.
+                </p>
+                <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
+                  Whether she is defending a client in immigration court, litigating in federal
+                  court, or helping a family navigate the immigration process, Eszter is committed to
+                  providing thoughtful guidance, strong advocacy, and personalized representation
+                  that recognizes both the legal and human dimensions of every case.
                 </p>
               </div>
             </div>
@@ -197,27 +195,23 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 4.4 Philosophy */}
+        {/* 4.4 Our Mission */}
         <section className="bg-white py-16 lg:py-20">
           <div className="max-w-site mx-auto px-5 lg:px-20">
-            <div className="max-w-[640px] mx-auto text-center">
-              <span
-                className="block font-serif text-[80px] text-gold leading-none mb-[-16px]"
-                aria-hidden="true"
-              >
-                &ldquo;
-              </span>
-              <blockquote className="font-serif text-2xl italic text-navy leading-[1.5]">
-                Creative, competent, and complex representation, with the personal investment of a boutique practice.
-              </blockquote>
-            </div>
-            <div className="mt-12 max-w-[560px] mx-auto">
-              {PHILOSOPHY_ITEMS.map((item) => (
-                <div key={item} className="flex items-start gap-3 mb-5">
-                  <CheckIcon />
-                  <p className="font-sans text-base text-charcoal">{item}</p>
-                </div>
-              ))}
+            <div className="max-w-[720px] mx-auto">
+              <h2 className="font-serif text-[28px] font-bold text-navy">Our Mission</h2>
+              <GoldRule />
+              <p className="font-serif text-2xl text-navy leading-[1.4] mb-8">
+                Committed to Your Immigration Journey. Focused on Your Future.
+              </p>
+              <p className="font-sans text-[17px] text-charcoal leading-[1.75]">
+                At Bardi Immigration Law, we are committed to standing with our clients through every
+                stage of the immigration process. Whether you are seeking to reunite with family,
+                defend against removal, or obtain humanitarian protection, we provide the
+                knowledgeable guidance and dedicated advocacy needed to navigate complex needs. We
+                take pride in our work because we understand what is at stake for the individuals and
+                families we represent. Your future matters.
+              </p>
             </div>
           </div>
         </section>

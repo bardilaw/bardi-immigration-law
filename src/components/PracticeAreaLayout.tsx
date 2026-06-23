@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Header } from './Header';
 import { Footer } from './Footer';
-import { CONTACT_PHONE } from '@/lib/contact';
+import { CONTACT_PHONE, phoneEnabled, telHref } from '@/lib/contact';
 import { Button } from './Button';
 import { FaqAccordion } from './FaqAccordion';
 import { JsonLd } from './JsonLd';
@@ -126,6 +126,10 @@ export function PracticeAreaLayout({
   servicesLabel = 'Services',
   contactHref = '/contact',
 }: PracticeAreaProps) {
+  // Locale is derived from homeHref (ES pages pass "/es") so the new tap-to-call
+  // and "Message Us" CTAs (BAR-697 row 22) localize without every page having to
+  // thread extra label props. Mirrors the EN/ES copy already used in the Header.
+  const isEs = homeHref === '/es' || homeHref.startsWith('/es/');
   // BreadcrumbList JSON-LD mirroring the visible nav: Home › Services › This page (BAR-701).
   const breadcrumb = breadcrumbSchema([
     { name: homeLabel, path: homeHref },
@@ -308,9 +312,28 @@ export function PracticeAreaLayout({
             {ctaSubtext && (
               <p className="font-sans text-base text-white/80 mt-3">{ctaSubtext}</p>
             )}
-            <div className="mt-8">
-              <Button href={contactHref} variant="primary" size="lg">
-                {ctaButtonLabel}
+            {/* BAR-697 row 22: a "Call Us Today to Get Started" primary CTA with a
+                "Message Us" secondary button below it. The phone CTA is a real
+                tap-to-call tel: link that auto-activates once the board sets
+                CONTACT_PHONE at launch (BAR-81); pre-launch it falls back to the
+                page's existing consultation button so nothing looks broken. */}
+            <div className="mt-8 flex flex-col items-center gap-4">
+              {phoneEnabled(CONTACT_PHONE) ? (
+                <Button href={telHref(CONTACT_PHONE)} variant="primary" size="lg">
+                  {isEs ? `Llámenos Hoy – ${CONTACT_PHONE}` : `Call Us Today – ${CONTACT_PHONE}`}
+                </Button>
+              ) : (
+                <Button href={contactHref} variant="primary" size="lg">
+                  {ctaButtonLabel}
+                </Button>
+              )}
+              <Button
+                href={contactHref}
+                variant="ghost"
+                size="md"
+                className="!border-white !text-white hover:!bg-white hover:!text-navy"
+              >
+                {isEs ? 'Envíenos un Mensaje' : 'Message Us'}
               </Button>
             </div>
           </div>

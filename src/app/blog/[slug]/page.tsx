@@ -37,11 +37,14 @@ import { H4EadPostContent } from '@/content/blog/en/h4-ead-work-authorization-h1
 import { ParoleInPlacePostContent } from '@/content/blog/en/parole-in-place-military-families-georgia';
 import { TnVisaUsmcaPostContent } from '@/content/blog/en/tn-visa-canadian-mexican-professionals-georgia';
 import { IceEnforcementRightsPostContent } from '@/content/blog/en/ice-enforcement-rights-georgia';
+import { RemoveConditionsI751PostContent } from '@/content/blog/en/remove-conditions-green-card-i-751-georgia';
+import { I601WaiverPostContent } from '@/content/blog/en/i-601-inadmissibility-waiver-extreme-hardship-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
   'ice-enforcement-rights-georgia': IceEnforcementRightsPostContent,
+  'remove-conditions-green-card-i-751-georgia': RemoveConditionsI751PostContent,
   'parole-in-place-military-families-georgia': ParoleInPlacePostContent,
   'tn-visa-canadian-mexican-professionals-georgia': TnVisaUsmcaPostContent,
   'h4-ead-work-authorization-h1b-spouses-georgia': H4EadPostContent,
@@ -50,6 +53,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'mandamus-lawsuit-uscis-delay-georgia': MandamusUscisDelayPostContent,
   'employment-authorization-ead-georgia': EadWorkPermitPostContent,
   'i-601a-provisional-unlawful-presence-waiver-georgia': I601AWaiverPostContent,
+  'i-601-inadmissibility-waiver-extreme-hardship-georgia': I601WaiverPostContent,
   'bia-appeal-immigration-court-georgia': BiaAppealPostContent,
   'special-immigrant-juvenile-status-georgia': SijsPostContent,
   'advance-parole-travel-documents-georgia': AdvanceParolePostContent,

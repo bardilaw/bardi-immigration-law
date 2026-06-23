@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'remove-conditions-green-card-i-751-georgia',
+    title: 'How to Remove Conditions on Your Green Card in Georgia: The I-751 Petition Guide',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains how conditional permanent residents remove the conditions on a 2-year marriage-based green card with Form I-751: who gets a conditional green card and why, the critical 90-day filing window before the 2-year anniversary and what happens if you miss it, how to file jointly when still married, the waiver options if you divorced or your spouse was abusive (good-faith marriage, battery/extreme cruelty, extreme hardship), the joint-filing evidence checklist (joint finances, lease/mortgage, insurance, children, photos, affidavits), processing times and receipt notices that extend your green card, when USCIS calls a case in for an I-751 interview, and how an attorney builds the evidence package. Georgia and Alabama.',
+  },
+  {
     slug: 'ice-enforcement-rights-georgia',
     title: 'ICE Encounter in Georgia: Know Your Rights and What to Do in the First 48 Hours',
     date: '2026-06-22',
@@ -68,6 +75,13 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-06-22',
     description:
       'A Georgia immigration attorney explains the Form I-601A provisional unlawful presence waiver for undocumented spouses of U.S. citizens and permanent residents: how the 3- and 10-year bars under INA 212(a)(9)(B) work, how the provisional waiver lets you apply before leaving the U.S. for consular processing, the "extreme hardship" standard and qualifying relatives, National Visa Center timing, and the Atlanta consular processing context. Georgia and Alabama.',
+  },
+  {
+    slug: 'i-601-inadmissibility-waiver-extreme-hardship-georgia',
+    title: 'I-601 Inadmissibility Waivers in Georgia: What Is Extreme Hardship and How to Prove It',
+    date: '2026-06-22',
+    description:
+      'A Georgia immigration attorney explains the Form I-601 waiver of inadmissibility for clients with criminal history, fraud or misrepresentation, prior removals, or health grounds: how it differs from the I-601A provisional waiver, the distinct 212(h) criminal, 212(i) fraud, and unlawful presence waivers and their different qualifying-relative rules, the Form I-212 permission to reapply after removal and the 212(a)(9)(C) permanent bar, the undefined "extreme hardship" standard and the evidence (medical, financial, psychological, country conditions, family ties) that proves it, processing and filing, and the AAO appeals path if denied. Georgia and Alabama.',
   },
   {
     slug: 'bia-appeal-immigration-court-georgia',

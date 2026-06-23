@@ -492,6 +492,16 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'El Estatus de Protección Temporal (TPS) está en transición en 2026. Una abogada de inmigración en Georgia explica qué protege el TPS, quién califica, los plazos de re-registro y qué hacer si la designación de su país termina.',
   },
+  'h4-ead-work-authorization-h1b-spouses-georgia': {
+    title: 'EAD H-4: Permiso de Trabajo para Cónyuges de Titulares de H-1B en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica el permiso de trabajo EAD H-4 para cónyuges de trabajadores H-1B: quién califica (principal H-1B con un I-140 aprobado o una extensión más allá del 6.º año bajo AC21), cómo presentar el Formulario I-539 y el Formulario I-765 bajo la categoría (c)(26) de forma concurrente con el I-129 del H-1B, los tiempos de procesamiento y los límites del procesamiento prioritario, el alivio de la extensión automática para renovaciones presentadas a tiempo, cómo mantener el estatus derivado H-4, la trampa de viaje/abandono del I-539 (y por qué el Consulado de la India en Houston cubre Georgia para servicios consulares indios — no estadounidenses) y el litigio en curso Save Jobs USA v. DHS. Para el corredor tecnológico de Alpharetta, Johns Creek y Cumming; Georgia y Alabama.',
+  },
+  'tn-visa-canadian-mexican-professionals-georgia': {
+    title: 'Visa TN en Georgia: Estatus USMCA para Profesionales de México y Canadá',
+    description:
+      'Una abogada de visas TN en Georgia explica el estatus TN de no inmigrante bajo el T-MEC (USMCA) para profesionales mexicanos y canadienses: quién califica, la lista de ocupaciones y los requisitos de credenciales, el proceso consular para mexicanos frente al proceso en el puerto de entrada para canadienses, la admisión de 3 años y las renovaciones indefinidas, el estatus TD para dependientes (estudiar sí, trabajar no), el límite de la intención de no inmigrante en el camino a la green card y las causas comunes de negación. Con licencia en Georgia y Alabama.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -535,4 +545,6 @@ export const ES_BLOG_SLUGS = new Set([
   'naturalization-citizenship-georgia',
   'notice-to-appear-georgia',
   'tps-2026',
+  'h4-ead-work-authorization-h1b-spouses-georgia',
+  'tn-visa-canadian-mexican-professionals-georgia',
 ]);

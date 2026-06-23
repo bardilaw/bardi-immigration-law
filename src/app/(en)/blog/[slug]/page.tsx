@@ -41,10 +41,12 @@ import { RemoveConditionsI751PostContent } from '@/content/blog/en/remove-condit
 import { I601WaiverPostContent } from '@/content/blog/en/i-601-inadmissibility-waiver-extreme-hardship-georgia';
 import { TravelBan2026PostContent } from '@/content/blog/en/travel-ban-2026-proclamation-10998-waiver';
 import { AffidavitOfSupportI864PostContent } from '@/content/blog/en/affidavit-of-support-i-864-income-requirements';
+import { K1ProcessingTimelinePostContent } from '@/content/blog/en/k1-fiance-visa-processing-timeline-2026';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'k1-fiance-visa-processing-timeline-2026': K1ProcessingTimelinePostContent,
   'affidavit-of-support-i-864-income-requirements': AffidavitOfSupportI864PostContent,
   'travel-ban-2026-proclamation-10998-waiver': TravelBan2026PostContent,
   'ice-enforcement-rights-georgia': IceEnforcementRightsPostContent,

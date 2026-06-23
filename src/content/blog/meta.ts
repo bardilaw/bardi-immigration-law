@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'k1-fiance-visa-processing-timeline-2026',
+    title: 'K-1 Fiancé Visa Processing Time in 2026: Timeline, Delays, and What to Do While You Wait',
+    date: '2026-06-23',
+    description:
+      'A Georgia immigration attorney breaks down the K-1 fiancé visa timeline in 2026: the four stages from Form I-129F through NVC, the embassy interview, and the green card; realistic processing-time ranges (about 12–18 months to U.S. entry); why cases stall (RFEs, 221(g) administrative processing, thin relationship evidence, medical gaps, embassy backlogs); how to track your case with USCIS Case Status, CEAC, and posted consular wait times; the firm 90-day marriage rule; and what Georgia and Alabama couples can do during the wait. A process-and-timeline companion to our marriage green card and K-1 eligibility guide.',
+  },
+  {
     slug: 'affidavit-of-support-i-864-income-requirements',
     title: 'Affidavit of Support (Form I-864) in Georgia: 2025 Income Requirements and Joint Sponsors',
     date: '2026-06-23',

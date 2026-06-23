@@ -352,6 +352,11 @@ export interface EsBlogMeta {
 }
 
 export const ES_BLOG_META: Record<string, EsBlogMeta> = {
+  'visa-bulletin-priority-dates-family-green-card': {
+    title: 'Cómo Leer el Boletín de Visas de USCIS: Fechas de Prioridad para las Familias de Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica el Boletín de Visas y las esperas de green card basadas en la familia: qué es una fecha de prioridad y dónde encontrarla, por qué los familiares inmediatos de ciudadanos están exentos, las categorías de preferencia familiar (F1, F2A, F2B, F3, F4) y los atrasos por país, la diferencia entre las Fechas de Acción Final (Gráfico A) y las Fechas para Presentar (Gráfico B), cómo decide USCIS cada mes qué gráfico aplica al ajuste de estatus, cómo avanzan y retroceden las fechas de corte durante el año fiscal y cómo suscribirse a las actualizaciones mensuales de travel.state.gov. Reglas nacionales con contexto de Georgia (ajuste de estatus frente a proceso consular); Georgia y Alabama.',
+  },
   'green-card-medical-exam-i-693-georgia': {
     title: 'Examen Médico para la Green Card en Georgia: Médicos Civiles, Formulario I-693 y Qué Llevar',
     description:
@@ -520,6 +525,7 @@ export function getEsPost(slug: string): BlogPost | undefined {
 // All other /es/blog/[slug] requests redirect to the EN version.
 // Keep in sync with CONTENT_MAP in src/app/es/blog/[slug]/page.tsx.
 export const ES_BLOG_SLUGS = new Set([
+  'visa-bulletin-priority-dates-family-green-card',
   'green-card-medical-exam-i-693-georgia',
   'family-green-card-attorney-georgia',
   'affidavit-of-support-i-864-income-requirements',

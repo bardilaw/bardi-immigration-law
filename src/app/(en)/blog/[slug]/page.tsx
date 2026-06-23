@@ -42,10 +42,12 @@ import { I601WaiverPostContent } from '@/content/blog/en/i-601-inadmissibility-w
 import { TravelBan2026PostContent } from '@/content/blog/en/travel-ban-2026-proclamation-10998-waiver';
 import { AffidavitOfSupportI864PostContent } from '@/content/blog/en/affidavit-of-support-i-864-income-requirements';
 import { K1ProcessingTimelinePostContent } from '@/content/blog/en/k1-fiance-visa-processing-timeline-2026';
+import { GreenCardMedicalExamI693PostContent } from '@/content/blog/en/green-card-medical-exam-i-693-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'green-card-medical-exam-i-693-georgia': GreenCardMedicalExamI693PostContent,
   'k1-fiance-visa-processing-timeline-2026': K1ProcessingTimelinePostContent,
   'affidavit-of-support-i-864-income-requirements': AffidavitOfSupportI864PostContent,
   'travel-ban-2026-proclamation-10998-waiver': TravelBan2026PostContent,

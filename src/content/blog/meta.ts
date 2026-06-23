@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'green-card-medical-exam-i-693-georgia',
+    title: 'Green Card Medical Exam in Georgia: Civil Surgeons, Form I-693, and What to Bring',
+    date: '2026-06-23',
+    description:
+      'A Georgia immigration attorney explains the USCIS immigration medical exam required for adjustment of status (Form I-485): what Form I-693 covers, why it must be done by a USCIS-designated civil surgeon (not your own doctor) and how to find one in the Atlanta area, the TB IGRA blood test and STI screening, CDC vaccination requirements, the late-2023 policy change that means an I-693 signed on or after November 1, 2023 no longer expires, what to bring to your appointment, the sealed-envelope rule, and how it differs from the panel-physician exam used in consular processing. Georgia and Alabama.',
+  },
+  {
     slug: 'k1-fiance-visa-processing-timeline-2026',
     title: 'K-1 Fiancé Visa Processing Time in 2026: Timeline, Delays, and What to Do While You Wait',
     date: '2026-06-23',

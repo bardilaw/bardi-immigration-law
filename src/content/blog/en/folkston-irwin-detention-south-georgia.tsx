@@ -139,10 +139,13 @@ export function FolkstonIrwinDetentionPostContent() {
         }}
       >
         <strong>2026 bond update:</strong> In May 2026, the{' '}
-        <Link href="/services/federal-litigation">11th U.S. Circuit Court of Appeals</Link> struck down the
-        federal government&apos;s mandatory no-bond policy for many detained immigrants, including long-term
-        residents with no criminal record. Bond hearings are currently available again. This is an evolving
-        legal situation, so confirm the latest status with an attorney.
+        <Link href="/services/federal-litigation">11th U.S. Circuit Court of Appeals</Link> (which covers
+        Georgia, Alabama, and Florida) ruled against the federal government&apos;s policy of denying bond
+        hearings to many detained immigrants. The court held that people who entered without inspection but were
+        arrested in the interior, rather than at the border, are entitled to a bond hearing before an
+        immigration judge. The government may seek further review, and the rules differ for people with certain
+        criminal histories or prior removal orders, so this is an evolving situation, confirm how it applies to
+        your relative with an attorney.
       </p>
       <p>
         Whichever facility holds your relative, they have the right to:
@@ -179,7 +182,8 @@ export function FolkstonIrwinDetentionPostContent() {
       </ul>
       <p>
         Free and low-cost help exists but is limited. <strong>El Refugio</strong>, a hospitality house that
-        supports detained immigrants and their families in South Georgia, can be reached at 404-480-4780.{' '}
+        supports detained immigrants and their families (centered on Stewart in Lumpkin, but a key South Georgia
+        detainee-support resource), can be reached at 404-480-4780.{' '}
         <strong>Georgia Asylum &amp; Immigration Network (GAIN)</strong> provides free representation in some
         cases at 678-335-6040 or <a href="https://georgiaasylum.org" target="_blank" rel="noopener noreferrer">georgiaasylum.org</a>.
       </p>

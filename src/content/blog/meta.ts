@@ -361,6 +361,11 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       '¿Un ser querido está detenido por ICE en Georgia? Una abogada de inmigración explica cómo funcionan las audiencias de fianza, quién califica, qué considera el juez y cómo prepararse. Con licencia en Georgia y Alabama.',
   },
+  'special-immigrant-juvenile-status-georgia': {
+    title: 'Estatus Especial de Inmigrante Juvenil (SIJS) en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica el Estatus Especial de Inmigrante Juvenil (SIJS) para menores abandonados, abusados o descuidados: el proceso en la corte estatal, el Formulario I-360 y el camino a la green card.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -382,4 +387,5 @@ export const ES_BLOG_SLUGS = new Set([
   'bia-appeal-immigration-court-georgia',
   'cancellation-of-removal-georgia',
   'immigration-bond-hearing-georgia',
+  'special-immigrant-juvenile-status-georgia',
 ]);

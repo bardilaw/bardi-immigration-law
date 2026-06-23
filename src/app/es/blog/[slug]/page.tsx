@@ -14,6 +14,7 @@ import { DeportationDefensePostContentEs } from '@/content/blog/es/deportation-d
 import { BiaAppealPostContentEs } from '@/content/blog/es/bia-appeal-immigration-court-georgia';
 import { CancellationOfRemovalPostContentEs } from '@/content/blog/es/cancellation-of-removal-georgia';
 import { ImmigrationBondHearingPostContentEs } from '@/content/blog/es/immigration-bond-hearing-georgia';
+import { SijsPostContentEs } from '@/content/blog/es/special-immigrant-juvenile-status-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -26,6 +27,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'bia-appeal-immigration-court-georgia': BiaAppealPostContentEs,
   'cancellation-of-removal-georgia': CancellationOfRemovalPostContentEs,
   'immigration-bond-hearing-georgia': ImmigrationBondHearingPostContentEs,
+  'special-immigrant-juvenile-status-georgia': SijsPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

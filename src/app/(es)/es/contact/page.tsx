@@ -58,7 +58,7 @@ export default function ContactPageES() {
 
   return (
     <>
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <main id="main-content">
         {/* Hero */}
         <section className="bg-white py-16">

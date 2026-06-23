@@ -11,7 +11,7 @@ import { CONTACT_PHONE } from '@/lib/contact';
 export default function NotFound() {
   return (
     <RootDocument lang="en">
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <main id="main-content">
         <section className="bg-white py-20 lg:py-28">
           <div className="max-w-site mx-auto px-5 lg:px-8 text-center">

@@ -70,7 +70,7 @@ const DIFFERENTIATORS = [
 export default function HomePageES() {
   return (
     <>
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <main id="main-content">
         {/* Hero: full-bleed portrait on the right, fading to white over the left copy (BAR-619) */}
         <section className="relative bg-white overflow-hidden">

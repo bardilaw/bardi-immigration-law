@@ -32,7 +32,7 @@ export default function FaqPageES() {
   return (
     <>
       <JsonLd data={FAQ_SCHEMA} />
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <main id="main-content">
         {/* Hero */}
         <section className="bg-white py-16 lg:py-20">

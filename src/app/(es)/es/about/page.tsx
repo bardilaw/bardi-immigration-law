@@ -61,7 +61,7 @@ function GoldRule() {
 export default function AboutPageES() {
   return (
     <>
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <main id="main-content">
 
         {/* 4.1 Hero */}

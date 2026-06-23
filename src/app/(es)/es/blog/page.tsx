@@ -31,7 +31,7 @@ function formatDate(dateStr: string) {
 export default function EsBlogIndexPage() {
   return (
     <>
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <main id="main-content">
         <section className="bg-warmgray pt-20 pb-14 lg:pt-28 lg:pb-16">
           <div className="max-w-site mx-auto px-5 lg:px-16">

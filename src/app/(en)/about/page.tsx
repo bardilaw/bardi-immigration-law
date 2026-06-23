@@ -84,7 +84,7 @@ export default function AboutPage() {
   return (
     <>
       <JsonLd data={ATTORNEY_SCHEMA as unknown as Record<string, unknown>} />
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <main id="main-content">
 
         {/* 4.1 Hero */}

@@ -42,6 +42,16 @@ export function Button({
   const cls = `${BASE} ${VARIANTS[variant]} ${SIZES[size]} ${className}`;
 
   if (href) {
+    // tel:/mailto:/external links render as a plain anchor — next/link is for
+    // internal route navigation and would try to prefetch these (BAR-697 row 16,
+    // the "Call Us Today" tap-to-call CTA).
+    if (/^(tel:|mailto:|https?:)/.test(href)) {
+      return (
+        <a href={href} className={cls}>
+          {children}
+        </a>
+      );
+    }
     return (
       <Link href={href} className={cls}>
         {children}

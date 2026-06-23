@@ -136,7 +136,7 @@ export function PracticeAreaLayout({
     <>
       <JsonLd data={breadcrumb} />
       {faqs.length > 0 && <JsonLd data={buildFaqSchema(faqs)} />}
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <main id="main-content">
 
         {/* Hero */}

@@ -149,7 +149,7 @@ export default function DacaPage() {
   return (
     <>
       <JsonLd data={[FAQ_SCHEMA, BREADCRUMB_SCHEMA]} />
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <main id="main-content">
 
         {/* 5.1 Hero */}

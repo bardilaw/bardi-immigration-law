@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <>
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <main id="main-content">
         <section className="bg-white py-16 lg:py-20">
           <div className="max-w-site mx-auto px-5 lg:px-8">

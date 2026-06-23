@@ -68,7 +68,7 @@ const TOP_LEVEL = [
 export default function ServicesPage() {
   return (
     <>
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <main id="main-content">
         {/* Page hero */}
         <section className="bg-white py-16 lg:py-20">

@@ -64,7 +64,7 @@ export default function BenefitsBasedPage() {
   return (
     <>
       <JsonLd data={BREADCRUMB_SCHEMA} />
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <main id="main-content">
         {/* Hero */}
         <section className="bg-warmgray pt-20 pb-14 lg:pt-28 lg:pb-16">

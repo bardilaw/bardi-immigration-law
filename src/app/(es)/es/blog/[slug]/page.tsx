@@ -118,7 +118,7 @@ export default async function EsBlogPostPage({ params }: Props) {
 
   return (
     <>
-      <Header />
+      <Header phone={CONTACT_PHONE} />
       <JsonLd data={[articleSchema, breadcrumb]} />
       <main id="main-content">
         <section className="bg-warmgray pt-20 pb-14 lg:pt-28 lg:pb-16">

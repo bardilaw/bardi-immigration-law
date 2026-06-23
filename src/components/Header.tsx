@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Logo } from './Logo';
 import { Button } from './Button';
+import { phoneEnabled, telHref } from '@/lib/contact';
 
 const SERVICES_EN = [
   { label: 'Benefits-Based Immigration', href: '/services/benefits-based-immigration' },
@@ -42,7 +43,7 @@ function getAlternatePath(pathname: string): { enPath: string; esPath: string } 
   return { enPath: pathname, esPath };
 }
 
-export function Header() {
+export function Header({ phone = '' }: { phone?: string }) {
   const pathname = usePathname();
   const isEs = pathname.startsWith('/es');
   const { enPath, esPath } = getAlternatePath(pathname);
@@ -166,8 +167,21 @@ export function Header() {
             </Link>
           </div>
 
-          <Button href={contactHref} size="sm">
-            {isEs ? 'Reserve una Consulta' : 'Book a Consultation'}
+          {/* Primary CTA — tap-to-call once CONTACT_PHONE is set (BAR-697 rows 15/16);
+              falls back to the consultation booking link pre-launch when no number exists. */}
+          {phoneEnabled(phone) ? (
+            <Button href={telHref(phone)} size="sm">
+              {isEs ? `Llámenos Hoy – ${phone}` : `Call Us Today – ${phone}`}
+            </Button>
+          ) : (
+            <Button href={contactHref} size="sm">
+              {isEs ? 'Reserve una Consulta' : 'Book a Consultation'}
+            </Button>
+          )}
+
+          {/* Secondary CTA — message us (BAR-697 row 8). */}
+          <Button href={contactHref} size="sm" variant="ghost">
+            {isEs ? 'Envíenos un Mensaje' : 'Send Us a Message'}
           </Button>
         </nav>
 
@@ -258,9 +272,18 @@ export function Header() {
             {isEs ? 'Contacto' : 'Contact'}
           </Link>
 
-          <div className="pt-2 border-t border-warmgray-200">
-            <Button href={contactHref} size="md" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
-              {isEs ? 'Reserve una Consulta' : 'Book a Consultation'}
+          <div className="pt-2 border-t border-warmgray-200 flex flex-col gap-3">
+            {phoneEnabled(phone) ? (
+              <Button href={telHref(phone)} size="md" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
+                {isEs ? `Llámenos Hoy – ${phone}` : `Call Us Today – ${phone}`}
+              </Button>
+            ) : (
+              <Button href={contactHref} size="md" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
+                {isEs ? 'Reserve una Consulta' : 'Book a Consultation'}
+              </Button>
+            )}
+            <Button href={contactHref} size="md" variant="ghost" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
+              {isEs ? 'Envíenos un Mensaje' : 'Send Us a Message'}
             </Button>
           </div>
         </div>

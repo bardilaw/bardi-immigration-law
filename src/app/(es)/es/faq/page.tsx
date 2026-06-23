@@ -5,7 +5,7 @@ import { CONTACT_PHONE } from '@/lib/contact';
 import { Button } from '@/components/Button';
 import { FaqAccordion } from '@/components/FaqAccordion';
 import { JsonLd } from '@/components/JsonLd';
-import { FAQ_CATEGORIES, FAQ_SCHEMA, FAQ_DISCLAIMER_ES } from '../../faq/faqData';
+import { FAQ_CATEGORIES, FAQ_SCHEMA, FAQ_DISCLAIMER_ES } from '@/app/(en)/faq/faqData';
 
 export const metadata: Metadata = {
   title: 'Preguntas Frecuentes | Abogada de Inmigración',

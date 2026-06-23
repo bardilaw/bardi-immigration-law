@@ -331,6 +331,11 @@ export interface EsBlogMeta {
 }
 
 export const ES_BLOG_META: Record<string, EsBlogMeta> = {
+  'family-green-card-attorney-georgia': {
+    title: 'Green Card por la Familia: Guía Completa para Inmigrantes en Georgia',
+    description:
+      'Una abogada de green card familiar en Georgia explica quién puede presentar una petición, el proceso del Formulario I-130, el ajuste de estatus frente al proceso consular y los errores que debe evitar. Con licencia en Georgia y Alabama.',
+  },
   'affidavit-of-support-i-864-income-requirements': {
     title: 'Declaración Jurada de Manutención (Formulario I-864) en Georgia: Requisitos de Ingresos 2025 y Copatrocinadores',
     description:
@@ -426,10 +431,30 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia explica el parole in place (libertad condicional en el país) para familias militares: el PIP militar tradicional con el Formulario I-131, el programa Keeping Families Together y el Formulario I-131F, por qué la corte lo anuló el 7 de noviembre de 2024 y el camino a la green card bajo la sección 245(a) de la INA. Con licencia en Georgia y Alabama.',
   },
+  'employment-authorization-ead-georgia': {
+    title: 'Permiso de Trabajo (EAD) y Formulario I-765 en Georgia: Autorización de Empleo para Casos de Inmigración Pendientes',
+    description:
+      'Una abogada de inmigración en Georgia explica el Documento de Autorización de Empleo (EAD) y el Formulario I-765: quién califica (ajuste I-485 pendiente, solicitantes de asilo, DACA, TPS, cónyuges H-4, acción diferida, circunstancias apremiantes), los códigos de categoría comunes (c)(9), (c)(8), (c)(14) y (c)(35), los tiempos de procesamiento y el procesamiento prioritario, la extensión automática de hasta 540 días para renovaciones presentadas a tiempo, qué hacer si su tarjeta se pierde o vence, y consejos sobre la Oficina de Campo de Atlanta y la presentación en lockbox. Con licencia en Georgia y Alabama.',
+  },
   'remove-conditions-green-card-i-751-georgia': {
     title: 'Cómo Eliminar las Condiciones de su Green Card en Georgia: La Petición I-751',
     description:
       'Una abogada de inmigración en Georgia explica cómo los residentes permanentes condicionales eliminan las condiciones de una green card de 2 años con el Formulario I-751: quién recibe una green card condicional, la ventana crítica de 90 días antes del segundo aniversario, cómo presentar la petición conjunta, las exenciones si se divorció o sufrió abuso, la lista de pruebas y la posible entrevista. Con licencia en Georgia y Alabama.',
+  },
+  'naturalization-citizenship-georgia': {
+    title: 'Naturalización en Georgia: Su Camino hacia la Ciudadanía Estadounidense',
+    description:
+      'Una abogada de naturalización en Georgia explica la elegibilidad para el Formulario N-400, la residencia continua y la presencia física, las reglas de 5 y 3 años, los exámenes de inglés y civismo, los tiempos, la Oficina Local de USCIS en Atlanta y los problemas comunes que retrasan la ciudadanía. Con licencia en Georgia y Alabama.',
+  },
+  'notice-to-appear-georgia': {
+    title: '¿Recibió una Notificación de Comparecencia (NTA)? Qué Hacer en Georgia',
+    description:
+      '¿Recibió una Notificación de Comparecencia (NTA) en Georgia? Una abogada de inmigración explica qué significa, sus plazos en la corte y sus opciones — y por qué los primeros 30 días son los más importantes. Llame hoy.',
+  },
+  'tps-2026': {
+    title: 'TPS en 2026: Lo Que Significa para los Inmigrantes de Georgia',
+    description:
+      'El Estatus de Protección Temporal (TPS) está en transición en 2026. Una abogada de inmigración en Georgia explica qué protege el TPS, quién califica, los plazos de re-registro y qué hacer si la designación de su país termina.',
   },
 };
 
@@ -444,6 +469,7 @@ export function getEsPost(slug: string): BlogPost | undefined {
 // All other /es/blog/[slug] requests redirect to the EN version.
 // Keep in sync with CONTENT_MAP in src/app/es/blog/[slug]/page.tsx.
 export const ES_BLOG_SLUGS = new Set([
+  'family-green-card-attorney-georgia',
   'affidavit-of-support-i-864-income-requirements',
   'ice-enforcement-rights-georgia',
   'daca-2026',
@@ -466,4 +492,8 @@ export const ES_BLOG_SLUGS = new Set([
   'travel-ban-2026-proclamation-10998-waiver',
   'parole-in-place-military-families-georgia',
   'remove-conditions-green-card-i-751-georgia',
+  'employment-authorization-ead-georgia',
+  'naturalization-citizenship-georgia',
+  'notice-to-appear-georgia',
+  'tps-2026',
 ]);

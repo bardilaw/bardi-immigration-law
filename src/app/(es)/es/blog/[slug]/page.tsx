@@ -28,6 +28,11 @@ import { AffidavitOfSupportI864PostContentEs } from '@/content/blog/es/affidavit
 import { ParoleInPlacePostContentEs } from '@/content/blog/es/parole-in-place-military-families-georgia';
 import { MandamusUscisDelayPostContentEs } from '@/content/blog/es/mandamus-lawsuit-uscis-delay-georgia';
 import { TravelBan2026PostContentEs } from '@/content/blog/es/travel-ban-2026-proclamation-10998-waiver';
+import { EadWorkPermitPostContentEs } from '@/content/blog/es/employment-authorization-ead-georgia';
+import { NaturalizationPostContentEs } from '@/content/blog/es/naturalization-citizenship-georgia';
+import { NoticeToAppearPostContentEs } from '@/content/blog/es/notice-to-appear-georgia';
+import { TpsPostContentEs } from '@/content/blog/es/tps-2026';
+import { FamilyGreenCardPostContentEs } from '@/content/blog/es/family-green-card-attorney-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -54,6 +59,11 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'remove-conditions-green-card-i-751-georgia': RemoveConditionsI751PostContentEs,
   'travel-ban-2026-proclamation-10998-waiver': TravelBan2026PostContentEs,
   'mandamus-lawsuit-uscis-delay-georgia': MandamusUscisDelayPostContentEs,
+  'employment-authorization-ead-georgia': EadWorkPermitPostContentEs,
+  'naturalization-citizenship-georgia': NaturalizationPostContentEs,
+  'notice-to-appear-georgia': NoticeToAppearPostContentEs,
+  'tps-2026': TpsPostContentEs,
+  'family-green-card-attorney-georgia': FamilyGreenCardPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

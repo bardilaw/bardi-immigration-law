@@ -9,20 +9,12 @@ type FormState = {
   lastName: string;
   email: string;
   phone: string;
-  caseType: string;
   description: string;
   preferredContact: string;
   _gotcha: string; // honeypot, rendered off-screen, must stay empty
 };
 
 type FieldError = Partial<Record<keyof FormState, string>>;
-
-const CASE_TYPES = [
-  'Benefits-Based Immigration',
-  'Removal Defense',
-  'Federal Litigation',
-  'Not Sure / Other',
-];
 
 function validate(f: FormState): FieldError {
   const errors: FieldError = {};
@@ -38,7 +30,9 @@ function validate(f: FormState): FieldError {
   } else if (f.phone.replace(/\D/g, '').length < 7) {
     errors.phone = 'Please enter a valid phone number.';
   }
-  if (!f.caseType) errors.caseType = 'Please select a case type.';
+  // BAR-697 row 17: the case-type dropdown is gone; the open-ended description is
+  // now the primary "what do you need" field and is required.
+  if (!f.description.trim()) errors.description = 'Please tell us briefly how we can help.';
   return errors;
 }
 
@@ -48,7 +42,6 @@ export function ContactForm() {
     lastName: '',
     email: '',
     phone: '',
-    caseType: '',
     description: '',
     preferredContact: 'either',
     _gotcha: '',
@@ -89,7 +82,6 @@ export function ContactForm() {
       if (res.ok) {
         setStatus('success');
         trackEvent('contact_form_submit', {
-          case_type: form.caseType,
           preferred_contact: form.preferredContact,
         });
       } else {
@@ -106,7 +98,7 @@ export function ContactForm() {
         <span className="text-3xl mb-4 block" aria-hidden="true">✓</span>
         <h3 className="font-serif text-2xl font-bold text-navy mb-2">Thank you.</h3>
         <p className="text-charcoal/80">
-          An attorney will be in touch within 24 hours.
+          Someone from our team will respond within 72 hours.
         </p>
         <p className="text-charcoal/60 text-sm mt-2">
           A confirmation has been sent to your email address.
@@ -228,44 +220,26 @@ export function ContactForm() {
         )}
       </div>
 
-      {/* Case Type */}
-      <div>
-        <label htmlFor="caseType" className="block text-sm font-semibold text-navy font-sans mb-1">
-          Case Type <span aria-hidden="true">*</span>
-        </label>
-        <select
-          id="caseType"
-          name="caseType"
-          required
-          value={form.caseType}
-          onChange={handleChange}
-          onBlur={handleBlur}
-          className={inputCls('caseType')}
-          aria-describedby={errors.caseType ? 'err-caseType' : undefined}
-        >
-          <option value="">Select a case type…</option>
-          {CASE_TYPES.map((t) => (
-            <option key={t} value={t}>{t}</option>
-          ))}
-        </select>
-        {errors.caseType && (
-          <p id="err-caseType" className="text-xs text-crimson mt-1">{errors.caseType}</p>
-        )}
-      </div>
-
-      {/* Description */}
+      {/* Describe your needs (BAR-697 row 17: replaces the case-type dropdown) */}
       <div>
         <label htmlFor="description" className="block text-sm font-semibold text-navy font-sans mb-1">
-          Brief description of your situation <span className="text-charcoal/50 font-normal">(optional)</span>
+          Describe your immigration needs or your question <span aria-hidden="true">*</span>
         </label>
         <textarea
           id="description"
           name="description"
-          rows={4}
+          rows={5}
+          required
           value={form.description}
           onChange={handleChange}
-          className="w-full border border-warmgray-300 bg-white rounded px-3 py-2 text-charcoal font-sans text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold resize-y"
+          onBlur={handleBlur}
+          placeholder="Tell us a little about your situation — for example, the kind of case you have, any deadlines or court dates, and what you'd like help with."
+          className={`${inputCls('description')} resize-y`}
+          aria-describedby={errors.description ? 'err-description' : undefined}
         />
+        {errors.description && (
+          <p id="err-description" className="text-xs text-crimson mt-1">{errors.description}</p>
+        )}
       </div>
 
       {/* Preferred contact */}
@@ -300,6 +274,9 @@ export function ContactForm() {
         >
           {status === 'submitting' ? 'Sending…' : 'Schedule My Consultation'}
         </Button>
+        <p className="text-sm text-charcoal/70 font-sans mt-2">
+          We respond to every message within <strong>72 hours</strong>.
+        </p>
       </div>
 
       {status === 'error' && (

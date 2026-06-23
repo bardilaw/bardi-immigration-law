@@ -9,20 +9,12 @@ type FormState = {
   lastName: string;
   email: string;
   phone: string;
-  caseType: string;
   description: string;
   preferredContact: string;
   _gotcha: string;
 };
 
 type FieldError = Partial<Record<keyof FormState, string>>;
-
-const CASE_TYPES_ES = [
-  'Inmigración por Beneficios',
-  'Defensa contra la Deportación',
-  'Litigios Federales',
-  'No estoy seguro/a / Otro',
-];
 
 function validate(f: FormState): FieldError {
   const errors: FieldError = {};
@@ -38,7 +30,9 @@ function validate(f: FormState): FieldError {
   } else if (f.phone.replace(/\D/g, '').length < 7) {
     errors.phone = 'Por favor ingrese un número de teléfono válido.';
   }
-  if (!f.caseType) errors.caseType = 'Por favor seleccione un tipo de caso.';
+  // BAR-697 fila 17: el menú de tipo de caso se eliminó; la descripción abierta
+  // es ahora el campo principal y es obligatoria.
+  if (!f.description.trim()) errors.description = 'Por favor cuéntenos brevemente cómo podemos ayudarle.';
   return errors;
 }
 
@@ -48,7 +42,6 @@ export function ContactFormES() {
     lastName: '',
     email: '',
     phone: '',
-    caseType: '',
     description: '',
     preferredContact: 'either',
     _gotcha: '',
@@ -89,7 +82,6 @@ export function ContactFormES() {
       if (res.ok) {
         setStatus('success');
         trackEvent('contact_form_submit', {
-          case_type: form.caseType,
           preferred_contact: form.preferredContact,
           locale: 'es',
         });
@@ -107,7 +99,7 @@ export function ContactFormES() {
         <span className="text-3xl mb-4 block" aria-hidden="true">✓</span>
         <h3 className="font-serif text-2xl font-bold text-navy mb-2">Gracias.</h3>
         <p className="text-charcoal/80">
-          Una abogada se comunicará con usted dentro de las próximas 24 horas.
+          Alguien de nuestro equipo le responderá dentro de las próximas 72 horas.
         </p>
         <p className="text-charcoal/60 text-sm mt-2">
           Se ha enviado una confirmación a su dirección de correo electrónico.
@@ -226,45 +218,26 @@ export function ContactFormES() {
         )}
       </div>
 
-      {/* Case Type */}
-      <div>
-        <label htmlFor="es-caseType" className="block text-sm font-semibold text-navy font-sans mb-1">
-          Tipo de Caso <span aria-hidden="true">*</span>
-        </label>
-        <select
-          id="es-caseType"
-          name="caseType"
-          required
-          value={form.caseType}
-          onChange={handleChange}
-          onBlur={handleBlur}
-          className={inputCls('caseType')}
-          aria-describedby={errors.caseType ? 'err-es-caseType' : undefined}
-        >
-          <option value="">Seleccione un tipo de caso…</option>
-          {CASE_TYPES_ES.map((t) => (
-            <option key={t} value={t}>{t}</option>
-          ))}
-        </select>
-        {errors.caseType && (
-          <p id="err-es-caseType" className="text-xs text-crimson mt-1">{errors.caseType}</p>
-        )}
-      </div>
-
-      {/* Description */}
+      {/* Describa sus necesidades (BAR-697 fila 17: reemplaza el menú de tipo de caso) */}
       <div>
         <label htmlFor="es-description" className="block text-sm font-semibold text-navy font-sans mb-1">
-          Descripción breve de su situación{' '}
-          <span className="text-charcoal/50 font-normal">(opcional)</span>
+          Describa sus necesidades migratorias o su pregunta <span aria-hidden="true">*</span>
         </label>
         <textarea
           id="es-description"
           name="description"
-          rows={4}
+          rows={5}
+          required
           value={form.description}
           onChange={handleChange}
-          className="w-full border border-warmgray-300 bg-white rounded px-3 py-2 text-charcoal font-sans text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold resize-y"
+          onBlur={handleBlur}
+          placeholder="Cuéntenos un poco sobre su situación — por ejemplo, el tipo de caso que tiene, cualquier fecha límite o cita en la corte, y en qué le gustaría que le ayudemos."
+          className={`${inputCls('description')} resize-y`}
+          aria-describedby={errors.description ? 'err-es-description' : undefined}
         />
+        {errors.description && (
+          <p id="err-es-description" className="text-xs text-crimson mt-1">{errors.description}</p>
+        )}
       </div>
 
       {/* Preferred contact */}
@@ -303,6 +276,9 @@ export function ContactFormES() {
         >
           {status === 'submitting' ? 'Enviando…' : 'Programar Mi Consulta'}
         </Button>
+        <p className="text-sm text-charcoal/70 font-sans mt-2">
+          Respondemos a cada mensaje dentro de <strong>72 horas</strong>.
+        </p>
       </div>
 
       {status === 'error' && (

@@ -104,9 +104,12 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: true }, { status: 200 });
     }
 
-    if (!firstName || !lastName || !email || !phone || !caseType) {
+    // BAR-697 row 17: the case-type dropdown was removed; the open-ended
+    // description is now the required "what do you need" field. caseType is kept
+    // optional in the payload for backward compatibility / future segmentation.
+    if (!firstName || !lastName || !email || !phone || !description?.trim()) {
       return NextResponse.json(
-        { error: 'Required fields missing: firstName, lastName, email, phone, caseType.' },
+        { error: 'Required fields missing: firstName, lastName, email, phone, description.' },
         { status: 400 },
       );
     }
@@ -129,7 +132,7 @@ export async function POST(request: Request) {
 
     const resend = new Resend(apiKey);
     const fullName = `${firstName} ${lastName}`;
-    const subject = `New consultation request, ${caseType}`;
+    const subject = caseType ? `New consultation request, ${caseType}` : 'New consultation request';
 
     const notificationText = [
       `New consultation request via bardiimmigrationlaw.com`,
@@ -137,7 +140,7 @@ export async function POST(request: Request) {
       `Name: ${fullName}`,
       `Email: ${email}`,
       `Phone: ${phone}`,
-      `Case type: ${caseType}`,
+      ...(caseType ? [`Case type: ${caseType}`] : []),
       `Preferred contact: ${preferredContact ?? 'not specified'}`,
       '',
       'Message:',
@@ -150,7 +153,7 @@ export async function POST(request: Request) {
   <tr><td style="color:#666;padding-right:16px">Name</td><td>${fullName}</td></tr>
   <tr><td style="color:#666;padding-right:16px">Email</td><td><a href="mailto:${email}">${email}</a></td></tr>
   <tr><td style="color:#666;padding-right:16px">Phone</td><td><a href="tel:${phone}">${phone}</a></td></tr>
-  <tr><td style="color:#666;padding-right:16px">Case type</td><td>${caseType}</td></tr>
+  ${caseType ? `<tr><td style="color:#666;padding-right:16px">Case type</td><td>${caseType}</td></tr>` : ''}
   <tr><td style="color:#666;padding-right:16px">Preferred contact</td><td>${preferredContact ?? 'not specified'}</td></tr>
 </table>
 ${description?.trim() ? `<p style="margin-top:16px"><strong>Message:</strong><br>${description.trim()}</p>` : ''}

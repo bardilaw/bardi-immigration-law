@@ -366,6 +366,21 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia explica el Estatus Especial de Inmigrante Juvenil (SIJS) para menores abandonados, abusados o descuidados: el proceso en la corte estatal, el Formulario I-360 y el camino a la green card.',
   },
+  'i-601a-provisional-unlawful-presence-waiver-georgia': {
+    title: 'Perdón Provisional I-601A por Presencia Ilegal en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica el perdón provisional I-601A: quién califica, cómo probar la dificultad extrema para un familiar ciudadano o residente, el proceso consular y las barras de 3 y 10 años.',
+  },
+  'marriage-based-green-card-k1-fiance-visa-georgia': {
+    title: 'Green Card por Matrimonio y Visa de Prometido(a) K-1 en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo obtener la green card por matrimonio y la visa K-1 de prometido(a): requisitos, ajuste de estatus frente a proceso consular, la entrevista y errores comunes. Con licencia en Georgia y Alabama.',
+  },
+  'advance-parole-travel-documents-georgia': {
+    title: 'Advance Parole y Permisos de Viaje para Inmigrantes en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica el advance parole (Formulario I-131): cómo viajar al extranjero sin abandonar su caso de green card o DACA, los riesgos de las barras de 3 y 10 años y los permisos de reingreso.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -388,4 +403,7 @@ export const ES_BLOG_SLUGS = new Set([
   'cancellation-of-removal-georgia',
   'immigration-bond-hearing-georgia',
   'special-immigrant-juvenile-status-georgia',
+  'i-601a-provisional-unlawful-presence-waiver-georgia',
+  'marriage-based-green-card-k1-fiance-visa-georgia',
+  'advance-parole-travel-documents-georgia',
 ]);

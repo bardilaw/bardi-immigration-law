@@ -15,6 +15,8 @@ import { BiaAppealPostContentEs } from '@/content/blog/es/bia-appeal-immigration
 import { CancellationOfRemovalPostContentEs } from '@/content/blog/es/cancellation-of-removal-georgia';
 import { ImmigrationBondHearingPostContentEs } from '@/content/blog/es/immigration-bond-hearing-georgia';
 import { SijsPostContentEs } from '@/content/blog/es/special-immigrant-juvenile-status-georgia';
+import { I601AWaiverPostContentEs } from '@/content/blog/es/i-601a-provisional-unlawful-presence-waiver-georgia';
+import { MarriageGreenCardK1PostContentEs } from '@/content/blog/es/marriage-based-green-card-k1-fiance-visa-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -28,6 +30,8 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'cancellation-of-removal-georgia': CancellationOfRemovalPostContentEs,
   'immigration-bond-hearing-georgia': ImmigrationBondHearingPostContentEs,
   'special-immigrant-juvenile-status-georgia': SijsPostContentEs,
+  'i-601a-provisional-unlawful-presence-waiver-georgia': I601AWaiverPostContentEs,
+  'marriage-based-green-card-k1-fiance-visa-georgia': MarriageGreenCardK1PostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

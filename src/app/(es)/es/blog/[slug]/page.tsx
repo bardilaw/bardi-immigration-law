@@ -23,7 +23,11 @@ import { IceEnforcementRightsPostContentEs } from '@/content/blog/es/ice-enforce
 import { MotionToReopenReconsiderPostContentEs } from '@/content/blog/es/motion-to-reopen-reconsider-immigration-georgia';
 import { StudentVisaF1OptPostContentEs } from '@/content/blog/es/student-visa-f1-opt-stem-georgia';
 import { TVisaTraffickingPostContentEs } from '@/content/blog/es/t-visa-trafficking-victims-georgia';
+import { RemoveConditionsI751PostContentEs } from '@/content/blog/es/remove-conditions-green-card-i-751-georgia';
 import { AffidavitOfSupportI864PostContentEs } from '@/content/blog/es/affidavit-of-support-i-864-income-requirements';
+import { ParoleInPlacePostContentEs } from '@/content/blog/es/parole-in-place-military-families-georgia';
+import { MandamusUscisDelayPostContentEs } from '@/content/blog/es/mandamus-lawsuit-uscis-delay-georgia';
+import { TravelBan2026PostContentEs } from '@/content/blog/es/travel-ban-2026-proclamation-10998-waiver';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -46,6 +50,10 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'student-visa-f1-opt-stem-georgia': StudentVisaF1OptPostContentEs,
   't-visa-trafficking-victims-georgia': TVisaTraffickingPostContentEs,
   'affidavit-of-support-i-864-income-requirements': AffidavitOfSupportI864PostContentEs,
+  'parole-in-place-military-families-georgia': ParoleInPlacePostContentEs,
+  'remove-conditions-green-card-i-751-georgia': RemoveConditionsI751PostContentEs,
+  'travel-ban-2026-proclamation-10998-waiver': TravelBan2026PostContentEs,
+  'mandamus-lawsuit-uscis-delay-georgia': MandamusUscisDelayPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

@@ -411,6 +411,26 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia explica el estatus F-1: cómo funcionan el I-20 y SEVIS, cómo el OPT y la extensión STEM OPT le permiten trabajar, la protección cap-gap mientras su H-1B está pendiente, los errores que sacan a los estudiantes de estatus y cómo recuperarlo. Para estudiantes internacionales en Georgia y Alabama.',
   },
+  'mandamus-lawsuit-uscis-delay-georgia': {
+    title: 'Demanda de Mandamus para Obligar a USCIS a Actuar en Casos Demorados en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica la orden judicial de mandamus y la demanda por demora bajo la APA usadas para obligar a USCIS a decidir un caso que ha demorado de manera irrazonable: la base legal (28 U.S.C. § 1361, 5 U.S.C. §§ 555(b) y 706(1)), los factores TRAC de demora irrazonable, cuándo una demora de 12 a 24+ meses en un I-485, N-400, I-130 o I-765 respalda una demanda, cómo se presentan y resuelven los casos en los Distritos Norte y Sur de Georgia, el plazo de respuesta del gobierno de 60 días, los costos y plazos típicos, y cuándo el mandamus no es el remedio adecuado. Georgia y Alabama.',
+  },
+  'travel-ban-2026-proclamation-10998-waiver': {
+    title: 'Prohibición de Viaje 2026 (Proclamación 10998): Países Afectados y Opciones de Exención',
+    description:
+      'Una abogada de inmigración en Georgia explica la Proclamación 10998 que entró en vigor el 1 de enero de 2026: los 39 países en suspensión total o parcial, quién está exento, las exenciones de familiar inmediato que se eliminaron, el proceso de excepción por interés nacional y qué hacer con un caso pendiente de I-130, I-485 o procesamiento consular. Para familias de Georgia y Alabama.',
+  },
+  'parole-in-place-military-families-georgia': {
+    title: 'Parole in Place (Libertad Condicional en el País) para Familias Militares en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica el parole in place (libertad condicional en el país) para familias militares: el PIP militar tradicional con el Formulario I-131, el programa Keeping Families Together y el Formulario I-131F, por qué la corte lo anuló el 7 de noviembre de 2024 y el camino a la green card bajo la sección 245(a) de la INA. Con licencia en Georgia y Alabama.',
+  },
+  'remove-conditions-green-card-i-751-georgia': {
+    title: 'Cómo Eliminar las Condiciones de su Green Card en Georgia: La Petición I-751',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo los residentes permanentes condicionales eliminan las condiciones de una green card de 2 años con el Formulario I-751: quién recibe una green card condicional, la ventana crítica de 90 días antes del segundo aniversario, cómo presentar la petición conjunta, las exenciones si se divorció o sufrió abuso, la lista de pruebas y la posible entrevista. Con licencia en Georgia y Alabama.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -442,4 +462,8 @@ export const ES_BLOG_SLUGS = new Set([
   'motion-to-reopen-reconsider-immigration-georgia',
   't-visa-trafficking-victims-georgia',
   'student-visa-f1-opt-stem-georgia',
+  'mandamus-lawsuit-uscis-delay-georgia',
+  'travel-ban-2026-proclamation-10998-waiver',
+  'parole-in-place-military-families-georgia',
+  'remove-conditions-green-card-i-751-georgia',
 ]);

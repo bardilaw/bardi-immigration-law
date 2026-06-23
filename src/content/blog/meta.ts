@@ -407,6 +407,16 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia explica el perdón provisional I-601A: quién califica, cómo probar la dificultad extrema para un familiar ciudadano o residente, el proceso consular y las barras de 3 y 10 años.',
   },
+  'i-601-inadmissibility-waiver-extreme-hardship-georgia': {
+    title: 'Perdones de Inadmisibilidad I-601 en Georgia: Qué Es la Dificultad Extrema y Cómo Probarla',
+    description:
+      'Una abogada de inmigración en Georgia explica el Formulario I-601, el perdón de inadmisibilidad, para clientes con antecedentes penales, fraude o tergiversación, deportaciones previas o motivos de salud: en qué se diferencia del perdón provisional I-601A, los distintos perdones 212(h) penal, 212(i) por fraude y por presencia ilegal y sus diferentes reglas de familiar que califica, el Formulario I-212 de permiso para volver a solicitar admisión y la barra permanente 212(a)(9)(C), el estándar de "dificultad extrema" que la ley no define y la evidencia (médica, financiera, psicológica, condiciones del país, lazos familiares) que lo prueba. Con licencia en Georgia y Alabama.',
+  },
+  'adjustment-of-status-green-card-georgia': {
+    title: 'Ajuste de Estatus (I-485): Cómo Obtener la Green Card dentro de EE. UU. — Guía de Georgia',
+    description:
+      'Una abogada de ajuste de estatus en Georgia explica el proceso del Formulario I-485: quién puede ajustar frente a procesar por vía consular, la presentación concurrente del I-130/I-485, las fechas de prioridad y el Boletín de Visas, los documentos I-864, el examen médico I-693 y el I-94, la autorización de trabajo (I-765), el viaje con Advance Parole, la entrevista en la Oficina de Campo de Atlanta y las causas comunes de un RFE. Con licencia en Georgia y Alabama.',
+  },
   'marriage-based-green-card-k1-fiance-visa-georgia': {
     title: 'Green Card por Matrimonio y Visa de Prometido(a) K-1 en Georgia',
     description:
@@ -508,6 +518,7 @@ export const ES_BLOG_SLUGS = new Set([
   'immigration-bond-hearing-georgia',
   'special-immigrant-juvenile-status-georgia',
   'i-601a-provisional-unlawful-presence-waiver-georgia',
+  'adjustment-of-status-green-card-georgia',
   'marriage-based-green-card-k1-fiance-visa-georgia',
   'k1-fiance-visa-processing-timeline-2026',
   'advance-parole-travel-documents-georgia',

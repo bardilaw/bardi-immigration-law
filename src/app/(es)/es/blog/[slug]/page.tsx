@@ -16,6 +16,7 @@ import { CancellationOfRemovalPostContentEs } from '@/content/blog/es/cancellati
 import { ImmigrationBondHearingPostContentEs } from '@/content/blog/es/immigration-bond-hearing-georgia';
 import { SijsPostContentEs } from '@/content/blog/es/special-immigrant-juvenile-status-georgia';
 import { I601AWaiverPostContentEs } from '@/content/blog/es/i-601a-provisional-unlawful-presence-waiver-georgia';
+import { AdjustmentOfStatusPostContentEs } from '@/content/blog/es/adjustment-of-status-green-card-georgia';
 import { MarriageGreenCardK1PostContentEs } from '@/content/blog/es/marriage-based-green-card-k1-fiance-visa-georgia';
 import { K1ProcessingTimelinePostContentEs } from '@/content/blog/es/k1-fiance-visa-processing-timeline-2026';
 import { AdvanceParolePostContentEs } from '@/content/blog/es/advance-parole-travel-documents-georgia';
@@ -48,6 +49,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'immigration-bond-hearing-georgia': ImmigrationBondHearingPostContentEs,
   'special-immigrant-juvenile-status-georgia': SijsPostContentEs,
   'i-601a-provisional-unlawful-presence-waiver-georgia': I601AWaiverPostContentEs,
+  'adjustment-of-status-green-card-georgia': AdjustmentOfStatusPostContentEs,
   'marriage-based-green-card-k1-fiance-visa-georgia': MarriageGreenCardK1PostContentEs,
   'k1-fiance-visa-processing-timeline-2026': K1ProcessingTimelinePostContentEs,
   'advance-parole-travel-documents-georgia': AdvanceParolePostContentEs,

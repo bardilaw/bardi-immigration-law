@@ -356,6 +356,11 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia explica la cancelación de remoción para no residentes (42B) y residentes permanentes (42A): requisitos, los 10 años de presencia, las dificultades excepcionales y cómo solicitarla ante la corte de inmigración.',
   },
+  'immigration-bond-hearing-georgia': {
+    title: 'Audiencia de Fianza de Inmigración en Georgia: Cómo Salir de la Detención de ICE',
+    description:
+      '¿Un ser querido está detenido por ICE en Georgia? Una abogada de inmigración explica cómo funcionan las audiencias de fianza, quién califica, qué considera el juez y cómo prepararse. Con licencia en Georgia y Alabama.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -376,4 +381,5 @@ export const ES_BLOG_SLUGS = new Set([
   'deportation-defense-removal-proceedings-georgia',
   'bia-appeal-immigration-court-georgia',
   'cancellation-of-removal-georgia',
+  'immigration-bond-hearing-georgia',
 ]);

@@ -11,6 +11,9 @@ import { UVisaVawaPostContent } from '@/content/blog/en/u-visa-vawa';
 import { DacaRenewal2025PostContentEs } from '@/content/blog/es/daca-renewal-2025-georgia';
 import { AsylumApplicationPostContentEs } from '@/content/blog/es/asylum-application-georgia';
 import { DeportationDefensePostContentEs } from '@/content/blog/es/deportation-defense-removal-proceedings-georgia';
+import { BiaAppealPostContentEs } from '@/content/blog/es/bia-appeal-immigration-court-georgia';
+import { CancellationOfRemovalPostContentEs } from '@/content/blog/es/cancellation-of-removal-georgia';
+import { ImmigrationBondHearingPostContentEs } from '@/content/blog/es/immigration-bond-hearing-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -20,6 +23,9 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'daca-renewal-2025-georgia': DacaRenewal2025PostContentEs,
   'asylum-application-georgia': AsylumApplicationPostContentEs,
   'deportation-defense-removal-proceedings-georgia': DeportationDefensePostContentEs,
+  'bia-appeal-immigration-court-georgia': BiaAppealPostContentEs,
+  'cancellation-of-removal-georgia': CancellationOfRemovalPostContentEs,
+  'immigration-bond-hearing-georgia': ImmigrationBondHearingPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

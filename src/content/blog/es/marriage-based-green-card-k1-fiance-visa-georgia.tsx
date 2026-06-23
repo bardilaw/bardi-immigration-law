@@ -84,8 +84,8 @@ export function MarriageGreenCardK1PostContentEs() {
         Presentar un I-130 en Georgia sigue las mismas reglas federales que en cualquier otro lugar, pero los tiempos de
         procesamiento locales y la programaci&oacute;n de entrevistas en la oficina local de USCIS en Atlanta afectan la
         rapidez con que avanza su caso. Para un desglose m&aacute;s completo de las peticiones familiares m&aacute;s
-        all&aacute; del matrimonio, consulte nuestra gu&iacute;a sobre el{' '}
-        <Link href="/blog/family-green-card-attorney-georgia">proceso de green card familiar en Georgia</Link>.
+        all&aacute; del matrimonio, conozca nuestros servicios de{' '}
+        <Link href="/es/services/family-based-immigration">inmigraci&oacute;n familiar en Georgia</Link>.
       </p>
 
       <h2>Dos formas de terminar: ajuste de estatus frente a proceso consular</h2>

@@ -139,6 +139,66 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
     ],
   },
+  {
+    // BAR-697 row 28 (Eszter feedback). Her supplied answers kept verbatim;
+    // unanswered items drafted in the firm's educational/non-advice voice for her review.
+    title: 'About the Firm',
+    titleEs: 'Sobre el Despacho',
+    items: [
+      {
+        q: 'Is there a set fee schedule?',
+        a: 'No. Every case is different, so rather than a fixed price list we provide a quote tailored to your specific situation. After your consultation you will know the cost for your matter before you decide to move forward.',
+      },
+      {
+        q: 'Can I pay in installments?',
+        a: 'Yes. We understand that immigration cases are a significant investment, and we offer flexible payment plans worked around your specific needs. We will discuss the options with you at your consultation.',
+      },
+      {
+        q: 'How much is a consultation?',
+        a: 'Your initial consultation is free. You can speak directly with an attorney about your situation at no cost — call us today to schedule.',
+      },
+      {
+        q: 'How will I communicate with my attorney?',
+        a: 'You work directly with your attorney, not an intake line. We keep you updated at each major step of your case and are reachable by phone and email for your questions. At your consultation we will explain the best way to reach us and what to expect along the way.',
+      },
+      {
+        q: 'Where can I check my case status?',
+        a: 'We keep you informed as your case moves forward, and you can always reach out to us for an update. You can also check directly with the government: USCIS case status at egov.uscis.gov, and your next immigration court hearing date through the EOIR Automated Case Information system at acis.eoir.justice.gov.',
+      },
+      {
+        q: 'How long will my case take?',
+        a: 'It varies. Immigration timelines depend on the type of case, the government agency involved, and current processing backlogs — some matters resolve in a few months, others take years. At your consultation we will give you a realistic timeline for your specific case.',
+      },
+    ],
+  },
+  {
+    // BAR-697 row 29 (Eszter feedback). Eszter supplied questions only;
+    // answers drafted in the firm's educational/non-advice voice for attorney review.
+    title: 'Common Immigration Questions',
+    titleEs: 'Preguntas Comunes de Inmigración',
+    items: [
+      {
+        q: 'What kind of documents do I need for my waiver case?',
+        a: 'It depends on which waiver you are filing, but most waiver cases rely on evidence of hardship to a qualifying U.S. citizen or permanent-resident relative — for example medical records, financial documents, country-condition evidence, and proof of close family ties. Each waiver has its own requirements, so we will give you a document checklist tailored to your case after reviewing your situation.',
+      },
+      {
+        q: 'Who qualifies for adjustment of status through marriage?',
+        a: 'Generally, the spouse of a U.S. citizen who entered the country lawfully and is otherwise admissible can apply to adjust status to a green card from inside the United States. Eligibility depends on how you entered, your immigration history, and proving the marriage is genuine. An attorney can confirm whether you qualify to adjust here or must process at a consulate abroad.',
+      },
+      {
+        q: 'What are helpful documents for an immigration bond case?',
+        a: 'Bond cases generally turn on showing strong community ties and that you are not a flight risk or a danger. Helpful evidence often includes proof of address, family relationships (especially U.S. citizen or permanent-resident relatives), employment and tax records, and letters of support from your community. The right mix depends on your situation, and we can help you assemble a strong bond packet.',
+      },
+      {
+        q: 'When is federal litigation needed?',
+        a: 'Federal litigation may be appropriate when USCIS unreasonably delays a decision (a mandamus lawsuit), when an application is wrongly denied, or when a legal or constitutional violation needs review in federal court. It is not the right tool for every situation, so we evaluate whether it fits before recommending it.',
+      },
+      {
+        q: 'How do I calculate whether my financial sponsor qualifies?',
+        a: 'A financial sponsor generally must show household income at or above 125% of the federal poverty guidelines for their household size — the standard published on USCIS Form I-864P. We will help you work through this calculation and review the financial documents needed to prove it. Call us today and we can walk you through whether your sponsor qualifies.',
+      },
+    ],
+  },
 ];
 
 /** Flat list of every Q&A, used to build the FAQPage JSON-LD. */

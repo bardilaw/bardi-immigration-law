@@ -20,6 +20,9 @@ import { MarriageGreenCardK1PostContentEs } from '@/content/blog/es/marriage-bas
 import { AdvanceParolePostContentEs } from '@/content/blog/es/advance-parole-travel-documents-georgia';
 import { CriminalRecordPostContentEs } from '@/content/blog/es/criminal-record-immigration-consequences-georgia';
 import { IceEnforcementRightsPostContentEs } from '@/content/blog/es/ice-enforcement-rights-georgia';
+import { MotionToReopenReconsiderPostContentEs } from '@/content/blog/es/motion-to-reopen-reconsider-immigration-georgia';
+import { StudentVisaF1OptPostContentEs } from '@/content/blog/es/student-visa-f1-opt-stem-georgia';
+import { TVisaTraffickingPostContentEs } from '@/content/blog/es/t-visa-trafficking-victims-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -38,6 +41,8 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'advance-parole-travel-documents-georgia': AdvanceParolePostContentEs,
   'criminal-record-immigration-consequences-georgia': CriminalRecordPostContentEs,
   'ice-enforcement-rights-georgia': IceEnforcementRightsPostContentEs,
+  'motion-to-reopen-reconsider-immigration-georgia': MotionToReopenReconsiderPostContentEs,
+  'student-visa-f1-opt-stem-georgia': StudentVisaF1OptPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

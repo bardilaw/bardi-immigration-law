@@ -391,6 +391,21 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia explica cómo las condenas penales afectan el estatus migratorio: delitos agravados, delitos de vileza moral, delitos de drogas y DUIs, el efecto sobre la green card, la ciudadanía y las visas, y qué hacer si lo acusan de un delito. Corte de inmigración de Atlanta.',
   },
+  'motion-to-reopen-reconsider-immigration-georgia': {
+    title: 'Moción para Reabrir o Reconsiderar un Caso de Inmigración en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica las mociones para reabrir y reconsiderar: la diferencia entre ambas, los plazos estrictos (USCIS 30 días, corte 90/30 días), por qué una moción no detiene la deportación y cómo se comparan con una apelación ante la BIA.',
+  },
+  't-visa-trafficking-victims-georgia': {
+    title: 'Visa T para Víctimas de Trata de Personas en Georgia: Protección Migratoria',
+    description:
+      'Una abogada de inmigración en Georgia explica la visa T (estatus T de no inmigrante) para sobrevivientes de trata de personas: en qué se diferencia de la visa U, quién califica, cómo funciona el Formulario I-914, las visas derivadas para la familia y el camino a la green card. Con licencia en Georgia y Alabama.',
+  },
+  'student-visa-f1-opt-stem-georgia': {
+    title: 'Visa de Estudiante, OPT y la Extensión STEM OPT en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica el estatus F-1: cómo funcionan el I-20 y SEVIS, cómo el OPT y la extensión STEM OPT le permiten trabajar, la protección cap-gap mientras su H-1B está pendiente, los errores que sacan a los estudiantes de estatus y cómo recuperarlo. Para estudiantes internacionales en Georgia y Alabama.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -418,4 +433,7 @@ export const ES_BLOG_SLUGS = new Set([
   'marriage-based-green-card-k1-fiance-visa-georgia',
   'advance-parole-travel-documents-georgia',
   'criminal-record-immigration-consequences-georgia',
+  'motion-to-reopen-reconsider-immigration-georgia',
+  't-visa-trafficking-victims-georgia',
+  'student-visa-f1-opt-stem-georgia',
 ]);

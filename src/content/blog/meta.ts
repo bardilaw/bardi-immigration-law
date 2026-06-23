@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'vawa-self-petition-domestic-violence-immigration-georgia',
+    title: 'VAWA Self-Petition for Immigrant Survivors of Domestic Violence in Georgia',
+    date: '2026-06-23',
+    description:
+      "A Georgia immigration attorney explains the VAWA self-petition (Form I-360) for immigrant survivors of domestic violence: who qualifies (abused spouses of U.S. citizens and green card holders, children, parents), what battery or extreme cruelty means under federal law, VAWA's strict confidentiality protections (USCIS cannot notify the abuser), the Form I-360 petition process and what evidence to gather, how it differs from the U-visa and the I-751 battery/cruelty waiver, the path to a green card as an immediate relative or F2A preference beneficiary, and Georgia-specific resources including the Georgia Coalition Against Domestic Violence and the Georgia Address Confidentiality Program. Georgia and Alabama.",
+  },
+  {
     slug: 'visa-bulletin-priority-dates-family-green-card',
     title: 'How to Read the USCIS Visa Bulletin: Priority Dates for Georgia Families',
     date: '2026-06-23',
@@ -250,6 +257,13 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-05-20',
     description:
       'DACA renewals continue in 2026, but litigation keeps the program\'s future uncertain. Georgia Dreamers: know your eligibility, rights, and options.',
+  },
+  {
+    slug: 'u-visa-crime-victims-immigration-georgia',
+    title: 'U-Visa for Immigrant Crime Victims in Georgia: Eligibility, the I-918 Petition, and the Path to a Green Card',
+    date: '2026-06-23',
+    description:
+      'A Georgia immigration attorney explains the U-visa (Form I-918) for immigrant crime victims: who qualifies under INA § 101(a)(15)(U), the full qualifying-crimes list, the mandatory law enforcement certification (Form I-918B), derivative visas for family members, the 4-year U-visa status, and the adjustment-of-status path to a green card after three years. Certifying agencies in Georgia include local police, the GBI, DA offices, and certain federal agencies. Distinct from the T-visa (trafficking, Form I-914) and VAWA (domestic violence self-petition). Georgia and Alabama.',
   },
   {
     slug: 'u-visa-vawa-crime-victims-georgia',

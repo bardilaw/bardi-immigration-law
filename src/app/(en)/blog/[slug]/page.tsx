@@ -10,6 +10,7 @@ import { DacaRenewal2025PostContent } from '@/content/blog/en/daca-renewal-2025-
 import { DacaRenewalPostContent } from '@/content/blog/en/daca-renewal-2026';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
 import { UVisaVawaPostContent } from '@/content/blog/en/u-visa-vawa';
+import { UVisaCrimeVictimsPostContent } from '@/content/blog/en/u-visa-crime-victims-immigration-georgia';
 import { StewartDetentionPostContent } from '@/content/blog/en/stewart-detention';
 import { TpsPostContent } from '@/content/blog/en/tps-2026';
 import { NoticeToAppearPostContent } from '@/content/blog/en/notice-to-appear-georgia';
@@ -44,10 +45,12 @@ import { AffidavitOfSupportI864PostContent } from '@/content/blog/en/affidavit-o
 import { K1ProcessingTimelinePostContent } from '@/content/blog/en/k1-fiance-visa-processing-timeline-2026';
 import { GreenCardMedicalExamI693PostContent } from '@/content/blog/en/green-card-medical-exam-i-693-georgia';
 import { VisaBulletinPriorityDatesPostContent } from '@/content/blog/en/visa-bulletin-priority-dates-family-green-card';
+import { VawaSelfPetitionPostContent } from '@/content/blog/en/vawa-self-petition-domestic-violence-immigration-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'vawa-self-petition-domestic-violence-immigration-georgia': VawaSelfPetitionPostContent,
   'visa-bulletin-priority-dates-family-green-card': VisaBulletinPriorityDatesPostContent,
   'green-card-medical-exam-i-693-georgia': GreenCardMedicalExamI693PostContent,
   'k1-fiance-visa-processing-timeline-2026': K1ProcessingTimelinePostContent,
@@ -82,6 +85,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'daca-renewal-2025-georgia': DacaRenewal2025PostContent,
   'daca-renewal-2026': DacaRenewalPostContent,
   'daca-2026': DacaPostContent,
+  'u-visa-crime-victims-immigration-georgia': UVisaCrimeVictimsPostContent,
   'u-visa-vawa-crime-victims-georgia': UVisaVawaPostContent,
   'stewart-detention-attorney': StewartDetentionPostContent,
   'tps-2026': TpsPostContent,

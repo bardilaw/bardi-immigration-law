@@ -17,6 +17,7 @@ import { ImmigrationBondHearingPostContentEs } from '@/content/blog/es/immigrati
 import { SijsPostContentEs } from '@/content/blog/es/special-immigrant-juvenile-status-georgia';
 import { I601AWaiverPostContentEs } from '@/content/blog/es/i-601a-provisional-unlawful-presence-waiver-georgia';
 import { MarriageGreenCardK1PostContentEs } from '@/content/blog/es/marriage-based-green-card-k1-fiance-visa-georgia';
+import { K1ProcessingTimelinePostContentEs } from '@/content/blog/es/k1-fiance-visa-processing-timeline-2026';
 import { AdvanceParolePostContentEs } from '@/content/blog/es/advance-parole-travel-documents-georgia';
 import { CriminalRecordPostContentEs } from '@/content/blog/es/criminal-record-immigration-consequences-georgia';
 import { IceEnforcementRightsPostContentEs } from '@/content/blog/es/ice-enforcement-rights-georgia';
@@ -48,6 +49,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'special-immigrant-juvenile-status-georgia': SijsPostContentEs,
   'i-601a-provisional-unlawful-presence-waiver-georgia': I601AWaiverPostContentEs,
   'marriage-based-green-card-k1-fiance-visa-georgia': MarriageGreenCardK1PostContentEs,
+  'k1-fiance-visa-processing-timeline-2026': K1ProcessingTimelinePostContentEs,
   'advance-parole-travel-documents-georgia': AdvanceParolePostContentEs,
   'criminal-record-immigration-consequences-georgia': CriminalRecordPostContentEs,
   'ice-enforcement-rights-georgia': IceEnforcementRightsPostContentEs,

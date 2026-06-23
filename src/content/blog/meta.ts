@@ -412,6 +412,11 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia explica cómo obtener la green card por matrimonio y la visa K-1 de prometido(a): requisitos, ajuste de estatus frente a proceso consular, la entrevista y errores comunes. Con licencia en Georgia y Alabama.',
   },
+  'k1-fiance-visa-processing-timeline-2026': {
+    title: 'Tiempo de Procesamiento de la Visa de Prometido(a) K-1 en 2026: Guía Etapa por Etapa',
+    description:
+      'Una abogada de inmigración en Georgia explica la línea de tiempo de la visa K-1 de prometido(a) en 2026, etapa por etapa: la revisión del Formulario I-129F por USCIS (5 a 8 meses), el Centro Nacional de Visas, la entrevista en la embajada y las esperas de citas, la regla firme de los 90 días para casarse y el ajuste de estatus posterior; por qué se demoran los casos (RFE, procesamiento administrativo 221(g), inadmisibilidad), cómo monitorear su caso y qué hacer durante la espera. Para parejas de Georgia y Alabama.',
+  },
   'advance-parole-travel-documents-georgia': {
     title: 'Advance Parole y Permisos de Viaje para Inmigrantes en Georgia',
     description:
@@ -504,6 +509,7 @@ export const ES_BLOG_SLUGS = new Set([
   'special-immigrant-juvenile-status-georgia',
   'i-601a-provisional-unlawful-presence-waiver-georgia',
   'marriage-based-green-card-k1-fiance-visa-georgia',
+  'k1-fiance-visa-processing-timeline-2026',
   'advance-parole-travel-documents-georgia',
   'criminal-record-immigration-consequences-georgia',
   'motion-to-reopen-reconsider-immigration-georgia',

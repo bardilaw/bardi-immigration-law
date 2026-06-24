@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'h1b-visa-sponsorship-cap-georgia',
+    title: 'H-1B Visa in Georgia: Sponsorship, the Cap and Lottery, RFEs, and Job-Loss Options',
+    date: '2026-06-23',
+    description:
+      'A Georgia employment immigration attorney explains the H-1B specialty-occupation visa for employers and foreign workers: what qualifies as a specialty occupation and the bachelor\'s-degree-in-the-specialty requirement, the 85,000 annual cap (65,000 regular plus the 20,000 U.S. master\'s exemption) and the electronic registration and beneficiary-centric lottery, cap-exempt employers like universities and affiliated nonprofits (Georgia Tech, Emory, the University System of Georgia), the Labor Condition Application and prevailing-wage obligation, why Requests for Evidence happen and how strong documentation prevents them, the up-to-six-year limit and AC21 extensions beyond six years, amended petitions after a material worksite change under Matter of Simeio, employer transfers, the 60-day grace period after a layoff (8 CFR 214.1(l)(2)) and portability under INA §214(n), bridging to an O-1 visa, and the H-1B-to-green-card path through EB-2/EB-3 and PERM with India/China backlogs. Includes the 2025–2026 layoff and enforcement climate. Serving Alpharetta and Midtown Atlanta tech employers and workers across Georgia and Alabama.',
+  },
+  {
     slug: 'perm-labor-certification-employer-sponsored-green-card-georgia',
     title: 'PERM Labor Certification in Georgia: Employer-Sponsored Green Cards Explained',
     date: '2026-06-23',

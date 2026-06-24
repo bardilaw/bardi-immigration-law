@@ -60,10 +60,12 @@ import { EmploymentBasedGreenCardEb123PostContent } from '@/content/blog/en/empl
 import { O1VisaExtraordinaryAbilityPostContent } from '@/content/blog/en/o1-visa-extraordinary-ability-georgia';
 import { WithholdingOfRemovalPostContent } from '@/content/blog/en/withholding-of-removal-immigration-court-georgia';
 import { PermLaborCertificationPostContent } from '@/content/blog/en/perm-labor-certification-employer-sponsored-green-card-georgia';
+import { H1bVisaSponsorshipCapPostContent } from '@/content/blog/en/h1b-visa-sponsorship-cap-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'h1b-visa-sponsorship-cap-georgia': H1bVisaSponsorshipCapPostContent,
   'perm-labor-certification-employer-sponsored-green-card-georgia': PermLaborCertificationPostContent,
   'withholding-of-removal-immigration-court-georgia': WithholdingOfRemovalPostContent,
   'o1-visa-extraordinary-ability-georgia': O1VisaExtraordinaryAbilityPostContent,

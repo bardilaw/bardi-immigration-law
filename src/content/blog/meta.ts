@@ -1,3 +1,5 @@
+import { ogImageFor } from './ogImages';
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -455,7 +457,7 @@ export function blogPostingSchema(post: BlogPost, locale: 'en' | 'es') {
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     headline: post.title,
     description: post.description,
-    image: `${SITE_URL}/og-image.png`,
+    image: `${SITE_URL}${ogImageFor(post.slug, locale)}`,
     datePublished: post.date,
     dateModified: post.date,
     inLanguage: locale === 'es' ? 'es-ES' : 'en-US',

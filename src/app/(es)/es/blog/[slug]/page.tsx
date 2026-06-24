@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
 import { JsonLd } from '@/components/JsonLd';
 import { BLOG_POSTS, getEsPost, ES_BLOG_SLUGS, blogPostingSchema, breadcrumbSchema } from '@/content/blog/meta';
+import { ogImageFor } from '@/content/blog/ogImages';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
 import { UVisaVawaPostContent } from '@/content/blog/en/u-visa-vawa';
 import { DacaRenewal2025PostContentEs } from '@/content/blog/es/daca-renewal-2025-georgia';
@@ -119,6 +120,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getEsPost(slug);
   if (!post) return {};
+  const ogImage = ogImageFor(slug, 'es');
   return {
     title: post.title,
     description: post.description,
@@ -129,6 +131,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         en: `https://bardilaw.com/blog/${slug}`,
         es: `https://bardilaw.com/es/blog/${slug}`,
       },
+    },
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      url: `https://bardilaw.com/es/blog/${slug}`,
+      type: 'article',
+      publishedTime: post.date,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      images: [ogImage],
     },
   };
 }

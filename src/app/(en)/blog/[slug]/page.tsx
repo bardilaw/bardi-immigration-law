@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
 import { JsonLd } from '@/components/JsonLd';
 import { BLOG_POSTS, getPost, ES_BLOG_SLUGS, blogPostingSchema, breadcrumbSchema } from '@/content/blog/meta';
+import { ogImageFor } from '@/content/blog/ogImages';
 import { DacaRenewal2025PostContent } from '@/content/blog/en/daca-renewal-2025-georgia';
 import { DacaRenewalPostContent } from '@/content/blog/en/daca-renewal-2026';
 import { DacaPostContent } from '@/content/blog/en/daca-2026';
@@ -142,6 +143,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return {};
+  const ogImage = ogImageFor(slug, 'en');
   return {
     title: post.title,
     description: post.description,
@@ -160,11 +162,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://bardilaw.com/blog/${slug}`,
       type: 'article',
       publishedTime: post.date,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
+      images: [ogImage],
     },
   };
 }

@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'uscis-atlanta-field-office-appointments-interviews-georgia',
+    title: 'Visiting the USCIS Atlanta Field Office: Biometrics, Interviews, and What to Expect',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney walks you through what to expect at the USCIS Atlanta Field Office at 2150 Parklake Drive NE, Atlanta, GA 30345 — from the biometrics appointment to the green card or naturalization interview. Explains where the office is and how to get there (parking, transit, and airport-style security screening), and the distinction most people miss: biometrics (fingerprints, photograph, and signature) are usually captured at a separate Application Support Center, while adjustment-of-status and naturalization interviews are held at the Field Office. Covers exactly what to bring to each — the I-797C appointment notice and a valid photo ID for biometrics; the notice, your green card, all current and expired passports, a state ID, and the originals of every document you filed for an interview — plus what happens in the room, including the English and civics tests at a naturalization interview and the relationship questions in a marriage-based green card case. Explains your right to bring a qualified interpreter and to be represented by an attorney, what to do if you miss an appointment (reschedule through the USCIS Contact Center, a myUSCIS account, or the Emma virtual assistant — the system that replaced in-person InfoPass), and how to check your case status using My Case Status online with your receipt number, a myUSCIS account, Emma, and the Contact Center at 1-800-375-5283. Closes with the most common interview mistakes to avoid. Serving immigrants across metro Atlanta and Georgia.',
+  },
+  {
     slug: 'h1b-cap-gap-opt-work-authorization-georgia',
     title: 'H-1B Cap-Gap in Georgia: How to Keep Working When OPT Expires Before October 1',
     date: '2026-06-24',

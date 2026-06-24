@@ -85,10 +85,12 @@ import { I90GreenCardRenewalPostContent } from '@/content/blog/en/i90-green-card
 import { HowToChooseImmigrationAttorneyPostContent } from '@/content/blog/en/how-to-choose-immigration-attorney-georgia';
 import { ExpeditedRemovalPostContent } from '@/content/blog/en/expedited-removal-georgia-what-it-is-rights-challenge';
 import { H1bCapGapPostContent } from '@/content/blog/en/h1b-cap-gap-opt-work-authorization-georgia';
+import { UscisAtlantaFieldOfficePostContent } from '@/content/blog/en/uscis-atlanta-field-office-appointments-interviews-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'uscis-atlanta-field-office-appointments-interviews-georgia': UscisAtlantaFieldOfficePostContent,
   'expedited-removal-georgia-what-it-is-rights-challenge': ExpeditedRemovalPostContent,
   'h1b-cap-gap-opt-work-authorization-georgia': H1bCapGapPostContent,
   'how-to-choose-immigration-attorney-georgia': HowToChooseImmigrationAttorneyPostContent,

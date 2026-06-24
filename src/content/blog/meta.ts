@@ -827,6 +827,41 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia explica la visa U (Formulario I-918) para víctimas inmigrantes de delitos: quién califica bajo la INA § 101(a)(15)(U), la lista completa de delitos que califican, la certificación obligatoria de las fuerzas del orden (Formulario I-918B), las visas derivadas para familiares, el estatus de visa U de 4 años y el camino del ajuste de estatus a la green card después de tres años. Las agencias certificadoras en Georgia incluyen la policía local, la GBI, las oficinas de fiscales de distrito y ciertas agencias federales. Distinta de la visa T (trata, Formulario I-914) y de VAWA (autopetición por violencia doméstica). Georgia y Alabama.',
   },
+  'unlawful-presence-3-year-10-year-bar-georgia': {
+    title: 'Las Barras de 3 y 10 Años por Presencia Ilegal en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo funciona la presencia ilegal bajo INA §212(a)(9)(B): la diferencia entre presencia ilegal y estatus ilegal, cuándo empieza y se detiene el reloj, por qué salir del país es lo que activa la barra de 3 o 10 años, quién está protegido y las exenciones I-601A e I-601. Información general, no asesoría legal.',
+  },
+  'visa-overstay-consequences-fix-status-georgia': {
+    title: 'Consecuencias de una Estancia Vencida y Cómo Arreglar su Estatus en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica qué hace realmente una estancia vencida de visa, la diferencia entre el sello de visa y el I-94, la presencia ilegal y las barras de 3 y 10 años, y las opciones reales para recuperar el estatus — ajuste bajo INA §245(a), procesamiento consular y los perdones I-601A e I-601. Información general, no asesoría legal.',
+  },
+  'eb1a-extraordinary-ability-green-card-self-petition-georgia': {
+    title: 'Green Card EB-1A de Habilidad Extraordinaria en Georgia: La Autopetición Más Poderosa',
+    description:
+      'Una abogada de inmigración en Georgia explica la green card EB-1A de habilidad extraordinaria: la autopetición sin empleador ni PERM, los diez criterios de 8 CFR 204.5(h)(3), el análisis de dos pasos de Kazarian, cómo se compara con la Exención por Interés Nacional EB-2 y por qué importa para los nacidos en India y China. Información general, no asesoría legal.',
+  },
+  'green-card-abandonment-travel-rules-reentry-permit-georgia': {
+    title: 'Reglas de Viaje con la Green Card en Georgia: Abandono de Residencia y Permiso de Reingreso',
+    description:
+      'Una abogada de inmigración en Georgia explica cuánto tiempo puede estar fuera del país con su green card, por qué la "regla de los seis meses" es un mito, el estándar de abandono de residencia bajo INA §101(a)(13)(C), el permiso de reingreso (Formulario I-131), la visa SB-1 de residente que regresa y cómo proteger su residencia permanente al viajar. Información general, no asesoría legal.',
+  },
+  'naturalization-denial-disqualifiers-n400-georgia': {
+    title: 'Por Qué se Niega la Naturalización en Georgia: Causas de Denegación del N-400',
+    description:
+      'Una abogada de inmigración en Georgia explica las razones más comunes por las que USCIS niega la naturalización: buen carácter moral, barras condicionales y permanentes, residencia continua y presencia física, el riesgo de que una entrevista del N-400 inicie un proceso de deportación, y sus opciones tras una denegación — la apelación N-336 y volver a presentar la solicitud. Información general, no asesoría legal.',
+  },
+  'diversity-visa-lottery-dv-application-georgia': {
+    title: 'Lotería de Visas de Diversidad en Georgia: Cómo Aplicar y Qué Pasa si Resulta Seleccionado',
+    description:
+      'Una abogada de inmigración en Georgia explica la Lotería de Visas de Diversidad bajo INA §203(c): quién califica, la cargabilidad alterna, cómo registrarse gratis en E-DV, por qué la selección no es una visa, el DS-260 y el Kentucky Consular Center, y la fecha límite del año fiscal del 30 de septiembre. Información general, no asesoría legal.',
+  },
+  'r1-religious-worker-visa-georgia': {
+    title: 'Visa de Trabajador Religioso R-1 en Georgia: Guía para Iglesias y Organizaciones de Fe',
+    description:
+      'Una abogada de inmigración en Georgia explica la visa R-1 de trabajador religioso: quién califica, el requisito 501(c)(3) y de membresía de dos años, el Formulario I-129, la inspección del sitio de USCIS, el límite de cinco años y el camino a la green card EB-4 mediante el Formulario I-360. Información general, no asesoría legal.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -840,6 +875,13 @@ export function getEsPost(slug: string): BlogPost | undefined {
 // All other /es/blog/[slug] requests redirect to the EN version.
 // Keep in sync with CONTENT_MAP in src/app/es/blog/[slug]/page.tsx.
 export const ES_BLOG_SLUGS = new Set([
+  'unlawful-presence-3-year-10-year-bar-georgia',
+  'visa-overstay-consequences-fix-status-georgia',
+  'eb1a-extraordinary-ability-green-card-self-petition-georgia',
+  'green-card-abandonment-travel-rules-reentry-permit-georgia',
+  'naturalization-denial-disqualifiers-n400-georgia',
+  'diversity-visa-lottery-dv-application-georgia',
+  'r1-religious-worker-visa-georgia',
   'h1b-visa-sponsorship-cap-georgia',
   'eb2-national-interest-waiver-self-petition-georgia',
   'administrative-closure-immigration-court-georgia',

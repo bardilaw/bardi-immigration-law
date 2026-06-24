@@ -56,6 +56,13 @@ import { Eb2NationalInterestWaiverPostContentEs } from '@/content/blog/es/eb2-na
 import { H1bVisaSponsorshipCapPostContentEs } from '@/content/blog/es/h1b-visa-sponsorship-cap-georgia';
 import { AdministrativeClosurePostContentEs } from '@/content/blog/es/administrative-closure-immigration-court-georgia';
 import { F2DependentVisaPostContentEs } from '@/content/blog/es/f2-dependent-visa-international-student-family-georgia';
+import { UnlawfulPresenceBarPostContentEs } from '@/content/blog/es/unlawful-presence-3-year-10-year-bar-georgia';
+import { VisaOverstayConsequencesPostContentEs } from '@/content/blog/es/visa-overstay-consequences-fix-status-georgia';
+import { Eb1aExtraordinaryAbilityPostContentEs } from '@/content/blog/es/eb1a-extraordinary-ability-green-card-self-petition-georgia';
+import { GreenCardAbandonmentTravelRulesPostContentEs } from '@/content/blog/es/green-card-abandonment-travel-rules-reentry-permit-georgia';
+import { NaturalizationDenialPostContentEs } from '@/content/blog/es/naturalization-denial-disqualifiers-n400-georgia';
+import { DiversityVisaLotteryPostContentEs } from '@/content/blog/es/diversity-visa-lottery-dv-application-georgia';
+import { R1ReligiousWorkerVisaPostContentEs } from '@/content/blog/es/r1-religious-worker-visa-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -109,6 +116,13 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'h1b-visa-sponsorship-cap-georgia': H1bVisaSponsorshipCapPostContentEs,
   'administrative-closure-immigration-court-georgia': AdministrativeClosurePostContentEs,
   'f2-dependent-visa-international-student-family-georgia': F2DependentVisaPostContentEs,
+  'unlawful-presence-3-year-10-year-bar-georgia': UnlawfulPresenceBarPostContentEs,
+  'visa-overstay-consequences-fix-status-georgia': VisaOverstayConsequencesPostContentEs,
+  'eb1a-extraordinary-ability-green-card-self-petition-georgia': Eb1aExtraordinaryAbilityPostContentEs,
+  'green-card-abandonment-travel-rules-reentry-permit-georgia': GreenCardAbandonmentTravelRulesPostContentEs,
+  'naturalization-denial-disqualifiers-n400-georgia': NaturalizationDenialPostContentEs,
+  'diversity-visa-lottery-dv-application-georgia': DiversityVisaLotteryPostContentEs,
+  'r1-religious-worker-visa-georgia': R1ReligiousWorkerVisaPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

@@ -3,6 +3,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
 import { I864pCalculator } from '@/components/I864pCalculator';
+import { VisaBulletinTable } from '@/components/VisaBulletinTable';
 import { CONTACT_PHONE, phoneEnabled, telHref } from '@/lib/contact';
 import { OFFICIAL_TOOLS } from '@/app/(en)/resources/resourcesData';
 
@@ -91,6 +92,24 @@ export default function ResourcesPageES() {
             <div className="max-w-3xl">
               <I864pCalculator lang="es" phone={CONTACT_PHONE} />
             </div>
+          </div>
+        </section>
+
+        {/* Boletín de Visas (fila 37) — actualizado mensualmente desde el DOS */}
+        <section id="visa-bulletin" className="bg-warmgray py-16 lg:py-20 scroll-mt-24">
+          <div className="max-w-site mx-auto px-5 lg:px-8">
+            <div className="max-w-2xl mb-8">
+              <h2 className="font-serif text-2xl font-bold text-navy mb-3">
+                Boletín de Visas &ndash; Fechas de Prioridad
+              </h2>
+              <p className="text-charcoal/80 leading-relaxed">
+                El Boletín de Visas mensual indica a los solicitantes de la tarjeta de residencia
+                (familiar y por empleo) si su fecha de prioridad está &ldquo;vigente&rdquo; y pueden
+                avanzar. Estas son las Fechas de Acción Final, importadas directamente del
+                Departamento de Estado de los EE.&nbsp;UU. y actualizadas cada mes.
+              </p>
+            </div>
+            <VisaBulletinTable lang="es" />
           </div>
         </section>
 

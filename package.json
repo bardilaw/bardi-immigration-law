@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "fetch:visa-bulletin": "node scripts/fetch-visa-bulletin.mjs",
+    "prebuild": "node scripts/fetch-visa-bulletin.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint src/",
-    "pages:build": "npx @cloudflare/next-on-pages",
+    "pages:build": "node scripts/fetch-visa-bulletin.mjs && npx @cloudflare/next-on-pages",
     "pages:deploy": "npx wrangler pages deploy .vercel/output/static --project-name bardi-immigration-law"
   },
   "dependencies": {

@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'eb2-national-interest-waiver-self-petition-georgia',
+    title: 'EB-2 National Interest Waiver in Georgia: Self-Petition for a Green Card Without an Employer',
+    date: '2026-06-24',
+    description:
+      'A Georgia employment immigration attorney explains the EB-2 National Interest Waiver (NIW) — the rare green card path that lets a qualified professional self-petition on Form I-140 with no employer sponsor, no job offer, and no PERM labor certification. Covers the EB-2 advanced-degree and exceptional-ability baseline, the waiver authority under INA §203(b)(2)(B), and the controlling Matter of Dhanasar three-prong test (substantial merit and national importance of the proposed endeavor; whether the applicant is well positioned to advance it; and whether, on balance, it benefits the U.S. to waive the job-offer and labor-certification requirements), including the January 2025 USCIS policy update favoring advanced STEM degrees and entrepreneurs. Explains who typically qualifies in Georgia — STEM researchers at Georgia Tech, Emory, UGA, and Georgia State; physicians serving rural healthcare deserts and shortage areas (and the separate Physician NIW); engineers; and founders — the strategic NIW-vs-PERM choice, how the NIW differs from EB-1A extraordinary ability and EB-1B outstanding researcher, the I-140 filing with premium processing, and priority-date retrogression for applicants born in India and China. Serving researchers, physicians, engineers, and entrepreneurs across Georgia and Alabama.',
+  },
+  {
     slug: 'h1b-visa-sponsorship-cap-georgia',
     title: 'H-1B Visa in Georgia: Sponsorship, the Cap and Lottery, RFEs, and Job-Loss Options',
     date: '2026-06-23',

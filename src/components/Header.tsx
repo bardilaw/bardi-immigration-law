@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Logo } from './Logo';
 import { Button } from './Button';
+import { SiteSearch } from './SiteSearch';
 import { phoneEnabled, telHref } from '@/lib/contact';
 
 const SERVICES_EN = [
@@ -210,6 +211,10 @@ export function Header({ phone = '' }: { phone?: string }) {
           <Link href={resourcesHref} className={navLink}>{isEs ? 'Recursos' : 'Resources'}</Link>
           <Link href={contactHref} className={navLink}>{isEs ? 'Contacto' : 'Contact'}</Link>
 
+          {/* Internal site search — magnifying glass in the header top line (BAR-801,
+              BAR-697 row 5) opens a bilingual overlay search (row 9). */}
+          <SiteSearch isEs={isEs} />
+
           {/* Language switcher — contextual flag + native-language invite (BAR-697 rows 3/4) */}
           <div className="ml-2 border border-warmgray-300 rounded-full px-3 py-1">
             <LanguageToggle isEs={isEs} enPath={enPath} esPath={esPath} />
@@ -255,9 +260,9 @@ export function Header({ phone = '' }: { phone?: string }) {
       {/* Mobile drawer */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-warmgray-200 px-5 pb-6 pt-4 flex flex-col gap-4">
-          {/* Language switcher — surfaced at top of drawer (BAR-704 m-1);
-              contextual flag + native-language invite (BAR-697 rows 3/4) */}
-          <div className="pb-3 border-b border-warmgray-200">
+          {/* Language switcher + site search — surfaced at top of drawer (BAR-704 m-1;
+              BAR-801 row 5). Tapping search closes the drawer via the overlay. */}
+          <div className="pb-3 border-b border-warmgray-200 flex items-center justify-between gap-4">
             <LanguageToggle
               isEs={isEs}
               enPath={enPath}
@@ -265,6 +270,7 @@ export function Header({ phone = '' }: { phone?: string }) {
               variant="mobile"
               onNavigate={() => setMenuOpen(false)}
             />
+            <SiteSearch isEs={isEs} variant="mobile" />
           </div>
           <Link href={homeHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
             {isEs ? 'Inicio' : 'Home'}

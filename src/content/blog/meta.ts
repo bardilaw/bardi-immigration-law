@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'stem-opt-extension-24-month-work-authorization-georgia',
+    title: 'STEM OPT Extension in Georgia: 24 Months of Work Authorization After Graduation',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains the 24-month STEM OPT extension for F-1 graduates — the benefit that adds two years on top of standard post-completion OPT for a total of three years of work authorization, designed for Georgia Tech, Emory, Kennesaw State, Georgia State, and UGA STEM graduates entering the Atlanta technology corridor. Covers eligibility (a degree in a DHS STEM-designated field by CIP code, current post-completion OPT status, a DSO recommendation in SEVIS, and an employer enrolled in E-Verify), and the filing mechanics that trip students up: file Form I-765 up to 90 days before your current OPT EAD expires and before it lapses, within 60 days of the DSO recommendation, and the automatic 180-day extension of work authorization that timely filing triggers while USCIS adjudicates. Explains the Form I-983 training plan that the student and employer complete together and submit to the DSO before the extension is recommended and before starting any new job, the ongoing reporting duties unique to STEM OPT (the every-6-month validation report, the 10-day rule for material changes, the 12-month and final self-evaluations, and the 150-day total unemployment cap), what happens if the employer loses E-Verify or the student changes jobs, and how cap-gap can bridge STEM OPT to an October 1 H-1B start. Serving F-1 STEM graduates and employers across Georgia.',
+  },
+  {
     slug: 'uscis-atlanta-field-office-appointments-interviews-georgia',
     title: 'Visiting the USCIS Atlanta Field Office: Biometrics, Interviews, and What to Expect',
     date: '2026-06-24',

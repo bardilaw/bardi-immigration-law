@@ -42,6 +42,15 @@ import { GreenCardMedicalExamI693PostContentEs } from '@/content/blog/es/green-c
 import { VisaBulletinPriorityDatesPostContentEs } from '@/content/blog/es/visa-bulletin-priority-dates-family-green-card';
 import { VawaSelfPetitionPostContentEs } from '@/content/blog/es/vawa-self-petition-domestic-violence-immigration-georgia';
 import { UVisaCrimeVictimsPostContentEs } from '@/content/blog/es/u-visa-crime-victims-immigration-georgia';
+import { WithholdingOfRemovalPostContentEs } from '@/content/blog/es/withholding-of-removal-immigration-court-georgia';
+import { O1VisaExtraordinaryAbilityPostContentEs } from '@/content/blog/es/o1-visa-extraordinary-ability-georgia';
+import { PermLaborCertificationPostContentEs } from '@/content/blog/es/perm-labor-certification-employer-sponsored-green-card-georgia';
+import { ConsularProcessingPostContentEs } from '@/content/blog/es/consular-processing-immigrant-visa-georgia';
+import { EmploymentBasedGreenCardEb123PostContentEs } from '@/content/blog/es/employment-based-green-card-eb1-eb2-eb3-georgia';
+import { AsylumOneYearBarPostContentEs } from '@/content/blog/es/asylum-one-year-bar-exceptions-georgia';
+import { CitizenshipByMarriage3YearRulePostContentEs } from '@/content/blog/es/citizenship-by-marriage-3-year-rule-georgia';
+import { Ir1Cr1SpouseVisaPostContentEs } from '@/content/blog/es/ir1-cr1-spouse-visa-married-couples-georgia';
+import { FederalImmigrationLitigationPostContentEs } from '@/content/blog/es/federal-immigration-litigation-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -82,6 +91,15 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'visa-bulletin-priority-dates-family-green-card': VisaBulletinPriorityDatesPostContentEs,
   'vawa-self-petition-domestic-violence-immigration-georgia': VawaSelfPetitionPostContentEs,
   'u-visa-crime-victims-immigration-georgia': UVisaCrimeVictimsPostContentEs,
+  'withholding-of-removal-immigration-court-georgia': WithholdingOfRemovalPostContentEs,
+  'o1-visa-extraordinary-ability-georgia': O1VisaExtraordinaryAbilityPostContentEs,
+  'perm-labor-certification-employer-sponsored-green-card-georgia': PermLaborCertificationPostContentEs,
+  'consular-processing-immigrant-visa-georgia': ConsularProcessingPostContentEs,
+  'employment-based-green-card-eb1-eb2-eb3-georgia': EmploymentBasedGreenCardEb123PostContentEs,
+  'asylum-one-year-bar-exceptions-georgia': AsylumOneYearBarPostContentEs,
+  'citizenship-by-marriage-3-year-rule-georgia': CitizenshipByMarriage3YearRulePostContentEs,
+  'ir1-cr1-spouse-visa-married-couples-georgia': Ir1Cr1SpouseVisaPostContentEs,
+  'federal-immigration-litigation-georgia': FederalImmigrationLitigationPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

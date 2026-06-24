@@ -471,6 +471,51 @@ export interface EsBlogMeta {
 }
 
 export const ES_BLOG_META: Record<string, EsBlogMeta> = {
+  'withholding-of-removal-immigration-court-georgia': {
+    title: 'Retención de Remoción en Georgia: Protección Cuando el Asilo No Es Posible',
+    description:
+      'Una abogada de inmigración en Georgia explica la retención de remoción bajo la INA §241(b)(3): en qué se diferencia del asilo (el estándar más alto de "más probable que no", sin camino a la green card, sin beneficios derivados para la familia, sin plazo de un año y una concesión obligatoria), cómo funciona la protección bajo la Convención contra la Tortura (CAT) como una tercera opción separada, quién debe solicitar la retención o CAT en lugar de o junto con el asilo, cómo es la vida con esta protección (permiso de trabajo pero sin green card ni documento de viaje, con una orden de deportación subyacente) y por qué es esencial un abogado. Cortes de inmigración de Atlanta y Stewart; Georgia y Alabama.',
+  },
+  'o1-visa-extraordinary-ability-georgia': {
+    title: 'Visa O-1 de Habilidad Extraordinaria en Georgia: Atletas, Artistas y Profesionales',
+    description:
+      'Una abogada de inmigración en Georgia explica la visa O-1 para personas de habilidad extraordinaria: la categoría O-1A para las ciencias, la educación, los negocios y el atletismo (el estándar de "aclamación nacional o internacional sostenida" y los ocho criterios de evidencia, de los cuales debe cumplir al menos tres) frente a la categoría O-1B para las artes (el estándar de "distinción") y el cine y la televisión, la opinión consultiva obligatoria, por qué no puede autopeticionarse y necesita un empleador o agente en EE. UU., las clasificaciones O-2 y O-3, el período inicial de hasta tres años con prórrogas y el camino a la green card EB-1A. Para la industria del cine y la TV de Georgia, fundadores tecnológicos de Atlanta, investigadores universitarios y atletas y artistas de élite. Georgia y Alabama.',
+  },
+  'perm-labor-certification-employer-sponsored-green-card-georgia': {
+    title: 'Certificación Laboral PERM en Georgia: Green Cards Patrocinadas por el Empleador (EB-2 y EB-3)',
+    description:
+      'Una abogada de inmigración por empleo en Georgia explica la certificación laboral PERM: el proceso del Departamento de Trabajo exigido para la mayoría de las green cards EB-2 y EB-3 patrocinadas por el empleador. Cubre qué es PERM y por qué existe para proteger a los trabajadores estadounidenses, la determinación del salario prevaleciente (ETA Formulario 9141), los pasos de reclutamiento obligatorios, el informe de reclutamiento y la regla de documentación de cinco años, la solicitud ETA Formulario 9089, los tiempos de procesamiento del DOL y el alto riesgo de auditorías, las causas comunes de negación y qué ocurre tras la certificación: el I-140, la fecha de prioridad y los atrasos de India y China, con referencias a las vías EB-1 y EB-2 NIW que evitan PERM. Para empleadores y trabajadores de tecnología, salud, manufactura y hostelería de Atlanta en Georgia y Alabama.',
+  },
+  'consular-processing-immigrant-visa-georgia': {
+    title: 'Proceso Consular en Georgia: Cómo Obtener la Visa de Inmigrante desde el Extranjero',
+    description:
+      'Una abogada de inmigración en Georgia explica el proceso consular paso a paso para familiares que están fuera de EE. UU.: en qué se diferencia del ajuste de estatus, el proceso desde la petición I-130 hasta la aprobación, el papel del Centro Nacional de Visas (NVC), el Formulario DS-260, la Declaración Jurada de Manutención (I-864), el examen médico del médico de panel, la entrevista consular y la admisión como residente permanente, la advertencia sobre las barras por presencia ilegal de la INA §212(a)(9)(B), la green card condicional de dos años y el I-751, y por qué es esencial un abogado. Con licencia en Georgia y Alabama.',
+  },
+  'employment-based-green-card-eb1-eb2-eb3-georgia': {
+    title: 'Green Cards por Empleo en Georgia: EB-1, EB-2 y EB-3 Explicadas',
+    description:
+      'Una abogada de inmigración por empleo en Georgia explica las tres categorías de green card por empleo: los trabajadores prioritarios EB-1 (EB-1A habilidad extraordinaria con autopetición, EB-1B profesores e investigadores destacados, EB-1C gerentes y ejecutivos multinacionales), ninguna de las cuales necesita PERM; los profesionales con título avanzado y habilidad excepcional EB-2, más la Exención por Interés Nacional (NIW) y su prueba de tres puntas de Matter of Dhanasar; y los trabajadores calificados, profesionales y no calificados EB-3. Cubre el proceso de certificación laboral PERM, las fechas de prioridad y la retrogresión del Boletín de Visas por país de nacimiento (graves atrasos de India y China en EB-2/EB-3) y el paso final del ajuste de estatus frente al proceso consular. Para trabajadores y empleadores de tecnología, salud, manufactura y universidades de Atlanta en Georgia y Alabama.',
+  },
+  'asylum-one-year-bar-exceptions-georgia': {
+    title: '¿Perdió el Plazo de Un Año para el Asilo en Georgia? Excepciones y Opciones',
+    description:
+      'Una abogada de inmigración en Georgia explica la barra de presentación de un año para el asilo bajo la INA §208(a)(2)(B) y qué hacer si la perdió: cuándo empieza el reloj (la última llegada, sin importar cómo entró), el estándar de prueba clara y convincente, la excepción de "circunstancias cambiadas" bajo la INA §208(a)(2)(D) y 8 CFR 208.4(a)(4), la excepción de "circunstancias extraordinarias" bajo 8 CFR 208.4(a)(5), el requisito de un plazo razonable, cómo plantear la excepción en la entrevista de asilo o en la corte, y las protecciones alternativas que no tienen plazo: la retención de remoción bajo la INA §241(b)(3) y la Convención contra la Tortura (CAT). Cortes de inmigración de Atlanta y Stewart; cada caso de presentación tardía requiere evaluación individual de un abogado. Georgia y Alabama.',
+  },
+  'citizenship-by-marriage-3-year-rule-georgia': {
+    title: 'Ciudadanía por Matrimonio en Georgia: La Regla de Naturalización de 3 Años para Cónyuges de Ciudadanos',
+    description:
+      'Una abogada de naturalización en Georgia explica la vía acelerada de tres años a la ciudadanía estadounidense para cónyuges de ciudadanos bajo la INA §319(a): los requisitos (tres años como residente permanente, vivir en unión matrimonial con el cónyuge ciudadano durante los tres años completos, residencia continua y 18 meses de presencia física), en qué se diferencia de la regla estándar de cinco años bajo la INA §316, cuándo empieza el reloj de tres años, cómo afectan la green card condicional de dos años y un I-751 pendiente, el proceso y la entrevista del N-400, los descalificadores comunes, la excepción §319(a) para cónyuges maltratados/VAWA, la vía acelerada §319(b) para cónyuges de ciudadanos destacados en el extranjero y la ceremonia de naturalización de Atlanta. Con licencia en Georgia y Alabama.',
+  },
+  'ir1-cr1-spouse-visa-married-couples-georgia': {
+    title: 'Visa de Cónyuge IR-1 y CR-1 en Georgia: Cómo Traer a su Cónyuge desde el Extranjero',
+    description:
+      'Una abogada de inmigración en Georgia explica la visa de inmigrante IR-1 y CR-1 para parejas casadas con un cónyuge en el extranjero: la visa de familiar inmediato IR-1 (casados dos años o más, green card completa de diez años) frente a la visa condicional CR-1 (casados menos de dos años, green card de dos años), en qué se diferencia de la visa de prometido(a) K-1 y del ajuste de estatus, el proceso completo desde la petición I-130 pasando por el Centro Nacional de Visas, el DS-260, la Declaración Jurada de Manutención (I-864) y la entrevista en la embajada, una línea de tiempo realista, la espera F2A para cónyuges de residentes y la green card condicional de dos años que los cónyuges CR-1 deben luego eliminar con el Formulario I-751. Contexto para las comunidades india, mexicana y de África Occidental del área metropolitana de Atlanta; Georgia y Alabama.',
+  },
+  'federal-immigration-litigation-georgia': {
+    title: 'Litigio Federal de Inmigración en Georgia: Cuándo Demandar al Gobierno',
+    description:
+      'Una abogada de inmigración en Georgia explica cuándo los inmigrantes pueden llevar a USCIS, ICE o DHS a la corte federal tras agotar los recursos administrativos: la diferencia entre la corte de inmigración y los tribunales federales del Artículo III, las cuatro herramientas principales (demandas de mandamus/APA por demora, la petición de revisión de una orden de remoción, el habeas corpus por detención ilegal y las impugnaciones APA/constitucionales), el plazo jurisdiccional de 30 días para acudir al Undécimo Circuito, la canalización de la revisión por la Ley REAL ID, dónde se ven los casos de Georgia y Alabama, los plazos y costos realistas, y por qué pocas firmas de Georgia litigan de verdad en la corte federal. Georgia y Alabama.',
+  },
   'visa-bulletin-priority-dates-family-green-card': {
     title: 'Cómo Leer el Boletín de Visas de USCIS: Fechas de Prioridad para las Familias de Georgia',
     description:
@@ -654,6 +699,15 @@ export function getEsPost(slug: string): BlogPost | undefined {
 // All other /es/blog/[slug] requests redirect to the EN version.
 // Keep in sync with CONTENT_MAP in src/app/es/blog/[slug]/page.tsx.
 export const ES_BLOG_SLUGS = new Set([
+  'withholding-of-removal-immigration-court-georgia',
+  'o1-visa-extraordinary-ability-georgia',
+  'perm-labor-certification-employer-sponsored-green-card-georgia',
+  'consular-processing-immigrant-visa-georgia',
+  'employment-based-green-card-eb1-eb2-eb3-georgia',
+  'asylum-one-year-bar-exceptions-georgia',
+  'citizenship-by-marriage-3-year-rule-georgia',
+  'ir1-cr1-spouse-visa-married-couples-georgia',
+  'federal-immigration-litigation-georgia',
   'visa-bulletin-priority-dates-family-green-card',
   'green-card-medical-exam-i-693-georgia',
   'family-green-card-attorney-georgia',

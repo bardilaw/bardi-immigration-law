@@ -9,6 +9,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'eb5-investor-visa-green-card-georgia',
+    title: 'EB-5 Investor Green Card in Georgia: A Path to Permanent Residence Through U.S. Investment',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains the EB-5 immigrant investor green card — the route to permanent residence for foreign nationals of any country who invest in a job-creating U.S. business, with no employer, no job offer, and no labor certification. Covers the two investment thresholds ($1,050,000 standard; $800,000 in a Targeted Employment Area — a rural area or high-unemployment area — or a qualifying infrastructure project) and how rural and south Georgia plus high-unemployment metro Atlanta census tracts qualify as TEAs, the requirement to create 10 full-time jobs for U.S. workers, the difference between direct investment (Form I-526, only direct jobs count, you actively manage your own business) and passive Regional Center investment (Form I-526E, indirect/induced jobs may count through an economic model), the EB-5 Reform and Integrity Act of 2022 and why the program is safer after the fraud cases (the EB-5 Integrity Fund, mandatory audits and site visits, background checks, fund-administration and disclosure rules, and the 20% rural / 10% high-unemployment / 2% infrastructure visa set-asides), the set-aside advantage that can dramatically shorten the wait for India- and China-born investors, the I-526E process, concurrent I-485 filing for applicants already in the U.S., consular processing versus adjustment of status, the two-year conditional green card and Form I-829 to remove conditions, the all-important lawful source-and-path-of-funds record, and how EB-5 compares to the E-2 treaty investor visa, the L-1/EB-1C multinational manager path, and the EB-2 National Interest Waiver. Serving investors and their families across Georgia and Alabama.',
+  },
+  {
+    slug: 'b2-tourist-visa-adjustment-status-green-card-georgia',
+    title: 'Can You Get a Green Card on a Tourist Visa? B-1/B-2 to Permanent Residence in Georgia',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney answers the most common question in family immigration: whether a B-1 or B-2 visitor can get a green card without leaving the country. Explains the core rule that adjustment of status under INA §245(a) turns on a lawful inspection and admission — not on which visa was used — so a tourist who was admitted can often adjust inside the U.S. if a qualifying petition is behind them (a U.S. citizen spouse or other immediate relative, an approved I-130 from an LPR with a current priority date, or an approved I-140 with a current date). Covers the "dual intent" trap (the B-1/B-2 is not a dual-intent visa, so entering with a hidden plan to immigrate risks a misrepresentation finding under INA §212(a)(6)(C)(i) or a preconceived-intent denial under §214(b)/§212(a)(7)(B), and why the 90-day timeline of the relationship is the most important fact), what a marriage-based adjustment actually looks like (I-130 + I-130A, concurrently filed I-485 with EAD and advance parole, biometrics, the Atlanta field-office interview, and conditional residence with later I-751), why the §245(c) overstay and unauthorized-work bars are forgiven for immediate relatives of U.S. citizens so no departure is required, the consular-processing departure trap and the I-601/I-601A waiver for those who cannot adjust, and the §245(i) April 30, 2001 grandfather clause. For visitors and their families across Georgia and Alabama.',
+  },
+  {
     slug: 'diversity-visa-lottery-dv-application-georgia',
     title: 'Diversity Visa Lottery in Georgia: Eligibility, How to Apply, and What to Do If You Win',
     date: '2026-06-24',

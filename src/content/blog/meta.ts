@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'notario-fraud-immigration-attorney-georgia',
+    title: 'Notario Fraud in Georgia: Why Unauthorized Immigration Help Destroys Cases',
+    date: '2026-06-24',
+    description:
+      'A licensed Georgia immigration attorney explains notario fraud: why a "notario público" in Latin America is a trained legal professional but a U.S. notary public is not a lawyer and cannot give immigration advice, who is actually allowed to represent you (licensed attorneys and DOJ/EOIR-accredited representatives only), how unauthorized "immigration consultants" destroy cases (wrong filings, baseless asylum claims, fraud findings, missed deadlines, and removal orders), the red flags of a notario scam, how to verify a real attorney through the State Bar of Georgia and the EOIR accredited-representative list, and what to do if a notario has already harmed your case — including motions to reopen and reporting fraud to USCIS, EOIR, and the Georgia Attorney General. Rampant in Gwinnett, Cobb, and DeKalb. Georgia and Alabama.',
+  },
+  {
     slug: 'voluntary-departure-immigration-court-georgia',
     title: 'Voluntary Departure in Immigration Court: When to Take It and When to Fight (Georgia)',
     date: '2026-06-23',

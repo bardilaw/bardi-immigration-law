@@ -52,10 +52,12 @@ import { FolkstonIrwinDetentionPostContent } from '@/content/blog/en/folkston-ir
 import { DacaToGreenCardPathwaysPostContent } from '@/content/blog/en/daca-to-green-card-pathways-georgia';
 import { AfterDeportationReentryBarsPostContent } from '@/content/blog/en/after-deportation-reentry-bars-waivers-georgia';
 import { VoluntaryDeparturePostContent } from '@/content/blog/en/voluntary-departure-immigration-court-georgia';
+import { NotarioFraudPostContent } from '@/content/blog/en/notario-fraud-immigration-attorney-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'notario-fraud-immigration-attorney-georgia': NotarioFraudPostContent,
   'voluntary-departure-immigration-court-georgia': VoluntaryDeparturePostContent,
   'after-deportation-reentry-bars-waivers-georgia': AfterDeportationReentryBarsPostContent,
   'daca-to-green-card-pathways-georgia': DacaToGreenCardPathwaysPostContent,

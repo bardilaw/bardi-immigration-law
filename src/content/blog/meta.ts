@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'voluntary-departure-immigration-court-georgia',
+    title: 'Voluntary Departure in Immigration Court: When to Take It and When to Fight (Georgia)',
+    date: '2026-06-23',
+    description:
+      'A Georgia deportation defense attorney explains voluntary departure under INA §240B: how it differs from a removal order and why it avoids the §212(a)(9)(A) reentry bar, the two forms (pre-conclusion §240B(a) up to 120 days vs. post-conclusion §240B(b) up to 60 days), the good-moral-character and one-year-presence requirements, the mandatory $500 voluntary-departure bond posted within 5 business days for a post-hearing grant, the harsh 10-year bar on cancellation, adjustment, and other relief if you miss the departure deadline, the unlawful-presence bars voluntary departure does not erase, and the strategic when-to-take-it / when-to-fight analysis. Atlanta and Stewart immigration courts; Georgia and Alabama.',
+  },
+  {
     slug: 'after-deportation-reentry-bars-waivers-georgia',
     title: 'After Deportation: Reentry Bars, I-212 Waivers, and Coming Back Legally (Georgia)',
     date: '2026-06-24',

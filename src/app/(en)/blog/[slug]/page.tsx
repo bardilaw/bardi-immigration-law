@@ -50,10 +50,14 @@ import { FederalImmigrationLitigationPostContent } from '@/content/blog/en/feder
 import { ReinstatementOfRemovalPostContent } from '@/content/blog/en/reinstatement-of-removal-prior-deportation-georgia';
 import { FolkstonIrwinDetentionPostContent } from '@/content/blog/en/folkston-irwin-detention-south-georgia';
 import { DacaToGreenCardPathwaysPostContent } from '@/content/blog/en/daca-to-green-card-pathways-georgia';
+import { AfterDeportationReentryBarsPostContent } from '@/content/blog/en/after-deportation-reentry-bars-waivers-georgia';
+import { VoluntaryDeparturePostContent } from '@/content/blog/en/voluntary-departure-immigration-court-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'voluntary-departure-immigration-court-georgia': VoluntaryDeparturePostContent,
+  'after-deportation-reentry-bars-waivers-georgia': AfterDeportationReentryBarsPostContent,
   'daca-to-green-card-pathways-georgia': DacaToGreenCardPathwaysPostContent,
   'folkston-irwin-detention-south-georgia': FolkstonIrwinDetentionPostContent,
   'reinstatement-of-removal-prior-deportation-georgia': ReinstatementOfRemovalPostContent,

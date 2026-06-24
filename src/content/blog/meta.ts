@@ -7,6 +7,27 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'e2-investor-visa-treaty-nationals-georgia',
+    title: 'E-2 Investor Visa in Georgia: Starting a Business on a Treaty Visa',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains the E-2 treaty investor visa for entrepreneurs starting, buying, or running a business in the U.S. Covers the treaty-country nationality requirement and which countries qualify (South Korea, Colombia, and Mexico are E-2 treaty countries; India and China are not), the "substantial investment" proportionality test (there is no fixed dollar minimum) and what counts as a qualifying investment (at risk and irrevocably committed, a real and active enterprise that is more than marginal, lawful source of funds, and the 50%-ownership/develop-and-direct requirement), how the E-2 compares to the EB-5 immigrant investor green card and the O-1 extraordinary-ability visa, work authorization for E-2 spouses incident to status since November 2021 (E-2S, no separate EAD needed) and the rule that E-2 children may study but not work, the up-to-two-year admissions and unlimited renewals, and the key limitation that the E-2 is a nonimmigrant visa with no direct path to a green card. Serving Korean, Colombian, and Mexican business owners and other treaty-country entrepreneurs across Georgia and Alabama.',
+  },
+  {
+    slug: 'l1-intracompany-transferee-visa-georgia',
+    title: 'L-1 Visa in Georgia: Transferring to Your Company’s Atlanta Office',
+    date: '2026-06-24',
+    description:
+      'A Georgia employment immigration attorney explains the L-1 intracompany transferee visa for multinational companies and the managers, executives, and specialists they relocate to Atlanta and across Georgia: the difference between L-1A (managers and executives, up to seven years) and L-1B (specialized knowledge, up to five years), the qualifying corporate relationship between the foreign and U.S. entity (parent, branch, subsidiary, or affiliate), the requirement of one continuous year of full-time qualifying employment abroad within the preceding three years, the new-office L-1 with its one-year initial approval and make-or-break extension, the blanket L petition for large multinationals filing through Form I-129S at a consulate, L-2 status for spouses and children with the L-2 spouse’s open work authorization incident to status (a real advantage over the H-4 EAD), and the L-1A-to-EB-1C green card path for executives that skips PERM labor certification. No cap and no lottery, and L-1 permits dual intent. For the Coca-Cola, Home Depot, Delta, NCR, and Global Payments corridor and the hundreds of international company offices across Georgia and Alabama.',
+  },
+  {
+    slug: 'nvc-consular-interview-immigrant-visa-process-georgia',
+    title: 'NVC and the Consular Interview: The Immigrant Visa Process Step by Step (Georgia)',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney walks through the National Visa Center (NVC) stage and consular interview that follow an approved I-130 or I-140 petition for a relative abroad: how a case reaches the NVC once a visa number is current, the Consular Electronic Application Center (CEAC) portal and case/invoice numbers, the two NVC fees (the Immigrant Visa Application fee per applicant and the Affidavit of Support fee per petitioner), filing the Affidavit of Support (Form I-864) with tax and income evidence and when a joint sponsor is needed, completing the sworn DS-260 immigrant-visa application, the civil-document checklist (passport, birth and marriage certificates, police certificates, certified translations), reaching "documentarily qualified" status and interview scheduling, the panel-physician medical exam and interview preparation, and the decision — including Section 221(g) refusals, administrative processing, and inadmissibility/waiver issues (the I-601A provisional unlawful-presence waiver). Complements the firm’s broader consular processing and family-green-card guides. For Georgia and Alabama petitioners sponsoring family abroad.',
+  },
+  {
     slug: 'f2-dependent-visa-international-student-family-georgia',
     title: 'F-2 Dependent Visa in Georgia: Rights and Restrictions for International Students’ Families',
     date: '2026-06-24',

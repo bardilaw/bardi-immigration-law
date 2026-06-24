@@ -64,10 +64,16 @@ import { H1bVisaSponsorshipCapPostContent } from '@/content/blog/en/h1b-visa-spo
 import { Eb2NationalInterestWaiverPostContent } from '@/content/blog/en/eb2-national-interest-waiver-self-petition-georgia';
 import { AdministrativeClosurePostContent } from '@/content/blog/en/administrative-closure-immigration-court-georgia';
 import { F2DependentVisaPostContent } from '@/content/blog/en/f2-dependent-visa-international-student-family-georgia';
+import { L1IntracompanyTransfereePostContent } from '@/content/blog/en/l1-intracompany-transferee-visa-georgia';
+import { E2InvestorVisaPostContent } from '@/content/blog/en/e2-investor-visa-treaty-nationals-georgia';
+import { NvcConsularInterviewPostContent } from '@/content/blog/en/nvc-consular-interview-immigrant-visa-process-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'nvc-consular-interview-immigrant-visa-process-georgia': NvcConsularInterviewPostContent,
+  'e2-investor-visa-treaty-nationals-georgia': E2InvestorVisaPostContent,
+  'l1-intracompany-transferee-visa-georgia': L1IntracompanyTransfereePostContent,
   'f2-dependent-visa-international-student-family-georgia': F2DependentVisaPostContent,
   'administrative-closure-immigration-court-georgia': AdministrativeClosurePostContent,
   'eb2-national-interest-waiver-self-petition-georgia': Eb2NationalInterestWaiverPostContent,

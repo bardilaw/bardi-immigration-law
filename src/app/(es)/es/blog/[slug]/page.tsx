@@ -51,6 +51,10 @@ import { AsylumOneYearBarPostContentEs } from '@/content/blog/es/asylum-one-year
 import { CitizenshipByMarriage3YearRulePostContentEs } from '@/content/blog/es/citizenship-by-marriage-3-year-rule-georgia';
 import { Ir1Cr1SpouseVisaPostContentEs } from '@/content/blog/es/ir1-cr1-spouse-visa-married-couples-georgia';
 import { FederalImmigrationLitigationPostContentEs } from '@/content/blog/es/federal-immigration-litigation-georgia';
+import { Eb2NationalInterestWaiverPostContentEs } from '@/content/blog/es/eb2-national-interest-waiver-self-petition-georgia';
+import { H1bVisaSponsorshipCapPostContentEs } from '@/content/blog/es/h1b-visa-sponsorship-cap-georgia';
+import { AdministrativeClosurePostContentEs } from '@/content/blog/es/administrative-closure-immigration-court-georgia';
+import { F2DependentVisaPostContentEs } from '@/content/blog/es/f2-dependent-visa-international-student-family-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -100,6 +104,10 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'citizenship-by-marriage-3-year-rule-georgia': CitizenshipByMarriage3YearRulePostContentEs,
   'ir1-cr1-spouse-visa-married-couples-georgia': Ir1Cr1SpouseVisaPostContentEs,
   'federal-immigration-litigation-georgia': FederalImmigrationLitigationPostContentEs,
+  'eb2-national-interest-waiver-self-petition-georgia': Eb2NationalInterestWaiverPostContentEs,
+  'h1b-visa-sponsorship-cap-georgia': H1bVisaSponsorshipCapPostContentEs,
+  'administrative-closure-immigration-court-georgia': AdministrativeClosurePostContentEs,
+  'f2-dependent-visa-international-student-family-georgia': F2DependentVisaPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

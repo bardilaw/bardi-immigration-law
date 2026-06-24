@@ -45,6 +45,7 @@ import { TravelBan2026PostContent } from '@/content/blog/en/travel-ban-2026-proc
 import { AffidavitOfSupportI864PostContent } from '@/content/blog/en/affidavit-of-support-i-864-income-requirements';
 import { K1ProcessingTimelinePostContent } from '@/content/blog/en/k1-fiance-visa-processing-timeline-2026';
 import { K1FianceVisaPostContent } from '@/content/blog/en/k1-fiance-visa-georgia';
+import { TemporaryProtectedStatusGeorgiaPostContent } from '@/content/blog/en/temporary-protected-status-tps-georgia';
 import { GreenCardMedicalExamI693PostContent } from '@/content/blog/en/green-card-medical-exam-i-693-georgia';
 import { VisaBulletinPriorityDatesPostContent } from '@/content/blog/en/visa-bulletin-priority-dates-family-green-card';
 import { VawaSelfPetitionPostContent } from '@/content/blog/en/vawa-self-petition-domestic-violence-immigration-georgia';
@@ -137,6 +138,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'green-card-medical-exam-i-693-georgia': GreenCardMedicalExamI693PostContent,
   'k1-fiance-visa-processing-timeline-2026': K1ProcessingTimelinePostContent,
   'k1-fiance-visa-georgia': K1FianceVisaPostContent,
+  'temporary-protected-status-tps-georgia': TemporaryProtectedStatusGeorgiaPostContent,
   'affidavit-of-support-i-864-income-requirements': AffidavitOfSupportI864PostContent,
   'travel-ban-2026-proclamation-10998-waiver': TravelBan2026PostContent,
   'ice-enforcement-rights-georgia': IceEnforcementRightsPostContent,

@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'temporary-protected-status-tps-georgia',
+    title: 'Temporary Protected Status (TPS) in Georgia: Eligibility, Registration, and Work Authorization',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains Temporary Protected Status (TPS) from the ground up: what TPS is under INA §244, the designated countries that matter most to Georgia’s communities (Venezuela, Honduras, El Salvador, Haiti, and Ukraine), and who qualifies — continuous physical presence and continuous residence since the country-specific dates, timely registration, and no disqualifying criminal record. Walks through exactly how to register with Form I-821 and apply for a work permit with Form I-765 (EAD), the re-registration windows and automatic EAD extensions you cannot afford to miss, and what TPS does NOT provide — it is not a green card and not a path to citizenship on its own. Covers the important adjustment-of-status edge case for TPS holders with a qualifying U.S.-citizen relative (Sanchez v. Mayorkas and INA §245), plus a hedged look at the 2023–2025 litigation (Ramos v. Nielsen/Mayorkas and National TPS Alliance v. Noem, including the 2025 Supreme Court stays affecting Venezuela). Serving TPS holders across metro Atlanta, Georgia, and Alabama.',
+  },
+  {
     slug: 'k1-fiance-visa-georgia',
     title: 'K-1 Fiancé Visa in Georgia: How to Bring Your Foreign-Born Fiancé to the United States',
     date: '2026-06-24',

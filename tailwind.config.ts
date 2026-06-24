@@ -33,18 +33,23 @@ const config: Config = {
           800: '#453410',
           900: '#241a06',
         },
+        // Section background token. BAR-697 row 1 / Option C: retuned from the old
+        // warm beige (#F5F4F0, which the client found "washed out") to a cool, modern
+        // off-white so alternating white/section bands read cleaner. Token name kept as
+        // `warmgray` to avoid churning every bg-warmgray usage. (Teal accent — the other
+        // half of Option C — is pending the client's gold-logo confirmation.)
         warmgray: {
-          DEFAULT: '#F5F4F0',
-          50: '#fafaf8',
-          100: '#F5F4F0',
-          200: '#e8e6df',
-          300: '#d4d1c7',
-          400: '#b8b4a8',
-          500: '#9c9789',
-          600: '#7e7a6c',
-          700: '#605c50',
-          800: '#433e35',
-          900: '#25211b',
+          DEFAULT: '#f1f5f9',
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b',
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a',
         },
         charcoal: '#2E2E2E',
         crimson: '#C0392B',

@@ -7,6 +7,27 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'perm-labor-certification-employer-sponsored-green-card-georgia',
+    title: 'PERM Labor Certification in Georgia: Employer-Sponsored Green Cards Explained',
+    date: '2026-06-23',
+    description:
+      'A Georgia employment immigration attorney explains PERM labor certification — the Department of Labor process required for most EB-2 and EB-3 employer-sponsored green cards. Covers what PERM (Program Electronic Review Management) is and why it exists to protect U.S. workers, the prevailing wage determination (ETA Form 9141 through the DOL FLAG system), the mandatory recruitment steps for professional positions (a 30-day state job order, two Sunday newspaper ads, a 10-business-day Notice of Filing, and three additional recruitment steps), the recruitment report and five-year documentation rule, the ETA Form 9089 application, DOL processing times and the high risk of audits and supervised recruitment, common denial reasons (recruitment defects, improperly rejecting U.S. applicants, unduly restrictive requirements, prevailing wage problems, and clerical errors on the 9089), and what happens after certification — the I-140 Immigrant Petition for Alien Worker, the priority date, and India/China backlogs. Explains why an attorney is critical for both employer and employee, with cross-references to EB-1 and EB-2 NIW paths that skip PERM. Serving Atlanta tech, healthcare, manufacturing, and hospitality employers and workers across Georgia and Alabama.',
+  },
+  {
+    slug: 'withholding-of-removal-immigration-court-georgia',
+    title: 'Withholding of Removal in Georgia: Staying in the U.S. When You Cannot Get Asylum',
+    date: '2026-06-23',
+    description:
+      'A Georgia immigration attorney explains withholding of removal under INA §241(b)(3) as an alternative to asylum: how it differs from asylum (the higher "more likely than not" clear-probability standard vs. asylum\'s well-founded fear, no green card path, no derivative family benefits, no one-year filing deadline, no per-country cap, and a mandatory rather than discretionary grant), how protection under the Convention Against Torture (CAT) works as a separate third option with no protected-ground requirement and a deferral form available even to people with serious criminal history, who should pursue withholding or CAT instead of or alongside asylum (those who missed the one-year asylum deadline or face a criminal bar to asylum), what life on withholding status looks like (work authorization but no green card, no travel document, and an underlying removal order), and why an attorney is essential to navigate all three protections. Atlanta and Stewart immigration courts; Georgia and Alabama.',
+  },
+  {
+    slug: 'o1-visa-extraordinary-ability-georgia',
+    title: 'O-1 Visa for Extraordinary Ability in Georgia: Athletes, Artists, and Professionals',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains the O-1 visa for individuals of extraordinary ability: the O-1A category for sciences, education, business, and athletics (the "sustained national or international acclaim" standard and the eight evidentiary criteria, of which you must satisfy at least three, plus the two-step "totality of the evidence" analysis USCIS applies) vs. the O-1B category for the arts (the "distinction" standard) and for extraordinary achievement in the motion picture and television industry, the required written advisory opinion/consultation from a peer or labor organization, why you cannot self-petition and must have a U.S. employer or agent (and how the agent option works for freelancers and film/TV crew), the O-2 essential support personnel and O-3 dependent classifications, the up-to-three-year initial period with one-year extensions and favorable treatment of immigrant intent, and the path to an EB-1A green card. Built for Georgia’s film and TV industry, Atlanta tech founders and engineers, university researchers, and elite athletes and artists. Georgia and Alabama.',
+  },
+  {
     slug: 'employment-based-green-card-eb1-eb2-eb3-georgia',
     title: 'Employment-Based Green Cards in Georgia: EB-1, EB-2, and EB-3 Explained',
     date: '2026-06-24',

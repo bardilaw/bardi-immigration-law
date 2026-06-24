@@ -57,10 +57,16 @@ import { Ir1Cr1SpouseVisaPostContent } from '@/content/blog/en/ir1-cr1-spouse-vi
 import { AsylumOneYearBarPostContent } from '@/content/blog/en/asylum-one-year-bar-exceptions-georgia';
 import { CitizenshipByMarriage3YearRulePostContent } from '@/content/blog/en/citizenship-by-marriage-3-year-rule-georgia';
 import { EmploymentBasedGreenCardEb123PostContent } from '@/content/blog/en/employment-based-green-card-eb1-eb2-eb3-georgia';
+import { O1VisaExtraordinaryAbilityPostContent } from '@/content/blog/en/o1-visa-extraordinary-ability-georgia';
+import { WithholdingOfRemovalPostContent } from '@/content/blog/en/withholding-of-removal-immigration-court-georgia';
+import { PermLaborCertificationPostContent } from '@/content/blog/en/perm-labor-certification-employer-sponsored-green-card-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'perm-labor-certification-employer-sponsored-green-card-georgia': PermLaborCertificationPostContent,
+  'withholding-of-removal-immigration-court-georgia': WithholdingOfRemovalPostContent,
+  'o1-visa-extraordinary-ability-georgia': O1VisaExtraordinaryAbilityPostContent,
   'employment-based-green-card-eb1-eb2-eb3-georgia': EmploymentBasedGreenCardEb123PostContent,
   'citizenship-by-marriage-3-year-rule-georgia': CitizenshipByMarriage3YearRulePostContent,
   'asylum-one-year-bar-exceptions-georgia': AsylumOneYearBarPostContent,

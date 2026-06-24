@@ -51,7 +51,12 @@ export function AdjustmentOfStatusPostContent() {
         other side, too: <strong>immediate relatives of U.S. citizens</strong> (spouses, unmarried children under 21, and
         parents) can generally still adjust even if they overstayed a visa or worked without authorization, as long as
         they entered lawfully. These distinctions are technical, and getting them wrong is one of the costliest mistakes
-        in immigration. This is precisely the analysis an attorney runs <em>before</em> anyone files.
+        in immigration. This is precisely the analysis an attorney runs <em>before</em> anyone files. People who entered
+        on a visitor visa sometimes ask whether they can adjust after marrying a U.S. citizen &mdash; our guide to{' '}
+        <Link href="/blog/b2-tourist-visa-adjustment-status-green-card-georgia">
+          adjusting status after a B-2 tourist visa
+        </Link>{' '}
+        walks through that scenario and the dual-intent rules that come with it.
       </p>
       <p>
         If you cannot adjust status from inside the U.S. &mdash; or you live abroad &mdash; the green card is finished at
@@ -77,7 +82,19 @@ export function AdjustmentOfStatusPostContent() {
         <Link href="/blog/marriage-based-green-card-k1-fiance-visa-georgia">
           marriage green card and K-1 fianc&eacute; visa guide
         </Link>{' '}
-        walks through how adjustment of status fits at the end of those paths.
+        walks through how adjustment of status fits at the end of those paths, and our dedicated{' '}
+        <Link href="/blog/k1-fiance-visa-georgia">K-1 fianc&eacute; visa guide</Link> covers the 90-day window to marry
+        and file the I-485 after your fianc&eacute; arrives.
+      </p>
+      <p>
+        Adjustment of status is not only a family-based process. Workers with an approved or concurrently filed{' '}
+        <strong>Form I-140</strong> can adjust the same way once their priority date is current &mdash; see our guide to{' '}
+        <Link href="/blog/employment-based-green-card-eb1-eb2-eb3-georgia">
+          employment-based green cards (EB-1, EB-2, and EB-3)
+        </Link>{' '}
+        for how the I-485 fits at the end of that path. The I-485 mechanics &mdash; supporting documents, the EAD, advance
+        parole, and the interview &mdash; work much the same whether the underlying petition is family- or
+        employment-based.
       </p>
 
       <h2>Priority Dates and the Visa Bulletin</h2>
@@ -203,12 +220,61 @@ export function AdjustmentOfStatusPostContent() {
         quickly because the supporting evidence is already in hand.
       </p>
 
+      <h2>Common Denials and Grounds of Inadmissibility</h2>
+      <p>
+        Even a well-documented I-485 can be denied. Some denials are about paperwork; the harder ones are about{' '}
+        <strong>inadmissibility</strong> &mdash; a legal finding under <strong>INA &sect;212(a)</strong> that bars the
+        green card unless a waiver is available. The grounds that most often derail a Georgia adjustment case are:
+      </p>
+      <ul>
+        <li>
+          <strong>Not eligible to adjust.</strong> The most common substantive denial: the applicant entered without
+          inspection, or is not an immediate relative and overstayed or worked without authorization, so &sect;245(a) (or
+          &sect;245(c)) blocks adjustment unless &sect;245(i) applies.
+        </li>
+        <li>
+          <strong>Unlawful presence and the three- and ten-year bars.</strong> Time out of status can trigger the bars
+          under <strong>INA &sect;212(a)(9)(B)</strong> if you depart &mdash; one reason leaving the U.S. during a pending
+          case is dangerous.
+        </li>
+        <li>
+          <strong>Criminal grounds.</strong> Crimes involving moral turpitude, controlled-substance offenses, and certain
+          other convictions can make an applicant inadmissible. See our guide on{' '}
+          <Link href="/blog/criminal-record-immigration-consequences-georgia">
+            criminal records and immigration consequences
+          </Link>.
+        </li>
+        <li>
+          <strong>Fraud or willful misrepresentation</strong> under &sect;212(a)(6)(C) &mdash; including inconsistent
+          statements on past visa applications.
+        </li>
+        <li>
+          <strong>Public-charge and affidavit-of-support failures</strong> &mdash; an I-864 that does not meet the income
+          requirement with no qualifying joint sponsor.
+        </li>
+        <li>
+          <strong>Abandonment.</strong> Traveling without advance parole, missing the interview, or failing to respond to
+          an RFE can all end a case.
+        </li>
+      </ul>
+      <p>
+        Many grounds of inadmissibility have a waiver &mdash; such as Form I-601 or the I-601A provisional
+        unlawful-presence waiver &mdash; but waivers are discretionary and demanding. If a denial does come, it is not
+        always the end: depending on the reason, you may be able to file a motion to reopen, renew the application in
+        immigration court, or refile. Because a denial can also place someone in removal proceedings, this is the moment
+        to have an attorney involved &mdash; ideally well before the case is ever filed.
+      </p>
+
       <h2>Georgia and Alabama: The Atlanta Field Office</h2>
       <p>
         For most immigrants living in Georgia &mdash; and many in Alabama &mdash; the adjustment interview takes place at
         the <strong>USCIS Atlanta Field Office</strong>. Local scheduling and backlogs affect how quickly your case is
         called, even though the underlying rules are federal. Knowing what that office expects, and arriving fully
-        prepared, makes a real difference on interview day.
+        prepared, makes a real difference on interview day &mdash; our guide to{' '}
+        <Link href="/blog/uscis-atlanta-field-office-appointments-interviews-georgia">
+          appointments and interviews at the USCIS Atlanta Field Office
+        </Link>{' '}
+        covers where it is, what to bring, and what happens in the interview room.
       </p>
 
       <h2>Why an Adjustment of Status Attorney Matters</h2>
@@ -223,7 +289,19 @@ export function AdjustmentOfStatusPostContent() {
         A skilled attorney confirms you are actually eligible to adjust before anything is filed, assembles the I-485
         package so it is complete the first time, prepares you for the Atlanta interview, and responds fast if an RFE
         arrives. Learn more about our{' '}
-        <Link href="/services/family-based-immigration">family-based immigration</Link> services.
+        <Link href="/services/family-based-immigration">family-based immigration</Link> services. If you are still
+        deciding who to trust with your case, our guide on{' '}
+        <Link href="/blog/how-to-choose-immigration-attorney-georgia">
+          how to choose an immigration attorney in Georgia
+        </Link>{' '}
+        explains what to look for and how to avoid notario fraud.
+      </p>
+      <p>
+        Approval is not the finish line. Your first green card is valid for ten years, and when it nears expiration you
+        renew it with <Link href="/blog/i90-green-card-renewal-replacement-georgia">Form I-90</Link>. After enough time as
+        a permanent resident &mdash; generally five years, or three if you obtained the green card through marriage to a
+        U.S. citizen &mdash; you may be eligible to apply for{' '}
+        <Link href="/blog/naturalization-citizenship-georgia">U.S. citizenship through naturalization</Link>.
       </p>
 
       <h2>Talk to Eszter Bardi &mdash; Free Consultation</h2>

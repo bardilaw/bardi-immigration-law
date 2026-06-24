@@ -459,9 +459,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'adjustment-of-status-green-card-georgia',
     title: 'Adjustment of Status (I-485): Getting a Green Card Inside the U.S. — A Georgia Guide',
-    date: '2026-06-22',
+    date: '2026-06-24',
     description:
-      'A Georgia adjustment of status attorney explains the I-485 process: who can adjust vs. consular process, concurrent I-130/I-485 filing, priority dates and the Visa Bulletin, the I-864, I-693 medical, and I-94 documents, work authorization (I-765), Advance Parole travel, the Atlanta Field Office interview, and common RFE triggers. Georgia and Alabama.',
+      'A Georgia adjustment of status attorney explains the I-485 process from start to finish — the primary way people already in the U.S. become lawful permanent residents. Covers who can adjust vs. consular process under INA §245(a), family-based and employment-based concurrent filing (I-130/I-140 with I-485), priority dates and the Visa Bulletin, the full I-485 package (I-864, I-693 medical, I-765 work permit, I-131 Advance Parole), the biometrics and Atlanta Field Office interview timeline, common RFE triggers, and the grounds of inadmissibility and common denials that derail cases. A hub guide cross-linking K-1, B-2-to-green-card, employment-based green cards, the USCIS Atlanta Field Office, I-90 renewal, and naturalization. Georgia and Alabama.',
   },
   {
     slug: 'student-visa-f1-opt-stem-georgia',

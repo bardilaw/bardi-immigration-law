@@ -62,10 +62,14 @@ import { WithholdingOfRemovalPostContent } from '@/content/blog/en/withholding-o
 import { PermLaborCertificationPostContent } from '@/content/blog/en/perm-labor-certification-employer-sponsored-green-card-georgia';
 import { H1bVisaSponsorshipCapPostContent } from '@/content/blog/en/h1b-visa-sponsorship-cap-georgia';
 import { Eb2NationalInterestWaiverPostContent } from '@/content/blog/en/eb2-national-interest-waiver-self-petition-georgia';
+import { AdministrativeClosurePostContent } from '@/content/blog/en/administrative-closure-immigration-court-georgia';
+import { F2DependentVisaPostContent } from '@/content/blog/en/f2-dependent-visa-international-student-family-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'f2-dependent-visa-international-student-family-georgia': F2DependentVisaPostContent,
+  'administrative-closure-immigration-court-georgia': AdministrativeClosurePostContent,
   'eb2-national-interest-waiver-self-petition-georgia': Eb2NationalInterestWaiverPostContent,
   'h1b-visa-sponsorship-cap-georgia': H1bVisaSponsorshipCapPostContent,
   'perm-labor-certification-employer-sponsored-green-card-georgia': PermLaborCertificationPostContent,

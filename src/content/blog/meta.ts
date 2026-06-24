@@ -7,6 +7,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'f2-dependent-visa-international-student-family-georgia',
+    title: 'F-2 Dependent Visa in Georgia: Rights and Restrictions for International Students’ Families',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains the F-2 dependent visa for the spouse and unmarried minor children of an F-1 international student: who qualifies, the strict bar on F-2 employment (no EAD, no work of any kind, unlike F-1 OPT or an H-4 EAD), the study limits under 8 CFR 214.2(f)(15) (spouses may study less than full time and cannot enroll full time in a degree program, while children may attend K-12 full time), the separate I-20 issued by the DSO for each dependent and the financial-support requirement, duration of status (D/S), what happens when the F-1 student graduates or starts OPT/STEM OPT, the F-2-to-F-1 change of status on Form I-539 when a dependent wants to study or work, and how F-2 compares with B-2 visitor status and the H-4 derivative status if the principal moves to H-1B. For families at Georgia Tech, UGA, Emory, and Georgia State across Georgia and Alabama.',
+  },
+  {
+    slug: 'administrative-closure-immigration-court-georgia',
+    title: 'Administrative Closure in Georgia Immigration Court: When Your Case Can Be Put on Hold',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains administrative closure — the procedural tool that lets an immigration judge take a removal case off the active docket and pause it without deciding it. Covers how closure differs from termination and dismissal, the legal tug-of-war over judges’ authority (Matter of Avetisyan (BIA 2012), Matter of Castro-Tum (A.G. 2018), the circuit split, and the restoration of closure authority in Matter of Cruz-Valdez (A.G. 2021)), how DHS enforcement priorities and ICE prosecutorial discretion drive who can get closure, the common scenarios where it helps (a pending I-130 family petition, an I-601A provisional waiver and consular processing, a pending U-visa or VAWA self-petition, and humanitarian deferred action), how to request it by motion and the timing strategy, the real risks (the case can be recalendared, it grants no status or work permit, and it does not stop the accrual of unlawful presence under the three- and ten-year bars), why the 2025–2026 enforcement climate has made closure much harder to obtain, and how to choose between seeking closure, asking for a continuance, and fighting for relief such as cancellation of removal. Serving clients before the Atlanta and Stewart immigration courts across Georgia and Alabama.',
+  },
+  {
     slug: 'eb2-national-interest-waiver-self-petition-georgia',
     title: 'EB-2 National Interest Waiver in Georgia: Self-Petition for a Green Card Without an Employer',
     date: '2026-06-24',

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
+import { I864pCalculator } from '@/components/I864pCalculator';
 import { CONTACT_PHONE, phoneEnabled, telHref } from '@/lib/contact';
 import { OFFICIAL_TOOLS } from '@/app/(en)/resources/resourcesData';
 
@@ -69,6 +70,26 @@ export default function ResourcesPageES() {
                   <span className="text-xs font-semibold text-charcoal/50 mt-4">{tool.domain}</span>
                 </a>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Calculadora de Patrocinador I-864P (fila 38) */}
+        <section id="sponsor-calculator" className="bg-white py-16 lg:py-20 scroll-mt-24">
+          <div className="max-w-site mx-auto px-5 lg:px-8">
+            <div className="max-w-2xl mb-8">
+              <h2 className="font-serif text-2xl font-bold text-navy mb-3">
+                Calculadora de Patrocinador I-864P
+              </h2>
+              <p className="text-charcoal/80 leading-relaxed">
+                ¿Está pensando en ser patrocinador económico en el Formulario I-864, Declaración
+                Jurada de Patrocinio? Responda cinco preguntas rápidas para estimar si su ingreso
+                cumple con el requisito mínimo. Esto es una estimación educativa &mdash; no es
+                asesoría legal.
+              </p>
+            </div>
+            <div className="max-w-3xl">
+              <I864pCalculator lang="es" phone={CONTACT_PHONE} />
             </div>
           </div>
         </section>

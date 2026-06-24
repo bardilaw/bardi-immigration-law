@@ -195,7 +195,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: 'How do I calculate whether my financial sponsor qualifies?',
-        a: 'A financial sponsor generally must show household income at or above 125% of the federal poverty guidelines for their household size — the standard published on USCIS Form I-864P. We will help you work through this calculation and review the financial documents needed to prove it. Call us today and we can walk you through whether your sponsor qualifies.',
+        a: 'A financial sponsor generally must show household income at or above 125% of the federal poverty guidelines for their household size — the standard published on USCIS Form I-864P. You can get a quick estimate with the free I-864P Sponsor Calculator on our Resources page. We will also help you work through this calculation and review the financial documents needed to prove it. Call us today and we can walk you through whether your sponsor qualifies.',
       },
     ],
   },

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
+import { I864pCalculator } from '@/components/I864pCalculator';
 import { CONTACT_PHONE, phoneEnabled, telHref } from '@/lib/contact';
 import { OFFICIAL_TOOLS } from './resourcesData';
 
@@ -68,6 +69,25 @@ export default function ResourcesPage() {
                   <span className="text-xs font-semibold text-charcoal/50 mt-4">{tool.domain}</span>
                 </a>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* I-864P Sponsor Calculator (row 38) */}
+        <section id="sponsor-calculator" className="bg-white py-16 lg:py-20 scroll-mt-24">
+          <div className="max-w-site mx-auto px-5 lg:px-8">
+            <div className="max-w-2xl mb-8">
+              <h2 className="font-serif text-2xl font-bold text-navy mb-3">
+                I-864P Sponsor Calculator
+              </h2>
+              <p className="text-charcoal/80 leading-relaxed">
+                Thinking about being a financial sponsor on Form I-864, Affidavit of Support? Answer
+                five quick questions to estimate whether your income meets the minimum requirement.
+                This is an educational estimate &mdash; not legal advice.
+              </p>
+            </div>
+            <div className="max-w-3xl">
+              <I864pCalculator lang="en" phone={CONTACT_PHONE} />
             </div>
           </div>
         </section>

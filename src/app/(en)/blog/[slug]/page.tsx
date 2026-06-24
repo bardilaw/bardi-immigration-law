@@ -80,10 +80,12 @@ import { BirthrightCitizenshipPostContent } from '@/content/blog/en/birthright-c
 import { Eb5InvestorVisaPostContent } from '@/content/blog/en/eb5-investor-visa-green-card-georgia';
 import { DivorceImmigrationStatusPostContent } from '@/content/blog/en/divorce-immigration-status-green-card-georgia';
 import { GeorgiaImmigrationCourtsPostContent } from '@/content/blog/en/georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide';
+import { J1VisaWaiverPostContent } from '@/content/blog/en/j1-visa-two-year-home-residency-requirement-waiver-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'j1-visa-two-year-home-residency-requirement-waiver-georgia': J1VisaWaiverPostContent,
   'georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide': GeorgiaImmigrationCourtsPostContent,
   'divorce-immigration-status-green-card-georgia': DivorceImmigrationStatusPostContent,
   'eb5-investor-visa-green-card-georgia': Eb5InvestorVisaPostContent,

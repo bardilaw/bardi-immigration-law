@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'j1-visa-two-year-home-residency-requirement-waiver-georgia',
+    title: 'J-1 Visa Waiver in Georgia: Escaping the Two-Year Home Residency Requirement',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains the J-1 two-year home-country physical presence requirement under INA §212(e) and the five ways out — with a focus on physicians completing Georgia residencies. Covers who is actually subject to the rule (foreign medical graduates in ECFMG-sponsored graduate medical education are automatically caught, plus government-financed programs and fields on the Exchange Visitor Skills List), what the requirement really does (it bars H, L, and K visas, immigrant visas, and adjustment of status until two aggregate years are spent in the home country — it does not deport you), and the Conrad State 30 program under INA §214(l) administered by the Georgia Department of Community Health: up to 30 waiver slots a year, a three-year full-time H-1B commitment at a facility serving a HPSA, MUA, or MUP, the limited FLEX slots, and the rural and south Georgia shortage counties (Clinch, Echols, Quitman) the program exists to staff — plus the trap that failing the three years reverts you to the requirement. Walks through the other four waiver bases (the No Objection Statement, which is unavailable to physicians; the Interested Government Agency request via the Appalachian Regional Commission, Delta Regional Authority, or VA; the exceptional-hardship waiver to a U.S.-citizen or LPR spouse or child on Form I-612; and the persecution waiver), the DS-3035 process through the State Department Waiver Review Division with final USCIS adjudication, the cap-exempt H-1B that often follows, and how clearing §212(e) opens an employment-based green card or a physician National Interest Waiver. Notes the major Georgia training employers — Emory, the Medical College of Georgia, Morehouse School of Medicine, Piedmont, Atrium Health Navicent, and Grady. Serving exchange visitors and physicians across Georgia and Alabama.',
+  },
+  {
     slug: 'georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide',
     title: 'Georgia Immigration Courts: An Atlanta, Gwinnett, DeKalb, and Stewart Navigation Guide',
     date: '2026-06-24',

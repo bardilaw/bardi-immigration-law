@@ -25,7 +25,7 @@ export function Logo({ className = '' }: { className?: string }) {
           BARDI
         </span>
         <span className="hidden sm:inline-block w-px self-stretch bg-gold/50" aria-hidden="true" />
-        <span className="font-sans text-gold text-[11px] lg:text-xs font-semibold uppercase tracking-[0.2em] leading-none">
+        <span className="font-sans text-gold-600 text-[11px] lg:text-xs font-bold uppercase tracking-[0.2em] leading-none">
           Immigration Law
         </span>
       </span>

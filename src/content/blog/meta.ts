@@ -9,6 +9,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'expedited-removal-georgia-what-it-is-rights-challenge',
+    title: 'Expedited Removal in Georgia: What It Is, Who It Affects, and How to Challenge It',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains expedited removal under INA §235(b)(1) — the process that lets a CBP or ICE officer deport someone without a hearing before an immigration judge, often within days. Covers the January 2025 DHS expansion of expedited removal nationwide to the interior and to anyone who cannot prove two years of continuous physical presence, the all-important two-year rule and who is exempt (lawful permanent residents, people with valid status, asylees and refugees, unaccompanied children), and the burden being on the noncitizen to document continuous presence with leases, pay stubs, tax records, and dated mail. Explains the credible-fear safety valve: how saying you fear return triggers a credible-fear interview with an asylum officer under the significant-possibility standard, moving you into full removal proceedings if you pass, with limited immigration-judge review if you fail, and how withholding of removal and the Convention Against Torture may remain even when asylum is barred. Details the rights you keep and lose (no immigration-judge hearing, no Notice to Appear, no BIA appeal, no government-funded counsel but the right to hire your own and to remain silent), the narrow federal habeas challenges allowed under INA §242(e) after DHS v. Thuraissigiam (mistaken status or identity, ignored proof of two-year presence, a fear that was never referred, coerced sworn statements), how expedited removal differs from regular §240 proceedings and from reinstatement of removal, and the reentry consequences (the five-year bar under INA §212(a)(9)(A), the permanent bar under §212(a)(9)(C), and the I-212 waiver). Atlanta and Stewart immigration courts; Georgia and Alabama.',
+  },
+  {
+    slug: 'how-to-choose-immigration-attorney-georgia',
+    title: 'How to Choose an Immigration Attorney in Georgia: What to Look For and Questions to Ask',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains how to choose the right lawyer at the start of your immigration journey — and how to avoid the notarios and unlicensed "consultants" who cause botched cases. Covers why immigration cases benefit from real representation (the law is federal, technical, and often gives no second chance), and the all-important distinction between who can legally help: licensed attorneys in good standing with a state bar, and non-attorney accredited representatives recognized by the Department of Justice through EOIR working for recognized nonprofits — versus a "notario público," which in the U.S. is just a notary public and may not give immigration advice at all. Lays out the warning signs of immigration fraud (guaranteed outcomes, large upfront cash with no written agreement, advice to lie on forms, no bar license or EOIR accreditation, claims of special government connections), how to verify an attorney in five minutes (the State Bar of Georgia member directory at gabar.org for active status and discipline, and the EOIR Recognition & Accreditation roster), and the questions to ask in a consultation — how many cases like mine have you handled, what are the risks, what is included in the fee, and who handles my case day to day. Explains the three fee structures (flat fee, hourly, and unbundled limited-scope representation), what to bring to the first consultation, and the red flags to watch for during the representation. Includes how Bardi Immigration Law works — direct attorney access with Eszter Bardi, a written fee agreement, and clear English/Spanish communication. Serving families and individuals across metro Atlanta and Georgia.',
+  },
+  {
     slug: 'i90-green-card-renewal-replacement-georgia',
     title: 'How to Renew or Replace Your Green Card in Georgia: A Form I-90 Guide',
     date: '2026-06-24',

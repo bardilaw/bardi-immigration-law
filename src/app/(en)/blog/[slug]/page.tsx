@@ -82,10 +82,14 @@ import { DivorceImmigrationStatusPostContent } from '@/content/blog/en/divorce-i
 import { GeorgiaImmigrationCourtsPostContent } from '@/content/blog/en/georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide';
 import { J1VisaWaiverPostContent } from '@/content/blog/en/j1-visa-two-year-home-residency-requirement-waiver-georgia';
 import { I90GreenCardRenewalPostContent } from '@/content/blog/en/i90-green-card-renewal-replacement-georgia';
+import { HowToChooseImmigrationAttorneyPostContent } from '@/content/blog/en/how-to-choose-immigration-attorney-georgia';
+import { ExpeditedRemovalPostContent } from '@/content/blog/en/expedited-removal-georgia-what-it-is-rights-challenge';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'expedited-removal-georgia-what-it-is-rights-challenge': ExpeditedRemovalPostContent,
+  'how-to-choose-immigration-attorney-georgia': HowToChooseImmigrationAttorneyPostContent,
   'i90-green-card-renewal-replacement-georgia': I90GreenCardRenewalPostContent,
   'j1-visa-two-year-home-residency-requirement-waiver-georgia': J1VisaWaiverPostContent,
   'georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide': GeorgiaImmigrationCourtsPostContent,

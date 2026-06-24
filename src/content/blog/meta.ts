@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'unlawful-presence-3-year-10-year-bar-georgia',
+    title: 'Unlawful Presence and the 3-Year and 10-Year Bars: A Georgia Guide',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains unlawful presence under INA 212(a)(9)(B) and the reentry bars it triggers: the critical difference between unlawful presence and unlawful status, when the clock starts (I-94 expiration, a status-violation finding, or entry without inspection) and stops (a pending bona fide adjustment or timely extension/change of status), why departure from the U.S. is what actually triggers the 3-year bar (more than 180 days) or the 10-year bar (one year or more), the 212(a)(9)(B)(iii) periods that do not count (under 18, a bona fide pending asylum application, Family Unity, and battered spouses and children under VAWA), the 212(a)(9)(B)(v) extreme-hardship waiver for those who already triggered a bar, the Form I-601A provisional and Form I-601 waivers, and how the harsher 212(a)(9)(C) permanent bar differs after an unlawful reentry. For undocumented spouses and visa overstayers across Georgia and Alabama.',
+  },
+  {
     slug: 'e2-investor-visa-treaty-nationals-georgia',
     title: 'E-2 Investor Visa in Georgia: Starting a Business on a Treaty Visa',
     date: '2026-06-24',

@@ -68,10 +68,12 @@ import { F2DependentVisaPostContent } from '@/content/blog/en/f2-dependent-visa-
 import { L1IntracompanyTransfereePostContent } from '@/content/blog/en/l1-intracompany-transferee-visa-georgia';
 import { E2InvestorVisaPostContent } from '@/content/blog/en/e2-investor-visa-treaty-nationals-georgia';
 import { NvcConsularInterviewPostContent } from '@/content/blog/en/nvc-consular-interview-immigrant-visa-process-georgia';
+import { UnlawfulPresenceBarPostContent } from '@/content/blog/en/unlawful-presence-3-year-10-year-bar-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'unlawful-presence-3-year-10-year-bar-georgia': UnlawfulPresenceBarPostContent,
   'nvc-consular-interview-immigrant-visa-process-georgia': NvcConsularInterviewPostContent,
   'e2-investor-visa-treaty-nationals-georgia': E2InvestorVisaPostContent,
   'l1-intracompany-transferee-visa-georgia': L1IntracompanyTransfereePostContent,

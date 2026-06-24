@@ -1,4 +1,4 @@
-/* Verify before publish — references immigration law/procedure (Form I-765, EAD eligibility categories (c)(9), (c)(8), (c)(14), (c)(35), (c)(33) DACA, (c)(3) OPT, (c)(19)/(a)(12) TPS, (c)(26) H-4, automatic renewal extension length, premium processing availability, USCIS processing times and fees, Atlanta Field Office / lockbox filing) that change with USCIS policy and the fee/rule schedule. The automatic extension period (currently up to 540 days for eligible categories), which categories qualify, premium-processing availability, fees, and processing times must all be reconfirmed on USCIS.gov before go-live. */
+/* Verify before publish — references immigration law/procedure (Form I-765, EAD eligibility categories (c)(9), (c)(8), (c)(14), (c)(35), (c)(33) DACA, (c)(3) OPT, (c)(19)/(a)(12) TPS, (c)(26) H-4, (c)(11) parolee, (a)(10) withholding granted, (c)(10) cancellation/suspension applicants, (c)(31) VAWA self-petitioner, automatic renewal extension length, premium processing availability, USCIS processing times and fees, Atlanta Field Office / lockbox filing) that change with USCIS policy and the fee/rule schedule. Accuracy notes: work authorization "incident to status" (H-1B, L-1, TN, E, O; L-2/E spouses) requires NO separate EAD; H-4 spouses do need (c)(26). Auto-extension regulatory baseline is 180 days under 8 CFR 274a.13(d), temporarily increased by USCIS rule to up to 540 days — reconfirm current length and eligible categories on USCIS.gov. Unauthorized employment bars adjustment under INA 245(c) (immediate relatives forgiven). VAWA self-petitioner EAD is (c)(31) — NOT (c)(14)/(a)(14) as sometimes mis-cited; (c)(14) is deferred action generally. Premium-processing availability, fees, and processing times must all be reconfirmed on USCIS.gov before go-live. */
 import Link from 'next/link';
 
 export function EadWorkPermitPostContent() {
@@ -36,11 +36,24 @@ export function EadWorkPermitPostContent() {
           apply &mdash; see our <Link href="/blog/asylum-application-georgia">asylum guide</Link>);
         </li>
         <li>
-          <strong>DACA recipients</strong> &mdash; file under <strong>(c)(33)</strong> together with the DACA request;
+          <strong>DACA recipients</strong> &mdash; file under <strong>(c)(33)</strong> together with the{' '}
+          <Link href="/blog/daca-2026">DACA</Link> request;
         </li>
         <li>
-          <strong>TPS holders</strong> &mdash; file under <strong>(c)(19)</strong> while a TPS application is pending or{' '}
-          <strong>(a)(12)</strong> once granted;
+          <strong>TPS holders</strong> &mdash; file under <strong>(c)(19)</strong> while a{' '}
+          <Link href="/blog/tps-2026">TPS</Link> application is pending or <strong>(a)(12)</strong> once granted;
+        </li>
+        <li>
+          <strong>Parolees</strong> &mdash; people paroled into the United States for urgent humanitarian reasons or
+          significant public benefit file under <strong>(c)(11)</strong>;
+        </li>
+        <li>
+          <strong>People granted withholding of removal</strong> &mdash; category <strong>(a)(10)</strong> &mdash; and
+          applicants for cancellation of removal or suspension of deportation under <strong>(c)(10)</strong>;
+        </li>
+        <li>
+          <strong>VAWA self-petitioners</strong> &mdash; an abused spouse, child, or parent with a pending or approved
+          Form I-360 self-petition files under <strong>(c)(31)</strong>;
         </li>
         <li>
           <strong>F-1 students on OPT</strong> &mdash; Optional Practical Training is authorized through category{' '}
@@ -61,6 +74,26 @@ export function EadWorkPermitPostContent() {
       <p>
         The category you file under is not a detail &mdash; it controls your eligibility, your fee, your processing time,
         and whether your renewal can be auto-extended later. Filing under the wrong code is a common, avoidable mistake.
+      </p>
+
+      <h2>When You Do Not Need a Separate EAD</h2>
+      <p>
+        Not every authorized worker needs an EAD card. Many nonimmigrant workers are <strong>authorized to work incident
+        to their status</strong> &mdash; the work permission is built into the visa itself, for a specific employer, and
+        no separate Form I-765 is required. This includes{' '}
+        <Link href="/blog/h1b-visa-sponsorship-cap-georgia"><strong>H-1B</strong></Link> specialty-occupation workers,{' '}
+        <Link href="/blog/l1-intracompany-transferee-visa-georgia"><strong>L-1</strong></Link> intracompany transferees,{' '}
+        <strong>TN</strong> professionals under USMCA, and <strong>E</strong> and <strong>O</strong> visa holders. For
+        these workers, the I-94 and approval notice &mdash; not a plastic EAD &mdash; are the proof of work
+        authorization, and the authorization is tied to the petitioning employer.
+      </p>
+      <p>
+        The distinction matters most for <strong>spouses</strong>. An <strong>H-4</strong> spouse generally needs an EAD
+        under (c)(26) before working (see our{' '}
+        <Link href="/blog/h4-ead-work-authorization-h1b-spouses-georgia">H-4 EAD guide</Link>), while{' '}
+        <strong>L-2 and E spouses</strong> are now treated as authorized to work incident to status and do not need a
+        separate EAD to begin a job. If you hold a work visa and are unsure whether you need a card, confirm before you
+        start &mdash; working for the wrong employer, or before authorization exists, carries real consequences (below).
       </p>
 
       <h2>Filing Form I-765: The Basics</h2>
@@ -96,8 +129,10 @@ export function EadWorkPermitPostContent() {
         An EAD has an expiration date, and a gap in work authorization can cost you your job. The good news is that for
         many categories, USCIS provides an <strong>automatic extension</strong> when you file your renewal{' '}
         <em>on time</em> &mdash; before the current card expires &mdash; in the <strong>same eligibility category</strong>.
-        Under current USCIS policy, that automatic extension can last up to <strong>540 days</strong> beyond the card&apos;s
-        printed expiration date, which bridges the gap while the renewal is pending.
+        The regulatory baseline at <strong>8 CFR 274a.13(d)</strong> is a <strong>180-day</strong> automatic extension,
+        but USCIS has temporarily increased it by rule &mdash; under current policy that extension can last up to{' '}
+        <strong>540 days</strong> beyond the card&apos;s printed expiration date, which bridges the gap while the renewal
+        is pending.
       </p>
       <p>
         Two cautions matter here. First, the auto-extension <strong>only applies to certain categories</strong> &mdash;
@@ -146,13 +181,59 @@ export function EadWorkPermitPostContent() {
         filed too late, leaving a worker stranded between cards.
       </p>
 
+      <h2>Working Without Authorization &mdash; the Risks</h2>
+      <p>
+        It is tempting to start a job before the card arrives, but <strong>unauthorized employment</strong> can do
+        lasting damage to your immigration case. For most family- and employment-based applicants, working without
+        authorization is a bar to <Link href="/blog/adjustment-of-status-green-card-georgia">adjustment of status</Link>{' '}
+        under <strong>INA &sect; 245(c)</strong> &mdash; meaning the very job you took to make ends meet can block the
+        green card you are waiting for. (Immediate relatives of U.S. citizens are forgiven this particular bar; most
+        other categories are not.) Unauthorized work is also a status violation that can surface at your interview, and
+        employers face their own I-9 and E-Verify exposure for hiring without verifying work authorization. The safe
+        rule is simple: <strong>do not begin work until you have authorization in hand</strong> &mdash; an EAD, an
+        approval notice for a status that authorizes work, or a valid automatic extension you can document.
+      </p>
+
+      <h2>Common Reasons EADs Are Denied or Delayed</h2>
+      <p>
+        Most EAD problems are avoidable. The denials and delays we see most often come from:
+      </p>
+      <ul>
+        <li>
+          <strong>The wrong eligibility category code</strong> &mdash; filing under a code that does not match your
+          underlying case is the single most common, and most preventable, error.
+        </li>
+        <li>
+          <strong>Filing before you are eligible</strong> &mdash; asylum applicants in particular must satisfy a waiting
+          period before the I-765 can be approved; filing too early draws a rejection or denial.
+        </li>
+        <li>
+          <strong>Missing proof of the underlying case</strong> &mdash; no receipt notice for the pending I-485, I-589,
+          TPS, or other qualifying application to anchor the work-authorization request.
+        </li>
+        <li>
+          <strong>Incomplete filings</strong> &mdash; an unsigned form, the wrong or missing fee, or photos and identity
+          documents that do not meet USCIS specifications.
+        </li>
+        <li>
+          <strong>A missed biometrics appointment</strong> &mdash; failing to appear can lead USCIS to treat the
+          application as abandoned.
+        </li>
+        <li>
+          <strong>An expired or terminated underlying status</strong> &mdash; if the case the EAD depends on is denied
+          or closed, the work authorization falls with it.
+        </li>
+      </ul>
+
       <h2>Why an Immigration Attorney Helps</h2>
       <p>
         On paper the EAD looks simple &mdash; one form, one card. In practice the mistakes are expensive: filing under
         the wrong category, missing the early-renewal window, assuming an auto-extension that does not apply to your
         category, or treating the work permit as if it were status. An attorney confirms the right eligibility code,
         files it correctly the first time, calendars your renewal so you never lapse, and coordinates the EAD with the
-        green card, asylum, DACA, or TPS case underneath it.
+        green card, asylum, DACA, or TPS case underneath it. If you are still choosing counsel, our guide on{' '}
+        <Link href="/blog/how-to-choose-immigration-attorney-georgia">how to choose an immigration attorney in
+        Georgia</Link> covers what to look for and the questions to ask.
       </p>
 
       <h2>Talk to Eszter Bardi &mdash; Free Consultation</h2>

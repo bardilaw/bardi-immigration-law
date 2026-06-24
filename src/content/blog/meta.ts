@@ -389,9 +389,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'employment-authorization-ead-georgia',
     title: 'Employment Authorization Documents (EAD): Work Permits for Pending Immigration Cases in Georgia',
-    date: '2026-06-22',
+    date: '2026-06-24',
     description:
-      'A Georgia immigration attorney explains the Employment Authorization Document (EAD) and Form I-765: who qualifies (pending I-485 adjustment, asylum applicants, DACA, TPS, H-4 spouses, deferred action, compelling circumstances), the common category codes (c)(9), (c)(8), (c)(14) and (c)(35), processing times and premium processing, the up-to-540-day automatic extension for timely-filed renewals, what to do if your card is lost or expires, and Atlanta Field Office and lockbox filing tips. Georgia and Alabama.',
+      'A Georgia immigration attorney explains the Employment Authorization Document (EAD) and Form I-765: what an EAD is versus work authorization that comes incident to status (H-1B, L-1, TN, E, O and L-2/E spouses need no separate card; H-4 spouses do), who qualifies and the 8 CFR 274a.12 category codes — pending I-485 adjustment (c)(9), asylum (c)(8), DACA (c)(33), TPS (c)(19)/(a)(12), OPT (c)(3), H-4 (c)(26), deferred action (c)(14), parolees (c)(11), withholding granted (a)(10), cancellation/suspension applicants (c)(10), VAWA self-petitioners (c)(31), and compelling circumstances (c)(35) — Form I-765 filing mechanics, fees, biometrics, processing times and premium processing for OPT, the combo card with advance parole, the automatic extension for timely-filed renewals (180 days under 8 CFR 274a.13(d), temporarily up to 540 days by USCIS rule), the consequences of working without authorization including the INA 245(c) adjustment bar, common denial reasons, and Atlanta Field Office and lockbox filing tips. Georgia and Alabama.',
   },
   {
     slug: 'i-601a-provisional-unlawful-presence-waiver-georgia',

@@ -67,6 +67,14 @@ export function WithholdingOfRemovalPostContent() {
         </li>
       </ul>
 
+      <p>
+        A common misunderstanding is that withholding is simply &ldquo;asylum for people who waited too long,&rdquo; a
+        weaker version of the same thing. It is not. It is a distinct protection with its own higher proof requirement and
+        its own permanent limits. Winning withholding is in some respects <em>harder</em> than winning asylum, even
+        though it gives you less &mdash; which is exactly why it is worth understanding before you assume your only hope
+        is gone.
+      </p>
+
       <h2>Convention Against Torture (CAT): The Third Protection</h2>
       <p>
         There is a third, separate form of protection: relief under the <strong>Convention Against Torture (CAT)</strong>,

@@ -38,8 +38,14 @@ export function ConsularProcessingPostContent() {
       <p>
         The choice is not always free. Someone who entered the U.S. without inspection, or who has certain status
         problems, may be required to consular process even though they are physically here &mdash; and leaving the country
-        can trigger separate bars to re-entry. That is exactly the kind of trap worth reviewing with an attorney{' '}
-        <em>before</em> anyone departs, because the wrong move can separate a family for years.
+        to attend the interview abroad can itself trigger a bar to re-entry. Under <strong>INA &sect;212(a)(9)(B),</strong>{' '}
+        a person who accrued more than 180 days of <strong>unlawful presence</strong> in the U.S. and then departs sets off
+        a <strong>3-year bar,</strong> and more than one year of unlawful presence sets off a <strong>10-year bar</strong>{' '}
+        &mdash; so the act of traveling home for the consular interview can be what locks the family out. In many of these
+        cases the answer is the{' '}
+        <Link href="/blog/i-601a-provisional-unlawful-presence-waiver-georgia">I-601A provisional waiver,</Link> approved{' '}
+        <em>before</em> departure. This is exactly the kind of trap worth reviewing with an attorney <em>before</em> anyone
+        departs, because the wrong move can separate a family for years.
       </p>
 
       <h2>Step One: The Approved Petition and Your Priority Date</h2>
@@ -53,8 +59,10 @@ export function ConsularProcessingPostContent() {
         right away. For most other categories &mdash; including siblings, adult children, and most{' '}
         <Link href="/blog/employment-based-immigration-georgia">employment-based</Link> applicants &mdash; there are annual
         numerical caps, and the wait depends on your priority date and country of birth. The Department of State&rsquo;s
-        monthly <strong>visa bulletin</strong> shows when a category is &ldquo;current&rdquo; and ready to move forward.
-        Until then, the case simply waits.
+        monthly{' '}
+        <Link href="/blog/visa-bulletin-priority-dates-family-green-card">visa bulletin</Link> shows when a category is
+        &ldquo;current&rdquo; and ready to move forward &mdash; the priority date is what governs when the NVC can actually
+        move your case to the next step. Until then, the case simply waits.
       </p>
 
       <h2>Step Two: National Visa Center (NVC) Processing</h2>
@@ -67,9 +75,10 @@ export function ConsularProcessingPostContent() {
       <ul>
         <li><strong>Pay the required fees</strong> &mdash; typically the immigrant-visa application fee and the Affidavit of Support fee;</li>
         <li>
-          <strong>File the Affidavit of Support (Form I-864),</strong> in which the petitioner (and sometimes a joint
-          sponsor) accepts a legally enforceable obligation to financially support the immigrant, backed by tax returns and
-          proof of income;
+          <strong>File the{' '}
+          <Link href="/blog/affidavit-of-support-i-864-income-requirements">Affidavit of Support (Form I-864)</Link>,</strong>{' '}
+          in which the petitioner (and sometimes a joint sponsor) accepts a legally enforceable obligation to financially
+          support the immigrant, backed by tax returns and proof of income;
         </li>
         <li><strong>Submit the DS-260</strong> immigrant-visa application (more on that below);</li>
         <li>
@@ -139,6 +148,31 @@ export function ConsularProcessingPostContent() {
         On arrival, a CBP officer inspects the applicant and, once admitted, that admission makes them a{' '}
         <strong>lawful permanent resident.</strong> The passport stamp serves as temporary proof until the physical card
         arrives in the mail.
+      </p>
+
+      <h2>Conditional (2-Year) vs. Permanent (10-Year) Green Card</h2>
+      <p>
+        Not every immigrant visa leads to the same green card. Which one your relative receives at the port of entry
+        depends on the category and, for spouses, on how long the couple has been married:
+      </p>
+      <ul>
+        <li>
+          <strong>10-year (permanent) green card.</strong> Most consular-processing immigrants &mdash; parents, siblings,
+          adult children, employment-based immigrants, and spouses married <strong>more than two years</strong> at the time
+          of admission &mdash; receive a standard green card valid for ten years and renewable.
+        </li>
+        <li>
+          <strong>2-year (conditional) green card.</strong> A spouse who has been married <strong>less than two years</strong>{' '}
+          when admitted enters as a <em>conditional</em> permanent resident. The status is real and full, but it expires
+          after two years. The couple must file <strong>Form I-751</strong> in the 90-day window before it expires to
+          remove the conditions and obtain the 10-year card &mdash; proving the marriage was genuine, not a green-card
+          arrangement.
+        </li>
+      </ul>
+      <p>
+        Missing the I-751 deadline can put the immigrant in removal proceedings, so the conditional card&rsquo;s
+        expiration date belongs on the calendar the day it arrives. We cover that step in our guide to{' '}
+        <Link href="/blog/remove-conditions-green-card-i-751-georgia">removing conditions on a green card with Form I-751.</Link>
       </p>
 
       <h2>Timeline: What to Expect</h2>

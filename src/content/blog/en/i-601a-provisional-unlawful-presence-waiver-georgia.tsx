@@ -8,7 +8,8 @@ export function I601AWaiverPostContent() {
         For many families in Georgia, one painful fact controls everything: a husband or wife entered the United States
         without inspection, has built a life and a family here, and is married to a U.S. citizen &mdash; but cannot simply
         &ldquo;get a green card&rdquo; from inside the country. The standard path requires leaving the U.S. for an interview
-        at a consulate abroad, and the moment of departure can trigger a <strong>three- or ten-year bar</strong> on
+        at a consulate abroad, and the moment of departure can trigger a{' '}
+        <Link href="/blog/unlawful-presence-3-year-10-year-bar-georgia">three- or ten-year bar</Link> on
         returning. For years that risk forced families into an impossible choice. The{' '}
         <strong>Form I-601A provisional unlawful presence waiver</strong> is the tool that changed it.
       </p>
@@ -33,7 +34,9 @@ export function I601AWaiverPostContent() {
         than <strong>180 days</strong> of unlawful presence and then leaves the U.S. triggers a <strong>three-year bar</strong>
         ; more than <strong>one year</strong> of unlawful presence triggers a <strong>ten-year bar</strong> on returning.
         So the very act of leaving to attend the green card interview is what creates the penalty &mdash; and families
-        could be separated for a decade waiting it out abroad.
+        could be separated for a decade waiting it out abroad. (Unlawful presence is not limited to those who entered
+        without inspection &mdash; someone who entered lawfully but stayed past their authorized period accrues it too;
+        see our guide to <Link href="/blog/visa-overstay-consequences-fix-status-georgia">visa overstay consequences</Link>.)
       </p>
 
       <h2>What the I-601A Provisional Waiver Does</h2>
@@ -129,7 +132,9 @@ export function I601AWaiverPostContent() {
         </li>
         <li>
           <strong>Consular interview abroad.</strong> Attend the DS-260 immigrant visa interview at the U.S. consulate in
-          your home country. With the waiver approved in advance, time abroad is minimized.
+          your home country. With the waiver approved in advance, time abroad is minimized. See our guide to the{' '}
+          <Link href="/blog/nvc-consular-interview-immigrant-visa-process-georgia">NVC stage and consular interview</Link>{' '}
+          for what to expect at this step.
         </li>
       </ol>
 
@@ -155,6 +160,14 @@ export function I601AWaiverPostContent() {
           honest case assessment <em>before</em> anyone leaves the country is essential.
         </li>
       </ul>
+      <p>
+        <strong>What happens if the I-601A is denied?</strong> A provisional-waiver denial cannot be appealed, and USCIS
+        does not accept a motion to reopen or reconsider (Form I-290B) on an I-601A &mdash; so the practical options are to{' '}
+        <strong>refile a new Form I-601A</strong> with a stronger extreme-hardship record while you remain in the U.S., or,
+        if you choose to proceed, to depart for the consular interview and apply for a regular <strong>Form I-601</strong>{' '}
+        waiver from abroad. Because applying for the I-601 abroad means leaving before the bar is waived, that route carries
+        real risk and should never be taken without a careful case assessment first.
+      </p>
 
       <h2>Georgia and Alabama Families</h2>
       <p>
@@ -172,7 +185,9 @@ export function I601AWaiverPostContent() {
         to protect can become a decade-long separation if the case is mishandled, if a hidden ground of inadmissibility is
         missed, or if the hardship evidence is thin. An experienced attorney screens for other inadmissibility issues
         <em> before</em> you commit to leaving the country, builds the extreme hardship record, and times each step so your
-        family is reunited as quickly as the law allows. Learn more about our{' '}
+        family is reunited as quickly as the law allows. Because the stakes are so high, it is worth knowing{' '}
+        <Link href="/blog/how-to-choose-immigration-attorney-georgia">how to choose an immigration attorney</Link>{' '}
+        before you hire anyone. Learn more about our{' '}
         <Link href="/services/family-based-immigration">family-based immigration</Link> services.
       </p>
 

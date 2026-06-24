@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'k1-fiance-visa-georgia',
+    title: 'K-1 Fiancé Visa in Georgia: How to Bring Your Foreign-Born Fiancé to the United States',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains the K-1 fiancé(e) visa from start to finish: who qualifies (only a U.S. citizen can petition — not a green card holder), the two-year in-person meeting requirement and its narrow extreme-hardship and established-custom exceptions, the Form I-129F petition and what proves a bona fide relationship, the consular interview abroad (DS-160, medical exam, Form I-134 Affidavit of Support), and the firm 90-day window to marry the petitioner and file Form I-485 to adjust status. Covers the two-year conditional green card and Form I-751, the rule that a K-1 entrant can only adjust based on marriage to the petitioner who filed (INA §245(d)), K-2 visas for the fiancé’s children, a clear K-1 vs. CR-1 spouse-visa comparison (engaged vs. married, citizen-only vs. citizen-or-LPR, adjust-after-arrival vs. green-card-in-hand), and the serious risk if the marriage does not happen within 90 days — no extension, no alternate adjustment, departure required, and unlawful-presence bars. Serving engaged couples across metro Atlanta, Georgia, and Alabama.',
+  },
+  {
     slug: 'stem-opt-extension-24-month-work-authorization-georgia',
     title: 'STEM OPT Extension in Georgia: 24 Months of Work Authorization After Graduation',
     date: '2026-06-24',

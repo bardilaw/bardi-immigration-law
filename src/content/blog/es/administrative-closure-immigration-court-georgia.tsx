@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const esTitle = 'Cierre Administrativo en la Corte de Inmigración de Georgia: Cómo Pausar su Caso';
 export const esDescription =
-  'Un abogado de inmigración en Georgia explica qué es el cierre administrativo, en qué se diferencia de la terminación y la desestimación, cómo ha cambiado la ley con cada administración, cuándo ayuda y qué riesgos conlleva. Información general, no asesoría legal.';
+  'Una abogada de inmigración en Georgia explica qué es el cierre administrativo, en qué se diferencia de la terminación y la desestimación, cómo ha cambiado la ley con cada administración, cuándo ayuda y qué riesgos conlleva. Información general, no asesoría legal.';
 
 export function AdministrativeClosurePostContentEs() {
   return (

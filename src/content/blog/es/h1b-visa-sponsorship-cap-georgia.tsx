@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const esTitle = 'Visa H-1B en Georgia: Patrocinio, Tope, Lotería y el Camino a la Green Card';
 export const esDescription =
-  'Un abogado de inmigración en Georgia explica cómo funciona la visa H-1B: la ocupación especializada, el tope de 85,000 y la lotería, la LCA y el salario prevaleciente, las RFE, qué pasa al perder el empleo (período de gracia de 60 días y portabilidad bajo INA §214(n)) y la vía EB-2/EB-3 a la residencia. Información general, no asesoría legal.';
+  'Una abogada de inmigración en Georgia explica cómo funciona la visa H-1B: la ocupación especializada, el tope de 85,000 y la lotería, la LCA y el salario prevaleciente, las RFE, qué pasa al perder el empleo (período de gracia de 60 días y portabilidad bajo INA §214(n)) y la vía EB-2/EB-3 a la residencia. Información general, no asesoría legal.';
 
 export function H1bVisaSponsorshipCapPostContentEs() {
   return (

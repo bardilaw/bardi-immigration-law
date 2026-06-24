@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const esTitle = 'EB-2 con Exención por Interés Nacional (NIW) en Georgia: La Green Card Sin Empleador';
 export const esDescription =
-  'Un abogado de inmigración en Georgia explica la Exención por Interés Nacional (NIW) de la categoría EB-2 bajo INA §203(b)(2)(B): quién califica, el test de tres elementos de Matter of Dhanasar, cómo se compara con PERM y EB-1, y qué significan los atrasos de fechas de prioridad. Información general, no asesoría legal.';
+  'Una abogada de inmigración en Georgia explica la Exención por Interés Nacional (NIW) de la categoría EB-2 bajo INA §203(b)(2)(B): quién califica, el test de tres elementos de Matter of Dhanasar, cómo se compara con PERM y EB-1, y qué significan los atrasos de fechas de prioridad. Información general, no asesoría legal.';
 
 export function Eb2NationalInterestWaiverPostContentEs() {
   return (

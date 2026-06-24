@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const esTitle = 'Visa de Dependiente F-2 en Georgia: La Familia de un Estudiante Internacional';
 export const esDescription =
-  'Un abogado de inmigraci&oacute;n en Georgia explica qui&eacute;n califica para la visa de dependiente F-2, por qu&eacute; los c&oacute;nyuges F-2 no pueden trabajar, los l&iacute;mites de estudio bajo 8 CFR 214.2(f)(15), el proceso del I-20 y c&oacute;mo cambiar de F-2 a F-1, H-4 u otro estatus. Informaci&oacute;n general, no asesor&iacute;a legal.';
+  'Una abogada de inmigraci&oacute;n en Georgia explica qui&eacute;n califica para la visa de dependiente F-2, por qu&eacute; los c&oacute;nyuges F-2 no pueden trabajar, los l&iacute;mites de estudio bajo 8 CFR 214.2(f)(15), el proceso del I-20 y c&oacute;mo cambiar de F-2 a F-1, H-4 u otro estatus. Informaci&oacute;n general, no asesor&iacute;a legal.';
 
 export function F2DependentVisaPostContentEs() {
   return (

@@ -516,22 +516,22 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
   'h1b-visa-sponsorship-cap-georgia': {
     title: 'Visa H-1B en Georgia: Patrocinio, Tope, Lotería y el Camino a la Green Card',
     description:
-      'Un abogado de inmigración en Georgia explica cómo funciona la visa H-1B: la ocupación especializada, el tope de 85,000 y la lotería, la LCA y el salario prevaleciente, las RFE, qué pasa al perder el empleo (período de gracia de 60 días y portabilidad bajo INA §214(n)) y la vía EB-2/EB-3 a la residencia. Información general, no asesoría legal.',
+      'Una abogada de inmigración en Georgia explica cómo funciona la visa H-1B: la ocupación especializada, el tope de 85,000 y la lotería, la LCA y el salario prevaleciente, las RFE, qué pasa al perder el empleo (período de gracia de 60 días y portabilidad bajo INA §214(n)) y la vía EB-2/EB-3 a la residencia. Información general, no asesoría legal.',
   },
   'eb2-national-interest-waiver-self-petition-georgia': {
     title: 'EB-2 con Exención por Interés Nacional (NIW) en Georgia: La Green Card Sin Empleador',
     description:
-      'Un abogado de inmigración en Georgia explica la Exención por Interés Nacional (NIW) de la categoría EB-2 bajo INA §203(b)(2)(B): quién califica, el test de tres elementos de Matter of Dhanasar, cómo se compara con PERM y EB-1, y qué significan los atrasos de fechas de prioridad. Información general, no asesoría legal.',
+      'Una abogada de inmigración en Georgia explica la Exención por Interés Nacional (NIW) de la categoría EB-2 bajo INA §203(b)(2)(B): quién califica, el test de tres elementos de Matter of Dhanasar, cómo se compara con PERM y EB-1, y qué significan los atrasos de fechas de prioridad. Información general, no asesoría legal.',
   },
   'administrative-closure-immigration-court-georgia': {
     title: 'Cierre Administrativo en la Corte de Inmigración de Georgia: Cómo Pausar su Caso',
     description:
-      'Un abogado de inmigración en Georgia explica qué es el cierre administrativo, en qué se diferencia de la terminación y la desestimación, cómo ha cambiado la ley con cada administración, cuándo ayuda y qué riesgos conlleva. Información general, no asesoría legal.',
+      'Una abogada de inmigración en Georgia explica qué es el cierre administrativo, en qué se diferencia de la terminación y la desestimación, cómo ha cambiado la ley con cada administración, cuándo ayuda y qué riesgos conlleva. Información general, no asesoría legal.',
   },
   'f2-dependent-visa-international-student-family-georgia': {
     title: 'Visa de Dependiente F-2 en Georgia: La Familia de un Estudiante Internacional',
     description:
-      'Un abogado de inmigración en Georgia explica quién califica para la visa de dependiente F-2, por qué los cónyuges F-2 no pueden trabajar, los límites de estudio bajo 8 CFR 214.2(f)(15), el proceso del I-20 y cómo cambiar de F-2 a F-1, H-4 u otro estatus. Información general, no asesoría legal.',
+      'Una abogada de inmigración en Georgia explica quién califica para la visa de dependiente F-2, por qué los cónyuges F-2 no pueden trabajar, los límites de estudio bajo 8 CFR 214.2(f)(15), el proceso del I-20 y cómo cambiar de F-2 a F-1, H-4 u otro estatus. Información general, no asesoría legal.',
   },
   'withholding-of-removal-immigration-court-georgia': {
     title: 'Retención de Remoción en Georgia: Protección Cuando el Asilo No Es Posible',

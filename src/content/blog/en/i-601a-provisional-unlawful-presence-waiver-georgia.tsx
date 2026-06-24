@@ -20,10 +20,13 @@ export function I601AWaiverPostContent() {
 
       <h2>The Problem: Unlawful Presence and the 3- and 10-Year Bars</h2>
       <p>
-        Someone who entered the U.S. without being inspected and admitted generally cannot adjust status to a green card
+        Someone who entered the U.S. without being inspected and admitted generally cannot{' '}
+        <Link href="/blog/adjustment-of-status-green-card-georgia">adjust status</Link> to a green card
         from inside the country, even after marrying a U.S. citizen. Instead, they must go through{' '}
         <Link href="/blog/consular-processing-immigrant-visa-georgia">consular processing</Link> &mdash; attending an
-        immigrant visa interview at a U.S. consulate in their home country.
+        immigrant visa interview at a U.S. consulate in their home country. (If you <em>did</em> enter lawfully and are
+        eligible to adjust status inside the U.S., you may not need an I-601A at all &mdash; the unlawful-presence bars
+        are only triggered by leaving the country.)
       </p>
       <p>
         The trap is what happens on departure. Under <strong>INA &sect; 212(a)(9)(B)</strong>, a person who accrued more

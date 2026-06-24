@@ -162,7 +162,11 @@ export function TVisaTraffickingPostContent() {
       <h2>The Path to a Green Card</h2>
       <p>
         The T-visa is not a dead end &mdash; it is a bridge to permanent residence. Under <strong>INA &sect; 245(l)</strong>,
-        a T-visa holder can apply to <strong>adjust status to lawful permanent resident</strong> (green card) once they
+        a T-visa holder can apply to{' '}
+        <Link href="/blog/adjustment-of-status-green-card-georgia">
+          <strong>adjust status to lawful permanent resident</strong>
+        </Link>{' '}
+        (green card) once they
         have either (a) been physically present in the U.S. for a continuous period of at least <strong>three years</strong>{' '}
         since the T-visa was granted, or (b) been present during the investigation or prosecution and the Attorney
         General certifies that it is complete &mdash; whichever comes first. The applicant must also show good moral

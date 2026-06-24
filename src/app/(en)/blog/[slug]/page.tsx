@@ -81,10 +81,12 @@ import { Eb5InvestorVisaPostContent } from '@/content/blog/en/eb5-investor-visa-
 import { DivorceImmigrationStatusPostContent } from '@/content/blog/en/divorce-immigration-status-green-card-georgia';
 import { GeorgiaImmigrationCourtsPostContent } from '@/content/blog/en/georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide';
 import { J1VisaWaiverPostContent } from '@/content/blog/en/j1-visa-two-year-home-residency-requirement-waiver-georgia';
+import { I90GreenCardRenewalPostContent } from '@/content/blog/en/i90-green-card-renewal-replacement-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'i90-green-card-renewal-replacement-georgia': I90GreenCardRenewalPostContent,
   'j1-visa-two-year-home-residency-requirement-waiver-georgia': J1VisaWaiverPostContent,
   'georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide': GeorgiaImmigrationCourtsPostContent,
   'divorce-immigration-status-green-card-georgia': DivorceImmigrationStatusPostContent,

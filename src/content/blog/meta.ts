@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'i90-green-card-renewal-replacement-georgia',
+    title: 'How to Renew or Replace Your Green Card in Georgia: A Form I-90 Guide',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney walks permanent residents through Form I-90 — the application to renew an expiring ten-year green card or replace one that was lost, stolen, mutilated, never received, or needs a name correction. Explains the critical distinctions most people get wrong: I-90 is for the standard ten-year card, while a two-year conditional card requires Form I-751 to remove conditions, and eligible residents may be better off filing N-400 for naturalization instead. Covers filing online through a myUSCIS account versus paper by mail, current filing and biometric fees (free when USCIS made the error), realistic processing times that now stretch many months to over a year, and how to prove your status while you wait — the I-797C receipt notice that extends an expired card for work and travel, and the ADIT/I-551 passport stamp from the USCIS Atlanta Field Office. Also covers international travel on an expired card plus receipt notice, the biometrics appointment at an Application Support Center, why you should file in the six months before expiration, and the situations — conditional-versus-permanent confusion, criminal history, time abroad, or renew-versus-naturalize decisions — where you should talk to an attorney first. Serving permanent residents across Georgia.',
+  },
+  {
     slug: 'j1-visa-two-year-home-residency-requirement-waiver-georgia',
     title: 'J-1 Visa Waiver in Georgia: Escaping the Two-Year Home Residency Requirement',
     date: '2026-06-24',

@@ -7,6 +7,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'after-deportation-reentry-bars-waivers-georgia',
+    title: 'After Deportation: Reentry Bars, I-212 Waivers, and Coming Back Legally (Georgia)',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains how to come back legally after a deportation: the 5-, 10-, and 20-year reentry bars triggered by different removal scenarios under INA §212(a)(9)(A) (and how the expedited-removal bar differs from a regular removal-order bar), the permanent bar for an aggravated felony, the separate §212(a)(9)(C) permanent bar that traps families who reentered illegally after a prior removal, the Form I-212 Application for Permission to Reapply, how I-212 combines with the I-601 and I-601A unlawful-presence waivers, the consular-processing pathway back, and a realistic timeline (often years, and up to a decade abroad for the permanent bar). Common Georgia situations: U.S. citizen spouse and children. Georgia and Alabama.',
+  },
+  {
+    slug: 'daca-to-green-card-pathways-georgia',
+    title: 'DACA to Green Card in Georgia: Every Pathway to Permanent Residence for Dreamers',
+    date: '2026-06-23',
+    description:
+      'A Georgia immigration attorney answers the question every DACA recipient asks — can I get a green card? — and explains why how you entered the U.S. matters more than DACA itself. Covers the family pathways (marriage to a U.S. citizen, a petition from a U.S. citizen parent or adult child), employment sponsorship and why it is harder for Dreamers, the advance-parole-to-adjustment strategy that opens a green card for those who entered without inspection (and its real risks under Matter of Arrabally), who cannot get a green card under current law and why (no qualifying petitioner, unlawful entry without a safe travel option, prior removal orders), the rare INA §245(i) grandfathering exception, and what to do to protect yourself while DACA litigation (Texas v. United States) plays out. Georgia and Alabama.',
+  },
+  {
     slug: 'folkston-irwin-detention-south-georgia',
     title: 'Folkston and Irwin County ICE Detention in South Georgia: A Family Survival Guide',
     date: '2026-06-23',

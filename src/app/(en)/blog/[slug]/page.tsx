@@ -49,10 +49,12 @@ import { VawaSelfPetitionPostContent } from '@/content/blog/en/vawa-self-petitio
 import { FederalImmigrationLitigationPostContent } from '@/content/blog/en/federal-immigration-litigation-georgia';
 import { ReinstatementOfRemovalPostContent } from '@/content/blog/en/reinstatement-of-removal-prior-deportation-georgia';
 import { FolkstonIrwinDetentionPostContent } from '@/content/blog/en/folkston-irwin-detention-south-georgia';
+import { DacaToGreenCardPathwaysPostContent } from '@/content/blog/en/daca-to-green-card-pathways-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'daca-to-green-card-pathways-georgia': DacaToGreenCardPathwaysPostContent,
   'folkston-irwin-detention-south-georgia': FolkstonIrwinDetentionPostContent,
   'reinstatement-of-removal-prior-deportation-georgia': ReinstatementOfRemovalPostContent,
   'federal-immigration-litigation-georgia': FederalImmigrationLitigationPostContent,

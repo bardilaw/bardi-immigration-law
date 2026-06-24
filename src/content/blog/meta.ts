@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'citizenship-by-marriage-3-year-rule-georgia',
+    title: 'Citizenship by Marriage in Georgia: The 3-Year Naturalization Rule for Spouses of U.S. Citizens',
+    date: '2026-06-23',
+    description:
+      'A Georgia naturalization attorney explains the accelerated three-year path to U.S. citizenship for spouses of U.S. citizens under INA §319(a): the requirements (three years as a green card holder, living in marital union with a citizen spouse for the full three years, continuous residence, and 18 months of physical presence), how it differs from the standard five-year rule under INA §316, when the three-year clock starts (the green card grant date), how a conditional two-year green card and a pending Form I-751 affect timing, the N-400 process and interview, common disqualifiers like separation and long trips abroad, the §319(a) battered-spouse/VAWA exception that lets survivors keep the benefit after divorce, the §319(b) expedited path for spouses of citizens stationed abroad, and the Atlanta naturalization ceremony. Licensed in Georgia and Alabama.',
+  },
+  {
     slug: 'asylum-one-year-bar-exceptions-georgia',
     title: 'Missed the Asylum One-Year Deadline in Georgia? Exceptions and Options',
     date: '2026-06-24',

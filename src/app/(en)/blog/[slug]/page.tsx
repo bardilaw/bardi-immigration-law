@@ -55,10 +55,12 @@ import { VoluntaryDeparturePostContent } from '@/content/blog/en/voluntary-depar
 import { NotarioFraudPostContent } from '@/content/blog/en/notario-fraud-immigration-attorney-georgia';
 import { Ir1Cr1SpouseVisaPostContent } from '@/content/blog/en/ir1-cr1-spouse-visa-married-couples-georgia';
 import { AsylumOneYearBarPostContent } from '@/content/blog/en/asylum-one-year-bar-exceptions-georgia';
+import { CitizenshipByMarriage3YearRulePostContent } from '@/content/blog/en/citizenship-by-marriage-3-year-rule-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'citizenship-by-marriage-3-year-rule-georgia': CitizenshipByMarriage3YearRulePostContent,
   'asylum-one-year-bar-exceptions-georgia': AsylumOneYearBarPostContent,
   'ir1-cr1-spouse-visa-married-couples-georgia': Ir1Cr1SpouseVisaPostContent,
   'notario-fraud-immigration-attorney-georgia': NotarioFraudPostContent,

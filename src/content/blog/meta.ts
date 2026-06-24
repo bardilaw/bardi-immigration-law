@@ -9,6 +9,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'divorce-immigration-status-green-card-georgia',
+    title: 'Divorce and Immigration Status in Georgia: Green Cards, Pending Petitions, and Your Options',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains how divorce affects immigration status — broken down by exactly where you stand in the process. Covers conditional (two-year) permanent residents who must still file Form I-751 to remove conditions after a divorce by requesting the joint-filing waiver under INA §216(c)(4) and proving the marriage was bona fide, and why missing the filing window terminates status and can trigger removal proceedings; pending or approved Form I-130 spousal petitions that are automatically revoked on divorce under 8 CFR §205.1(a)(3)(i)(C) when no green card has yet been granted; K-1 fiancé(e) visa holders whose adjustment of status is locked to the specific petitioning U.S. citizen under INA §245(d), so a split before marriage or before the green card ends the path; the three-year naturalization shortcut for spouses of U.S. citizens under INA §319(a), which a divorce terminates by breaking the marital union and reverts the applicant to the standard five-year rule under INA §316(a); and the critical VAWA exception for abuse, where an abused spouse can self-petition on Form I-360 under INA §204(a)(1)(A)(iii) — or seek an I-751 battery/extreme-cruelty waiver — without the spouse’s cooperation, even after a divorce connected to the abuse. Distinguishes every scenario by current status (U.S. citizen vs. LPR spouse, conditional vs. permanent green card, pending petition vs. approved) and stresses that an unconditional ten-year green card survives a divorce. Empathetic and legally precise. Serving families across Georgia and Alabama.',
+  },
+  {
+    slug: 'birthright-citizenship-executive-order-14th-amendment-georgia',
+    title: 'Birthright Citizenship in Georgia (2025–2026): What the Executive Order Means for Your Family',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney cuts through the fear over birthright citizenship: as of mid-2026, every child born on U.S. soil is a U.S. citizen, and the executive order that tried to change that has been blocked by the courts and is not being enforced. Explains the settled constitutional law — the Fourteenth Amendment’s "born or naturalized" Citizenship Clause and the Supreme Court’s 1898 ruling in United States v. Wong Kim Ark that a child born here is a citizen regardless of the parents’ immigration status — and what Executive Order 14160 of January 20, 2025 tried to do (deny citizenship documents to children born to mothers who are unlawfully present, or lawfully present only temporarily on a tourist, student, or work visa, when the father is not a citizen or permanent resident). Covers where the legal battle stands: multiple federal courts blocked the order, the Supreme Court’s June 2025 Trump v. CASA ruling limited nationwide injunctions but did not decide whether the order is constitutional, and litigation continues with no final merits ruling. Then the practical steps every immigrant parent should take now — get the child’s certified birth certificate and U.S. passport immediately, because a passport is itself proof of citizenship — and a clear-eyed explanation of what a U.S.-citizen child does and does not do for an undocumented parent: it does NOT automatically prevent deportation, it creates an I-130 petition path only when the child turns 21, and it builds important equities for cancellation of removal and other relief. Notes the honest uncertainty that future court rulings could change the rules going forward. For immigrant families across metro Atlanta, Gwinnett, Dalton, south Georgia, and Alabama.',
+  },
+  {
     slug: 'eb5-investor-visa-green-card-georgia',
     title: 'EB-5 Investor Green Card in Georgia: A Path to Permanent Residence Through U.S. Investment',
     date: '2026-06-24',

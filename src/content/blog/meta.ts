@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'cancellation-of-removal-non-lpr-10-year-rule-georgia',
+    title: 'Non-LPR Cancellation of Removal in Georgia: The 10-Year Rule Explained',
+    date: '2026-06-24',
+    description:
+      'A Georgia deportation defense attorney explains non-LPR cancellation of removal under INA §240A(b) — the immigration court defense that can stop a deportation and deliver a green card to an undocumented long-term resident. Covers all four statutory elements: ten years of continuous physical presence (what counts as a brief, casual, innocent absence and what breaks the clock), good moral character for the full ten-year period and the INA §101(f) categorical bars, the §240A(b)(1)(C) criminal disqualifiers, and the demanding "exceptional and extremely unusual hardship" standard as applied in Matter of Andazola-Rivas (BIA 2002, denied — children accompanying parent to difficult conditions not enough) and Matter of Recinas (BIA 2002, granted — six U.S. citizen children, single mother, cumulative hardship). Explains the stop-time rule under INA §240A(d)(1) and what Pereira v. Sessions (2018) and Niz-Chavez v. Garland (2021) mean for NTAs that omit time-and-place, the 4,000-case annual cap and visa retrogression that delays green card issuance after a grant, and what happens when cancellation is denied (BIA appeal, motion to reopen, withholding, voluntary departure). Clearly distinguishes non-LPR cancellation (§240A(b), 10-year rule, hardship required, green card result) from LPR cancellation (§240A(a), 7-year rule, no hardship, no aggravated felony). Covers the EOIR process in the Atlanta and Stewart immigration courts, Form EOIR-42B, and the evidence that wins — tax returns, leases, medical and school records, hardship documentation. Cross-links voluntary departure, withholding of removal, DACA pathways, Georgia immigration courts, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
     slug: 'temporary-protected-status-tps-georgia',
     title: 'Temporary Protected Status (TPS) in Georgia: Eligibility, Registration, and Work Authorization',
     date: '2026-06-24',

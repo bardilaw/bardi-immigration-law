@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'h1b-cap-gap-opt-work-authorization-georgia',
+    title: 'H-1B Cap-Gap in Georgia: How to Keep Working When OPT Expires Before October 1',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains the H-1B cap-gap rule under 8 CFR 214.2(f)(5)(vi) — the regulation that automatically extends an F-1 student’s status, and often their work authorization, when a selected, cap-subject H-1B petition requesting a change of status with an October 1 start date is pending or approved. Covers the core problem thousands of Atlanta-area graduates face every April through September (the H-1B begins October 1 but OPT or STEM OPT expires earlier), and the make-or-break distinction most people miss: if the H-1B is filed while the OPT EAD is still valid, cap-gap extends both status and the right to keep working through September 30, but if it is filed after the EAD expired during the 60-day grace period, cap-gap extends status only and the student may not work. Explains the conditions (lottery selection plus a timely-filed petition — selection alone is not enough; the petition must request change of status, not consular processing; and the student must keep maintaining F-1 and OPT/STEM OPT terms), why you should get an updated cap-gap I-20 from your DSO, and the costly travel trap (leaving the country during cap-gap generally breaks it because you cannot re-enter in F-1 to resume it and cannot enter on H-1B before October 1). Also covers the difference between regular OPT and STEM OPT cap-gap mechanics, what happens with RFEs, delays, denials, rejections, and revocations (cap-gap ends and the standard 60-day F-1 grace period applies), why employers use premium processing, and the April-through-September risk window for graduates of Georgia Tech, Emory, UGA, Georgia State, and Kennesaw State. Serving F-1 students and employers across Georgia.',
+  },
+  {
     slug: 'expedited-removal-georgia-what-it-is-rights-challenge',
     title: 'Expedited Removal in Georgia: What It Is, Who It Affects, and How to Challenge It',
     date: '2026-06-24',

@@ -603,6 +603,16 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de visas TN en Georgia explica el estatus TN de no inmigrante bajo el T-MEC (USMCA) para profesionales mexicanos y canadienses: quién califica, la lista de ocupaciones y los requisitos de credenciales, el proceso consular para mexicanos frente al proceso en el puerto de entrada para canadienses, la admisión de 3 años y las renovaciones indefinidas, el estatus TD para dependientes (estudiar sí, trabajar no), el límite de la intención de no inmigrante en el camino a la green card y las causas comunes de negación. Con licencia en Georgia y Alabama.',
   },
+  'vawa-self-petition-domestic-violence-immigration-georgia': {
+    title: 'Autopetición de VAWA para Sobrevivientes Inmigrantes de Violencia Doméstica en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica la autopetición de VAWA (Formulario I-360) para sobrevivientes inmigrantes de violencia doméstica: quién califica (cónyuges, hijos y padres abusados de ciudadanos estadounidenses y residentes permanentes), qué significa el maltrato físico o la crueldad extrema bajo la ley federal, las estrictas protecciones de confidencialidad de VAWA (USCIS no puede notificar al abusador), el proceso de la petición I-360 y qué evidencia reunir, en qué se diferencia de la visa U y de la exención por maltrato/crueldad del I-751, el camino a la green card como familiar inmediato o beneficiario de preferencia F2A, y recursos específicos de Georgia, incluida la Coalición de Georgia contra la Violencia Doméstica y el Programa de Confidencialidad de Dirección de Georgia. Georgia y Alabama.',
+  },
+  'u-visa-crime-victims-immigration-georgia': {
+    title: 'Visa U para Víctimas Inmigrantes de Delitos en Georgia: Elegibilidad, la Petición I-918 y el Camino a la Green Card',
+    description:
+      'Una abogada de inmigración en Georgia explica la visa U (Formulario I-918) para víctimas inmigrantes de delitos: quién califica bajo la INA § 101(a)(15)(U), la lista completa de delitos que califican, la certificación obligatoria de las fuerzas del orden (Formulario I-918B), las visas derivadas para familiares, el estatus de visa U de 4 años y el camino del ajuste de estatus a la green card después de tres años. Las agencias certificadoras en Georgia incluyen la policía local, la GBI, las oficinas de fiscales de distrito y ciertas agencias federales. Distinta de la visa T (trata, Formulario I-914) y de VAWA (autopetición por violencia doméstica). Georgia y Alabama.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -650,4 +660,6 @@ export const ES_BLOG_SLUGS = new Set([
   'tps-2026',
   'h4-ead-work-authorization-h1b-spouses-georgia',
   'tn-visa-canadian-mexican-professionals-georgia',
+  'vawa-self-petition-domestic-violence-immigration-georgia',
+  'u-visa-crime-victims-immigration-georgia',
 ]);

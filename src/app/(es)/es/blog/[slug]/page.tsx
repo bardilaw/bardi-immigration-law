@@ -40,6 +40,8 @@ import { H4EadPostContentEs } from '@/content/blog/es/h4-ead-work-authorization-
 import { TnVisaUsmcaPostContentEs } from '@/content/blog/es/tn-visa-canadian-mexican-professionals-georgia';
 import { GreenCardMedicalExamI693PostContentEs } from '@/content/blog/es/green-card-medical-exam-i-693-georgia';
 import { VisaBulletinPriorityDatesPostContentEs } from '@/content/blog/es/visa-bulletin-priority-dates-family-green-card';
+import { VawaSelfPetitionPostContentEs } from '@/content/blog/es/vawa-self-petition-domestic-violence-immigration-georgia';
+import { UVisaCrimeVictimsPostContentEs } from '@/content/blog/es/u-visa-crime-victims-immigration-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -78,6 +80,8 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'tn-visa-canadian-mexican-professionals-georgia': TnVisaUsmcaPostContentEs,
   'green-card-medical-exam-i-693-georgia': GreenCardMedicalExamI693PostContentEs,
   'visa-bulletin-priority-dates-family-green-card': VisaBulletinPriorityDatesPostContentEs,
+  'vawa-self-petition-domestic-violence-immigration-georgia': VawaSelfPetitionPostContentEs,
+  'u-visa-crime-victims-immigration-georgia': UVisaCrimeVictimsPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

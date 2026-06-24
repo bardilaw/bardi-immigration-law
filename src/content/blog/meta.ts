@@ -9,6 +9,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'diversity-visa-lottery-dv-application-georgia',
+    title: 'Diversity Visa Lottery in Georgia: Eligibility, How to Apply, and What to Do If You Win',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains the Diversity Visa "green card lottery" for metro Atlanta’s African diaspora communities — Ethiopian, Congolese, Cameroonian, and others. Covers the two eligibility gates (being a native of a qualifying low-admission country under the annually changing excluded-country list, where Nigeria has fallen off in recent years, plus the alternate chargeability rules that let an applicant claim a spouse’s or a parent’s country of birth; and the high-school-education-or-two-years-of-qualifying-work requirement), how to enter for free only through the Electronic Diversity Visa (E-DV) system at dvlottery.state.gov during the October–November window and the mistakes that quietly disqualify entries (duplicate entries, bad photos, omitted spouses or children), why selection is not a visa — the government never emails winners and you must check Entrant Status Check yourself, far more people are selected than there are visas, cases are processed in regional rank order, and every diversity visa must be issued by the hard September 30 fiscal-year deadline that never moves — the DS-260 and Kentucky Consular Center steps, the medical exam, adjustment of status versus consular processing, and what disqualifies a selected applicant (criminal record, unlawful presence, health grounds, document failures, and missed deadlines). Explains the two moments to get an attorney: before entering and after selection. Serving the African and Caribbean diaspora across Georgia and Alabama.',
+  },
+  {
+    slug: 'green-card-abandonment-travel-rules-reentry-permit-georgia',
+    title: 'Green Card Travel Rules in Georgia: How to Keep Permanent Residence When Living Abroad',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains how long a green-card holder can stay outside the United States without losing permanent residence — and why the "six-month rule" everyone has heard is a myth. Covers the real abandonment-of-residence standard (a rebuttable presumption based on intent, not a fixed calendar deadline), how the risk rises with the length of the trip (under 6 months low risk, over 6 months invites questioning and breaks continuous residence for naturalization, one year or more is the clearest danger zone where the green card is no longer a valid travel document), the Form I-131 reentry permit (valid up to 2 years, filed from inside the U.S. with the I-551 in hand and a biometrics appointment, protecting long absences in advance), the SB-1 Returning Resident visa for when a permit expired or a trip exceeded a year because of circumstances beyond the traveler’s control, the U.S.-ties factors CBP officers and immigration judges weigh (resident tax returns, a maintained U.S. address, bank accounts, a state driver license, family, and employment), what happens at the port of entry including secondary inspection and the voluntary Form I-407 surrender that a returning resident is never required to sign, and why metro Atlanta’s large Indian, Korean, Chinese, and Latin American permanent-resident communities who travel for aging parents, family, and business are exactly the group most exposed. Serving green-card holders across Georgia and Alabama.',
+  },
+  {
     slug: 'eb1a-extraordinary-ability-green-card-self-petition-georgia',
     title: 'EB-1A Extraordinary Ability Green Card in Georgia: Self-Petition With No Employer and No Backlog',
     date: '2026-06-24',

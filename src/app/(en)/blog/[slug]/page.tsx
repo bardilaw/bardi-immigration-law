@@ -73,10 +73,14 @@ import { VisaOverstayConsequencesPostContent } from '@/content/blog/en/visa-over
 import { NaturalizationDenialPostContent } from '@/content/blog/en/naturalization-denial-disqualifiers-n400-georgia';
 import { R1ReligiousWorkerVisaPostContent } from '@/content/blog/en/r1-religious-worker-visa-georgia';
 import { Eb1aExtraordinaryAbilityPostContent } from '@/content/blog/en/eb1a-extraordinary-ability-green-card-self-petition-georgia';
+import { GreenCardAbandonmentTravelRulesPostContent } from '@/content/blog/en/green-card-abandonment-travel-rules-reentry-permit-georgia';
+import { DiversityVisaLotteryPostContent } from '@/content/blog/en/diversity-visa-lottery-dv-application-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'diversity-visa-lottery-dv-application-georgia': DiversityVisaLotteryPostContent,
+  'green-card-abandonment-travel-rules-reentry-permit-georgia': GreenCardAbandonmentTravelRulesPostContent,
   'eb1a-extraordinary-ability-green-card-self-petition-georgia': Eb1aExtraordinaryAbilityPostContent,
   'r1-religious-worker-visa-georgia': R1ReligiousWorkerVisaPostContent,
   'naturalization-denial-disqualifiers-n400-georgia': NaturalizationDenialPostContent,

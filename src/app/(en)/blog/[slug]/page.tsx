@@ -69,10 +69,18 @@ import { L1IntracompanyTransfereePostContent } from '@/content/blog/en/l1-intrac
 import { E2InvestorVisaPostContent } from '@/content/blog/en/e2-investor-visa-treaty-nationals-georgia';
 import { NvcConsularInterviewPostContent } from '@/content/blog/en/nvc-consular-interview-immigrant-visa-process-georgia';
 import { UnlawfulPresenceBarPostContent } from '@/content/blog/en/unlawful-presence-3-year-10-year-bar-georgia';
+import { VisaOverstayConsequencesPostContent } from '@/content/blog/en/visa-overstay-consequences-fix-status-georgia';
+import { NaturalizationDenialPostContent } from '@/content/blog/en/naturalization-denial-disqualifiers-n400-georgia';
+import { R1ReligiousWorkerVisaPostContent } from '@/content/blog/en/r1-religious-worker-visa-georgia';
+import { Eb1aExtraordinaryAbilityPostContent } from '@/content/blog/en/eb1a-extraordinary-ability-green-card-self-petition-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'eb1a-extraordinary-ability-green-card-self-petition-georgia': Eb1aExtraordinaryAbilityPostContent,
+  'r1-religious-worker-visa-georgia': R1ReligiousWorkerVisaPostContent,
+  'naturalization-denial-disqualifiers-n400-georgia': NaturalizationDenialPostContent,
+  'visa-overstay-consequences-fix-status-georgia': VisaOverstayConsequencesPostContent,
   'unlawful-presence-3-year-10-year-bar-georgia': UnlawfulPresenceBarPostContent,
   'nvc-consular-interview-immigrant-visa-process-georgia': NvcConsularInterviewPostContent,
   'e2-investor-visa-treaty-nationals-georgia': E2InvestorVisaPostContent,

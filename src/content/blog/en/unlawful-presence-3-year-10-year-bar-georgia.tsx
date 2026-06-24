@@ -167,8 +167,10 @@ export function UnlawfulPresenceBarPostContent() {
 
       <h2>Talk to Eszter Bardi &mdash; Free Consultation</h2>
       <p>
-        If you or your spouse has overstayed a visa or entered without inspection, <strong>do not leave the United
-        States to &ldquo;fix&rdquo; your status without legal advice.</strong> At Bardi Immigration Law, attorney{' '}
+        If you or your spouse has{' '}
+        <Link href="/blog/visa-overstay-consequences-fix-status-georgia">overstayed a visa</Link> or entered without
+        inspection, <strong>do not leave the United States to &ldquo;fix&rdquo; your status without legal advice.</strong>{' '}
+        At Bardi Immigration Law, attorney{' '}
         <strong>Eszter Bardi</strong> helps families across Georgia and Alabama understand exactly how much unlawful
         presence they have accrued, whether a bar applies, and how the I-601A and I-601 waivers can keep their time apart
         to a minimum.

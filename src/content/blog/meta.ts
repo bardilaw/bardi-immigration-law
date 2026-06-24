@@ -9,6 +9,34 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'eb1a-extraordinary-ability-green-card-self-petition-georgia',
+    title: 'EB-1A Extraordinary Ability Green Card in Georgia: Self-Petition With No Employer and No Backlog',
+    date: '2026-06-24',
+    description:
+      'A Georgia employment immigration attorney explains the EB-1A extraordinary-ability green card — the first-preference category under INA §203(b)(1)(A) that lets a top-of-field professional self-petition on Form I-140 with no employer, no job offer, and no PERM labor certification, and that moves years faster than EB-2 for applicants born in India and China. Covers how EB-1A (self-petition) differs from EB-1B outstanding professors and researchers and EB-1C multinational managers (both employer-sponsored), the decisive priority-date advantage of the first preference over the EB-2 National Interest Waiver, the "sustained national or international acclaim" standard and the two ways to meet it (a one-time major award like a Nobel, Olympic medal, Oscar, or Pulitzer, or at least three of the ten regulatory criteria at 8 CFR 204.5(h)(3)), the critical two-step Kazarian v. USCIS analysis (counting the criteria, then the final-merits determination that you are among the small percentage at the very top of your field), who qualifies in Georgia (Georgia Tech and Emory researchers, Tyler Perry Studios and Atlanta film creatives, PGA Tour and Atlanta United athletes, and venture-backed founders), the EB-1A-vs-EB-2-NIW choice and the O-1-to-EB-1A path, the self-filed I-140 with premium processing, and adjustment of status versus consular processing. Serving researchers, creatives, athletes, and founders across Georgia and Alabama.',
+  },
+  {
+    slug: 'r1-religious-worker-visa-georgia',
+    title: 'R-1 Religious Worker Visa in Georgia: How Churches, Temples, and Mosques Sponsor Foreign Clergy',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains the R-1 nonimmigrant religious worker visa for the diverse faith communities of metro Atlanta and across the state — Catholic parishes, Korean Presbyterian and evangelical churches, Hindu temples, Ethiopian Orthodox churches, and mosques. Covers the two halves of every R-1 case: the qualifying non-profit religious organization (IRS 501(c)(3) or group tax exemption) and the qualifying religious worker (a minister, or a person in a religious vocation or occupation working at least part-time / an average of at least 20 hours per week), the two-year same-denomination membership requirement, the compensation rule and limited missionary self-support exception, the employer-filed Form I-129 with the R-1 Classification Supplement and the USCIS compliance site inspection that catches first-time sponsors off guard, the initial 30-month admission extendable to a 60-month (5-year) maximum and the one-year-abroad reset, the EB-4 special immigrant religious worker green-card path via Form I-360 (with the permanent minister category versus the periodically reauthorized non-minister sunset category), the fact that R-1 has no foreign-residence requirement so pursuing a green card is not disqualifying, R-2 status for spouses and children under 21 and the rule that R-2 spouses cannot work, and why a B-1 visitor for religious purposes is not a work visa. Serving faith communities across Georgia and Alabama.',
+  },
+  {
+    slug: 'visa-overstay-consequences-fix-status-georgia',
+    title: 'Overstayed Your Visa in Georgia? Consequences, Options, and How to Fix Your Status',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains what to do after a visa overstay: the critical I-94 vs. visa-stamp confusion (the I-94, not the passport foil, controls how long you can stay), the consequences of overstaying (unlawful presence accrual toward the 3- and 10-year bars, an automatically voided visa under INA 222(g), loss of the ability to extend or change status, SEVIS termination for F-1/M-1 students, and EAD revocation), what an overstay does NOT do (you are not automatically arrested or immediately deported, though you become deportable under INA 237(a)(1)(B)), and the real paths back to status — adjustment of status inside the U.S. for immediate relatives of U.S. citizens under INA 245(a) (the 245(c) overstay and unauthorized-work bars are forgiven for spouses, parents, and children under 21), a timely change or extension of status before the I-94 expires, consular processing abroad and the departure trap that triggers the bar, the Form I-601A provisional and Form I-601 waivers, and voluntary departure under INA 240B. A companion to the firm’s unlawful presence 3- and 10-year bar guide. For visa overstayers across Georgia and Alabama.',
+  },
+  {
+    slug: 'naturalization-denial-disqualifiers-n400-georgia',
+    title: 'Why Naturalization Applications Get Denied in Georgia — and What to Do About It',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains why Form N-400 naturalization applications are denied and how to fix or appeal a denial: the good moral character (GMC) requirement and its five-year (INA 316(a)) and three-year (INA 319(a)) statutory lookback, the conditional GMC bars under INA 101(f) that are often curable by waiting (two or more DUIs, controlled-substance offenses, crimes involving moral turpitude, unpaid or unfiled taxes, failure to pay child support, false testimony, and 180-plus days in jail), the continuous-residence and physical-presence breaks that quietly sink applicants (six-month to one-year absences and the one-year break), the permanent bars for murder and for an aggravated felony under INA 101(a)(43), the real danger that an N-400 interview can trigger a Notice to Appear and removal for a long-removable LPR, the English and civics testing exceptions (50/20, 55/15, and the N-648 medical waiver), the Selective Service registration gap and why it is usually fixable after age 31, and the two real options after a denial — the N-336 request for a hearing within 30 days (and de novo federal court review) versus simply reapplying once a time-limited disqualifier ages out. For long-term Georgia and Alabama green-card holders with old convictions, tax gaps, or long trips abroad.',
+  },
+  {
     slug: 'unlawful-presence-3-year-10-year-bar-georgia',
     title: 'Unlawful Presence and the 3-Year and 10-Year Bars: A Georgia Guide',
     date: '2026-06-24',

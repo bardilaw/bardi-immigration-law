@@ -56,10 +56,12 @@ import { NotarioFraudPostContent } from '@/content/blog/en/notario-fraud-immigra
 import { Ir1Cr1SpouseVisaPostContent } from '@/content/blog/en/ir1-cr1-spouse-visa-married-couples-georgia';
 import { AsylumOneYearBarPostContent } from '@/content/blog/en/asylum-one-year-bar-exceptions-georgia';
 import { CitizenshipByMarriage3YearRulePostContent } from '@/content/blog/en/citizenship-by-marriage-3-year-rule-georgia';
+import { EmploymentBasedGreenCardEb123PostContent } from '@/content/blog/en/employment-based-green-card-eb1-eb2-eb3-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'employment-based-green-card-eb1-eb2-eb3-georgia': EmploymentBasedGreenCardEb123PostContent,
   'citizenship-by-marriage-3-year-rule-georgia': CitizenshipByMarriage3YearRulePostContent,
   'asylum-one-year-bar-exceptions-georgia': AsylumOneYearBarPostContent,
   'ir1-cr1-spouse-visa-married-couples-georgia': Ir1Cr1SpouseVisaPostContent,

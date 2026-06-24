@@ -7,6 +7,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'employment-based-green-card-eb1-eb2-eb3-georgia',
+    title: 'Employment-Based Green Cards in Georgia: EB-1, EB-2, and EB-3 Explained',
+    date: '2026-06-24',
+    description:
+      'A Georgia employment immigration attorney explains the three employment-based green card categories: EB-1 priority workers (EB-1A extraordinary ability with self-petition, EB-1B outstanding professors and researchers, EB-1C multinational managers and executives) — none of which need PERM; EB-2 advanced-degree professionals and exceptional ability, plus the EB-2 National Interest Waiver (NIW) and its Matter of Dhanasar three-prong test that waives the job offer and labor certification; and EB-3 skilled workers, professionals, and other (unskilled) workers. Covers the PERM labor certification process at the Department of Labor (prevailing wage, recruitment, ETA Form 9089, audits), priority dates and Visa Bulletin retrogression by country of birth (severe India and China backlogs in EB-2/EB-3), and the final step of adjustment of status vs. consular processing — with why category choice and timing make an attorney essential. Serving Atlanta tech, healthcare, manufacturing, and university workers and employers across Georgia and Alabama.',
+  },
+  {
     slug: 'citizenship-by-marriage-3-year-rule-georgia',
     title: 'Citizenship by Marriage in Georgia: The 3-Year Naturalization Rule for Spouses of U.S. Citizens',
     date: '2026-06-23',

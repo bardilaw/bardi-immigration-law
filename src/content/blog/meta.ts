@@ -7,6 +7,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'asylum-one-year-bar-exceptions-georgia',
+    title: 'Missed the Asylum One-Year Deadline in Georgia? Exceptions and Options',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains the asylum one-year filing bar under INA §208(a)(2)(B) and what to do if you missed it: when the clock starts (last arrival, regardless of how you entered), the clear-and-convincing standard for proving a timely filing, the "changed circumstances" exception under INA §208(a)(2)(D) and 8 CFR 208.4(a)(4) (worsening country conditions, a change in your own situation, loss of dependent status, domestic-violence/VAWA situations), the "extraordinary circumstances" exception under 8 CFR 208.4(a)(5) (serious illness, legal disability, ineffective assistance of counsel, maintaining lawful status), the reasonable-period requirement, how to raise the exception at the asylum interview or in court, and the alternative protections that have no deadline — withholding of removal under INA §241(b)(3) and Convention Against Torture (CAT) relief. Atlanta and Stewart immigration courts; states clearly that every late-filing case requires individual attorney evaluation. Georgia and Alabama.',
+  },
+  {
+    slug: 'ir1-cr1-spouse-visa-married-couples-georgia',
+    title: 'IR-1 and CR-1 Spouse Visa in Georgia: Bringing Your Married Spouse from Abroad',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains the IR-1 and CR-1 immigrant visa for married couples with a spouse abroad: the IR-1 immediate-relative visa (married two years or more, full ten-year green card) vs. the CR-1 conditional visa (married under two years, two-year green card), how the spouse visa differs from the K-1 fiancé visa (married vs. engaged) and from adjustment of status (spouse abroad vs. inside the U.S.), the full process from the I-130 petition through National Visa Center processing, the DS-260 application, the Affidavit of Support (I-864), and the embassy interview, a realistic timeline (I-130 in 6–12 months, NVC in 3–6 months, then the consular interview and entry), the F2A wait for spouses of green card holders, and the two-year conditional green card that CR-1 spouses must later remove with Form I-751. Context for metro Atlanta’s Indian, Mexican, and West African communities; Georgia and Alabama.',
+  },
+  {
     slug: 'notario-fraud-immigration-attorney-georgia',
     title: 'Notario Fraud in Georgia: Why Unauthorized Immigration Help Destroys Cases',
     date: '2026-06-24',

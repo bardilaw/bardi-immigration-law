@@ -53,10 +53,14 @@ import { DacaToGreenCardPathwaysPostContent } from '@/content/blog/en/daca-to-gr
 import { AfterDeportationReentryBarsPostContent } from '@/content/blog/en/after-deportation-reentry-bars-waivers-georgia';
 import { VoluntaryDeparturePostContent } from '@/content/blog/en/voluntary-departure-immigration-court-georgia';
 import { NotarioFraudPostContent } from '@/content/blog/en/notario-fraud-immigration-attorney-georgia';
+import { Ir1Cr1SpouseVisaPostContent } from '@/content/blog/en/ir1-cr1-spouse-visa-married-couples-georgia';
+import { AsylumOneYearBarPostContent } from '@/content/blog/en/asylum-one-year-bar-exceptions-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'asylum-one-year-bar-exceptions-georgia': AsylumOneYearBarPostContent,
+  'ir1-cr1-spouse-visa-married-couples-georgia': Ir1Cr1SpouseVisaPostContent,
   'notario-fraud-immigration-attorney-georgia': NotarioFraudPostContent,
   'voluntary-departure-immigration-court-georgia': VoluntaryDeparturePostContent,
   'after-deportation-reentry-bars-waivers-georgia': AfterDeportationReentryBarsPostContent,

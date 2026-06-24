@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide',
+    title: 'Georgia Immigration Courts: An Atlanta, Gwinnett, DeKalb, and Stewart Navigation Guide',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney maps the state’s immigration court system so you know exactly where your case is heard and who is on the other side of it. Covers the Atlanta Immigration Court downtown on Peachtree as the primary venue for non-detained respondents across North and Central Georgia, the Stewart Immigration Court inside the Stewart Detention Center in Lumpkin for detained cases on a faster docket, and why there is no separate Gwinnett or DeKalb immigration court even though those counties have huge immigrant populations — their residents appear in Atlanta. Explains how Georgia fits in the EOIR structure as a Department of Justice agency, the all-important fact that Georgia sits in the Eleventh Circuit (not the more favorable Ninth) so out-of-state counsel must build for stricter Eleventh Circuit and BIA precedent, and how to look up your own hearing date for free using EOIR’s automated hotline at 1-800-898-7180 and the online portal at acis.eoir.justice.gov with your A-number. Walks through requesting a continuance for good cause, filing a motion to change venue when you move (and the EOIR-33 address-change duty within five days), and the critical distinction between who adjudicates and who enforces — EOIR judges decide the case while the ICE ERO Atlanta Field Office (covering Georgia, North Carolina, and South Carolina) detains people and executes final removal orders. Closes with the next steps after receiving a Notice to Appear. Serving immigrants across metro Atlanta, Gwinnett, DeKalb, and Georgia and Alabama.',
+  },
+  {
     slug: 'divorce-immigration-status-green-card-georgia',
     title: 'Divorce and Immigration Status in Georgia: Green Cards, Pending Petitions, and Your Options',
     date: '2026-06-24',

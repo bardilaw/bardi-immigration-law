@@ -79,10 +79,12 @@ import { B2TouristVisaAdjustmentPostContent } from '@/content/blog/en/b2-tourist
 import { BirthrightCitizenshipPostContent } from '@/content/blog/en/birthright-citizenship-executive-order-14th-amendment-georgia';
 import { Eb5InvestorVisaPostContent } from '@/content/blog/en/eb5-investor-visa-green-card-georgia';
 import { DivorceImmigrationStatusPostContent } from '@/content/blog/en/divorce-immigration-status-green-card-georgia';
+import { GeorgiaImmigrationCourtsPostContent } from '@/content/blog/en/georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide': GeorgiaImmigrationCourtsPostContent,
   'divorce-immigration-status-green-card-georgia': DivorceImmigrationStatusPostContent,
   'eb5-investor-visa-green-card-georgia': Eb5InvestorVisaPostContent,
   'birthright-citizenship-executive-order-14th-amendment-georgia': BirthrightCitizenshipPostContent,

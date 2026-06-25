@@ -51,6 +51,7 @@ import { VisaBulletinPriorityDatesPostContent } from '@/content/blog/en/visa-bul
 import { VawaSelfPetitionPostContent } from '@/content/blog/en/vawa-self-petition-domestic-violence-immigration-georgia';
 import { FederalImmigrationLitigationPostContent } from '@/content/blog/en/federal-immigration-litigation-georgia';
 import { ReinstatementOfRemovalPostContent } from '@/content/blog/en/reinstatement-of-removal-prior-deportation-georgia';
+import { StayOfRemovalPostContent } from '@/content/blog/en/stay-of-removal-deportation-order-georgia';
 import { FolkstonIrwinDetentionPostContent } from '@/content/blog/en/folkston-irwin-detention-south-georgia';
 import { DacaToGreenCardPathwaysPostContent } from '@/content/blog/en/daca-to-green-card-pathways-georgia';
 import { AfterDeportationReentryBarsPostContent } from '@/content/blog/en/after-deportation-reentry-bars-waivers-georgia';
@@ -184,6 +185,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'daca-to-green-card-pathways-georgia': DacaToGreenCardPathwaysPostContent,
   'folkston-irwin-detention-south-georgia': FolkstonIrwinDetentionPostContent,
   'reinstatement-of-removal-prior-deportation-georgia': ReinstatementOfRemovalPostContent,
+  'stay-of-removal-deportation-order-georgia': StayOfRemovalPostContent,
   'federal-immigration-litigation-georgia': FederalImmigrationLitigationPostContent,
   'vawa-self-petition-domestic-violence-immigration-georgia': VawaSelfPetitionPostContent,
   'visa-bulletin-priority-dates-family-green-card': VisaBulletinPriorityDatesPostContent,

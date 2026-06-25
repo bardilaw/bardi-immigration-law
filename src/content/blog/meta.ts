@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'stay-of-removal-deportation-order-georgia',
+    title: 'Stay of Removal in Georgia: How to Stop Deportation After a Final Order',
+    date: '2026-06-25',
+    description:
+      'A Georgia deportation defense attorney explains how to pause a deportation with a stay of removal once you have a final order. Covers what makes a removal order final (an immigration judge’s decision becomes final after the 30-day window passes, or when the BIA dismisses an appeal, starting the 90-day removal period under INA § 241(a)(1)); the automatic stay created by a timely BIA appeal under 8 CFR § 1003.6(a) and the danger when it evaporates on dismissal; the critical rule that a petition for review to the Eleventh Circuit does NOT automatically stay removal under INA § 242(b)(3)(B), so a separate emergency stay motion is required under the four-factor Nken v. Holder standard (likelihood of success on the merits, irreparable harm, balance of harms, public interest); requesting a discretionary stay directly from ICE on Form I-246 at the Atlanta ICE ERO office; the Order of Supervision (Form I-220B) and check-ins after the 90-day removal period, framed by Zadvydas v. Davis; the motion to reopen as a stay mechanism (changed country conditions and ineffective-assistance-of-counsel grounds, plus the automatic stay for timely in-absentia reopenings); and last-resort options — deferred action, prosecutorial discretion, and private congressional bills. Cross-links the BIA appeal, motion to reopen, withholding of removal, federal immigration litigation, reinstatement of removal, deportation defense, ICE enforcement rights, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
     slug: 'eb1-employment-based-green-card-georgia',
     title: 'EB-1 Green Card in Georgia: Extraordinary Ability, Outstanding Researchers, and Multinational Managers',
     date: '2026-06-25',

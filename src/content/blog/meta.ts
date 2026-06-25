@@ -1177,6 +1177,46 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia explica el Formulario I-90 para renovar o reemplazar la green card (tarjeta de residente permanente): quién debe presentarlo, cómo hacerlo en línea o por correo, cuánto tarda, la diferencia clave con el Formulario I-751 y el Formulario N-400, cómo probar su estatus mientras espera con el aviso de recibo (Formulario I-797C) y el sello ADIT (I-551), cómo trabajar y viajar al extranjero antes de que llegue la tarjeta nueva, y cuándo conviene hablar con un abogado. Información general, no asesoría legal.',
   },
+  'public-charge-rule-green-card-benefits-georgia': {
+    title: 'Regla de Carga Pública en Georgia: ¿Usar Beneficios Perjudicará su Green Card?',
+    description:
+      'Una abogada de inmigración en Georgia explica qué significa realmente la carga pública bajo INA §212(a)(4): a qué casos aplica el examen de totalidad de circunstancias, qué beneficios cuentan (SSI, TANF, asistencia general, cuidado a largo plazo) y cuáles no (Medicaid, SNAP, CHIP, WIC, vivienda, créditos fiscales), por qué los beneficios de sus hijos ciudadanos estadounidenses no cuentan en su contra, las categorías exentas y el papel de la Declaración Jurada de Patrocinio Económico (Formulario I-864). Información general, no asesoría legal.',
+  },
+  'vawa-cancellation-of-removal-special-rule-georgia': {
+    title: 'Cancelación de Remoción VAWA en Georgia: La Regla Especial para Sobrevivientes de Violencia Doméstica en la Corte de Inmigración',
+    description:
+      'Una abogada de inmigración en Georgia explica la cancelación de remoción VAWA bajo INA §240A(b)(2) para personas en proceso de remoción: maltrato o crueldad extrema por un cónyuge o padre ciudadano o residente, los tres años de presencia continua, el buen carácter moral, el requisito de dificultad extrema, y en qué se diferencia de la autopetición VAWA con el Formulario I-360. Información general, no asesoría legal.',
+  },
+  'b1-business-visitor-visa-georgia-allowed-activities': {
+    title: 'Visa de Visitante de Negocios B-1 en Georgia: Qué Puede y Qué No Puede Hacer',
+    description:
+      'Una abogada de inmigración en Georgia explica la visa de visitante de negocios B-1 bajo INA §101(a)(15)(B): las actividades permitidas (reuniones, negociaciones, conferencias, capacitación) frente al trabajo remunerado local prohibido bajo 9 FAM 402.2, el VWP/ESTA frente a la visa estampada, la estadía y la prórroga con el Formulario I-539, y cuándo en realidad necesita una H-1B o L-1. Información general, no asesoría legal.',
+  },
+  'uscis-case-status-rfe-response-georgia': {
+    title: 'Estado de su Caso ante USCIS en Georgia: Cómo Consultarlo, Responder a las RFE y Resolver Demoras',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo leer su aviso de recibo (Formulario I-797C), usar las herramientas gratuitas de USCIS para consultar el estado de su caso, entender los mensajes de estado, responder a una Solicitud de Evidencia (RFE) o a un Aviso de Intención de Denegar (NOID), y qué hacer ante demoras: solicitud de servicio, expedición, indagación congresional y demanda de mandamus. Información general, no asesoría legal.',
+  },
+  'f1-student-visa-reinstatement-out-of-status-georgia': {
+    title: 'Restitución del Estatus F-1 en Georgia: Cómo los Estudiantes Internacionales se Recuperan tras Caer Fuera de Estatus',
+    description:
+      'Una abogada de inmigración en Georgia explica qué significa estar fuera de estatus para un estudiante F-1 y las dos vías de regreso: la restitución ante USCIS bajo 8 CFR 214.2(f)(16) (con el DSO, el I-20 y el Formulario I-539, la ventana de cinco meses y la barra absoluta por empleo no autorizado) o la salida y el reingreso, con la trampa de la presencia ilegal y las barras de 3 y 10 años bajo INA §212(a)(9)(B). Información general, no asesoría legal.',
+  },
+  'extend-change-nonimmigrant-status-i539-georgia': {
+    title: 'Prorrogue o Cambie su Estatus de No Inmigrante en Georgia (Formulario I-539)',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo prorrogar o cambiar su estatus de no inmigrante con el Formulario I-539: quién lo presenta (B-2, F-2, J-2, M-2, H-4, L-2, O-3) frente a quién usa el Formulario I-129, la presentación a tiempo y la estancia autorizada (que no es lo mismo que la autorización de empleo), el puente de B-2 a F-1 y la intención preconcebida, y las consecuencias de una negación. Información general, no asesoría legal.',
+  },
+  'child-status-protection-act-cspa-aging-out-georgia': {
+    title: 'Ley de Protección del Estatus del Menor (CSPA) en Georgia: Cómo Proteger a los Hijos de Perder la Condición de Menor',
+    description:
+      'Una abogada de inmigración en Georgia explica la Ley de Protección del Estatus del Menor (CSPA): cómo protege a los hijos que cumplen 21 años durante un caso migratorio, la congelación de edad para familiares inmediatos bajo INA §201(f), la fórmula de edad bajo §203(h)(1), el requisito de "haber buscado adquirir" la residencia en un año, el cambio de las Fechas de Presentación, y Matter of Wang y Scialabba v. Cuellar de Osorio. Información general, no asesoría legal.',
+  },
+  'immigrant-visa-consulate-interview-preparation-georgia': {
+    title: 'Cómo Prepararse para su Entrevista de Visa de Inmigrante en un Consulado de EE. UU. (Familias de Georgia)',
+    description:
+      'Una abogada de inmigración en Georgia guía a las familias por la entrevista de visa de inmigrante en un consulado de EE. UU.: qué terminar antes (DS-260, recopilación de documentos del NVC, Formulario I-864 y el examen médico con el médico designado), qué llevar, cómo es el día, las preguntas más comunes, las razones de demora o rechazo (carga pública §212(a)(4), procesamiento administrativo §221(g), barras de presencia ilegal §212(a)(9)(B)) y qué ocurre tras una aprobación. Información general, no asesoría legal.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -1267,4 +1307,12 @@ export const ES_BLOG_SLUGS = new Set([
   'birthright-citizenship-executive-order-14th-amendment-georgia',
   'after-deportation-reentry-bars-waivers-georgia',
   'i90-green-card-renewal-replacement-georgia',
+  'public-charge-rule-green-card-benefits-georgia',
+  'vawa-cancellation-of-removal-special-rule-georgia',
+  'b1-business-visitor-visa-georgia-allowed-activities',
+  'uscis-case-status-rfe-response-georgia',
+  'f1-student-visa-reinstatement-out-of-status-georgia',
+  'extend-change-nonimmigrant-status-i539-georgia',
+  'child-status-protection-act-cspa-aging-out-georgia',
+  'immigrant-visa-consulate-interview-preparation-georgia',
 ]);

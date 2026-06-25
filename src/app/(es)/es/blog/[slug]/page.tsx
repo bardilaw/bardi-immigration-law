@@ -84,6 +84,14 @@ import { DacaDeferredActionChildhoodArrivalsPostContentEs } from '@/content/blog
 import { H2aAgriculturalWorkerVisaPostContentEs } from '@/content/blog/es/h2a-agricultural-worker-visa-georgia';
 import { H2bSeasonalWorkerVisaPostContentEs } from '@/content/blog/es/h2b-seasonal-worker-visa-georgia';
 import { CancellationOfRemovalLprPostContentEs } from '@/content/blog/es/cancellation-of-removal-lpr-green-card-holder-georgia';
+import { PublicChargeRulePostContentEs } from '@/content/blog/es/public-charge-rule-green-card-benefits-georgia';
+import { VawaCancellationOfRemovalPostContentEs } from '@/content/blog/es/vawa-cancellation-of-removal-special-rule-georgia';
+import { B1BusinessVisitorVisaPostContentEs } from '@/content/blog/es/b1-business-visitor-visa-georgia-allowed-activities';
+import { UscisCaseStatusRfePostContentEs } from '@/content/blog/es/uscis-case-status-rfe-response-georgia';
+import { F1StudentVisaReinstatementPostContentEs } from '@/content/blog/es/f1-student-visa-reinstatement-out-of-status-georgia';
+import { ExtendChangeNonimmigrantStatusPostContentEs } from '@/content/blog/es/extend-change-nonimmigrant-status-i539-georgia';
+import { ChildStatusProtectionActPostContentEs } from '@/content/blog/es/child-status-protection-act-cspa-aging-out-georgia';
+import { ImmigrantVisaConsulateInterviewPostContentEs } from '@/content/blog/es/immigrant-visa-consulate-interview-preparation-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -165,6 +173,14 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'h2a-agricultural-worker-visa-georgia': H2aAgriculturalWorkerVisaPostContentEs,
   'h2b-seasonal-worker-visa-georgia': H2bSeasonalWorkerVisaPostContentEs,
   'cancellation-of-removal-lpr-green-card-holder-georgia': CancellationOfRemovalLprPostContentEs,
+  'public-charge-rule-green-card-benefits-georgia': PublicChargeRulePostContentEs,
+  'vawa-cancellation-of-removal-special-rule-georgia': VawaCancellationOfRemovalPostContentEs,
+  'b1-business-visitor-visa-georgia-allowed-activities': B1BusinessVisitorVisaPostContentEs,
+  'uscis-case-status-rfe-response-georgia': UscisCaseStatusRfePostContentEs,
+  'f1-student-visa-reinstatement-out-of-status-georgia': F1StudentVisaReinstatementPostContentEs,
+  'extend-change-nonimmigrant-status-i539-georgia': ExtendChangeNonimmigrantStatusPostContentEs,
+  'child-status-protection-act-cspa-aging-out-georgia': ChildStatusProtectionActPostContentEs,
+  'immigrant-visa-consulate-interview-preparation-georgia': ImmigrantVisaConsulateInterviewPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

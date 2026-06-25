@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'f1-student-visa-reinstatement-out-of-status-georgia',
+    title: 'F-1 Reinstatement in Georgia: How International Students Recover After Falling Out of Status',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains how F-1 students at Georgia Tech, Emory, UGA, Georgia State, and Kennesaw State recover after falling out of status. Covers the common ways students lose F-1 status (dropping below a full course of study without authorized reduced course load under 8 CFR 214.2(f)(6), unauthorized employment, lapsed I-20 or SEVIS record, DSO administrative errors, and missed deadlines) and the critical difference between being out of status and accruing unlawful presence under INA §212(a)(9)(B) — including why most F-1 students admitted for duration of status only begin accruing unlawful presence after a formal violation finding, and why there is no 60-day grace period when SEVIS is terminated for a violation. Walks through the two paths back: reinstatement under 8 CFR 214.2(f)(16) (the DSO recommendation and reinstatement I-20 plus Form I-539 to USCIS, the five-month window or compelling circumstances, no repeated or willful violations, current pursuit of a full course of study, no removal proceedings, and the absolute bar when the student worked without authorization), and the departure-and-reentry alternative with a new initial I-20 and consular F-1 visa, including its pros, cons, and the 3/10-year bar trap. Explains what cannot be reinstated (unauthorized employment), the hit to OPT and STEM OPT when an EAD becomes void on termination, and the downstream effect on F-2 dependents. Cross-links the F-2 dependent visa, the STEM OPT extension, and the unlawful-presence bar. Georgia and Alabama.',
+  },
+  {
     slug: 'h2a-agricultural-worker-visa-georgia',
     title: 'H-2A Agricultural Worker Visa in Georgia: Employer Compliance and Worker Rights',
     date: '2026-06-25',

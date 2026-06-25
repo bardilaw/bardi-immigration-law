@@ -72,7 +72,9 @@ export function TVisaTraffickingPostContent() {
       </ul>
       <p>
         Many trafficking survivors are eligible for the T-visa, the U-visa, and sometimes{' '}
-        <Link href="/blog/asylum-application-georgia">asylum</Link> or VAWA relief at the same time. Choosing among them
+        <Link href="/blog/asylum-application-georgia">asylum</Link> or{' '}
+        <Link href="/blog/vawa-self-petition-domestic-violence-immigration-georgia">VAWA self-petition</Link> relief at the
+        same time. Choosing among them
         &mdash; or filing more than one &mdash; is a legal-strategy decision, not a form-filling exercise.
       </p>
 
@@ -208,7 +210,9 @@ export function TVisaTraffickingPostContent() {
         <Link href="/blog/u-visa-vawa-crime-victims-georgia">U-visa</Link>, asylum, or more than one of them can change
         the entire trajectory of a case. Done well, a T-visa application protects a whole family and leads to a green
         card. Done poorly, it can expose an undocumented survivor without securing relief. This is not a do-it-yourself
-        filing.
+        filing &mdash; and knowing{' '}
+        <Link href="/blog/how-to-choose-immigration-attorney-georgia">how to choose the right immigration attorney</Link>{' '}
+        is the first protective step a survivor can take.
       </p>
 
       <h2>Talk to Eszter Bardi &mdash; Free, Confidential Consultation</h2>

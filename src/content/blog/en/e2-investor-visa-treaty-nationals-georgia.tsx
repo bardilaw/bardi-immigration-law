@@ -46,10 +46,13 @@ export function E2InvestorVisaPostContent() {
           and now the USMCA).
         </li>
         <li>
-          <strong>India and China are not E-2 treaty countries.</strong> This is one of the most common and
-          painful misunderstandings. Indian and Chinese nationals &mdash; no matter how strong the business
+          <strong>India, China, and Brazil are not E-2 treaty countries.</strong> This is one of the most
+          common and painful misunderstandings &mdash; three of the world&rsquo;s largest economies are absent
+          from the list. Indian, Chinese, and Brazilian nationals &mdash; no matter how strong the business
           plan &mdash; generally cannot use the E-2 and must look to other options such as the EB-5 immigrant
-          investor program, L-1 intracompany transfer, or employment-based categories.
+          investor program, the{' '}
+          <Link href="/blog/h1b-visa-sponsorship-cap-georgia">H-1B specialty-occupation visa</Link>, L-1
+          intracompany transfer, or employment-based green card categories.
         </li>
       </ul>
       <p>
@@ -99,6 +102,33 @@ export function E2InvestorVisaPostContent() {
           ordinary job.
         </li>
       </ul>
+
+      <h2>Two Kinds of E-2: Investor vs. Essential Employee</h2>
+      <p>
+        The E-2 category is not just for the owner. The law recognizes <strong>two distinct roles</strong>,
+        and confusing them is a frequent source of denials:
+      </p>
+      <ul>
+        <li>
+          <strong>The treaty investor (principal).</strong> The person who makes the substantial investment
+          and comes to <strong>develop and direct</strong> the enterprise. This is the owner-operator most
+          people picture when they hear &ldquo;E-2.&rdquo;
+        </li>
+        <li>
+          <strong>The essential employee.</strong> A treaty business can also sponsor an E-2 visa for an
+          employee &mdash; but only one who shares the <strong>same treaty nationality</strong> as the owner
+          and who fills an <strong>executive or supervisory role</strong>, or has{' '}
+          <strong>specialized skills essential</strong> to the business&rsquo;s operations. Ordinary or
+          easily-hired labor does not qualify. An essential employee does not need to invest anything; the
+          qualifying investment is the company&rsquo;s. This is how Korean- and Latin American-owned companies
+          in metro Atlanta bring over a key manager or a technician with proprietary know-how that cannot be
+          readily found in the U.S. labor market.
+        </li>
+      </ul>
+      <p>
+        Both roles require the <em>business</em> to be a qualifying E-2 enterprise; the difference is whether
+        you are the one putting capital at risk or the one whose skills the business genuinely needs.
+      </p>
 
       <h2>E-2 vs. EB-5 vs. O-1: Choosing the Right Tool</h2>
       <p>
@@ -172,13 +202,35 @@ export function E2InvestorVisaPostContent() {
       <p>
         To become a permanent resident, an E-2 holder generally has to qualify under a separate immigrant
         category &mdash; EB-5 by increasing the investment and creating jobs, an employment-based category
-        such as EB-1 or an EB-2 National Interest Waiver, or a family-based petition (for example, marriage to
-        a U.S. citizen). Because openly pursuing a green card can create tension with the E-2&rsquo;s
-        nonimmigrant-intent requirement, <strong>timing and strategy matter a great deal</strong>. Many
-        families immigrate through {' '}
+        such as EB-1 or an EB-2 National Interest Waiver, or a family-based petition &mdash; for example, a{' '}
+        <Link href="/blog/marriage-based-green-card-k1-fiance-visa-georgia">marriage-based green card</Link>{' '}
+        through a U.S. citizen spouse. Because openly pursuing a green card can create tension with the
+        E-2&rsquo;s nonimmigrant-intent requirement, <strong>timing and strategy matter a great deal</strong>.
+        Depending on where the investor is, the case may finish inside the U.S. through{' '}
+        <Link href="/blog/adjustment-of-status-green-card-georgia">adjustment of status</Link> or abroad
+        through{' '}
         <Link href="/blog/consular-processing-immigrant-visa-georgia">consular processing</Link> once an
         immigrant petition is approved. Planning the long game from the start &mdash; rather than discovering
         the limitation years in &mdash; is one of the most valuable things an attorney does.
+      </p>
+
+      <h2>Setting Up the Business in Georgia</h2>
+      <p>
+        An E-2 case is built on a <strong>real, registered Georgia business</strong>, and the formation steps
+        double as evidence for the petition. Most investors form a Georgia <strong>LLC or corporation</strong>{' '}
+        through the <strong>Georgia Secretary of State</strong> Corporations Division (filing Articles of
+        Organization or Incorporation and naming a Georgia registered agent), obtain a federal{' '}
+        <strong>EIN</strong> from the IRS, open a dedicated U.S. business bank account, and register for state
+        taxes with the Georgia Department of Revenue. Local steps follow &mdash; a business license or
+        occupational tax certificate from the City of Atlanta or your county (Gwinnett, Fulton, DeKalb, Cobb),
+        a commercial lease, and any industry permits. Keeping these filings, the lease, build-out invoices,
+        payroll records, and bank statements clean and well-organized is exactly what proves the investment is
+        real, at risk, and more than marginal. A visitor <strong>cannot</strong> run the business day-to-day on
+        a tourist entry while waiting &mdash; see our guide to the{' '}
+        <Link href="/blog/b1-business-visitor-visa-georgia-allowed-activities">
+          B-1 business visitor visa and what it does and does not allow
+        </Link>
+        .
       </p>
 
       <h2>Why the E-2 Needs an Attorney</h2>
@@ -189,7 +241,12 @@ export function E2InvestorVisaPostContent() {
         staying consistent with the nonimmigrant-intent rule and lining up the right long-term immigration
         strategy. Weak business plans, thin financials, or a misread of the treaty list lead to denials even
         for genuinely qualified investors. An attorney&rsquo;s job is to structure the investment and assemble
-        the record so the case is approvable the first time.
+        the record so the case is approvable the first time. For what to look for &mdash; and the notario-fraud
+        traps to avoid &mdash; see our guide on{' '}
+        <Link href="/blog/how-to-choose-immigration-attorney-georgia">
+          how to choose an immigration attorney in Georgia
+        </Link>
+        .
       </p>
 
       <h2>Talk to Eszter Bardi About Your E-2 Investor Visa</h2>

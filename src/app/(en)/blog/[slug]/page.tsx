@@ -101,10 +101,12 @@ import { N600CertificateCitizenshipPostContent } from '@/content/blog/en/n-600-c
 import { ChildStatusProtectionActPostContent } from '@/content/blog/en/child-status-protection-act-cspa-aging-out-georgia';
 import { HumanitarianParolePostContent } from '@/content/blog/en/humanitarian-parole-who-qualifies-georgia';
 import { MarriageGreenCardInterviewPostContent } from '@/content/blog/en/marriage-green-card-interview-preparation-georgia';
+import { PublicChargeRulePostContent } from '@/content/blog/en/public-charge-rule-green-card-benefits-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'public-charge-rule-green-card-benefits-georgia': PublicChargeRulePostContent,
   'marriage-green-card-interview-preparation-georgia': MarriageGreenCardInterviewPostContent,
   'humanitarian-parole-who-qualifies-georgia': HumanitarianParolePostContent,
   'child-status-protection-act-cspa-aging-out-georgia': ChildStatusProtectionActPostContent,

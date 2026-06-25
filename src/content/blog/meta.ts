@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'public-charge-rule-green-card-benefits-georgia',
+    title: 'Public Charge Rule in Georgia: Will Using Benefits Hurt Your Green Card?',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains the public charge rule under INA §212(a)(4) and clears up the fear that keeps immigrant families from using benefits their U.S.-citizen children are entitled to. Covers what public charge means (a forward-looking "likely to become primarily dependent on the government" prediction decided by a totality-of-the-circumstances test weighing age, health, family status, assets and financial resources, and education and skills), which applications it applies to (family- and employment-based adjustment of status and consular processing) and the long list of categories it does NOT apply to (refugees and asylees, asylum applicants, VAWA self-petitioners, U and T visa applicants, TPS, DACA, Special Immigrant Juveniles, registry, and naturalization). Explains, under the rule in effect since December 2022, the narrow set of benefits that can count (SSI, TANF, state or local cash general assistance, and long-term institutionalization at government expense) versus the much longer list that does not count (Medicaid other than long-term institutional care, emergency medical care, SNAP, WIC, CHIP, school meals, housing assistance, disaster and pandemic relief, tax credits, and earned benefits like Social Security, Medicare, and unemployment) — and the crucial rule that benefits used by U.S.-citizen children do not count against an immigrant parent. Covers the role of the Form I-864 Affidavit of Support under INA §213A (125% of the Federal Poverty Guidelines, joint sponsors) as the strongest way to overcome a public charge concern, how 2025 enforcement compares to the vacated 2019 rule and the narrower 2022 regulation, and practical steps Georgia applicants can take. Cross-links adjustment of status, consular processing, the I-864 affidavit of support, VAWA, U visa, TPS, DACA, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
     slug: 'marriage-green-card-interview-preparation-georgia',
     title: 'Marriage Green Card Interview in Georgia: How to Prepare for Your AoS Interview',
     date: '2026-06-25',

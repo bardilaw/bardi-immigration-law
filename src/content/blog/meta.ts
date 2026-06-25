@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'cancellation-of-removal-lpr-green-card-holder-georgia',
+    title: 'LPR Cancellation of Removal in Georgia: Deportation Defense for Green Card Holders',
+    date: '2026-06-25',
+    description:
+      'A Georgia deportation defense attorney explains cancellation of removal for lawful permanent residents under INA §240A(a) — the immigration court defense that lets a green card holder keep their status when criminal charges put them in removal proceedings. Covers all three statutory elements: five years as a lawful permanent resident, seven years of continuous residence after admission in any status (and how the two clocks are measured differently), and the absolute bar on any aggravated felony conviction. Explains why the aggravated felony definition under INA §101(a)(43) decides most cases, how the categorical and modified categorical approach and the one-year-sentence threshold work, and why some Georgia misdemeanors qualify while some serious-sounding offenses do not. Details the stop-time rule under INA §240A(d)(1) — how a disqualifying offense or a Notice to Appear cuts off the seven years, and what Pereira v. Sessions (2018) and Niz-Chavez v. Garland (2021) mean for deficient NTAs. Makes clear that the "exceptional and extremely unusual hardship" standard does NOT apply to LPR cancellation (that is the non-LPR §240A(b) ten-year rule), explains the §212(h) waiver interplay and the LPR aggravated-felony/seven-year bar with its circuit split, the discretionary balancing under Matter of C-V-T- and Matter of Marin, and the once-in-a-lifetime limit under §240A(c). Covers strategic timing, filing on Form EOIR-42A, and the Atlanta and Stewart immigration courts. Cross-links the cancellation-of-removal hub, deportation defense, the immigration consequences of a criminal record, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
     slug: 'daca-deferred-action-childhood-arrivals-georgia',
     title: 'DACA in Georgia: Deferred Action for Childhood Arrivals Explained',
     date: '2026-06-24',

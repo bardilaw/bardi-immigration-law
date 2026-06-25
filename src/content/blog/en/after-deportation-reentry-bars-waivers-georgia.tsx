@@ -28,9 +28,10 @@ export function AfterDeportationReentryBarsPostContent() {
       <ul>
         <li>
           <strong>Expedited removal at the border (the 5-year bar).</strong> If you were turned around at a port of
-          entry or caught near the border and removed through <strong>expedited removal</strong> (INA &sect; 235(b)(1)),
-          or removed as an arriving inadmissible person, the law imposes a <strong>5-year bar</strong> to readmission
-          under &sect; 212(a)(9)(A)(i).
+          entry or caught near the border and removed through{' '}
+          <Link href="/blog/expedited-removal-georgia-what-it-is-rights-challenge">expedited removal</Link>{' '}
+          (INA &sect; 235(b)(1)), or removed as an arriving inadmissible person, the law imposes a
+          <strong> 5-year bar</strong> to readmission under &sect; 212(a)(9)(A)(i).
         </li>
         <li>
           <strong>A regular removal order from immigration court (the 10-year bar).</strong> If you were placed in
@@ -83,6 +84,15 @@ export function AfterDeportationReentryBarsPostContent() {
         bar. This is why the worst thing many people unknowingly do is reenter illegally after a deportation, and why
         anyone in that position needs honest legal advice before making a move.
       </p>
+      <p>
+        There is a second danger for anyone who reentered after a prior order: instead of getting a fresh day in court,
+        the old removal order can simply be revived through{' '}
+        <Link href="/blog/reinstatement-of-removal-prior-deportation-georgia">reinstatement of removal</Link>{' '}
+        (INA &sect; 241(a)(5)) &mdash; a fast-track process with no immigration-judge hearing. Reinstatement and the
+        &sect; 212(a)(9)(C) permanent bar are the two halves of the same trap: the first sends the person back out
+        quickly, and the second blocks any I-212 request for a decade. Understanding both <em>before</em> taking any
+        action is the difference between preserving a future path and destroying it.
+      </p>
 
       <h2>Form I-212: Permission to Reapply for Admission</h2>
       <p>
@@ -106,6 +116,18 @@ export function AfterDeportationReentryBarsPostContent() {
       <p>
         A strong I-212 is essentially a persuasion case built on documents: it is not enough to qualify on paper, you
         have to convince an officer to say yes. That is where experienced preparation makes the difference.
+      </p>
+      <p>
+        <strong>Where and how the I-212 is filed</strong> depends on where you are and what else your case needs. If you
+        are <em>outside</em> the United States and pursuing an immigrant visa, the I-212 is typically filed with USCIS
+        after the consular officer flags the removal bar (often alongside the I-601). If you are seeking a
+        <em> nonimmigrant</em> visa, the consular officer can request the consent-to-reapply finding directly. In some
+        situations the request is made <em>before</em> an immigration judge as part of relief in proceedings. The I-212
+        can be filed <strong>on its own</strong> when a prior removal is the only bar, or <strong>stacked</strong> with
+        the I-601 when unlawful presence or other inadmissibility grounds are also in play. Because USCIS updates its
+        forms, filing addresses, and fees periodically, confirm the current edition and fee on{' '}
+        <span className="whitespace-nowrap">uscis.gov</span> &mdash; or have your attorney do it &mdash; before you
+        send anything.
       </p>
 
       <h2>Combining I-212 With the I-601 and I-601A Waivers</h2>

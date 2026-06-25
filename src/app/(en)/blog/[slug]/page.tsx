@@ -103,10 +103,22 @@ import { HumanitarianParolePostContent } from '@/content/blog/en/humanitarian-pa
 import { MarriageGreenCardInterviewPostContent } from '@/content/blog/en/marriage-green-card-interview-preparation-georgia';
 import { PublicChargeRulePostContent } from '@/content/blog/en/public-charge-rule-green-card-benefits-georgia';
 import { CubanAdjustmentActPostContent } from '@/content/blog/en/cuban-adjustment-act-green-card-georgia';
+import { SameSexMarriageImmigrationPostContent } from '@/content/blog/en/same-sex-marriage-immigration-rights-georgia';
+import { PVisaPostContent } from '@/content/blog/en/p-visa-performing-artists-athletes-georgia';
+import { ExtendChangeNonimmigrantStatusPostContent } from '@/content/blog/en/extend-change-nonimmigrant-status-i539-georgia';
+import { VawaCancellationOfRemovalPostContent } from '@/content/blog/en/vawa-cancellation-of-removal-special-rule-georgia';
+import { B1BusinessVisitorVisaPostContent } from '@/content/blog/en/b1-business-visitor-visa-georgia-allowed-activities';
+import { ImmigrantVisaConsulateInterviewPostContent } from '@/content/blog/en/immigrant-visa-consulate-interview-preparation-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'immigrant-visa-consulate-interview-preparation-georgia': ImmigrantVisaConsulateInterviewPostContent,
+  'b1-business-visitor-visa-georgia-allowed-activities': B1BusinessVisitorVisaPostContent,
+  'vawa-cancellation-of-removal-special-rule-georgia': VawaCancellationOfRemovalPostContent,
+  'extend-change-nonimmigrant-status-i539-georgia': ExtendChangeNonimmigrantStatusPostContent,
+  'p-visa-performing-artists-athletes-georgia': PVisaPostContent,
+  'same-sex-marriage-immigration-rights-georgia': SameSexMarriageImmigrationPostContent,
   'cuban-adjustment-act-green-card-georgia': CubanAdjustmentActPostContent,
   'public-charge-rule-green-card-benefits-georgia': PublicChargeRulePostContent,
   'marriage-green-card-interview-preparation-georgia': MarriageGreenCardInterviewPostContent,

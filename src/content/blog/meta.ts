@@ -9,6 +9,48 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'immigrant-visa-consulate-interview-preparation-georgia',
+    title: 'How to Prepare for Your Immigrant Visa Interview at a U.S. Consulate (Georgia Families)',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains how to prepare for the immigrant visa interview at a U.S. embassy or consulate abroad — the final step of consular processing under INA §221–222 where a consular officer approves or refuses the visa. Distinct from the NVC/consular-processing overview: this is a focused interview-preparation guide. Covers who faces a consular interview (immigrant visa applicants outside the U.S., versus adjustment-of-status applicants interviewed at a USCIS field office), what to finish before the interview (the DS-260, NVC document collection and the Form I-864 Affidavit of Support, and the medical exam with a designated panel physician abroad — separate from the domestic Form I-693), and a detailed what-to-bring checklist (appointment letter, DS-260 confirmation, passport valid 6+ months, photos, original civil documents and police certificates, court/criminal records, the I-864 with the sponsor’s tax returns/W-2s/pay stubs, the sealed medical packet, and bona fide relationship evidence). Walks through the day (security and no-electronics policy, fingerprints, the short under-oath interview at a window), the questions officers commonly ask (petitioner/relationship, background, immigration and travel history), and the most common reasons cases are held up or refused — the temporary INA §221(g) "administrative processing" refusal for missing documents or security checks, the leading Affidavit-of-Support/public-charge refusal under §212(a)(4), and substantive §212(a) inadmissibility including misrepresentation under §212(a)(6)(C)(i) and the 3- and 10-year unlawful-presence bars under §212(a)(9)(B) that departing for the interview can trigger, with the Form I-601 waiver. Explains what happens after approval (the sealed visa packet you must not open, the USCIS Immigrant Fee, entry within six-month validity, and becoming a lawful permanent resident upon admission), practical tips, and that an attorney generally cannot attend a consular interview — making advance preparation critical. Cross-links consular processing, the NVC process, the I-864 Affidavit of Support, the public charge rule, and how to choose an immigration attorney. For families across metro Atlanta, Gwinnett, and north Georgia, and Alabama.',
+  },
+  {
+    slug: 'b1-business-visitor-visa-georgia-allowed-activities',
+    title: 'B-1 Business Visitor Visa in Georgia: What You Can and Cannot Do',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains the B-1 business visitor visa under INA §101(a)(15)(B) and draws the line between permissible business activities and unauthorized work. Covers what the B-1 is (a temporary visitor for business who keeps a residence abroad and stays on a foreign payroll) and the activities it allows under 9 FAM 402.2 — business meetings, contract negotiations, conferences, conventions and trade shows, taking orders for foreign-made goods, independent research, short-term training as a trainee, and contract-required after-sales installation or service. Explains the bright-line prohibitions ("local labor for hire"): no U.S.-source salary for services performed here, no productive hands-on work for a U.S. company, and no filling a U.S. job even if a foreign entity nominally pays — the test is who benefits from the labor and who pays, not job title or length of stay. Details the "B-1 in lieu of H-3" trainee provision (foreign payroll, no productive employment) and the narrow "B-1 in lieu of H-1B" provision for a degreed professional employed and paid entirely abroad coming to do specialty-occupation work short-term. Compares the Visa Waiver Program / ESTA (90 days, no extension, no change of status) with a B-1 visa stamp, explains the up-to-six-month CBP admission period recorded on the I-94 and extensions on Form I-539, and the consequences of getting it wrong — status violation, denied entry, and unlawful presence triggering the 3- and 10-year bars. Closes with when an H-1B or L-1 is the correct visa instead. Built for Atlanta’s corporate community and the international companies that send employees to Georgia. Cross-links the H-1B visa, the L-1 intracompany transferee visa, visa overstay consequences, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
+    slug: 'vawa-cancellation-of-removal-special-rule-georgia',
+    title: 'VAWA Cancellation of Removal in Georgia: The Special Rule for Domestic Violence Survivors in Immigration Court',
+    date: '2026-06-25',
+    description:
+      'A Georgia deportation defense attorney explains VAWA cancellation of removal — the "special rule" for battered spouses and children under INA §240A(b)(2). This is the courtroom defense for domestic violence survivors who are already in removal proceedings before an immigration judge, and it is entirely distinct from the VAWA self-petition (Form I-360) filed affirmatively at USCIS. Covers who qualifies: battery or extreme cruelty by a U.S. citizen or lawful permanent resident spouse or parent (extreme cruelty defined broadly under 8 CFR 204.2(c)(1)(vi) to include psychological abuse and coercive control); three years of continuous physical presence (not the ten years required for ordinary non-LPR cancellation) with the abuse-connected absence rule under §240A(b)(2)(B); good moral character with the abuse-connected waiver under §240A(b)(2)(C); the criminal and security bars under §240A(b)(2)(A)(iv) including the absolute aggravated-felony bar; and the extreme-hardship requirement under §240A(b)(2)(A)(v) — a lower and broader standard than §240A(b)(1)\'s "exceptional and extremely unusual hardship" that can run to the survivor personally, their child, or their parent. Explains the exemption from the 4,000-grant annual cap under §240A(e)(3), the VAWA confidentiality protections under 8 U.S.C. §1367 (the abuser is not notified and adverse decisions cannot rest solely on the abuser\'s information), the result (a direct grant of lawful permanent residence), and the EOIR process on Form EOIR-42B in the Atlanta and Stewart immigration courts. Clearly distinguishes VAWA cancellation (EOIR-42B before an immigration judge, for survivors in removal proceedings) from the VAWA self-petition (Form I-360 at USCIS). Cross-links the VAWA self-petition, non-LPR cancellation of removal, the Georgia immigration courts guide, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
+    slug: 'extend-change-nonimmigrant-status-i539-georgia',
+    title: 'Extend or Change Your Nonimmigrant Status in Georgia (Form I-539)',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains how to extend your authorized stay or change to a different nonimmigrant category inside the United States using USCIS Form I-539, before your status lapses and triggers the unlawful-presence problems of an overstay. Covers the difference between an extension of stay (keeping the same status longer, like a B-2 tourist needing more time) and a change of status (switching categories without leaving, like B-2 to F-1 student); who files Form I-539 — B-1/B-2 visitors, F-2/M-2/J-2 dependents, and H-4/L-2/O-3 and other dependents — versus who does NOT (H-1B, L-1, O-1 and other workers extend through an employer-filed Form I-129, and F-1/M-1 students extend through their school’s DSO and the Form I-20/SEVIS record, using I-539 only for their dependents). Explains the critical timing rule (file before the Form I-94 admit-until date and while maintaining status, ideally 45+ days early), how a timely non-frivolous filing keeps you in a period of authorized stay so you do not accrue unlawful presence while the case is pending (without granting work authorization), the I-539 filing fee and biometrics under the 2024 fee schedule, the lack of premium processing and long processing times, the B-2-to-F-1 change requiring an issued Form I-20 plus bridge-extension and preconceived-intent considerations, that unauthorized employment bars approval, and what a denial means — required departure and exposure to the 3-year and 10-year bars under INA §212(a)(9)(B). Cross-links overstay consequences, unlawful-presence bars, F-1 reinstatement, the STEM OPT/cap-gap bridge, DACA, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
+    slug: 'p-visa-performing-artists-athletes-georgia',
+    title: 'P Visa in Georgia: Visas for Performing Artists, Athletes, and Entertainers',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains the P nonimmigrant visa for performing artists, athletes, and entertainers under INA §101(a)(15)(P) and 8 CFR 214.2(p) — the path for talent that does not clear the O-1 extraordinary-ability bar. Covers P-1A for internationally recognized athletes competing individually or as part of an internationally recognized team (international soccer players joining Atlanta United, PGA Tour golfers, touring tennis and motorsports professionals); P-1B for members of an internationally recognized entertainment group (K-pop groups, international theater companies, touring bands and ensembles) and the two key regulatory rules — the group must generally be established for at least one year and at least 75% of its members must have had a sustained, substantial relationship with the group for at least one year; and P-3 for artists and entertainers coming to perform, teach, or coach under a commercial or noncommercial program that is culturally unique (mariachi bands, Colombian folkloric dance, Brazilian capoeira at Georgia cultural festivals), with no extraordinary-ability requirement. Explains essential support personnel (P-1S/P-2S/P-3S filed on a separate Form I-129) and corrects the common confusion that O-2 is the support category for P visas when O-2 actually accompanies an O-1. Walks through the I-129 petition (no self-petition; a U.S. employer, sponsor, or agent must file), the itinerary requirement for multi-location events, and the written labor-organization consultation/advisory-opinion requirement and its no-appropriate-union waiver. Details the periods of stay — up to five years for an individual P-1 athlete (extendable to a 10-year total) versus up to one year for teams, entertainment groups, and P-3 programs — and P-4 dependent status with no work authorization. Contrasts the P visa with the O-1 (individual top-of-field standard vs. internationally recognized group/culturally unique standards) and cross-links O-1 extraordinary ability, the H-1B specialty-occupation visa, employment authorization, and how to choose an immigration attorney. Built for Atlanta’s entertainment industry — Tyler Perry Studios, Mercedes-Benz Stadium, State Farm Arena — its sports franchises, and Georgia’s Latin American cultural community. Georgia and Alabama.',
+  },
+  {
+    slug: 'same-sex-marriage-immigration-rights-georgia',
+    title: 'Same-Sex Marriage and Immigration in Georgia: Green Cards, K-1 Visas, and LGBTQ+ Rights',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains that same-sex couples have identical immigration rights — and addresses the anxiety many LGBTQ+ immigrants feel in the current climate. Covers the settled federal law (United States v. Windsor (2013) striking down Section 3 of the Defense of Marriage Act, after which USCIS began approving same-sex spouse petitions, and Obergefell v. Hodges (2015) requiring every state including Georgia to recognize same-sex marriage), and the "place of celebration" rule under which a marriage valid where performed is valid for immigration. Explains identical eligibility across every marriage-based pathway: the Form I-130 petition (a U.S. citizen’s same-sex spouse is an immediate relative), the K-1 fiancé(e) visa via Form I-129F, Form I-485 adjustment of status and IR-1/CR-1 consular processing, and Form I-751 removal of conditions under INA §216. Addresses what a potential Obergefell reversal would mean for pending petitions and existing green cards, and why the Respect for Marriage Act of 2022 (which repealed DOMA and codified federal recognition of marriages valid where celebrated) protects federal immigration recognition even if the case were revisited — with a hedged note that this is an area to monitor. Details practical steps to document a bona fide same-sex marriage thoroughly when couples have a short paper trail, the K-1 process and the added safety concerns for beneficiaries from countries that criminalize homosexuality, asylum protection for LGBTQ+ individuals fleeing persecution (sexual orientation and gender identity as a particular social group under Matter of Toboso-Alfonso (BIA 1990), subject to the one-year deadline), and equal I-751 and VAWA protections for abused same-sex spouses. Cross-links the marriage green card and adjustment of status hub, the K-1 fiancé visa, I-751 removal of conditions, asylum, and VAWA. Georgia and Alabama.',
+  },
+  {
     slug: 'cuban-adjustment-act-green-card-georgia',
     title: 'Cuban Adjustment Act in Georgia: The One-Year Path to a Green Card for Cuban Nationals',
     date: '2026-06-25',
@@ -760,6 +802,26 @@ export interface EsBlogMeta {
 }
 
 export const ES_BLOG_META: Record<string, EsBlogMeta> = {
+  'daca-deferred-action-childhood-arrivals-georgia': {
+    title: 'DACA en Georgia: Guía Completa de Elegibilidad, Renovación y Caminos a la Green Card',
+    description:
+      'Una abogada de inmigración en Georgia explica DACA de principio a fin: qué es y de dónde viene, quién califica, cómo presentar los Formularios I-821D e I-765, la ventana de renovación que no puede perder, los riesgos serios de viajar al extranjero, dónde se encuentra el litigio en los tribunales, y —igual de importante— qué NO le otorga DACA y el camino estrecho que algunos Dreamers tienen hacia una green card. Información general, no asesoría legal.',
+  },
+  'h2a-agricultural-worker-visa-georgia': {
+    title: 'Visa H-2A para Trabajadores Agrícolas en Georgia: Guía para Empleadores y Trabajadores',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo funciona la visa H-2A para trabajadores agrícolas temporales bajo INA §101(a)(15)(H)(ii)(a): el proceso de tres agencias (certificación laboral del DOL con el Formulario ETA-9142A, la petición I-129 ante USCIS y la visa consular del DOS), las obligaciones del empleador (AEWR, vivienda gratuita, transporte y la garantía de las tres cuartas partes), la elegibilidad del trabajador y el máximo de 3 años, las diferencias con la H-2B, los derechos del trabajador, y los errores de cumplimiento más comunes. Información general, no asesoría legal.',
+  },
+  'h2b-seasonal-worker-visa-georgia': {
+    title: 'Visa H-2B para Trabajadores Temporales en Georgia: Guía para Empleadores y Trabajadores',
+    description:
+      'Un bufete de inmigración en Georgia explica la visa H-2B para trabajadores temporales no agrícolas bajo INA §101(a)(15)(H)(ii)(b): las cuatro formas de probar la necesidad temporal, el proceso de tres agencias (DOL ETA-9142B, USCIS I-129, DOS DS-160), el tope anual de 66,000 y la exención de trabajadores que regresan, los salarios y la estadía máxima de 3 años, las diferencias con la H-2A, el cambio de empleador y las protecciones del trabajador. Información general, no asesoría legal.',
+  },
+  'cancellation-of-removal-lpr-green-card-holder-georgia': {
+    title: 'Cancelación de Remoción para Residentes Permanentes en Georgia: La Regla de los 7 Años',
+    description:
+      'Una abogada de inmigración en Georgia explica la cancelación de remoción para residentes permanentes legales bajo INA §240A(a): los tres requisitos estatutarios —5 años como residente, 7 años de residencia continua y ninguna condena por aggravated felony—, por qué la definición de aggravated felony decide la mayoría de los casos, la regla stop-time (Pereira/Niz-Chavez), la exención §212(h) y sus límites para LPR, el balance discrecional, el límite de una sola vez, y en qué se diferencia de la cancelación para no residentes bajo §240A(b). Información general, no asesoría legal.',
+  },
   'h1b-visa-sponsorship-cap-georgia': {
     title: 'Visa H-1B en Georgia: Patrocinio, Tope, Lotería y el Camino a la Green Card',
     description:
@@ -1128,6 +1190,10 @@ export function getEsPost(slug: string): BlogPost | undefined {
 // All other /es/blog/[slug] requests redirect to the EN version.
 // Keep in sync with CONTENT_MAP in src/app/es/blog/[slug]/page.tsx.
 export const ES_BLOG_SLUGS = new Set([
+  'daca-deferred-action-childhood-arrivals-georgia',
+  'h2a-agricultural-worker-visa-georgia',
+  'h2b-seasonal-worker-visa-georgia',
+  'cancellation-of-removal-lpr-green-card-holder-georgia',
   'unlawful-presence-3-year-10-year-bar-georgia',
   'visa-overstay-consequences-fix-status-georgia',
   'eb1a-extraordinary-ability-green-card-self-petition-georgia',

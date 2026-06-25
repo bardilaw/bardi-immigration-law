@@ -164,6 +164,14 @@ export function ReinstatementOfRemovalPostContent() {
         typically <strong>30 days</strong> from when the order becomes final. Miss it, and the chance to seek review can
         be lost permanently.
       </p>
+      <p>
+        Looking further ahead, a reinstated order combined with an illegal reentry usually triggers the
+        <strong> permanent bar under INA &sect; 212(a)(9)(C)</strong> &mdash; meaning the legal path back generally
+        requires spending 10 years outside the U.S. and then winning a{' '}
+        <Link href="/blog/after-deportation-reentry-bars-waivers-georgia">Form I-212 permission to reapply</Link>. If
+        your goal is to eventually return lawfully, that long-term strategy matters as much as fighting the
+        reinstatement itself.
+      </p>
 
       <h2>Timeline: How Fast This Moves</h2>
       <p>

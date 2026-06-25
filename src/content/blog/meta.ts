@@ -375,7 +375,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'tn-visa-canadian-mexican-professionals-georgia',
     title: 'TN Visa in Georgia: USMCA Status for Canadian and Mexican Professionals',
-    date: '2026-06-24',
+    date: '2026-06-22',
     description:
       'A Georgia TN visa attorney explains TN nonimmigrant status under the USMCA for Canadian and Mexican professionals: who qualifies, the USMCA occupation list and credential rules, the different Canadian (port-of-entry) and Mexican (consular) processes, the 3-year admission and indefinite renewals, TD dependent status (study but no work authorization), the nonimmigrant-intent limits on a green-card path, and common denial reasons. Atlanta CBP at Hartsfield-Jackson; Georgia and Alabama.',
   },

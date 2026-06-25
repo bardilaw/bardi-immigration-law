@@ -30,7 +30,8 @@ export function PermLaborCertificationPostContent() {
       <h2>What PERM Is &mdash; and Why It Exists</h2>
       <p>
         PERM is the labor market test the government requires before a U.S. employer can permanently hire a
-        foreign worker through most employment-based green cards. Its purpose is written into the law: to{' '}
+        foreign worker through most employment-based green cards. Governed by the DOL regulations at{' '}
+        <strong>20 CFR Part 656</strong>, its purpose is written into the law: to{' '}
         <strong>protect U.S. workers</strong>. Before the DOL will let an employer sponsor a foreign national, the
         employer must show two things:
       </p>
@@ -46,9 +47,15 @@ export function PermLaborCertificationPostContent() {
       </ul>
       <p>
         Most <strong>EB-2</strong> (advanced degree or exceptional ability) and <strong>EB-3</strong> (skilled
-        workers, professionals, and other workers) green cards require a certified PERM. The major exceptions are{' '}
-        <strong>EB-1</strong> (priority workers) and the <strong>EB-2 National Interest Waiver</strong>, both of
-        which bypass labor certification &mdash; one reason category strategy matters so much before anyone files
+        workers, professionals, and other workers) green cards require a certified PERM. The major exceptions all
+        skip labor certification entirely:{' '}
+        <Link href="/blog/eb1a-extraordinary-ability-green-card-self-petition-georgia">EB-1 priority workers</Link>;
+        the{' '}
+        <Link href="/blog/eb2-national-interest-waiver-self-petition-georgia">EB-2 National Interest Waiver</Link>,
+        a self-petition that needs no employer sponsor and no PERM at all; and <strong>Schedule A</strong>{' '}
+        occupations &mdash; currently professional <strong>nurses</strong> and{' '}
+        <strong>physical therapists</strong>, which the DOL has pre-certified as chronically short of U.S. workers,
+        so no individual recruitment is required. One reason category strategy matters so much before anyone files
         anything.
       </p>
 
@@ -121,10 +128,13 @@ export function PermLaborCertificationPostContent() {
       <h2>Processing Times and Audit Risk</h2>
       <p>
         PERM is slow, and it has gotten slower. Between the prevailing wage determination, the mandatory
-        recruitment window, the quiet period, and DOL analyst review, a clean case routinely takes{' '}
-        <strong>well over a year</strong> from start to certification &mdash; and the DOL&rsquo;s posted
-        processing times move, so the timeline should always be checked against the agency&rsquo;s current data
-        before anyone counts on a date.
+        recruitment window, the quiet period, and DOL analyst review, a clean case commonly runs{' '}
+        <strong>8 to 18 months</strong> from start to certification &mdash; and the DOL&rsquo;s posted processing
+        times move, so the timeline should always be checked against the agency&rsquo;s current data before anyone
+        counts on a date. Because the case takes so long, the sponsored worker is usually maintaining another
+        status in the meantime &mdash; most often an{' '}
+        <Link href="/blog/h1b-visa-sponsorship-cap-georgia">H-1B</Link>, whose dual-intent treatment lets the
+        green card case proceed without jeopardizing the nonimmigrant visa.
       </p>
       <p>
         Then there are <strong>audits</strong>. The DOL audits a meaningful share of PERM cases &mdash; some
@@ -182,6 +192,15 @@ export function PermLaborCertificationPostContent() {
         <Link href="/blog/adjustment-of-status-green-card-georgia">adjustment of status</Link> (if in the U.S.) or{' '}
         <Link href="/blog/consular-processing-immigrant-visa-georgia">consular processing</Link> (if abroad).
       </p>
+      <p>
+        One protection matters enormously for backlogged workers: <strong>AC21 job portability</strong> under{' '}
+        <strong>INA §204(j)</strong>. Once a worker&rsquo;s adjustment-of-status application (Form I-485) has been{' '}
+        <strong>pending 180 days or more</strong>, the worker can change employers &mdash; or move to a new role
+        with the same employer &mdash; <strong>without redoing PERM or the I-140</strong>, as long as the new job
+        is in the <strong>same or a similar occupational classification</strong>. For an Indian- or Chinese-born
+        worker facing a multi-year wait, §204(j) portability is what makes it possible to take a promotion or
+        switch companies instead of being locked to the sponsoring employer until the green card finally issues.
+      </p>
 
       <h2>Why an Attorney Is Critical &mdash; for Both Sides</h2>
       <p>
@@ -197,7 +216,9 @@ export function PermLaborCertificationPostContent() {
         chosen in the first place (an EB-1 or NIW self-petition may beat a PERM-bound EB-2 or EB-3), and keeps the
         case moving from PERM to I-140 to the final green card. Because the employer technically drives the
         process, independent attention to the worker&rsquo;s interests matters &mdash; especially if the worker
-        changes jobs, where portability rules can preserve a hard-won priority date.
+        changes jobs, where the §204(j) portability rules above can preserve a hard-won priority date. For a case
+        this technical, vetting counsel carefully pays off; see our guide on{' '}
+        <Link href="/blog/how-to-choose-immigration-attorney-georgia">how to choose an immigration attorney</Link>.
       </p>
 
       <h2>Talk to Eszter Bardi About Employer-Sponsored Green Cards</h2>

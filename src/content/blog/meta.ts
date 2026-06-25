@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'eb1-employment-based-green-card-georgia',
+    title: 'EB-1 Green Card in Georgia: Extraordinary Ability, Outstanding Researchers, and Multinational Managers',
+    date: '2026-06-25',
+    description:
+      'A Georgia employment immigration attorney explains the EB-1 first-preference green card — the fastest employment-based path to permanent residence, with no PERM labor certification required for any subcategory and priority dates current for most countries of birth. Covers all three roads: EB-1A extraordinary ability (self-petition on Form I-140 with no employer or job offer, under INA §203(b)(1)(A), proven by a one-time major award or three of ten regulatory criteria at 8 CFR 204.5(h)(3) and the two-step Kazarian v. USCIS final-merits determination); EB-1B outstanding professor or researcher (employer-sponsored under INA §203(b)(1)(B), requiring three years of experience, a permanent or tenure-track offer, and two of six criteria at 8 CFR 204.5(i)(3)); and EB-1C multinational manager or executive (employer-sponsored under INA §203(b)(1)(C), requiring one year of qualifying managerial or executive employment abroad within the prior three years, via the well-worn L-1A-to-EB-1C pipeline). Explains the Visa Bulletin distinction between Final Action Dates (Chart A) and Dates for Filing (Chart B) with EB-1 generally current except for India and China, concurrent filing of the I-140 with the I-485, premium processing, the EB-1A-versus-EB-2-NIW choice, and the Georgia angle — Atlanta multinationals for EB-1C, Emory, Georgia Tech, and UGA researchers for EB-1B, and the film, music, and sports scene for EB-1A. Cross-links the EB-1A self-petition guide, the O-1 visa, EB-2 NIW, PERM, the L-1 visa, adjustment of status, and how to choose an immigration attorney. Serving researchers, executives, founders, athletes, and creatives across Georgia and Alabama.',
+  },
+  {
     slug: 'consular-processing-vs-adjustment-of-status-georgia',
     title: 'Consular Processing vs. Adjustment of Status: Which Green Card Path Is Right for You in Georgia?',
     date: '2026-06-25',

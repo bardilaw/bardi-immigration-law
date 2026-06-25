@@ -113,10 +113,12 @@ import { LongPendingI130PostContent } from '@/content/blog/en/long-pending-i130-
 import { UscisFilingFeesPostContent } from '@/content/blog/en/uscis-filing-fees-2025-guide-georgia';
 import { RemoteWorkVisaPostContent } from '@/content/blog/en/remote-work-immigration-visa-rules-georgia';
 import { ConsularProcessingVsAdjustmentPostContent } from '@/content/blog/en/consular-processing-vs-adjustment-of-status-georgia';
+import { Eb1EmploymentBasedGreenCardPostContent } from '@/content/blog/en/eb1-employment-based-green-card-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'eb1-employment-based-green-card-georgia': Eb1EmploymentBasedGreenCardPostContent,
   'consular-processing-vs-adjustment-of-status-georgia': ConsularProcessingVsAdjustmentPostContent,
   'remote-work-immigration-visa-rules-georgia': RemoteWorkVisaPostContent,
   'uscis-filing-fees-2025-guide-georgia': UscisFilingFeesPostContent,

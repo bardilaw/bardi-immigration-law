@@ -128,7 +128,14 @@ export function WithholdingOfRemovalPostContent() {
       </ul>
       <p>
         Sorting out which protection fits is exactly the kind of analysis that should not be guessed at. The bars,
-        standards, and definitions interact in ways that change the strategy of an entire case.
+        standards, and definitions interact in ways that change the strategy of an entire case. Withholding and CAT
+        are also weighed alongside the other defenses available in removal proceedings &mdash;{' '}
+        <Link href="/blog/cancellation-of-removal-non-lpr-10-year-rule-georgia">non-LPR cancellation of removal</Link>{' '}
+        and <Link href="/blog/cancellation-of-removal-lpr-green-card-holder-georgia">LPR cancellation</Link> for those
+        who qualify, <Link href="/blog/voluntary-departure-immigration-court-georgia">voluntary departure</Link> as a
+        last resort, and the fast-track context of{' '}
+        <Link href="/blog/expedited-removal-georgia-what-it-is-rights-challenge">expedited removal</Link>, where a
+        credible-fear claim is often the only gateway to a withholding or CAT hearing at all.
       </p>
 
       <h2>How and Where You Apply</h2>
@@ -138,7 +145,9 @@ export function WithholdingOfRemovalPostContent() {
         protections on the same <strong>Form I-589</strong>, and the judge weighs them in order &mdash; asylum first,
         then withholding, then CAT &mdash; because each carries a different standard and a different set of benefits. For
         most Georgia clients that means a merits hearing at the <strong>Atlanta Immigration Court</strong> or the court
-        inside <strong>Stewart Detention Center</strong>.
+        inside <strong>Stewart Detention Center</strong> &mdash; see our guide to the{' '}
+        <Link href="/blog/georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide">Georgia immigration
+        courts</Link> for what to expect at each.
       </p>
       <p>
         There is one important variation. People who were previously deported and then returned can have their old order
@@ -183,7 +192,9 @@ export function WithholdingOfRemovalPostContent() {
         does several things a person cannot easily do alone: builds the country-conditions record, frames the
         particular-social-group or torture theory correctly, prepares you to testify consistently, and decides how to
         sequence the claims so that a bar to one does not sink the others. The difference between a well-documented
-        withholding case and a thin one is often the difference between staying and being removed.
+        withholding case and a thin one is often the difference between staying and being removed &mdash; which is why{' '}
+        <Link href="/blog/how-to-choose-immigration-attorney-georgia">choosing the right immigration attorney</Link>{' '}
+        matters so much in these cases.
       </p>
 
       <h2>Talk to Eszter Bardi About Your Options</h2>

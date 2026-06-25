@@ -92,6 +92,10 @@ import { F1StudentVisaReinstatementPostContentEs } from '@/content/blog/es/f1-st
 import { ExtendChangeNonimmigrantStatusPostContentEs } from '@/content/blog/es/extend-change-nonimmigrant-status-i539-georgia';
 import { ChildStatusProtectionActPostContentEs } from '@/content/blog/es/child-status-protection-act-cspa-aging-out-georgia';
 import { ImmigrantVisaConsulateInterviewPostContentEs } from '@/content/blog/es/immigrant-visa-consulate-interview-preparation-georgia';
+import { LongPendingI130PostContentEs } from '@/content/blog/es/long-pending-i130-priority-date-backlog-georgia';
+import { UscisFilingFeesPostContentEs } from '@/content/blog/es/uscis-filing-fees-2025-guide-georgia';
+import { ConsularProcessingVsAdjustmentPostContentEs } from '@/content/blog/es/consular-processing-vs-adjustment-of-status-georgia';
+import { RemoteWorkVisaPostContentEs } from '@/content/blog/es/remote-work-immigration-visa-rules-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -181,6 +185,10 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'extend-change-nonimmigrant-status-i539-georgia': ExtendChangeNonimmigrantStatusPostContentEs,
   'child-status-protection-act-cspa-aging-out-georgia': ChildStatusProtectionActPostContentEs,
   'immigrant-visa-consulate-interview-preparation-georgia': ImmigrantVisaConsulateInterviewPostContentEs,
+  'long-pending-i130-priority-date-backlog-georgia': LongPendingI130PostContentEs,
+  'uscis-filing-fees-2025-guide-georgia': UscisFilingFeesPostContentEs,
+  'consular-processing-vs-adjustment-of-status-georgia': ConsularProcessingVsAdjustmentPostContentEs,
+  'remote-work-immigration-visa-rules-georgia': RemoteWorkVisaPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

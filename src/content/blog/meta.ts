@@ -1259,6 +1259,26 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia guía a las familias por la entrevista de visa de inmigrante en un consulado de EE. UU.: qué terminar antes (DS-260, recopilación de documentos del NVC, Formulario I-864 y el examen médico con el médico designado), qué llevar, cómo es el día, las preguntas más comunes, las razones de demora o rechazo (carga pública §212(a)(4), procesamiento administrativo §221(g), barras de presencia ilegal §212(a)(9)(B)) y qué ocurre tras una aprobación. Información general, no asesoría legal.',
   },
+  'long-pending-i130-priority-date-backlog-georgia': {
+    title: 'Petición I-130 Aprobada pero la Espera No Termina: Fechas de Prioridad y el Atraso Familiar en Georgia',
+    description:
+      'Una abogada de inmigración en Georgia explica qué hacer cuando su I-130 está aprobada pero la fecha de prioridad está lejos de estar al día: cómo leer el Boletín de Visas (Chart A y Chart B), las pocas formas en que un caso puede avanzar más rápido, qué pasa si fallece el peticionario o el beneficiario, el error catastrófico de retirar la petición, y qué hace en realidad un abogado durante un atraso de años. Información general, no asesoría legal.',
+  },
+  'uscis-filing-fees-2025-guide-georgia': {
+    title: 'Tarifas de Presentación de USCIS 2025: Guía de Costos para Georgia (Formularios Comunes)',
+    description:
+      'Una abogada de inmigración en Georgia explica las tarifas de presentación de USCIS para los formularios más comunes (I-130, I-485, I-765, I-131, N-400, I-751, I-90, I-539), quién puede evitarlas con la exención de tarifas (Formulario I-912), las categorías exentas, el procesamiento premium, y la diferencia entre las tarifas de USCIS y los honorarios del abogado. Verifique siempre las tarifas vigentes en uscis.gov. Información general, no asesoría legal.',
+  },
+  'consular-processing-vs-adjustment-of-status-georgia': {
+    title: 'Proceso Consular vs. Ajuste de Estatus en Georgia: Cómo Elegir la Vía Correcta a la Green Card',
+    description:
+      'Una abogada de inmigración en Georgia compara el ajuste de estatus (Formulario I-485 dentro de EE. UU.) con el proceso consular (DS-260 en el extranjero): quién puede usar cada vía bajo INA §245(a), la trampa de presencia ilegal y las barras de 3 y 10 años de la §212(a)(9)(B), el perdón I-601A, el permiso de trabajo y el permiso adelantado de viaje mientras espera, el examen médico, los tiempos del boletín de visas y por qué la decisión puede mantener a su familia unida. Información general, no asesoría legal.',
+  },
+  'remote-work-immigration-visa-rules-georgia': {
+    title: 'Trabajo Remoto y Reglas de Visa en Georgia: Qué Permite Cada Estatus Migratorio',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo el trabajo remoto e híbrido interactúa con cada estatus: la zona gris del empleador extranjero en B-1/B-2, OPT/CPT para estudiantes F-1, la regla de lugar de trabajo y LCA del H-1B (Matter of Simeio), el patrocinador y el §212(e) del J-1, el L-1, los dependientes y el EAD, y el riesgo de abandono de la residencia para titulares de green card que trabajan desde el extranjero. Información general, no asesoría legal.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -1357,4 +1377,8 @@ export const ES_BLOG_SLUGS = new Set([
   'extend-change-nonimmigrant-status-i539-georgia',
   'child-status-protection-act-cspa-aging-out-georgia',
   'immigrant-visa-consulate-interview-preparation-georgia',
+  'long-pending-i130-priority-date-backlog-georgia',
+  'uscis-filing-fees-2025-guide-georgia',
+  'consular-processing-vs-adjustment-of-status-georgia',
+  'remote-work-immigration-visa-rules-georgia',
 ]);

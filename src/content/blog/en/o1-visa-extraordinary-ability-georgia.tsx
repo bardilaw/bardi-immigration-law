@@ -25,8 +25,8 @@ export function O1VisaExtraordinaryAbilityPostContent() {
 
       <h2>O-1A vs. O-1B: Two Categories, Two Standards</h2>
       <p>
-        The O-1 visa splits into two sub-classifications, and the one that applies to you determines the legal
-        standard and the evidence you must gather:
+        The O-1 visa, authorized by <strong>INA &sect;101(a)(15)(O)</strong>, splits into two sub-classifications,
+        and the one that applies to you determines the legal standard and the evidence you must gather:
       </p>
       <ul>
         <li>
@@ -96,6 +96,24 @@ export function O1VisaExtraordinaryAbilityPostContent() {
         shot across the metro Atlanta area and the state.
       </p>
 
+      <h2>No Lottery, No Cap, No Prevailing Wage</h2>
+      <p>
+        For many researchers, engineers, and founders, the O-1A&rsquo;s biggest practical advantage is what it does{' '}
+        <em>not</em> have. There is <strong>no annual numerical cap</strong> on O-1 visas and <strong>no lottery</strong>,
+        so a petition can be filed at any time of year and is decided on its merits rather than by chance. There is
+        also <strong>no prevailing-wage requirement</strong> and no Labor Condition Application &mdash; unlike the{' '}
+        <Link href="/blog/h1b-visa-sponsorship-cap-georgia">H-1B specialty-occupation visa</Link>, which is capped,
+        runs on a spring lottery, and ties the worker to a Department of Labor wage level. That makes the O-1 a
+        leading option for top-tier talent who lost the H-1B lottery or never want to gamble on it. For Canadian and
+        Mexican professionals, the{' '}
+        <Link href="/blog/tn-visa-canadian-mexican-professionals-georgia">TN visa under the USMCA</Link> is another
+        cap-free route, though it is limited to specific listed professions and does not reach the artists and
+        athletes the O-1 covers. And where a performer or athlete is genuinely accomplished but cannot meet the
+        demanding O-1 standard, the{' '}
+        <Link href="/blog/p-visa-performing-artists-athletes-georgia">P visa for athletes and entertainers</Link>{' '}
+        is frequently the right alternative.
+      </p>
+
       <h2>Finding a U.S. Petitioner or Agent</h2>
       <p>
         Here is a critical difference from the EB-1A green card: <strong>you cannot self-petition for an O-1.</strong>{' '}
@@ -147,8 +165,11 @@ export function O1VisaExtraordinaryAbilityPostContent() {
 
       <h2>The Path to a Green Card: EB-1A</h2>
       <p>
-        For many O-1A holders, the natural long-term goal is the <strong>EB-1A green card</strong> for individuals
-        of extraordinary ability. The two share much of the same vocabulary and a similar evidentiary framework
+        For many O-1A holders, the natural long-term goal is the{' '}
+        <Link href="/blog/eb1a-extraordinary-ability-green-card-self-petition-georgia">
+          <strong>EB-1A green card</strong> for individuals of extraordinary ability
+        </Link>
+        . The two share much of the same vocabulary and a similar evidentiary framework
         &mdash; and crucially, <strong>EB-1A allows self-petition</strong> with no employer required. An O-1
         record, built carefully, often becomes the foundation of an EB-1A petition. (For the full picture of
         employment green card categories, including EB-1A, the EB-2 National Interest Waiver, and EB-3, see our{' '}
@@ -168,7 +189,11 @@ export function O1VisaExtraordinaryAbilityPostContent() {
         credible expert and consultation letters, structuring the petitioner or agent relationship, and assembling
         an itinerary that holds together. Weak or generic petitions draw lengthy Requests for Evidence and denials
         even when the person genuinely qualifies. An attorney&rsquo;s job is to turn real accomplishment into a
-        record that meets the legal standard.
+        record that meets the legal standard. If you are deciding whom to trust with that work, see our guide to{' '}
+        <Link href="/blog/how-to-choose-immigration-attorney-georgia">
+          choosing an immigration attorney in Georgia
+        </Link>
+        .
       </p>
 
       <h2>Talk to Eszter Bardi About Your O-1 Visa</h2>

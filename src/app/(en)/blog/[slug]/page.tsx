@@ -69,6 +69,7 @@ import { AdministrativeClosurePostContent } from '@/content/blog/en/administrati
 import { F2DependentVisaPostContent } from '@/content/blog/en/f2-dependent-visa-international-student-family-georgia';
 import { L1IntracompanyTransfereePostContent } from '@/content/blog/en/l1-intracompany-transferee-visa-georgia';
 import { E2InvestorVisaPostContent } from '@/content/blog/en/e2-investor-visa-treaty-nationals-georgia';
+import { E1TreatyTraderVisaPostContent } from '@/content/blog/en/e1-treaty-trader-visa-georgia';
 import { NvcConsularInterviewPostContent } from '@/content/blog/en/nvc-consular-interview-immigrant-visa-process-georgia';
 import { UnlawfulPresenceBarPostContent } from '@/content/blog/en/unlawful-presence-3-year-10-year-bar-georgia';
 import { VisaOverstayConsequencesPostContent } from '@/content/blog/en/visa-overstay-consequences-fix-status-georgia';
@@ -164,6 +165,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'unlawful-presence-3-year-10-year-bar-georgia': UnlawfulPresenceBarPostContent,
   'nvc-consular-interview-immigrant-visa-process-georgia': NvcConsularInterviewPostContent,
   'e2-investor-visa-treaty-nationals-georgia': E2InvestorVisaPostContent,
+  'e1-treaty-trader-visa-georgia': E1TreatyTraderVisaPostContent,
   'l1-intracompany-transferee-visa-georgia': L1IntracompanyTransfereePostContent,
   'f2-dependent-visa-international-student-family-georgia': F2DependentVisaPostContent,
   'administrative-closure-immigration-court-georgia': AdministrativeClosurePostContent,

@@ -21,6 +21,7 @@ export const OG_IMAGE_SLUGS_EN = new Set<string>([
   'daca-renewal-2026',
   'daca-to-green-card-pathways-georgia',
   'deportation-defense-removal-proceedings-georgia',
+  'e1-treaty-trader-visa-georgia',
   'e2-investor-visa-treaty-nationals-georgia',
   'eb2-national-interest-waiver-self-petition-georgia',
   'employment-authorization-ead-georgia',

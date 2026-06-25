@@ -63,6 +63,14 @@ import { GreenCardAbandonmentTravelRulesPostContentEs } from '@/content/blog/es/
 import { NaturalizationDenialPostContentEs } from '@/content/blog/es/naturalization-denial-disqualifiers-n400-georgia';
 import { DiversityVisaLotteryPostContentEs } from '@/content/blog/es/diversity-visa-lottery-dv-application-georgia';
 import { R1ReligiousWorkerVisaPostContentEs } from '@/content/blog/es/r1-religious-worker-visa-georgia';
+import { B2TouristVisaPostContentEs } from '@/content/blog/es/b2-tourist-visa-adjustment-status-green-card-georgia';
+import { K1FianceVisaPostContentEs } from '@/content/blog/es/k1-fiance-visa-georgia';
+import { DivorceImmigrationStatusPostContentEs } from '@/content/blog/es/divorce-immigration-status-green-card-georgia';
+import { ExpeditedRemovalPostContentEs } from '@/content/blog/es/expedited-removal-georgia-what-it-is-rights-challenge';
+import { HowToChooseImmigrationAttorneyPostContentEs } from '@/content/blog/es/how-to-choose-immigration-attorney-georgia';
+import { TemporaryProtectedStatusGeorgiaPostContentEs } from '@/content/blog/es/temporary-protected-status-tps-georgia';
+import { H1bCapGapPostContentEs } from '@/content/blog/es/h1b-cap-gap-opt-work-authorization-georgia';
+import { GeorgiaImmigrationCourtsPostContentEs } from '@/content/blog/es/georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -123,6 +131,14 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'naturalization-denial-disqualifiers-n400-georgia': NaturalizationDenialPostContentEs,
   'diversity-visa-lottery-dv-application-georgia': DiversityVisaLotteryPostContentEs,
   'r1-religious-worker-visa-georgia': R1ReligiousWorkerVisaPostContentEs,
+  'b2-tourist-visa-adjustment-status-green-card-georgia': B2TouristVisaPostContentEs,
+  'k1-fiance-visa-georgia': K1FianceVisaPostContentEs,
+  'divorce-immigration-status-green-card-georgia': DivorceImmigrationStatusPostContentEs,
+  'expedited-removal-georgia-what-it-is-rights-challenge': ExpeditedRemovalPostContentEs,
+  'how-to-choose-immigration-attorney-georgia': HowToChooseImmigrationAttorneyPostContentEs,
+  'temporary-protected-status-tps-georgia': TemporaryProtectedStatusGeorgiaPostContentEs,
+  'h1b-cap-gap-opt-work-authorization-georgia': H1bCapGapPostContentEs,
+  'georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide': GeorgiaImmigrationCourtsPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

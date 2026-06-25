@@ -946,6 +946,46 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia explica la visa R-1 de trabajador religioso: quién califica, el requisito 501(c)(3) y de membresía de dos años, el Formulario I-129, la inspección del sitio de USCIS, el límite de cinco años y el camino a la green card EB-4 mediante el Formulario I-360. Información general, no asesoría legal.',
   },
+  'b2-tourist-visa-adjustment-status-green-card-georgia': {
+    title: 'Visa de Turista B-2 y Green Card en Georgia: ¿Puede Quedarse sin Salir del País?',
+    description:
+      'Una abogada de inmigración en Georgia explica cuándo un visitante con visa B-1 o B-2 puede ajustar su estatus a residente permanente sin salir del país: la regla de la admisión legal, el problema de la doble intención y la intención preconcebida, el proceso de ajuste por matrimonio con ciudadano estadounidense, cómo afecta el vencimiento del I-94, cuándo aplica el procesamiento consular y la cláusula de abuelo §245(i). Información general, no asesoría legal.',
+  },
+  'k1-fiance-visa-georgia': {
+    title: 'Visa K-1 de Prometido(a) en Georgia: Cómo Traer a su Prometido(a) a los EE. UU.',
+    description:
+      'Una abogada de inmigración en Georgia explica la visa K-1 de prometido(a) paso a paso: quién califica, el requisito de reunión en persona de dos años y sus exenciones limitadas, el Formulario I-129F, la entrevista consular en el extranjero, la ventana obligatoria de 90 días para casarse y ajustar el estatus, las visas derivadas K-2 para los hijos y la comparación con la visa de cónyuge CR-1. Información general, no asesoría legal.',
+  },
+  'divorce-immigration-status-green-card-georgia': {
+    title: 'Divorcio y Estatus Migratorio en Georgia: Cómo Afecta su Green Card',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo el divorcio afecta el estatus migratorio según en qué punto del proceso se encuentre: la green card condicional y el I-751 con exención por divorcio, la revocación del I-130 pendiente, la limitación del K-1 al peticionario original, la pérdida de la vía de naturalización de tres años y la ruta alternativa VAWA para víctimas de abuso. Información general, no asesoría legal.',
+  },
+  'expedited-removal-georgia-what-it-is-rights-challenge': {
+    title: 'Deportación Expedita en Georgia: Qué Es, Sus Derechos y Cómo Impugnarla',
+    description:
+      'Una abogada de inmigración en Georgia explica la deportación expedita bajo INA §235(b)(1): qué es, la expansión a todo el país en enero de 2025, la regla crucial de dos años de presencia continua, quién está exento, la válvula de seguridad del miedo creíble que puede detenerla, los derechos limitados que conserva, cómo impugnar una orden con argumentos limitados de hábeas corpus, cómo difiere de los procedimientos regulares de remoción y las barras de reingreso que deja una orden expedita. Información general, no asesoría legal.',
+  },
+  'how-to-choose-immigration-attorney-georgia': {
+    title: 'Cómo Elegir un Abogado de Inmigración en Georgia: Guía para Protegerse del Fraude',
+    description:
+      'Una abogada de inmigración en Georgia explica quién puede legalmente representarle en casos migratorios (abogados con licencia estatal y representantes acreditados del EOIR vs. notarios y consultores no autorizados), cómo verificar credenciales en gabar.org y el registro del EOIR, las señales de alerta del fraude migratorio, qué preguntar en una consulta, las estructuras de honorarios y las señales de problemas durante la representación. Información general, no asesoría legal.',
+  },
+  'temporary-protected-status-tps-georgia': {
+    title: 'Estatus de Protección Temporal (TPS) en Georgia: Requisitos, Registro y Renovación',
+    description:
+      'Una abogada de inmigración en Georgia explica el TPS bajo INA §244: qué países tienen designación activa (Venezuela, Honduras, El Salvador, Haití, Ucrania), quién califica, cómo registrarse con el Formulario I-821 y obtener el permiso de trabajo I-765, los plazos de re-registro que no puede perderse, qué no hace el TPS (no es green card), el caso excepcional donde puede abrir la puerta al ajuste de estatus, y la litigación 2023–2025. Información general, no asesoría legal.',
+  },
+  'h1b-cap-gap-opt-work-authorization-georgia': {
+    title: 'Cap-Gap H-1B en Georgia: Cómo Mantener su Autorización de Trabajo Entre el OPT y la H-1B',
+    description:
+      'Una abogada de inmigración en Georgia explica la regla de cap-gap bajo 8 CFR 214.2(f)(5)(vi): qué es, la diferencia entre presentar la petición H-1B antes o después de que venza el EAD del OPT (autorización de trabajo vs. solo estatus), los requisitos para beneficiarse del cap-gap, cómo obtener el I-20 de cap-gap de su DSO, por qué los viajes internacionales rompen el cap-gap y qué pasa si la H-1B es denegada. Información general, no asesoría legal.',
+  },
+  'georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide': {
+    title: 'Cortes de Inmigración en Georgia: Atlanta, Stewart y Cómo Funciona el Sistema',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo están organizadas las cortes de inmigración del estado: la Corte de Atlanta (no detenidos) y la Corte de Stewart (detenidos en Lumpkin), por qué no hay corte en Gwinnett ni DeKalb, la línea directa del EOIR 1-800-898-7180 y el portal acis.eoir.justice.gov, cómo solicitar un aplazamiento o cambio de jurisdicción, la diferencia entre EOIR e ICE ERO, y qué hacer al recibir un NTA. Información general, no asesoría legal.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -1015,4 +1055,12 @@ export const ES_BLOG_SLUGS = new Set([
   'tn-visa-canadian-mexican-professionals-georgia',
   'vawa-self-petition-domestic-violence-immigration-georgia',
   'u-visa-crime-victims-immigration-georgia',
+  'b2-tourist-visa-adjustment-status-green-card-georgia',
+  'k1-fiance-visa-georgia',
+  'divorce-immigration-status-green-card-georgia',
+  'expedited-removal-georgia-what-it-is-rights-challenge',
+  'how-to-choose-immigration-attorney-georgia',
+  'temporary-protected-status-tps-georgia',
+  'h1b-cap-gap-opt-work-authorization-georgia',
+  'georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide',
 ]);

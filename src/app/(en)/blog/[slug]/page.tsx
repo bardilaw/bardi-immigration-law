@@ -99,10 +99,14 @@ import { F1StudentVisaReinstatementPostContent } from '@/content/blog/en/f1-stud
 import { UscisCaseStatusRfePostContent } from '@/content/blog/en/uscis-case-status-rfe-response-georgia';
 import { N600CertificateCitizenshipPostContent } from '@/content/blog/en/n-600-certificate-citizenship-child-derived-acquired-georgia';
 import { ChildStatusProtectionActPostContent } from '@/content/blog/en/child-status-protection-act-cspa-aging-out-georgia';
+import { HumanitarianParolePostContent } from '@/content/blog/en/humanitarian-parole-who-qualifies-georgia';
+import { MarriageGreenCardInterviewPostContent } from '@/content/blog/en/marriage-green-card-interview-preparation-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'marriage-green-card-interview-preparation-georgia': MarriageGreenCardInterviewPostContent,
+  'humanitarian-parole-who-qualifies-georgia': HumanitarianParolePostContent,
   'child-status-protection-act-cspa-aging-out-georgia': ChildStatusProtectionActPostContent,
   'n-600-certificate-citizenship-child-derived-acquired-georgia': N600CertificateCitizenshipPostContent,
   'uscis-case-status-rfe-response-georgia': UscisCaseStatusRfePostContent,

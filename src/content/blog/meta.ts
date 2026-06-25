@@ -9,6 +9,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'marriage-green-card-interview-preparation-georgia',
+    title: 'Marriage Green Card Interview in Georgia: How to Prepare for Your AoS Interview',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains how married couples prepare for the USCIS adjustment-of-status interview at the Atlanta field office — the final step in a marriage-based green card. Covers when USCIS schedules the interview after concurrent filing of Form I-130 and Form I-485 under INA §245(a) (a U.S. citizen’s spouse is an immediate relative with no visa wait), what to bring (the interview notice, the immigrant spouse’s passport, the I-94 and manner of entry, original civil documents including the marriage certificate and any divorce decrees, the Form I-864 Affidavit of Support with current income proof, the Form I-693 medical exam, and joint financial evidence), and how to prove a bona fide marriage through commingled finances, cohabitation, and a shared life over time. Explains the types of questions officers ask, what a separate sworn "Stokes" interview is (from Stokes v. INS) and when it is triggered, and the realistic outcomes: approval (and a two-year conditional green card under INA §216 when the marriage is under two years old, requiring a later Form I-751), a Request for Evidence, a continuance for a second or Stokes interview, and a Notice of Intent to Deny or denial — including the permanent marriage-fraud bar under INA §204(c). Covers what happens after the interview, including divorce waivers and removal proceedings. Cross-links the adjustment-of-status hub, the I-130 family petition, divorce and immigration, the I-751 removal of conditions, the I-864 affidavit of support, the Atlanta field office guide, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
+    slug: 'humanitarian-parole-who-qualifies-georgia',
+    title: 'Humanitarian Parole in Georgia: Who Qualifies, How It Works, and What Comes Next',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains humanitarian parole under INA §212(d)(5) for the many Ukrainian, Afghan, and Cuban/Haitian/Nicaraguan/Venezuelan (CHNV) parolees living in Georgia. Covers the statutory basis (temporary, case-by-case parole for urgent humanitarian reasons or significant public benefit), the difference between individual parole requests on Form I-131 with a Form I-134 and the large-scale programs (Uniting for Ukraine, the CHNV process, and Afghan parole under Operation Allies Welcome), and the crucial rule that parole is NOT an admission and NOT a green card — the entry-fiction of Leng May Ma v. Barber. Explains how parolees obtain work authorization on Form I-765 under category (c)(11), and how parolees can still adjust to a green card under INA §245(a) because the statute lets a person who was "inspected and admitted OR paroled" adjust — parole is an independent qualifying basis, most commonly through marriage to a U.S. citizen. Addresses the rapidly changing 2025–2026 landscape as the administration moved to terminate CHNV and pause other parole programs amid active litigation, and lays out what to do when parole expires: adjustment, asylum (one-year deadline), TPS, or re-parole. Cross-links the adjustment-of-status hub, the TPS guide, deportation defense, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
     slug: 'child-status-protection-act-cspa-aging-out-georgia',
     title: 'Child Status Protection Act (CSPA) in Georgia: Protecting Children from Aging Out',
     date: '2026-06-25',

@@ -167,7 +167,10 @@ export function VisaBulletinPriorityDatesPostContent() {
         multi-year wait in the family preference categories makes it essential to keep your address updated with USCIS,
         preserve your priority date, and watch for the month your number comes up &mdash; missing the window can mean more
         delay. For the broader roadmap of family sponsorship, start with our{' '}
-        <Link href="/blog/family-green-card-attorney-georgia">family green card guide</Link>.
+        <Link href="/blog/family-green-card-attorney-georgia">family green card guide</Link>. If your petition is
+        already approved but your priority date is still years away, see{' '}
+        <Link href="/blog/long-pending-i130-priority-date-backlog-georgia">what to do during a long I-130
+        backlog</Link>.
       </p>
 
       <h2>Why a Georgia Immigration Attorney Matters</h2>

@@ -129,9 +129,11 @@ export function FamilyGreenCardPostContent() {
         Timelines vary a lot. For immediate relatives, the I-130 and green card application can sometimes be filed
         together and finished in roughly a year to a year and a half. For preference categories, the I-130 may be
         approved fairly quickly, but the family then waits &mdash; sometimes years &mdash; for a visa number to become
-        available. Filing an <strong>I-130 petition</strong> in Georgia follows the same federal rules as anywhere else,
-        but local processing times and interview backlogs at offices like the Atlanta field office affect how fast your
-        case moves.
+        available. If your petition is already approved and you are stuck in that wait, see our guide on{' '}
+        <Link href="/blog/long-pending-i130-priority-date-backlog-georgia">what to do when your priority date is
+        years away</Link>. Filing an <strong>I-130 petition</strong> in Georgia follows the same federal rules as
+        anywhere else, but local processing times and interview backlogs at offices like the Atlanta field office
+        affect how fast your case moves.
       </p>
 
       <h2>Common Mistakes That Delay or Derail Family Green Card Cases</h2>

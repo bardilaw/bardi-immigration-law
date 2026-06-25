@@ -109,10 +109,12 @@ import { ExtendChangeNonimmigrantStatusPostContent } from '@/content/blog/en/ext
 import { VawaCancellationOfRemovalPostContent } from '@/content/blog/en/vawa-cancellation-of-removal-special-rule-georgia';
 import { B1BusinessVisitorVisaPostContent } from '@/content/blog/en/b1-business-visitor-visa-georgia-allowed-activities';
 import { ImmigrantVisaConsulateInterviewPostContent } from '@/content/blog/en/immigrant-visa-consulate-interview-preparation-georgia';
+import { LongPendingI130PostContent } from '@/content/blog/en/long-pending-i130-priority-date-backlog-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'long-pending-i130-priority-date-backlog-georgia': LongPendingI130PostContent,
   'immigrant-visa-consulate-interview-preparation-georgia': ImmigrantVisaConsulateInterviewPostContent,
   'b1-business-visitor-visa-georgia-allowed-activities': B1BusinessVisitorVisaPostContent,
   'vawa-cancellation-of-removal-special-rule-georgia': VawaCancellationOfRemovalPostContent,

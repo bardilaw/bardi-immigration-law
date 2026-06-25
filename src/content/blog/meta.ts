@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'long-pending-i130-priority-date-backlog-georgia',
+    title: 'Long-Pending I-130 in Georgia: What to Do When Your Priority Date Is Years Away',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains what families can do when an I-130 family petition is approved but stuck in a multi-year or multi-decade visa backlog. Covers how the family preference system (F1, F2A, F2B, F3, F4) and per-country limits create the wait, how to read the monthly Visa Bulletin (Final Action Dates / Chart A versus Dates for Filing / Chart B) to know whether a priority date is current, and the limited ways a category can move faster — petitioner naturalization (F2A to immediate relative, F2B to F1, with the F2B opt-out for Mexico and the Philippines where F1 is slower), marriage to a U.S. citizen as an immediate-relative path, and an independent employment-based green card. Explains CSPA protection for children aging toward 21, what happens if the petitioner dies (INA §204(l) survivor continuation, humanitarian reinstatement with a substitute sponsor, and the widow(er) I-360 self-petition) versus if the principal beneficiary dies (the petition generally terminates and derivatives lose the path), the catastrophic mistake of withdrawing a petition (which destroys the priority date permanently), options when a family member is in removal proceedings while waiting, and what an attorney actually does during the wait. Cross-links the Visa Bulletin, the family green card and I-130 hubs, adjustment of status, and CSPA aging out. Serving immigrant families across Gwinnett, Hall, Cobb, and metro Atlanta, Georgia, and Alabama.',
+  },
+  {
     slug: 'immigrant-visa-consulate-interview-preparation-georgia',
     title: 'How to Prepare for Your Immigrant Visa Interview at a U.S. Consulate (Georgia Families)',
     date: '2026-06-25',

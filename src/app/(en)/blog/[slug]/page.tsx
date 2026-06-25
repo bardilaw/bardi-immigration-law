@@ -111,10 +111,14 @@ import { B1BusinessVisitorVisaPostContent } from '@/content/blog/en/b1-business-
 import { ImmigrantVisaConsulateInterviewPostContent } from '@/content/blog/en/immigrant-visa-consulate-interview-preparation-georgia';
 import { LongPendingI130PostContent } from '@/content/blog/en/long-pending-i130-priority-date-backlog-georgia';
 import { UscisFilingFeesPostContent } from '@/content/blog/en/uscis-filing-fees-2025-guide-georgia';
+import { RemoteWorkVisaPostContent } from '@/content/blog/en/remote-work-immigration-visa-rules-georgia';
+import { ConsularProcessingVsAdjustmentPostContent } from '@/content/blog/en/consular-processing-vs-adjustment-of-status-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'consular-processing-vs-adjustment-of-status-georgia': ConsularProcessingVsAdjustmentPostContent,
+  'remote-work-immigration-visa-rules-georgia': RemoteWorkVisaPostContent,
   'uscis-filing-fees-2025-guide-georgia': UscisFilingFeesPostContent,
   'long-pending-i130-priority-date-backlog-georgia': LongPendingI130PostContent,
   'immigrant-visa-consulate-interview-preparation-georgia': ImmigrantVisaConsulateInterviewPostContent,

@@ -80,6 +80,10 @@ import { CancellationOfRemovalNonLprPostContentEs } from '@/content/blog/es/canc
 import { BirthrightCitizenshipPostContentEs } from '@/content/blog/es/birthright-citizenship-executive-order-14th-amendment-georgia';
 import { AfterDeportationReentryBarsPostContentEs } from '@/content/blog/es/after-deportation-reentry-bars-waivers-georgia';
 import { I90GreenCardRenewalPostContentEs } from '@/content/blog/es/i90-green-card-renewal-replacement-georgia';
+import { DacaDeferredActionChildhoodArrivalsPostContentEs } from '@/content/blog/es/daca-deferred-action-childhood-arrivals-georgia';
+import { H2aAgriculturalWorkerVisaPostContentEs } from '@/content/blog/es/h2a-agricultural-worker-visa-georgia';
+import { H2bSeasonalWorkerVisaPostContentEs } from '@/content/blog/es/h2b-seasonal-worker-visa-georgia';
+import { CancellationOfRemovalLprPostContentEs } from '@/content/blog/es/cancellation-of-removal-lpr-green-card-holder-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -157,6 +161,10 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'birthright-citizenship-executive-order-14th-amendment-georgia': BirthrightCitizenshipPostContentEs,
   'after-deportation-reentry-bars-waivers-georgia': AfterDeportationReentryBarsPostContentEs,
   'i90-green-card-renewal-replacement-georgia': I90GreenCardRenewalPostContentEs,
+  'daca-deferred-action-childhood-arrivals-georgia': DacaDeferredActionChildhoodArrivalsPostContentEs,
+  'h2a-agricultural-worker-visa-georgia': H2aAgriculturalWorkerVisaPostContentEs,
+  'h2b-seasonal-worker-visa-georgia': H2bSeasonalWorkerVisaPostContentEs,
+  'cancellation-of-removal-lpr-green-card-holder-georgia': CancellationOfRemovalLprPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

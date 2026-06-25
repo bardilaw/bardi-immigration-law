@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'child-status-protection-act-cspa-aging-out-georgia',
+    title: 'Child Status Protection Act (CSPA) in Georgia: Protecting Children from Aging Out',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains the Child Status Protection Act (CSPA) and how it protects children who turn 21 — "age out" — while a family or employment green card petition waits in line. Covers what aging out means under the INA §101(b)(1) definition of a child (unmarried and under 21), the two CSPA mechanisms: the immediate-relative age freeze at the date the I-130 is filed under INA §201(f), and the CSPA age formula for preference and derivative beneficiaries under INA §203(h)(1) — biological age when a visa becomes available minus the time the petition was pending. Explains the critical one-year "sought to acquire" deadline to file Form I-485 or the DS-260 after a visa becomes available, the February 2023 USCIS Policy Manual change using the Dates for Filing chart to fix visa availability, and which categories CSPA reaches (family-based F1/F2A/F2B/F3/F4, employment-based, Diversity Visa, refugee and asylee derivatives, and VAWA). Walks through a worked timeline example, what happens when CSPA does not protect a child (automatic conversion and priority-date retention under INA §203(h)(3) as narrowed by Matter of Wang and Scialabba v. Cuellar de Osorio, and the marriage trap for F2B). Cross-links the I-130 family petition hub, adjustment of status, the IR-1/CR-1 spouse visa, the Visa Bulletin, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
     slug: 'n-600-certificate-citizenship-child-derived-acquired-georgia',
     title: 'N-600 Certificate of Citizenship in Georgia: Is Your Child Already a U.S. Citizen?',
     date: '2026-06-25',

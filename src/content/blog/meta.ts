@@ -382,9 +382,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'remove-conditions-green-card-i-751-georgia',
     title: 'How to Remove Conditions on Your Green Card in Georgia: The I-751 Petition Guide',
-    date: '2026-06-22',
+    date: '2026-06-24',
     description:
-      'A Georgia immigration attorney explains how conditional permanent residents remove the conditions on a 2-year marriage-based green card with Form I-751: who gets a conditional green card and why, the critical 90-day filing window before the 2-year anniversary and what happens if you miss it, how to file jointly when still married, the waiver options if you divorced or your spouse was abusive (good-faith marriage, battery/extreme cruelty, extreme hardship), the joint-filing evidence checklist (joint finances, lease/mortgage, insurance, children, photos, affidavits), processing times and receipt notices that extend your green card, when USCIS calls a case in for an I-751 interview, and how an attorney builds the evidence package. Georgia and Alabama.',
+      'A Georgia immigration attorney explains how conditional permanent residents remove the conditions on a 2-year marriage-based green card with Form I-751: who gets a conditional green card and why, the critical 90-day filing window before the 2-year anniversary and what happens if you miss it, how to file jointly when still married, the four waiver options if you divorced, your spouse died, or your spouse was abusive (good-faith marriage, battery/extreme cruelty, death of spouse, extreme hardship under INA 216(c)(4)), the joint-filing evidence checklist (joint finances, lease/mortgage, insurance, children, photos, affidavits), processing times and receipt notices that extend your green card, when USCIS calls a case in for an I-751 interview, and what to do if you missed the deadline or are in removal proceedings (renewing the I-751 before an immigration judge and the EOIR-42A cancellation fallback). Georgia and Alabama.',
   },
   {
     slug: 'ice-enforcement-rights-georgia',

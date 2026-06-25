@@ -102,10 +102,12 @@ import { ChildStatusProtectionActPostContent } from '@/content/blog/en/child-sta
 import { HumanitarianParolePostContent } from '@/content/blog/en/humanitarian-parole-who-qualifies-georgia';
 import { MarriageGreenCardInterviewPostContent } from '@/content/blog/en/marriage-green-card-interview-preparation-georgia';
 import { PublicChargeRulePostContent } from '@/content/blog/en/public-charge-rule-green-card-benefits-georgia';
+import { CubanAdjustmentActPostContent } from '@/content/blog/en/cuban-adjustment-act-green-card-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'cuban-adjustment-act-green-card-georgia': CubanAdjustmentActPostContent,
   'public-charge-rule-green-card-benefits-georgia': PublicChargeRulePostContent,
   'marriage-green-card-interview-preparation-georgia': MarriageGreenCardInterviewPostContent,
   'humanitarian-parole-who-qualifies-georgia': HumanitarianParolePostContent,

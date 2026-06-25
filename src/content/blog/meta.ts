@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'cuban-adjustment-act-green-card-georgia',
+    title: 'Cuban Adjustment Act in Georgia: The One-Year Path to a Green Card for Cuban Nationals',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains the Cuban Adjustment Act of 1966 (Public Law 89-732) — the unique green card path that exists for Cuban nationals and no one else: no employer, no relative petition, no priority date, and no visa-number wait. Covers the four requirements (a native or citizen of Cuba; inspected and admitted OR paroled into the U.S. after January 1, 1959; at least one year of physical presence; and admissibility, with the CAA’s own waiver authority on Form I-602), and the statutory "rollback" that records lawful admission as of 30 months before filing — a head start toward naturalization. Explains the end of the "wet-foot/dry-foot" parole policy on January 12, 2017 and why that did NOT repeal the CAA — only Congress can — so a Cuban who is admitted or paroled today still qualifies after one year. Details the Cuba track of the CHNV humanitarian parole process and the key point that a Cuban already paroled under CHNV remains "paroled" for CAA purposes and can adjust even after the 2025 suspension and ongoing litigation. Walks through the Form I-485 filing (proof of Cuban nationality, the I-94 or parole document, one-year presence, the I-693 medical exam) and the fact that CAA cases require no sponsor and no Form I-864 Affidavit of Support, with a hedged note on the nuanced public charge treatment under INA §212(a)(4). Explains that a spouse and unmarried children can adjust under the CAA regardless of their own nationality if they were also admitted or paroled and reside with the principal. Serving Georgia’s growing Cuban community in the northern suburbs — Marietta, Kennesaw, and Alpharetta. Cross-links adjustment of status, the public charge rule, humanitarian parole, and TPS. Georgia and Alabama.',
+  },
+  {
     slug: 'public-charge-rule-green-card-benefits-georgia',
     title: 'Public Charge Rule in Georgia: Will Using Benefits Hurt Your Green Card?',
     date: '2026-06-25',

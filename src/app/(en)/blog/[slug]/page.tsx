@@ -94,15 +94,19 @@ import { DacaDeferredActionChildhoodArrivalsPostContent } from '@/content/blog/e
 import { CancellationOfRemovalLprPostContent } from '@/content/blog/en/cancellation-of-removal-lpr-green-card-holder-georgia';
 import { I130FamilyPetitionPostContent } from '@/content/blog/en/i130-family-petition-sponsor-relative-green-card-georgia';
 import { H2aAgriculturalWorkerVisaPostContent } from '@/content/blog/en/h2a-agricultural-worker-visa-georgia';
+import { H2bSeasonalWorkerVisaPostContent } from '@/content/blog/en/h2b-seasonal-worker-visa-georgia';
 import { F1StudentVisaReinstatementPostContent } from '@/content/blog/en/f1-student-visa-reinstatement-out-of-status-georgia';
 import { UscisCaseStatusRfePostContent } from '@/content/blog/en/uscis-case-status-rfe-response-georgia';
+import { N600CertificateCitizenshipPostContent } from '@/content/blog/en/n-600-certificate-citizenship-child-derived-acquired-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'n-600-certificate-citizenship-child-derived-acquired-georgia': N600CertificateCitizenshipPostContent,
   'uscis-case-status-rfe-response-georgia': UscisCaseStatusRfePostContent,
   'f1-student-visa-reinstatement-out-of-status-georgia': F1StudentVisaReinstatementPostContent,
   'h2a-agricultural-worker-visa-georgia': H2aAgriculturalWorkerVisaPostContent,
+  'h2b-seasonal-worker-visa-georgia': H2bSeasonalWorkerVisaPostContent,
   'i130-family-petition-sponsor-relative-green-card-georgia': I130FamilyPetitionPostContent,
   'cancellation-of-removal-lpr-green-card-holder-georgia': CancellationOfRemovalLprPostContent,
   'daca-deferred-action-childhood-arrivals-georgia': DacaDeferredActionChildhoodArrivalsPostContent,

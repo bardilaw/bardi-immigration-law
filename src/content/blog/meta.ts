@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'n-600-certificate-citizenship-child-derived-acquired-georgia',
+    title: 'N-600 Certificate of Citizenship in Georgia: Is Your Child Already a U.S. Citizen?',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains how children born abroad to a U.S.-citizen parent, or children who automatically became citizens when a parent naturalized, can document their citizenship with Form N-600. Covers acquisition at birth under INA §301 and §309 (including the physical-presence requirement for a citizen parent and the out-of-wedlock and legitimation rules), automatic derivation under INA §320 and the Child Citizenship Act of 2000 (under 18, a green card, and residing in the legal and physical custody of a U.S.-citizen parent), the stricter pre-2000 rules under former INA §321, and Form N-600K under INA §322 for a child residing abroad. Explains the difference between the N-600 (proving you are already a citizen), the N-400 (naturalization), and the N-336, what documents the N-600 requires, why a U.S. passport is also valid proof, and why derived or acquired citizenship is a complete defense to removal — a U.S. citizen cannot be deported. Notes that adopted children can qualify but never-adopted stepchildren cannot. Cross-links naturalization, adjustment of status, and Special Immigrant Juvenile Status. Georgia and Alabama.',
+  },
+  {
     slug: 'uscis-case-status-rfe-response-georgia',
     title: 'USCIS Case Status in Georgia: Checking Your Case, Responding to RFEs, and Fixing Delays',
     date: '2026-06-25',
@@ -28,6 +35,13 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-06-25',
     description:
       'A Georgia immigration attorney explains the H-2A temporary agricultural worker visa for the growers and workers behind the state’s Vidalia onion, peach, vegetable, nursery, and poultry-production economy. Covers what H-2A is under INA §101(a)(15)(H)(ii)(a), why it is employer-driven with no self-petition, and its temporary/seasonal nature (generally up to one year). Walks through the three-agency process: the Department of Labor temporary labor certification (the State Workforce Agency job order, U.S.-worker recruitment, and Form ETA-9142A filed 75-to-45 days before the date of need), the USCIS Form I-129 petition, and the consular visa step. Details the mandatory employer obligations — the Adverse Effect Wage Rate (AEWR), free inspected housing, inbound/outbound transportation and subsistence reimbursement, the three-fourths guarantee, and tools and workers’ compensation. Explains that H-2A is cap-exempt (unlike H-1B’s 85,000 and H-2B’s 66,000 caps), the DHS eligible-countries list, the three-year maximum stay and required departure, and how H-2A differs from H-2B nonagricultural work. Lays out workers’ enforceable rights to wages, housing, return transport, and freedom from retaliation, the Georgia Department of Labor job-order role, and the common compliance pitfalls that lead to back wages, civil penalties, and debarment. Cross-links employment-based immigration, the H-1B visa, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
+    slug: 'h2b-seasonal-worker-visa-georgia',
+    title: 'H-2B Seasonal Worker Visa in Georgia: Employer Rules, the 66,000 Cap, and Worker Rights',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains the H-2B temporary nonagricultural worker visa for the landscaping, hospitality, seafood, amusement-park, and forestry employers and workers behind the state’s seasonal service economy. Covers what H-2B is under INA §101(a)(15)(H)(ii)(b), why it is employer-driven with no self-petition, and the four ways to prove temporary need under 20 CFR 655.6 — seasonal, peak-load, one-time occurrence, and intermittent. Walks through the three-agency process: the Department of Labor temporary labor certification (the prevailing wage determination on Form ETA-9141, the State Workforce Agency job order, U.S.-worker recruitment, and Form ETA-9142B filed 90-to-75 days before the date of need through the OFLC Chicago National Processing Center), the USCIS Form I-129 petition, and the consular DS-160 visa step. Explains the statutory 66,000 annual cap split into two 33,000 semiannual allocations (first half starting October 1, second half starting April 1), why it fills early and can trigger a lottery, the year-by-year returning-worker exemption and DHS/DOL supplemental cap increases, and the narrow cap-exempt categories. Details the OFLC prevailing wage (not the H-2A AEWR), transportation and cost-reimbursement duties, the up-to-one-year need extendable to a three-year maximum with required departure, the DHS eligible-countries list, how H-2B differs from H-2A agricultural work, and the change-of-employer rules. Lays out workers’ enforceable rights and the compliance pitfalls that lead to back wages, civil penalties, and debarment. Cross-links the H-2A agricultural worker visa and employment-based immigration. Georgia and Alabama.',
   },
   {
     slug: 'i130-family-petition-sponsor-relative-green-card-georgia',

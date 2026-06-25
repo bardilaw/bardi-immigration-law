@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'uscis-filing-fees-2025-guide-georgia',
+    title: 'USCIS Filing Fees in 2025: What Every Georgia Applicant Needs to Know',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney breaks down USCIS filing fees after the April 1, 2024 fee restructuring — what the most common applications cost, who can avoid the fee, and how government fees differ from attorney fees. Includes a fee table for the forms families ask about most (I-130 family petition, I-485 adjustment of status, I-765 employment authorization, I-131 advance parole, N-400 naturalization, I-751 removal of conditions, I-90 green card renewal, and I-539 extension/change of status), with online-filing discounts noted and a clear instruction to verify the current amount on the official USCIS Fee Schedule (Form G-1055) before filing. Explains the 2024 restructuring (a roughly 25% average increase, the biometrics fee folded into most applications, and separate online/paper and filer-type pricing), the Form I-912 fee waiver (means-tested benefits, income at or below 150% of the Federal Poverty Guidelines, or financial hardship), fee-exempt humanitarian categories (VAWA self-petitioners, T and U visa applicants, certain asylum applicants, and limited DACA contexts), premium processing under Form I-907, the critical difference between USCIS filing fees and attorney fees, and the 2025–2026 fee proposals (hedged). Cross-links adjustment of status, naturalization, the family green card, employment authorization, green card renewal, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
     slug: 'long-pending-i130-priority-date-backlog-georgia',
     title: 'Long-Pending I-130 in Georgia: What to Do When Your Priority Date Is Years Away',
     date: '2026-06-25',

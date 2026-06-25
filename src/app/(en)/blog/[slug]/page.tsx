@@ -95,10 +95,12 @@ import { CancellationOfRemovalLprPostContent } from '@/content/blog/en/cancellat
 import { I130FamilyPetitionPostContent } from '@/content/blog/en/i130-family-petition-sponsor-relative-green-card-georgia';
 import { H2aAgriculturalWorkerVisaPostContent } from '@/content/blog/en/h2a-agricultural-worker-visa-georgia';
 import { F1StudentVisaReinstatementPostContent } from '@/content/blog/en/f1-student-visa-reinstatement-out-of-status-georgia';
+import { UscisCaseStatusRfePostContent } from '@/content/blog/en/uscis-case-status-rfe-response-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'uscis-case-status-rfe-response-georgia': UscisCaseStatusRfePostContent,
   'f1-student-visa-reinstatement-out-of-status-georgia': F1StudentVisaReinstatementPostContent,
   'h2a-agricultural-worker-visa-georgia': H2aAgriculturalWorkerVisaPostContent,
   'i130-family-petition-sponsor-relative-green-card-georgia': I130FamilyPetitionPostContent,

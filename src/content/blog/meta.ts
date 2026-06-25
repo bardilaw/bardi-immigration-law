@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'uscis-case-status-rfe-response-georgia',
+    title: 'USCIS Case Status in Georgia: Checking Your Case, Responding to RFEs, and Fixing Delays',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains how to track a pending USCIS case and respond when the agency asks for more — or stops moving. Covers how to read your Form I-797C receipt notice and the 13-character receipt number (the IOE, EAC, WAC, LIN, SRC, MSC, and YSC prefixes that tell you which office holds your case, plus the received and priority dates), and the free tools to check status: Case Status Online, a myUSCIS account, the Emma virtual assistant, and the USCIS Contact Center at 1-800-375-5283. Decodes the common status messages (case received, biometrics scheduled, interview scheduled, new card being produced, approved, denied) and explains the Request for Evidence (RFE) — what it is, why it is not a denial, the response window commonly up to 87 days (but controlled by the date on your notice), and how to assemble a single complete response that ties each document to the legal standard. Distinguishes the Request for Initial Evidence (RFIE) and the more serious Notice of Intent to Deny (NOID) with its shorter window, and lays out what to do when a case is stuck past normal processing time: case inquiries and service requests, expedite criteria, congressional inquiries, and a mandamus lawsuit as a last resort. Cross-links the USCIS Atlanta field office guide, the adjustment-of-status hub, naturalization, the mandamus delay post, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
     slug: 'f1-student-visa-reinstatement-out-of-status-georgia',
     title: 'F-1 Reinstatement in Georgia: How International Students Recover After Falling Out of Status',
     date: '2026-06-25',

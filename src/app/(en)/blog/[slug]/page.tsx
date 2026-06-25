@@ -92,10 +92,14 @@ import { StemOptExtensionPostContent } from '@/content/blog/en/stem-opt-extensio
 import { CancellationOfRemovalNonLprPostContent } from '@/content/blog/en/cancellation-of-removal-non-lpr-10-year-rule-georgia';
 import { DacaDeferredActionChildhoodArrivalsPostContent } from '@/content/blog/en/daca-deferred-action-childhood-arrivals-georgia';
 import { CancellationOfRemovalLprPostContent } from '@/content/blog/en/cancellation-of-removal-lpr-green-card-holder-georgia';
+import { I130FamilyPetitionPostContent } from '@/content/blog/en/i130-family-petition-sponsor-relative-green-card-georgia';
+import { H2aAgriculturalWorkerVisaPostContent } from '@/content/blog/en/h2a-agricultural-worker-visa-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'h2a-agricultural-worker-visa-georgia': H2aAgriculturalWorkerVisaPostContent,
+  'i130-family-petition-sponsor-relative-green-card-georgia': I130FamilyPetitionPostContent,
   'cancellation-of-removal-lpr-green-card-holder-georgia': CancellationOfRemovalLprPostContent,
   'daca-deferred-action-childhood-arrivals-georgia': DacaDeferredActionChildhoodArrivalsPostContent,
   'cancellation-of-removal-non-lpr-10-year-rule-georgia': CancellationOfRemovalNonLprPostContent,

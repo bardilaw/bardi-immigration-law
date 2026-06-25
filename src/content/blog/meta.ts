@@ -9,6 +9,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'h2a-agricultural-worker-visa-georgia',
+    title: 'H-2A Agricultural Worker Visa in Georgia: Employer Compliance and Worker Rights',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains the H-2A temporary agricultural worker visa for the growers and workers behind the state’s Vidalia onion, peach, vegetable, nursery, and poultry-production economy. Covers what H-2A is under INA §101(a)(15)(H)(ii)(a), why it is employer-driven with no self-petition, and its temporary/seasonal nature (generally up to one year). Walks through the three-agency process: the Department of Labor temporary labor certification (the State Workforce Agency job order, U.S.-worker recruitment, and Form ETA-9142A filed 75-to-45 days before the date of need), the USCIS Form I-129 petition, and the consular visa step. Details the mandatory employer obligations — the Adverse Effect Wage Rate (AEWR), free inspected housing, inbound/outbound transportation and subsistence reimbursement, the three-fourths guarantee, and tools and workers’ compensation. Explains that H-2A is cap-exempt (unlike H-1B’s 85,000 and H-2B’s 66,000 caps), the DHS eligible-countries list, the three-year maximum stay and required departure, and how H-2A differs from H-2B nonagricultural work. Lays out workers’ enforceable rights to wages, housing, return transport, and freedom from retaliation, the Georgia Department of Labor job-order role, and the common compliance pitfalls that lead to back wages, civil penalties, and debarment. Cross-links employment-based immigration, the H-1B visa, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
+    slug: 'i130-family-petition-sponsor-relative-green-card-georgia',
+    title: 'Form I-130 in Georgia: Sponsoring a Family Member for a Green Card',
+    date: '2026-06-25',
+    description:
+      'A Georgia immigration attorney explains Form I-130, Petition for Alien Relative — the first step in nearly every family-based green card. Covers what the I-130 is and when to file it, who can petition (U.S. citizens can sponsor a spouse, children, parents, and siblings; green card holders can sponsor only a spouse and unmarried children), and the family categories that decide the wait — immediate relatives (no annual cap, no wait) versus the F1, F2A, F2B, F3, and F4 preference categories with their long backlogs. Explains how priority dates and the monthly Visa Bulletin work, what happens after I-130 approval (adjustment of status if the relative is inside the U.S., or the National Visa Center and a consular interview if abroad), concurrent filing of the I-130 and I-485 for immediate relatives, Form I-130A for spouse beneficiaries, the evidence required to prove status and a bona fide relationship, realistic processing times, and what happens when the petitioner dies — automatic revocation, INA §204(l) continuation, humanitarian reinstatement, and substitute sponsors. Cross-links the adjustment-of-status hub, the NVC and consular interview guide, the I-864 affidavit of support, the Visa Bulletin, and how to choose an immigration attorney. Georgia and Alabama.',
+  },
+  {
     slug: 'cancellation-of-removal-lpr-green-card-holder-georgia',
     title: 'LPR Cancellation of Removal in Georgia: Deportation Defense for Green Card Holders',
     date: '2026-06-25',
@@ -529,9 +543,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'asylum-application-georgia',
     title: 'How to Apply for Asylum in the United States: A Georgia Guide',
-    date: '2026-06-21',
+    date: '2026-06-24',
     description:
-      'A Georgia immigration attorney explains how to apply for asylum: the five protected grounds, the one-year deadline, affirmative vs. defensive cases, Form I-589, and the mistakes that sink cases.',
+      'A Georgia immigration attorney explains how to apply for asylum under INA §208: the five protected grounds (race, religion, nationality, political opinion, particular social group), the one-year filing deadline and its changed/extraordinary-circumstances exceptions, affirmative vs. defensive asylum (USCIS Asylum Office vs. the Atlanta and Stewart immigration courts), and Form I-589. Covers the bars to asylum (particularly serious crime and aggravated felony, persecution of others, security and terrorism grounds, firm resettlement) and how withholding of removal and Convention Against Torture protection serve as backups when a bar or missed deadline blocks asylum, the 150/180-day asylum EAD clock for a Form I-765 work permit, what happens after a grant (Refugee Travel Document on Form I-131, derivative spouse and children through Form I-730, and a green card one year later on Form I-485), and what happens after a denial (referral to an immigration judge, appeal to the Board of Immigration Appeals, and review in the Eleventh Circuit). Includes a hedged note on the 2025-2026 executive actions restricting asylum — the entry-based asylum ban, the third-country transit bar, and the expansion of expedited removal — which are actively contested in court, with a recommendation to confirm the current rule with an attorney. Georgia and Alabama.',
   },
   {
     slug: 'notice-to-appear-georgia',

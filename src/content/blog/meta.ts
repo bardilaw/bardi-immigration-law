@@ -9,6 +9,13 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'daca-deferred-action-childhood-arrivals-georgia',
+    title: 'DACA in Georgia: Deferred Action for Childhood Arrivals Explained',
+    date: '2026-06-24',
+    description:
+      'A Georgia immigration attorney explains DACA (Deferred Action for Childhood Arrivals) from the ground up for the state’s roughly 19,000 Dreamers: what DACA is and why it is prosecutorial discretion (not a law, visa, or green card) created by the June 15, 2012 DHS memo, the full eligibility rules (arrived before age 16, under 31 on June 15, 2012, continuous residence since June 15, 2007, education or military service, and the no-felony/no-significant-misdemeanor bar), and how to file Form I-821D with the Form I-765 work permit (EAD). Covers the 120–150-day renewal window, why USCIS is processing renewals but not new initial applications, the serious risk of traveling without advance parole (Form I-131) and the unlawful-presence bars, and the advance-parole-to-adjustment strategy under Matter of Arrabally. Explains a hedged view of the litigation (Texas v. United States, the Fifth Circuit, and the likely Supreme Court path), why DACA does not lead to a green card on its own, and the adjustment-of-status edge case for Dreamers with a qualifying U.S.-citizen relative under INA §245. Cross-links adjustment of status, DACA-to-green-card pathways, TPS, and how to choose an immigration attorney. Serving Dreamers across metro Atlanta, Georgia, and Alabama.',
+  },
+  {
     slug: 'cancellation-of-removal-non-lpr-10-year-rule-georgia',
     title: 'Non-LPR Cancellation of Removal in Georgia: The 10-Year Rule Explained',
     date: '2026-06-24',
@@ -368,7 +375,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'tn-visa-canadian-mexican-professionals-georgia',
     title: 'TN Visa in Georgia: USMCA Status for Canadian and Mexican Professionals',
-    date: '2026-06-22',
+    date: '2026-06-24',
     description:
       'A Georgia TN visa attorney explains TN nonimmigrant status under the USMCA for Canadian and Mexican professionals: who qualifies, the USMCA occupation list and credential rules, the different Canadian (port-of-entry) and Mexican (consular) processes, the 3-year admission and indefinite renewals, TD dependent status (study but no work authorization), the nonimmigrant-intent limits on a green-card path, and common denial reasons. Atlanta CBP at Hartsfield-Jackson; Georgia and Alabama.',
   },

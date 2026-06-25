@@ -90,10 +90,12 @@ import { H1bCapGapPostContent } from '@/content/blog/en/h1b-cap-gap-opt-work-aut
 import { UscisAtlantaFieldOfficePostContent } from '@/content/blog/en/uscis-atlanta-field-office-appointments-interviews-georgia';
 import { StemOptExtensionPostContent } from '@/content/blog/en/stem-opt-extension-24-month-work-authorization-georgia';
 import { CancellationOfRemovalNonLprPostContent } from '@/content/blog/en/cancellation-of-removal-non-lpr-10-year-rule-georgia';
+import { DacaDeferredActionChildhoodArrivalsPostContent } from '@/content/blog/en/daca-deferred-action-childhood-arrivals-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
+  'daca-deferred-action-childhood-arrivals-georgia': DacaDeferredActionChildhoodArrivalsPostContent,
   'cancellation-of-removal-non-lpr-10-year-rule-georgia': CancellationOfRemovalNonLprPostContent,
   'stem-opt-extension-24-month-work-authorization-georgia': StemOptExtensionPostContent,
   'uscis-atlanta-field-office-appointments-interviews-georgia': UscisAtlantaFieldOfficePostContent,

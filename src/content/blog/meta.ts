@@ -1035,6 +1035,51 @@ export const ES_BLOG_META: Record<string, EsBlogMeta> = {
     description:
       'Una abogada de inmigración en Georgia explica cómo están organizadas las cortes de inmigración del estado: la Corte de Atlanta (no detenidos) y la Corte de Stewart (detenidos en Lumpkin), por qué no hay corte en Gwinnett ni DeKalb, la línea directa del EOIR 1-800-898-7180 y el portal acis.eoir.justice.gov, cómo solicitar un aplazamiento o cambio de jurisdicción, la diferencia entre EOIR e ICE ERO, y qué hacer al recibir un NTA. Información general, no asesoría legal.',
   },
+  'uscis-atlanta-field-office-appointments-interviews-georgia': {
+    title: 'La Oficina de USCIS en Atlanta, Georgia: Biométricos, Entrevistas y Qué Esperar',
+    description:
+      'Una abogada de inmigración en Georgia explica qué esperar en la Oficina de Distrito de USCIS en Atlanta (2150 Parklake Dr NE): la diferencia entre una cita de biométricos y una entrevista, qué documentos llevar a una entrevista de residencia o naturalización, su derecho a un intérprete y a un abogado, qué hacer si pierde una cita y cómo reprogramarla, cómo verificar el estado de su caso y los errores más comunes que conviene evitar. Información general, no asesoría legal.',
+  },
+  'stem-opt-extension-24-month-work-authorization-georgia': {
+    title: 'Extensión STEM OPT en Georgia: 24 Meses de Autorización de Trabajo Tras la Graduación',
+    description:
+      'Una abogada de inmigración en Georgia explica la extensión STEM OPT de 24 meses bajo 8 CFR 214.2(f)(10)(ii)(C): qué es, los requisitos de elegibilidad (título STEM, recomendación del DSO y empleador con E-Verify), cómo presentar el Formulario I-765 dentro de la ventana de 90 días, el puente de extensión automática de 180 días, el plan de capacitación I-983, las obligaciones de reporte cada 6 meses y la regla de 10 días, el límite de desempleo, qué hacer si el empleador pierde E-Verify o usted cambia de trabajo, y el cap-gap hacia la H-1B. Información general, no asesoría legal.',
+  },
+  'j1-visa-two-year-home-residency-requirement-waiver-georgia': {
+    title: 'Exención de la Visa J-1 en Georgia: Cómo Superar el Requisito de Dos Años en el País de Origen',
+    description:
+      'Una abogada de inmigración en Georgia explica el requisito de presencia física de dos años en el país de origen de la visa J-1 bajo INA §212(e): quién está realmente sujeto, qué bloquea de verdad (visas H, L, K y la green card), las cinco bases de exención, y por qué el programa Conrad 30 suele ser la mejor vía para los médicos que se forman en Georgia, además de cómo funcionan el DS-3035 y el proceso ante el Departamento de Estado y USCIS. Información general, no asesoría legal.',
+  },
+  'l1-intracompany-transferee-visa-georgia': {
+    title: 'Visa L-1 en Georgia: Cómo Transferirse a la Oficina de su Empresa en Atlanta',
+    description:
+      'Una abogada de inmigración en Georgia explica la visa L-1 para transferencias dentro de la misma empresa: la diferencia entre L-1A (gerentes y ejecutivos) y L-1B (conocimiento especializado), la relación corporativa calificada, el requisito de un año de empleo en el extranjero, la L-1 de oficina nueva, la petición L general (blanket petition), el estatus L-2 con permiso de trabajo para el cónyuge, y cómo la L-1A abre la puerta a la green card EB-1C sin PERM. Información general, no asesoría legal.',
+  },
+  'nvc-consular-interview-immigrant-visa-process-georgia': {
+    title: 'El NVC y la Entrevista Consular: El Proceso de Visa de Inmigrante Paso a Paso (Georgia)',
+    description:
+      'Una abogada de inmigración en Georgia explica la etapa del Centro Nacional de Visas (NVC) y la entrevista consular paso a paso: cuándo llega su caso al NVC, las dos tarifas, la Declaración Jurada de Patrocinio Económico (Formulario I-864), el DS-260, los documentos civiles, el estatus de calificado documentalmente, el examen médico, la entrevista en el consulado, la decisión y la trampa de la Sección 221(g). Información general, no asesoría legal.',
+  },
+  'cancellation-of-removal-non-lpr-10-year-rule-georgia': {
+    title: 'Cancelación de Remoción para No Residentes en Georgia: La Regla de los 10 Años',
+    description:
+      'Una abogada de inmigración en Georgia explica la cancelación de remoción para no residentes permanentes bajo INA §240A(b): los cuatro requisitos estatutarios, los 10 años de presencia física continua, el buen carácter moral, las barras penales, el exigente estándar de &ldquo;daño excepcional y extremadamente inusual&rdquo; a un familiar calificado, la regla stop-time (Pereira/Niz-Chavez), el tope anual de 4,000 concesiones, qué pasa si gana o pierde, y en qué se diferencia de la cancelación para residentes bajo §240A(a). Información general, no asesoría legal.',
+  },
+  'birthright-citizenship-executive-order-14th-amendment-georgia': {
+    title: 'Ciudadanía por Nacimiento en Georgia (2025–2026): Qué Significa la Orden Ejecutiva para Su Familia',
+    description:
+      'Una abogada de inmigración en Georgia explica la ciudadanía por nacimiento: por qué la Decimocuarta Enmienda y Wong Kim Ark la garantizan, qué intentó hacer la Orden Ejecutiva 14160, por qué los tribunales la bloquearon, qué decidió (y qué no) la Corte Suprema en Trump v. CASA, por qué su hijo nacido aquí sigue siendo ciudadano estadounidense, cómo asegurar su pasaporte y acta de nacimiento ahora, y qué hace —y qué no hace— un hijo ciudadano por un padre indocumentado. Información general, no asesoría legal.',
+  },
+  'after-deportation-reentry-bars-waivers-georgia': {
+    title: 'Después de una Deportación: Barras de Reingreso, Exenciones I-212 y Cómo Regresar Legalmente (Georgia)',
+    description:
+      'Una abogada de inmigración en Georgia explica cómo regresar legalmente después de una deportación: las barras de reingreso bajo INA §212(a)(9)(A) (5, 10 y 20 años, y la barra permanente por delito agravado), la temida barra permanente bajo §212(a)(9)(C) cuando alguien vuelve a entrar ilegalmente, el Formulario I-212 de permiso para volver a solicitar la admisión, cómo se combina con las exenciones I-601 e I-601A, el proceso consular y los plazos realistas. Información general, no asesoría legal.',
+  },
+  'i90-green-card-renewal-replacement-georgia': {
+    title: 'Cómo Renovar o Reemplazar su Green Card en Georgia: Guía del Formulario I-90',
+    description:
+      'Una abogada de inmigración en Georgia explica el Formulario I-90 para renovar o reemplazar la green card (tarjeta de residente permanente): quién debe presentarlo, cómo hacerlo en línea o por correo, cuánto tarda, la diferencia clave con el Formulario I-751 y el Formulario N-400, cómo probar su estatus mientras espera con el aviso de recibo (Formulario I-797C) y el sello ADIT (I-551), cómo trabajar y viajar al extranjero antes de que llegue la tarjeta nueva, y cuándo conviene hablar con un abogado. Información general, no asesoría legal.',
+  },
 };
 
 export function getEsPost(slug: string): BlogPost | undefined {
@@ -1112,4 +1157,13 @@ export const ES_BLOG_SLUGS = new Set([
   'temporary-protected-status-tps-georgia',
   'h1b-cap-gap-opt-work-authorization-georgia',
   'georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide',
+  'uscis-atlanta-field-office-appointments-interviews-georgia',
+  'stem-opt-extension-24-month-work-authorization-georgia',
+  'j1-visa-two-year-home-residency-requirement-waiver-georgia',
+  'l1-intracompany-transferee-visa-georgia',
+  'nvc-consular-interview-immigrant-visa-process-georgia',
+  'cancellation-of-removal-non-lpr-10-year-rule-georgia',
+  'birthright-citizenship-executive-order-14th-amendment-georgia',
+  'after-deportation-reentry-bars-waivers-georgia',
+  'i90-green-card-renewal-replacement-georgia',
 ]);

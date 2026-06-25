@@ -71,6 +71,15 @@ import { HowToChooseImmigrationAttorneyPostContentEs } from '@/content/blog/es/h
 import { TemporaryProtectedStatusGeorgiaPostContentEs } from '@/content/blog/es/temporary-protected-status-tps-georgia';
 import { H1bCapGapPostContentEs } from '@/content/blog/es/h1b-cap-gap-opt-work-authorization-georgia';
 import { GeorgiaImmigrationCourtsPostContentEs } from '@/content/blog/es/georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide';
+import { UscisAtlantaFieldOfficePostContentEs } from '@/content/blog/es/uscis-atlanta-field-office-appointments-interviews-georgia';
+import { StemOptExtensionPostContentEs } from '@/content/blog/es/stem-opt-extension-24-month-work-authorization-georgia';
+import { J1VisaWaiverPostContentEs } from '@/content/blog/es/j1-visa-two-year-home-residency-requirement-waiver-georgia';
+import { L1IntracompanyTransfereePostContentEs } from '@/content/blog/es/l1-intracompany-transferee-visa-georgia';
+import { NvcConsularInterviewPostContentEs } from '@/content/blog/es/nvc-consular-interview-immigrant-visa-process-georgia';
+import { CancellationOfRemovalNonLprPostContentEs } from '@/content/blog/es/cancellation-of-removal-non-lpr-10-year-rule-georgia';
+import { BirthrightCitizenshipPostContentEs } from '@/content/blog/es/birthright-citizenship-executive-order-14th-amendment-georgia';
+import { AfterDeportationReentryBarsPostContentEs } from '@/content/blog/es/after-deportation-reentry-bars-waivers-georgia';
+import { I90GreenCardRenewalPostContentEs } from '@/content/blog/es/i90-green-card-renewal-replacement-georgia';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -139,6 +148,15 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
   'temporary-protected-status-tps-georgia': TemporaryProtectedStatusGeorgiaPostContentEs,
   'h1b-cap-gap-opt-work-authorization-georgia': H1bCapGapPostContentEs,
   'georgia-immigration-courts-atlanta-gwinnett-dekalb-stewart-guide': GeorgiaImmigrationCourtsPostContentEs,
+  'uscis-atlanta-field-office-appointments-interviews-georgia': UscisAtlantaFieldOfficePostContentEs,
+  'stem-opt-extension-24-month-work-authorization-georgia': StemOptExtensionPostContentEs,
+  'j1-visa-two-year-home-residency-requirement-waiver-georgia': J1VisaWaiverPostContentEs,
+  'l1-intracompany-transferee-visa-georgia': L1IntracompanyTransfereePostContentEs,
+  'nvc-consular-interview-immigrant-visa-process-georgia': NvcConsularInterviewPostContentEs,
+  'cancellation-of-removal-non-lpr-10-year-rule-georgia': CancellationOfRemovalNonLprPostContentEs,
+  'birthright-citizenship-executive-order-14th-amendment-georgia': BirthrightCitizenshipPostContentEs,
+  'after-deportation-reentry-bars-waivers-georgia': AfterDeportationReentryBarsPostContentEs,
+  'i90-green-card-renewal-replacement-georgia': I90GreenCardRenewalPostContentEs,
 };
 
 // Only pre-render routes that have actual ES content.

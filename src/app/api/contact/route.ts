@@ -1,7 +1,21 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { getOptionalRequestContext } from '@cloudflare/next-on-pages';
 
 export const runtime = 'edge';
+
+/**
+ * Read a runtime env var/secret. On Cloudflare Pages (next-on-pages) these live on
+ * the request context's `env`, NOT on process.env — so read that first, falling back
+ * to process.env for local dev and build. Without this, dashboard env vars/secrets
+ * (LEADS_WEBHOOK_URL, RESEND_API_KEY, CONTACT_PHONE, …) are invisible at runtime.
+ */
+function readEnv(key: string): string | undefined {
+  const ctxEnv = getOptionalRequestContext()?.env as
+    | Record<string, string | undefined>
+    | undefined;
+  return ctxEnv?.[key] ?? process.env[key];
+}
 
 type ContactPayload = {
   firstName?: string;
@@ -35,7 +49,7 @@ function caseTypeToTag(caseType?: string): string {
  * Never throws, a Kit outage must not fail the visitor's form submission.
  */
 async function syncToKit(params: { email: string; firstName: string; caseType?: string }): Promise<void> {
-  const kitApiKey = process.env.KIT_API_KEY;
+  const kitApiKey = readEnv('KIT_API_KEY');
   if (!kitApiKey) {
     // Not configured yet, Resend auto-reply still fires; nurture sync is additive.
     console.warn('BAR-579: KIT_API_KEY not configured; skipping Kit subscriber sync');
@@ -108,7 +122,7 @@ async function logLead(params: {
   description?: string;
   source?: string;
 }): Promise<void> {
-  const url = process.env.LEADS_WEBHOOK_URL;
+  const url = readEnv('LEADS_WEBHOOK_URL');
   if (!url) {
     console.warn('LEADS_WEBHOOK_URL not configured; skipping Google Sheet lead log');
     return;
@@ -117,7 +131,7 @@ async function logLead(params: {
     await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ...params, secret: process.env.LEADS_WEBHOOK_SECRET ?? '' }),
+      body: JSON.stringify({ ...params, secret: readEnv('LEADS_WEBHOOK_SECRET') ?? '' }),
     });
   } catch (err) {
     console.error('lead log webhook failed', err);
@@ -145,10 +159,10 @@ export async function POST(request: Request) {
       );
     }
 
-    const apiKey = process.env.RESEND_API_KEY;
-    const contactEmail = process.env.CONTACT_EMAIL;
+    const apiKey = readEnv('RESEND_API_KEY');
+    const contactEmail = readEnv('CONTACT_EMAIL');
     const resendConfigured = Boolean(apiKey && contactEmail);
-    const leadsWebhookConfigured = Boolean(process.env.LEADS_WEBHOOK_URL);
+    const leadsWebhookConfigured = Boolean(readEnv('LEADS_WEBHOOK_URL'));
 
     // Need at least one durable delivery path — the Google Sheet lead-log webhook or
     // Resend email. With neither, the lead would be silently dropped, so fail loudly and
@@ -201,7 +215,7 @@ ${description?.trim() ? `<p style="margin-top:16px"><strong>Message:</strong><br
 
     // Email 1 of the BAR-569 nurture sequence (deliverables/email-sequence.md §3).
     // Boutique, personal voice; signed by Eszter Bardi. Sent transactionally via Resend.
-    const firmPhone = process.env.CONTACT_PHONE; // optional; degrades the urgent line if unset
+    const firmPhone = readEnv('CONTACT_PHONE'); // optional; degrades the urgent line if unset
     const urgentText = firmPhone
       ? `If your matter is urgent, a court date, a filing deadline, a detained family member, reply to this email or call us at ${firmPhone} right away so we can prioritize it.`
       : 'If your matter is urgent, a court date, a filing deadline, a detained family member, reply to this email right away so we can prioritize it.';
@@ -240,7 +254,7 @@ ${description?.trim() ? `<p style="margin-top:16px"><strong>Message:</strong><br
 </div>
     `.trim();
 
-    const fromAddress = process.env.RESEND_FROM_EMAIL ?? 'Bardi Immigration Law <noreply@bardiimmigrationlaw.com>';
+    const fromAddress = readEnv('RESEND_FROM_EMAIL') ?? 'Bardi Immigration Law <noreply@bardiimmigrationlaw.com>';
 
       deliveries.push(
         resend.emails.send({

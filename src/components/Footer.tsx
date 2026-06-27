@@ -5,6 +5,16 @@ import { usePathname } from 'next/navigation';
 import { Button } from './Button';
 import { phoneEnabled, telHref } from '@/lib/contact';
 
+// Memberships & affiliations (feedback #39) — trust badges supplied by the client.
+// Rendered on white chips so each logo reads correctly against the navy footer.
+const CREDENTIALS = [
+  { src: '/credentials/aila-member-2026.png', alt: 'Member, American Immigration Lawyers Association (AILA)' },
+  { src: '/credentials/aila-ga-al.png', alt: 'AILA Georgia–Alabama Chapter' },
+  { src: '/credentials/state-bar-georgia.png', alt: 'State Bar of Georgia' },
+  { src: '/credentials/federal-bar-association.webp', alt: 'Federal Bar Association' },
+  { src: '/credentials/nip-member.jpg', alt: 'National Immigration Project (NIPNLG) Member' },
+];
+
 // `phone` is passed by the (server) page that renders the footer, sourced from
 // the CONTACT_PHONE env var (BAR-679). It is optional so the footer still renders
 // before the firm number is configured; when set, a tap-to-call link is shown.
@@ -72,6 +82,28 @@ export function Footer({ phone = '' }: { phone?: string }) {
             <Button href={p('/contact')} variant="primary" size="sm">
               {isEs ? 'Reserve una Consulta' : 'Schedule a Consultation'}
             </Button>
+          </div>
+        </div>
+
+        {/* Memberships & affiliations (feedback #39) */}
+        <div className="border-t border-white/10 pt-8 mb-8">
+          <h3 className="text-gold text-xs font-semibold font-sans uppercase tracking-widest mb-4 text-center sm:text-left">
+            {isEs ? 'Membresías y Afiliaciones' : 'Memberships & Affiliations'}
+          </h3>
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
+            {CREDENTIALS.map((c) => (
+              <div
+                key={c.src}
+                className="bg-white rounded-md p-2 flex items-center justify-center h-16 w-24 shrink-0"
+              >
+                <img
+                  src={c.src}
+                  alt={c.alt}
+                  className="max-h-full max-w-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+            ))}
           </div>
         </div>
 

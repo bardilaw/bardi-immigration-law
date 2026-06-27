@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { Logo } from './Logo';
 import { Button } from './Button';
 import { SiteSearch } from './SiteSearch';
-import { phoneEnabled, telHref } from '@/lib/contact';
+import { telHref } from '@/lib/contact';
 
 const SERVICES_EN = [
   { label: 'Benefits-Based Immigration', href: '/services/benefits-based-immigration' },
@@ -115,6 +115,9 @@ export function Header({ phone = '' }: { phone?: string }) {
   const resourcesHref = isEs ? '/es/resources' : '/resources';
   const contactHref = isEs ? '/es/contact' : '/contact';
   const servicesHref = isEs ? '/es/services' : '/services';
+  // Confirmed firm number (BAR-81). Shown now so the call CTA is visible in the
+  // gated preview; the CONTACT_PHONE env var overrides it at launch.
+  const callPhone = phone || '404-804-9432';
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -218,16 +221,14 @@ export function Header({ phone = '' }: { phone?: string }) {
             <LanguageToggle isEs={isEs} enPath={enPath} esPath={esPath} />
           </div>
 
-          {/* Call Us Today — tap-to-call link (feedback #2); appears once CONTACT_PHONE
-              goes live at launch (BAR-81). Number confirmed 404-804-9432. */}
-          {phoneEnabled(phone) && (
-            <a
-              href={telHref(phone)}
-              className="font-sans text-sm font-semibold text-navy hover:text-gold transition-colors whitespace-nowrap"
-            >
-              {isEs ? `Llámenos Hoy – ${phone}` : `Call Us Today – ${phone}`}
-            </a>
-          )}
+          {/* Call Us Today — tap-to-call link (feedback #2). Uses the confirmed firm
+              number now; CONTACT_PHONE overrides it at launch (BAR-81). */}
+          <a
+            href={telHref(callPhone)}
+            className="font-sans text-sm font-semibold text-navy hover:text-gold transition-colors whitespace-nowrap"
+          >
+            {isEs ? `Llámenos Hoy – ${callPhone}` : `Call Us Today – ${callPhone}`}
+          </a>
 
           {/* Primary CTA — always available (feedback #2). "Send Us a Message" removed. */}
           <Button href={contactHref} size="sm">
@@ -317,12 +318,10 @@ export function Header({ phone = '' }: { phone?: string }) {
             <Button href={contactHref} size="md" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
               {isEs ? 'Solicite una Consulta' : 'Request A Consultation'}
             </Button>
-            {/* Call Us Today — tap-to-call, appears once CONTACT_PHONE is live at launch (BAR-81). */}
-            {phoneEnabled(phone) && (
-              <Button href={telHref(phone)} size="md" variant="ghost" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
-                {isEs ? `Llámenos Hoy – ${phone}` : `Call Us Today – ${phone}`}
-              </Button>
-            )}
+            {/* Call Us Today — tap-to-call (feedback #2); env var overrides at launch. */}
+            <Button href={telHref(callPhone)} size="md" variant="ghost" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
+              {isEs ? `Llámenos Hoy – ${callPhone}` : `Call Us Today – ${callPhone}`}
+            </Button>
           </div>
         </div>
       )}

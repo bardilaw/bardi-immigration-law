@@ -123,6 +123,7 @@ export function Header({ phone = '' }: { phone?: string }) {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -143,7 +144,10 @@ export function Header({ phone = '' }: { phone?: string }) {
 
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+      // Close the Services menu only when the click is OUTSIDE the whole header.
+      // Scoping this to just the desktop dropdown broke mobile: tapping a submenu link
+      // fired this on mousedown and unmounted the link before its click could navigate.
+      if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
         setServicesOpen(false);
       }
     };
@@ -155,6 +159,7 @@ export function Header({ phone = '' }: { phone?: string }) {
 
   return (
     <header
+      ref={headerRef}
       className={`sticky top-0 z-50 bg-white transition-shadow ${scrolled ? 'shadow-md' : ''}`}
     >
       <div className="max-w-site mx-auto px-5 lg:px-8 flex items-center justify-between h-16">

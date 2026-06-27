@@ -20,7 +20,7 @@ export function Logo({ className = '' }: { className?: string }) {
         height={56}
         className="h-11 lg:h-14 w-auto object-contain"
       />
-      <span className="flex items-baseline gap-2">
+      <span className="flex items-center gap-2">
         <span className="font-sans font-extrabold text-navy text-2xl lg:text-3xl tracking-[0.04em] leading-none">
           BARDI
         </span>

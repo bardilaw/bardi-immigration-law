@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
 import { JsonLd } from '@/components/JsonLd';
-import { BLOG_POSTS, getPost, ES_BLOG_SLUGS, blogPostingSchema, breadcrumbSchema } from '@/content/blog/meta';
+import { BLOG_POSTS, getPost, isLivePost, ES_BLOG_SLUGS, blogPostingSchema, breadcrumbSchema } from '@/content/blog/meta';
 import { ogImageFor } from '@/content/blog/ogImages';
 import { DacaRenewal2025PostContent } from '@/content/blog/en/daca-renewal-2025-georgia';
 import { DacaRenewalPostContent } from '@/content/blog/en/daca-renewal-2026';
@@ -243,6 +243,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.description,
+    // Archived/backlog posts (feedback #41) stay published but are noindexed until promoted.
+    robots: isLivePost(slug) ? undefined : { index: false, follow: true },
     alternates: {
       canonical: `https://bardilaw.com/blog/${slug}`,
       languages: {

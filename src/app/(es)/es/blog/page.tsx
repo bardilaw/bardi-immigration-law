@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CONTACT_PHONE } from '@/lib/contact';
-import { BLOG_POSTS } from '@/content/blog/meta';
+import { LIVE_POSTS } from '@/content/blog/meta';
 
 export const metadata: Metadata = {
   title: 'Blog de Inmigración | Bardi Immigration Law',
@@ -52,7 +52,7 @@ export default function EsBlogIndexPage() {
         <section className="bg-white py-16 lg:py-20">
           <div className="max-w-site mx-auto px-5 lg:px-16">
             <div className="max-w-[760px] mx-auto flex flex-col gap-8">
-              {BLOG_POSTS.map((post) => (
+              {LIVE_POSTS.map((post) => (
                 <article
                   key={post.slug}
                   className="bg-warmgray border border-warmgray-200 rounded-[4px] px-7 py-6 hover:border-navy transition-colors group"

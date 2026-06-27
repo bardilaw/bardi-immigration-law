@@ -777,6 +777,34 @@ export function getPost(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }
 
+// Launch curation (feedback #41): only this hand-picked set of 12 posts is "live" at
+// launch — the ones shown on the blog index and in the sitemap. They were chosen for SEO
+// intent and to cover every core practice area. The remaining articles stay published at
+// their URLs but are unlisted and noindexed (a drip-feed backlog the firm approves over
+// time). Editing this set is the single switch to promote a backlog post or retire a live one.
+export const LIVE_SLUGS = new Set<string>([
+  'deportation-defense-removal-proceedings-georgia', // Removal Defense (flagship)
+  'immigration-bond-hearing-georgia', // Detention / bond hearings
+  'mandamus-lawsuit-uscis-delay-georgia', // Federal litigation (differentiator)
+  'family-green-card-attorney-georgia', // Family-based immigration
+  'marriage-based-green-card-k1-fiance-visa-georgia', // Marriage / K-1
+  'i-601a-provisional-unlawful-presence-waiver-georgia', // Waivers
+  'nvc-consular-interview-immigrant-visa-process-georgia', // Consular processing
+  'bia-appeal-immigration-court-georgia', // Appeals
+  'naturalization-citizenship-georgia', // Naturalization / citizenship
+  'asylum-application-georgia', // Asylum / humanitarian
+  'u-visa-crime-victims-immigration-georgia', // U-Visa / VAWA (crime victims)
+  'daca-deferred-action-childhood-arrivals-georgia', // DACA
+]);
+
+/** True when a post is part of the curated live set (listed + indexed). */
+export function isLivePost(slug: string): boolean {
+  return LIVE_SLUGS.has(slug);
+}
+
+/** Posts shown on the public blog index and sitemap, newest first. */
+export const LIVE_POSTS: BlogPost[] = BLOG_POSTS.filter((p) => LIVE_SLUGS.has(p.slug));
+
 const SITE_URL = 'https://bardilaw.com';
 
 // BlogPosting (Article) JSON-LD for a single blog post (BAR-675). Built once here and

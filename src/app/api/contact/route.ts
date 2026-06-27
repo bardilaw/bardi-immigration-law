@@ -17,38 +17,6 @@ function readEnv(key: string): string | undefined {
   return ctxEnv?.[key] ?? process.env[key];
 }
 
-// TEMP diagnostic (remove after): actually call the webhook from the edge and report.
-export async function GET() {
-  const url = readEnv('LEADS_WEBHOOK_URL');
-  const secret = readEnv('LEADS_WEBHOOK_SECRET');
-  const expected = 'bardi-leads-9f3a2c7e';
-  const secretInfo = {
-    len: secret?.length ?? 0,
-    matches: secret === expected,
-    matchesTrimmed: secret?.trim() === expected,
-    first2: secret?.slice(0, 2) ?? '',
-    last2: secret?.slice(-2) ?? '',
-  };
-  if (!url) return NextResponse.json({ urlPresent: false, secretInfo });
-  try {
-    const r = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        firstName: 'EdgeDiag', lastName: 'Test', email: 'edgediag@example.com',
-        phone: '0', description: 'edge diagnostic — delete', source: 'diagnostic', secret,
-      }),
-    });
-    const text = await r.text();
-    return NextResponse.json({
-      urlPresent: true, status: r.status, redirected: r.redirected,
-      bodySnippet: text.slice(0, 120), secretInfo,
-    });
-  } catch (err) {
-    return NextResponse.json({ urlPresent: true, fetchError: String(err) });
-  }
-}
-
 type ContactPayload = {
   firstName?: string;
   lastName?: string;

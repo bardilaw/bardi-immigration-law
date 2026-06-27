@@ -110,9 +110,7 @@ export function Header({ phone = '' }: { phone?: string }) {
   const { enPath, esPath } = getAlternatePath(pathname);
 
   const SERVICES = isEs ? SERVICES_ES : SERVICES_EN;
-  const homeHref = isEs ? '/es' : '/';
   const aboutHref = isEs ? '/es/about' : '/about';
-  const blogHref = isEs ? '/es/blog' : '/blog';
   const faqHref = isEs ? '/es/faq' : '/faq';
   const resourcesHref = isEs ? '/es/resources' : '/resources';
   const contactHref = isEs ? '/es/contact' : '/contact';
@@ -161,7 +159,7 @@ export function Header({ phone = '' }: { phone?: string }) {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6" aria-label="Primary navigation">
-          <Link href={homeHref} className={navLink}>{isEs ? 'Inicio' : 'Home'}</Link>
+          {/* Logo is the Home link (feedback #2) — redundant "Home" text link removed. */}
 
           {/* Services dropdown */}
           <div className="relative" ref={dropdownRef}>
@@ -205,11 +203,11 @@ export function Header({ phone = '' }: { phone?: string }) {
             )}
           </div>
 
+          {/* Nav links trimmed to Services / About / Resources / FAQ (feedback #2).
+              Blog + Contact remain reachable from the footer. */}
           <Link href={aboutHref} className={navLink}>{isEs ? 'Sobre Nosotros' : 'About'}</Link>
-          <Link href={blogHref} className={navLink}>Blog</Link>
-          <Link href={faqHref} className={navLink}>{isEs ? 'Preguntas' : 'FAQ'}</Link>
           <Link href={resourcesHref} className={navLink}>{isEs ? 'Recursos' : 'Resources'}</Link>
-          <Link href={contactHref} className={navLink}>{isEs ? 'Contacto' : 'Contact'}</Link>
+          <Link href={faqHref} className={navLink}>{isEs ? 'Preguntas' : 'FAQ'}</Link>
 
           {/* Internal site search — magnifying glass in the header top line (BAR-801,
               BAR-697 row 5) opens a bilingual overlay search (row 9). */}
@@ -220,21 +218,20 @@ export function Header({ phone = '' }: { phone?: string }) {
             <LanguageToggle isEs={isEs} enPath={enPath} esPath={esPath} />
           </div>
 
-          {/* Primary CTA — tap-to-call once CONTACT_PHONE is set (BAR-697 rows 15/16);
-              falls back to the consultation booking link pre-launch when no number exists. */}
-          {phoneEnabled(phone) ? (
-            <Button href={telHref(phone)} size="sm">
+          {/* Call Us Today — tap-to-call link (feedback #2); appears once CONTACT_PHONE
+              goes live at launch (BAR-81). Number confirmed 404-804-9432. */}
+          {phoneEnabled(phone) && (
+            <a
+              href={telHref(phone)}
+              className="font-sans text-sm font-semibold text-navy hover:text-gold transition-colors whitespace-nowrap"
+            >
               {isEs ? `Llámenos Hoy – ${phone}` : `Call Us Today – ${phone}`}
-            </Button>
-          ) : (
-            <Button href={contactHref} size="sm">
-              {isEs ? 'Reserve una Consulta' : 'Book a Consultation'}
-            </Button>
+            </a>
           )}
 
-          {/* Secondary CTA — message us (BAR-697 row 8). */}
-          <Button href={contactHref} size="sm" variant="ghost">
-            {isEs ? 'Envíenos un Mensaje' : 'Send Us a Message'}
+          {/* Primary CTA — always available (feedback #2). "Send Us a Message" removed. */}
+          <Button href={contactHref} size="sm">
+            {isEs ? 'Solicite una Consulta' : 'Request A Consultation'}
           </Button>
         </nav>
 
@@ -272,9 +269,7 @@ export function Header({ phone = '' }: { phone?: string }) {
             />
             <SiteSearch isEs={isEs} variant="mobile" />
           </div>
-          <Link href={homeHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
-            {isEs ? 'Inicio' : 'Home'}
-          </Link>
+          {/* Logo is the Home link (feedback #2) — redundant "Home" link removed. */}
           <div>
             <button
               className="text-navy font-semibold flex items-center gap-1 w-full text-left"
@@ -310,32 +305,24 @@ export function Header({ phone = '' }: { phone?: string }) {
           <Link href={aboutHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
             {isEs ? 'Sobre Nosotros' : 'About'}
           </Link>
-          <Link href={blogHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
-            Blog
+          <Link href={resourcesHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
+            {isEs ? 'Recursos' : 'Resources'}
           </Link>
           <Link href={faqHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
             {isEs ? 'Preguntas' : 'FAQ'}
           </Link>
-          <Link href={resourcesHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
-            {isEs ? 'Recursos' : 'Resources'}
-          </Link>
-          <Link href={contactHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
-            {isEs ? 'Contacto' : 'Contact'}
-          </Link>
 
           <div className="pt-2 border-t border-warmgray-200 flex flex-col gap-3">
-            {phoneEnabled(phone) ? (
-              <Button href={telHref(phone)} size="md" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
+            {/* Primary CTA — always available (feedback #2). */}
+            <Button href={contactHref} size="md" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
+              {isEs ? 'Solicite una Consulta' : 'Request A Consultation'}
+            </Button>
+            {/* Call Us Today — tap-to-call, appears once CONTACT_PHONE is live at launch (BAR-81). */}
+            {phoneEnabled(phone) && (
+              <Button href={telHref(phone)} size="md" variant="ghost" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
                 {isEs ? `Llámenos Hoy – ${phone}` : `Call Us Today – ${phone}`}
               </Button>
-            ) : (
-              <Button href={contactHref} size="md" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
-                {isEs ? 'Reserve una Consulta' : 'Book a Consultation'}
-              </Button>
             )}
-            <Button href={contactHref} size="md" variant="ghost" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
-              {isEs ? 'Envíenos un Mensaje' : 'Send Us a Message'}
-            </Button>
           </div>
         </div>
       )}

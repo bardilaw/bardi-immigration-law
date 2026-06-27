@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
-import { I864pCalculator } from '@/components/I864pCalculator';
 import { VisaBulletinTable } from '@/components/VisaBulletinTable';
 import { CONTACT_PHONE, phoneEnabled, telHref } from '@/lib/contact';
 import { OFFICIAL_TOOLS } from '@/app/(en)/resources/resourcesData';
@@ -48,23 +48,23 @@ export default function ResourcesPageES() {
           </div>
         </section>
 
-        {/* Calculadora de Patrocinador I-864P (feedback #38) — sección principal al inicio */}
-        <section id="sponsor-calculator" className="bg-warmgray py-16 lg:py-20 scroll-mt-24">
+        {/* Calculadora de Patrocinador I-864P — ahora su propia página (feedback #42) */}
+        <section className="bg-warmgray py-16 lg:py-20">
           <div className="max-w-site mx-auto px-5 lg:px-8">
-            <div className="max-w-2xl mb-8">
-              <h2 className="font-serif text-2xl font-bold text-navy mb-3">
+            <Link
+              href="/es/resources/i-864p-sponsor-calculator"
+              className="group block max-w-3xl bg-white rounded-lg border border-warmgray-200 p-6 lg:p-8 shadow-sm hover:shadow-md hover:border-gold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-2"
+            >
+              <h2 className="font-serif text-2xl font-bold text-navy group-hover:text-gold transition-colors mb-3 flex items-center gap-1.5">
                 Calculadora de Patrocinador I-864P
+                <span aria-hidden="true">&rarr;</span>
               </h2>
               <p className="text-charcoal/80 leading-relaxed">
-                ¿Está pensando en ser patrocinador económico en el Formulario I-864, Declaración
-                Jurada de Patrocinio? Responda cinco preguntas rápidas para estimar si su ingreso
-                cumple con el requisito mínimo. Esto es una estimación educativa &mdash; no es
-                asesoría legal.
+                Responda cinco preguntas rápidas para estimar si su ingreso cumple con el requisito
+                del 125% de las pautas federales de pobreza para patrocinar a un familiar en el
+                Formulario I-864.
               </p>
-            </div>
-            <div className="max-w-3xl">
-              <I864pCalculator lang="es" phone={CONTACT_PHONE} />
-            </div>
+            </Link>
           </div>
         </section>
 

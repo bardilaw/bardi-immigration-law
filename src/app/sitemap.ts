@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { BLOG_POSTS, ES_BLOG_SLUGS } from '@/content/blog/meta';
+import { LIVE_POSTS, ES_BLOG_SLUGS } from '@/content/blog/meta';
 
 const BASE = 'https://bardilaw.com';
 
@@ -30,6 +30,7 @@ const BILINGUAL_ROUTES: {
   { path: '/about', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/faq', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/resources', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/resources/i-864p-sponsor-calculator', priority: 0.7, changeFrequency: 'yearly' },
   { path: '/blog', priority: 0.8, changeFrequency: 'weekly' },
 ];
 
@@ -48,7 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]);
 
-  const blogRoutes = BLOG_POSTS.flatMap((post) => {
+  const blogRoutes = LIVE_POSTS.flatMap((post) => {
     const en = {
       url: `${BASE}/blog/${post.slug}`,
       lastModified: new Date(post.date),

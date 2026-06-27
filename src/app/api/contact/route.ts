@@ -17,6 +17,15 @@ function readEnv(key: string): string | undefined {
   return ctxEnv?.[key] ?? process.env[key];
 }
 
+// TEMP diagnostic (remove after): reports whether runtime env is visible, booleans only.
+export async function GET() {
+  const ctxEnv = getOptionalRequestContext()?.env as Record<string, string | undefined> | undefined;
+  const keys = ['LEADS_WEBHOOK_URL', 'LEADS_WEBHOOK_SECRET', 'RESEND_API_KEY', 'CONTACT_EMAIL', 'CONTACT_PHONE', 'KIT_API_KEY'];
+  const report: Record<string, { ctx: boolean; proc: boolean }> = {};
+  for (const k of keys) report[k] = { ctx: Boolean(ctxEnv?.[k]), proc: Boolean(process.env[k]) };
+  return NextResponse.json({ hasCtx: Boolean(ctxEnv), report });
+}
+
 type ContactPayload = {
   firstName?: string;
   lastName?: string;

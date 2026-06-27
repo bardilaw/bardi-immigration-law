@@ -21,7 +21,15 @@ function readEnv(key: string): string | undefined {
 export async function GET() {
   const url = readEnv('LEADS_WEBHOOK_URL');
   const secret = readEnv('LEADS_WEBHOOK_SECRET');
-  if (!url) return NextResponse.json({ urlPresent: false });
+  const expected = 'bardi-leads-9f3a2c7e';
+  const secretInfo = {
+    len: secret?.length ?? 0,
+    matches: secret === expected,
+    matchesTrimmed: secret?.trim() === expected,
+    first2: secret?.slice(0, 2) ?? '',
+    last2: secret?.slice(-2) ?? '',
+  };
+  if (!url) return NextResponse.json({ urlPresent: false, secretInfo });
   try {
     const r = await fetch(url, {
       method: 'POST',
@@ -34,7 +42,7 @@ export async function GET() {
     const text = await r.text();
     return NextResponse.json({
       urlPresent: true, status: r.status, redirected: r.redirected,
-      finalUrl: r.url, bodySnippet: text.slice(0, 180),
+      bodySnippet: text.slice(0, 120), secretInfo,
     });
   } catch (err) {
     return NextResponse.json({ urlPresent: true, fetchError: String(err) });

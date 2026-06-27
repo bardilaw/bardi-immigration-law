@@ -93,6 +93,37 @@ async function syncToKit(params: { email: string; firstName: string; caseType?: 
   }
 }
 
+/**
+ * Durable lead log: POST the submission to the Google Apps Script web app
+ * (LEADS_WEBHOOK_URL), which appends a row to the "Website Leads" Google Sheet and
+ * emails the firm at info@bardilaw.com. Works without a Resend key. Never throws —
+ * a logging outage must not fail the visitor's submission. See docs/leads-webhook.gs.
+ */
+async function logLead(params: {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  preferredContact?: string;
+  description?: string;
+  source?: string;
+}): Promise<void> {
+  const url = process.env.LEADS_WEBHOOK_URL;
+  if (!url) {
+    console.warn('LEADS_WEBHOOK_URL not configured; skipping Google Sheet lead log');
+    return;
+  }
+  try {
+    await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...params, secret: process.env.LEADS_WEBHOOK_SECRET ?? '' }),
+    });
+  } catch (err) {
+    console.error('lead log webhook failed', err);
+  }
+}
+
 export async function POST(request: Request) {
   try {
     const body = await request.json() as ContactPayload;
@@ -116,20 +147,29 @@ export async function POST(request: Request) {
 
     const apiKey = process.env.RESEND_API_KEY;
     const contactEmail = process.env.CONTACT_EMAIL;
+    const resendConfigured = Boolean(apiKey && contactEmail);
+    const leadsWebhookConfigured = Boolean(process.env.LEADS_WEBHOOK_URL);
 
-    if (!apiKey || !contactEmail) {
-      // Delivery not configured (BAR-69). Fail loudly instead of returning a false
-      // success: there is no DB and no email path, so a 200 "message received" tells
-      // the visitor they reached us while the lead is silently dropped. Returning an
-      // error surfaces the honest "please email/call us directly" fallback in the UI
-      // so no prospective client is lost. See BAR-15 / BAR-69.
-      console.error('BAR-69: RESEND_API_KEY or CONTACT_EMAIL not configured; rejecting submission to avoid silent lead loss');
+    // Need at least one durable delivery path — the Google Sheet lead-log webhook or
+    // Resend email. With neither, the lead would be silently dropped, so fail loudly and
+    // surface the honest "email/call us directly" fallback in the UI. See BAR-15 / BAR-69.
+    if (!resendConfigured && !leadsWebhookConfigured) {
+      console.error('BAR-69: no delivery path configured (RESEND_API_KEY/CONTACT_EMAIL or LEADS_WEBHOOK_URL); rejecting to avoid silent lead loss');
       return NextResponse.json(
         { error: 'We could not submit your request right now. Please email or call us directly so we don’t miss you.' },
         { status: 503 },
       );
     }
 
+    // Always log the lead (Google Sheet + firm email to info@bardilaw.com) + sync the
+    // nurture sequence; these run whether or not Resend is configured.
+    const source = request.headers.get('referer') ?? '';
+    const deliveries: Promise<unknown>[] = [
+      logLead({ firstName, lastName, email, phone, preferredContact, description, source }),
+      syncToKit({ email, firstName, caseType }),
+    ];
+
+    if (apiKey && contactEmail) {
     const resend = new Resend(apiKey);
     const fullName = `${firstName} ${lastName}`;
     const subject = caseType ? `New consultation request, ${caseType}` : 'New consultation request';
@@ -202,25 +242,26 @@ ${description?.trim() ? `<p style="margin-top:16px"><strong>Message:</strong><br
 
     const fromAddress = process.env.RESEND_FROM_EMAIL ?? 'Bardi Immigration Law <noreply@bardiimmigrationlaw.com>';
 
-    await Promise.all([
-      resend.emails.send({
-        from: fromAddress,
-        to: [contactEmail],
-        replyTo: email,
-        subject,
-        text: notificationText,
-        html: notificationHtml,
-      }),
-      resend.emails.send({
-        from: fromAddress,
-        to: [email],
-        subject: `We received your message, ${firstName}, here's what happens next`,
-        text: autoReplyText,
-        html: autoReplyHtml,
-      }),
-      // Nurture-sequence sync (BAR-579). Best-effort: never rejects.
-      syncToKit({ email, firstName, caseType }),
-    ]);
+      deliveries.push(
+        resend.emails.send({
+          from: fromAddress,
+          to: [contactEmail],
+          replyTo: email,
+          subject,
+          text: notificationText,
+          html: notificationHtml,
+        }),
+        resend.emails.send({
+          from: fromAddress,
+          to: [email],
+          subject: `We received your message, ${firstName}, here's what happens next`,
+          text: autoReplyText,
+          html: autoReplyHtml,
+        }),
+      );
+    }
+
+    await Promise.all(deliveries);
 
     return NextResponse.json(
       { success: true, message: 'Your message has been received. An attorney will be in touch within 72 hours.' },

@@ -1,12 +1,8 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  // /resources was a placeholder with no real content. Real guides live on /blog.
-  // Redirect any direct, bookmarked, or search-indexed hits so they never dead-end.
   async redirects() {
     return [
-      { source: '/resources', destination: '/blog', permanent: true },
-      { source: '/es/resources', destination: '/es/blog', permanent: true },
       // The deportation-defense post lives at one canonical slug. Redirect the
       // alternate "attorney" keyword slug so inbound/search hits don't dead-end
       // and link equity consolidates on the single canonical URL.

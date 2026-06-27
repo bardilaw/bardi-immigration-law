@@ -111,6 +111,7 @@ export function Header({ phone = '' }: { phone?: string }) {
 
   const SERVICES = isEs ? SERVICES_ES : SERVICES_EN;
   const aboutHref = isEs ? '/es/about' : '/about';
+  const blogHref = isEs ? '/es/blog' : '/blog';
   const faqHref = isEs ? '/es/faq' : '/faq';
   const resourcesHref = isEs ? '/es/resources' : '/resources';
   const contactHref = isEs ? '/es/contact' : '/contact';
@@ -206,9 +207,10 @@ export function Header({ phone = '' }: { phone?: string }) {
             )}
           </div>
 
-          {/* Nav links trimmed to Services / About / Resources / FAQ (feedback #2).
-              Blog + Contact remain reachable from the footer. */}
+          {/* Services / About / Blog (articles) / Resources (tools + calculator) / FAQ.
+              Contact remains reachable from the footer + the CTAs. */}
           <Link href={aboutHref} className={navLink}>{isEs ? 'Sobre Nosotros' : 'About'}</Link>
+          <Link href={blogHref} className={navLink}>Blog</Link>
           <Link href={resourcesHref} className={navLink}>{isEs ? 'Recursos' : 'Resources'}</Link>
           <Link href={faqHref} className={navLink}>{isEs ? 'Preguntas' : 'FAQ'}</Link>
 
@@ -305,6 +307,9 @@ export function Header({ phone = '' }: { phone?: string }) {
           </div>
           <Link href={aboutHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
             {isEs ? 'Sobre Nosotros' : 'About'}
+          </Link>
+          <Link href={blogHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
+            Blog
           </Link>
           <Link href={resourcesHref} className="text-navy font-semibold" onClick={() => setMenuOpen(false)}>
             {isEs ? 'Recursos' : 'Resources'}

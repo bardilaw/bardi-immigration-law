@@ -49,7 +49,7 @@ const STEPS = [
   {
     n: '3',
     heading: 'Llamada personal',
-    desc: 'Nos comunicaremos con usted dentro de 24 horas.',
+    desc: 'Nos comunicaremos con usted dentro de 72 horas.',
   },
 ];
 
@@ -69,7 +69,7 @@ export default function ContactPageES() {
             <p className="text-lg text-charcoal/80 max-w-xl mx-auto">
               {showBooking
                 ? 'Elija un horario a continuación para reservar su consulta de 30 minutos directamente, o use el formulario para solicitar que la abogada le llame.'
-                : 'Las decisiones de inmigración tienen consecuencias reales. Complete el formulario y una abogada se comunicará con usted dentro de 24 horas.'}
+                : 'Las decisiones de inmigración tienen consecuencias reales. Complete el formulario y una abogada se comunicará con usted dentro de 72 horas.'}
             </p>
           </div>
         </section>
@@ -95,8 +95,8 @@ export default function ContactPageES() {
               </h2>
               <p className="text-sm text-charcoal/70 mb-6">
                 {showBooking
-                  ? '¿No encuentra un horario que le convenga o prefiere no reservar en línea? Envíe sus datos y la abogada se comunicará con usted dentro de un día hábil.'
-                  : 'Complete el formulario a continuación y nos comunicaremos dentro de un día hábil para programar su consulta.'}
+                  ? '¿No encuentra un horario que le convenga o prefiere no reservar en línea? Envíe sus datos y la abogada se comunicará con usted dentro de 72 horas.'
+                  : 'Complete el formulario a continuación y nos comunicaremos dentro de 72 horas para programar su consulta.'}
               </p>
               <ContactFormES />
             </div>

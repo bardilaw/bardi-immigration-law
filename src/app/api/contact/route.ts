@@ -171,7 +171,7 @@ ${description?.trim() ? `<p style="margin-top:16px"><strong>Message:</strong><br
       '',
       "Thank you for reaching out to Bardi Immigration Law. Your message is in, and I want you to know what happens from here, no guessing.",
       '',
-      'Eszter personally reviews every inquiry within one business day. Not a screener, not a chatbot, the attorney. You\'ll hear from us by your preferred contact method to schedule your free 30-minute consultation.',
+      'Eszter personally reviews every inquiry within 72 hours. Not a screener, not a chatbot, the attorney. You\'ll hear from us by your preferred contact method to schedule your free 30-minute consultation.',
       '',
       "In that consultation, we'll talk through your situation, answer your questions in plain language, and tell you honestly whether and how we can help. You'll leave knowing your options and your next step, whether or not you decide to work with us.",
       '',
@@ -192,7 +192,7 @@ ${description?.trim() ? `<p style="margin-top:16px"><strong>Message:</strong><br
 <div style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#3d3d3d">
   <p>Hi ${firstName},</p>
   <p>Thank you for reaching out to <strong>Bardi Immigration Law</strong>. Your message is in, and I want you to know what happens from here, no guessing.</p>
-  <p><strong>Eszter personally reviews every inquiry within one business day.</strong> Not a screener, not a chatbot, the attorney. You'll hear from us by your preferred contact method to schedule your <strong>free 30-minute consultation</strong>.</p>
+  <p><strong>Eszter personally reviews every inquiry within 72 hours.</strong> Not a screener, not a chatbot, the attorney. You'll hear from us by your preferred contact method to schedule your <strong>free 30-minute consultation</strong>.</p>
   <p>In that consultation, we'll talk through your situation, answer your questions in plain language, and tell you honestly whether and how we can help. You'll leave knowing your options and your next step, whether or not you decide to work with us.</p>
   <p>Immigration law is complex, and the stakes are personal. Please know this: <strong>you are not navigating it alone.</strong> Bringing in someone who handles these cases every day is exactly the right move, and you've made it.</p>
   <p>${urgentHtml}</p>
@@ -223,7 +223,7 @@ ${description?.trim() ? `<p style="margin-top:16px"><strong>Message:</strong><br
     ]);
 
     return NextResponse.json(
-      { success: true, message: 'Your message has been received. An attorney will be in touch within 24 hours.' },
+      { success: true, message: 'Your message has been received. An attorney will be in touch within 72 hours.' },
       { status: 200 },
     );
   } catch (err) {

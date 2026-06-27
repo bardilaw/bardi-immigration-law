@@ -55,7 +55,7 @@ const STEPS = [
   {
     n: '3',
     heading: 'Personal callback',
-    desc: "You'll hear from us within 24 hours.",
+    desc: "You'll hear from us within 72 hours.",
   },
 ];
 
@@ -75,7 +75,7 @@ export default function ContactPage() {
             <p className="text-lg text-charcoal/80 max-w-xl mx-auto">
               {showBooking
                 ? 'Pick a time below to book your 30-minute consultation directly, or use the form to request a callback.'
-                : 'Fill in the form below and an attorney will be in touch within 24 hours.'}
+                : 'Fill in the form below and an attorney will be in touch within 72 hours.'}
             </p>
           </div>
         </section>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                   </h2>
                   <p className="text-sm text-charcoal/70">
                     Can&apos;t find a time that works, or rather not self-schedule? Send your
-                    details and the attorney will reach out within 24 hours.
+                    details and the attorney will reach out within 72 hours.
                   </p>
                 </div>
               )}

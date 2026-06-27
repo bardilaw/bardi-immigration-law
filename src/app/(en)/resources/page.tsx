@@ -128,7 +128,7 @@ export default function ResourcesPage() {
                 </Button>
               ) : (
                 <Button href="/contact" size="lg">
-                  Book a Consultation
+                  Request A Consultation
                 </Button>
               )}
               <a

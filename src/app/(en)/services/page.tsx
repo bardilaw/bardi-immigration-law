@@ -209,7 +209,7 @@ export default function ServicesPage() {
               get straightforward answers, and understand your legal options, before you commit to
               anything.
             </p>
-            <Button href="/contact" size="lg">Book a Consultation</Button>
+            <Button href="/contact" size="lg">Request A Consultation</Button>
             <p className="text-sm text-charcoal/50 mt-4 font-sans">
               All consultations are conducted by a licensed immigration attorney.
             </p>

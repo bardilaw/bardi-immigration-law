@@ -389,7 +389,7 @@ export default async function BlogPostPage({ params }: Props) {
                 href="/contact"
                 className="flex-shrink-0 inline-flex items-center justify-center px-6 py-2.5 bg-navy text-white font-sans font-semibold text-[14px] rounded-[4px] hover:bg-navy/90 transition-colors"
               >
-                Book a Consultation
+                Request A Consultation
               </Link>
             </div>
           </div>

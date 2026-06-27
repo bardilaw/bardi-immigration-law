@@ -117,7 +117,7 @@ export function PracticeAreaLayout({
   relatedArticles = [],
   ctaHeading = 'Start with a Consultation',
   ctaSubtext = "We'll help you understand your options and build the strongest possible case.",
-  ctaButtonLabel = 'Schedule a Consultation',
+  ctaButtonLabel = 'Request A Consultation',
   breadcrumbLabel,
   breadcrumbHref,
   homeHref = '/',

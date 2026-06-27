@@ -97,7 +97,7 @@ export default function AboutPage() {
               <p className="font-sans text-[18px] text-charcoal leading-relaxed max-w-[480px] mb-8">
                 Experienced representation in complex immigration matters. Because immigration is federal law, we represent clients nationwide, with experienced guidance and dedicated advocacy from your first consultation to your final outcome.
               </p>
-              <Button href="/contact" size="lg">Schedule a Consultation</Button>
+              <Button href="/contact" size="lg">Request A Consultation</Button>
             </div>
             {/* Attorney portrait */}
             <div className="order-first lg:order-last flex items-center justify-center">
@@ -227,7 +227,7 @@ export default function AboutPage() {
             </p>
             <div className="mt-8">
               <Button href="/contact" variant="primary" size="lg">
-                Schedule a Consultation
+                Request A Consultation
               </Button>
             </div>
           </div>

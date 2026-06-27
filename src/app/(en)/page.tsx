@@ -119,7 +119,7 @@ export default function HomePage() {
                 to standing by your side throughout every stage of your immigration journey.
               </p>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                <Button href="/contact" size="lg">Book a Consultation</Button>
+                <Button href="/contact" size="lg">Request A Consultation</Button>
                 <Button href="/services" variant="ghost" size="lg">See Our Services</Button>
               </div>
             </div>
@@ -269,7 +269,7 @@ export default function HomePage() {
             </h2>
             <p className="font-sans text-base text-white/80 mt-3">One consultation. Your attorney. No runaround.</p>
             <div className="mt-8">
-              <Button href="/contact" size="lg">Book Your Consultation</Button>
+              <Button href="/contact" size="lg">Request A Consultation</Button>
             </div>
             <p className="font-sans text-sm text-white/50 mt-4">
               Immigration is federal law, we represent clients nationwide.

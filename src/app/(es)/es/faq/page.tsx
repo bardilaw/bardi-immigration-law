@@ -92,7 +92,7 @@ export default function FaqPageES() {
             </p>
             <div className="mt-8">
               <Button href="/es/contact" variant="primary" size="lg">
-                Reserve una Consulta
+                Solicite una Consulta
               </Button>
             </div>
           </div>

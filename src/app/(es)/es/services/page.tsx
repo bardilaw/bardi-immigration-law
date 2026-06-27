@@ -205,7 +205,7 @@ export default function ServicesPageES() {
               respuestas directas y comprenderá sus opciones legales, antes de comprometerse con
               cualquier cosa.
             </p>
-            <Button href="/es/contact" size="lg">Reserve una Consulta</Button>
+            <Button href="/es/contact" size="lg">Solicite una Consulta</Button>
             <p className="text-sm text-charcoal/50 mt-4 font-sans">
               Todas las consultas son realizadas por una abogada de inmigración con licencia.
             </p>

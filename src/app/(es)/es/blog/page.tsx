@@ -93,7 +93,7 @@ export default function EsBlogIndexPage() {
                 href="/es/contact"
                 className="inline-flex items-center justify-center px-8 py-3.5 bg-gold text-navy font-sans font-semibold text-[15px] rounded-[4px] hover:bg-gold/90 transition-colors"
               >
-                Reserve una Consulta
+                Solicite una Consulta
               </Link>
             </div>
           </div>

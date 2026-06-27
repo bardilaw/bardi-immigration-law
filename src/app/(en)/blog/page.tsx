@@ -98,7 +98,7 @@ export default function BlogIndexPage() {
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-3.5 bg-gold text-navy font-sans font-semibold text-[15px] rounded-[4px] hover:bg-gold/90 transition-colors"
               >
-                Schedule a Consultation
+                Request A Consultation
               </Link>
             </div>
           </div>

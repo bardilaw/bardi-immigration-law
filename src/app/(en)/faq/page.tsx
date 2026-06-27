@@ -91,7 +91,7 @@ export default function FaqPage() {
             </p>
             <div className="mt-8">
               <Button href="/contact" variant="primary" size="lg">
-                Book a Consultation
+                Request A Consultation
               </Button>
             </div>
           </div>

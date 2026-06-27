@@ -80,7 +80,7 @@ export function Footer({ phone = '' }: { phone?: string }) {
               <li>{isEs ? 'Abogada licenciada' : 'Licensed attorney'}</li>
             </ul>
             <Button href={p('/contact')} variant="primary" size="sm">
-              {isEs ? 'Reserve una Consulta' : 'Schedule a Consultation'}
+              {isEs ? 'Solicite una Consulta' : 'Request A Consultation'}
             </Button>
           </div>
         </div>

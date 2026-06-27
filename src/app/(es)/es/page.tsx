@@ -113,7 +113,7 @@ export default function HomePageES() {
                 acompañarle en cada etapa de su camino migratorio.
               </p>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                <Button href="/es/contact" size="lg">Reserve una Consulta</Button>
+                <Button href="/es/contact" size="lg">Solicite una Consulta</Button>
                 <Button href="/es/services" variant="ghost" size="lg">Ver Nuestros Servicios</Button>
               </div>
             </div>
@@ -263,7 +263,7 @@ export default function HomePageES() {
             </h2>
             <p className="font-sans text-base text-white/80 mt-3">Una consulta. Su abogada. Sin complicaciones.</p>
             <div className="mt-8">
-              <Button href="/es/contact" size="lg">Reserve una Consulta</Button>
+              <Button href="/es/contact" size="lg">Solicite una Consulta</Button>
             </div>
             <p className="font-sans text-sm text-white/50 mt-4">
               Como la ley de inmigración es federal, representamos a clientes en todo el país.

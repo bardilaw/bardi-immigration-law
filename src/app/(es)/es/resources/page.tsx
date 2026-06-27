@@ -130,7 +130,7 @@ export default function ResourcesPageES() {
                 </Button>
               ) : (
                 <Button href="/es/contact" size="lg">
-                  Reserve una Consulta
+                  Solicite una Consulta
                 </Button>
               )}
               <a

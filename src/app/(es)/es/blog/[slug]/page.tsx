@@ -351,7 +351,7 @@ export default async function EsBlogPostPage({ params }: Props) {
                 href="/es/contact"
                 className="flex-shrink-0 inline-flex items-center justify-center px-6 py-2.5 bg-navy text-white font-sans font-semibold text-[14px] rounded-[4px] hover:bg-navy/90 transition-colors"
               >
-                Reserve una Consulta
+                Solicite una Consulta
               </Link>
             </div>
           </div>

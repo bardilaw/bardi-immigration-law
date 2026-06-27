@@ -1,4 +1,4 @@
-import { Inter, Playfair_Display } from 'next/font/google';
+import { Inter, Spectral } from 'next/font/google';
 import { JsonLd } from '@/components/JsonLd';
 import '@/app/globals.css';
 
@@ -8,8 +8,13 @@ const inter = Inter({
   display: 'swap',
 });
 
-const playfair = Playfair_Display({
+// Headings use Spectral — a sleeker, more modern serif than the previous Playfair
+// Display (client feedback). The CSS variable name stays `--font-playfair` so the
+// existing `font-serif` mappings (tailwind, globals.css, blog templates) keep working
+// without churn; only the loaded family changes here.
+const heading = Spectral({
   subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-playfair',
   display: 'swap',
 });
@@ -84,7 +89,7 @@ export function RootDocument({
   const ga4Id = process.env.NEXT_PUBLIC_GA4_ID;
 
   return (
-    <html lang={lang} className={`${inter.variable} ${playfair.variable}`}>
+    <html lang={lang} className={`${inter.variable} ${heading.variable}`}>
       <head>
         <JsonLd data={FIRM_SCHEMA as unknown as Record<string, unknown>} />
         {ga4Id && (

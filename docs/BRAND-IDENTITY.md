@@ -47,7 +47,7 @@ Bardi Immigration Law exists to make one of life's most consequential processes 
 
 | Role      | Typeface          | Weight       | Size (desktop) | Usage                                          |
 |-----------|-------------------|--------------|----------------|------------------------------------------------|
-| Heading   | Playfair Display  | 700 Bold     | 32–56px        | Page titles, section headers, hero text        |
+| Heading   | Spectral          | 700 Bold     | 32–56px        | Page titles, section headers, hero text        |
 | Subhead   | Playfair Display  | 400 Regular  | 20–28px        | Sub-sections, pull quotes                      |
 | Body      | Inter             | 400 Regular  | 16–18px        | Paragraphs, form copy, descriptions            |
 | UI Label  | Inter             | 600 SemiBold | 12–14px        | Buttons, nav items, badges, form labels        |

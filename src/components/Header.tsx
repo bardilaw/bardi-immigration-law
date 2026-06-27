@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Logo } from './Logo';
 import { Button } from './Button';
-import { SiteSearch } from './SiteSearch';
 import { telHref } from '@/lib/contact';
 
 const SERVICES_EN = [
@@ -161,8 +160,9 @@ export function Header({ phone = '' }: { phone?: string }) {
       <div className="max-w-site mx-auto px-5 lg:px-8 flex items-center justify-between h-16">
         <Logo />
 
-        {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-6" aria-label="Primary navigation">
+        {/* Desktop nav — shown at lg+ (the link set + two CTAs + language pill is too
+            dense for md/tablet, which gets the drawer instead). */}
+        <nav className="hidden lg:flex items-center gap-6" aria-label="Primary navigation">
           {/* Logo is the Home link (feedback #2) — redundant "Home" text link removed. */}
 
           {/* Services dropdown */}
@@ -214,33 +214,34 @@ export function Header({ phone = '' }: { phone?: string }) {
           <Link href={resourcesHref} className={navLink}>{isEs ? 'Recursos' : 'Resources'}</Link>
           <Link href={faqHref} className={navLink}>{isEs ? 'Preguntas' : 'FAQ'}</Link>
 
-          {/* Internal site search — magnifying glass in the header top line (BAR-801,
-              BAR-697 row 5) opens a bilingual overlay search (row 9). */}
-          <SiteSearch isEs={isEs} />
+          {/* Right cluster: Call Us Today, Request a Consultation, then the language
+              selector last. Search removed per feedback. */}
+          <div className="flex items-center gap-4 ml-1">
+            {/* Call Us Today — tap-to-call with the number wrapped underneath. callPhone is
+                the confirmed firm number; CONTACT_PHONE overrides it at launch (BAR-81). */}
+            <a
+              href={telHref(callPhone)}
+              className="flex flex-col items-center leading-tight text-navy hover:text-gold transition-colors whitespace-nowrap"
+            >
+              <span className="font-sans text-sm font-semibold">{isEs ? 'Llámenos Hoy' : 'Call Us Today'}</span>
+              <span className="font-sans text-xs font-medium">{callPhone}</span>
+            </a>
 
-          {/* Language switcher — contextual flag + native-language invite (BAR-697 rows 3/4) */}
-          <div className="ml-2 border border-warmgray-300 rounded-full px-3 py-1">
-            <LanguageToggle isEs={isEs} enPath={enPath} esPath={esPath} />
+            {/* Primary CTA */}
+            <Button href={contactHref} size="sm">
+              {isEs ? 'Solicite una Consulta' : 'Request A Consultation'}
+            </Button>
+
+            {/* Language selector — last */}
+            <div className="border border-warmgray-300 rounded-full px-3 py-1">
+              <LanguageToggle isEs={isEs} enPath={enPath} esPath={esPath} />
+            </div>
           </div>
-
-          {/* Call Us Today — tap-to-call link (feedback #2). Uses the confirmed firm
-              number now; CONTACT_PHONE overrides it at launch (BAR-81). */}
-          <a
-            href={telHref(callPhone)}
-            className="font-sans text-sm font-semibold text-navy hover:text-gold transition-colors whitespace-nowrap"
-          >
-            {isEs ? `Llámenos Hoy – ${callPhone}` : `Call Us Today – ${callPhone}`}
-          </a>
-
-          {/* Primary CTA — always available (feedback #2). "Send Us a Message" removed. */}
-          <Button href={contactHref} size="sm">
-            {isEs ? 'Solicite una Consulta' : 'Request A Consultation'}
-          </Button>
         </nav>
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 text-navy"
+          className="lg:hidden p-2 text-navy"
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((v) => !v)}
@@ -259,20 +260,8 @@ export function Header({ phone = '' }: { phone?: string }) {
 
       {/* Mobile drawer */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-warmgray-200 px-5 pb-6 pt-4 flex flex-col gap-4">
-          {/* Language switcher + site search — surfaced at top of drawer (BAR-704 m-1;
-              BAR-801 row 5). Tapping search closes the drawer via the overlay. */}
-          <div className="pb-3 border-b border-warmgray-200 flex items-center justify-between gap-4">
-            <LanguageToggle
-              isEs={isEs}
-              enPath={enPath}
-              esPath={esPath}
-              variant="mobile"
-              onNavigate={() => setMenuOpen(false)}
-            />
-            <SiteSearch isEs={isEs} variant="mobile" />
-          </div>
-          {/* Logo is the Home link (feedback #2) — redundant "Home" link removed. */}
+        <div className="lg:hidden bg-white border-t border-warmgray-200 px-5 pb-6 pt-4 flex flex-col gap-4">
+          {/* Logo is the Home link; search removed. Language selector moved to the bottom. */}
           <div>
             <button
               className="text-navy font-semibold flex items-center gap-1 w-full text-left"
@@ -319,14 +308,23 @@ export function Header({ phone = '' }: { phone?: string }) {
           </Link>
 
           <div className="pt-2 border-t border-warmgray-200 flex flex-col gap-3">
-            {/* Primary CTA — always available (feedback #2). */}
+            {/* Call Us Today — tap-to-call with the number wrapped underneath. */}
+            <Button href={telHref(callPhone)} size="md" variant="ghost" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
+              <span className="flex flex-col items-center leading-tight">
+                <span>{isEs ? 'Llámenos Hoy' : 'Call Us Today'}</span>
+                <span className="text-xs font-medium">{callPhone}</span>
+              </span>
+            </Button>
+            {/* Primary CTA */}
             <Button href={contactHref} size="md" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
               {isEs ? 'Solicite una Consulta' : 'Request A Consultation'}
             </Button>
-            {/* Call Us Today — tap-to-call (feedback #2); env var overrides at launch. */}
-            <Button href={telHref(callPhone)} size="md" variant="ghost" className="w-full justify-center" onClick={() => setMenuOpen(false)}>
-              {isEs ? `Llámenos Hoy – ${callPhone}` : `Call Us Today – ${callPhone}`}
-            </Button>
+            {/* Language selector — last */}
+            <div className="flex justify-center pt-1">
+              <div className="border border-warmgray-300 rounded-full px-3 py-1">
+                <LanguageToggle isEs={isEs} enPath={enPath} esPath={esPath} variant="mobile" onNavigate={() => setMenuOpen(false)} />
+              </div>
+            </div>
           </div>
         </div>
       )}

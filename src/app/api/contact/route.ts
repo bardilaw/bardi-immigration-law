@@ -17,13 +17,28 @@ function readEnv(key: string): string | undefined {
   return ctxEnv?.[key] ?? process.env[key];
 }
 
-// TEMP diagnostic (remove after): reports whether runtime env is visible, booleans only.
+// TEMP diagnostic (remove after): actually call the webhook from the edge and report.
 export async function GET() {
-  const ctxEnv = getOptionalRequestContext()?.env as Record<string, string | undefined> | undefined;
-  const keys = ['LEADS_WEBHOOK_URL', 'LEADS_WEBHOOK_SECRET', 'RESEND_API_KEY', 'CONTACT_EMAIL', 'CONTACT_PHONE', 'KIT_API_KEY'];
-  const report: Record<string, { ctx: boolean; proc: boolean }> = {};
-  for (const k of keys) report[k] = { ctx: Boolean(ctxEnv?.[k]), proc: Boolean(process.env[k]) };
-  return NextResponse.json({ hasCtx: Boolean(ctxEnv), report });
+  const url = readEnv('LEADS_WEBHOOK_URL');
+  const secret = readEnv('LEADS_WEBHOOK_SECRET');
+  if (!url) return NextResponse.json({ urlPresent: false });
+  try {
+    const r = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        firstName: 'EdgeDiag', lastName: 'Test', email: 'edgediag@example.com',
+        phone: '0', description: 'edge diagnostic — delete', source: 'diagnostic', secret,
+      }),
+    });
+    const text = await r.text();
+    return NextResponse.json({
+      urlPresent: true, status: r.status, redirected: r.redirected,
+      finalUrl: r.url, bodySnippet: text.slice(0, 180),
+    });
+  } catch (err) {
+    return NextResponse.json({ urlPresent: true, fetchError: String(err) });
+  }
 }
 
 type ContactPayload = {
